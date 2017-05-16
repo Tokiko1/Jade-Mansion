@@ -103,7 +103,7 @@
 /datum/action/innate/flight_up/Activate()
 	var/mob/living/carbon/human/H = owner
 	if(H.movement_type & FLYING)
-		if(H.z >= JADE_MAX_MAP_Z_LEVEL)
+		if(H.z >= GLOB.JADE_MAX_MAP_Z_LEVEL)
 			to_chat(H, "<span class='notice'>You cannot fly any higher.</span>")
 			return
 		var/turf/above = locate(H.x, H.y, H.z+1)

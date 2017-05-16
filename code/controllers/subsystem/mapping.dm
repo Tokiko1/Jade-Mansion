@@ -112,7 +112,7 @@ SUBSYSTEM_DEF(mapping)
 
 	INIT_ANNOUNCE("Loading [config.map_name]...")
 	TryLoadZ(config.GetFullMapPath(), FailedZs, ZLEVEL_STATION)
-	TryLoadZ(config.GetAdminPath(), FailedZs, 8)
+	TryLoadZ(config.GetAdminPath(), FailedZs, GLOB.JADE_ADMIN_Z_LEVEL)
 
 	INIT_ANNOUNCE("Loaded station in [(REALTIMEOFDAY - start_time)/10]s!")
 	feedback_add_details("map_name", config.map_name)

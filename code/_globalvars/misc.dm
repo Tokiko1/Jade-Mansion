@@ -14,3 +14,6 @@ GLOBAL_VAR_INIT(CELLRATE, 0.002)  // multiplier for watts per tick <> cell stora
 GLOBAL_VAR_INIT(CHARGELEVEL, 0.001) // Cap for how fast cells charge, as a percentage-per-tick (.001 means cellcharge is capped to 1% per second)
 
 GLOBAL_LIST_EMPTY(powernets)
+
+GLOBAL_VAR_INIT(JADE_MAX_MAP_Z_LEVEL, 0)
+GLOBAL_VAR_INIT(JADE_ADMIN_Z_LEVEL, 0)

@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1494894720
-DIR: _maps _maps\map_files _maps\map_files\debug _maps\map_files\generic _maps\map_files\jademansion _maps\RandomRuins\LavaRuins code code\__HELPERS code\_globalvars\lists code\_onclick\hud code\datums code\datums\diseases\advance code\modules code\modules\mob code\modules\mob\dead code\modules\mob\dead\new_player code\modules\mob\living code\modules\mob\living\carbon code\modules\mob\living\carbon\human code\modules\mob\living\carbon\human\species_types icons icons\mob icons\mob\inhands sound sound\misc 
+LAST_COMPILE_TIME: 1494974959
+DIR: _maps _maps\map_files _maps\map_files\debug _maps\map_files\generic _maps\map_files\jademansion _maps\RandomRuins\LavaRuins code code\__DEFINES code\__HELPERS code\_globalvars code\_globalvars\lists code\_onclick\hud code\controllers code\controllers\subsystem code\datums 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
-LAST_COMPILE_VERSION: 511.1382
-WINDOW: code\datums\riding.dm;code\modules\mob\dead\new_player\sprite_accessories.dm;icons\mob\jadeharpies.dmi;code\modules\mob\dead\new_player\preferences_setup.dm;code\modules\mob\living\carbon\human\species_types\humans.dm;icons\mob\uniform.dmi
-FILE: icons\mob\uniform.dmi
+LAST_COMPILE_VERSION: 511.1383
+WINDOW: code\datums\map_config.dm;code\_globalvars\genetics.dm;code\_globalvars\configuration.dm;code\_globalvars\lists\names.dm;code\_globalvars\logging.dm;code\_globalvars\game_modes.dm;code\_globalvars\sensitive.dm;code\controllers\subsystem\timer.dm;_maps\jademansion.dm
+FILE: _maps\jademansion.dm
 */
 // END_INTERNALS

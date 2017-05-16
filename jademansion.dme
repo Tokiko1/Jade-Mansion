@@ -14,7 +14,7 @@
 
 // BEGIN_INCLUDE
 #include "_maps\basemap.dm"
-#include "_maps\test.dm"
+#include "_maps\jademansion.dm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
 #include "code\__DATASTRUCTURES\globals.dm"
