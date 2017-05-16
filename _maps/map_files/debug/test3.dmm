@@ -1,0 +1,226 @@
+"a" = (/turf/open/outside,/area/space)
+"b" = (/turf/closed/wall,/area/space)
+"c" = (/turf/open/floor/wood,/area/space)
+"d" = (/turf/closed/wall,/area/hallway/primary/central)
+"e" = (/turf/open/stairs/moving/northup,/area/hallway/primary/central)
+"f" = (/turf/open/stairs/north,/area/hallway/primary/central)
+"g" = (/obj/structure/ladder,/turf/open/floor/wood,/area/space)
+"h" = (/turf/open/floor/wood,/area/hallway/primary/central)
+"i" = (/turf/open/hole/outside,/area/space)
+"j" = (/turf/open/hole,/area/space)
+"k" = (/turf/open/floor/wood,/area/hallway/primary/fore)
+"l" = (/turf/closed/wall,/area/hallway/primary/fore)
+"m" = (/turf/open/stairs/north,/area/hallway/primary/fore)
+"n" = (/turf/open/stairs/moving/westup,/area/hallway/primary/fore)
+"o" = (/turf/open/stairs/west,/area/hallway/primary/fore)
+"p" = (/turf/open/stairs/moving/northdown,/area/hallway/primary/fore)
+"q" = (/turf/open/stairs/south,/area/space)
+"r" = (/turf/open/stairs/west,/area/space)
+"s" = (/turf/open/stairs/moving/westdown,/area/space)
+"t" = (/turf/open/stairs/moving/southup,/area/space)
+"u" = (/turf/open/stairs/moving/southdown,/area/space)
+"v" = (/turf/open/floor/plasteel,/area/space)
+"w" = (/obj/structure/ladder,/turf/open/outside,/area/space)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aabbbbbbbbbbbbbbaaaaaaaaaa
+aabccccccccccccbaaaaaaaaaa
+aabccccccccccccbaaaaaaaaaa
+aabccccccccccccbaaaaaaaaaa
+aabccccccccccccbaaaaaaaaaa
+aabccccccccccccbaaaaaaaaaa
+aabccccccccccccbaaaaaaaaaa
+aabcccccccdddddbaaaaaaaaaa
+aabcccccccdeeedbaaaaaaaaaa
+aabcccccccdfffdbaaaaaaaaaa
+aabcccccccdfffdbaaaaaaaaaa
+aabccccgcchhhhhbaaaaaaaaaa
+aabbccbbbbdddddbaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+"}
+
+(1,1,2) = {"
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iibcccccccccccbbiiiiiiiiii
+iibccccccccccccciiiiiiiiii
+iiccgcccjjjccccciiiiiiiiii
+iiccccccjjjccccciiiiiiiiii
+iicccccccccccccciiiiiiiiii
+iiccckkkkkkkkkkciiiiiiiiii
+iiccclllkklmmmlciiiiiiiiii
+iiccclnokklmmmlciiiiiiiiii
+iiccclnokklppplciiiiiiiiii
+iiccclllkklllllciiiiiiiiii
+iicccccccccccccciiiiiiiiii
+iibccccgcccccccbiiiiiiiiii
+iibbccccccccccbbiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+"}
+
+(1,1,3) = {"
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iibbccccccccccbbiiiiiiiiii
+iibccccjjjjjcccbiiiiiiiiii
+iiccgccjjjjjcccciiiiiiiiii
+iicccccjjjjjcccciiiiiiiiii
+iicccccccccccccciiiiiiiiii
+iicccccccccccccciiiiiiiiii
+iicccbbbcbqbcccciiiiiiiiii
+iicccrsbcbtbcccciiiiiiiiii
+iicccrsbcbbbcccciiiiiiiiii
+iicccbbbcccccccciiiiiiiiii
+iicccccccccccccciiiiiiiiii
+iibccccccccccccbiiiiiiiiii
+iibbccccccccccbbiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+"}
+
+(1,1,4) = {"
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iibbccccccccccbbiiiiiiiiii
+iibcccjjjjjjjccbiiiiiiiiii
+iiccgcjjjjjjjccciiiiiiiiii
+iiccccjjjjjjjccciiiiiiiiii
+iicccccccccccccciiiiiiiiii
+iicccccccccccccciiiiiiiiii
+iicccccccbbbcccciiiiiiiiii
+iicccccccbubcccciiiiiiiiii
+iicccccccbqbcccciiiiiiiiii
+iicccccccccccccciiiiiiiiii
+iicccccccccccccciiiiiiiiii
+iibccccccccccccbiiiiiiiiii
+iibbccccccccccbbiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiii
+"}
+
+(1,1,5) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaavvvvvvaaaaaaaaaaaaaa
+aaaaaavaaaaaaaaaaaaaaaaaaa
+aaaaaavaaaaaaaaaaaaaaaaaaa
+aaaaaavaaaaaaaaaaaaaaaaaaa
+aaaaaavaaaaaaaaaaaaaaaaaaa
+aaaaaavvvvvvaaaaaaaaaaaaaa
+aaaaaaaaaaavvaaaaaaaaaaaaa
+aaaaaaaaaaaavaaaaaaaaaaaaa
+aaaaaaaaaaaavaaaaaaaaaaaaa
+waaaaaaaaaavaaaaaaaaaaaaaa
+aaaaaaaaaavvaaaaaaaaaaaaaa
+waaavvaavvvaaaaaaaaaaaaaaa
+aaaaavvvaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+"}
+
+(1,1,6) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaavaaaaaaaaaaaaaaa
+aaaaaaaaavvaaaaaaaaaaaaaaa
+aaaaaaaaavaaaaaaaaaaaaaaaa
+aaaaaaaavaaaaaaaaaaaaaaaaa
+aaaaaaavvaaaaaaaaaaaaaaaaa
+aaaaaaavvvaaaaaaaaaaaaaaaa
+aaaaaaavavvaaaaaaaaaaaaaaa
+waaaaaavaavaaaaaaaaaaaaaaa
+aaaaaaavaavaaaaaaaaaaaaaaa
+waaaaaavavvaaaaaaaaaaaaaaa
+aaaaaaavvaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+"}
+
+(1,1,7) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaavaaaaaaaavaaaaaaaaaa
+aaaaaavvvvvvvvvvaaaaaaaaaa
+aaaaaaaaaaaaaavvaaaaaaaaaa
+aaaaaaaaaaaaaavaaaaaaaaaaa
+aaaaaaaaaaaaaavaaaaaaaaaaa
+aaaaaaaaaaaaavaaaaaaaaaaaa
+waaaaaaavvvaavaaaaaaaaaaaa
+aaaaaaaaaavvvvaaaaaaaaaaaa
+aaaaaaaaaaavaaaaaaaaaaaaaa
+aaaaaaaaaavvaaaaaaaaaaaaaa
+aaaaaaaaavvaaaaaaaaaaaaaaa
+aaaaaaaaavaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

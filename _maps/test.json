@@ -1,0 +1,9 @@
+{
+    "map_name": "Jade Mansion",
+    "map_path": "map_files/jademansion",
+    "map_file": "jademansion13.dmm",
+    "adminzone": "runtimestation.dmm",
+    "zlevels": "7",
+    "minetype": "lavaland",
+    "transition_config": "default"
+}
