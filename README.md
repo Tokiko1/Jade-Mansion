@@ -4,7 +4,9 @@ This is the JadeMansion branch, aiming to turn ss13 into a completely different 
 
 ## LICENSE
 
-All code after [commit 333c566b88108de218d882840e61928a9b759d8f on 2014/31/12 at 4:38 PM PST](https://github.com/tgstation/tgstation/commit/333c566b88108de218d882840e61928a9b759d8f) is licensed under [GNU AGPL v3](http://www.gnu.org/licenses/agpl-3.0.html).
+All code after [commit 333c566b88108de218d882840e61928a9b759d8f on 2014/31/12 at 4:38 PM PST](https://github.com/tgstation/tgstation/commit/333c566b88108de218d882840e61928a9b759d8f) until [commit 2836a9a47e17c425161e3c5922adac729070efb4](https://github.com/tgstation/tgstation/commit/2836a9a47e17c425161e3c5922adac729070efb4) is licensed under [GNU AGPL v3](http://www.gnu.org/licenses/agpl-3.0.html).
+
+Additionally, the code changes from [commit 2836a9a47e17c425161e3c5922adac729070efb4](https://github.com/tgstation/tgstation/commit/2836a9a47e17c425161e3c5922adac729070efb4) to [commit 2a78c2a43b152b9e3be6a0fbb973e619c2895d84](https://github.com/Tokiko1/Jade-Mansion/commit/2a78c2a43b152b9e3be6a0fbb973e619c2895d84)and all code after [commit 2a78c2a43b152b9e3be6a0fbb973e619c2895d84](https://github.com/Tokiko1/Jade-Mansion/commit/2a78c2a43b152b9e3be6a0fbb973e619c2895d84) are also licensed under [GNU AGPL v3](http://www.gnu.org/licenses/agpl-3.0.html).
 
 All code before [commit 333c566b88108de218d882840e61928a9b759d8f on 2014/31/12 at 4:38 PM PST](https://github.com/tgstation/tgstation/commit/333c566b88108de218d882840e61928a9b759d8f) is licensed under [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html).
 (Including tools unless their readme specifies otherwise.)
