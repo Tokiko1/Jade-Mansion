@@ -192,3 +192,9 @@ Temporary Items
 
 #Visual studio stuff
 *.vscode/*
+player_notes.sav
+investigate
+logs
+npc_saves
+player_saves
+banlist.bdb

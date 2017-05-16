@@ -9,7 +9,7 @@
     var/map_path = "map_files/jademansion"
     var/map_file = "jademansion.dmm"
     var/adminzone = "jadeadmin.dmm"
-    var/amountzlevels = 8
+    var/amountzlevels = 7
     var/minetype = "lavaland"
 
     var/list/transition_config = list(MAIN_STATION = CROSSLINKED,
@@ -96,7 +96,6 @@
 
     var/global/JADE_MAX_MAP_Z_LEVEL = amountzlevels
     var/global/JADE_ADMIN_Z_LEVEL = (amountzlevels + 1)
-
     if(json["transition_config"] != "default")
         if(!islist(json["transition_config"]))
             log_world("transition_config is not a list!")
