@@ -1,0 +1,9 @@
+{
+    "map_name": "Stone Mansion",
+    "map_path": "map_files/stonemansion",
+    "map_file": "stonemansion13.dmm",
+    "adminzone": "stoneadmin.dmm",
+    "amountzlevels": "4",
+    "minetype": "lavaland",
+    "transition_config": "default"
+}

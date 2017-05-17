@@ -16,3 +16,8 @@ map jademansion
 	default
 	#voteweight 1.5
 endmap
+
+map stonemansion
+	default
+	#voteweight 0.1
+endmap
