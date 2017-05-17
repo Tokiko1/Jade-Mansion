@@ -198,3 +198,6 @@ logs
 npc_saves
 player_saves
 banlist.bdb
+/jademansion.rsc
+*.dmb
+/*.rsc

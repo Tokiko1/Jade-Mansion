@@ -9,7 +9,7 @@
     var/map_path = "map_files/jademansion"
     var/map_file = "jademansion.dmm"
     var/adminzone = "jadeadmin.dmm"
-    var/amountzlevels = 7
+    var/amountzlevels = 2
     var/minetype = "lavaland"
 
     var/list/transition_config = list(MAIN_STATION = CROSSLINKED,
@@ -68,6 +68,10 @@
     adminzone = json["adminzone"]
     minetype = json["minetype"]
     amountzlevels = json["amountzlevels"]
+    amountzlevels = text2num(amountzlevels)
+    GLOB.JADE_MAX_MAP_Z_LEVEL = amountzlevels
+    var/adminzlevel = amountzlevels + 1
+    GLOB.JADE_ADMIN_Z_LEVEL = adminzlevel
 
     var/list/jtcl = json["transition_config"]
 
@@ -94,8 +98,6 @@
         log_world("Map file ([path]) does not exist!")
         return
 
-    var/global/JADE_MAX_MAP_Z_LEVEL = amountzlevels
-    var/global/JADE_ADMIN_Z_LEVEL = (amountzlevels + 1)
     if(json["transition_config"] != "default")
         if(!islist(json["transition_config"]))
             log_world("transition_config is not a list!")
