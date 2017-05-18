@@ -2,6 +2,7 @@
 	name = "Random Human-level Intelligence"
 	typepath = /datum/round_event/ghost_role/sentience
 	weight = 10
+	max_occurrences = 0
 
 
 /datum/round_event/ghost_role/sentience

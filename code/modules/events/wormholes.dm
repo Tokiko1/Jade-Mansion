@@ -1,8 +1,8 @@
 /datum/round_event_control/wormholes
 	name = "Wormholes"
 	typepath = /datum/round_event/wormholes
-	max_occurrences = 3
-	weight = 2
+	max_occurrences = 0
+	weight = 0
 	min_players = 2
 
 

@@ -63,6 +63,15 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = 0
 
+/obj/item/clothing/under/nurse1
+	name = "nurse suit"
+	desc = "A white nursesuit, suitable for chemists and doctors alike."
+	icon_state = "nurse1"
+	item_color = "nurse1"
+	body_parts_covered = CHEST|GROIN|ARMS
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = 0
+
 /obj/item/clothing/under/suit1
 	name = "charcoal suit"
 	desc = "A black suit uniform."

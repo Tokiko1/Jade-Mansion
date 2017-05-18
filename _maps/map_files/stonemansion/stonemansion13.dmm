@@ -1,151 +1,206 @@
 "aa" = (/turf/closed/outsiderock/rock2,/area/outside)
 "ab" = (/turf/open/water,/area/outside)
-"ac" = (/turf/open/cavefloor,/area/outside)
-"ad" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/water,/area/outside)
-"ae" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/water,/area/outside)
-"af" = (/turf/closed/jadewall,/area/outside)
-"ag" = (/turf/open/floor/plasteel/rockvault,/area/outside)
-"ah" = (/obj/structure/closet/cardboard,/turf/open/floor/plasteel/rockvault,/area/outside)
-"ai" = (/obj/structure/largepotplant/yucapalm,/turf/open/floor/wood,/area/outside)
-"aj" = (/obj/structure/jadelibrary/bookcase,/turf/open/floor/wood,/area/outside)
-"ak" = (/obj/structure/closet/cardboard,/turf/open/floor/wood,/area/outside)
-"al" = (/turf/open/floor/wood,/area/outside)
-"am" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/rockvault,/area/outside)
-"an" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/rockvault,/area/outside)
-"ao" = (/obj/structure/mineral_door/wood/lock,/turf/open/floor/plasteel/rockvault,/area/outside)
-"ap" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/wood,/area/outside)
-"aq" = (/turf/open/carpetred/carpetblue,/area/outside)
-"ar" = (/turf/open/floor/plasteel/white,/area/outside)
-"as" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/carpetred/carpetblue,/area/outside)
-"at" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/floor/wood,/area/outside)
-"au" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/white,/area/outside)
-"av" = (/obj/structure/mineral_door/wood/lock,/turf/open/floor/wood,/area/outside)
-"aw" = (/obj/structure/mineral_door/wood/lock,/turf/open/floor/plasteel/white,/area/outside)
-"ax" = (/obj/machinery/light,/turf/open/floor/plasteel/white,/area/outside)
-"ay" = (/obj/structure/closet/jademansion/swimmingm,/turf/open/floor/plasteel/white,/area/outside)
-"az" = (/obj/structure/closet/jademansion/swimmingw,/turf/open/floor/plasteel/white,/area/outside)
-"aA" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/outside)
-"aB" = (/obj/structure/mineral_door/wood/lock,/turf/open/carpetred,/area/outside)
-"aC" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/wood,/area/outside)
-"aD" = (/turf/open/carpetred,/area/outside)
-"aE" = (/obj/structure/rack,/turf/open/carpetred,/area/outside)
-"aF" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/outside)
-"aG" = (/turf/open/stairs/south,/area/outside)
-"aH" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/outside)
-"aI" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/outside)
-"aJ" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/outside)
-"aK" = (/turf/open/stairs/moving/southup,/area/outside)
-"aL" = (/obj/structure/table/wood,/turf/open/carpetred,/area/outside)
-"aM" = (/obj/structure/chair/wood/normal,/turf/open/carpetred,/area/outside)
-"aN" = (/obj/machinery/light,/turf/open/floor/wood,/area/outside)
-"aO" = (/obj/structure/table/wood,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick/random,/turf/open/carpetred,/area/outside)
-"aP" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/outside)
-"aQ" = (/obj/structure/mirror,/turf/closed/jadewall,/area/outside)
-"aR" = (/obj/structure/dresser,/turf/open/carpetred,/area/outside)
-"aS" = (/obj/structure/filingcabinet/chestdrawer,/turf/open/floor/wood,/area/outside)
-"aT" = (/obj/machinery/photocopier,/turf/open/floor/wood,/area/outside)
-"aU" = (/obj/machinery/light,/obj/structure/closet/jademansion/officesupplies,/turf/open/floor/wood,/area/outside)
-"aV" = (/turf/open/stairs/moving/northup,/area/outside)
-"aW" = (/obj/machinery/light,/turf/open/carpetred,/area/outside)
-"aX" = (/turf/open/stairs/north,/area/outside)
-"aY" = (/turf/closed/outsidepines,/area/outside)
-"aZ" = (/turf/open/outside,/area/outside)
-"ba" = (/turf/closed/outsidepines/bottom,/area/outside)
-"bb" = (/turf/closed/outsidepines/top,/area/outside)
-"bc" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/outside)
-"bd" = (/obj/structure/mineral_door/wood,/turf/open/floor/wood,/area/outside)
-"be" = (/obj/structure/mineral_door/wood/lock/upstairs,/turf/open/floor/wood,/area/outside)
-"bf" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/outside)
-"bg" = (/turf/open/tiles/redtile,/area/outside)
-"bh" = (/obj/structure/piano,/turf/open/tiles/redtile,/area/outside)
-"bi" = (/turf/open/stairs/east,/area/outside)
-"bj" = (/turf/open/stairs/moving/eastup,/area/outside)
-"bk" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/outside)
-"bl" = (/obj/structure/mineral_door/wood/lock/upstairs,/turf/open/carpetred,/area/outside)
-"bm" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/floor/wood,/area/outside)
-"bn" = (/obj/structure/closet/jademansion/librarysupplies,/turf/open/floor/wood,/area/outside)
-"bo" = (/obj/structure/largepotplant/hedgepine,/turf/open/floor/wood,/area/outside)
-"bp" = (/obj/structure/janitorialcart,/turf/open/floor/plasteel/rockvault,/area/outside)
-"bq" = (/obj/structure/closet/jademansion/replacementparts,/turf/open/floor/plasteel/rockvault,/area/outside)
-"br" = (/obj/structure/stacklifter,/turf/open/carpetred/carpetblue,/area/outside)
-"bs" = (/obj/structure/weightlifter,/turf/open/carpetred/carpetblue,/area/outside)
-"bt" = (/obj/structure/table,/turf/open/floor/plasteel/white,/area/outside)
-"bu" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table,/turf/open/floor/plasteel/white,/area/outside)
-"bv" = (/obj/machinery/chem_master/condimaster,/turf/open/floor/plasteel/white,/area/outside)
-"bw" = (/obj/machinery/chem_dispenser,/turf/open/floor/plasteel/white,/area/outside)
-"bx" = (/obj/machinery/biogenerator,/turf/open/floor/plasteel/white,/area/outside)
-"by" = (/obj/structure/mineral_door/wood/lock/downstairs,/turf/open/floor/wood,/area/outside)
-"bz" = (/obj/machinery/processor,/turf/open/floor/plasteel/white,/area/outside)
-"bA" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/turf/open/floor/wood,/area/outside)
-"bB" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks,/turf/open/floor/wood,/area/outside)
-"bC" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks/beer,/turf/open/floor/wood,/area/outside)
-"bD" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/floor/wood,/area/outside)
-"bE" = (/obj/structure/closet/jademansion/cleaningroom,/turf/open/floor/plasteel/rockvault,/area/outside)
-"bF" = (/obj/structure/table,/obj/machinery/microwave,/turf/open/floor/plasteel/white,/area/outside)
-"bG" = (/obj/machinery/chem_heater,/turf/open/floor/plasteel/white,/area/outside)
-"bH" = (/obj/machinery/deepfryer,/turf/open/floor/plasteel/white,/area/outside)
-"bI" = (/obj/structure/chair/stool/bar,/turf/open/floor/wood,/area/outside)
-"bJ" = (/obj/structure/table,/turf/open/floor/plasteel/rockvault,/area/outside)
-"bK" = (/obj/structure/table,/obj/machinery/reagentgrinder,/turf/open/floor/plasteel/white,/area/outside)
-"bL" = (/turf/open/stairs/moving/southdown,/area/outside)
-"bM" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/table,/turf/open/floor/plasteel/white,/area/outside)
-"bN" = (/obj/structure/table,/obj/machinery/juicer,/turf/open/floor/plasteel/white,/area/outside)
-"bO" = (/obj/structure/largepotplant,/turf/open/floor/wood,/area/outside)
-"bP" = (/obj/machinery/smartfridge/food,/turf/open/floor/plasteel/white,/area/outside)
-"bQ" = (/obj/structure/table,/obj/machinery/light,/turf/open/floor/plasteel/white,/area/outside)
-"bR" = (/obj/structure/closet/jademansion/kitchen,/turf/open/floor/plasteel/white,/area/outside)
-"bS" = (/obj/structure/largepotplant/glossleaf,/turf/open/floor/wood,/area/outside)
-"bT" = (/obj/structure/mineral_door/wood/lock/downstairs,/turf/open/floor/plasteel/white,/area/outside)
-"bU" = (/obj/structure/table,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/white,/area/outside)
-"bV" = (/turf/open/stairs/moving/northdown,/area/outside)
-"bW" = (/obj/structure/mineral_door/wood/lock/gardener,/turf/open/floor/plasteel/rockvault,/area/outside)
-"bX" = (/obj/machinery/biogenerator,/turf/open/floor/plasteel/rockvault,/area/outside)
-"bY" = (/obj/effect/landmark/latejoin,/turf/open/carpetred,/area/outside)
-"bZ" = (/obj/effect/landmark/start,/turf/open/carpetred,/area/outside)
-"ca" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/outside,/area/outside)
-"cb" = (/turf/open/hole/outside,/area/outside)
-"cc" = (/obj/structure/largepotplant/minileaf,/turf/open/carpetred,/area/outside)
-"cd" = (/turf/open/outside/roofing/tile,/area/outside)
-"ce" = (/obj/structure/largepotplant/bamboo,/turf/open/floor/wood,/area/outside)
-"cf" = (/obj/structure/largepotplant/glossleaf,/turf/open/carpetred,/area/outside)
-"cg" = (/obj/structure/closet/jademansion/officesupplies,/turf/open/floor/wood,/area/outside)
-"ch" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/outside)
-"ci" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/floor/wood,/area/outside)
-"cj" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/laptop,/turf/open/carpetred,/area/outside)
-"ck" = (/turf/open/stairs/moving/eastdown,/area/outside)
-"cl" = (/obj/structure/fireplace,/turf/open/floor/wood,/area/outside)
-"cm" = (/obj/structure/table,/obj/structure/bedsheetbin,/turf/open/floor/plasteel/white,/area/outside)
-"cn" = (/obj/structure/table/glass,/turf/open/floor/plasteel/white,/area/outside)
-"co" = (/obj/machinery/sleeper/survival_pod,/turf/open/floor/plasteel/white,/area/outside)
-"cp" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/closet/jademansion/othermedsupplies,/turf/open/floor/plasteel/white,/area/outside)
-"cq" = (/obj/structure/chair/wood/normal,/turf/open/floor/wood,/area/outside)
-"cr" = (/obj/structure/largepotplant/cherryblossom,/turf/open/floor/wood,/area/outside)
-"cs" = (/turf/open/hole,/area/outside)
-"ct" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/closet/jademansion/chemstorage,/turf/open/floor/plasteel/white,/area/outside)
-"cu" = (/obj/structure/chair,/turf/open/floor/plasteel/white,/area/outside)
-"cv" = (/obj/structure/mineral_door/wood,/turf/open/floor/plasteel/white,/area/outside)
-"cw" = (/obj/machinery/washing_machine,/turf/open/floor/plasteel/white,/area/outside)
-"cx" = (/obj/machinery/chem_master,/turf/open/floor/plasteel/white,/area/outside)
-"cy" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/floor/plasteel/white,/area/outside)
-"cz" = (/obj/machinery/light,/turf/open/hole,/area/outside)
-"cA" = (/obj/structure/mineral_door/wood/lock/upstairs,/turf/open/floor/plasteel/white,/area/outside)
-"cB" = (/obj/structure/easel,/turf/open/floor/wood,/area/outside)
-"cC" = (/obj/structure/closet/jademansion/artsupplies,/turf/open/floor/wood,/area/outside)
-"cD" = (/obj/structure/dresser,/turf/open/floor/wood,/area/outside)
-"cE" = (/obj/structure/rack,/turf/open/floor/wood,/area/outside)
-"cF" = (/obj/structure/closet/jademansion/medicalclothes,/turf/open/floor/wood,/area/outside)
-"cG" = (/obj/structure/closet/jademansion/maids,/turf/open/floor/wood,/area/outside)
-"cH" = (/obj/structure/closet/jademansion/casualgeneric1,/turf/open/floor/wood,/area/outside)
-"cI" = (/obj/machinery/light,/obj/structure/closet/jademansion/casualsuits2,/turf/open/floor/wood,/area/outside)
-"cJ" = (/obj/structure/closet/jademansion/casualsuits1,/turf/open/floor/wood,/area/outside)
-"cK" = (/obj/structure/closet/jademansion/casualdresses2,/turf/open/floor/wood,/area/outside)
-"cL" = (/obj/structure/closet/jademansion/casualdresses1,/turf/open/floor/wood,/area/outside)
-"cM" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/outside)
-"cN" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/oldcomputer,/turf/open/carpetred,/area/outside)
-"cO" = (/obj/machinery/light,/obj/structure/table/wood,/turf/open/carpetred,/area/outside)
-"cP" = (/obj/structure/closet/jademansion/casualdresses1,/turf/open/carpetred,/area/outside)
-"cQ" = (/obj/structure/bed,/turf/open/carpetred,/area/outside)
-"cR" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/turf/open/carpetred,/area/outside)
+"ac" = (/obj/structure/largepotplant/bellpine,/turf/open/cavefloor,/area/outside)
+"ad" = (/turf/open/cavefloor,/area/outside)
+"ae" = (/obj/structure/largepotplant/bamboo,/turf/open/cavefloor,/area/outside)
+"af" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/water,/area/outside)
+"ag" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/water,/area/outside)
+"ah" = (/turf/closed/jadewall,/area/outside)
+"ai" = (/turf/open/floor/plasteel/rockvault,/area/outside)
+"aj" = (/obj/structure/closet/cardboard,/turf/open/floor/plasteel/rockvault,/area/outside)
+"ak" = (/obj/structure/largepotplant/yucapalm,/turf/open/floor/wood,/area/outside)
+"al" = (/obj/structure/jadelibrary/bookcase,/turf/open/floor/wood,/area/outside)
+"am" = (/obj/structure/closet/cardboard,/turf/open/floor/wood,/area/outside)
+"an" = (/turf/open/floor/wood,/area/outside)
+"ao" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/rockvault,/area/outside)
+"ap" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/rockvault,/area/outside)
+"aq" = (/obj/structure/mineral_door/wood/lock,/turf/open/floor/plasteel/rockvault,/area/outside)
+"ar" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/wood,/area/outside)
+"as" = (/turf/open/carpetred/carpetblue,/area/outside)
+"at" = (/turf/open/floor/plasteel/white,/area/outside)
+"au" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/carpetred/carpetblue,/area/outside)
+"av" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/floor/wood,/area/outside)
+"aw" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/white,/area/outside)
+"ax" = (/obj/structure/rack,/turf/open/floor/plasteel/white,/area/outside)
+"ay" = (/obj/structure/mineral_door/wood/lock,/turf/open/floor/wood,/area/outside)
+"az" = (/obj/structure/largepotplant/yucapalm,/turf/open/cavefloor,/area/outside)
+"aA" = (/obj/structure/mineral_door/wood/lock,/turf/open/floor/plasteel/white,/area/outside)
+"aB" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/toilet,/turf/open/floor/plasteel/white,/area/outside)
+"aC" = (/obj/machinery/light,/turf/open/floor/plasteel/white,/area/outside)
+"aD" = (/obj/structure/sink{dir = 8},/turf/open/floor/plasteel/white,/area/outside)
+"aE" = (/obj/structure/closet/jademansion/swimmingm,/turf/open/floor/plasteel/white,/area/outside)
+"aF" = (/obj/structure/closet/jademansion/swimmingw,/turf/open/floor/plasteel/white,/area/outside)
+"aG" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/outside)
+"aH" = (/obj/structure/mineral_door/wood/lock,/turf/open/carpetred,/area/outside)
+"aI" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/wood,/area/outside)
+"aJ" = (/obj/machinery/vending/autodrobe/jade,/turf/open/carpetred,/area/outside)
+"aK" = (/turf/open/carpetred,/area/outside)
+"aL" = (/obj/structure/rack,/turf/open/carpetred,/area/outside)
+"aM" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/outside)
+"aN" = (/obj/machinery/shower{dir = 4},/turf/open/floor/plasteel/white,/area/outside)
+"aO" = (/obj/machinery/shower,/turf/open/floor/plasteel/white,/area/outside)
+"aP" = (/turf/open/stairs/south,/area/outside)
+"aQ" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/outside)
+"aR" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/outside)
+"aS" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/outside)
+"aT" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/toilet{dir = 1},/turf/open/floor/plasteel/white,/area/outside)
+"aU" = (/obj/machinery/shower{dir = 1},/turf/open/floor/plasteel/white,/area/outside)
+"aV" = (/turf/open/stairs/moving/southup,/area/outside)
+"aW" = (/obj/structure/table/wood,/turf/open/carpetred,/area/outside)
+"aX" = (/obj/structure/chair/wood/normal,/turf/open/carpetred,/area/outside)
+"aY" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/carpetred,/area/outside)
+"aZ" = (/obj/machinery/light,/turf/open/floor/wood,/area/outside)
+"ba" = (/obj/structure/table/wood,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick,/turf/open/carpetred,/area/outside)
+"bb" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/outside)
+"bc" = (/obj/machinery/light,/obj/structure/table/wood,/turf/open/floor/wood,/area/outside)
+"bd" = (/obj/structure/mirror,/turf/closed/jadewall,/area/outside)
+"be" = (/obj/structure/dresser,/turf/open/carpetred,/area/outside)
+"bf" = (/obj/structure/filingcabinet/chestdrawer,/turf/open/floor/wood,/area/outside)
+"bg" = (/obj/machinery/photocopier,/turf/open/floor/wood,/area/outside)
+"bh" = (/obj/machinery/light,/obj/structure/closet/jademansion/officesupplies,/turf/open/floor/wood,/area/outside)
+"bi" = (/turf/open/stairs/moving/northup,/area/outside)
+"bj" = (/obj/machinery/light,/turf/open/carpetred,/area/outside)
+"bk" = (/turf/open/stairs/north,/area/outside)
+"bl" = (/obj/structure/mineral_door/wood/lock/downstairs,/turf/open/floor/wood,/area/outside)
+"bm" = (/obj/structure/ladder,/turf/open/floor/plasteel/rockvault,/area/outside)
+"bn" = (/turf/closed/outsidepines,/area/outside)
+"bo" = (/turf/open/outside,/area/outside)
+"bp" = (/turf/closed/outsidepines/bottom,/area/outside)
+"bq" = (/turf/closed/outsidepines/top,/area/outside)
+"br" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/oldcomputer,/turf/open/carpetred,/area/outside)
+"bs" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/outside)
+"bt" = (/obj/structure/mineral_door/wood,/turf/open/floor/wood,/area/outside)
+"bu" = (/obj/structure/mineral_door/wood/lock/upstairs,/turf/open/floor/wood,/area/outside)
+"bv" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/outside)
+"bw" = (/obj/structure/bed,/turf/open/carpetred,/area/outside)
+"bx" = (/turf/open/tiles/redtile,/area/outside)
+"by" = (/obj/structure/piano,/turf/open/tiles/redtile,/area/outside)
+"bz" = (/turf/open/stairs/east,/area/outside)
+"bA" = (/turf/open/stairs/moving/eastup,/area/outside)
+"bB" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/outside)
+"bC" = (/obj/structure/closet/jademansion/guestroomgeneric,/turf/open/floor/wood,/area/outside)
+"bD" = (/obj/structure/closet/jademansion/casualsuits1,/turf/open/carpetred,/area/outside)
+"bE" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/laptop,/turf/open/carpetred,/area/outside)
+"bF" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/carpetred,/area/outside)
+"bG" = (/obj/structure/mineral_door/wood/lock/upstairs,/turf/open/carpetred,/area/outside)
+"bH" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/carpetred,/area/outside)
+"bI" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/outside)
+"bJ" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/floor/wood,/area/outside)
+"bK" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/floor/wood,/area/outside)
+"bL" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/floor/wood,/area/outside)
+"bM" = (/obj/structure/closet/jademansion/librarysupplies,/turf/open/floor/wood,/area/outside)
+"bN" = (/obj/structure/largepotplant/hedgepine,/turf/open/floor/wood,/area/outside)
+"bO" = (/obj/structure/janitorialcart,/turf/open/floor/plasteel/rockvault,/area/outside)
+"bP" = (/obj/structure/closet/jademansion/replacementparts,/turf/open/floor/plasteel/rockvault,/area/outside)
+"bQ" = (/obj/structure/stacklifter,/turf/open/carpetred/carpetblue,/area/outside)
+"bR" = (/obj/structure/weightlifter,/turf/open/carpetred/carpetblue,/area/outside)
+"bS" = (/obj/structure/table,/turf/open/floor/plasteel/white,/area/outside)
+"bT" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table,/turf/open/floor/plasteel/white,/area/outside)
+"bU" = (/obj/machinery/chem_master/condimaster,/turf/open/floor/plasteel/white,/area/outside)
+"bV" = (/obj/machinery/chem_dispenser,/turf/open/floor/plasteel/white,/area/outside)
+"bW" = (/obj/machinery/biogenerator,/turf/open/floor/plasteel/white,/area/outside)
+"bX" = (/obj/machinery/processor,/turf/open/floor/plasteel/white,/area/outside)
+"bY" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/turf/open/floor/wood,/area/outside)
+"bZ" = (/obj/machinery/vending/boozeomat/jade,/turf/open/floor/wood,/area/outside)
+"ca" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks,/turf/open/floor/wood,/area/outside)
+"cb" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks/beer,/turf/open/floor/wood,/area/outside)
+"cc" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/floor/wood,/area/outside)
+"cd" = (/obj/structure/closet/jademansion/cleaningroom,/turf/open/floor/plasteel/rockvault,/area/outside)
+"ce" = (/obj/structure/table,/obj/machinery/microwave,/turf/open/floor/plasteel/white,/area/outside)
+"cf" = (/obj/machinery/chem_heater,/turf/open/floor/plasteel/white,/area/outside)
+"cg" = (/obj/machinery/deepfryer,/turf/open/floor/plasteel/white,/area/outside)
+"ch" = (/obj/structure/chair/stool/bar,/turf/open/floor/wood,/area/outside)
+"ci" = (/obj/structure/table,/turf/open/floor/plasteel/rockvault,/area/outside)
+"cj" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/peppermill,/turf/open/floor/plasteel/white,/area/outside)
+"ck" = (/obj/structure/table,/obj/machinery/reagentgrinder,/turf/open/floor/plasteel/white,/area/outside)
+"cl" = (/obj/structure/table/wood,/obj/item/weapon/phone,/turf/open/floor/wood,/area/outside)
+"cm" = (/turf/open/stairs/moving/southdown,/area/outside)
+"cn" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/table,/turf/open/floor/plasteel/white,/area/outside)
+"co" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/saltshaker,/turf/open/floor/plasteel/white,/area/outside)
+"cp" = (/obj/structure/table,/obj/machinery/juicer,/turf/open/floor/plasteel/white,/area/outside)
+"cq" = (/obj/structure/table/wood,/obj/item/weapon/reagent_containers/food/drinks/drinkingglass/shotglass,/turf/open/floor/wood,/area/outside)
+"cr" = (/obj/structure/largepotplant,/turf/open/floor/wood,/area/outside)
+"cs" = (/obj/structure/closet/jademansion/kitchensupplies,/turf/open/floor/plasteel/white,/area/outside)
+"ct" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/soysauce,/turf/open/floor/plasteel/white,/area/outside)
+"cu" = (/obj/structure/table/wood,/obj/item/weapon/reagent_containers/glass/rag,/turf/open/floor/wood,/area/outside)
+"cv" = (/obj/machinery/vending/cigarette,/turf/open/floor/wood,/area/outside)
+"cw" = (/obj/structure/table,/obj/machinery/light,/turf/open/floor/plasteel/white,/area/outside)
+"cx" = (/obj/structure/closet/jademansion/kitchen,/turf/open/floor/plasteel/white,/area/outside)
+"cy" = (/obj/structure/sink{dir = 4},/turf/open/floor/plasteel/white,/area/outside)
+"cz" = (/obj/structure/reagent_dispensers/beerkeg,/turf/open/floor/wood,/area/outside)
+"cA" = (/obj/structure/largepotplant/glossleaf,/turf/open/floor/wood,/area/outside)
+"cB" = (/obj/machinery/smartfridge/food,/turf/open/floor/plasteel/white,/area/outside)
+"cC" = (/obj/structure/mineral_door/wood/lock/downstairs,/turf/open/floor/plasteel/white,/area/outside)
+"cD" = (/obj/structure/table,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/white,/area/outside)
+"cE" = (/obj/structure/reagent_dispensers/water_cooler,/turf/open/floor/wood,/area/outside)
+"cF" = (/obj/structure/closet/jademansion/bar,/turf/open/floor/wood,/area/outside)
+"cG" = (/turf/open/stairs/moving/northdown,/area/outside)
+"cH" = (/obj/structure/table/wood,/obj/item/weapon/storage/box/cups,/turf/open/floor/wood,/area/outside)
+"cI" = (/obj/structure/mineral_door/wood/lock/gardener,/turf/open/floor/plasteel/rockvault,/area/outside)
+"cJ" = (/obj/machinery/biogenerator,/obj/item/weapon/reagent_containers/glass/bucket,/obj/item/weapon/reagent_containers/glass/bucket,/turf/open/floor/plasteel/rockvault,/area/outside)
+"cK" = (/obj/machinery/plantgenes,/turf/open/floor/plasteel/rockvault,/area/outside)
+"cL" = (/obj/machinery/vending/hydroseeds/jade,/turf/open/floor/plasteel/rockvault,/area/outside)
+"cM" = (/obj/machinery/vending/hydronutrients/jade,/turf/open/floor/plasteel/rockvault,/area/outside)
+"cN" = (/obj/structure/mineral_door/wood/lock/downstairs,/turf/open/floor/plasteel/rockvault,/area/outside)
+"cO" = (/obj/effect/landmark/latejoin,/turf/open/carpetred,/area/outside)
+"cP" = (/obj/effect/landmark/start,/turf/open/carpetred,/area/outside)
+"cQ" = (/obj/machinery/seed_extractor,/turf/open/floor/plasteel/rockvault,/area/outside)
+"cR" = (/obj/machinery/smartfridge/drying_rack,/turf/open/floor/plasteel/rockvault,/area/outside)
+"cS" = (/obj/structure/closet/jademansion/garden,/turf/open/floor/plasteel/rockvault,/area/outside)
+"cT" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/outside,/area/outside)
+"cU" = (/obj/machinery/hydroponics/soil,/turf/open/outside,/area/outside)
+"cV" = (/turf/open/hole/outside,/area/outside)
+"cW" = (/obj/structure/largepotplant/minileaf,/turf/open/carpetred,/area/outside)
+"cX" = (/turf/open/outside/roofing/tile,/area/outside)
+"cY" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/stairs/north,/area/outside)
+"cZ" = (/obj/structure/largepotplant/scarletberry,/turf/open/carpetred,/area/outside)
+"da" = (/obj/structure/largepotplant/bamboo,/turf/open/floor/wood,/area/outside)
+"db" = (/obj/structure/largepotplant/glossleaf,/turf/open/carpetred,/area/outside)
+"dc" = (/obj/structure/closet/jademansion/officesupplies,/turf/open/floor/wood,/area/outside)
+"dd" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/floor/wood,/area/outside)
+"de" = (/obj/structure/largepotplant/glossleaf,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/wood,/area/outside)
+"df" = (/turf/open/stairs/moving/eastdown,/area/outside)
+"dg" = (/obj/structure/closet/jademansion/guard,/turf/open/floor/wood,/area/outside)
+"dh" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/floor/wood,/area/outside)
+"di" = (/obj/structure/table,/obj/structure/bedsheetbin,/turf/open/floor/plasteel/white,/area/outside)
+"dj" = (/obj/structure/table/glass,/turf/open/floor/plasteel/white,/area/outside)
+"dk" = (/obj/machinery/sleeper/survival_pod,/turf/open/floor/plasteel/white,/area/outside)
+"dl" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/closet/jademansion/othermedsupplies,/turf/open/floor/plasteel/white,/area/outside)
+"dm" = (/obj/structure/chair/wood/normal,/turf/open/floor/wood,/area/outside)
+"dn" = (/obj/structure/largepotplant/cherryblossom,/turf/open/floor/wood,/area/outside)
+"do" = (/obj/structure/chair,/turf/open/floor/wood,/area/outside)
+"dp" = (/turf/open/hole,/area/outside)
+"dq" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/closet/jademansion/chemstorage,/turf/open/floor/plasteel/white,/area/outside)
+"dr" = (/obj/structure/chair,/turf/open/floor/plasteel/white,/area/outside)
+"ds" = (/obj/structure/mineral_door/wood,/turf/open/floor/plasteel/white,/area/outside)
+"dt" = (/obj/structure/table,/obj/structure/mansiondecoration/laptop,/turf/open/floor/wood,/area/outside)
+"du" = (/obj/structure/table,/obj/machinery/light,/turf/open/floor/wood,/area/outside)
+"dv" = (/obj/machinery/washing_machine,/turf/open/floor/plasteel/white,/area/outside)
+"dw" = (/obj/machinery/chem_master,/turf/open/floor/plasteel/white,/area/outside)
+"dx" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/floor/plasteel/white,/area/outside)
+"dy" = (/obj/machinery/light,/turf/open/hole,/area/outside)
+"dz" = (/obj/structure/mineral_door/wood/lock/upstairs,/turf/open/floor/plasteel/white,/area/outside)
+"dA" = (/obj/structure/easel,/turf/open/floor/wood,/area/outside)
+"dB" = (/obj/structure/closet/jademansion/artsupplies,/turf/open/floor/wood,/area/outside)
+"dC" = (/obj/structure/dresser,/turf/open/floor/wood,/area/outside)
+"dD" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick,/turf/open/floor/wood,/area/outside)
+"dE" = (/obj/structure/rack,/turf/open/floor/wood,/area/outside)
+"dF" = (/obj/structure/closet/jademansion/medicalclothes,/turf/open/floor/wood,/area/outside)
+"dG" = (/obj/structure/closet/jademansion/maids,/turf/open/floor/wood,/area/outside)
+"dH" = (/obj/structure/closet/jademansion/casualgeneric1,/turf/open/floor/wood,/area/outside)
+"dI" = (/obj/machinery/light,/obj/structure/closet/jademansion/casualsuits2,/turf/open/floor/wood,/area/outside)
+"dJ" = (/obj/structure/closet/jademansion/casualsuits1,/turf/open/floor/wood,/area/outside)
+"dK" = (/obj/structure/closet/jademansion/casualdresses2,/turf/open/floor/wood,/area/outside)
+"dL" = (/obj/structure/closet/jademansion/casualdresses1,/turf/open/floor/wood,/area/outside)
+"dM" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/outside)
+"dN" = (/obj/machinery/light,/obj/structure/table/wood,/turf/open/carpetred,/area/outside)
+"dO" = (/obj/structure/closet/jademansion/librarysupplies,/turf/open/carpetred,/area/outside)
+"dP" = (/obj/structure/closet/jademansion/casualdresses1,/turf/open/carpetred,/area/outside)
+"dQ" = (/obj/structure/closet/jademansion/officesupplies,/turf/open/carpetred,/area/outside)
+"dR" = (/obj/structure/table/wood,/obj/item/device/flashlight/lamp,/turf/open/carpetred,/area/outside)
+"dS" = (/obj/structure/closet/jademansion/casualdresses2,/turf/open/carpetred,/area/outside)
+"dT" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/turf/open/carpetred,/area/outside)
+"dU" = (/obj/item/device/flashlight/lamp,/obj/structure/table,/turf/open/floor/plasteel/rockvault,/area/outside)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -165,35 +220,35 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababacacacacababababaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadababacacacababababaeaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafafafafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaababababacacabababababaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaafafafafafafafafafaaaaafagahagagagagagafaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaafaiajajakalajajafaaaaafamagagagagaganafaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaafalalalalalalakafaaaaafagagagaaaaaoaaaaaaaaaaaaaaaaaaafafafafafafabababababababababababaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaafapalajajaialajafaaaaafahagagaaaqaqaqalalalalalalalaaafararararafabababababababababababaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaafakalakalalalajafafafafagagagaaasaqaqalatatatatatalaaafauarararafadabababababababababaeaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaafakalajalakalalavalalavagagagaaaqaqaqalatatatatatalaaafararararafacacacacacacacacacacacaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaafaialajakalalaiafapalavagagagaaaqaqaqalatatatatatalaaafawafafafafarararararararararararaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaafafafafafafavafafalalafagagagaaaqaqaqalatatatatatalaaafararararararararararararararararaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaafalalalalalalafamagagaaasaqaqalatatatatatalaaafauarararafaraxarararararararaxaraaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaafapalalalalalafagagagaaaqaqaqalalalalalalalaaafayazararafaaaaaaaAaAaAaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaafalalafafaBaBafafaBafaaaaaaaaaaaaavavaaaaaaaaafafafafawafaaaaaaapalalaCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaafalalafaDaDaDaEaFaDafaaaaafafafafalalaialalalalalalalalalalalalalalalalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaafaGaGafaHaDaDaEaDaDafaaaaafaFaIaJalalalalalalalaDaDaDaDaDaDaDaDaDaDalalalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaafaKaKafaDaDaDaDaDaDafafafafaHaIaJalalalalalalalaDaDaDaDaDaDaDaDaDaDalalalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaafafafafaHaLaMaLaDaDafaDaLaLaDaIaJalalalalalalalalalaNalalalalalaDaDalalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaafaFaLaOaLaDaDaBaDaPaDaDaIaJalalalaNalalalaaaaaaaaaaaaaaalaDaDalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaafafafafafaBafafalalalalaJafalalaaaaaaaaaaaaaaaaaaaaaaaaapaDaDalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaQaDaRafaSaTaUalalavalalaaaaaaaaaaaaaaaaaaaaaaaaalaDaDalaaaaaVaVaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaDaWafafafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaalaDaDalaaaaaXaXaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalaDaDalalalaDaDalaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalaDaDaDaDaDaDaDalaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapaDaDaDaDaDaDaDaCaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalalalalalalalalalaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababacadaeadababababaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafababadaeadababababagaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahahahahahahahahahaaaaaaaaaaaaaaaaaaaaaaaaaaababababadadabababababaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaahahahahahahahahahaaaaahaiajaiaiaiaiaiahaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaahakalalamanalalahaaaaahaoaiaiaiaiaiapahaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaahananananananamahaaaaahaiaiaiaaaaaqaaaaaaaaaaaaaaaaaaahahahahahahabababababababababababaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaharanalalakanalahaaaaahajaiaiaaasasasakanananananakaaahatatatatahabababababababababababaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaahamanamanananalahahahahaiaiaiaaauasasanavavavavavanaaahawaxaxatahafabababababababababagaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaahamanalanamananayananayaiaiaiaaasasasanavavavavavanaaahatatatatahazadadadadadadadadadazaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaahakanalamananakaharanayaiaiaiaaasasasanavavavavavanaaahaAahahahahatatatatatatatatatatataaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaahahahahahahahayahahananahaiaiaiaaasasasanavavavavavanaaahatatatataAatatatatatatatatatatataaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaahaBahawataAananananananahaoaiaiaaauasasanavavavavavanaaahawatatatahataCatatatatatatataCataaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaahaAahaDataharanananananahaiaiaiaaasasasakanananananakaaahaEaFatatahaaaaaaaGaGaGaGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaahawatatatahananahahaHaHahahaHahaaaaaaaaaaaaayayaaaaaaaaahahahahaAahaaaaaaarakakaIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaahatahaAahahananahaJaKaKaLaMaKahaaaaahahahahananakanananakananananananananananananaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaahaAahaNaOahaPaPahaQaKaKaLaKaKahaaaaahaMaRaSanananananananaKaKaKaKaKaKaKaKaKaKananakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaahaTahawaUahaVaVahaKaKaKaKaKaKahahahahaQaRaSanananananananaKaKaKaKaKaKaKaKaKaKanakakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaahahahahahahahahahaQaWaXaWaKaKahaKaYaWaKaRaSanananananananananaZanananananaKaKanakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaahaMaWbaaWaKaKaHaKbbaKaKaRaSananaSbcananakaaaaaaaaaaaaaaanaKaKanaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaahahahahahaHahahananananaSahananaaaaaaaaaaaaaaaaaaaaaaaaaraKaKanaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabdaKbeahbfbgbhananayananaaaaaaaaaaaaaaaaaaaaaaaaanaKaKanaaaabibiaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahaKbjahahahahahahahananaaaaaaaaaaaaaaaaaaaaaaaaanaKaKanaaaabkbkaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahahahahaaaaaaaaaaahblblahaaaaaaaaaaaaaaaaaaaaaaanaKaKananakaKaKakaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahaiaiahahahahahahahahahaaaaaaanaKaKaKaKaKaKaKanaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahaiaiaiaiaiaiaiaiaiaiahaaaaaaaraKaKaKaKaKaKaKaIaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahaoaiaiaiaiaiaiaiaiapahaaaaaaanananananananananaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahahahahahahaiaiaiaiaiahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahaibmaiaiaiahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahahahahahahahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -211,190 +266,190 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 "}
 
 (1,1,2) = {"
-aYaYaYaYaYaYaYaYaYaYaYaYaZaZaZaZaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYaYaZaZaZaZbaaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYbaaZaZaZaZaZaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaYbaaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYbabaaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYbbaZaZaZaZaZbaaZbaaYbaaYbabaaYaYaYbaaYaYaYaYaYaYaYaYaYaYaYaYaZaZbaaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZbaaZbaaZaZbababaaZbaaYaYaYaYaYaYaYaYaYbabaaZaZaZbaaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaYbabaaYaYaYbababaaZaZaZaZaZaZbabaaYbabaaYaYaYbababaaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZbaaZaZbababaaZaZaZaZaZaZaZaZaZaZaZbaaZaZbababaaZaZaZaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYbaaYaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZbbaYaYaYaY
-aYaYaYaYaYaYaYaYaYbaaZaYaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaZaZbaaZaZaZaZaZaZaZaZaZaZafafafafafafafaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZaZaZaZaZaZafafafafafafafaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZbaaYaYaYaY
-aYaYaYaYaYaYaYaYbaaZaZaZaZaZaZaZaZaZaZaZaZaZafafafafafafafaZaZaZaZaZaZaZaZaZaZafaAaAafafafafafafafaZaZaZaZaZaZaZaYaYaYaY
-aYaYaYaYaYaYbabaaZaZaZaZaZaZaZaZaZaZaZaZaZaZafafafafafafafaZaZaZaZaZaZaZaZaZaZaAaDaDafaialaDaDaDafaZaZaZaZaZaZaZaYaYaYaY
-aYaYaYaYbabaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZafaVaVafafafafaZaZaZaZaZaZaZaZaZaZaAaDbcafalalaDaDaDaAaZaZaZaZaZaZaZaYaYaYaY
-aYaYaYbaaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZafaAaAafaXaXafaiaiafafaAaAafafbdafafaZaZaAaDaDbealalaDaDaDaAaZaZaZaZaZaZaZaYaYaYaY
-aYbabaaZaZaZaZaZaZaZafafafaAaAaAaAafafafaDaDaDaDaDaDaDaDaDbfaDaDaDafalaiafaZaZafaDaDafalalaDaFaDafaZaZaZaZaZaZaZaYaYaYaY
-baaZaZaZaZaZaZaZaZaZafaialalalalalalaiafaDaDaDaDaDaDaDaDaDaDaDaDaDbdalaNafafafafaDaDafafafafafafafaZaZaZaZaZaZaZbaaYaYaY
-aZaZaZaZaZaZaZaZaZaZafapbgbgbhbgbgbgalafaHaDafafaAaAaAaAafafafaDaDafafafafaDaDaDaDaDbealalaFaDaFafaZaZaZaZaZaZaZaZaYaYaY
-aZaZaZaZaZaZaZaZaZaZaAalbgbgbgbgbgbgalafaDaDafaFaDaDaDaDbibjafaDaDaDaDaDaDaDaDaDaDbcafalalaDaDaDaAaZaZaZaZaZaZaZaZbababa
-aZaZaZbbaZaZaZaZaZaZaAalbgbgbgbgbgbgalafaDaDafbkaDbkaDaDbibjafaDaDaWaDaDaDaDaDafaGaGafalalaDaDaDaAaZaZaZaZaZaZaZaZaZaZaZ
-bbbbbbaYaZaZaZaZaZaZafalbgbgbgbgbgbgalafaDaDaAaDaDbkaDbcafafafafafafafafafaDbcafaKaKafalaiaDaDaDafaZaZaZaZaZaZaZaZaZaZaZ
-aYaYaYbaaZaZaZaZaZaZafalalalalalalalalafaDaDblaDaDaDaDaDbfaDaFafalaJaJajafaDaDafafafafafafafafafafafafafaZaZaZaZaZaZaZaZ
-aYaYaYbbaZaZaZaZaZaZaAalbmbmbmbmbmbmalafaDaDblaDaDbkbkaDbkaDaDbealbmbmajafaDaDaDbfaDaDaDaDaDaDaDaDbfaDafaZaZaZaZaZaZaZaZ
-aYaYaYaYaZaZaZaZaZaZaAalbmbmbmbmbmbmalalaDaDaAaDaDaDaDaDaDaDaDbealalalbnafaDaDaDaDaDaDaDaDaDaDaDaDaDaDaAaZaZaZaZaZaZaZbb
-aYaYaYaYbbaZaZaZaZaZafapbmbmbmbmbmbmalalaDaDafaFaWaFbkaDbkbkaDafaiaNalajafaDaDboboboaAbdaAaAaAaAaAaDaDaAaZaZaZaZbbbbbbaY
-aYaYaYaYaYaZaZaZaZaZafalalalalalalalalafaDaDafafafafafafafafafafafafbeafafaDaDafafafafaqaqaqaqaqaAaDaDaAaZaZaZaZaYaYaYaY
-aYaYaYaYaYaZaZaZaZaZafafafafafafafafafafaHaDaoagagagagagagagagagagagagagafaDaDafbpbqafaqbraqbsaqaAaDaDafaZaZaZaZaYaYaYaY
-aYaYaYaYaYaZaZaZaZaZaZaAbtbubvbwbxbubtafaDaDafafafafafafafafbyafafafagagafaDbcafaganafaqaqaqaqaqaAaDbcafaZaZaZaZaYaYaYaY
-aYaYaYaYaYaZaZaZaZaZaZaAbtarararararbzafaDaDalbAalalbBbCaialalbDalafagagafaDaDafagbEafaqbraqbsaqaAaDaDafaZaZaZaZaYaYaYaY
-aYaYaYaYaYaZaZaZaZaZaZafbFarbGbtbtarbHafaDaDbIaJalalaDaDaDaDaDaDalafagafafaDaDaoagbJafaqaqaqaqaqaAaDaDafaZaZaZaZaYaYaYaY
-aYaYaYaYbaaZaZaZafafafafbFararbtbtarbKaAaDaDbIaJalalaDaDaDaDaDaDalafagafaiaDaDafagbJafaAaAaAaAbdaAaDaDaAaZaZaZaZbaaYaYaY
-aYaYaYaYaZaZaZaZafbLbLafbMararbtbtarbNaAaDaDbIaJalalalalalalalalalafagaoaiaDaDafafafafbOalalalalbOaDaDaAaZaZaZaZaZaYaYaY
-aYaYaYaYaZaZaZaZafaGaGafbPararbtbtararbtaDaDbIaJalalaJaJalalalalaiafafafafaDaDaDaDaDaDaDaDaDaDaDaDaDaDaAaZaZaZaZaZaYaYaY
-aYaYaYaYaZaZaZaZaAalalbyarararararararbQaDaDbIaJaJaJafafbyafafafafafaVaVafaDaDaDaDaWaDaDaDaDaDaDaDaWaDafaZaZaZaZbbaYaYaY
-baaYaYbaaZaZaZaZaAalalafbRararararararafaDaDalalalalafalalafbSbSafafaXaXafaDaDafafafafafafaXaXafafafafafaZaZaZaZaYaYaYaY
-aZbabaaZaZaZaZaZafapalafafaAaAbTbtbUafafaHaDalalalalafalalafaDaDaDaDaDaDaDaDaDafaZaZaZaZafbVbVafaZaZaZaZaZaZaZaZaYaYaYaY
-aZaZaZaZaZaZaZaZafalalalbfaDaDaDaDaDaDbfaDaDaialalalafafafafaDaDaDaWaDaDaDaDaDafaZaZaZaZafafafafaZaZaZaZaZaZaZbbaYaYaYaY
-aZaZaZaZaZaZaZaZavalalalaDaDaDaDaDaDaDaDaDaDaDaDaDaDaDaDbfaDaDaDafafaAaAaAafafafaZaZaZaZaZaZaZaZaZaZaZaZaZaZbbaYaYaYaYaY
-aZaZaZaZaZaZaZaZafafafafaAaAaAbWaAaAaAafaDaDaDaDaDaDaDaDaDaDaDaDafaZaZaZaZaZaZaZaZaZbbbbaZaZaZaZaZaZaZaZaZaZaYaYaYaYaYaY
-aZaZaZaZaZaZaZaZaZaZaZaAbXagagagagagagaAafafaAaAafafaBaBafafaAaAafaZaZaZaZbbbbaZaZbbaYaYbbaZaZaZaZaZaZaZaZbbaYaYaYaYaYaY
-aZaZaZaZaZaZaZaZaZaZaZaAagagagagagagagaAaZaZaZaZafbfbYbZbfafaZaZaZaZaZaZbbaYaYbbbbaYaYaYaYaZaZaZaZaZaZaZaZaYaYaYaYaYaYaY
-aZaZaZaZaZaZaZaZaZaZaZaAagagagagagagagaAaZaZaZaZafaDbYbZaDafaZaZaZaZaZaZaYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZaYaYaYaYaYaYaY
-bbaZbbbbaZaZaZaZaZaZaZafamagagagagaganafaZaZaZaZafaDaDaDaDafaZaZaZbbbbbbaYaYaYaYaYaYaYaYaYbbaZaZaZaZaZaZaZaYaYaYaYaYaYaY
-aYbbaYaYbbbbaZaZaZaZaZafaAaAagagagaAaAafaZaZaZaZafafaBaBafafaZaZaZaYaYaYaYaYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaZbaaYaYaYaYaYaY
-aYaYaYaYaYaYbbbbbbaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZcaaZaZaZaZcaaZbbbbaYaYaYaYaYaYaYaYaYaYaYaYaYbbaZaZaZaZaZaZaZbaaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZbbaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYbbaZaZaZaZaZaZaZbaaYaYaYaY
-aYaYaYaYaYaYaYaYaYbbbbaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZbaaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZaZaZbbaZbbaZaZaZaZaZaZaZaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZbaaYbaba
-aYaYaYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZaZbbaYbbaYbbaZaZaZaZaZaZbaaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZaZbaaZaZ
-aYaYaYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZaZaYaYaYaYaYaZaZaZaZaZaZaZbaaYaYaYaYaYaYaYaYaYaYaYaYaYbabaaZaZaZaZaZaZaZaZaZaZaZaZ
-aYaYaYaYaYaYaYaYaYaYbaaZaZaZaZaZaZaZaZaZaYaYaYaYaYaZaZaZaZaZaZaZaZbaaYaYaYaYaYaYaYaYaYbababaaZaZaZaZaZaZaZaZaZaZaZaZaZaZ
-aYaYaYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZaZaZaYaYaYaYaYaZaZaZaZaZaZaZaZaZbabaaYbabaaYbababaaZaZaZaZaZaZaZaZaZaZaZaZaZbbaZaZbb
-aYaYaYaYaYaYaYaYaYbaaZaZaZaZaZaZaZaZaZaZaYaYaYaYaYaZaZaZaZaZaZaZaZaZaZaZbaaZaZbaaZaZaZaZaZaZaZaZaZaZaZaZaZbbbbbbaYbbbbaY
-aYaYaYaYaYaYaYaYbaaZaZaZaZaZaZaZaZaZaZaZaYaYaYaYaYbbaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZbbbbbbaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZaZaZaZaZaYaYaYaYaYaYaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZbbbbbbbbbbaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZaZaZaZaZaYaYaYaYaYaYaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZaZbbaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYbaaZaZaZaZaZaZaZaZaZaZaZbbaYaYaYaYaYaYbbaZaZaZaZaZaZaZaZaZaZaZaZbbbbaZbbbbaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaZaZaZaZaZaZaZaZaZaZaZaZaYaYaYaYaYaYaYaYaZaZaZaZaZaZaZaZaZaZaZaZaYaYbbaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
+bnbnbnbnbnbnbnbnbnbnbnbnbobobobobnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbn
+bnbnbnbnbnbnbnbnbnbnbnbnbobobobobpbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbn
+bnbnbnbnbnbnbnbnbnbnbnbpbobobobobobnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbn
+bnbnbnbnbnbnbnbnbnbnbnbobobobobobobnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbn
+bnbnbnbnbnbnbnbnbnbnbnbobobobobobobnbpbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbpbpbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbn
+bnbnbnbnbnbnbnbnbnbnbnbqbobobobobobpbobpbnbpbnbpbpbnbnbnbpbnbnbnbnbnbnbnbnbnbnbnbnbobobpbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbn
+bnbnbnbnbnbnbnbnbnbnbnbnbobobobobobobobobpbobpbobobpbpbpbobpbnbnbnbnbnbnbnbnbnbpbpbobobobpbnbnbnbnbnbnbnbnbnbnbnbnbnbnbn
+bnbnbnbnbnbnbnbnbnbnbnbnbobobobobobobobobobobobobobobobobobobnbpbpbnbnbnbpbpbpbobobobobobobpbpbnbpbpbnbnbnbpbpbpbnbnbnbn
+bnbnbnbnbnbnbnbnbnbnbnbnbobobobobobobobobobobobobobobobobobobpbobobpbpbpbobobobobobobobobobobobpbobobpbpbpbobobobnbnbnbn
+bnbnbnbnbnbnbnbnbnbnbpbnbobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobqbnbnbnbn
+bnbnbnbnbnbnbnbnbnbpbobnbobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobobnbnbnbnbn
+bnbnbnbnbnbnbnbnbnbobobpboboboboboboboboboboahahahahahahahbobobobobobobobobobobobobobobobobobobobobobobobobobobnbnbnbnbn
+bnbnbnbnbnbnbnbnbnboboboboboboboboboboboboboahahahahahahahbobobobobobobobobobobobobobobobobobobobobobobobobobobpbnbnbnbn
+bnbnbnbnbnbnbnbnbpboboboboboboboboboboboboboahahahahahahahboboboboboboboboboboahaGaGahahahahahahahbobobobobobobobnbnbnbn
+bnbnbnbnbnbnbpbpboboboboboboboboboboboboboboahahahahahahahboboboboboboboboboboaGaKaKahakanaKaWbrahbobobobobobobobnbnbnbn
+bnbnbnbnbpbpboboboboboboboboboboboboboboboboahbibiahahahahboboboboboboboboboboaGaKbsaharanaKaKaKaGbobobobobobobobnbnbnbn
+bnbnbnbpboboboboboboboboboboboboboboboahaGaGahbkbkahakakahahaGaGahahbtahahboboaGaKaKbuananaKaKaKaGbobobobobobobobnbnbnbn
+bnbpbpboboboboboboboahahahaGaGaGaGahahahaKaKaKaKaKaKaKaKaKbvaKaKaKahanakahboboahaKaKahanalaKaMbwahbobobobobobobobnbnbnbn
+bpboboboboboboboboboahakananananananakahaKaKaKaKaKaKaKaKaKaKaKaKaKbtanaZahahahahaKaKahahahahahahahbobobobobobobobpbnbnbn
+boboboboboboboboboboaharbxbxbybxbxbxanahaQaKahahaGaGaGaGahahahaKaKahahahahaKaKaKaKaKbuananaMbwaMahbobobobobobobobobnbnbn
+boboboboboboboboboboaGanbxbxbxbxbxbxanahaKaKahaMaKaKaKaKbzbAahaKaKaKaKaKaKaKaKaKaKbsahananaKaKaKaGbobobobobobobobobpbpbp
+bobobobqboboboboboboaGanbxbxbxbxbxbxanahaKaKahbBaKbBaKaKbzbAahaKaKbjaKaKaKaKaKahaPaPaharanaKaKaKaGbobobobobobobobobobobo
+bqbqbqbnboboboboboboahanbxbxbxbxbxbxanahaKaKaGaWaKbBaKbsahahahahahahahahahaKbsahaVaVahbCakbDbEbFahbobobobobobobobobobobo
+bnbnbnbpboboboboboboahananananananananahaKaKbGaKaKaKaKaKbHbIaMahanbJbKalahaKaKahahahahahahahahahahahahahbobobobobobobobo
+bnbnbnbqboboboboboboaGanbLbLbLbLbLbLanahaKaKbGaKaKbBbBaKbBaKaKbuanbLbLalahaKaKaKbvaKaKaKaKaKaKaKaKbvaKahbobobobobobobobo
+bnbnbnbnboboboboboboaGanbLbLbLbLbLbLananaKaKaGaKaKaKaKaKaKaKaKbuanananbMahaKaKaKaKaKaKaKaKaKaKaKaKaKaKaGbobobobobobobobq
+bnbnbnbnbqboboboboboaharbLbLbLbLbLbLananaKaKahaMbjaMbBaKbBbBaKahakaZanalahaKaKbNbNbNaGbtaGaGaGaGaGaKaKaGbobobobobqbqbqbn
+bnbnbnbnbnboboboboboahananananananananahaKaKahahahahahahahahahahahahbuahahaKaKahahahahasasasasasaGaKaKaGbobobobobnbnbnbn
+bnbnbnbnbnboboboboboahahahahahahahahahahaQaKaqaiaiaiaiaiaiaiaiaiaiaiaiaiahaKaKahbObPahasbQasbRasaGaKaKahbobobobobnbnbnbn
+bnbnbnbnbnboboboboboboaGbSbTbUbVbWbTbSahaKaKahahahahahahahahblahahahaiaiahaKbsahaiapahasasasasasaGaKbsahbobobobobnbnbnbn
+bnbnbnbnbnboboboboboboaGbSatatatatatbXahaKaKanbYanbZcacbakananccakahaiaiahaKaKahaicdahasbQasbRasaGaKaKahbobobobobnbnbnbn
+bnbnbnbnbnboboboboboboahceatcfbSbSatcgahaKaKchaSananaKaKaKaKaKaKanahaiahahaKaKaqaiciahasasasasasaGaKaKahbobobobobnbnbnbn
+bnbnbnbnbpboboboahahahahceatatcjbSatckaGaKaKchaSananaKaKaKaKaKaKclahaiahakaKaKahaiciahaGaGaGaGbtaGaKaKaGbobobobobpbnbnbn
+bnbnbnbnboboboboahcmcmahcnatatcobSatcpaGaKaKchcqananananananaKaKaSahaiaqakaKaKahahahahcranananancraKaKaGbobobobobobnbnbn
+bnbnbnbnboboboboahaPaPahcsatatctbSatatbSaKaKchcqanancuaSananancvakahahahahaKaKaKaKaKaKaKaKaKaKaKaKaKaKaGbobobobobobnbnbn
+bnbnbnbnboboboboaGananblatatatatatatatcwaKaKchaSaSaSahahblahahahahahbibiahaKaKaKaKbjaKaKaKaKaKaKaKbjaKahbobobobobqbnbnbn
+bpbnbnbpboboboboaGananahcxatatatatatcyahaKaKananananahczanahcAcAahahbkbkahaKaKahahahahahahbkbkahahahahahbobobobobnbnbnbn
+bobpbpboboboboboaharanahahaGcBcCbScDahahaQaKananancEahcFaZahaKaKaKaKaKaKaKaKaKahboboboboahcGcGahbobobobobobobobobnbnbnbn
+boboboboboboboboahanananbvaKaKaKaKaKaKbvaKaKakanancHahahahahaKaKaKbjaKaKaKaKaKahboboboboahahahahbobobobobobobobqbnbnbnbn
+boboboboboboboboayanananaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKbvaKaKaKahahaGaGaGahahahbobobobobobobobobobobobobobobqbnbnbnbnbn
+boboboboboboboboahahahahaGaGaGcIaGaGaGahaKaKaKaKaKaKaKaKaKaKaKaKahbobobobobobobobobobqbqbobobobobobobobobobobnbnbnbnbnbn
+boboboboboboboboboboboaGcJcKaiaiaicLcMaGahahaGaGahahaHaHahahcNahahbobobobobqbqbobobqbnbnbqbobobobobobobobobqbnbnbnbnbnbn
+boboboboboboboboboboboaGaiaiaiaiaiaiaiaGboboboboahbvcOcPbvahaiaiahbobobobqbnbnbqbqbnbnbnbnbobobobobobobobobnbnbnbnbnbnbn
+boboboboboboboboboboboaGcQcRaiaiaiaicSaGboboboboahaKcOcPaKahaiapahbobobobnbnbnbnbnbnbnbnbnbobobobobobobobobnbnbnbnbnbnbn
+bqbobqbqboboboboboboboahaoaiaiaiaiaiapahboboboboahaKaKaKaKahbmbmahbobobobnbnbnbnbnbnbnbnbnbqbobobobobobobobnbnbnbnbnbnbn
+bnbqbnbnbqbqboboboboboahaGaGaiaiaiaGaGahboboboboahahaHaHahahahahahbobobobnbnbnbnbnbnbnbnbnbnbobobobobobobobpbnbnbnbnbnbn
+bnbnbnbnbnbnbqbqbqbobobobobobobobobobobobobobobocTbobobobocTbobobobobobqbnbnbnbnbnbnbnbnbnbnbqbobobobobobobobpbnbnbnbnbn
+bnbnbnbnbnbnbnbnbnbocUbocUbobobobobocUbocUbobobobobobobobobobqbqbqbqbqbnbnbnbnbnbnbnbnbnbnbnbnbqbobobobobobobobpbnbnbnbn
+bnbnbnbnbnbnbnbnbnbqbqbocUbobocUbobocUbobobobobobobobobobobobpbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbobobobobobobobobnbnbnbn
+bnbnbnbnbnbnbnbnbnbnbnbobobobobobobocUbobobqbobqbobobobobobobobnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbobobobobobobobobpbnbpbp
+bnbnbnbnbnbnbnbnbnbnbnbocUbobocUbobobobobqbnbqbnbqbobobobobobobpbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbobobobobobobobobobpbobo
+bnbnbnbnbnbnbnbnbnbnbnbobobobobobobobobobnbnbnbnbnbobobobobobobobpbnbnbnbnbnbnbnbnbnbnbnbnbnbpbpbobobobobobobobobobobobo
+bnbnbnbnbnbnbnbnbnbnbpbobobocUbobocUbobobnbnbnbnbnbobobobobobobobobpbnbnbnbnbnbnbnbnbnbpbpbpbobobobobobobobobobobobobobo
+bnbnbnbnbnbnbnbnbnbnbobobobobobobobobobobnbnbnbnbnbobobobobobobobobobpbpbnbpbpbnbpbpbpbobobobobobobobobobobobobobqbobobq
+bnbnbnbnbnbnbnbnbnbpbobobobobobobobobobobnbnbnbnbnbobobobobobobobobobobobpbobobpbobobobobobobobobobobobobobqbqbqbnbqbqbn
+bnbnbnbnbnbnbnbnbpbobobobobobobobobobobobnbnbnbnbnbqbobobobobobobobobobobobobobobobobobobobobobobobobqbqbqbnbnbnbnbnbnbn
+bnbnbnbnbnbnbnbnbobobobobobobobobobobobobnbnbnbnbnbnbobobobobobobobobobobobobobobobobobobobqbqbqbqbqbnbnbnbnbnbnbnbnbnbn
+bnbnbnbnbnbnbnbnbobobobobobobobobobobobobnbnbnbnbnbnbobobobobobobobobobobobobobobobobobobqbnbnbnbnbnbnbnbnbnbnbnbnbnbnbn
+bnbnbnbnbnbnbnbpbobobobobobobobobobobobqbnbnbnbnbnbnbqbobobobobobobobobobobobobqbqbobqbqbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbn
+bnbnbnbnbnbnbnbobobobobobobobobobobobobnbnbnbnbnbnbnbnbobobobobobobobobobobobobnbnbqbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbn
 "}
 
 (1,1,3) = {"
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbafafaAaAaAafafcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbaAccaDaDaDccaAcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbaAaDaDaDaDaDaAcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbafaDbcafaHaDaAcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbafbVbVafaDaDafcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbafaAaAafafafafaDaDafafafafaAaAaAafafcbcbcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcdcdcdcdafafafafafafaDaDaDaDaDaDaDaDaDceafcfaDaDaDcfafcbcbcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcdcdcdcdaAaLbfcgbSafaDaDaDaDaDaDaWaDaDceafaDbkaLchaDafaAaAaAaAaAcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcdcdcdcdaAaLaDalalciaDaDafafafafafafafafafaDaDaDaDaDafbSbSbSbSaAcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcdcdcdcdaAcjaDalalafaDaDafaDaDaDbibjafckbiaDaDaDaDaDafalalbmbmaAcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcdcdcdcdafafafalajafaHaDafaHaDaDbibjafckbiaDbkaDaDbcafalalafafafafcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdaAalalafaDaDafaDaDafafafafafafaDbkaDbkaDafalaCafbLbLafcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdaAaSaTafaDaDblaDaDbfaDaDaDaDbfaDbkaDaDaDafalalafaGaGafafaAaAafcdcdcdcdcdcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdafafafafaDaDblaDaDbkbkaDbkaDbkbkbkaDbkaDafaDaDaDaDaDaDaDaDaDaAcdcdcdcdcdcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdaAaDaDafaDaDaDaDaDaDaDaDaIaLaDbkaDafaDaDaDaDaWaDaDaDaDaAcdcdcdcdcdcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdaAaDaDafbkaDcfbkaIaLbkaDaDaWaDaDaDafaDaDafafafafafaDaDafcdcdcdcdcdcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdafaHaDafafafafafafafafafafafafafafafaDaDafalclalafaDaDafcdcdcdcdcdcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcdcdcdcdcdaAaAaAaAaAaDaDafbtbtcmcnbwafcocpafcqcqcqcrafaDaDafalalalbeaDbcafcdcdcdcdcdcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcdcdcdcdaAcscscsboaDaDafctararararafcuarcvalalalaCafaDbcafalalalafaDaDafcdcdcdcdcdcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcdcdcdcdaAcscscsboaDaDafcwararbGcxafcncyafalalaJcrafaDaDafafafafafaDaDafafafafafcdcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcdcdcdcdaAcsczcsboaDaDafafcAcAafafafafafafbdbdafafafaDaDaDaDbfaDaDaDaDafalcBcCafcdcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcdcdcdcdafafafafafafafafaDaDbfaDaDaDaDaDbfaDaDaDaDaDbfaDaDaDaDaDaDaDaDaDaDaDbealalaCafcdcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcdcdcdcdafcDalafbSbAajafaDaDaDaDaDaDaDaDaDaDaDaDaDaDaDaDaDaDaDafafafafafalalafalaialafcdcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcdcdcdcdafaNalafcEalalafbdbdafaDaDafafafafafafaAaAafaXaXafalalaAcdcdcdafaiaiafafafafafcdcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcdcdcdcdafafbdafcEalalalalalafaDaDbibjafafafafcdcdafbVbVafaiaiaAcdcdcdaAaAaAaAcdcdcdcdcdcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcdcdcdcdafcFalalalalalalalalafaDaDbibjafafafafcdcdafafafafaAaAaAcdcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcdcdcdcdafcGalalcHcIcJcKcLbSafaAaAafafafafafafcdcdcdcdcdcdcdcdcdcbcbcbcbcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcdcdcdcdafafaAaAaAafaAaAaAafafcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcbcbcbcbcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcbcbcbcbcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcbcbcbcbcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcbcbcbcbcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVahahaGaGaGahahcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVaGcWaKaKaKcWaGcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVaGaKaKaKaKaKaGcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVahbkcYahaQaKaGcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVahcGcGahaKaKahcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVahaGaGahahahahaKaKahahahahaGaGaGahahcVcVcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcXcXcXcXahahahahahahcZaKaKaKaKaKaKaKaKdaahdbaKaKaKdbahcVcVcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcXcXcXcXaGaWbvdccAahaKaKaKaKaKaKbjaKaKdaahaKbBaWbIaKahaGaGaGaGaGcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcXcXcXcXaGaYaKananddaKaKahahahahahahahahahaKaKaKaKaKahdecAcAcAaGcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcXcXcXcXaGbEaKananahaKaKahdbaKaKbzbAahdfbzaKaKaKaKaKahananbLbLaGcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcXcXcXcXahahahanalahaQaKahaQaKaKbzbAahdfbzaKbBaKaKbsahbubuahahahahcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXaGanaIahaKaKahaKaKahahahahahahaKbBaKbBaKahanaIahcmcmahcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXaGbfbgahaKaKbGaKaKbvaKaKaKaKbvaKbBaKaKaKahananahaPaPahahaGaGahcXcXcXcXcXcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXahahahahaKaKbGaKaKbBbBaKbBaKbBbBbBaKbBaKahaKaKaKaKaKaKaKaKaKaGcXcXcXcXcXcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXaGaKaKahaKaKaKaKaKaKaKaKaRaWaKbBaKahaKaKaKaKbjaKaKaKaKaGcXcXcXcXcXcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXaGaKaKahbBaKdbbBaRbFbBaKaKbjaKaKaKahaKaKahahahahahaKaKahcXcXcXcXcXcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXahaQaKahahahahahahahahahahahahahahahaKaKahdgdhcAahaKaKahcXcXcXcXcXcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcXcXcXcXcXaGaGaGaGaGaKaKahbSbSdidjbVahdkdlahdmdmdmdnahaKaKahdoananbuaKbsahcXcXcXcXcXcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcXcXcXcXaGdpdpdpbNaKaKahdqatatatatahdratdsanananaIahaKbsahdtduanahaKaKahcXcXcXcXcXcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcXcXcXcXaGdpdpdpbNaKaKahdvatatcfdwahdjdxahananaSdnahaKaKahahahahahaKaKahahahahahcXcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcXcXcXcXaGdpdydpbNaKaKahahdzdzahahahahahahbtbtahahahaKaKaKaKbvaKaKaKaKahandAdBahcXcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcXcXcXcXahahahahahahahahaKaKbvaKaKaKaKaKbvaKaKaKaKaKbvaKaKaKaKaKaKaKaKaKaKaKbuananaIahcXcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcXcXcXcXahdCanahcAdDalahaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKaKahahahahahananahanakanahcXcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcXcXcXcXahaZanahdEananahbtbtahaKaKahahahahahahaGaGahbkbkahananaGcXcXcXahakakahahahahahcXcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcXcXcXcXahahbtahdEanananananahaKaKbzbAahahahahcXcXahcGcGahakakaGcXcXcXaGaGaGaGcXcXcXcXcXcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcXcXcXcXahdFananananananananahcZaKbzbAahahahahcXcXahahahahaGaGaGcXcXcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcXcXcXcXahdGanandHdIdJdKdLcAahaGaGahahahahahahcXcXcXcXcXcXcXcXcXcVcVcVcVcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcXcXcXcXahahaGaGaGahaGaGaGahahcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcVcVcVcVcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXahcNahahcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcVcVcVcVcXcXcXcXcXahaibmahcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcVcVcVcVcXcXcXcXcXcNaiapahcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcVcVcVcVcXcXcXcXcXahbmaiahcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcVcVcVcVcXcXcXcXcXahahahahcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
 "}
 
 (1,1,4) = {"
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcdcdcdafafafafafafafafafafcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcdcdcdafckbiaDaDbfbkaFbkafcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdafafafafafcdafckbiaDaDaDbkaDaDaAcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdafaFbkbkafafafafafaDbkaDbkaDaDaAcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdaAaDaDaDafaDaDaDaDaDbkaDaDaDaDaAcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdaAaDaDaDcMaDaDaDbkaDaDaDcNaDaDaAcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdafaLcOaLafaDaWaDaDaDaDaWbkaDbkafcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdafafafafafafafafaDaDafafafafafafafcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdafcPcQaRaDafaDaDafaLaLaDaDaFafcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdaAaDaDaDbcafaDaDafcRaLaDaDaDaAcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdaAaDaDaDaLafaDaDafaDaDaDaDaDaAcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdafaFaDaDaLafaDaDafcQbkaDaDaRafcdcdcdcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdaAaAaAafafcMafafafaDaDafafafafcMafafcdcdcdcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdaAaFaDaDaDaDaDaDaDaDaDaDaDaDaDaDaFaAcdcdcdcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdaAaFaDaDaDaDaWaDaDaDaDaDaDaWaDaDaFaAcdcdcdcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdaAaAaAaAafafafafafaDaDafafafaAaAaAaAcdcdcdcbcbcbcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcdcdcdcdafckbiaDbcafcbcbcdcdcdcdcdcdcdcbcbcbcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcdcdcdcdafckbiaDaDafcbcbcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcdcdcdcdafafafaAaAafcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcdcdcdcdcdcdcdcdcdcdcdcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcXcXcXahahahahahahahahahahcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcXcXcXahdfbzaKaKbvbBaMbBahcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXahahahahahcXahdfbzaKaKaKbBaKaXaGcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXahaMbBbBahahahahahaKbBaKbBaKaWaGcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXaGaKaKaKahaMbFbBbBaKbBaKaKaKaKaGcXcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXaGaXaXaKdMaKaKaKaKaKaKaKbrbIaKaGcXcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXahaWdNdOahbBbjaKaKaKaKbjbBaMbBahcXcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXahahahahahahahahaKaKahahahahahahahcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXahdPbwbedQahdMdMahaWdRbIdSaMahcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXaGaKaKaKbsahaKaKahdTaWbIaKdQaGcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXaGaKaKaRaWahaQaKahaKaKaKaKaKaGcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXahaMaKaRaWahaKaKahbwbBaKaKbeahcXcXcXcXcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXaGaGaGahahdMahahahaKaKahahahahdMahahcXcXcXcXcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXaGaMaKaKaKaKaKaKaKaKaKaKaKaKaKaKaMaGcXcXcXcXcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXaGaMaKaKaKaKbjaKaKaKaKaKaKbjaKaKaMaGcXcXcXcXcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXaGaGaGaGahahahahahaKaKahahahaGaGaGaGcXcXcXcVcVcVcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcXcXcXcXahdfbzaKbsahcVcVcXcXcXcXcXcXcXcVcVcVcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcXcXcXcXahdfbzaKaKahcVcVcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcXcXcXcXahahahaGaGahcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcXcXcXcXcXcXcXcXcXcXcXcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVahaGaGahcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVahaobmahcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVahaiaiahcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVahdUaiahcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVahahahahcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
+cVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcVcV
 "}
