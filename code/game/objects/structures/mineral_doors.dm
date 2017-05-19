@@ -271,6 +271,10 @@
 /obj/structure/mineral_door/wood/lock
 	haslock = 1
 	autoclose = 1
+	name = "general access door"
+
+/obj/structure/mineral_door/wood/lock/whitewood
+	icon_state = "silver"
 
 /obj/structure/mineral_door/wood/lock/upstairs
 	name = "upstairs maid access wood door"

@@ -14,3 +14,9 @@
 	desc = "A utility used to spray large amounts of reagents in a given area. Perfect for cleaning very large areas."
 	volume = 750
 	list_reagents = list("cleaner" = 750)
+
+/obj/item/weapon/feather_duster // TODO: Add functionality
+	name = "feather duster"
+	icon = 'icons/obj/jadeequipments.dmi'
+	desc = "A feather duster, ideal for removing dust."
+	icon_state = "feather_duster"
