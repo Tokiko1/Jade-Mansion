@@ -15,6 +15,14 @@
 	var/valid_territory = 1 // If it's a valid territory for gangs to claim
 	var/blob_allowed = 1 // Does it count for blobs score? By default, all areas count.
 
+	var/valid_sc_research = 0 //Can Scary Day research objects spawn here?
+	var/valid_sc_defeat = 0 //Same as above but with defeat objects
+
+	var/purified = 0 // Is the area purified?
+	var/purify_allowed = 0 // Can the area be purified?
+
+	var/apc_covered = 0 //Do z level APCs power this area remotely?
+
 	var/eject = null
 
 	var/fire = null
