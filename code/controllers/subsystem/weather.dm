@@ -37,7 +37,7 @@ SUBSYSTEM_DEF(weather)
 		return
 	for(var/V in existing_weather)
 		var/datum/weather/W = V
-		if(W.name == weather_name && W.target_z == Z)
+		if(W.name == weather_name && (W.target_z == Z || W.target_z == ZLEVEL_ALL))
 			W.telegraph()
 
 /datum/controller/subsystem/weather/proc/make_z_eligible(zlevel)
