@@ -59,13 +59,13 @@
 		affectareas -= get_areas(V)
 	for(var/V in affectareas)
 		var/area/A = V
-		if(A.z == target_z)
-			impacted_areas |= A
+	//	if(target_z == ZLEVEL_ALL || A.z == target_z)
+		impacted_areas |= A
 	weather_duration = rand(weather_duration_lower, weather_duration_upper)
 	update_areas()
 	for(var/V in GLOB.player_list)
 		var/mob/M = V
-		if(M.z == target_z)
+		if(M.z == target_z || target_z == ZLEVEL_ALL)
 			if(telegraph_message)
 				to_chat(M, telegraph_message)
 			if(telegraph_sound)
@@ -79,7 +79,7 @@
 	update_areas()
 	for(var/V in GLOB.player_list)
 		var/mob/M = V
-		if(M.z == target_z)
+		if(M.z == target_z || target_z == ZLEVEL_ALL)
 			if(weather_message)
 				to_chat(M, weather_message)
 			if(weather_sound)
@@ -110,7 +110,7 @@
 
 /datum/weather/proc/can_impact(mob/living/L) //Can this weather impact a mob?
 	var/turf/mob_turf = get_turf(L)
-	if(mob_turf && (mob_turf.z != target_z))
+	if(mob_turf && (mob_turf.z != target_z && target_z != ZLEVEL_ALL))
 		return
 	if(immunity_type in L.weather_immunities)
 		return
