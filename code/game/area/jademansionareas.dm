@@ -3,16 +3,16 @@
 	requires_power = 1
 	always_unpowered = 0
 //	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
-	power_light = 1 //TEMP
-	power_equip = 1 //TEMP
-	power_environ = 1 //TEMP
 	valid_territory = 0
 	outdoors = 1
 	blob_allowed = 0
 
-/area/outside/cave
+/area/outsidecave/
 	icon_state = "cave"
 	outdoors = 0
+	requires_power = 1
+	always_unpowered = 0
+
 
 /area/inside //don't actually use this area
 	icon_state = "error"
@@ -23,9 +23,6 @@
 	purify_allowed = 1
 	apc_covered = 1
 
-	power_light = 1 //TEMP
-	power_equip = 1 //TEMP
-	power_environ = 1 //TEMP
 
 /area/inside/hallways
 	icon_state = "hallway"

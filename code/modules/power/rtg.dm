@@ -17,7 +17,7 @@
 
 	var/power_gen = 1000 // Enough to power a single APC. 4000 output with T4 capacitor.
 	var/board_path = /obj/item/weapon/circuitboard/machine/rtg
-	var/irradiate = TRUE // RTGs irradiate surroundings, but only when panel is open.
+	var/irradiate = FALSE // RTGs irradiate surroundings, but only when panel is open.
 
 /obj/machinery/power/rtg/New()
 	..()
