@@ -2,18 +2,29 @@
 
 //general stuff
 	var/pickable = 0
-	var/scenario_name "Placeholder title"
-	var/scenario_desc "Description of scenario for all players that enter the round."
+	var/scenario_name = "Placeholder title"
+	var/scenario_desc = "Description of scenario for all players that enter the round."
 	var/min_players = 0
 	var/max_players = 0 //keep 0 to disable this cap
 	var/list/required_roles = list() //game cannot start unless these are filled
 
-
-
-
 //faction stuff
 	var/list/faction_list = list()
 	var/list/faction_fluff = list()
+
+//faction restriction for roles
+	var/list/headmaid_faction_restriction = list()
+	var/list/mansionowner_faction_restriction = list()
+	var/list/custom1_faction_restriction = list()
+	var/list/custom2_faction_restriction = list()
+	var/list/custom3_faction_restriction = list()
+	var/list/butler_faction_restriction = list()
+	var/list/downstairsmaid_faction_restriction = list()
+	var/list/upstairsmaid_faction_restriction = list()
+	var/list/gardener_faction_restriction = list()
+	var/list/guard_faction_restriction = list()
+	var/list/betweenmaid_faction_restriction = list()
+
 
 //player stuff
 	var/list/player_fluff = list()
@@ -30,7 +41,7 @@
 	var/list/faction_goals = list()
 
 //maps and stuff
-	var/restrictmap // 0 = all maps are allowed, 1 = only maps in the list are allowed, 2 = all maps not in the list are allowed
+	var/restrictmap = 0// 0 = all maps are allowed, 1 = only maps in the list are allowed, 2 = all maps not in the list are allowed
 	var/list/maplist = list()
 
 //custom jobs
@@ -41,13 +52,13 @@
 	var/list/custom_job1_items = list()
 
 	var/custom_job2_allowed = 0
-	var/custom_job1_amount = 0
+	var/custom_job2_amount = 0
 	var/custom_job2_name = "Placeholder job."
 	var/custom_job2_fluff = ""
 	var/list/custom_job2_items = list()
 
 	var/custom_job3_allowed = 0
-	var/custom_job1_amount = 0
+	var/custom_job3_amount = 0
 	var/custom_job3_name = "Placeholder job."
 	var/custom_job3_fluff = ""
 	var/list/custom_job3_items = list()
