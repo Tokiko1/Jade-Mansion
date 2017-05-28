@@ -463,22 +463,24 @@
 "iU" = (/turf/open/floor/wood,/area/inside/sleeping_room5)
 "iV" = (/turf/open/carpetred,/area/inside/sleeping_room5)
 "iW" = (/obj/structure/mansiondecoration/oldtv,/turf/open/carpetred,/area/inside/sleeping_room5)
-"iX" = (/turf/open/floor/wood,/area/inside/sleeping_room3)
-"iY" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/floor/wood,/area/inside/sleeping_room3)
-"iZ" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/inside/sleeping_room3)
-"ja" = (/turf/open/carpetred,/area/inside/sleeping_room4)
-"jb" = (/obj/structure/largepotplant/yucapalm,/turf/open/floor/wood,/area/inside/sleeping_room3)
-"jc" = (/obj/structure/bed,/turf/open/carpetred,/area/inside/sleeping_room4)
-"jd" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/sleeping_room4)
-"je" = (/obj/structure/dresser,/turf/open/floor/wood,/area/inside/sleeping_room4)
-"jf" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/sleeping_room5)
-"jg" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/sleeping_room5)
-"jh" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/sleeping_room3)
-"ji" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/sleeping_room4)
-"jj" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/sleeping_room5)
-"jk" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/elec_maint)
-"jl" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/rockvault,/area/inside/elec_maint)
-"jm" = (/obj/item/device/flashlight/lamp,/obj/structure/table,/turf/open/floor/plasteel/rockvault,/area/inside/elec_maint)
+"iX" = (/obj/effect/landmark/jade/secure_storage_spawn2,/turf/open/floor/wood,/area/inside/sleeping_room3)
+"iY" = (/turf/open/floor/wood,/area/inside/sleeping_room3)
+"iZ" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/floor/wood,/area/inside/sleeping_room3)
+"ja" = (/obj/structure/table/wood,/obj/effect/landmark/jade/secure_storage_spawn1,/turf/open/floor/wood,/area/inside/sleeping_room3)
+"jb" = (/turf/open/carpetred,/area/inside/sleeping_room4)
+"jc" = (/obj/structure/largepotplant/yucapalm,/turf/open/floor/wood,/area/inside/sleeping_room3)
+"jd" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/inside/sleeping_room3)
+"je" = (/obj/structure/bed,/turf/open/carpetred,/area/inside/sleeping_room4)
+"jf" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/sleeping_room4)
+"jg" = (/obj/structure/dresser,/turf/open/floor/wood,/area/inside/sleeping_room4)
+"jh" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/sleeping_room5)
+"ji" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/sleeping_room5)
+"jj" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/sleeping_room3)
+"jk" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/sleeping_room4)
+"jl" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/sleeping_room5)
+"jm" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/elec_maint)
+"jn" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/rockvault,/area/inside/elec_maint)
+"jo" = (/obj/item/device/flashlight/lamp,/obj/structure/table,/turf/open/floor/plasteel/rockvault,/area/inside/elec_maint)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -699,9 +701,9 @@ fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmaBcJbsaHaHhNiciviaiaiaiciwiciaivhNbcbsbsbs
 fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmchbsbsixixixixixixiaiaiyiyiyiyiyiyiybsbsizizizizizizizizfmfmfmfmfmfmfmfmfmfmfmfmfm
 fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmchbsbsixiAiBiCiDixhOhOiyiEiFiGiHiIiybsbsiziJiKiLiMiNiOizfmfmfmfmfmfmfmfmfmfmfmfmfm
 fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofoaBbsbsixiPiPiPiQixbsbsiyiRiEiGiSiTiybsbsiziUiUiViViViWizfmfmfmfmfmfmfmfmfmfmfmfmfm
-fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofoaBbsbsixiXiXiYiZixcJbsiyjajajaiSiSiycJbsiziUiUiViViViVizfmfmfmfmfmfmfmfmfmfmfmfmfm
-fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofoaBbsbsixjbiXiYiZixbsbsiyjcjdjaiSjeiybsbsiziUiUjfjgjgiOizchchchaBfmfmfmfmfmfmfmfmfm
-fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofochbsbsixixjhixixixbsbsiyiyiyiyjiiyiybsbsizizjjizizizizizbcaHbcchfmfmfmfmfmfmfmfmfm
+fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofoaBbsbsixiXiYiZjaixcJbsiyjbjbjbiSiSiycJbsiziUiUiViViViVizfmfmfmfmfmfmfmfmfmfmfmfmfm
+fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofoaBbsbsixjciYiZjdixbsbsiyjejfjbiSjgiybsbsiziUiUjhjijiiOizchchchaBfmfmfmfmfmfmfmfmfm
+fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofochbsbsixixjjixixixbsbsiyiyiyiyjkiyiybsbsizizjlizizizizizbcaHbcchfmfmfmfmfmfmfmfmfm
 fmfmfmfmfmfmfmfmfmfmfmfmfofofofofofofochhGbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbscwbsbsbsbsbscwbsaHaHfXchfmfmfmfmfmfmfmfmfm
 fmfmfmfmfmfmfmfmfmfmfmfmfofofofofofofochhGbsbsbsbscYbsbsbsbsbsbscYbsbsbsbsbsbsbsbsbsbsbsbsbsbsaHaHbcchfmfmfmfmfmfmfmfmfm
 fmfmfmfmfmfmfmfmfmfmfmfmfofofofofofofochchchchaBaBaBaBaBbsbsaBaBaBchchchchaBaBaBaBaBaBchchchaBchchchaBfmfmfmfmfmfmfmfmfm
@@ -711,10 +713,10 @@ fmfmfmfmfmfmfmfmfmfmfmfmfofofofofofofofofofofofofoaBaBaBchchaBfmfmfmfmfmfmfmfmfm
 fmfmfmfmfmfmfmfmfmfmfmfmfofofofofofofofofofofofmfmfofofofofofofmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfm
 fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofofofofmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfm
 fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofofofofmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfm
-fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofoeZjkjkeZfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfm
-fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofoeZjlbWeZfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfm
+fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofoeZjmjmeZfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfm
+fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofoeZjnbWeZfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfm
 fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofoeZfdfdeZfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfm
-fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofoeZjmfdeZfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfm
+fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofoeZjofdeZfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfm
 fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfofofofoeZeZeZeZfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfm
 fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfm
 fmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfmfm

@@ -25,6 +25,10 @@
 	var/list/guard_faction_restriction = list()
 	var/list/betweenmaid_faction_restriction = list()
 
+//other stuff
+	var/special1 = 0
+	var/special2 = 0
+
 
 //player stuff
 	var/list/player_fluff = list()
