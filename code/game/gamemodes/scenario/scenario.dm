@@ -25,7 +25,8 @@
 
 /datum/game_mode/scenario/proc/pickscenario()
 	var/list/datum/scenario/scenario_list = subtypesof(/datum/scenario)
-	choosen_scenario = pick(scenario_list)
+	var/scenario_type = pick(scenario_list)
+	choosen_scenario = new scenario_type
 	if(!choosen_scenario.pickable)
 		return 0
 	return 1
