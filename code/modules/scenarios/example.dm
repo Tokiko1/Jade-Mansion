@@ -3,28 +3,31 @@
 //general stuff
 	pickable = 1
 	scenario_name = "Example Scenario"
-	scenario_desc = "This is an example scenario in which there are two factions: Staff and Owners."
+	scenario_desc = "This is an example scenario in which there are two factions: Staff and Owners and Owners posing as staff"
 	min_players = 0
 	max_players = 0 //keep 0 to disable this cap
 	required_roles = list(mansionowner = 1) //game cannot start unless these are filled
 
 //faction stuff
-	faction_list = list()
+	faction_list = list("owner", "staff", "posing_staff")
 	faction_fluff = list()
+	no_faction_restrictions = 0 //if 1, players are randomly assigned a faction in faction_list and restrictions is completely ignored
+	exclusive_factions = 1 //if 0, players with a certain job will get all factions in the restriction list, if 1 they are randomly assigned a single faction from that list instead
 
 //faction restriction for roles
-	headmaid_faction_restriction = list()
-	mansionowner_faction_restriction = list()
-	custom1_faction_restriction = list()
-	custom2_faction_restriction = list()
-	custom3_faction_restriction = list()
-	butler_faction_restriction = list()
-	downstairsmaid_faction_restriction = list()
-	upstairsmaid_faction_restriction = list()
-	gardener_faction_restriction = list()
-	guard_faction_restriction = list()
-	betweenmaid_faction_restriction = list()
-
+	faction_restrictions = list(
+	"Head Maid" = list("staff", "posing_staff"),
+	"Mansion Owner" = list("owner"),
+	"Custom 1" = list(),
+	"Custom 2" = list(),
+	"Custom 3" = list(),
+	"Butler" = list("staff", "posing_staff"),
+	"Downstairs Maid" = list("staff", "posing_staff"),
+	"Upstairs Maid" = list("staff", "posing_staff"),
+	"Gardener" = list("staff", "posing_staff"),
+	"Guard" = list("staff", "posing_staff"),
+	"Assistant" = list("staff", "posing_staff")
+	)
 //other stuff
 	special1 = 0
 	special2 = 0

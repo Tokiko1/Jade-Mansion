@@ -11,6 +11,8 @@
 //faction stuff
 	var/list/faction_list = list()
 	var/list/faction_fluff = list()
+	var/no_faction_restrictions = 0 //if 1, players are randomly assigned a faction in faction_list and restrictions is completely ignored
+	var/exclusive_factions = 0 //if 0, players with a certain job will get all factions in the restriction list, if 1 they are randomly assigned a single faction from that list instead
 
 //faction restriction for roles
 	var/list/headmaid_faction_restriction = list()
@@ -24,6 +26,20 @@
 	var/list/gardener_faction_restriction = list()
 	var/list/guard_faction_restriction = list()
 	var/list/betweenmaid_faction_restriction = list()
+
+	var/list/faction_restrictions = list(
+	"Head Maid" = list(),
+	"Mansion Owner" = list(),
+	"Custom 1" = list(),
+	"Custom 2" = list(),
+	"Custom 3" = list(),
+	"Butler" = list(),
+	"Downstairs Maid" = list(),
+	"Upstairs Maid" = list(),
+	"Gardener" = list(),
+	"Guard" = list(),
+	"Assistant" = list()
+	)
 
 //other stuff
 	var/special1 = 0
