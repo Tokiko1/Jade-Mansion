@@ -45,6 +45,9 @@
 		show_fluff(player, "faction", 1)
 		show_fluff(player, "role", 1)
 //		show_fluff(player, "goal", 1)
+		spawn_items_role(player)
+		spawn_items_faction(player)
+
 
 
 /datum/game_mode/scenario/proc/setup_scenario_factions(var/mob/living/carbon/human/player)
@@ -101,8 +104,48 @@
 		if(itempath)
 			new itempath(get_turf(L))
 
-//spawning items
-/datum/game_mode/scenario/proc/spawn_items_faction()
+//spawning items for roles
+/datum/game_mode/scenario/proc/spawn_items_role(var/mob/living/carbon/human/player)
+	var/list/srl = choosen_scenario.role_spawns.[player.mind.assigned_role]
+	for(var/ITS in srl)
+		scenario_give_item(ITS, player)
+
+//spawning items for factions
+/datum/game_mode/scenario/proc/spawn_items_faction(var/mob/living/carbon/human/player)
+	for(var/current_faction in player.mind.scenario_faction)
+		var/list/srl = choosen_scenario.faction_spawns.[current_faction]
+		for(var/ITS in srl)
+			scenario_give_item(ITS, player)
+
+
+
+/datum/game_mode/scenario/proc/scenario_give_item(var/itempath,var/mob/living/carbon/human/player)
+	var/obj/item/item_to_give = itempath
+	var/list/slots = list(
+		"backpack" = slot_in_backpack,
+		"left pocket" = slot_l_store,
+		"right pocket" = slot_r_store
+	)
+
+	var/T = new item_to_give(player)
+	var/item_name = initial(item_to_give.name)
+	var/where = player.equip_in_one_of_slots(T, slots)
+	if(!where)
+		to_chat(player, "<span class='userdanger'>Unfortunately, you didn't have enough space in your inventory for all items, so [item_name] has dropped to your feet, pick it up!</span>")
+		var/atom/movable/droppeditem = T
+		var/turf/below_player = locate(player.x, player.y, player.z)
+		droppeditem.forceMove(below_player)
+		return
+	else
+		to_chat(player, "<span class='danger'>You have a [item_name] in your [where].")
+		if(where == "backpack")
+			var/obj/item/weapon/storage/B = player.back
+			B.orient2hud(player)
+			B.show_to(player)
+		return
+
+
+
 
 /datum/game_mode/proc/handle_scenario_latejoin(var/mob/living/carbon/human/player)
 	if(!SSticker.mode == "scenario")
@@ -114,3 +157,6 @@
 	show_fluff(player, "scenario", 1)
 	show_fluff(player, "faction", 1)
 	show_fluff(player, "role", 1)
+//	show_fluff(player, "goal", 1)
+	spawn_items_role(player)
+	spawn_items_faction(player)

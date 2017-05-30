@@ -52,8 +52,8 @@
 
 //things that need to be spawned, usually items
 	landmark_spawns = list(secure_storage_spawn1 = /obj/item/doorkey/master, secure_storage_spawn2 = /obj/item/device/laser_pointer)
-	role_spawns = list()
-	faction_spawns = list()
+	role_spawns = list("Head Maid" = list(/obj/item/doorkey/master, /obj/item/doorkey/master), "Mansion Owner" = list(/obj/item/doorkey/master, /obj/item/doorkey/master))
+	faction_spawns = list("posing_staff" = list(/obj/item/doorkey/master, /obj/item/doorkey/master))
 
 //goals
 	faction_goal_text = list()
