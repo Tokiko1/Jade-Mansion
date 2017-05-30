@@ -15,18 +15,6 @@
 	var/exclusive_factions = 0 //if 0, players with a certain job will get all factions in the restriction list, if 1 they are randomly assigned a single faction from that list instead
 
 //faction restriction for roles
-	var/list/headmaid_faction_restriction = list()
-	var/list/mansionowner_faction_restriction = list()
-	var/list/custom1_faction_restriction = list()
-	var/list/custom2_faction_restriction = list()
-	var/list/custom3_faction_restriction = list()
-	var/list/butler_faction_restriction = list()
-	var/list/downstairsmaid_faction_restriction = list()
-	var/list/upstairsmaid_faction_restriction = list()
-	var/list/gardener_faction_restriction = list()
-	var/list/guard_faction_restriction = list()
-	var/list/betweenmaid_faction_restriction = list()
-
 	var/list/faction_restrictions = list(
 	"Head Maid" = list(),
 	"Mansion Owner" = list(),
@@ -39,6 +27,21 @@
 	"Gardener" = list(),
 	"Guard" = list(),
 	"Assistant" = list()
+	)
+//role fluff
+//if you want certain roles to have a special message at the start, add it here
+//highly recommended for custom jobs!
+	var/list/role_fluff = list(
+	"Head Maid" = "",
+	"Mansion Owner" = "",
+	"Custom 1" = "",
+	"Custom 2" = "",
+	"Custom 3" = "",
+	"Downstairs Maid" = "",
+	"Upstairs Maid" = "",
+	"Gardener" = "",
+	"Guard" = "",
+	"Assistant" = ""
 	)
 
 //other stuff
@@ -68,19 +71,16 @@
 	var/custom_job1_allowed = 0
 	var/custom_job1_amount = 0
 	var/custom_job1_name = "Placeholder job."
-	var/custom_job1_fluff = ""
 	var/list/custom_job1_items = list()
 
 	var/custom_job2_allowed = 0
 	var/custom_job2_amount = 0
 	var/custom_job2_name = "Placeholder job."
-	var/custom_job2_fluff = ""
 	var/list/custom_job2_items = list()
 
 	var/custom_job3_allowed = 0
 	var/custom_job3_amount = 0
 	var/custom_job3_name = "Placeholder job."
-	var/custom_job3_fluff = ""
 	var/list/custom_job3_items = list()
 
 //sub scenarios, loads from a different file
