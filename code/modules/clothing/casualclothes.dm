@@ -35,13 +35,23 @@
 	can_adjust = 0
 
 /obj/item/clothing/under/bluedress1
-	name = "white dress"
+	name = "blue dress"
 	desc = "A casual navy dress."
 	icon_state = "bluedress1"
 	item_color = "bluedress1"
 	body_parts_covered = CHEST|GROIN|ARMS
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = 0
+
+/obj/item/clothing/under/blackdress1
+	name = "black dress"
+	desc = "A very fancy, shoulderless dress. Ideal for formal occasions. Or you can wear it casually too."
+	icon_state = "blackdress1"
+	item_color = "blackdress1"
+	body_parts_covered = CHEST|GROIN|ARMS
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = 0
+
 
 /obj/item/clothing/under/swimsuitblack1
 	name = "black swimsuit"
@@ -60,3 +70,9 @@
 	body_parts_covered = CHEST|GROIN
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = 0
+
+/obj/item/clothing/gloves/long_gloves1
+	name = "long black gloves"
+	desc = "Very fancy gloves, for formal occasions."
+	icon_state = "black"
+	item_state = "long_blackgloves"
