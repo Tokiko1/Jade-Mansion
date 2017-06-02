@@ -47,7 +47,7 @@
 
 
 //player stuff
-	player_fluff = list()
+	player_fluff = list(/obj/item/doorkey/master, /mob/living/simple_animal/chicken/rabbit/normal)
 
 
 //things that need to be spawned, usually items
