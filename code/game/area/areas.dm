@@ -36,6 +36,7 @@
 	var/always_unpowered = 0	// This gets overriden to 1 for space in area/Initialize().
 
 	var/outdoors = 0 //For space, the asteroid, lavaland, etc. Used with blueprints to determine if we are adding a new area (vs editing a station room)
+	var/indoors = 0
 
 	var/power_equip = 1
 	var/power_light = 1

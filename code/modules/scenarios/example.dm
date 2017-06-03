@@ -56,6 +56,7 @@
 	faction_spawns = list("posing_staff" = list(/obj/item/doorkey/master, /obj/item/doorkey/master))
 
 //goals
+	use_alternative_handling = 0 //if 0, the handlegoals() proc below is used
 	faction_goal_text = list()
 	faction_goal_amounts = list()
 	faction_goals = list()

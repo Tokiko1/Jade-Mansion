@@ -37,6 +37,7 @@
 
 	var/checktype
 	var/second_input_clean
+	var/list/second_input_list = list()
 	var/stuffcount1
 	var/list/moblist1 = list()
 	var/goal_success
@@ -49,6 +50,39 @@
 			checktype = SCENARIO_CHECKGOAL_OBJ
 		else
 			checktype = SCENARIO_CHECKGOAL_SPECIAL
+
+	switch(input2)
+		if(INPUT_ANYWHERE)
+			second_input_clean = world
+		if(INPUT_OUTSIDE)
+			for(var/area/A in world)
+				if(A.outdoors)
+					second_input_list |= A
+			second_input_clean = second_input_list
+		if(INPUT_MANSION)
+			for(var/area/A in world)
+				if(A.indoors)
+					second_input_list |= A
+		if(INPUT_PLAYERINV) //not implemented currently
+		if(INPUT_CONTENTS)
+			for(var/obj/stuff in world)
+				if(istype(stuff, input8))
+					second_input_list |= stuff.GetAllContents()
+			second_input_clean = second_input_list
+		if(INPUT_ROLEINV)
+			for(var/mob/living/carbon/human/stuff in world)
+				if(stuff.mind.assigned_role == input8)
+					second_input_list |= stuff.GetAllContents()
+			second_input_clean = second_input_list
+		if(INPUT_FACTIONINV)
+			for(var/mob/living/carbon/human/stuff in world)
+				if(stuff.mind.scenario_faction == input8)
+					second_input_list |= stuff.GetAllContents()
+			second_input_clean = second_input_list
+		if(INPUT_AREA)
+			second_input_clean = input8
+
+
 
 	switch(checktype)
 		if(SCENARIO_CHECKGOAL_MOB)
@@ -78,5 +112,6 @@
 				else
 					if(stuffcount1 >= input4 && stuffcount1 > 0)
 						goal_success = 1
+			message_admins("[goal_success]")
 		if(SCENARIO_CHECKGOAL_OBJ)
 		if(SCENARIO_CHECKGOAL_SPECIAL)

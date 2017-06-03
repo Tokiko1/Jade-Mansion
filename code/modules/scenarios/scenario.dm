@@ -59,6 +59,8 @@
 	var/list/faction_spawns = list()
 
 //goals
+	var/use_alternative_handling = 0 //if 0, the handlegoals() proc below is used
+	var/use_goals = 2 //0 = goals are unused and not checked. 1 = only map completion goals are checked. 2 = scenario goals are checked. 3 = both map completiopn and scenario goals are checked
 	var/list/faction_goal_text = list()
 	var/list/faction_goal_amounts = list()
 	var/list/faction_goals = list()
@@ -98,6 +100,7 @@
 	var/list/roundend_input_inputtext = list() //if there are pick options, use this text
 	var/list/roundend_input_check = list() //how to check if each input was correct?
 
-
+/datum/scenario/proc/handlegoals()
+//this is where you can put more complex goal completion checks for a scenario
 
 
