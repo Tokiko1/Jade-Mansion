@@ -25,6 +25,7 @@
 	"Downstairs Maid" = list(),
 	"Upstairs Maid" = list(),
 	"Gardener" = list(),
+	"Guest" = list(),
 	"Guard" = list(),
 	"Assistant" = list()
 	)
@@ -41,6 +42,7 @@
 	"Upstairs Maid" = "",
 	"Gardener" = "",
 	"Guard" = "",
+	"Guest" = "",
 	"Assistant" = ""
 	)
 
@@ -100,7 +102,8 @@
 	var/list/roundend_input_inputtext = list() //if there are pick options, use this text
 	var/list/roundend_input_check = list() //how to check if each input was correct?
 
-/datum/scenario/proc/handlegoals()
+/datum/scenario/proc/handlegoals(var/faction_to_check)
 //this is where you can put more complex goal completion checks for a scenario
 
-
+/datum/scenario/proc/handlescenario()
+//if you want to randomize or calculate stuff for a scenario you can do it here, this is called before the scenario is set up

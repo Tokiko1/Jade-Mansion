@@ -3,7 +3,7 @@
 
 #define HEADMAID			(1<<0)
 #define MANSIONOWNER				(1<<1)
-#define WARDEN			(1<<2)
+#define GUEST			(1<<2)
 #define DETECTIVE			(1<<3)
 #define OFFICER			(1<<4)
 #define CHIEF				(1<<5)

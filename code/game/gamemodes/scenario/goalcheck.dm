@@ -1,3 +1,6 @@
+//abandoned for now...
+
+/*
 /datum/game_mode/scenario/proc/checkgoal(var/input1, var/input2, var/input3, var/input4, var/input5, var/input6, var/input7, var/input8)
 
 #define INPUT_EXIST_MOB 1
@@ -115,3 +118,4 @@
 			message_admins("[goal_success]")
 		if(SCENARIO_CHECKGOAL_OBJ)
 		if(SCENARIO_CHECKGOAL_SPECIAL)
+*/

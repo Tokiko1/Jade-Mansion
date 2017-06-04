@@ -8,6 +8,7 @@
 
 	var/datum/scenario/choosen_scenario
 	var/datum/subscenario/choosen_sub
+	var/list/goals = list()
 
 
 /datum/game_mode/scenario/pre_setup()
@@ -35,6 +36,7 @@
 	choosen_scenario = new scenario_type
 	if(!choosen_scenario.pickable)
 		return 0
+	choosen_scenario.handlescenario()
 	return 1
 
 /datum/game_mode/scenario/proc/picksubscenario()
@@ -59,6 +61,7 @@
 		show_subfluff(player, "description", 1)
 		show_subfluff(player, "faction", 1)
 		show_subfluff(player, "role", 1)
+		show_goals_mob(player)
 		spawn_items_role(player)
 		spawn_items_faction(player)
 
@@ -134,6 +137,15 @@
 				if(save_memory)
 					player.mind.memory += "[rf]<BR>"
 
+/datum/game_mode/scenario/proc/show_goals_mob(var/mob/living/carbon/human/player, var/save_memory = 1)
+	for(var/currentfaction in player.mind.scenario_faction)
+		var/fg = choosen_scenario.faction_goal_text.[currentfaction]
+		if(fg)
+			to_chat(player, "<B>Goals:</B>[fg]")
+			if(save_memory)
+				player.mind.memory += "<B>Goals:</B>[fg]<BR>"
+
+
 //spawning items on the landmarks
 /datum/game_mode/scenario/proc/spawn_items_landmarks()
 	var/scenario_spawns = choosen_scenario.landmark_spawns
@@ -182,7 +194,12 @@
 			B.show_to(player)
 		return
 
-
+/datum/game_mode/scenario/proc/handlegoals()
+	for(var/faction_to_check in choosen_scenario.faction_list)
+		if(choosen_scenario.handlegoals(faction_to_check))
+			goals.[faction_to_check] = 1
+		else
+			goals.[faction_to_check] = 0
 
 
 /datum/game_mode/proc/handle_scenario_latejoin(var/mob/living/carbon/human/player)
@@ -199,5 +216,6 @@
 	show_subfluff(player, "description", 1)
 	show_subfluff(player, "faction", 1)
 	show_subfluff(player, "role", 1)
+	show_goals_mob(player)
 	spawn_items_role(player)
 	spawn_items_faction(player)

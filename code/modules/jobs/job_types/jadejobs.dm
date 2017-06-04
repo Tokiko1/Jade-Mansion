@@ -84,6 +84,42 @@
 
 //	implants = list(/obj/item/weapon/implant/mindshield)
 
+/datum/job/guest
+	title = "Guest"
+	flag = GUEST
+	department_flag = ENGSEC
+	faction = "Station"
+	total_positions = 5
+	spawn_positions = 5
+	supervisors = "nobody but yourself"
+	selection_color = "#dddddd"
+
+	outfit = /datum/outfit/job/mansionowner
+
+	access = list(GLOB.access_library)
+	minimal_access = list(GLOB.access_library)
+
+/datum/outfit/job/guest
+	name = "Guest"
+	jobtype = /datum/job/guest
+
+//	id = /obj/item/weapon/card/id/gold
+//	belt = /obj/item/device/pda/
+//	glasses = /obj/item/clothing/glasses/sunglasses
+//	ears = /obj/item/device/radio/headset/heads/captain/alt
+//	gloves = a
+//	uniform = a
+//	suit = a
+//	shoes = a
+//	head = a
+//	backpack_contents = list(/obj/item/doorkey/master)
+//	r_hand = a
+//	l_hand = a
+//	l_pocket = /obj/item/device/laser_pointer
+//	r_pocket = /obj/item/doorkey/owner
+
+//	implants = list(/obj/item/weapon/implant/mindshield)
+
 //Butler
 
 /datum/job/butler
