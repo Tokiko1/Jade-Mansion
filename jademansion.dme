@@ -1965,6 +1965,8 @@
 #include "code\modules\ruins\objects_and_mobs\sin_ruins.dm"
 #include "code\modules\scenarios\example.dm"
 #include "code\modules\scenarios\scenario.dm"
+#include "code\modules\scenarios\sub_scenario.dm"
+#include "code\modules\scenarios\subscenarios\feast.dm"
 #include "code\modules\security_levels\keycard_authentication.dm"
 #include "code\modules\security_levels\security_levels.dm"
 #include "code\modules\shuttle\arrivals.dm"

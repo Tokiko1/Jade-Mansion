@@ -86,7 +86,7 @@
 	var/list/custom_job3_items = list()
 
 //sub scenarios, loads from a different file
-	var/sub_scenario_allowed = 0
+	var/sub_scenario_allowed = 1
 	var/list/sub_scenario = list()
 	var/list/sub_scenario_probabilities = list()
 

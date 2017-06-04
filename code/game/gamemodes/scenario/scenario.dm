@@ -7,10 +7,12 @@
 	announce_text = "Just have fun and enjoy the game!"
 
 	var/datum/scenario/choosen_scenario
+	var/datum/subscenario/choosen_sub
 
 
 /datum/game_mode/scenario/pre_setup()
 	pickscenario()
+	picksubscenario()
 
 	spawn_items_landmarks()
 
@@ -35,6 +37,15 @@
 		return 0
 	return 1
 
+/datum/game_mode/scenario/proc/picksubscenario()
+	var/list/datum/subscenario/subscenario_list = subtypesof(/datum/subscenario)
+	var/subscenario_type = pick(subscenario_list)
+	choosen_sub = new subscenario_type
+	if(!choosen_sub.pickable)
+		return 0
+	choosen_sub.handle_subscenario()
+	return 1
+
 /datum/game_mode/scenario/proc/loadscenario()
 
 
@@ -45,6 +56,9 @@
 		show_fluff(player, "faction", 1)
 		show_fluff(player, "role", 1)
 //		show_fluff(player, "goal", 1)
+		show_subfluff(player, "description", 1)
+		show_subfluff(player, "faction", 1)
+		show_subfluff(player, "role", 1)
 		spawn_items_role(player)
 		spawn_items_faction(player)
 
@@ -95,6 +109,30 @@
 				if(save_memory)
 					player.mind.memory += "[rf]<BR>"
 //		if("goal")
+
+/datum/game_mode/scenario/proc/show_subfluff(var/mob/living/carbon/human/player, var/fluff_type, var/save_memory = 1)
+	if(!fluff_type)
+		return
+	switch(fluff_type)
+		if("description")
+			to_chat(player, "<B>Extra Scenario: [choosen_sub.sub_name]</B>")
+			to_chat(player, "[choosen_sub.sub_desc]")
+			if(save_memory)
+				player.mind.memory += "<B>Extra Scenario: [choosen_sub.sub_name]</B><BR>"
+				player.mind.memory += "[choosen_sub.sub_desc]<BR>"
+		if("faction")
+			for(var/currentfaction in player.mind.scenario_faction)
+				var/ff = choosen_sub.sub_factionfluff.[currentfaction]
+				if(ff)
+					to_chat(player, "[ff]")
+					if(save_memory)
+						player.mind.memory += "[ff]<BR>"
+		if("role")
+			var/rf = choosen_sub.sub_rolefluff.[player.mind.assigned_role]
+			if(rf)
+				to_chat(player, "[rf]")
+				if(save_memory)
+					player.mind.memory += "[rf]<BR>"
 
 //spawning items on the landmarks
 /datum/game_mode/scenario/proc/spawn_items_landmarks()
@@ -158,5 +196,8 @@
 	show_fluff(player, "faction", 1)
 	show_fluff(player, "role", 1)
 //	show_fluff(player, "goal", 1)
+	show_subfluff(player, "description", 1)
+	show_subfluff(player, "faction", 1)
+	show_subfluff(player, "role", 1)
 	spawn_items_role(player)
 	spawn_items_faction(player)
