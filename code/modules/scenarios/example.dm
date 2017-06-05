@@ -13,6 +13,7 @@
 	faction_fluff = list("owner" = "You are a mansion owner! You own this mansion!", "staff" = "You work as a staff member here.", "posing_staff" = "You are pretending to be a staff member but are actually a mansion owner too!")
 	no_faction_restrictions = 0 //if 1, players are randomly assigned a faction in faction_list and restrictions is completely ignored
 	exclusive_factions = 1 //if 0, players with a certain job will get all factions in the restriction list, if 1 they are randomly assigned a single faction from that list instead
+	max_factionmember_amount =list("staff" = 0, "owner" = 0, "posing_staff" = 1)
 
 //faction restriction for roles
 	faction_restrictions = list(
@@ -56,7 +57,6 @@
 	faction_spawns = list("posing_staff" = list(/obj/item/doorkey/master, /obj/item/doorkey/master))
 
 //goals
-	use_alternative_handling = 0 //if 0, the handlegoals() proc below is used
 	faction_goal_text = list()
 	faction_goal_amounts = list()
 	faction_goals = list()

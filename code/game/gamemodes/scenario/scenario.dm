@@ -61,7 +61,8 @@
 		show_subfluff(player, "description", 1)
 		show_subfluff(player, "faction", 1)
 		show_subfluff(player, "role", 1)
-		show_goals_mob(player)
+		if(choosen_scenario.use_goals)
+			show_goals_mob(player)
 		spawn_items_role(player)
 		spawn_items_faction(player)
 
@@ -71,18 +72,38 @@
 	var/mobjob = player.mind.assigned_role
 
 	if(choosen_scenario.no_faction_restrictions)
-		var/randomfaction = pick(choosen_scenario.faction_list) //pick a random faction if the scenario has no faction restrictions for roles
-		player.mind.scenario_faction |= randomfaction
+		var/list/factions = choosen_scenario.faction_list
+		while(!player.mind.scenario_faction.len)
+			if(!factions.len) //either we ran out of avaible faction slots, or there were no factions set
+				player.mind.scenario_faction |= "neutral"
+				break
+			var/randomfaction = pick(factions) //pick a random faction if the scenario has no faction restrictions for roles
+			if(choosen_scenario.max_factionmember_amount.[randomfaction] == null)
+				player.mind.scenario_faction |= randomfaction
+			else if(choosen_scenario.max_factionmember_amount.[randomfaction] == 0)
+				factions -= randomfaction
+			else
+				choosen_scenario.max_factionmember_amount.[randomfaction]--
+				player.mind.scenario_faction |= randomfaction
 	else
 		if(!choosen_scenario.faction_restrictions.[mobjob])
 			player.mind.scenario_faction |= "neutral" //all players without a faction in faction_restrictions only get the neutral faction
 
 		else
 			if(choosen_scenario.exclusive_factions) //we are only allowed to pick one faction, so choose a random one
-				var/list/factionlist = choosen_scenario.faction_restrictions.[mobjob]
-				var/selected_faction = pick(factionlist)
-				player.mind.scenario_faction |= selected_faction
-
+				var/list/factions = choosen_scenario.faction_restrictions.[mobjob]
+				while(!player.mind.scenario_faction.len)
+					if(!factions.len) //either we ran out of avaible faction slots, or there were no factions set
+						player.mind.scenario_faction |= "neutral"
+						break
+					var/randomfaction = pick(factions)
+					if(choosen_scenario.max_factionmember_amount.[randomfaction] == null)
+						player.mind.scenario_faction |= randomfaction
+					else if(choosen_scenario.max_factionmember_amount.[randomfaction] == 0)
+						factions -= randomfaction
+					else
+						choosen_scenario.max_factionmember_amount.[randomfaction]--
+						player.mind.scenario_faction |= randomfaction
 			else //let's add all factions instead
 				var/list/factionlist = choosen_scenario.faction_restrictions.[mobjob]
 				for(var/selected_faction in factionlist)
@@ -113,6 +134,7 @@
 					player.mind.memory += "[rf]<BR>"
 //		if("goal")
 
+//anouncing subscenario fluff
 /datum/game_mode/scenario/proc/show_subfluff(var/mob/living/carbon/human/player, var/fluff_type, var/save_memory = 1)
 	if(!fluff_type)
 		return
@@ -137,6 +159,7 @@
 				if(save_memory)
 					player.mind.memory += "[rf]<BR>"
 
+//showing goals to a mob, usually the ones at latejoin/roundstart
 /datum/game_mode/scenario/proc/show_goals_mob(var/mob/living/carbon/human/player, var/save_memory = 1)
 	for(var/currentfaction in player.mind.scenario_faction)
 		var/fg = choosen_scenario.faction_goal_text.[currentfaction]
@@ -216,6 +239,7 @@
 	show_subfluff(player, "description", 1)
 	show_subfluff(player, "faction", 1)
 	show_subfluff(player, "role", 1)
-	show_goals_mob(player)
+	if(choosen_scenario.use_goals)
+		show_goals_mob(player)
 	spawn_items_role(player)
 	spawn_items_faction(player)

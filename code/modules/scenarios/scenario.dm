@@ -12,7 +12,8 @@
 	var/list/faction_list = list()
 	var/list/faction_fluff = list()
 	var/no_faction_restrictions = 0 //if 1, players are randomly assigned a faction in faction_list and restrictions is completely ignored
-	var/exclusive_factions = 0 //if 0, players with a certain job will get all factions in the restriction list, if 1 they are randomly assigned a single faction from that list instead
+	var/exclusive_factions = 1 //if 0, players with a certain job will get all factions in the restriction list, if 1 they are randomly assigned a single faction from that list instead
+	var/list/max_factionmember_amount = list() //use this list to limit the amount of members a faction may have, does not work with exclusive_factions 0
 
 //faction restriction for roles
 	var/list/faction_restrictions = list(
@@ -61,8 +62,7 @@
 	var/list/faction_spawns = list()
 
 //goals
-	var/use_alternative_handling = 0 //if 0, the handlegoals() proc below is used
-	var/use_goals = 2 //0 = goals are unused and not checked. 1 = only map completion goals are checked. 2 = scenario goals are checked. 3 = both map completiopn and scenario goals are checked
+	var/use_goals = 1 //0 = goals are unused not announced, 1 = goals are used and will be announced
 	var/list/faction_goal_text = list()
 	var/list/faction_goal_amounts = list()
 	var/list/faction_goals = list()
