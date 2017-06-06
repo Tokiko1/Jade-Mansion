@@ -14,13 +14,22 @@
 /datum/game_mode/scenario/pre_setup()
 	pickscenario()
 	picksubscenario()
-
 	spawn_items_landmarks()
 
 	return 1
 
 /datum/game_mode/scenario/post_setup()
 	setup_all_scenario_things()
+	var/list/voters = list()
+	for(var/c in GLOB.clients)
+	//	voters |= c
+	var/list/egg = list(
+	"question" = "Does this work well? Can you vote?",
+	"answers" = list("Yeah!", "I guess!", "Squawk!", "Chirp!", "It doesn't work!")
+	)
+	SSvote.initiate_vote("scenario input", "", scenario_input = egg, allowed_voters = voters)
+
+
 //	announce_all_factionfluff()
 
 

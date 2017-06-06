@@ -13,6 +13,10 @@ SUBSYSTEM_DEF(vote)
 	var/list/voted = list()
 	var/list/voting = list()
 	var/list/generated_actions = list()
+	var/restricted_vote = 0
+	var/scenario_vote = 0
+	var/list/allowed_voters_vote =list()
+	var/list/scenario_input_vote = list()
 
 /datum/controller/subsystem/vote/fire()	//called by master_controller
 	if(mode)
@@ -121,6 +125,8 @@ SUBSYSTEM_DEF(vote)
 						restart = 1
 					else
 						GLOB.master_mode = .
+			if("end round") //TODO: Add something here
+				restart = 1
 	if(restart)
 		var/active_admins = 0
 		for(var/client/C in GLOB.admins)
@@ -139,6 +145,8 @@ SUBSYSTEM_DEF(vote)
 	if(mode)
 		if(config.vote_no_dead && usr.stat == DEAD && !usr.client.holder)
 			return 0
+		if(restricted_vote && !(usr.client in allowed_voters_vote))
+			return 0
 		if(!(usr.ckey in voted))
 			if(vote && 1<=vote && vote<=choices.len)
 				voted += usr.ckey
@@ -146,7 +154,7 @@ SUBSYSTEM_DEF(vote)
 				return vote
 	return 0
 
-/datum/controller/subsystem/vote/proc/initiate_vote(vote_type, initiator_key)
+/datum/controller/subsystem/vote/proc/initiate_vote(vote_type, initiator_key, var/list/scenario_input, var/list/allowed_voters)
 	if(!mode)
 		if(started_time)
 			var/next_allowed_time = (started_time + config.vote_delay)
@@ -159,17 +167,36 @@ SUBSYSTEM_DEF(vote)
 			if((GLOB.admin_datums[ckey]) || (ckey in GLOB.deadmins))
 				admin = TRUE
 
-			if(next_allowed_time > world.time && !admin)
+			if(next_allowed_time > world.time && !admin && !scenario_vote)
 				to_chat(usr, "<span class='warning'>A vote was initiated recently, you must wait roughly [(next_allowed_time-world.time)/10] seconds before a new vote can be started!</span>")
 				return 0
 
 		reset()
 		switch(vote_type)
+			if("end round")
+				scenario_vote = 0
+				restricted_vote = 0
+				choices.Add("Initiate Round End", "Extend Round")
+				question = "Would you like to end the round naturally or extend it by another 30 minutes?"
+			if("scenario input")
+				allowed_voters_vote = allowed_voters
+				scenario_input_vote = scenario_input
+				restricted_vote = 1
+				scenario_vote = 1
+				question = scenario_input.["question"]
+				for(var/s_answer in scenario_input.["answers"])
+					choices |= s_answer
 			if("restart")
+				scenario_vote = 0
+				restricted_vote = 0
 				choices.Add("Restart Round","Continue Playing")
 			if("gamemode")
+				scenario_vote = 0
+				restricted_vote = 0
 				choices.Add(config.votable_modes)
 			if("custom")
+				scenario_vote = 0
+				restricted_vote = 0
 				question = stripped_input(usr,"What is the vote for?")
 				if(!question)
 					return 0
@@ -183,11 +210,24 @@ SUBSYSTEM_DEF(vote)
 		mode = vote_type
 		initiator = initiator_key
 		started_time = world.time
-		var/text = "[capitalize(mode)] vote started by [initiator]."
-		if(mode == "custom")
+		var/text
+		if(initiator)
+			text = "[capitalize(mode)] vote started by [initiator]."
+		else
+			text = "[capitalize(mode)] vote started."
+
+		if(mode == "custom" && mode == "scenario input")
 			text += "\n[question]"
 		log_vote(text)
-		to_chat(world, "\n<font color='purple'><b>[text]</b>\nType <b>vote</b> or click <a href='?src=\ref[src]'>here</a> to place your votes.\nYou have [config.vote_period/10] seconds to vote.</font>")
+		if(restricted_vote)
+			to_chat(world, "\n<font color='purple'><b>[text]</b>\n")
+			var/list/nonvoters = list()
+			nonvoters = GLOB.clients - allowed_voters_vote
+			to_chat(allowed_voters, "Type <b>vote</b> or click <a href='?src=\ref[src]'>here</a> to place your votes.\nYou have [config.vote_period/10] seconds to vote.</font>")
+			to_chat(nonvoters, "Type <b>vote</b> or click <a href='?src=\ref[src]'>here</a> to view the voting. \nThis is a restricted vote and you may not participate.\nThe vote will end in [config.vote_period/10] seconds.</font>")
+
+		else
+			to_chat(world, "\n<font color='purple'><b>[text]</b>\nType <b>vote</b> or click <a href='?src=\ref[src]'>here</a> to place your votes.\nYou have [config.vote_period/10] seconds to vote.</font>")
 		time_remaining = round(config.vote_period/10)
 		for(var/c in GLOB.clients)
 			var/client/C = c
@@ -215,6 +255,8 @@ SUBSYSTEM_DEF(vote)
 			. += "<h2>Vote: '[question]'</h2>"
 		else
 			. += "<h2>Vote: [capitalize(mode)]</h2>"
+		if(restricted_vote && !(C in allowed_voters_vote))
+			. += "(Note: You may not vote, this vote is intended for others.)<hr>"
 		. += "Time Left: [time_remaining] s<hr><ul>"
 		for(var/i=1,i<=choices.len,i++)
 			var/votes = choices[choices[i]]
@@ -222,7 +264,7 @@ SUBSYSTEM_DEF(vote)
 				votes = 0
 			. += "<li><a href='?src=\ref[src];vote=[i]'>[choices[i]]</a> ([votes] votes)</li>"
 		. += "</ul><hr>"
-		if(admin)
+		if(admin && scenario_vote == 0)
 			. += "(<a href='?src=\ref[src];vote=cancel'>Cancel Vote</a>) "
 	else
 		. += "<h2>Start a vote:</h2><hr><ul><li>"
@@ -260,7 +302,7 @@ SUBSYSTEM_DEF(vote)
 			usr << browse(null, "window=vote")
 			return
 		if("cancel")
-			if(usr.client.holder)
+			if(usr.client.holder && scenario_vote == 0)
 				reset()
 		if("toggle_restart")
 			if(usr.client.holder)
