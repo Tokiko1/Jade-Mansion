@@ -7,6 +7,8 @@
 	min_players = 0
 	max_players = 0 //keep 0 to disable this cap
 	required_roles = list(mansionowner = 1) //game cannot start unless these are filled
+	round_lenght = 120
+	extension_lenght = 120
 
 //faction stuff
 	faction_list = list("owner", "staff", "posing_staff")

@@ -9,6 +9,7 @@ SUBSYSTEM_DEF(vote)
 	var/time_remaining = 0
 	var/mode = null
 	var/question = null
+	var/cancelable = 1
 	var/list/choices = list()
 	var/list/voted = list()
 	var/list/voting = list()
@@ -39,6 +40,7 @@ SUBSYSTEM_DEF(vote)
 /datum/controller/subsystem/vote/proc/reset()
 	initiator = null
 	time_remaining = 0
+	cancelable = 1
 	mode = null
 	question = null
 	choices.Cut()
@@ -73,6 +75,11 @@ SUBSYSTEM_DEF(vote)
 					choices[GLOB.master_mode] += non_voters.len
 					if(choices[GLOB.master_mode] >= greatest_votes)
 						greatest_votes = choices[GLOB.master_mode]
+			else if(mode == "end round")
+				choices["Extend Round"] += non_voters.len
+				if(choices["Extend Round"] >= greatest_votes)
+					greatest_votes = choices["Extend Round"]
+
 	//get all options with that many votes and return them in a list
 	. = list()
 	if(greatest_votes)
@@ -125,8 +132,13 @@ SUBSYSTEM_DEF(vote)
 						restart = 1
 					else
 						GLOB.master_mode = .
-			if("end round") //TODO: Add something here
-				restart = 1
+			if("end round")
+				if(. == "Initiate Round End")
+					to_chat(world, "<span style='boldannounce'>The round is now ending.</span>")
+					SSticker.mode.end_scenario(1)
+				else
+					to_chat(world, "<span style='boldannounce'>The round has been extended!</span>")
+					SSticker.mode.end_scenario(0)
 	if(restart)
 		var/active_admins = 0
 		for(var/client/C in GLOB.admins)
@@ -159,7 +171,6 @@ SUBSYSTEM_DEF(vote)
 		if(started_time)
 			var/next_allowed_time = (started_time + config.vote_delay)
 			if(mode)
-				to_chat(usr, "<span class='warning'>There is already a vote in progress! please wait for it to finish.</span>")
 				return 0
 
 			var/admin = FALSE
@@ -174,11 +185,13 @@ SUBSYSTEM_DEF(vote)
 		reset()
 		switch(vote_type)
 			if("end round")
-				scenario_vote = 0
+				cancelable = 0
+				scenario_vote = 1
 				restricted_vote = 0
 				choices.Add("Initiate Round End", "Extend Round")
-				question = "Would you like to end the round naturally or extend it by another 30 minutes?"
+				question = "Would you like to end the round naturally or extend it?"
 			if("scenario input")
+				cancelable = 0
 				allowed_voters_vote = allowed_voters
 				scenario_input_vote = scenario_input
 				restricted_vote = 1
@@ -264,7 +277,7 @@ SUBSYSTEM_DEF(vote)
 				votes = 0
 			. += "<li><a href='?src=\ref[src];vote=[i]'>[choices[i]]</a> ([votes] votes)</li>"
 		. += "</ul><hr>"
-		if(admin && scenario_vote == 0)
+		if(admin && cancelable == 1)
 			. += "(<a href='?src=\ref[src];vote=cancel'>Cancel Vote</a>) "
 	else
 		. += "<h2>Start a vote:</h2><hr><ul><li>"
@@ -302,7 +315,7 @@ SUBSYSTEM_DEF(vote)
 			usr << browse(null, "window=vote")
 			return
 		if("cancel")
-			if(usr.client.holder && scenario_vote == 0)
+			if(usr.client.holder && cancelable == 1)
 				reset()
 		if("toggle_restart")
 			if(usr.client.holder)

@@ -7,6 +7,8 @@
 	var/min_players = 0
 	var/max_players = 0 //keep 0 to disable this cap
 	var/list/required_roles = list() //game cannot start unless these are filled
+	var/round_lenght = 36000 //time until the round end vote is called in 10ths of a second. 36000 = 1 hour, 600 = 1 minute
+	var/extension_lenght = 12000 //time in 10th of second the round is extended if players vote for an extention, 12000 = 20 minutes
 
 //faction stuff
 	var/list/faction_list = list()

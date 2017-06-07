@@ -9,6 +9,13 @@
 	var/datum/scenario/choosen_scenario
 	var/datum/subscenario/choosen_sub
 	var/list/goals = list()
+	var/setup_complete = 0
+	var/polling = 0
+	var/initiated_end = 0
+	var/goals_done = 0
+	var/finished = 0
+	var/poll_roundend_next = 0
+	var/check_counter = 0
 
 
 /datum/game_mode/scenario/pre_setup()
@@ -20,6 +27,7 @@
 
 /datum/game_mode/scenario/post_setup()
 	setup_all_scenario_things()
+	//this is just debug nonsense, remove it
 	var/list/voters = list()
 	for(var/c in GLOB.clients)
 	//	voters |= c
@@ -32,12 +40,35 @@
 
 //	announce_all_factionfluff()
 
+	poll_roundend_next = REALTIMEOFDAY + choosen_scenario.round_lenght
+	setup_complete = 1
 
 	..()
 
 /datum/game_mode/scenario/announced
 	name = "scenario"
 	config_tag = "scenario"
+
+/datum/game_mode/scenario/process()
+	check_counter++
+	if(check_counter >= 5)
+		if(!finished && setup_complete)
+			if(REALTIMEOFDAY > poll_roundend_next)
+				if(!SSvote.mode && !polling && !initiated_end)
+					SSvote.initiate_vote("end round")
+			if(initiated_end && !polling)
+				message_admins("DEBUG: It works!")
+				choosen_scenario.handlegoals()
+				polling = 1
+
+			if(goals_done)
+				announce_end_stats()
+		check_counter = 0
+	return 0
+
+
+
+
 
 /datum/game_mode/scenario/proc/pickscenario()
 	var/list/datum/scenario/scenario_list = subtypesof(/datum/scenario)
@@ -238,6 +269,9 @@
 	if(!SSticker.mode == "scenario")
 		return
 
+/datum/game_mode/scenario/proc/announce_end_stats()
+
+
 /datum/game_mode/scenario/handle_scenario_latejoin(var/mob/living/carbon/human/player)
 	..()
 	setup_scenario_factions(player)
@@ -252,3 +286,14 @@
 		show_goals_mob(player)
 	spawn_items_role(player)
 	spawn_items_faction(player)
+
+/datum/game_mode/proc/end_scenario(var/result)
+	if(!SSticker.mode == "scenario")
+		return
+
+/datum/game_mode/scenario/end_scenario(var/result)
+	..()
+	if(result)
+		initiated_end = 1
+	else
+		poll_roundend_next = REALTIMEOFDAY + choosen_scenario.extension_lenght
