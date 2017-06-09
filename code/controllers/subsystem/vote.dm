@@ -16,6 +16,7 @@ SUBSYSTEM_DEF(vote)
 	var/list/generated_actions = list()
 	var/restricted_vote = 0
 	var/scenario_vote = 0
+	var/winning_vote
 	var/list/allowed_voters_vote =list()
 	var/list/scenario_input_vote = list()
 
@@ -115,6 +116,7 @@ SUBSYSTEM_DEF(vote)
 	log_vote(text)
 	remove_action_buttons()
 	to_chat(world, "\n<font color='purple'>[text]</font>")
+	winning_vote = .
 	return .
 
 /datum/controller/subsystem/vote/proc/result()
@@ -139,6 +141,8 @@ SUBSYSTEM_DEF(vote)
 				else
 					to_chat(world, "<span style='boldannounce'>The round has been extended!</span>")
 					SSticker.mode.end_scenario(0)
+			if("scenario input")
+				SSticker.mode.choosen_scenario.handle_vote_result(.)
 	if(restart)
 		var/active_admins = 0
 		for(var/client/C in GLOB.admins)
@@ -233,11 +237,11 @@ SUBSYSTEM_DEF(vote)
 			text += "\n[question]"
 		log_vote(text)
 		if(restricted_vote)
-			to_chat(world, "\n<font color='purple'><b>[text]</b>\n")
+			to_chat(world, "\n<font color='purple'><b>[text]</b>\n</font>")
 			var/list/nonvoters = list()
 			nonvoters = GLOB.clients - allowed_voters_vote
-			to_chat(allowed_voters, "Type <b>vote</b> or click <a href='?src=\ref[src]'>here</a> to place your votes.\nYou have [config.vote_period/10] seconds to vote.</font>")
-			to_chat(nonvoters, "Type <b>vote</b> or click <a href='?src=\ref[src]'>here</a> to view the voting. \nThis is a restricted vote and you may not participate.\nThe vote will end in [config.vote_period/10] seconds.</font>")
+			to_chat(allowed_voters, "<font color='purple'>Type <b>vote</b> or click <a href='?src=\ref[src]'>here</a> to place your votes.\nYou have [config.vote_period/10] seconds to vote.</font>")
+			to_chat(nonvoters, "<font color='purple'>Type <b>vote</b> or click <a href='?src=\ref[src]'>here</a> to view the voting. \nThis is a restricted vote and you may not participate.\nThe vote will end in [config.vote_period/10] seconds.</font>")
 
 		else
 			to_chat(world, "\n<font color='purple'><b>[text]</b>\nType <b>vote</b> or click <a href='?src=\ref[src]'>here</a> to place your votes.\nYou have [config.vote_period/10] seconds to vote.</font>")

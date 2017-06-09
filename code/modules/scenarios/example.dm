@@ -85,19 +85,12 @@
 
 //sub scenarios, loads from a different file
 	sub_scenario_allowed = 0
-	sub_scenario = list()
-	sub_scenario_probabilities = list()
 
-//round end inputs
-	allow_roundend_input = 0
-	unchecked_input = 0 //disables checks and simply displays answer, for when you want questions that can't be checked with code
-	roundend_input_factions = list() //who gets to input stuff?
-	roundend_input_amounts = list() //how many inputs?
-	roundend_input_types = list() //what kind of inputs?
-	roundend_input_questiontext = list() //question that is displayed during inputs
-	roundend_input_inputtext = list() //if there are pick options, use this text
-	roundend_input_check = list() //how to check if each input was correct?
+	roundend_inputs_factions = list()
+	roundend_polls_factions = list("poll1" = list())
 
-
+	roundend_inputs = list("input1" = list("question" = "Do you love birds?"), "input2" = list("question" = "56709"))
+	roundend_polls = list("poll1" = list("question" = "Whichones?", "answers" = list("Dove", "Crow")),
+	"poll2" = list("question" = "Whichones2?", "answers" = list("Squawksie", "eee2")))
 
 

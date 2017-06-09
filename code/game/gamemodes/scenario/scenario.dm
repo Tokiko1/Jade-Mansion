@@ -6,8 +6,7 @@
 	announce_span = "notice"
 	announce_text = "Just have fun and enjoy the game!"
 
-	var/datum/scenario/choosen_scenario
-	var/datum/subscenario/choosen_sub
+
 	var/list/goals = list()
 	var/setup_complete = 0
 	var/polling = 0
@@ -27,20 +26,8 @@
 
 /datum/game_mode/scenario/post_setup()
 	setup_all_scenario_things()
-	//this is just debug nonsense, remove it
-	var/list/voters = list()
-	for(var/c in GLOB.clients)
-	//	voters |= c
-	var/list/egg = list(
-	"question" = "Does this work well? Can you vote?",
-	"answers" = list("Yeah!", "I guess!", "Squawk!", "Chirp!", "It doesn't work!")
-	)
-	SSvote.initiate_vote("scenario input", "", scenario_input = egg, allowed_voters = voters)
-
-
-//	announce_all_factionfluff()
-
 	poll_roundend_next = REALTIMEOFDAY + choosen_scenario.round_lenght
+	choosen_scenario.handlescenario_postsetup()
 	setup_complete = 1
 
 	..()
@@ -57,8 +44,7 @@
 				if(!SSvote.mode && !polling && !initiated_end)
 					SSvote.initiate_vote("end round")
 			if(initiated_end && !polling)
-				message_admins("DEBUG: It works!")
-				choosen_scenario.handlegoals()
+				choosen_scenario.handle_end()
 				polling = 1
 
 			if(goals_done)
@@ -70,7 +56,7 @@
 
 
 
-/datum/game_mode/scenario/proc/pickscenario()
+/datum/game_mode/proc/pickscenario()
 	var/list/datum/scenario/scenario_list = subtypesof(/datum/scenario)
 	var/scenario_type = pick(scenario_list)
 	choosen_scenario = new scenario_type
@@ -79,7 +65,7 @@
 	choosen_scenario.handlescenario()
 	return 1
 
-/datum/game_mode/scenario/proc/picksubscenario()
+/datum/game_mode/proc/picksubscenario()
 	var/list/datum/subscenario/subscenario_list = subtypesof(/datum/subscenario)
 	var/subscenario_type = pick(subscenario_list)
 	choosen_sub = new subscenario_type
