@@ -134,6 +134,8 @@
 	new /obj/item/clothing/under/casualskirtred(src)
 	new /obj/item/clothing/under/whitedress1(src)
 	new /obj/item/clothing/under/whitedress2(src)
+	new /obj/item/clothing/under/blackdress1(src)
+	new /obj/item/clothing/gloves/long_gloves1(src)
 	new /obj/item/clothing/under/bluedress1(src)
 	new /obj/item/clothing/shoes/laceup(src)
 	new /obj/item/clothing/shoes/laceup(src)

@@ -302,7 +302,7 @@
 	if(!IsJobAvailable(rank))
 		alert(src, "[rank] is not available. Please try another.")
 		return 0
-	
+
 	if(SSticker.late_join_disabled)
 		alert(src, "An administrator has disabled late join spawning.")
 		return FALSE
@@ -362,6 +362,7 @@
 		if(GLOB.highlander)
 			to_chat(humanc, "<span class='userdanger'><i>THERE CAN BE ONLY ONE!!!</i></span>")
 			humanc.make_scottish()
+		SSticker.mode.handle_scenario_latejoin(humanc)
 
 	GLOB.joined_player_list += character.ckey
 

@@ -22,6 +22,7 @@
 	valid_sc_defeat = 1
 	purify_allowed = 1
 	apc_covered = 1
+	indoors = 1
 
 
 /area/inside/hallways
