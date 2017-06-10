@@ -9,6 +9,7 @@
 	var/list/required_roles = list() //game cannot start unless these are filled
 	var/round_lenght = 36000 //time until the round end vote is called in 10ths of a second. 36000 = 1 hour, 600 = 1 minute
 	var/extension_lenght = 12000 //time in 10th of second the round is extended if players vote for an extention, 12000 = 20 minutes
+	var/epilogue //some story closure displayed at roundend, recommended to manipulate via handlegoals()
 
 //faction stuff
 	var/list/faction_list = list()
@@ -16,6 +17,7 @@
 	var/no_faction_restrictions = 0 //if 1, players are randomly assigned a faction in faction_list and restrictions is completely ignored
 	var/exclusive_factions = 1 //if 0, players with a certain job will get all factions in the restriction list, if 1 they are randomly assigned a single faction from that list instead
 	var/list/max_factionmember_amount = list() //use this list to limit the amount of members a faction may have, does not work with exclusive_factions 0
+	var/list/factionnames = list() //nicer names for factions, any faction in here will have their goals/members displayed at roundend
 
 //faction restriction for roles
 	var/list/faction_restrictions = list(
@@ -98,6 +100,7 @@
 	var/poll_id = 1
 	var/input_id = 1
 	var/game_ending = 0
+	var/ended = 0
 
 	var/list/roundend_inputs_factions = list("input1" = list())
 	var/list/roundend_polls_factions = list("poll1" = list())
@@ -109,6 +112,7 @@
 	var/list/voteresults = list()
 	var/list/inputsgiven = list()
 	var/list/inputresults = list()
+	var/list/goals_finished = list()
 
 	var/processing_counter = 0
 
@@ -124,18 +128,25 @@
 			var/list/currentinput = roundend_inputs.["input[input_id]"]
 			var/questionT = currentinput.["question"]
 			var/allowed_voters
+
+			if(!roundend_inputs_factions.["input[input_id]"])
+				allowed_voters = GLOB.clients
 			for(var/mob/living/carbon/human/player in GLOB.player_list)
 				if(player.mind.scenario_faction in roundend_inputs_factions.["input[input_id]"])
 					allowed_voters |= player.client
 			if(!allowed_voters)
-				allowed_voters = GLOB.clients
+				inputsgiven = list()
+				if(input_id >= inputnumbers) //all polls done, finishing polling
+					handle_postinput()
+				else
+					inputting = 1
+					input_id++
 
 			inputting = 2
 
 			for(var/people_inputting in allowed_voters)
 				spawn()
 					var/entered = stripped_input(people_inputting, questionT)
-					message_admins("[entered]")
 					if(entered)
 						inputsgiven.Add(entered)
 			spawn(150)
@@ -146,7 +157,6 @@
 
 
 				if(input_id >= inputnumbers) //all polls done, finishing polling
-					inputting = 3
 					handle_postinput()
 				else
 					inputting = 1
@@ -158,17 +168,25 @@
 			var/list/answersT = currentpoll.["answers"]
 			var/list/vote = list("question" = questionT,"answers" = answersT)
 			var/allowed_voters
+
+			if(!roundend_polls_factions.["poll[poll_id]"])
+				allowed_voters = GLOB.clients
 			for(var/mob/living/carbon/human/player in GLOB.player_list)
 				if(player.mind.scenario_faction in roundend_polls_factions.["poll[poll_id]"])
 					allowed_voters |= player.client
-			if(!allowed_voters)
-				allowed_voters = GLOB.clients
-			SSvote.initiate_vote("scenario input", "", vote, allowed_voters)
-			polling = 2
+			if(allowed_voters)
+				SSvote.initiate_vote("scenario input", "", vote, allowed_voters)
+				polling = 2
+			else
+				if(poll_id >= pollnumbers) //all polls done, finishing polling
+					polling = 3
+				else
+					polling = 1
+					poll_id++
 
-		if(polling == 3 && inputting == 3)
-			message_admins("Stuff worked!") //WARNING: DEBUG REMOVE ME LATER 'v'
-		//this is where handlegoals is called
+		if(polling == 3 && inputting == 3 && !ended)
+			ended = 1
+			handlegoals()
 
 		processing_counter = 0
 
@@ -205,6 +223,11 @@
 /datum/scenario/proc/handlegoals()
 //this is where you can put more complex goal completion checks for a scenario
 
+
+	SSticker.mode.announce_end_stats(goals_finished)
+
+
+
 /datum/scenario/proc/handlescenario()
 //if you want to randomize or calculate stuff for a scenario you can do it here, this is called before the scenario is set up
 
@@ -213,3 +236,5 @@
 
 /datum/scenario/proc/handle_postinput()
 //this is called after all inputs were
+
+	inputting = 3

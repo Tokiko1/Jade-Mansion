@@ -1,3 +1,5 @@
+
+/*
 /datum/scenario/example
 
 //general stuff
@@ -15,7 +17,9 @@
 	faction_fluff = list("owner" = "You are a mansion owner! You own this mansion!", "staff" = "You work as a staff member here.", "posing_staff" = "You are pretending to be a staff member but are actually a mansion owner too!")
 	no_faction_restrictions = 0 //if 1, players are randomly assigned a faction in faction_list and restrictions is completely ignored
 	exclusive_factions = 1 //if 0, players with a certain job will get all factions in the restriction list, if 1 they are randomly assigned a single faction from that list instead
-	max_factionmember_amount =list("staff" = 0, "owner" = 0, "posing_staff" = 1)
+	max_factionmember_amount =list("staff" = 1, "owner" = 1, "posing_staff" = 1)
+	factionnames = list("staff" = "Staff", "owner" = "Mansion Owners", "posing_staff" = "Fake Staff")
+	epilogue = "And so Tokiko1 managed to write scenario mode and Jade Mansion was almost ready for playing!The end!"
 
 //faction restriction for roles
 	faction_restrictions = list(
@@ -86,11 +90,17 @@
 //sub scenarios, loads from a different file
 	sub_scenario_allowed = 0
 
-	roundend_inputs_factions = list()
-	roundend_polls_factions = list("poll1" = list())
+	roundend_inputs_factions = list("input2" = list("staff"))
+	roundend_polls_factions = list("poll2" = list("staff"))
 
 	roundend_inputs = list("input1" = list("question" = "Do you love birds?"), "input2" = list("question" = "56709"))
 	roundend_polls = list("poll1" = list("question" = "Whichones?", "answers" = list("Dove", "Crow")),
 	"poll2" = list("question" = "Whichones2?", "answers" = list("Squawksie", "eee2")))
 
+/datum/scenario/example/handlegoals()
+	var/stuff1 = pick(inputresults.["input1"])
+	var/stuff2 = pick(voteresults.["poll1"])
+	goals_finished = list("owner" = list("Goal: Typed in [stuff1]! <font color='green'>Success!</font>","Goal: Picked [stuff2] in a poll. <font color='red'>Egg miss!</font>" ))
+	..()
 
+*/

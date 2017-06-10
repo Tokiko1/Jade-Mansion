@@ -57,20 +57,27 @@
 
 
 /datum/game_mode/proc/pickscenario()
-	var/list/datum/scenario/scenario_list = subtypesof(/datum/scenario)
-	var/scenario_type = pick(scenario_list)
+	var/scenario_type
+	if(!scenario_override)
+		var/list/datum/scenario/scenario_list = subtypesof(/datum/scenario)
+		scenario_type = pick(scenario_list)
+	else
+		scenario_type = scenario_override_name
 	choosen_scenario = new scenario_type
-	if(!choosen_scenario.pickable)
-		return 0
+
+
+
 	choosen_scenario.handlescenario()
 	return 1
 
 /datum/game_mode/proc/picksubscenario()
-	var/list/datum/subscenario/subscenario_list = subtypesof(/datum/subscenario)
-	var/subscenario_type = pick(subscenario_list)
+	var/subscenario_type
+	if(!sub_scenario_override)
+		var/list/datum/subscenario/subscenario_list = subtypesof(/datum/subscenario)
+		subscenario_type = pick(subscenario_list)
+	else
+		subscenario_type = sub_scenario_override_name
 	choosen_sub = new subscenario_type
-	if(!choosen_sub.pickable)
-		return 0
 	choosen_sub.handle_subscenario()
 	return 1
 
@@ -158,7 +165,6 @@
 				to_chat(player, "[rf]")
 				if(save_memory)
 					player.mind.memory += "[rf]<BR>"
-//		if("goal")
 
 //anouncing subscenario fluff
 /datum/game_mode/scenario/proc/show_subfluff(var/mob/living/carbon/human/player, var/fluff_type, var/save_memory = 1)
@@ -236,27 +242,56 @@
 		droppeditem.forceMove(below_player)
 		return
 	else
-		to_chat(player, "<span class='danger'>You have a [item_name] in your [where].")
+		to_chat(player, "<span class='danger'>You have been given [item_name] in your [where] as part of the scenario.")
 		if(where == "backpack")
 			var/obj/item/weapon/storage/B = player.back
 			B.orient2hud(player)
 			B.show_to(player)
 		return
 
-/datum/game_mode/scenario/proc/handlegoals()
+/*/datum/game_mode/scenario/proc/handlegoals()
 	for(var/faction_to_check in choosen_scenario.faction_list)
 		if(choosen_scenario.handlegoals(faction_to_check))
 			goals.[faction_to_check] = 1
 		else
 			goals.[faction_to_check] = 0
-
+*/
 
 /datum/game_mode/proc/handle_scenario_latejoin(var/mob/living/carbon/human/player)
 	if(!SSticker.mode == "scenario")
 		return
 
-/datum/game_mode/scenario/proc/announce_end_stats()
+/datum/game_mode/proc/announce_end_stats(var/list/submitted_goals)
 
+/datum/game_mode/scenario/announce_end_stats(var/list/submitted_goals)
+	..()
+	to_chat(world, "<BR><BR><BR><FONT size=3><B>The round has ended.</B></FONT>")
+	to_chat(world, "<BR>[GLOB.TAB]Round Duration: <B>[round(world.time / 36000)]:[add_zero("[world.time / 600 % 60]", 2)]:[world.time / 100 % 6][world.time / 100 % 10]</B>")
+	var/total_players = GLOB.joined_player_list.len
+	if(total_players)
+		to_chat(world, "<BR>[GLOB.TAB]Total Population: <B>[total_players]</B>")
+
+
+	for(var/faction_to_check in choosen_scenario.faction_list)
+		if(faction_to_check in choosen_scenario.factionnames)
+			var/factionname = choosen_scenario.factionnames.[faction_to_check]
+			to_chat(world,"<BR><BR><BR><B>[factionname]:</B>")
+			to_chat(world,"<BR>The following players were members of [factionname]:")
+
+			for(var/mob/living/carbon/human/player in GLOB.player_list)
+				if(faction_to_check in player.mind.scenario_faction)
+					to_chat(world,"<BR>[player.mind.key] was [player.name] the [player.job].")
+
+			if(faction_to_check in submitted_goals)
+				to_chat(world,"<BR><BR><B>The goals of [factionname] were:</B>")
+				for(var/listgoals in submitted_goals.[faction_to_check])
+					to_chat(world,"<BR><B>[listgoals]</B>")
+	var/ending_text = choosen_scenario.epilogue
+	if(ending_text)
+		to_chat(world, "<BR><BR><BR><B>[ending_text]</B></FONT>")
+	to_chat(world, "<BR><BR><BR>Server restarting in 60 seconds.</FONT>")
+	sleep(600)
+	world.Reboot("Restarting...", "end", "round_ended")
 
 /datum/game_mode/scenario/handle_scenario_latejoin(var/mob/living/carbon/human/player)
 	..()
