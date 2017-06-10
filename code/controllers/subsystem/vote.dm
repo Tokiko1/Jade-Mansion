@@ -143,6 +143,10 @@ SUBSYSTEM_DEF(vote)
 					SSticker.mode.end_scenario(0)
 			if("scenario input")
 				SSticker.mode.choosen_scenario.handle_vote_result(.)
+	else
+		if(mode == "scenario input")
+			var/list/votesT = list("NO VOTE")
+			SSticker.mode.choosen_scenario.handle_vote_result(votesT)
 	if(restart)
 		var/active_admins = 0
 		for(var/client/C in GLOB.admins)

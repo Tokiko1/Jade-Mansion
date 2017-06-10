@@ -67,9 +67,6 @@
 
 //goals
 	var/use_goals = 1 //0 = goals are unused not announced, 1 = goals are used and will be announced
-	var/list/faction_goal_text = list()
-	var/list/faction_goal_amounts = list()
-	var/list/faction_goals = list()
 
 //maps and stuff
 	var/restrictmap = 0// 0 = all maps are allowed, 1 = only maps in the list are allowed, 2 = all maps not in the list are allowed
@@ -107,6 +104,9 @@
 
 	var/list/roundend_inputs = list()
 	var/list/roundend_polls = list("poll1" = list("question" = "", "answers" = list()))
+	var/faction_goal_text = list()
+
+
 	var/inputnumbers
 	var/pollnumbers
 	var/list/voteresults = list()
@@ -127,13 +127,14 @@
 		if(inputting == 1)
 			var/list/currentinput = roundend_inputs.["input[input_id]"]
 			var/questionT = currentinput.["question"]
-			var/allowed_voters
+			var/list/allowed_voters = list()
 
 			if(!roundend_inputs_factions.["input[input_id]"])
 				allowed_voters = GLOB.clients
 			for(var/mob/living/carbon/human/player in GLOB.player_list)
-				if(player.mind.scenario_faction in roundend_inputs_factions.["input[input_id]"])
-					allowed_voters |= player.client
+				for(var/factionT in player.mind.scenario_faction)
+					if(factionT in roundend_inputs_factions.["input[input_id]"])
+						allowed_voters |= player.client
 			if(!allowed_voters)
 				inputsgiven = list()
 				if(input_id >= inputnumbers) //all polls done, finishing polling
@@ -167,13 +168,14 @@
 			var/questionT = currentpoll.["question"]
 			var/list/answersT = currentpoll.["answers"]
 			var/list/vote = list("question" = questionT,"answers" = answersT)
-			var/allowed_voters
+			var/list/allowed_voters = list()
 
 			if(!roundend_polls_factions.["poll[poll_id]"])
 				allowed_voters = GLOB.clients
 			for(var/mob/living/carbon/human/player in GLOB.player_list)
-				if(player.mind.scenario_faction in roundend_polls_factions.["poll[poll_id]"])
-					allowed_voters |= player.client
+				for(var/factionT in player.mind.scenario_faction)
+					if(factionT in roundend_polls_factions.["poll[poll_id]"])
+						allowed_voters |= player.client
 			if(allowed_voters)
 				SSvote.initiate_vote("scenario input", "", vote, allowed_voters)
 				polling = 2
