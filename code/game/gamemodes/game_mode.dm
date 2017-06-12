@@ -93,8 +93,8 @@
 	if(GLOB.revdata.commit)
 		feedback_set_details("revision","[GLOB.revdata.commit]")
 	feedback_set_details("server_ip","[world.internet_address]:[world.port]")
-	if(report)
-		addtimer(CALLBACK(src, .proc/send_intercept, 0), rand(waittime_l, waittime_h))
+//	if(report)
+//		addtimer(CALLBACK(src, .proc/send_intercept, 0), rand(waittime_l, waittime_h))
 	generate_station_goals()
 	GLOB.start_state = new /datum/station_state()
 	GLOB.start_state.count(1)
@@ -272,7 +272,7 @@
 	return 0
 
 
-/datum/game_mode/proc/send_intercept()
+/*/datum/game_mode/proc/send_intercept()
 	var/intercepttext = "<b><i>Central Command Status Summary</i></b><hr>"
 	intercepttext += "<b>Central Command has intercepted and partially decoded a Syndicate transmission with vital information regarding their movements. The following report outlines the most \
 	likely threats to appear in your sector.</b>"
@@ -300,7 +300,7 @@
 	priority_announce("A summary has been copied and printed to all communications consoles.", "Enemy communication intercepted. Security level elevated.", 'sound/AI/intercept.ogg')
 	if(GLOB.security_level < SEC_LEVEL_BLUE)
 		set_security_level(SEC_LEVEL_BLUE)
-
+*/
 
 /datum/game_mode/proc/get_players_for_role(role)
 	var/list/players = list()

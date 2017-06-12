@@ -233,7 +233,7 @@ SUBSYSTEM_DEF(job)
 		return 0
 
 	//Scale number of open security officer slots to population
-	setup_officer_positions()
+	//setup_officer_positions()
 
 	//Jobs will have fewer access permissions if the number of players exceeds the threshold defined in game_options.txt
 	if(config.minimal_access_threshold)
@@ -410,11 +410,6 @@ SUBSYSTEM_DEF(job)
 
 	to_chat(M, "<b>You are the [rank].</b>")
 	to_chat(M, "<b>As the [rank] you answer directly to [job.supervisors]. Special circumstances may change this.</b>")
-	to_chat(M, "<b>To speak on your departments radio, use the :h button. To see others, look closely at your headset.</b>")
-	if(job.req_admin_notify)
-		to_chat(M, "<b>You are playing a job that is important for Game Progression. If you have to disconnect, please notify the admins via adminhelp.</b>")
-	if(config.minimal_access_threshold)
-		to_chat(M, "<FONT color='blue'><B>As this station was initially staffed with a [config.jobs_have_minimal_access ? "full crew, only your job's necessities" : "skeleton crew, additional access may"] have been added to your ID card.</B></font>")
 
 	if(job && H)
 		job.after_spawn(H, M)
@@ -422,7 +417,7 @@ SUBSYSTEM_DEF(job)
 	return H
 
 
-/datum/controller/subsystem/job/proc/setup_officer_positions()
+/*/datum/controller/subsystem/job/proc/setup_officer_positions()
 	var/datum/job/J = SSjob.GetJob("Security Officer")
 	if(!J)
 		throw EXCEPTION("setup_officer_positions(): Security officer job is missing")
@@ -445,7 +440,7 @@ SUBSYSTEM_DEF(job)
 			GLOB.secequipment -= spawnloc
 		else //We ran out of spare locker spawns!
 			break
-
+*/
 
 /datum/controller/subsystem/job/proc/LoadJobs()
 	var/jobstext = return_file_text("config/jobs.txt")

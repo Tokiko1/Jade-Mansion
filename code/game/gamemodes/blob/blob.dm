@@ -95,9 +95,10 @@ GLOBAL_LIST_EMPTY(blobs_legit) //used for win-score calculations, contains only 
 
 	sleep(message_delay)
 
-	send_intercept(1)
+/*	send_intercept(1)
 	message_sent = TRUE
 
 	sleep(24000) //40 minutes, plus burst_delay*3(minimum of 6 minutes, maximum of 8)
 	if(!replacementmode)
 		send_intercept(2) //if the blob has been alive this long, it's time to bomb it
+		*/

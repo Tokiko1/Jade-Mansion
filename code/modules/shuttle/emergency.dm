@@ -305,7 +305,7 @@
 		if(SHUTTLE_DOCKED)
 			if(time_left <= ENGINES_START_TIME)
 				mode = SHUTTLE_IGNITING
-				SSshuttle.checkHostileEnvironment()
+
 				if(mode == SHUTTLE_STRANDED)
 					return
 				for(var/A in SSshuttle.mobile)
@@ -315,7 +315,7 @@
 
 		if(SHUTTLE_IGNITING)
 			var/success = TRUE
-			SSshuttle.checkHostileEnvironment()
+
 			if(mode == SHUTTLE_STRANDED)
 				return
 
@@ -354,7 +354,7 @@
 				priority_announce("The Emergency Shuttle has left the station. Estimate [timeLeft(600)] minutes until the shuttle docks at Central Command.", null, null, "Priority")
 
 		if(SHUTTLE_STRANDED)
-			SSshuttle.checkHostileEnvironment()
+
 
 		if(SHUTTLE_ESCAPE)
 			if(sound_played && time_left <= HYPERSPACE_END_TIME)

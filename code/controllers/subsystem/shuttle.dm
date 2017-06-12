@@ -46,14 +46,7 @@ SUBSYSTEM_DEF(shuttle)
 	var/lockdown = FALSE	//disallow transit after nuke goes off
 
 /datum/controller/subsystem/shuttle/Initialize(timeofday)
-	if(!emergency)
-		WARNING("No /obj/docking_port/mobile/arrivals placed on the map!")
-	if(!emergency)
-		WARNING("No /obj/docking_port/mobile/emergency placed on the map!")
-	if(!backup_shuttle)
-		WARNING("No /obj/docking_port/mobile/emergency/backup placed on the map!")
-	if(!supply)
-		WARNING("No /obj/docking_port/mobile/supply placed on the map!")
+
 
 	ordernum = rand(1, 9000)
 
@@ -72,7 +65,6 @@ SUBSYSTEM_DEF(shuttle)
 
 /datum/controller/subsystem/shuttle/proc/setup_transit_zone()
 	if(GLOB.transit_markers.len == 0)
-		WARNING("No /obj/effect/landmark/transit placed on the map!")
 		return
 	// transit zone
 	var/turf/A = get_turf(GLOB.transit_markers[1])
@@ -86,7 +78,6 @@ SUBSYSTEM_DEF(shuttle)
 #ifdef HIGHLIGHT_DYNAMIC_TRANSIT
 /datum/controller/subsystem/shuttle/proc/color_space()
 	if(GLOB.transit_markers.len == 0)
-		WARNING("No /obj/effect/landmark/transit placed on the map!")
 		return
 	var/turf/A = get_turf(GLOB.transit_markers[1])
 	var/turf/B = get_turf(GLOB.transit_markers[2])
@@ -278,31 +269,11 @@ SUBSYSTEM_DEF(shuttle)
 
 /datum/controller/subsystem/shuttle/proc/registerHostileEnvironment(datum/bad)
 	hostileEnvironments[bad] = TRUE
-	checkHostileEnvironment()
+
 
 /datum/controller/subsystem/shuttle/proc/clearHostileEnvironment(datum/bad)
 	hostileEnvironments -= bad
-	checkHostileEnvironment()
 
-/datum/controller/subsystem/shuttle/proc/checkHostileEnvironment()
-	for(var/datum/d in hostileEnvironments)
-		if(!istype(d) || QDELETED(d))
-			hostileEnvironments -= d
-	emergencyNoEscape = hostileEnvironments.len
-
-	if(emergencyNoEscape && (emergency.mode == SHUTTLE_IGNITING))
-		emergency.mode = SHUTTLE_STRANDED
-		emergency.timer = null
-		emergency.sound_played = FALSE
-		priority_announce("Hostile environment detected. \
-			Departure has been postponed indefinitely pending \
-			conflict resolution.", null, 'sound/misc/notice1.ogg', "Priority")
-	if(!emergencyNoEscape && (emergency.mode == SHUTTLE_STRANDED))
-		emergency.mode = SHUTTLE_DOCKED
-		emergency.setTimer(emergencyDockTime)
-		priority_announce("Hostile environment resolved. \
-			You have 3 minutes to board the Emergency Shuttle.",
-			null, 'sound/AI/shuttledock.ogg', "Priority")
 
 //try to move/request to dockHome if possible, otherwise dockAway. Mainly used for admin buttons
 /datum/controller/subsystem/shuttle/proc/toggleShuttle(shuttleId, dockHome, dockAway, timed)

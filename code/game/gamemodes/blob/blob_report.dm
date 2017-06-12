@@ -1,6 +1,6 @@
 
 
-/datum/game_mode/blob/send_intercept(report = 0)
+/*/datum/game_mode/blob/send_intercept(report = 0)
 	var/intercepttext = ""
 	switch(report)
 		if(1)
@@ -37,7 +37,7 @@
 					aiPlayer.set_zeroth_law(law)
 		else
 			..()
-
+*/
 
 
 /datum/station_state

@@ -78,10 +78,10 @@
 
 	var/server
 	var/banappeals
-	var/wikiurl = "http://www.tgstation13.org/wiki" // Default wiki link.
-	var/forumurl = "http://tgstation13.org/phpBB/index.php" //default forums
-	var/rulesurl = "http://www.tgstation13.org/wiki/Rules" // default rules
-	var/githuburl = "https://www.github.com/tgstation/-tg-station" //default github
+	var/wikiurl = "" // Default wiki link.
+	var/forumurl = "" //default forums
+	var/rulesurl = "" // default rules
+	var/githuburl = "https://github.com/Tokiko1/Jade-Mansion" //default github
 	var/githubrepoid
 
 	var/forbid_singulo_possession = 0

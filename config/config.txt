@@ -1,8 +1,8 @@
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Remove the # infront of SERVERNAME and replace 'tgstation' with the name of your choice.
-# SERVERNAME tgstation
+# SERVERNAME jademansion
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
-# SERVERSQLNAME tgstation
+# SERVERSQLNAME jademansion
 
 ## Station name: The name of the station as it is referred to in-game. If commented out, the game will generate a random name instead.
 STATIONNAME Jademansion
@@ -162,16 +162,16 @@ CHECK_RANDOMIZER
 # SERVER ss13.example.com:2506
 
 ## forum address
-# FORUMURL http://tgstation13.org/phpBB/index.php
+# FORUMURL 
 
 ## Wiki address
-# WIKIURL http://www.tgstation13.org/wiki
+# WIKIURL 
 
 ##Rules address
-# RULESURL http://www.tgstation13.org/wiki/Rules
+# RULESURL 
 
 ##Github address
-# GITHUBURL https://www.github.com/tgstation/-tg-station
+# GITHUBURL https://github.com/Tokiko1/Jade-Mansion
 
 ##Github repo id
 ##This can be found by going to https://api.github.com/users/<user name here>/repos
