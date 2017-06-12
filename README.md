@@ -6,10 +6,10 @@ Currently not quite finished.
 
 If you want to play on the official server, contact Tokiko1.
 
-##DOWNLOADING
+## DOWNLOADING
 Download the source code as a zip by clicking the ZIP button in the code tab of https://github.com/Tokiko1/Jade-Mansion.
 
-##INSTALLATION
+## INSTALLATION
 
 First-time installation should be fairly straightforward.  First, you'll need BYOND installed.  You can get it from http://www.byond.com/.  Once you've done that, extract the game files to wherever you want to keep them.  This is a
 sourcecode-only release, so the next step is to compile the server files. Open jademansion.dme by double-clicking it, open the Build menu, and click compile.  This'll take a little while, and if everything's done right you'll get a message like this:
