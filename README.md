@@ -1,6 +1,36 @@
 ## JadeMansion
 
-This is the JadeMansion branch, aiming to turn ss13 into a completely different thing.
+A low violence, lighthearted non-space alternative to ss13. Includes maids, harpies, mansions and monsters.
+
+Currently not quite finished.
+
+If you want to play on the official server, contact Tokiko1.
+
+##DOWNLOADING
+Download the source code as a zip by clicking the ZIP button in the code tab of https://github.com/Tokiko1/Jade-Mansion.
+
+##INSTALLATION
+
+First-time installation should be fairly straightforward.  First, you'll need BYOND installed.  You can get it from http://www.byond.com/.  Once you've done that, extract the game files to wherever you want to keep them.  This is a
+sourcecode-only release, so the next step is to compile the server files. Open jademansion.dme by double-clicking it, open the Build menu, and click compile.  This'll take a little while, and if everything's done right you'll get a message like this:
+
+```
+saving jademansion.dmb (DEBUG mode)
+jademansion.dmb - 0 errors, 0 warnings
+```
+
+You'll also want to edit config/admins.txt to remove the default admins and add your own.  "Game Master" is the highest level of access, and probably the one you'll want to use for now.  You can set up your own ranks and find out more in config/admin_ranks.txt
+
+The format is
+
+```
+byondkey = Rank
+```
+
+where the admin rank must be properly capitalised.
+
+Finally, to start the server, run Dream Daemon and enter the path to your
+compiled jademansion.dmb file.  Make sure to set the port to the one you specified in the config.txt, and set the Security box to 'Safe'.  Then press GO and the server should start up and be ready to join.
 
 ## LICENSE
 
