@@ -74,5 +74,11 @@
 /obj/item/clothing/gloves/long_gloves1
 	name = "long black gloves"
 	desc = "Very fancy gloves, for formal occasions."
-	icon_state = "black"
+	icon_state = "blacklong"
 	item_state = "long_blackgloves"
+
+/obj/item/clothing/gloves/long_gloves2
+	name = "long white gloves"
+	desc = "Very fancy gloves, for formal occasions. Like weddings!"
+	icon_state = "whitelong"
+	item_state = "long_whitegloves"

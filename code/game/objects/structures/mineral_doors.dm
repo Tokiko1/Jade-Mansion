@@ -273,6 +273,9 @@
 	autoclose = 1
 	name = "general access door"
 
+/obj/structure/mineral_door/wood/lock/paper
+	icon_state = "paperdoor"
+
 /obj/structure/mineral_door/wood/lock/whitewood
 	icon_state = "silver"
 
@@ -296,3 +299,9 @@
 	name = "owner access wood door"
 	doorkeyid = "owner"
 	doorlockdifficulty  = 90
+
+/obj/structure/mineral_door/wood/lock/owner/locked
+	name = "owner access wood door"
+	doorkeyid = "owner"
+	doorlockdifficulty  = 90
+	doorlocked = 1

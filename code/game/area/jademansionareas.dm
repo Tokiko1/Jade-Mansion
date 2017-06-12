@@ -153,3 +153,12 @@ area/inside/stairs //stairs shouldn't have stuff spawned on them
 
 /area/inside/workshop
 	icon_state = "workshop"
+
+/area/inside/vault
+	icon_state = "thevault"
+
+/area/inside/delivery
+	icon_state = "delivery"
+
+/area/inside/personal_locker_room
+	icon_state = "lockers"
