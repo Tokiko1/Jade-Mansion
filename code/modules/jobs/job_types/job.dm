@@ -167,56 +167,116 @@
 			uniform = /obj/item/clothing/under/maidblack1
 			head = /obj/item/clothing/head/maidhead1
 			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
 
 		if(BLACKMAID2)
 			uniform = /obj/item/clothing/under/maidblack2
 			head = /obj/item/clothing/head/maidhead1
 			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
 
 		if(BLACKMAID3)
 			uniform = /obj/item/clothing/under/maidblack3
 			head = /obj/item/clothing/head/maidhead2
 			shoes = /obj/item/clothing/shoes/laceup
+			gloves = null
 
 		if(BLACKMAID4)
 			uniform = /obj/item/clothing/under/maidblack4
 			head = /obj/item/clothing/head/maidhead1
 			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
 
 		if(BLACKMAID5)
 			uniform = /obj/item/clothing/under/maidblack5
 			head = /obj/item/clothing/head/maidhead1
 			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
 
 		if(BLUEMAID1)
 			uniform = /obj/item/clothing/under/maidblue1
 			head = /obj/item/clothing/head/maidhead2
-			shoes = /obj/item/clothing/shoes/laceup
+			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
+
 		if(BLUEMAID2)
 			uniform = /obj/item/clothing/under/maidblue2
 			head = /obj/item/clothing/head/maidhead1
-			shoes = /obj/item/clothing/shoes/laceup
+			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
+
+		if(CHEMISTMAID1)
+			uniform = /obj/item/clothing/under/nurse1
+			head = /obj/item/clothing/head/maidhead2
+			gloves = /obj/item/clothing/gloves/color/latex/nitrile
+			shoes = /obj/item/clothing/shoes/jackboots
+
 
 		if(BUTLER1)
 			uniform = /obj/item/clothing/under/suit1
 			shoes = /obj/item/clothing/shoes/laceup
+			head = null
+			gloves = null
+
 
 		if(BUTLER2)
 			uniform = /obj/item/clothing/under/suit2
 			shoes = /obj/item/clothing/shoes/laceup
+			head = null
+			gloves = null
+
 
 		if(BUTLER3)
 			uniform = /obj/item/clothing/under/suit3
 			shoes = /obj/item/clothing/shoes/laceup
+			head = null
+			gloves = null
 
-		if(CASUALDRESS1)
+
+		if(OWNERDRESS1)
 			uniform = /obj/item/clothing/under/casualskirtblue
 			shoes = /obj/item/clothing/shoes/jackboots
+			head = null
+			gloves = null
+
+
+		if(OWNERDRESS2)
+			uniform = /obj/item/clothing/under/blackdress1
+			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = /obj/item/clothing/gloves/long_gloves1
+			head = null
+
+		if(OWNERDRESS3)
+			uniform = /obj/item/clothing/under/whitedress2
+			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = /obj/item/clothing/gloves/long_gloves2
+			head = null
+
+		if(CASUALSUIT1)
+			uniform = /obj/item/clothing/under/jadesuits/fancysuit1
+			shoes = /obj/item/clothing/shoes/laceup
+			head = null
+			gloves = null
+
+
+		if(CASUALSUIT2)
+			uniform = /obj/item/clothing/under/jadesuits/casual1
+			shoes = /obj/item/clothing/shoes/jackboots
+			head = null
+			gloves = null
+
+
+		if(CASUALSUIT3)
+			uniform = /obj/item/clothing/under/jadesuits/casual2
+			shoes = /obj/item/clothing/shoes/laceup
+			head = null
+			shoes = null
+
 
 		if(DEFAULTJOBSUIT)
 
 		else
-			uniform = uniform = /obj/item/clothing/under/maidblack2 //PLACEHOLDER
+			uniform = /obj/item/clothing/under/maidblack2 //PLACEHOLDER
 
 
 /datum/outfit/job/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

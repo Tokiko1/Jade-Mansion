@@ -28,7 +28,7 @@
 
 
 /turf/closed/indestructible/splashscreen
-	name = "Space Station 13"
+	name = "Maid Mansion"
 	icon = 'config/title_screens/images/blank.png'
 	icon_state = ""
 	layer = FLY_LAYER

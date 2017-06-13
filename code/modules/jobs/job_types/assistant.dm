@@ -34,6 +34,8 @@ Assistant
 	name = "Between Maid"
 	jobtype = /datum/job/assistant
 
+	uniform = /obj/item/clothing/under/maidblack2
+	shoes = /obj/item/clothing/shoes/jackboots
 	r_pocket = /obj/item/doorkey/between
 
 /datum/outfit/job/assistant/pre_equip(mob/living/carbon/human/H)

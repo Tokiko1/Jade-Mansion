@@ -33,10 +33,10 @@
 //	glasses = /obj/item/clothing/glasses/sunglasses
 //	ears = /obj/item/device/radio/headset/heads/captain/alt
 //	gloves = a
-//	uniform = a
-//	suit = a
-//	shoes = a
-//	head = a
+	//suit = a
+	uniform = /obj/item/clothing/under/maidblue2
+	head = /obj/item/clothing/head/maidhead1
+	shoes = /obj/item/clothing/shoes/jackboots
 	backpack_contents = list(/obj/item/weapon/reagent_containers/spray/largecleaner, /obj/item/weapon/reagent_containers/spray/chemsprayer/megacleaner)
 //	r_hand = a
 //	l_hand = a
@@ -53,8 +53,8 @@
 	flag = MANSIONOWNER
 	department_flag = ENGSEC
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = -1
+	spawn_positions = -1
 	supervisors = "nobody but yourself"
 	selection_color = "#dddddd"
 
@@ -71,10 +71,9 @@
 //	belt = /obj/item/device/pda/
 //	glasses = /obj/item/clothing/glasses/sunglasses
 //	ears = /obj/item/device/radio/headset/heads/captain/alt
-//	gloves = a
-//	uniform = a
-//	suit = a
-//	shoes = a
+	uniform = /obj/item/clothing/under/blackdress1
+	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/long_gloves1
 //	head = a
 	backpack_contents = list(/obj/item/doorkey/master)
 //	r_hand = a
@@ -107,10 +106,9 @@
 //	belt = /obj/item/device/pda/
 //	glasses = /obj/item/clothing/glasses/sunglasses
 //	ears = /obj/item/device/radio/headset/heads/captain/alt
-//	gloves = a
-//	uniform = a
-//	suit = a
-//	shoes = a
+	uniform = /obj/item/clothing/under/blackdress1
+	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/long_gloves1
 //	head = a
 //	backpack_contents = list(/obj/item/doorkey/master)
 //	r_hand = a
@@ -127,8 +125,8 @@
 	flag = BUTLER
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 5
+	spawn_positions = 5
 	supervisors = "the headmaid and the mansion owners"
 	selection_color = "#bbe291"
 
@@ -147,10 +145,9 @@
 //	glasses = /obj/item/clothing/glasses/sunglasses
 //	ears = /obj/item/device/radio/headset/heads/captain/alt
 //	gloves = a
-//	uniform = a
-//	suit = a
-//	shoes = a
-//	head = a
+	uniform = /obj/item/clothing/under/suit1
+//	head =
+	shoes = /obj/item/clothing/shoes/jackboots
 //	backpack_contents = list(a, a)
 //	r_hand = a
 //	l_hand = a
@@ -168,8 +165,8 @@ Gardener
 	flag = GARDENER
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 2
+	total_positions = 5
+	spawn_positions = 5
 	supervisors = "the headmaid"
 	selection_color = "#bbe291"
 
@@ -177,9 +174,7 @@ Gardener
 
 	access = list(GLOB.access_hydroponics, GLOB.access_bar, GLOB.access_kitchen, GLOB.access_morgue)
 	minimal_access = list(GLOB.access_hydroponics, GLOB.access_morgue)
-	// Removed tox and chem access because STOP PISSING OFF THE CHEMIST GUYS
-	// Removed medical access because WHAT THE FUCK YOU AREN'T A DOCTOR YOU GROW WHEAT
-	// Given Morgue access because they have a viable means of cloning.
+
 
 
 /datum/outfit/job/gardener
@@ -191,10 +186,9 @@ Gardener
 //	glasses = /obj/item/clothing/glasses/sunglasses
 //	ears = /obj/item/device/radio/headset/heads/captain/alt
 //	gloves = a
-//	uniform = a
-//	suit = a
-//	shoes = a
-//	head = a
+	uniform = /obj/item/clothing/under/maidblue2
+	head = /obj/item/clothing/head/maidhead1
+	shoes = /obj/item/clothing/shoes/jackboots
 //	backpack_contents = list(a, a)
 //	r_hand = a
 //	l_hand = a
@@ -210,8 +204,8 @@ Gardener
 	flag = DOWNSTAIRSMAID
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 1
+	total_positions = 5
+	spawn_positions = 5
 	supervisors = "the headmaid"
 	selection_color = "#bbe291"
 
@@ -229,10 +223,9 @@ Gardener
 //	glasses = /obj/item/clothing/glasses/sunglasses
 //	ears = /obj/item/device/radio/headset/heads/captain/alt
 //	gloves = a
-//	uniform = a
-//	suit = a
-//	shoes = a
-//	head = a
+	uniform = /obj/item/clothing/under/maidblue2
+	head = /obj/item/clothing/head/maidhead1
+	shoes = /obj/item/clothing/shoes/jackboots
 	backpack_contents = list(/obj/item/weapon/soap, /obj/item/weapon/kitchen/rollingpin)
 //	r_hand = a
 //	l_hand = a
@@ -261,8 +254,8 @@ Upstairs Maid
 	flag = UPSTAIRSMAID
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 1
+	total_positions = 5
+	spawn_positions = 5
 	supervisors = "the head of personnel"
 	selection_color = "#bbe291"
 	var/global/janitors = 0
@@ -281,10 +274,9 @@ Upstairs Maid
 //	glasses = /obj/item/clothing/glasses/sunglasses
 //	ears = /obj/item/device/radio/headset/heads/captain/alt
 //	gloves = a
-//	uniform = a
-//	suit = a
-//	shoes = a
-//	head = a
+	uniform = /obj/item/clothing/under/maidblue2
+	head = /obj/item/clothing/head/maidhead1
+	shoes = /obj/item/clothing/shoes/jackboots
 	backpack_contents = list(/obj/item/weapon/reagent_containers/glass/rag, /obj/item/weapon/soap)
 //	r_hand = a
 //	l_hand = a
@@ -301,8 +293,8 @@ Guard
 	flag = GUARD
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 5
+	spawn_positions = 5
 	supervisors = "the owners of the mansion"
 	selection_color = "#dddddd"
 
@@ -320,10 +312,9 @@ Guard
 //	glasses = /obj/item/clothing/glasses/sunglasses
 //	ears = /obj/item/device/radio/headset/heads/captain/alt
 //	gloves = a
-//	uniform = a
-//	suit = a
-//	shoes = a
-//	head = a
+	uniform = /obj/item/clothing/under/maidblue2
+	head = /obj/item/clothing/head/maidhead1
+	shoes = /obj/item/clothing/shoes/jackboots
 //	backpack_contents = list(a, a)
 //	r_hand = a
 //	l_hand = a

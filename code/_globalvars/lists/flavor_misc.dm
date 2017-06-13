@@ -57,19 +57,20 @@ GLOBAL_LIST_INIT(backbaglist, list(DBACKPACK, DSATCHEL, DDUFFLEBAG, GBACKPACK, G
 #define BLACKMAID5 "Black Maid Uniform Style 5"
 #define BLUEMAID1 "Blue Maid Uniform Style 1"
 #define BLUEMAID2 "Blue Maid Uniform Style 2"
+#define CHEMISTMAID1 "Medical Downstairs Maid Uniform Style 1"
 #define BUTLER1 "Black Suit Style 1"
 #define BUTLER2 "Black Suit Style 2"
 #define BUTLER3 "Black Suit Style 3"
-#define CASUALDRESS1 "Casual Dress Style 1"
-#define CASUALDRESS2 "Casual Dress Style 2"
-#define CASUALDRESS3 "Casual Dress Style 3"
+#define OWNERDRESS1 "Casual Blue Shirt and Skirt"
+#define OWNERDRESS2 "Fancy Black Dress"
+#define OWNERDRESS3 "Fancy White Dress"
 #define CASUALSUIT1 "Casual Suit Style 1"
 #define CASUALSUIT2 "Casual Suit Style 2"
 #define CASUALSUIT3 "Casual Suit Style 3"
 #define DEFAULTJOBSUIT "Use job default uniform"
 
 
-GLOBAL_LIST_INIT(workuniformlist, list(BLACKMAID1, BLACKMAID2, BLACKMAID3, BLACKMAID4, BLACKMAID5, BLUEMAID1, BLUEMAID2, BUTLER1, BUTLER2, BUTLER3, CASUALDRESS1, CASUALDRESS2, CASUALDRESS3, CASUALSUIT1, CASUALSUIT2, CASUALSUIT3, DEFAULTJOBSUIT))
+GLOBAL_LIST_INIT(workuniformlist, list(BLACKMAID1, BLACKMAID2, BLACKMAID3, BLACKMAID4, BLACKMAID5, BLUEMAID1, BLUEMAID2, CHEMISTMAID1, BUTLER1, BUTLER2, BUTLER3, OWNERDRESS1, OWNERDRESS2, OWNERDRESS3, CASUALSUIT1, CASUALSUIT2, CASUALSUIT3, DEFAULTJOBSUIT))
 
 //Uplink spawn loc
 #define UPLINK_PDA		"PDA"

@@ -1141,6 +1141,7 @@
 #include "code\modules\clothing\casualclothes.dm"
 #include "code\modules\clothing\chameleon.dm"
 #include "code\modules\clothing\clothing.dm"
+#include "code\modules\clothing\jadecasualsuits.dm"
 #include "code\modules\clothing\workforce.dm"
 #include "code\modules\clothing\glasses\engine_goggles.dm"
 #include "code\modules\clothing\glasses\glasses.dm"
