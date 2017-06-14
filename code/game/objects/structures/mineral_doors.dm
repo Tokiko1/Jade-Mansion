@@ -97,10 +97,11 @@
 		return
 	isSwitchingStates = 1
 	playsound(loc, openSound, 100, 1)
+	set_opacity(0)
+
 	flick("[initial_state]opening",src)
 	sleep(10)
 	density = 0
-	opacity = 0
 	state = 1
 	air_update_turf(1)
 	update_icon()
@@ -138,7 +139,7 @@
 	flick("[initial_state]closing",src)
 	sleep(10)
 	density = 1
-	opacity = 1
+	set_opacity(1)
 	state = 0
 	air_update_turf(1)
 	update_icon()
@@ -274,7 +275,7 @@
 	name = "general access door"
 
 /obj/structure/mineral_door/wood/lock/paper
-	icon_state = "paperdoor"
+	icon_state = "paperframe"
 
 /obj/structure/mineral_door/wood/lock/whitewood
 	icon_state = "silver"
