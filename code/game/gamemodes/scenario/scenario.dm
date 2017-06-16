@@ -58,11 +58,11 @@
 
 /datum/game_mode/proc/pickscenario()
 	var/scenario_type
-	if(!scenario_override)
+	if(!GLOB.scenario_override)
 		var/list/datum/scenario/scenario_list = subtypesof(/datum/scenario)
 		scenario_type = pick(scenario_list)
 	else
-		scenario_type = scenario_override_name
+		scenario_type = GLOB.scenario_override_name
 	choosen_scenario = new scenario_type
 
 
@@ -72,11 +72,11 @@
 
 /datum/game_mode/proc/picksubscenario()
 	var/subscenario_type
-	if(!sub_scenario_override)
+	if(!GLOB.sub_scenario_override)
 		var/list/datum/subscenario/subscenario_list = subtypesof(/datum/subscenario)
 		subscenario_type = pick(subscenario_list)
 	else
-		subscenario_type = sub_scenario_override_name
+		subscenario_type = GLOB.sub_scenario_override_name
 	choosen_sub = new subscenario_type
 	choosen_sub.handle_subscenario()
 	return 1

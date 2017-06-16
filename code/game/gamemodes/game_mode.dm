@@ -37,10 +37,6 @@
 	var/enemy_minimum_age = 7 //How many days must players have been playing before they can play this antagonist
 	var/datum/scenario/choosen_scenario
 	var/datum/subscenario/choosen_sub
-	var/scenario_override = 0
-	var/scenario_override_name
-	var/sub_scenario_override = 0
-	var/sub_scenario_override_name
 
 
 	var/announce_span = "warning" //The gamemode's name will be in this span during announcement.

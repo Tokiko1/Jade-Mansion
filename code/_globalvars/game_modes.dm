@@ -3,3 +3,9 @@ GLOBAL_VAR_INIT(secret_force_mode, "secret") // if this is anything but "secret"
 
 GLOBAL_VAR_INIT(wavesecret, 0) // meteor mode, delays wave progression, terrible name
 GLOBAL_DATUM(start_state, /datum/station_state) // Used in round-end report
+
+GLOBAL_VAR_INIT(scenario_override, 0)
+GLOBAL_VAR_INIT(sub_scenario_override, 0)
+
+GLOBAL_VAR_INIT(scenario_override_name, /datum/scenario)
+GLOBAL_VAR_INIT(sub_scenario_override_name, /datum/subscenario)

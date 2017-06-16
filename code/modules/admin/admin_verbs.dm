@@ -748,12 +748,16 @@ GLOBAL_LIST_INIT(admin_verbs_hideable, AVerbsHideable())
 	if(!holder)
 		return
 
-	var/entered = stripped_input(src, "Type in the scenario name. Click cancel to disable override.")
-	if(entered)
-		SSticker.mode.scenario_override = 1
-		SSticker.mode.scenario_override_name = entered
+
+	var/list/datum/scenario/scenario_list = subtypesof(/datum/scenario)
+	var/client/selection = input("Please, select a scenario!", "Scenario Pick", null, null) as null|anything in scenario_list
+	if(!selection)
+		GLOB.scenario_override = 0
+		GLOB.scenario_override_name = null
+		return
 	else
-		SSticker.mode.scenario_override = 0
+		GLOB.scenario_override = 1
+		GLOB.scenario_override_name = selection
 
 /client/proc/picksubscenario()
 	set name = "Override Subscenario Selection"
@@ -763,10 +767,14 @@ GLOBAL_LIST_INIT(admin_verbs_hideable, AVerbsHideable())
 	if(!holder)
 		return
 
-	var/entered = stripped_input(src, "Type in the subscenario name. Click cancel to disable override.")
-	if(entered)
-		SSticker.mode.sub_scenario_override = 1
-		SSticker.mode.sub_scenario_override_name = entered
+	var/list/datum/subscenario/sub_scenario_list = subtypesof(/datum/subscenario)
+	var/client/selection = input("Please, select a sub scenario!", "Sub Scenario Pick", null, null) as null|anything in sub_scenario_list
+	if(!selection)
+		GLOB.sub_scenario_override = 0
+		GLOB.sub_scenario_override_name = null
+		return
 	else
-		SSticker.mode.scenario_override = 0
+		GLOB.sub_scenario_override = 1
+		GLOB.sub_scenario_override_name = selection
+
 
