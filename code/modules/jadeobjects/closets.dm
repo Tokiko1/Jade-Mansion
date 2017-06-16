@@ -165,6 +165,8 @@
 	new /obj/item/clothing/under/maidblack3(src)
 	new /obj/item/clothing/under/maidblack4(src)
 	new /obj/item/clothing/under/maidblack5(src)
+	new /obj/item/clothing/under/maidblack6(src)
+	new /obj/item/clothing/under/maidblack7(src)
 	new /obj/item/clothing/under/maidblue1(src)
 	new /obj/item/clothing/under/maidblue2(src)
 	new /obj/item/clothing/head/maidhead1(src)

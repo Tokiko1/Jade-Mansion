@@ -45,6 +45,29 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = 0
 
+/obj/item/clothing/under/maidblack6
+	name = "black maid uniform"
+	desc = "A black maid uniform with pink stripes!"
+	icon_state = "maidblack6"
+	item_color = "maidblack6"
+	body_parts_covered = CHEST|GROIN|ARMS
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = 0
+
+/obj/item/clothing/under/maidblack7
+	name = "black maid uniform"
+	desc = "A black maid uniform with bright green stripes!"
+	icon_state = "maidblack7"
+	item_color = "maidblack7"
+	body_parts_covered = CHEST|GROIN|ARMS
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = 0
+
+
+
+
+
+
 /obj/item/clothing/under/maidblue1
 	name = "blue maid uniform"
 	desc = "A blue maid uniform, extra fancy!"

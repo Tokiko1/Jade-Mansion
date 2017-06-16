@@ -193,6 +193,19 @@
 			shoes = /obj/item/clothing/shoes/jackboots
 			gloves = null
 
+		if(BLACKMAID6)
+			uniform = /obj/item/clothing/under/maidblack6
+			head = /obj/item/clothing/head/maidhead1
+			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
+
+		if(BLACKMAID7)
+			uniform = /obj/item/clothing/under/maidblack7
+			head = /obj/item/clothing/head/maidhead1
+			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
+
+
 		if(BLUEMAID1)
 			uniform = /obj/item/clothing/under/maidblue1
 			head = /obj/item/clothing/head/maidhead2
