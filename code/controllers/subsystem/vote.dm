@@ -17,6 +17,7 @@ SUBSYSTEM_DEF(vote)
 	var/restricted_vote = 0
 	var/scenario_vote = 0
 	var/winning_vote
+	var/endvote_allowed = 0
 	var/list/allowed_voters_vote =list()
 	var/list/scenario_input_vote = list()
 
@@ -138,9 +139,11 @@ SUBSYSTEM_DEF(vote)
 				if(. == "Initiate Round End")
 					to_chat(world, "<span style='boldannounce'>The round is now ending.</span>")
 					SSticker.mode.end_scenario(1)
+					endvote_allowed = 0
 				else
 					to_chat(world, "<span style='boldannounce'>The round has been extended!</span>")
 					SSticker.mode.end_scenario(0)
+					endvote_allowed = 1
 			if("scenario input")
 				SSticker.mode.choosen_scenario.handle_vote_result(.)
 	else
@@ -289,6 +292,12 @@ SUBSYSTEM_DEF(vote)
 			. += "(<a href='?src=\ref[src];vote=cancel'>Cancel Vote</a>) "
 	else
 		. += "<h2>Start a vote:</h2><hr><ul><li>"
+		//manual endvote
+		if(endvote_allowed)
+			. += "<a href='?src=\ref[src];vote=end round'>End Round</a>"
+		else
+			. += "<font color='grey'>End Round (Disallowed for now)</font>"
+		. += "</li><li>"
 		//restart
 		if(trialmin || config.allow_vote_restart)
 			. += "<a href='?src=\ref[src];vote=restart'>Restart</a>"
@@ -340,6 +349,9 @@ SUBSYSTEM_DEF(vote)
 		if("custom")
 			if(usr.client.holder)
 				initiate_vote("custom",usr.key)
+		if("end round")
+			if(endvote_allowed)
+				initiate_vote("end round",usr.key)
 		else
 			submit_vote(round(text2num(href_list["vote"])))
 	usr.vote()
