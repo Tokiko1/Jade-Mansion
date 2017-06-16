@@ -5,7 +5,7 @@ SUBSYSTEM_DEF(weather)
 	wait = 10
 	var/list/processing = list()
 	var/list/existing_weather = list()
-	var/list/eligible_zlevels = list(ZLEVEL_LAVALAND)
+	var/list/eligible_zlevels = list()
 
 /datum/controller/subsystem/weather/fire()
 	for(var/V in processing)
@@ -15,6 +15,7 @@ SUBSYSTEM_DEF(weather)
 		for(var/mob/living/L in GLOB.mob_list)
 			if(W.can_impact(L))
 				W.impact(L)
+	/*
 	for(var/Z in eligible_zlevels)
 		var/list/possible_weather_for_this_z = list()
 		for(var/V in existing_weather)
@@ -25,6 +26,7 @@ SUBSYSTEM_DEF(weather)
 		run_weather(W.name, Z)
 		eligible_zlevels -= Z
 		addtimer(CALLBACK(src, .proc/make_z_eligible, Z), rand(3000, 6000) + W.weather_duration_upper, TIMER_UNIQUE) //Around 5-10 minutes between weathers
+		*/
 
 /datum/controller/subsystem/weather/Initialize(start_timeofday)
 	..()
