@@ -93,7 +93,7 @@
 	supervisors = "nobody but yourself"
 	selection_color = "#dddddd"
 
-	outfit = /datum/outfit/job/mansionowner
+	outfit = /datum/outfit/job/guest
 
 	access = list(GLOB.access_library)
 	minimal_access = list(GLOB.access_library)

@@ -89,7 +89,6 @@
 
 	immunity_type = "ash"
 
-	probability = 90
 
 /datum/weather/ash_storm/impact(mob/living/L)
 	if(istype(L.loc, /obj/mecha))
@@ -113,7 +112,6 @@
 
 	aesthetic = TRUE
 
-	probability = 10
 
 /datum/weather/rad_storm
 	name = "radiation storm"
