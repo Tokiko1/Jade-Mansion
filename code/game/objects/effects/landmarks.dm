@@ -36,131 +36,31 @@
 /obj/effect/landmark/start/assistant
 	name = "Assistant"
 
-/obj/effect/landmark/start/janitor
-	name = "Janitor"
+/obj/effect/landmark/start/headmaid
+	name = "Head Maid"
 
-/obj/effect/landmark/start/cargo_technician
-	name = "Cargo Technician"
+/obj/effect/landmark/start/owner
+	name = "Mansion owner"
 
-/obj/effect/landmark/start/bartender
-	name = "Bartender"
+/obj/effect/landmark/start/butler
+	name = "Butler"
 
-/obj/effect/landmark/start/clown
-	name = "Clown"
+/obj/effect/landmark/start/downstairsmaid
+	name = "Downstairs Maid"
 
-/obj/effect/landmark/start/mime
-	name = "Mime"
+/obj/effect/landmark/start/upstairsmaid
+	name = "Upstairs Maid"
 
-/obj/effect/landmark/start/quartermaster
-	name = "Quartermaster"
+/obj/effect/landmark/start/gardener
+	name = "Gardener"
 
-/obj/effect/landmark/start/atmospheric_technician
-	name = "Atmospheric Technician"
+/obj/effect/landmark/start/guest
+	name = "Guest"
 
-/obj/effect/landmark/start/cook
-	name = "Cook"
+/obj/effect/landmark/start/guard
+	name = "Guard"
 
-/obj/effect/landmark/start/shaft_miner
-	name = "Shaft Miner"
 
-/obj/effect/landmark/start/security_officer
-	name = "Security Officer"
-
-/obj/effect/landmark/start/botanist
-	name = "Botanist"
-
-/obj/effect/landmark/start/head_of_security
-	name = "Head of Security"
-
-/obj/effect/landmark/start/ai
-	name = "AI"
-
-/obj/effect/landmark/start/captain
-	name = "Captain"
-
-/obj/effect/landmark/start/detective
-	name = "Detective"
-
-/obj/effect/landmark/start/warden
-	name = "Warden"
-
-/obj/effect/landmark/start/chief_engineer
-	name = "Chief Engineer"
-
-/obj/effect/landmark/start/cyborg
-	name = "Cyborg"
-
-/obj/effect/landmark/start/head_of_personnel
-	name = "Head of Personnel"
-
-/obj/effect/landmark/start/librarian
-	name = "Librarian"
-
-/obj/effect/landmark/start/lawyer
-	name = "Lawyer"
-
-/obj/effect/landmark/start/station_engineer
-	name = "Station Engineer"
-
-/obj/effect/landmark/start/medical_doctor
-	name = "Medical Doctor"
-
-/obj/effect/landmark/start/scientist
-	name = "Scientist"
-
-/obj/effect/landmark/start/chemist
-	name = "Chemist"
-
-/obj/effect/landmark/start/roboticist
-	name = "Roboticist"
-
-/obj/effect/landmark/start/research_director
-	name = "Research Director"
-
-/obj/effect/landmark/start/geneticist
-	name = "Geneticist"
-
-/obj/effect/landmark/start/chief_medical_officer
-	name = "Chief Medical Officer"
-
-/obj/effect/landmark/start/virologist
-	name = "Virologist"
-
-/obj/effect/landmark/start/chaplain
-	name = "Chaplain"
-
-//Department Security spawns
-
-/obj/effect/landmark/start/depsec
-	name = "department_sec"
-
-/obj/effect/landmark/start/depsec/New()
-	..()
-	GLOB.department_security_spawns += src
-
-/obj/effect/landmark/start/depsec/Destroy()
-	GLOB.department_security_spawns -= src
-	return ..()
-
-/obj/effect/landmark/start/depsec/supply
-	name = "supply_sec"
-
-/obj/effect/landmark/start/depsec/medical
-	name = "medical_sec"
-
-/obj/effect/landmark/start/depsec/engineering
-	name = "engineering_sec"
-
-/obj/effect/landmark/start/depsec/science
-	name = "science_sec"
-
-/obj/effect/landmark/start/wizard
-	name = "wizard"
-
-/obj/effect/landmark/start/wizard/Initialize(mapload)
-	..()
-	GLOB.wizardstart += loc
-	qdel(src)
 
 /obj/effect/landmark/start/new_player
 	name = "New Player"

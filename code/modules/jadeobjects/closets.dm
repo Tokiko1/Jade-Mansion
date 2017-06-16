@@ -105,6 +105,15 @@
 	new /obj/item/weapon/storage/box/ingredients/wildcard(src)
 	new /obj/item/weapon/storage/box/ingredients/wildcard(src)
 	new /obj/item/weapon/storage/box/ingredients/wildcard(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+
 
 
 /obj/structure/closet/jademansion/kitchensupplies/PopulateContents()

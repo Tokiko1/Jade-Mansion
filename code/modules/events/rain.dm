@@ -6,4 +6,4 @@
 /datum/round_event/rain
 
 /datum/round_event/rain/start()
-	SSweather.run_weather("rain", ZLEVEL_ALL)
+	SSweather.run_weather("long rain", ZLEVEL_ALL)
