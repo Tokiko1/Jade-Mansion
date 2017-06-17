@@ -242,12 +242,7 @@
 			hardmutate()
 		return
 	if (mutmod == 2)
-		if(prob(50))		//50%
-			mutate()
-		else if(prob(50))	//25%
-			hardmutate()
-		else if(prob(50))	//12.5%
-			mutatespecie()
+		mutatespecie()
 		return
 	return
 
@@ -458,21 +453,10 @@
 	// Requires 5 mutagen to possibly change species.// Poor man's mutagen.
 	if(S.has_reagent("mutagen", 5) || S.has_reagent("radium", 10) || S.has_reagent("uranium", 10))
 		switch(rand(100))
-			if(91 to 100)
-				adjustHealth(-10)
-				to_chat(user, "<span class='warning'>The plant shrivels and burns.</span>")
-			if(81 to 90)
+			if(50 to 100)
 				mutatespecie()
-			if(66 to 80)
-				hardmutate()
-			if(41 to 65)
-				mutate()
-			if(21 to 41)
-				to_chat(user, "<span class='notice'>The plants don't seem to react...</span>")
-			if(11 to 20)
+			if(1 to 49)
 				mutateweed()
-			if(1 to 10)
-				mutatepest(user)
 			else
 				to_chat(user, "<span class='notice'>Nothing happens...</span>")
 
