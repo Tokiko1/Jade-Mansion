@@ -1969,6 +1969,7 @@
 #include "code\modules\scenarios\important_guest.dm"
 #include "code\modules\scenarios\scenario.dm"
 #include "code\modules\scenarios\sub_scenario.dm"
+#include "code\modules\scenarios\scenariocode\badweather.dm"
 #include "code\modules\scenarios\subscenarios\feast.dm"
 #include "code\modules\scenarios\subscenarios\happy_birthday.dm"
 #include "code\modules\scenarios\subscenarios\scary_night.dm"

@@ -65,6 +65,7 @@
 	icon_state = "cola"
 	resistance_flags = 0
 
+
 /obj/item/trash/attack(mob/M, mob/living/user)
 	return
 
