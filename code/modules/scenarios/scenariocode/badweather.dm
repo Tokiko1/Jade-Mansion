@@ -71,3 +71,4 @@
 	name = "broken metal parts"
 	icon_state = "brokengear2"
 	resistance_flags = 0
+

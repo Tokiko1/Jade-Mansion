@@ -81,6 +81,9 @@
 	name = "freezer"
 	icon_state = "freezer"
 
+/obj/structure/closet/crate/freezer/anchored
+	anchored = 1
+
 /obj/structure/closet/crate/freezer/blood
 	name = "blood freezer"
 	desc = "A freezer containing packs of blood."

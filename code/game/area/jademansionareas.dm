@@ -88,6 +88,9 @@ area/inside/stairs //stairs shouldn't have stuff spawned on them
 /area/inside/storage_1
 	icon_state = "storage"
 
+/area/inside/storage_2
+	icon_state = "storage2"
+
 /area/inside/toilet
 	icon_state = "toilet"
 
@@ -162,3 +165,11 @@ area/inside/stairs //stairs shouldn't have stuff spawned on them
 
 /area/inside/personal_locker_room
 	icon_state = "lockers"
+
+
+
+/area/inside/freezer
+	icon_state = "freezer"
+
+/area/inside/wine_cellar
+	icon_state = "winecellar"
