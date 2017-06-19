@@ -38,67 +38,76 @@
 	)
 
 	var/maxdirt = 10
-	var/number_foods = pick(100, 150, 200)
-	var/number_raw = pick(200,300,400)
-	var/number_wood = pick(400,800,1000)
-	var/micebots = pick("Large", "Balanced", "Many", "Recurring")
-	var/infestation = pick("Nest", "Normal", "Many")
+	var/number_foods
+	var/number_raw
+	var/number_wood
+	var/micebots
+	var/infestation
 
 
 /datum/scenario/bad_weather/handlegoals()
+	var/list/goalchecklist = list()
 	var/foodcount
-	for(var/obj/item/weapon/reagent_containers/food/snacks/food/foodA in """areastuff""")
-		if(!istype(/obj/item/weapon/reagent_containers/food/snacks/grown/)
-			foodcount++
+	for(var/obj/item/weapon/reagent_containers/food/snacks/food_A in world)
+		if(istype(get_area(food_A), /area/inside/freezer))
+			if(!istype(food_A, /obj/item/weapon/reagent_containers/food/snacks/grown))
+				foodcount++
 
-	if(foodcount => number_foods
-		goals_finished["mansion"].Add("Goal: Store [number_foods] amount of food. <font color='green'>Success!</font> Stored [foodcount].")
+	if(foodcount >= number_foods)
+		goalchecklist.Add("Goal: Store [number_foods] amount of food. <font color='green'>Success!</font> Stored [foodcount].")
 	else
-		goals_finished["mansion"].Add("Goal: Store [number_foods] amount of food. <font color='red'>Failed!</font> Stored [foodcount].")
+		goalchecklist.Add("Goal: Store [number_foods] amount of food. <font color='red'>Failed!</font> Stored [foodcount].")
 
 	var/rawcount
-	for(var/obj/item/weapon/reagent_containers/food/snacks/food/snacks/grown/rawA in """areastuff""")
-		rawcount++
+	for(var/obj/item/weapon/reagent_containers/food/snacks/grown/rawA in world)
+		if(istype(get_area(rawA), /area/inside/freezer))
+			rawcount++
 
-	if(rawcount => number_raw
-		goals_finished["mansion"].Add("Goal: Store [number_raw] amount of food. <font color='green'>Success!</font> Stored [rawcount].")
+	if(rawcount >= number_raw)
+		goalchecklist.Add("Goal: Store [number_raw] amount of food. <font color='green'>Success!</font> Stored [rawcount].")
 	else
-		goals_finished["mansion"].Add("Goal: Store [number_raw] amount of food. <font color='red'>Failed!</font> Stored [rawcount].")
+		goalchecklist.Add("Goal: Store [number_raw] amount of food. <font color='red'>Failed!</font> Stored [rawcount].")
 
 	var/woodcount
-	for(var/obj/item/stack/sheet/mineral/wood/woodA in "areastuffs")
-		woodcount = woodcount + woodA.amount
+	for(var/obj/item/stack/sheet/mineral/wood/woodA in world)
+		if(istype(get_area(woodA), /area/inside/storage))
+			woodcount = woodcount + woodA.amount
 
-	if(woodcount => number_wood
-		goals_finished["mansion"].Add("Goal: Store [number_wood] amount of food. <font color='green'>Success!</font> Stored [woodcount].")
+	if(woodcount >= number_wood)
+		goalchecklist.Add("Goal: Store [number_wood] amount of food. <font color='green'>Success!</font> Stored [woodcount].")
 	else
-		goals_finished["mansion"].Add("Goal: Store [number_wood] amount of food. <font color='red'>Failed!</font> Stored [woodcount].")
+		goalchecklist.Add("Goal: Store [number_wood] amount of food. <font color='red'>Failed!</font> Stored [woodcount].")
 
 
-	var/dirt
+	var/dirtS
 //	for(var/obj/item/trash/a in /area/inside)
 //		trash_and_dirt++
-	for(var/obj/effect/decal/cleanable/b in /area/inside)
-		dirt++
+	for(var/obj/effect/decal/cleanable/b in world)
+		if(istype(get_area(b), /area/inside))
+			dirtS++
 
-	if(trash_and_dirt => maxdirt
-		goals_finished["mansion"].Add("Goal: Keep the mansion clean. <font color='green'>Success!</font>.")
+	if(dirtS >= maxdirt)
+		goalchecklist.Add("Goal: Keep the mansion clean. <font color='green'>Success!</font>.")
 	else
-		goals_finished["mansion"].Add("Goal: Keep the mansion clean. <font color='red'>Failed!</font> There were [dirt] tiles's worth of dirt.")
+		goalchecklist.Add("Goal: Keep the mansion clean. <font color='red'>Failed!</font> There were [dirtS] tiles's worth of dirt.")
 
-
+	goals_finished.["mansion"] = goalchecklist
 
 
 
 	..()
 
 /datum/scenario/bad_weather/handlescenario()
-
+	number_foods = pick(100, 150, 200)
+	number_raw = pick(200,300,400)
+	number_wood = pick(400,800,1000)
+	micebots = pick("Large", "Balanced", "Many", "Recurring")
+	infestation = pick("Nest", "Normal", "Many")
 
 
 	var/goaltext
 
-	goaltext = "Cook [number_foods] foods and store them away in the freezer. Grow [number_raw] amounts of raw, edible plants and store them in the freezer. Have atleast [number_wood] pieces of cut wood in the storage room.
+	goaltext = "Cook [number_foods] foods and store them away in the freezer. Grow [number_raw] amounts of raw, edible plants and store them in the freezer. Have atleast [number_wood] pieces of cut wood in the storage room. Keep the mansion clean of any pests, dirt and trash!"
 
 
 
