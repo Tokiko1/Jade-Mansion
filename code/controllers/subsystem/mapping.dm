@@ -35,6 +35,7 @@ SUBSYSTEM_DEF(mapping)
 	SortAreas()
 	process_teleport_locs()			//Sets up the wizard teleport locations
 	preloadTemplates()
+	putontitlescreen()
 	/* Pick a random away mission.
 	createRandomZlevel()
 
@@ -242,3 +243,11 @@ SUBSYSTEM_DEF(mapping)
 
 		shelter_templates[S.shelter_id] = S
 		map_templates[S.shelter_id] = S
+
+/datum/controller/subsystem/mapping/proc/putontitlescreen()
+	var/list/listlocations = list()
+	for(var/obj/effect/landmark/start/new_player/A in world)
+		listlocations |= get_turf(A)
+	var/turf/newplayerturf = pick(listlocations)
+	for(var/mob/dead/new_player/player in GLOB.player_list)
+		player.loc = newplayerturf
