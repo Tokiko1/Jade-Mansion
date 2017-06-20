@@ -10,6 +10,7 @@
 	var/max_fire_temperature_sustained = 0 //The max temperature of the fire which it was subjected to
 
 	var/blocks_air = 0
+	var/z_open = 0
 
 	flags = CAN_BE_DIRTY
 
