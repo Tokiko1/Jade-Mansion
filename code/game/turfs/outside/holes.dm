@@ -4,6 +4,7 @@
 	var/initial_icon = "downwards"
 	name = "hole"
 	desc = "Watch your step!"
+	z_open = 1
 	var/drop_x = 1
 	var/drop_y = 1
 	var/drop_z = 1

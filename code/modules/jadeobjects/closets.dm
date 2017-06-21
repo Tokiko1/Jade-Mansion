@@ -54,6 +54,9 @@
 	new /obj/item/weapon/soap(src)
 	new /obj/item/weapon/soap(src)
 	new /obj/item/weapon/mop(src)
+	new /obj/item/weapon/feather_duster(src)
+	new /obj/item/weapon/feather_duster(src)
+	new /obj/item/weapon/feather_duster(src)
 	new /obj/item/weapon/storage/bag/trash(src)
 	new /obj/item/weapon/storage/bag/trash(src)
 

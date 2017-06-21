@@ -293,7 +293,7 @@ SUBSYSTEM_DEF(vote)
 	else
 		. += "<h2>Start a vote:</h2><hr><ul><li>"
 		//manual endvote
-		if(endvote_allowed)
+		if(endvote_allowed || usr.client.holder)
 			. += "<a href='?src=\ref[src];vote=end round'>End Round</a>"
 		else
 			. += "<font color='grey'>End Round (Disallowed for now)</font>"
@@ -350,7 +350,7 @@ SUBSYSTEM_DEF(vote)
 			if(usr.client.holder)
 				initiate_vote("custom",usr.key)
 		if("end round")
-			if(endvote_allowed)
+			if(endvote_allowed || usr.client.holder)
 				initiate_vote("end round",usr.key)
 		else
 			submit_vote(round(text2num(href_list["vote"])))
