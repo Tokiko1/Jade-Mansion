@@ -18,5 +18,5 @@
 /obj/item/weapon/feather_duster // TODO: Add functionality
 	name = "feather duster"
 	icon = 'icons/obj/jadeequipments.dmi'
-	desc = "A feather duster, ideal for removing dust."
+	desc = "A feather duster, ideal for removing dust or cobwebs.."
 	icon_state = "feather_duster"

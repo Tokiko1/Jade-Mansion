@@ -15,6 +15,14 @@
 			entangle(victim)
 	. = ..()
 
+/obj/structure/silktree/tree/attackby(obj/item/I, mob/user, params)
+	if(istype(I, /obj/item/weapon/feather_duster))
+		if(do_after(user, 10, target = src))
+			to_chat(user, "<span class='danger'>You easily remove the [src] with your [I].</span>")
+			Destroy()
+
+
+
 /obj/structure/silktree/web/Destroy()
 	if(has_buckled_mobs())
 		unbuckle_all_mobs(force=1)
@@ -70,7 +78,7 @@
 	var/fcounter = 0
 	var/scounter = 0
 	var/rcounter = 0
-	var/spread_frequency = 1
+	var/spread_frequency = 3
 	var/can_plant_trees = 1
 	var/tree_payloads = 3
 	var/rstop = 0
@@ -84,6 +92,8 @@
 /obj/structure/silktree/tree/Destroy()
 	GLOB.silktree_list -= src
 	..()
+
+
 
 /obj/structure/silktree/tree/process()
 	if(pcounter > SILK_PROCESS_RATE)
@@ -127,7 +137,7 @@
 /obj/structure/silktree/tree/proc/pick_tree_target()
 	target_list = list()
 	for(var/turf/open/turfA in range(7, src))
-		if((locate(/obj/structure/silktree/web) in turfA) && !turfA.z_open && (!locate(/obj/structure/silktree/tree) in turfA)
+		if((locate(/obj/structure/silktree/web) in turfA) && !turfA.z_open && (!locate(/obj/structure/silktree/tree) in turfA))
 			target_list |= turfA
 		if(!target_list.len)
 			return
@@ -158,6 +168,13 @@
 	can_plant_trees = 0
 	tree_payloads = 0
 	icon_state = "silktree"
+
+/obj/structure/silktree/tree/nestree
+	obj_integrity = 300
+	density = 1
+	name = "sturdy silk tree"
+	desc = "A tree that grows silk... a bit too fast it seems."
+	tree_payloads = 10
 
 #undef SILK_TARGET_REFRESH_RATE
 #undef SILK_PROCESS_RATE
