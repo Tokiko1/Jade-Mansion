@@ -15,7 +15,7 @@
 			entangle(victim)
 	. = ..()
 
-/obj/structure/silktree/tree/attackby(obj/item/I, mob/user, params)
+/obj/structure/silktree/web/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/weapon/feather_duster))
 		if(do_after(user, 10, target = src))
 			to_chat(user, "<span class='danger'>You easily remove the [src] with your [I].</span>")
@@ -65,7 +65,7 @@
 	icon = 'icons/obj/flora/silktrees.dmi' //TODO:make a sprite
 	icon_state = "silktree_large"
 	anchored = 1
-	obj_integrity = 15
+	obj_integrity = 50
 	density = 1
 	name = "silk tree"
 	desc = "A tree that grows silk... a bit too fast it seems."

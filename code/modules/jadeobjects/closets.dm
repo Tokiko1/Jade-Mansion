@@ -19,6 +19,8 @@
 	new /obj/item/weapon/storage/firstaid/fire(src)
 	new /obj/item/weapon/storage/firstaid/toxin(src)
 	new /obj/item/weapon/storage/firstaid/regular(src)
+	new /obj/item/weapon/storage/box/beakers(src)
+	new /obj/item/weapon/storage/box/beakers(src)
 
 
 /obj/structure/closet/jademansion/medicalclothes/PopulateContents()
@@ -59,6 +61,7 @@
 	new /obj/item/weapon/feather_duster(src)
 	new /obj/item/weapon/storage/bag/trash(src)
 	new /obj/item/weapon/storage/bag/trash(src)
+	new /obj/item/weapon/storage/box/beakers(src)
 
 
 /obj/structure/closet/jademansion/garden/PopulateContents()
@@ -74,6 +77,10 @@
 	new /obj/item/weapon/shovel(src)
 	new /obj/item/weapon/storage/box/disks_plantgene(src)
 	new /obj/item/weapon/storage/box/disks_plantgene(src)
+	new /obj/item/weapon/reagent_containers/glass/bucket(src)
+	new /obj/item/weapon/reagent_containers/glass/bucket(src)
+	new /obj/item/weapon/reagent_containers/glass/bucket(src)
+
 
 
 
@@ -108,14 +115,6 @@
 	new /obj/item/weapon/storage/box/ingredients/wildcard(src)
 	new /obj/item/weapon/storage/box/ingredients/wildcard(src)
 	new /obj/item/weapon/storage/box/ingredients/wildcard(src)
-	new /obj/item/weapon/storage/bag/tray(src)
-	new /obj/item/weapon/storage/bag/tray(src)
-	new /obj/item/weapon/storage/bag/tray(src)
-	new /obj/item/weapon/storage/bag/tray(src)
-	new /obj/item/weapon/storage/bag/tray(src)
-	new /obj/item/weapon/storage/bag/tray(src)
-	new /obj/item/weapon/storage/bag/tray(src)
-	new /obj/item/weapon/storage/bag/tray(src)
 
 
 
@@ -127,6 +126,20 @@
 	new /obj/item/weapon/kitchen/fork(src)
 	new /obj/item/weapon/kitchen/fork(src)
 	new /obj/item/weapon/kitchen/fork(src)
+	new /obj/item/weapon/reagent_containers/glass/bowl(src)
+	new /obj/item/weapon/reagent_containers/glass/bowl(src)
+	new /obj/item/weapon/reagent_containers/glass/bowl(src)
+	new /obj/item/weapon/reagent_containers/glass/bowl(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+	new /obj/item/weapon/storage/bag/tray(src)
+	new /obj/item/weapon/storage/box/beakers(src)
+
 
 
 /obj/structure/closet/jademansion/bar/PopulateContents()
