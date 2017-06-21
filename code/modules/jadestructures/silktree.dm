@@ -20,6 +20,7 @@
 		if(do_after(user, 10, target = src))
 			to_chat(user, "<span class='danger'>You easily remove the [src] with your [I].</span>")
 			Destroy()
+	..()
 
 
 
@@ -83,6 +84,7 @@
 	var/tree_payloads = 3
 	var/rstop = 0
 	var/list/target_list = list()
+	var/list/tree_target_list = list()
 
 /obj/structure/silktree/tree/New()
 	START_PROCESSING(SSobj, src)
@@ -107,11 +109,13 @@
 				refresh_targets()
 
 		if(scounter > 5 && can_plant_trees) //it's time to spread!
-			if(GLOB.silktree_list.len < SILKTREE_HARDCAP && tree_payloads > 0)
-				var/turf/open/targetted_turfd = pick_tree_target()
-				if(targetted_turfd)
-					fire_at_target(targetted_turfd, payloadtype = "tree")
-					tree_payloads--
+			if(tree_payloads > 0)
+				pick_tree_target()
+				if(tree_target_list.len)
+					var/turf/open/targetted_turfd = pick(tree_target_list)
+					if(targetted_turfd)
+						fire_at_target(targetted_turfd, payloadtype = "tree")
+						tree_payloads--
 			scounter = 0
 		if(rstop)
 			scounter++
@@ -120,6 +124,8 @@
 				rcounter = 0
 			else
 				rcounter++
+		if(prob(7))
+			scounter++
 		pcounter = 0
 	pcounter++
 	fcounter++
@@ -129,20 +135,16 @@
 /obj/structure/silktree/tree/proc/refresh_targets()
 	target_list = list()
 	for(var/turf/open/turfA in orange(7, src))
-		if((!locate(/obj/structure/silktree/web) in turfA) && !turfA.z_open)
+		if((!locate(/obj/structure/silktree/web) in turfA) && !turfA.z_open && !turfA.density)
 			target_list |= turfA
 	if(!target_list.len)
 		rstop = 1 //no valid targets left, let's stop searching for targets for a while
 
 /obj/structure/silktree/tree/proc/pick_tree_target()
-	target_list = list()
+	tree_target_list = list()
 	for(var/turf/open/turfA in range(7, src))
-		if((locate(/obj/structure/silktree/web) in turfA) && !turfA.z_open && (!locate(/obj/structure/silktree/tree) in turfA))
-			target_list |= turfA
-		if(!target_list.len)
-			return
-		var/turf/open/targetS = pick(target_list)
-		return targetS
+		if(!turfA.z_open && (!locate(/obj/structure/silktree/tree) in turfA) && !turfA.density)
+			tree_target_list |= turfA
 
 
 /obj/structure/silktree/tree/proc/fire_at_target(var/turf/open/targetted_turf, var/payloadtype = "normal")
@@ -153,7 +155,7 @@
 			playsound(targetted_turf, 'sound/effects/attackblob.ogg' , 100, 1)
 			if(prob(30))
 				for(var/turf/open/turfA in orange(1, targetted_turf))
-					if((!locate(/obj/structure/silktree/web) in turfA) && !turfA.z_open)
+					if((!locate(/obj/structure/silktree/web) in turfA) && !turfA.z_open && !turfA.density)
 						new /obj/structure/silktree/web(turfA)
 
 			return
