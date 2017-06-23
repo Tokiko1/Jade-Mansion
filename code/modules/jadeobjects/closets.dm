@@ -171,7 +171,18 @@
 
 
 /obj/structure/closet/jademansion/casualdresses2
-/obj/structure/closet/jademansion/casualsuits1
+/obj/structure/closet/jademansion/casualsuits1/PopulateContents()
+	new /obj/item/clothing/under/suit1(src)
+	new /obj/item/clothing/under/suit2(src)
+	new /obj/item/clothing/under/suit3(src)
+	new /obj/item/clothing/under/jadesuits/fancysuit1(src)
+	new /obj/item/clothing/under/jadesuits/casual1(src)
+	new /obj/item/clothing/under/jadesuits/casual2(src)
+
+
+
+
+
 /obj/structure/closet/jademansion/casualsuits2
 /obj/structure/closet/jademansion/casualgeneric1
 

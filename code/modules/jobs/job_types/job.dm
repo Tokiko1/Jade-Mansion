@@ -144,19 +144,19 @@
 /datum/outfit/job/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	switch(H.backbag)
 		if(GBACKPACK)
-			back = /obj/item/weapon/storage/backpack //Grey backpack
+			back = null //Grey backpack
 		if(GSATCHEL)
-			back = /obj/item/weapon/storage/backpack/satchel //Grey satchel
+			back = null //Grey satchel
 		if(GDUFFLEBAG)
-			back = /obj/item/weapon/storage/backpack/dufflebag //Grey Dufflebag
+			back = null //Grey Dufflebag
 		if(LSATCHEL)
-			back = /obj/item/weapon/storage/backpack/satchel/leather //Leather Satchel
+			back = null //Leather Satchel
 		if(DSATCHEL)
-			back = satchel //Department satchel
+			back = null //Department satchel
 		if(DDUFFLEBAG)
-			back = dufflebag //Department dufflebag
+			back = null //Department dufflebag
 		else
-			back = backpack //Department backpack
+			back = null //Department backpack
 
 	if(box)
 		backpack_contents.Insert(1, box) // Box always takes a first slot in backpack
