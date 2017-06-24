@@ -226,12 +226,7 @@
 /mob/living/verb/succumb(whispered as null)
 	set hidden = 1
 	if (InCritical())
-		src.log_message("Has [whispered ? "whispered his final words" : "succumbed to death"] with [round(health, 0.1)] points of health!", INDIVIDUAL_ATTACK_LOG)
-		src.adjustOxyLoss(src.health - HEALTH_THRESHOLD_DEAD)
 		updatehealth()
-		if(!whispered)
-			to_chat(src, "<span class='notice'>You have given up life and succumbed to death.</span>")
-		death()
 
 /mob/living/incapacitated(ignore_restraints, ignore_grab)
 	if(stat || paralysis || stunned || weakened || (!ignore_restraints && restrained(ignore_grab)))
