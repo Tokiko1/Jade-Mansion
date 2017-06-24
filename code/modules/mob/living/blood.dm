@@ -52,8 +52,6 @@
 					Paralyse(rand(1,3))
 					var/word = pick("dizzy","woozy","faint")
 					to_chat(src, "<span class='warning'>You feel extremely [word].</span>")
-			if(0 to BLOOD_VOLUME_SURVIVE)
-				death()
 
 		var/temp_bleed = 0
 		//Bleeding out
