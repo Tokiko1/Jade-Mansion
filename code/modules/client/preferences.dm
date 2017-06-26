@@ -792,6 +792,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				SetChoices(user)
 		return 1
 
+//JADETODO: Add trait window here
+
 	switch(href_list["task"])
 		if("random")
 			switch(href_list["preference"])
