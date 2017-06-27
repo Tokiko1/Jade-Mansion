@@ -1,0 +1,2 @@
+#define STARTING_TRAIT_COST -2
+
