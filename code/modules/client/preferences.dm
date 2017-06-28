@@ -66,8 +66,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/list/features = list("mcolor" = "FFF", "tail_lizard" = "Smooth", "tail_human" = "None", "snout" = "Round", "horns" = "None", "ears" = "None", "wings" = "None", "frills" = "None", "spines" = "None", "body_markings" = "None", "legs" = "Normal Legs")
 
 	var/list/traits = list()
-	var/list/traits_test = list()
-	var/list/traits_test2
 
 
 	var/list/custom_names = list("clown", "mime", "ai", "cyborg", "religion", "deity")

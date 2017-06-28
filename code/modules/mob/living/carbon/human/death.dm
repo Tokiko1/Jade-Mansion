@@ -40,7 +40,6 @@
 
 
 /mob/living/carbon/proc/Drain()
-	become_husk()
 	disabilities |= NOCLONE
 	blood_volume = 0
 	return 1

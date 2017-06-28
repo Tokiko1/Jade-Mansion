@@ -85,10 +85,4 @@
 		update_body()
 		return 1
 
-/mob/living/carbon/become_husk()
-	if(disabilities & HUSK)
-		return
-	disabilities |= HUSK
-	status_flags |= DISFIGURED	//makes them unknown
-	update_body()
-	return 1
+
