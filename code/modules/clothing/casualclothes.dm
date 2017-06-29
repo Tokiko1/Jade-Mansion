@@ -61,6 +61,7 @@
 	body_parts_covered = CHEST|GROIN
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = 0
+	suitable_for_swimming = 1
 
 /obj/item/clothing/under/swimsuitwhite1
 	name = "white swimsuit"
@@ -70,6 +71,7 @@
 	body_parts_covered = CHEST|GROIN
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = 0
+	suitable_for_swimming = 1
 
 /obj/item/clothing/gloves/long_gloves1
 	name = "long black gloves"

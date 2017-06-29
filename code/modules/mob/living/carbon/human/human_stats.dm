@@ -1,1 +1,1 @@
-mob/living/carbon/human/handle_stats()
+mob/living/carbon/human/proc/handle_stats()

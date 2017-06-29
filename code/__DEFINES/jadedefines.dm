@@ -4,3 +4,6 @@
 #define ZLEVEL_ALL -1
 
 #define SILKTREE_HARDCAP 30
+
+#define DRUNK_LEVEL_HAPPY 10
+#define DRUNK_LEVEL_TIPSY 25

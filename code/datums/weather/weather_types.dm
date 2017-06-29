@@ -239,7 +239,7 @@
 	target_z = ZLEVEL_ALL
 
 /datum/weather/acid_rain/impact(mob/living/L)
-	L.fire_stacks = -20
+	L.fire_stacks = -2
 
 /datum/weather/verylongrain
 	name = "long rain"
