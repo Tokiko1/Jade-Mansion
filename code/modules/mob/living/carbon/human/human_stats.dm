@@ -1,0 +1,1 @@
+mob/living/carbon/human/handle_stats()

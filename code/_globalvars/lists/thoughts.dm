@@ -1,0 +1,1 @@
+GLOBAL_LIST_INIT(default_moods, list())

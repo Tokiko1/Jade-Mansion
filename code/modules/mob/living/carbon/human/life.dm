@@ -41,10 +41,12 @@
 		//Stuff jammed in your limbs hurts
 		handle_embedded_objects()
 
-//	if(stat != DEAD)
+	if(stat != DEAD)
 		//stats handling
-		//JADETODO: ADD STATS!
-//		handle_stats()
+		handle_stats()
+	if(stat != DEAD)
+		//mood handling
+		handle_mood()
 	if(stat != DEAD)
 		//handling knockout
 		handle_knockout()
@@ -75,8 +77,7 @@
 
 
 
-///mob/living/carbon/human/handle_stats()
-//JADETODO: ADD STATS!
+
 
 
 /mob/living/carbon/human/handle_disabilities()
