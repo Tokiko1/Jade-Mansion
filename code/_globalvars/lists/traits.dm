@@ -7,7 +7,6 @@
 #define TRAIT_LIST2 list( "Test Trait 3" = TRAIT_3)
 
 
-#define FULL_TRAIT_LIST (TRAIT_LIST1 + TRAIT_LIST2)
 
 
 //GLOBAL_LIST_INIT(traitlistpaged, list("page1" = TRAIT_LIST1, "page2" = TRAIT_LIST2))

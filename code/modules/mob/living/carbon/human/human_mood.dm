@@ -7,12 +7,11 @@ mob/living/carbon/human/proc/handle_mood()
 mob/living/carbon/human/proc/refresh_mood() //processes moods, removes them if their duration is over
 	total_mood = 0
 	for(var/thoughtS in mood_thoughts)
-		var/list/moodS = mood_thoughts.["thoughtS"]
+		var/list/moodS = mood_thoughts.[thoughtS]
 		if(REALTIMEOFDAY > moodS.["duration"])
 			mood_thoughts.Remove(thoughtS)
 		else
-
-			total_mood = total_mood + moodS.["severity_current"]
+			total_mood = total_mood + moodS.["severity"]
 
 
 //for modifiying existing thoughts
@@ -77,10 +76,13 @@ mob/living/carbon/human/proc/add_thought(thought_to_add, Tduration, Tseverity, T
 		return
 
 	if(thought_to_add in mood_thoughts) //thought already exists, let's refresh it instead
-		mood_thoughts.Remove(thought_to_add)
+		mood_thoughts.Remove(thought_to_add) //
 
 	if(Tduration)
 		moodADD.["duration"] = REALTIMEOFDAY + Tduration
+	else
+		moodADD.["duration"] = REALTIMEOFDAY + moodADD.["default_duration"]
+
 	if(Tseverity)
 		moodADD.["severity"] = Tseverity
 	if(Tforced == 1)
@@ -88,7 +90,8 @@ mob/living/carbon/human/proc/add_thought(thought_to_add, Tduration, Tseverity, T
 	else if(Tforced == 0)
 		moodADD.["protected"] = FALSE
 
-	mood_thoughts.Add(moodADD)
+	mood_thoughts.Add(thought_to_add)
+	mood_thoughts[thought_to_add] = moodADD //yeah, this is how you are forced to add named lists to lists in BYOND
 	return
 
 mob/living/carbon/human/proc/check_for_thoughts()
@@ -115,7 +118,7 @@ mob/living/carbon/human/proc/check_for_thoughts()
 
 	if(fire_stacks < 0)
 		if(w_uniform)
-			var/obj/item/clothing/uniform_S
+			var/obj/item/clothing/uniform_S = w_uniform
 			if(!uniform_S.suitable_for_swimming)
 				add_thought("wet")
 				if(fire_stacks < -10)
