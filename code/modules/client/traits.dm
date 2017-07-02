@@ -1,8 +1,8 @@
 //trait menu
 
-/datum/preferences/proc/SetTraits(mob/user, width = 295, height = 620, page = 1)
+/datum/preferences/proc/SetTraits(mob/user, width = 600, height = 600, page = 1)
 
-	if(!GLOB.alltraits.len) //what the hell
+	if(!GLOB.alltraits.len) //what the egg??
 		GLOB.alltraits += GLOB.traitlistpaged.["page1"]
 		GLOB.alltraits += GLOB.traitlistpaged.["page2"]
 		GLOB.alltraits += GLOB.traitlistpaged.["page3"]
@@ -20,8 +20,12 @@
 	var/totalcost = STARTING_TRAIT_COST
 	if(traits && traits.len)
 		for(var/traitS in traits)
-			var/traitC = GLOB.alltraits.[traitS]
-			totalcost += traitC.["tcost"]
+			if(traitS in GLOB.alltraits)
+				var/traitC = GLOB.alltraits.[traitS]
+				totalcost += traitC.["tcost"]
+			else // something went very wrong, one of the saved traits does not exist, let's remove it
+				traits.Remove(traitS)
+
 
 
 	if(totalcost < 0)
@@ -48,7 +52,12 @@
 		else
 			tactive = 0
 
-		HTML += "<b>[tname]</b><br>"
+
+		if(tactive)
+			HTML += "<b>[tname]</b> -- SELECTED<br>"
+		else
+			HTML += "<b>[tname]</b><br>"
+
 		if(tcost < 0)
 			HTML += "<b>Cost: <font color='green'>[tcost]</font></b>"
 		if(tcost == 0)

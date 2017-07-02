@@ -6,9 +6,6 @@
 #define TRAIT_LIST1 list( "Test Trait 1" = TRAIT_1, "Test Trait 2" = TRAIT_2)
 #define TRAIT_LIST2 list( "Test Trait 3" = TRAIT_3)
 
-
-
-
 //GLOBAL_LIST_INIT(traitlistpaged, list("page1" = TRAIT_LIST1, "page2" = TRAIT_LIST2))
 
 GLOBAL_LIST_INIT(traitlistpaged, list(
@@ -51,3 +48,4 @@ GLOBAL_LIST_INIT(traitlistpaged, list(
 ))
 
 GLOBAL_LIST_EMPTY(alltraits)
+GLOBAL_LIST_INIT(random_traits_presets, list())

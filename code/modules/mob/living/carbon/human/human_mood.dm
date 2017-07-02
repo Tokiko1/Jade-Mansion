@@ -1,7 +1,28 @@
 mob/living/carbon/human/proc/handle_mood()
 	refresh_mood()
 	check_for_thoughts()
+	update_mood_hud()
 
+
+mob/living/carbon/human/proc/update_mood_hud()
+	if(!client || !hud_used)
+		return
+
+	if(hud_used.moods)
+		if(total_mood > MOOD_LEVEL_GOOD3)
+			hud_used.moods.icon_state = "mood_good3"
+		else if(total_mood > MOOD_LEVEL_GOOD2)
+			hud_used.moods.icon_state = "mood_good2"
+		else if(total_mood > MOOD_LEVEL_GOOD1)
+			hud_used.moods.icon_state = "mood_good1"
+		else if(total_mood > MOOD_LEVEL_OK)
+			hud_used.moods.icon_state = "mood_ok"
+		else if(total_mood > MOOD_LEVEL_BAD1)
+			hud_used.moods.icon_state = "mood_bad1"
+		else if(total_mood > MOOD_LEVEL_BAD2)
+			hud_used.moods.icon_state = "mood_bad2"
+		else
+			hud_used.moods.icon_state = "mood_bad3"
 
 
 mob/living/carbon/human/proc/refresh_mood() //processes moods, removes them if their duration is over

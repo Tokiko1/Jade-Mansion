@@ -7,3 +7,16 @@
 
 #define DRUNK_LEVEL_HAPPY 10
 #define DRUNK_LEVEL_TIPSY 25
+
+#define MOOD_LEVEL_BAD3 -15 //not currently used
+#define MOOD_LEVEL_BAD2 -10
+#define MOOD_LEVEL_BAD1 -4
+#define MOOD_LEVEL_OK -2
+#define MOOD_LEVEL_GOOD1 2
+#define MOOD_LEVEL_GOOD2 6
+#define MOOD_LEVEL_GOOD3 10
+
+#define THRESHOLD_MENTAL_LIGHT -3
+#define THRESHOLD_MENTAL_MEDIUM -6
+#define THRESHOLD_MENTAL_BAD -9
+

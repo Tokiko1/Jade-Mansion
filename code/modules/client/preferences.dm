@@ -1311,7 +1311,17 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.undershirt = undershirt
 	character.socks = socks
 
-	character.traits = traits
+	var/pointcheck = STARTING_TRAIT_COST
+	for(var/traitSS in traits)
+		if(!(traitSS in GLOB.alltraits))
+			traits.Remove(traitSS)
+		else
+			pointcheck += GLOB.alltraits[traitSS]["tcost"]
+	if(pointcheck < 1)
+		character.traits = traits
+	else
+		character.traits = pick(GLOB.random_traits_presets)
+
 
 	character.backbag = backbag
 	character.workuniform = workuniform
