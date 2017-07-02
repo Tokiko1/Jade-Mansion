@@ -124,4 +124,14 @@ GLOBAL_LIST_INIT(default_moods, list(
 "protected" = FALSE
 ),
 
+"well dressed" = list(
+"name" = "well dressed",
+"name_menu" = "Well Dressed",
+"desc" = "You're wearing very fancy clothes, you feel more confident and happy.",
+"default_duration" = 600,
+"duration" = 0,
+"severity" = 1,
+"protected" = FALSE
+)
+
 ))

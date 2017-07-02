@@ -113,8 +113,8 @@ mob/living/carbon/human/proc/check_for_thoughts()
 				seen = TRUE
 		if(seen)
 			add_thought("embarassed")
-			if(("dressed" in mood_thoughts) || ("well dressed" in mood_thoughts))
-				modify_thought(thought_to_modify = list("dressed", "well dressed"), "remove")
+			if("well dressed" in mood_thoughts)
+				modify_thought(thought_to_modify = list("well dressed"), "remove")
 
 	if(fire_stacks < 0)
 		if(w_uniform)

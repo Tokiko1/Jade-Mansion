@@ -5,6 +5,7 @@
 	if(!GLOB.alltraits.len) //what the hell
 		GLOB.alltraits += GLOB.traitlistpaged.["page1"]
 		GLOB.alltraits += GLOB.traitlistpaged.["page2"]
+		GLOB.alltraits += GLOB.traitlistpaged.["page3"]
 
 	var/HTML = ""
 
@@ -14,7 +15,7 @@
 
 	HTML += "<center><a href='?_src_=prefs;preference=trait;task=close'>Done</a></center><br>"
 	HTML += "<center><a href='?_src_=prefs;preference=trait;task=reset;tpage=[page]'>Reset Traits</a></center><br>"
-	HTML += "<center><a href='?_src_=prefs;preference=trait;task=changepage;tpage=1'>Page 1</a><a href='?_src_=prefs;preference=trait;task=changepage;tpage=2'>Page 2</a></center><br>"
+	HTML += "<center><a href='?_src_=prefs;preference=trait;task=changepage;tpage=1'>Page 1</a><a href='?_src_=prefs;preference=trait;task=changepage;tpage=2'>Page 2</a><a href='?_src_=prefs;preference=trait;task=changepage;tpage=3'>Page 3</a></center><br>"
 
 	var/totalcost = STARTING_TRAIT_COST
 	if(traits && traits.len)
