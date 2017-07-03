@@ -41,6 +41,8 @@
 	var/list/traits = list() //traits
 	var/list/mood_thoughts = list() //current thoughts
 	var/total_mood
+	var/tantrum_active = 0
+	var/mischief = 0
 
 	var/bleed_rate = 0 //how much are we bleeding
 	var/bleedsuppress = 0 //for stopping bloodloss, eventually this will be limb-based like bleeding

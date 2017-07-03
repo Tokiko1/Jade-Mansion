@@ -37,7 +37,9 @@ GLOBAL_LIST_INIT(traitlistpaged, list(
 "page3" = list(
 "Maid Box Lunch" = list("tname" = "Maid Box Lunch", "tdesc" = "You start with a special magical lunchbox that never runs out. However, only you can eat from it.", "tcost" = 1, "tnotes" = null),
 "Loud Voice" = list("tname" = "Loud Voice", "tdesc" = "Once per minute, you can yell really loud. Anyone in a certain range will hear your yellings, even behind walls.", "tcost" = 2, "tnotes" = null),
-"Strong Fate" = list("tname" = "Strong Fate", "tdesc" = "It seems that fate likes to play with you. Random fluff events that involve you tend to be more extreme than usual, both good and bad.", "tcost" = 1, "tnotes" = null)
+"Strong Fate" = list("tname" = "Strong Fate", "tdesc" = "It seems that fate likes to play with you. Random fluff events that involve you tend to be more extreme than usual, both good and bad.", "tcost" = 1, "tnotes" = null),
+"Weak Fate" = list("tname" = "Weak Fate", "tdesc" = "Fate seems to ignore you. Random fluff events involving you are usually less intense, both good and bad.", "tcost" = 1, "tnotes" = null)
+
 )
 
 

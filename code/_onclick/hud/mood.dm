@@ -7,7 +7,7 @@
 /obj/screen/human/mood/Click() //open the menu
 	ViewMoodWindow(usr)
 
-/obj/screen/human/mood/proc/ViewMoodWindow(mob/living/carbon/human/user, width = 600, height = 600)
+/obj/screen/human/mood/proc/ViewMoodWindow(mob/living/carbon/human/user, width = 300, height = 600)
 
 	var/HTML = ""
 	HTML += "<center><h2>Thoughts and Mood</h2><br></center>"
@@ -31,7 +31,7 @@
 		if(severityT < 0)
 			HTML += "<b>Name:</b> [nameT] <font color='red'>--Bad--</font><br>"
 		else if(severityT == 0)
-			HTML += "<b>Name:</b> [nameT]<br>"
+			HTML += "<b>Name:</b> [nameT]<br>" //there shouldn't actually be any 0 severity moods at all since they don't make sense, but let's check just in case
 		else if (severityT > 0)
 			HTML += "<b>Name:</b> [nameT] <font color='green'>--Good--</font><br>"
 

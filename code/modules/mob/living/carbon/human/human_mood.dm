@@ -9,7 +9,9 @@ mob/living/carbon/human/proc/update_mood_hud()
 		return
 
 	if(hud_used.moods)
-		if(total_mood > MOOD_LEVEL_GOOD3)
+		if(tantrum_active)
+			hud_used.moods.icon_state = "mood_tantrum"
+		else if(total_mood > MOOD_LEVEL_GOOD3)
 			hud_used.moods.icon_state = "mood_good3"
 		else if(total_mood > MOOD_LEVEL_GOOD2)
 			hud_used.moods.icon_state = "mood_good2"

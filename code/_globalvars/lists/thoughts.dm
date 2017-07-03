@@ -10,6 +10,8 @@
 //->"severity" a number value that adjusts the total mood
 //->"protected" a thought with this cannot be removed by modify/transform unless forced, still disappears if duration runs out
 
+GLOBAL_LIST_EMPTY(mental_break_candicates)
+
 GLOBAL_LIST_INIT(default_moods, list(
 
 "pain mild" = list(
