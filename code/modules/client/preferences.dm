@@ -1312,6 +1312,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.socks = socks
 
 	var/pointcheck = STARTING_TRAIT_COST
+
+	if(!GLOB.alltraits.len) //what the egg??
+		for(var/pages in GLOB.traitlistpaged)
+			GLOB.alltraits += GLOB.traitlistpaged[pages]
 	for(var/traitSS in traits)
 		if(!(traitSS in GLOB.alltraits))
 			traits.Remove(traitSS)

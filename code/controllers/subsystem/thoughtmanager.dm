@@ -3,7 +3,6 @@ SUBSYSTEM_DEF(thoughtmanager)
 	name = "Thought Manager"
 	flags = SS_BACKGROUND
 	wait = 50 //every 5 seconds
-	var/current_time = REALTIMEOFDAY
 	var/next_event
 
 	var/frequency_of_events = 300
@@ -25,11 +24,11 @@ SUBSYSTEM_DEF(thoughtmanager)
 
 
 	var/mischief_base = 0.4
-	var/bad_idea_bonus = 0.2
+	var/bad_idea_bonus = 2
 
 
 	var/mischief_severity_base = 1
-	var/bad_idea_severity_bonus = 1
+	var/bad_idea_severity_bonus = 10
 
 
 	var/bad_idea_extreme_threshold = 15
@@ -47,79 +46,129 @@ SUBSYSTEM_DEF(thoughtmanager)
 
 /datum/controller/subsystem/thoughtmanager/fire()
 	handle_tantrums()
+	handle_events()
 
-	current_time = REALTIMEOFDAY
-
-/datum/controller/subsystem/thoughtmanager/handle_events()
-	if(current_time > next_event)
+/datum/controller/subsystem/thoughtmanager/proc/handle_events()
+	if(REALTIMEOFDAY > next_event)
 		var/bad_idea_counter = 0
 		var/bad_idea_severity = 0
 		var/final_severity = BAD_SEVERITY_MINOR
+		var/list/player_list_human = list()
+		for(var/mob/living/carbon/human/playerP in GLOB.player_list) //we only want humans, not people in the lobby or mobs
+			player_list_human |= playerP
+
+
+
+//setting the time for the next batch of bad ideas
 		next_event = REALTIMEOFDAY + (frequency_of_events + rand(lower_bound_event_frequency, upper_bound_event_frequency))
-		for(mob/living/carbon/human/player in GLOB.player_list)
-			bad_idea_counter =+ Clamp((rand(0, bad_idea_bonus) + mischief_base + (player.mischief * 0.1)),bad_idea_frequency_low ,bad_idea_frequency_high)
+
+		message_admins("NEXT EVENT[next_event]") //debug
+
+		if(!player_list_human.len) //nobody here, let's not run this time
+			return
+
+//figuring out how many bad ideas to cause based on playercount and mischief var
+		for(var/mob/living/carbon/human/player in player_list_human)
+			bad_idea_counter += Clamp(((rand(0, bad_idea_bonus)*0.1) + mischief_base + (player.mischief * 0.1)),bad_idea_frequency_low ,bad_idea_frequency_high)
 
 		if(bad_idea_counter < bad_idea_lower_bound && prob(bad_idea_lower_bound_chance))
-			bad_idea_counter = bad_idea_lower_bound)
+			bad_idea_counter = bad_idea_lower_bound
 
-		for(var/loops = bad_idea_counter, loops => 1, loops--)
-			var/amount_players = GLOB.player_list.len
+		message_admins("BAD IDEA COUNTER [bad_idea_counter]") //debug
+
+//calculating severity of each event
+		for(var/loops = bad_idea_counter, loops >= 1, loops--)
+			var/amount_players = player_list_human.len
 			var/severity_player_bonus
-			for(mob/living/carbon/human/player in GLOB.player_list)
-				severity_player_bonus + Clamp((rand(0, bad_idea_severity_bonus) + mischief_severity_base + (player.mischief * 0.15)),bad_idea_severity_low ,bad_idea_severity_high)
+			for(var/mob/living/carbon/human/player in player_list_human)
+				severity_player_bonus += Clamp(((rand(0, bad_idea_severity_bonus) *0.1) + mischief_severity_base + (player.mischief * 0.15)),bad_idea_severity_low ,bad_idea_severity_high)
 			if(!amount_players) //no division by zero
 				severity_player_bonus = 1
 			else
 				severity_player_bonus = severity_player_bonus / amount_players
-		bad_idea_severity = rand(0, 15) + severity_player_bonus
+			bad_idea_severity = rand(0, 15) + severity_player_bonus
 
-		if(bad_idea_severity >= bad_idea_extreme_threshold)
-			final_severity = BAD_SEVERITY_EXTREME
-		else if(bad_idea_severity >= bad_idea_verybad_threshold)
-			final_severity = BAD_SEVERITY_VERYBAD
-		else if(bad_idea_severity >= bad_idea_medium_threshold)
-			final_severity = BAD_SEVERITY_MEDIUM
-		else
-			final_severity = BAD_SEVERITY_MINOR
+			message_admins("BAD IDEA SEVERITY[bad_idea_severity]") //debug
+
+//grouping the events in 1 of the 4 severities after calculation
+			if(bad_idea_severity >= bad_idea_extreme_threshold)
+				final_severity = BAD_SEVERITY_EXTREME
+			else if(bad_idea_severity >= bad_idea_verybad_threshold)
+				final_severity = BAD_SEVERITY_VERYBAD
+			else if(bad_idea_severity >= bad_idea_medium_threshold)
+				final_severity = BAD_SEVERITY_MEDIUM
+			else
+				final_severity = BAD_SEVERITY_MINOR
+
+			message_admins("FINAL SEVERITY[final_severity]") //debug
+
+//picking the type and the person who gets this idea and possibly the victim
+			var/btype = pick("general", "target")
+			var/mob/living/carbon/human/victim
+			var/mob/living/carbon/human/bad_idea_person
+
+			var/list/peoples = list()
+			peoples += player_list_human
+			var/list/victimsS = list()
+			victimsS += GLOB.bad_idea_victims
+
+			if(prob(40) && GLOB.bad_idea_causers.len)
+				bad_idea_person = pick(GLOB.bad_idea_causers)
+			else
+				bad_idea_person = pick(player_list_human)
+
+			peoples.Remove(bad_idea_person)
+			victimsS.Remove(bad_idea_person)
+
+			if(!peoples.len) //okay, there is no more people left to be victims so we are alone
+				btype = "general" //let's put a general bad idea instead
+
+			if(btype == "target")
+
+				if(prob(45) && GLOB.bad_idea_causers.len)
+					victim = pick(GLOB.bad_idea_victims)
+				else
+					victim = pick(peoples)
+			else
+				victim = bad_idea_person
+
+//adjusting the final severity up and/or down based on traits
+			if(("Strong Fate" in victim.traits) || ("Strong Fate" in bad_idea_person.traits)) //intensify the bad idea if traits allow it
+				if(prob(50) && final_severity < BAD_SEVERITY_EXTREME)
+					final_severity++
+
+			if(("Weak Fate" in victim.traits) || ("Weak Fate" in bad_idea_person.traits)) //intensify the bad idea if traits allow it
+				if(prob(50) && final_severity > BAD_SEVERITY_MINOR)
+					final_severity--
+
+			if(!bad_idea_person) //something went wrong!
+				return
+			make_bad_idea(btype, final_severity, bad_idea_person, victim)
+
+			message_admins ( "[btype], [final_severity], [bad_idea_person.name], [victim.name]") //debug
+
+/datum/controller/subsystem/thoughtmanager/proc/make_bad_idea(type = "general", intensity = 1, mob/living/carbon/human/player, mob/living/carbon/human/victimB)
 
 
-
-		if(!victim)
-			victim = bad_idea_person
-
-		if(("Strong Fate" in victim.traits) || ("Strong Fate" in bad_idea_person.traits)) //intensify the bad idea if traits allow it
-			if(prob(50) && final_severity < BAD_SEVERITY_EXTREME)
-				final_severity++
-
-		if(("Weak Fate" in victim.traits) || ("Weak Fate" in bad_idea_person.traits)) //intensify the bad idea if traits allow it
-			if(prob(50) && final_severity > BAD_SEVERITY_MINOR)
-				final_severity--
-
-
-/datum/controller/subsystem/thoughtmanager/make_bad_idea(mob/living/carbon/human/player, intensity = "low")
-
-
-/datum/controller/subsystem/thoughtmanager/handle_tantrums()
-	for(mob/living/carbon/human/player in GLOB.mental_break_candicates)
+/datum/controller/subsystem/thoughtmanager/proc/handle_tantrums()
+	for(var/mob/living/carbon/human/player in GLOB.mental_break_candicates)
 		var/breakchance = tantrum_chance
 
-
-
-		if(prob(breakchance)
+		if(prob(breakchance))
 			if(player.total_mood >= THRESHOLD_MENTAL_LIGHT)
-				 GLOB.mental_break_candicates.Remove(player)
+				GLOB.mental_break_candicates.Remove(player)
 			else
 				start_tantrum(player)
 
-/datum/controller/subsystem/thoughtmanager/start_tantrum(mob/living/carbon/human/tantrum)
+/datum/controller/subsystem/thoughtmanager/proc/start_tantrum(mob/living/carbon/human/tantrum)
 
 
-/datum/controller/subsystem/thoughtmanager/update_tantrums_candidates()
+/datum/controller/subsystem/thoughtmanager/proc/update_tantrums_candidates()
 
-	for(mob/living/carbon/human/player in GLOB.player_list)
+	for(var/mob/living/carbon/human/player in GLOB.player_list)
 		if(player in GLOB.mental_break_candicates)
 			if(player.total_mood >= THRESHOLD_MENTAL_LIGHT)
-				 GLOB.mental_break_candicates.Remove(player)
+				GLOB.mental_break_candicates.Remove(player)
 		else
 			if(player.total_mood >= THRESHOLD_MENTAL_LIGHT)
 				GLOB.mental_break_candicates.Add(player)

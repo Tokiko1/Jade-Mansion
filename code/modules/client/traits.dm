@@ -3,9 +3,8 @@
 /datum/preferences/proc/SetTraits(mob/user, width = 600, height = 600, page = 1)
 
 	if(!GLOB.alltraits.len) //what the egg??
-		GLOB.alltraits += GLOB.traitlistpaged.["page1"]
-		GLOB.alltraits += GLOB.traitlistpaged.["page2"]
-		GLOB.alltraits += GLOB.traitlistpaged.["page3"]
+		for(var/pages in GLOB.traitlistpaged)
+			GLOB.alltraits += GLOB.traitlistpaged[pages]
 
 	var/HTML = ""
 

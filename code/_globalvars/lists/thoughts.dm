@@ -12,6 +12,11 @@
 
 GLOBAL_LIST_EMPTY(mental_break_candicates)
 
+GLOBAL_LIST_EMPTY(bad_idea_victims)
+GLOBAL_LIST_EMPTY(bad_idea_causers)
+
+
+
 GLOBAL_LIST_INIT(default_moods, list(
 
 "pain mild" = list(
