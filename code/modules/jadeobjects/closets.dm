@@ -196,6 +196,13 @@
 	new /obj/item/clothing/under/maidblack7(src)
 	new /obj/item/clothing/under/maidblue1(src)
 	new /obj/item/clothing/under/maidblue2(src)
+	new /obj/item/clothing/under/maidbase(src)
+	new /obj/item/clothing/under/furisodeblack(src)
+	new /obj/item/clothing/under/kappougi1(src)
+
+
+
+
 	new /obj/item/clothing/head/maidhead1(src)
 	new /obj/item/clothing/head/maidhead1(src)
 	new /obj/item/clothing/head/maidhead1(src)

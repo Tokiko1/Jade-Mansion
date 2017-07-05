@@ -39,6 +39,7 @@
 	var/special_voice = "" // For changing our voice. Used by a symptom.
 
 	var/list/traits = list() //traits
+	var/list/active_traits = list() //traits that actively process
 	var/list/mood_thoughts = list() //current thoughts
 	var/total_mood
 	var/tantrum_active = 0

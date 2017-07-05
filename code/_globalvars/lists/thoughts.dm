@@ -139,6 +139,66 @@ GLOBAL_LIST_INIT(default_moods, list(
 "duration" = 0,
 "severity" = 1,
 "protected" = FALSE
+),
+
+"scared dark" = list(
+"name" = "scared dark",
+"name_menu" = "Scared of Darkness",
+"desc" = "You spent some time in a dark area, you feel bad.",
+"default_duration" = 600,
+"duration" = 0,
+"severity" = -5,
+"protected" = FALSE
+),
+
+"annoyed by mess" = list(
+"name" = "annoyed by mess",
+"name_menu" = "Annoyed by a mess.",
+"desc" = "There are a lot of messy things around here, you hate it!",
+"default_duration" = 600,
+"duration" = 0,
+"severity" = -3,
+"protected" = FALSE
+),
+
+"happy positive" = list(
+"name" = "happy positive",
+"name_menu" = "Spontanous happyness.",
+"desc" = "You feel pretty happy.",
+"default_duration" = 6000,
+"duration" = 0,
+"severity" = 3,
+"protected" = FALSE
+),
+
+"very happy positive" = list(
+"name" = "very happy positive",
+"name_menu" = "Spontanous strong happyness.",
+"desc" = "You feel very happy! Life is great!",
+"default_duration" = 6000,
+"duration" = 0,
+"severity" = 3,
+"protected" = FALSE
+),
+
+"glutton hungry" = list(
+"name" = "glutton hungry",
+"name_menu" = "Not feeling full.",
+"desc" = "You aren't well fed! That makes you unhappy.",
+"default_duration" = 600,
+"duration" = 0,
+"severity" = -2,
+"protected" = FALSE
+),
+
+"missing maid fashion" = list(
+"name" = "missing maid fashion",
+"name_menu" = "Not wearing maid fashion.",
+"desc" = "You aren't wearing a full, proper maid uniform.",
+"default_duration" = 60,
+"duration" = 0,
+"severity" = -3,
+"protected" = FALSE
 )
 
 ))

@@ -137,7 +137,7 @@ SUBSYSTEM_DEF(thoughtmanager)
 				if(prob(50) && final_severity < BAD_SEVERITY_EXTREME)
 					final_severity++
 
-			if(("Weak Fate" in victim.traits) || ("Weak Fate" in bad_idea_person.traits)) //intensify the bad idea if traits allow it
+			if(("Weak Fate" in victim.traits) || ("Weak Fate" in bad_idea_person.traits)) //deintensify the bad idea if traits allow it
 				if(prob(50) && final_severity > BAD_SEVERITY_MINOR)
 					final_severity--
 
@@ -167,8 +167,8 @@ SUBSYSTEM_DEF(thoughtmanager)
 
 	for(var/mob/living/carbon/human/player in GLOB.player_list)
 		if(player in GLOB.mental_break_candicates)
-			if(player.total_mood >= THRESHOLD_MENTAL_LIGHT)
+			if(player.total_mood >= THRESHOLD_MENTAL_LIGHT || player.tantrum_active)
 				GLOB.mental_break_candicates.Remove(player)
 		else
-			if(player.total_mood >= THRESHOLD_MENTAL_LIGHT)
+			if(player.total_mood >= THRESHOLD_MENTAL_LIGHT || !player.tantrum_active)
 				GLOB.mental_break_candicates.Add(player)

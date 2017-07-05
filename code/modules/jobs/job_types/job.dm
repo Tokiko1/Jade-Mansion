@@ -125,12 +125,12 @@
 
 	var/jobtype = null
 
-	uniform = /obj/item/clothing/under/color/grey
+	uniform = null
 	id = /obj/item/weapon/card/id
-	ears = /obj/item/device/radio/headset
-	belt = /obj/item/device/pda
+	ears = null
+	belt = null
 	back = /obj/item/weapon/storage/backpack
-	shoes = /obj/item/clothing/shoes/sneakers/black
+	shoes = null
 
 	var/list/implants = null
 
@@ -163,6 +163,12 @@
 		backpack_contents[box] = 1
 
 	switch(H.workuniform)
+		if(BLACKMAID0)
+			uniform = /obj/item/clothing/under/maidbase
+			head = /obj/item/clothing/head/maidhead1
+			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
+
 		if(BLACKMAID1)
 			uniform = /obj/item/clothing/under/maidblack1
 			head = /obj/item/clothing/head/maidhead1
@@ -215,6 +221,18 @@
 		if(BLUEMAID2)
 			uniform = /obj/item/clothing/under/maidblue2
 			head = /obj/item/clothing/head/maidhead1
+			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
+
+		if(KAPPOUGI0)
+			uniform = /obj/item/clothing/under/furisodeblack
+			head = /obj/item/clothing/head/maidhead2
+			shoes = /obj/item/clothing/shoes/jackboots //boots and furisode, so cool!!
+			gloves = null
+
+		if(KAPPOUGI1)
+			uniform = /obj/item/clothing/under/kappougi1
+			head = /obj/item/clothing/head/maidhead2
 			shoes = /obj/item/clothing/shoes/jackboots
 			gloves = null
 

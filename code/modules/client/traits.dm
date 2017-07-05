@@ -14,7 +14,17 @@
 
 	HTML += "<center><a href='?_src_=prefs;preference=trait;task=close'>Done</a></center><br>"
 	HTML += "<center><a href='?_src_=prefs;preference=trait;task=reset;tpage=[page]'>Reset Traits</a></center><br>"
-	HTML += "<center><a href='?_src_=prefs;preference=trait;task=changepage;tpage=1'>Page 1</a><a href='?_src_=prefs;preference=trait;task=changepage;tpage=2'>Page 2</a><a href='?_src_=prefs;preference=trait;task=changepage;tpage=3'>Page 3</a></center><br>"
+	var/pagesT = 1
+	HTML += "<center>"
+	for(var/pages in GLOB.traitlistpaged)
+		var/tencounter = 1
+		if(tencounter >= 10)
+			HTML += "</center><center>"
+			tencounter = 1
+		HTML += "<a href='?_src_=prefs;preference=trait;task=changepage;tpage=[pagesT]'>Page [pagesT]</a>"
+		pagesT++
+		tencounter++
+	HTML += "</center><br>"
 
 	var/totalcost = STARTING_TRAIT_COST
 	if(traits && traits.len)

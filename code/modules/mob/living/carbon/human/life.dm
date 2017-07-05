@@ -43,7 +43,7 @@
 
 	if(stat != DEAD)
 		//stats handling
-		handle_stats()
+		handle_traits()
 	if(stat != DEAD)
 		//mood handling
 		handle_mood()
