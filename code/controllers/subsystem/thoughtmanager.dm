@@ -5,9 +5,9 @@ SUBSYSTEM_DEF(thoughtmanager)
 	wait = 50 //every 5 seconds
 	var/next_event
 
-	var/frequency_of_events = 300
-	var/lower_bound_event_frequency = -20
-	var/upper_bound_event_frequency = 600
+	var/frequency_of_events = 4500
+	var/lower_bound_event_frequency = -200
+	var/upper_bound_event_frequency = 7500
 
 
 	//how the number of bad ideas is determined: for every player, the game generates a number based on the character's mischief var and adds them all
