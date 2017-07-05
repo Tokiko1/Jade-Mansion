@@ -44,17 +44,18 @@
 
 /datum/trait/neat_freak/run_check(mob/living/carbon/human/player)
 	if(checkcooldown > 6)
-		messcount = Clamp(messcount, 0, 20)
+		messcount = Clamp(messcount, 0, 10)
 		var/dirty = 0
 		for(var/obj/potentialmess in view(5, src))
 			if(potentialmess.messy_thing == 1)
-				dirty = 1
-				break
+				if(istype(potentialmess.loc, /turf/open)) //we only care about dirty, messy things that we can see, stuff in bins is ok
+					dirty = 1
+					break
 		if(dirty)
 			messcount++
 		else if(prob(30))
 			messcount--
-		if(messcount > 10)
+		if(messcount > 3)
 			player.add_thought("annoyed by mess")
 		checkcooldown = 0
 

@@ -836,6 +836,8 @@
 			var/obj/item/clothing/CL = H.glasses
 			if(CL.scan_reagents)
 				return 1
+		if(H.can_see_chems)
+			return 1
 	return 0
 
 //Can the mob use Topic to interact with machines
