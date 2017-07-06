@@ -249,5 +249,6 @@ SUBSYSTEM_DEF(mapping)
 	for(var/obj/effect/landmark/start/new_player/A in world)
 		listlocations |= get_turf(A)
 	var/turf/newplayerturf = pick(listlocations)
-	for(var/mob/dead/new_player/player in GLOB.player_list)
+	for(var/mob/dead/new_player/player in world)
 		player.loc = newplayerturf
+		player.reset_perspective()
