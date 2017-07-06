@@ -38,14 +38,6 @@
 		return
 	if(!M.has_dna())
 		return  //No robots, AIs, aliens, Ians or other mobs should be affected by this.
-	if((method==VAPOR && prob(min(33, reac_volume))) || method==INGEST || method==PATCH || method==INJECT)
-		M.randmuti()
-		if(prob(98))
-			M.randmutb()
-		else
-			M.randmutg()
-		M.updateappearance()
-		M.domutcheck()
 	..()
 
 /datum/reagent/toxin/mutagen/on_mob_life(mob/living/carbon/M)
@@ -140,10 +132,7 @@
 	toxpwr = 0
 	taste_description = "mint"
 
-/datum/reagent/toxin/minttoxin/on_mob_life(mob/living/M)
-	if(M.disabilities & FAT)
-		M.gib()
-	return ..()
+
 
 /datum/reagent/toxin/carpotoxin
 	name = "Carpotoxin"

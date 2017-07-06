@@ -46,6 +46,10 @@
 /obj/item/weapon/reagent_containers/food/snacks/attack_self(mob/user)
 	return
 
+/obj/item/weapon/reagent_containers/food/snacks/proc/try_delete_food(mob/user)
+	to_chat(user, "<span class='notice'>None of [src] left, oh no!</span>")
+	qdel(src)
+	return
 
 /obj/item/weapon/reagent_containers/food/snacks/attack(mob/M, mob/user, def_zone)
 	if(user.a_intent == INTENT_HARM)
@@ -53,8 +57,7 @@
 	if(!eatverb)
 		eatverb = pick("bite","chew","nibble","gnaw","gobble","chomp")
 	if(!reagents.total_volume)						//Shouldn't be needed but it checks to see if it has anything left in it.
-		to_chat(user, "<span class='notice'>None of [src] left, oh no!</span>")
-		qdel(src)
+		try_delete_food(user)
 		return 0
 	if(iscarbon(M))
 		if(!canconsume(M, user))

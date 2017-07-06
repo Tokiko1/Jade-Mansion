@@ -199,6 +199,17 @@ GLOBAL_LIST_INIT(default_moods, list(
 "duration" = 0,
 "severity" = -3,
 "protected" = FALSE
+),
+
+"injury dislike" = list(
+"name" = "injury dislike",
+"name_menu" = "Saw an injury.",
+"desc" = "You saw an injury and it looked painful. You feel bad.",
+"default_duration" = 600,
+"duration" = 0,
+"severity" = -5,
+"protected" = FALSE
 )
+
 
 ))

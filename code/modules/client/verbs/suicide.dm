@@ -1,5 +1,5 @@
 /mob/var/suiciding = 0
-
+/*
 /mob/living/carbon/human/verb/suicide()
 	set hidden = 1
 	if(!canSuicide())
@@ -155,7 +155,7 @@
 						"<span class='userdanger'>[src] begins to fall down. It looks like [p_theyve()] lost the will to live.</span>")
 		death(0)
 
-
+*/
 /mob/living/proc/canSuicide()
 	if(stat == CONSCIOUS)
 		return TRUE

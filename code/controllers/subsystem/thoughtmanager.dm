@@ -125,7 +125,7 @@ SUBSYSTEM_DEF(thoughtmanager)
 
 			if(btype == "target")
 
-				if(prob(45) && GLOB.bad_idea_causers.len)
+				if(prob(20) && GLOB.bad_idea_victims.len)
 					victim = pick(GLOB.bad_idea_victims)
 				else
 					victim = pick(peoples)

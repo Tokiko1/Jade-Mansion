@@ -20,20 +20,39 @@
 
 /datum/trait/afraid_of_darkness/run_check(mob/living/carbon/human/player)
 	var/light_amount = 0
-	afraidcount = Clamp(afraidcount, 0, 20) //let's not have these values build up extremely low or high
+	afraidcount = Clamp(afraidcount, 0, 10) //let's not have these values build up extremely low or high
 
 	if(isturf(player.loc))
 		var/turf/T = player.loc
 		light_amount = T.get_lumcount()
 	if(light_amount < 0.3)
 		afraidcount++
-		if(afraidcount > 5 && prob(10))
+		if(afraidcount > 2 && prob(20))
 			to_chat(player, "<span class='warning'>You feel uneasy in the darkness.</span>")
 	else
 		afraidcount--
 
-	if(afraidcount > 10)
+	if(afraidcount > 5)
 		player.add_thought("scared dark")
+
+//DISLIKE OF INJURY
+
+/datum/trait/injury_dislike
+	tname = "Injury Dislike"
+	var/injurydislikecount
+
+/datum/trait/injury_dislike/run_check(mob/living/carbon/human/player)
+	if(injurydislikecount > 4)
+		if(!("injury dislike" in player.mood_thoughts)) //well, it's a costly check
+			for(var/mob/living/carbon/human/injureds in view(5, player))
+				var/total_injury = injureds.getBruteLoss() + injureds.getFireLoss()
+				if(total_injury > 20)
+					player.add_thought("injury dislike")
+		injurydislikecount = 0
+	else
+		injurydislikecount++
+
+
 
 //CLEANING OBSESSION
 
@@ -46,14 +65,13 @@
 	if(checkcooldown > 6)
 		messcount = Clamp(messcount, 0, 10)
 		var/dirty = 0
-		for(var/obj/potentialmess in view(5, src))
+		for(var/obj/potentialmess in view(5, player))
 			if(potentialmess.messy_thing == 1)
 				if(istype(potentialmess.loc, /turf/open)) //we only care about dirty, messy things that we can see, stuff in bins is ok
 					dirty = 1
-					break
 		if(dirty)
 			messcount++
-		else if(prob(30))
+		else if(prob(70))
 			messcount--
 		if(messcount > 3)
 			player.add_thought("annoyed by mess")
@@ -73,6 +91,8 @@
 			player.add_thought("happy positive")
 		else if(prob(30))
 			player.add_thought("very happy positive")
+		goodmoodcounter = 0
+	goodmoodcounter++
 
 
 //GLUTTON
@@ -116,7 +136,29 @@
 
 //NARCOLEPSY
 /datum/trait/narcolepsy
+	tname = "Narcolepsy"
+	var/sleepycounter = 0
+	var/nextsleepcounter = 30
 
+/datum/trait/narcolepsy/run_check(mob/living/carbon/human/player)
+	if(sleepycounter > nextsleepcounter)
+		if(prob(40))
+			var/sleeptime = rand(5, 13)
+
+			if(player.total_mood < THRESHOLD_MENTAL_LIGHT && prob(50))
+				sleeptime += 10 //20 extra seconds
+			if(player.total_mood < THRESHOLD_MENTAL_MEDIUM && prob(40))
+				sleeptime += 20 //40 extra seconds
+			if(player.total_mood < THRESHOLD_MENTAL_LIGHT && prob(50))
+				sleeptime += 40 //80 extra seconds
+			if(prob(80))
+				to_chat(player, "<span class='warning'>Your conciousness starts drifting off into dreams...</span>")
+			sleepycounter = 0
+			sleep(rand(40, 80))
+			player.Sleeping(sleeptime) //good night
+		sleepycounter = 0
+		nextsleepcounter = rand(20, 40)
+	sleepycounter++
 
 //MAID FASHION OBSESSION
 /datum/trait/maidfashion

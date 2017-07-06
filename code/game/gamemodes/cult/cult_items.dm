@@ -54,7 +54,6 @@
 	..()
 	if(iscarbon(target))
 		var/mob/living/carbon/C = target
-		C.bleed(50)
 		if(is_servant_of_ratvar(C) && C.reagents)
 			C.reagents.add_reagent("heparin", 1)
 

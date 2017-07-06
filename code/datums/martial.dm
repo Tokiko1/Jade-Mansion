@@ -462,8 +462,8 @@
 		D.adjustStaminaLoss(10)
 		add_logs(A, D, "cqc kicked")
 	if(D.weakened && !D.stat)
-		D.visible_message("<span class='warning'>[A] kicks [D]'s head, knocking them out!</span>", \
-					  		"<span class='userdanger'>[A] kicks your head, knocking you out!</span>")
+		D.visible_message("<span class='warning'>[A] kicks [D]'s weak spot, knocking them out!</span>", \
+					  		"<span class='userdanger'>[A] kicks your weak spot, knocking you out!</span>")
 		playsound(get_turf(A), 'sound/weapons/genhit1.ogg', 50, 1, -1)
 		D.SetSleeping(15)
 	return 1
@@ -520,11 +520,11 @@
 	add_logs(A, D, "CQC'd")
 	A.do_attack_animation(D)
 	var/picked_hit_type = "CQC'd"
-	var/bonus_damage = 3
+	var/bonus_damage = 5
 	if(D.weakened || D.resting || D.lying)
-		bonus_damage += 5
+		bonus_damage += 15
 		picked_hit_type = "stomps on"
-	D.apply_damage(bonus_damage, BRUTE)
+	D.adjustStaminaLoss(bonus_damage)
 	if(picked_hit_type == "kicks" || picked_hit_type == "stomps on")
 		playsound(get_turf(D), 'sound/weapons/cqchit2.ogg', 50, 1, -1)
 	else
@@ -536,7 +536,7 @@
 		D.visible_message("<span class='warning'>[A] leg sweeps [D]!", \
 							"<span class='userdanger'>[A] leg sweeps you!</span>")
 		playsound(get_turf(A), 'sound/effects/hit_kick.ogg', 50, 1, -1)
-		D.apply_damage(5, BRUTE)
+		D.apply_damage(2, BRUTE)
 		D.Weaken(3)
 		add_logs(A, D, "cqc sweeped")
 	return 1
@@ -555,7 +555,7 @@
 			if(I && D.drop_item())
 				A.put_in_hands(I)
 			D.Jitter(2)
-			D.apply_damage(5, BRUTE)
+			D.adjustStaminaLoss(10)
 	else
 		D.visible_message("<span class='danger'>[A] attempted to disarm [D]!</span>", \
 							"<span class='userdanger'>[A] attempted to disarm [D]!</span>")

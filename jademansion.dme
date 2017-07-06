@@ -2103,6 +2103,8 @@
 #include "code\modules\tgui\states\zlevel.dm"
 #include "code\modules\tooltip\tooltip.dm"
 #include "code\modules\traits\processingtraits.dm"
+#include "code\modules\traits\traitabilities.dm"
+#include "code\modules\traits\traititems.dm"
 #include "code\modules\uplink\uplink.dm"
 #include "code\modules\uplink\uplink_item.dm"
 #include "code\modules\vehicles\atv.dm"

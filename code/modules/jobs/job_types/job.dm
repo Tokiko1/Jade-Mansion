@@ -137,12 +137,12 @@
 	var/backpack = /obj/item/weapon/storage/backpack
 	var/satchel  = /obj/item/weapon/storage/backpack/satchel
 	var/dufflebag = /obj/item/weapon/storage/backpack/dufflebag
-	var/box = /obj/item/weapon/storage/box/survival
+	var/box = null
 
 	var/pda_slot = slot_belt
 
 /datum/outfit/job/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	switch(H.backbag)
+	/*switch(H.backbag)
 		if(GBACKPACK)
 			back = null //Grey backpack
 		if(GSATCHEL)
@@ -155,8 +155,8 @@
 			back = null //Department satchel
 		if(DDUFFLEBAG)
 			back = null //Department dufflebag
-		else
-			back = null //Department backpack
+		else */
+	back = /obj/item/weapon/storage/backpack/satchel //everyone gets a tiny satchel
 
 	if(box)
 		backpack_contents.Insert(1, box) // Box always takes a first slot in backpack
