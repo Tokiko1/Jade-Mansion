@@ -1,10 +1,10 @@
-mob/living/carbon/human/proc/handle_mood()
+/mob/living/carbon/human/proc/handle_mood()
 	refresh_mood()
 	check_for_thoughts()
 	update_mood_hud()
 
 
-mob/living/carbon/human/proc/update_mood_hud()
+/mob/living/carbon/human/proc/update_mood_hud()
 	if(!client || !hud_used)
 		return
 
@@ -27,7 +27,7 @@ mob/living/carbon/human/proc/update_mood_hud()
 			hud_used.moods.icon_state = "mood_bad3"
 
 
-mob/living/carbon/human/proc/refresh_mood() //processes moods, removes them if their duration is over
+/mob/living/carbon/human/proc/refresh_mood() //processes moods, removes them if their duration is over
 	total_mood = 0
 	for(var/thoughtS in mood_thoughts)
 		var/list/moodS = mood_thoughts.[thoughtS]
@@ -39,7 +39,7 @@ mob/living/carbon/human/proc/refresh_mood() //processes moods, removes them if t
 
 //for modifiying existing thoughts
 //for extending/shorterning durations, severity or even removal of thoughts
-mob/living/carbon/human/proc/modify_thought(thought_to_modify = list(), mood_mod_type = "add", duration_mod = 300, severity_mod, forced_mod)
+/mob/living/carbon/human/proc/modify_thought(thought_to_modify = list(), mood_mod_type = "add", duration_mod = 300, severity_mod, forced_mod)
 	for(var/thought_name in thought_to_modify)
 		if(!(thought_name in mood_thoughts)) //thought to modify does not exist, abort!
 			return
@@ -65,7 +65,7 @@ mob/living/carbon/human/proc/modify_thought(thought_to_modify = list(), mood_mod
 //allows transforming/replacing thoughts into different ones
 //if no severity or duration is set, they are inherited from the default values of the thought
 
-mob/living/carbon/human/proc/transform_thought(thought_to_modify, transformed_thought, inherit_duration, inherit_severity, forced_mod, forcetransform)
+/mob/living/carbon/human/proc/transform_thought(thought_to_modify, transformed_thought, inherit_duration, inherit_severity, forced_mod, forcetransform)
 	var/list/moodS = mood_thoughts.[thought_to_modify]
 	var/list/moodD = GLOB.default_moods.[thought_to_modify]
 	var/duration_mod
@@ -91,7 +91,7 @@ mob/living/carbon/human/proc/transform_thought(thought_to_modify, transformed_th
 	add_thought(transformed_thought, duration_mod, severity_mod, forced_mod)
 	return
 
-mob/living/carbon/human/proc/add_thought(thought_to_add, Tduration, Tseverity, Tforced = -1) //Tforced 1 and 0 set forced to true or false, -1 uses defaults
+/mob/living/carbon/human/proc/add_thought(thought_to_add, Tduration, Tseverity, Tforced = -1) //Tforced 1 and 0 set forced to true or false, -1 uses defaults
 	var/list/moodADD = GLOB.default_moods.[thought_to_add]
 
 	if(!moodADD.len)
@@ -117,7 +117,7 @@ mob/living/carbon/human/proc/add_thought(thought_to_add, Tduration, Tseverity, T
 	mood_thoughts[thought_to_add] = moodADD //yeah, this is how you are forced to add named lists to lists in BYOND
 	return
 
-mob/living/carbon/human/proc/check_for_thoughts()
+/mob/living/carbon/human/proc/check_for_thoughts()
 
 	if(stat) //unconciouss people don't really react to the environment
 		return

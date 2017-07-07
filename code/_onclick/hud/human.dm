@@ -292,6 +292,9 @@
 	internals = new /obj/screen/internals()
 	infodisplay += internals
 
+	bad_ideas = new /obj/screen/human/bad_idea()
+	infodisplay += bad_ideas
+
 	moods = new /obj/screen/human/mood()
 	infodisplay += moods
 

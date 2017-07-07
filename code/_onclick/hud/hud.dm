@@ -45,6 +45,7 @@
 	var/obj/screen/movable/action_button/hide_toggle/hide_actions_toggle
 	var/action_buttons_hidden = 0
 
+	var/obj/screen/bad_ideas
 	var/obj/screen/moods
 	var/obj/screen/healths
 	var/obj/screen/healthdoll
@@ -117,6 +118,7 @@
 	deity_follower_display = null
 	nightvisionicon = null
 	moods = null
+	bad_ideas = null
 
 	if(plane_masters.len)
 		for(var/thing in plane_masters)

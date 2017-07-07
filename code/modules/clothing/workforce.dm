@@ -135,6 +135,26 @@
 	can_adjust = 0
 	maid_uniform = 1
 
+/obj/item/clothing/under/kappougi2
+	name = "short kappougi"
+	desc = "A regular maid dress with a kappougi apron, why not? Easier to work in than a kimono, better stain protection than a regular apron, the best of both!"
+	icon_state = "kappougi2"
+	item_color = "kappougi2"
+	body_parts_covered = CHEST|GROIN|ARMS
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = 0
+	maid_uniform = 1
+
+/obj/item/clothing/under/maidkimono1 //probably the least practical maid uniform
+	name = "maid furisode kimono"
+	desc = "A black furisode kimono with a regular maid apron. All the movement restrictions of furisode kimono and an apron that is pretty much decoration, the worst of both! Atleast it looks good!"
+	icon_state = "kimonomaid1"
+	item_color = "kimonomaid1"
+	body_parts_covered = CHEST|GROIN|ARMS
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = 0
+	maid_uniform = 1
+
 /obj/item/clothing/under/suit1
 	name = "charcoal suit"
 	desc = "A black suit uniform."

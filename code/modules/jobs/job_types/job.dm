@@ -236,6 +236,18 @@
 			shoes = /obj/item/clothing/shoes/jackboots
 			gloves = null
 
+		if(KAPPOUGI2)
+			uniform = /obj/item/clothing/under/kappougi2
+			head = /obj/item/clothing/head/maidhead1
+			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
+
+		if(KIMONOMAID1)
+			uniform = /obj/item/clothing/under/maidkimono1
+			head = /obj/item/clothing/head/maidhead1
+			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
+
 		if(CHEMISTMAID1)
 			uniform = /obj/item/clothing/under/nurse1
 			head = /obj/item/clothing/head/maidhead2

@@ -818,8 +818,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				SetTraits(user)
 		return 1
 
-//JADETODO: Add trait window here
-
 	switch(href_list["task"])
 		if("random")
 			switch(href_list["preference"])
@@ -1324,7 +1322,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	if(pointcheck < 1)
 		character.traits = traits
 	else
-		character.traits = pick(GLOB.random_traits_presets)
+		character.traits = list()
 
 
 	character.backbag = backbag

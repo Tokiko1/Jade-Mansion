@@ -19,6 +19,16 @@ GLOBAL_LIST_EMPTY(bad_idea_causers)
 
 GLOBAL_LIST_INIT(default_moods, list(
 
+"catharsis" = list(
+"name" = "catharsis",
+"name_menu" = "Catharsis",
+"desc" = "You feel renewed, your bad mood seems so far away, for now...",
+"default_duration" = 600,
+"duration" = 0,
+"severity" = 10,
+"protected" = FALSE
+),
+
 "pain mild" = list(
 "name" = "pain mild",
 "name_menu" = "Pain(Mild)",

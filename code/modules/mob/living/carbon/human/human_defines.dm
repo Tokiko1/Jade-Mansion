@@ -41,7 +41,10 @@
 	var/list/traits = list() //traits
 	var/list/active_traits = list() //traits that actively process
 	var/list/mood_thoughts = list() //current thoughts
-	var/total_mood
+	var/list/mental_breaks = list() //tantrums
+	var/list/bad_ideas = list() //bad ideas
+
+	var/total_mood = 0
 	var/tantrum_active = 0
 	var/mischief = 0
 	var/can_see_chems = 0

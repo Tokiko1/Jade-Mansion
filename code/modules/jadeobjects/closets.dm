@@ -199,9 +199,8 @@
 	new /obj/item/clothing/under/maidbase(src)
 	new /obj/item/clothing/under/furisodeblack(src)
 	new /obj/item/clothing/under/kappougi1(src)
-
-
-
+	new /obj/item/clothing/under/kappougi2(src)
+	new /obj/item/clothing/under/maidkimono1(src)
 
 	new /obj/item/clothing/head/maidhead1(src)
 	new /obj/item/clothing/head/maidhead1(src)

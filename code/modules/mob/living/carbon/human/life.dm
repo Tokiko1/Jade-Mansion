@@ -41,6 +41,10 @@
 		//Stuff jammed in your limbs hurts
 		handle_embedded_objects()
 
+
+	if(stat != DEAD)
+		//stats handling
+		handle_mental_breaks()
 	if(stat != DEAD)
 		//stats handling
 		handle_traits()
