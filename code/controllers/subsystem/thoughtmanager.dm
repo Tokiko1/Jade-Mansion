@@ -63,7 +63,6 @@ SUBSYSTEM_DEF(thoughtmanager)
 //setting the time for the next batch of bad ideas
 		next_event = REALTIMEOFDAY + (frequency_of_events + rand(lower_bound_event_frequency, upper_bound_event_frequency))
 
-		message_admins("NEXT EVENT[next_event]") //debug
 
 		if(!player_list_human.len) //nobody here, let's not run this time
 			return
@@ -75,7 +74,6 @@ SUBSYSTEM_DEF(thoughtmanager)
 		if(bad_idea_counter < bad_idea_lower_bound && prob(bad_idea_lower_bound_chance))
 			bad_idea_counter = bad_idea_lower_bound
 
-		message_admins("BAD IDEA COUNTER [bad_idea_counter]") //debug
 
 //calculating severity of each event
 		for(var/loops = bad_idea_counter, loops >= 1, loops--)
@@ -89,7 +87,6 @@ SUBSYSTEM_DEF(thoughtmanager)
 				severity_player_bonus = severity_player_bonus / amount_players
 			bad_idea_severity = rand(0, 15) + severity_player_bonus
 
-			message_admins("BAD IDEA SEVERITY[bad_idea_severity]") //debug
 
 //grouping the events in 1 of the 4 severities after calculation
 			if(bad_idea_severity >= bad_idea_extreme_threshold)
@@ -101,7 +98,6 @@ SUBSYSTEM_DEF(thoughtmanager)
 			else
 				final_severity = BAD_SEVERITY_MINOR
 
-			message_admins("FINAL SEVERITY[final_severity]") //debug
 
 //picking the type and the person who gets this idea and possibly the victim
 			var/btype = pick("general", "target")
@@ -113,10 +109,20 @@ SUBSYSTEM_DEF(thoughtmanager)
 			var/list/victimsS = list()
 			victimsS += GLOB.bad_idea_victims
 
-			if(prob(40) && GLOB.bad_idea_causers.len)
-				bad_idea_person = pick(GLOB.bad_idea_causers)
+			var/list/badidea_peoples = list()
+			if(prob(30) && GLOB.bad_idea_causers.len)
+				badidea_peoples += GLOB.bad_idea_causers
 			else
-				bad_idea_person = pick(player_list_human)
+				badidea_peoples += player_list_human
+
+			for(var/mob/living/carbon/human/good_people in badidea_peoples)
+				if(good_people.total_mood < THRESHOLD_MENTAL_LIGHT) //bad people don't get fun bad ideas
+					badidea_peoples.Remove(good_people)
+
+			if(!badidea_peoples.len) //after filtering all the bad mooded people, do we still have people?
+				return
+			bad_idea_person = pick(badidea_peoples)
+
 
 			peoples.Remove(bad_idea_person)
 			victimsS.Remove(bad_idea_person)
@@ -126,7 +132,7 @@ SUBSYSTEM_DEF(thoughtmanager)
 
 			if(btype == "target")
 
-				if(prob(20) && GLOB.bad_idea_victims.len)
+				if(prob(50) && GLOB.bad_idea_victims.len)
 					victim = pick(GLOB.bad_idea_victims)
 				else
 					victim = pick(peoples)
@@ -147,7 +153,6 @@ SUBSYSTEM_DEF(thoughtmanager)
 			final_severity = Clamp(final_severity, 1, 4)
 			make_bad_idea(btype, final_severity, bad_idea_person, victim)
 
-			message_admins ( "[btype], [final_severity], [bad_idea_person.name], [victim.name]") //debug
 
 /datum/controller/subsystem/thoughtmanager/proc/make_bad_idea(type = "general", intensity = 1, mob/living/carbon/human/player, mob/living/carbon/human/victimB)
 	var/path_of_bad_idea
@@ -185,9 +190,6 @@ SUBSYSTEM_DEF(thoughtmanager)
 			qdel(idea_to_remove)
 
 		var/datum/bad_idea/ideaT = new path_of_bad_idea(player)
-		if(path_of_bad_idea in player.bad_ideas) //double ideas are boring, one free chance to roll a dangerous other one
-			message_admins("REPICKING DUE TO DOUBLE")
-			path_of_bad_idea = pick(GLOB.bad_ideas_general_verybad)
 		ideaT.setup_bad_idea(victimB.name, player, type)
 		player.bad_ideas.Add(ideaT)
 	return
@@ -198,7 +200,7 @@ SUBSYSTEM_DEF(thoughtmanager)
 		var/breakchance = tantrum_chance
 
 		if(prob(breakchance))
-			if(player.total_mood >= THRESHOLD_MENTAL_LIGHT)
+			if(player.total_mood >= THRESHOLD_MENTAL_LIGHT || player.tantrum_active || player.sleeping > 0)
 				GLOB.mental_break_candicates.Remove(player)
 			else
 				start_tantrum(player)
@@ -207,15 +209,15 @@ SUBSYSTEM_DEF(thoughtmanager)
 	//todo: add different tantrums for different tiers
 	var/path_of_mental_break
 	if(player.total_mood < THRESHOLD_MENTAL_BAD)
-		if(prob(20))
-			path_of_mental_break = pick(GLOB.mental_break_list)
+		path_of_mental_break = pick(GLOB.mental_break_list)
 
 	else if(player.total_mood < THRESHOLD_MENTAL_MEDIUM)
-		if(prob(50))
+		if(prob(30))
 			path_of_mental_break = pick(GLOB.mental_break_list)
 
 	else if(player.total_mood < THRESHOLD_MENTAL_LIGHT)
-		path_of_mental_break = pick(GLOB.mental_break_list)
+		if(prob(3))
+			path_of_mental_break = pick(GLOB.mental_break_list)
 
 	if(path_of_mental_break)
 		var/datum/mental_break/Sbreak = new path_of_mental_break(player)
@@ -226,8 +228,8 @@ SUBSYSTEM_DEF(thoughtmanager)
 
 	for(var/mob/living/carbon/human/player in GLOB.player_list)
 		if(player in GLOB.mental_break_candicates)
-			if(player.total_mood < THRESHOLD_MENTAL_LIGHT || player.tantrum_active)
+			if(player.total_mood > THRESHOLD_MENTAL_LIGHT || player.tantrum_active)
 				GLOB.mental_break_candicates.Remove(player)
 		else
-			if(player.total_mood >= THRESHOLD_MENTAL_LIGHT || !player.tantrum_active)
+			if(player.total_mood < THRESHOLD_MENTAL_LIGHT && !player.tantrum_active && player.sleeping == 0)
 				GLOB.mental_break_candicates.Add(player)

@@ -23,9 +23,9 @@ GLOBAL_LIST_INIT(default_moods, list(
 "name" = "catharsis",
 "name_menu" = "Catharsis",
 "desc" = "You feel renewed, your bad mood seems so far away, for now...",
-"default_duration" = 600,
+"default_duration" = 1200,
 "duration" = 0,
-"severity" = 10,
+"severity" = 15,
 "protected" = FALSE
 ),
 

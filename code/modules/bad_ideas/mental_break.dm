@@ -32,7 +32,7 @@
 /datum/mental_break/proc/fail_break(mob/living/carbon/human/player)
 	if(!ending_break) //lets just make sure this doesn't run twice or whichever reason
 		ending_break = 1
-		var/sleeptime = rand(150, 400)
+		var/sleeptime = rand(50, 100)
 		to_chat(player, "<span class='warning'>All these intense emotions have made you very, very sleepy, you drift off into the world of dreams to calm down...</span>")
 		sleep(rand(40, 80))
 		player.Sleeping(sleeptime) //good night
@@ -65,14 +65,14 @@
 /datum/mental_break/isolation/run_check(mob/living/carbon/human/player)
 	..()
 	var/seen = FALSE
-	for(var/mob/living/carbon/human/people in view(src))
-		if(people != src)
+	for(var/mob/living/carbon/human/people in view(player))
+		if(people != player)
 			seen = TRUE
-		if(seen)
-			seclusioncounter = 0
-			catharsis_in_progress = 0
-		else
-			seclusioncounter++
+	if(seen)
+		seclusioncounter = 0
+		catharsis_in_progress = 0
+	else
+		seclusioncounter++
 	if(seclusioncounter > 10)
 		if(seclusioncounter == 11)
 			to_chat(player, "<span class='notice'>You seem to be alone, it feels good!</span>")
