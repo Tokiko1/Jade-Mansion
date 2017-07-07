@@ -5,6 +5,7 @@
 	var/blood_state = "" //I'm sorry but cleanable/blood code is ass, and so is blood_DNA
 	var/bloodiness = 0 //0-100, amount of blood in this decal, used for making footprints and affecting the alpha of bloody footprints
 	var/mergeable_decal = 1 //when two of these are on a same tile or do we need to merge them into just one?
+	messy_thing = 1
 
 /obj/effect/decal/cleanable/Initialize(mapload)
 	if (random_icon_states && length(src.random_icon_states) > 0)

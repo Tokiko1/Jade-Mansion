@@ -7,6 +7,8 @@
 	var/damtype = BRUTE
 	var/force = 0
 
+	var/messy_thing = 0 //is this considered clean or a mess
+
 	var/list/armor
 	var/obj_integrity = 500
 	var/max_integrity = 500
@@ -23,7 +25,7 @@
 
 	var/persistence_replacement //have something WAY too amazing to live to the next round? Set a new path here. Overuse of this var will make me upset.
 	var/unique_rename = FALSE // can you customize the description/name of the thing?
-	
+
 	var/dangerous_possession = FALSE	//Admin possession yes/no
 
 /obj/vv_edit_var(vname, vval)

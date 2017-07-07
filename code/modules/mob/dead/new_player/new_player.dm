@@ -363,6 +363,7 @@
 			to_chat(humanc, "<span class='userdanger'><i>THERE CAN BE ONLY ONE!!!</i></span>")
 			humanc.make_scottish()
 		SSticker.mode.handle_scenario_latejoin(humanc)
+		SSticker.handle_join_traits(humanc)
 
 	GLOB.joined_player_list += character.ckey
 

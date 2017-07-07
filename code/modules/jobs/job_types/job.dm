@@ -125,24 +125,24 @@
 
 	var/jobtype = null
 
-	uniform = /obj/item/clothing/under/color/grey
+	uniform = null
 	id = /obj/item/weapon/card/id
-	ears = /obj/item/device/radio/headset
-	belt = /obj/item/device/pda
+	ears = null
+	belt = null
 	back = /obj/item/weapon/storage/backpack
-	shoes = /obj/item/clothing/shoes/sneakers/black
+	shoes = null
 
 	var/list/implants = null
 
 	var/backpack = /obj/item/weapon/storage/backpack
 	var/satchel  = /obj/item/weapon/storage/backpack/satchel
 	var/dufflebag = /obj/item/weapon/storage/backpack/dufflebag
-	var/box = /obj/item/weapon/storage/box/survival
+	var/box = null
 
 	var/pda_slot = slot_belt
 
 /datum/outfit/job/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	switch(H.backbag)
+	/*switch(H.backbag)
 		if(GBACKPACK)
 			back = null //Grey backpack
 		if(GSATCHEL)
@@ -155,14 +155,20 @@
 			back = null //Department satchel
 		if(DDUFFLEBAG)
 			back = null //Department dufflebag
-		else
-			back = null //Department backpack
+		else */
+	back = /obj/item/weapon/storage/backpack/satchel //everyone gets a tiny satchel
 
 	if(box)
 		backpack_contents.Insert(1, box) // Box always takes a first slot in backpack
 		backpack_contents[box] = 1
 
 	switch(H.workuniform)
+		if(BLACKMAID0)
+			uniform = /obj/item/clothing/under/maidbase
+			head = /obj/item/clothing/head/maidhead1
+			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
+
 		if(BLACKMAID1)
 			uniform = /obj/item/clothing/under/maidblack1
 			head = /obj/item/clothing/head/maidhead1
@@ -214,6 +220,30 @@
 
 		if(BLUEMAID2)
 			uniform = /obj/item/clothing/under/maidblue2
+			head = /obj/item/clothing/head/maidhead1
+			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
+
+		if(KAPPOUGI0)
+			uniform = /obj/item/clothing/under/furisodeblack
+			head = /obj/item/clothing/head/maidhead2
+			shoes = /obj/item/clothing/shoes/jackboots //boots and furisode, so cool!!
+			gloves = null
+
+		if(KAPPOUGI1)
+			uniform = /obj/item/clothing/under/kappougi1
+			head = /obj/item/clothing/head/maidhead2
+			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
+
+		if(KAPPOUGI2)
+			uniform = /obj/item/clothing/under/kappougi2
+			head = /obj/item/clothing/head/maidhead1
+			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
+
+		if(KIMONOMAID1)
+			uniform = /obj/item/clothing/under/maidkimono1
 			head = /obj/item/clothing/head/maidhead1
 			shoes = /obj/item/clothing/shoes/jackboots
 			gloves = null

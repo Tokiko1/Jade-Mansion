@@ -1,0 +1,1 @@
+GLOBAL_LIST_INIT(mental_break_list, list(/datum/mental_break/isolation, /datum/mental_break/hunger))

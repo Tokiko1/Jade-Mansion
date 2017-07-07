@@ -41,10 +41,16 @@
 		//Stuff jammed in your limbs hurts
 		handle_embedded_objects()
 
-//	if(stat != DEAD)
+
+	if(stat != DEAD)
 		//stats handling
-		//JADETODO: ADD STATS!
-//		handle_stats()
+		handle_mental_breaks()
+	if(stat != DEAD)
+		//stats handling
+		handle_traits()
+	if(stat != DEAD)
+		//mood handling
+		handle_mood()
 	if(stat != DEAD)
 		//handling knockout
 		handle_knockout()
@@ -75,8 +81,7 @@
 
 
 
-///mob/living/carbon/human/handle_stats()
-//JADETODO: ADD STATS!
+
 
 
 /mob/living/carbon/human/handle_disabilities()
@@ -451,11 +456,8 @@ All effects don't start immediately, but rather get worse over time; the rate is
 		if(drunkenness >= 91)
 			adjustBrainLoss(0.4)
 			if(prob(20) && !stat)
-				if(SSshuttle.emergency.mode == SHUTTLE_DOCKED && z == ZLEVEL_STATION) //QoL mainly
-					to_chat(src, "<span class='warning'>You're so tired... but you can't miss that shuttle...</span>")
-				else
-					to_chat(src, "<span class='warning'>Just a quick nap...</span>")
-					Sleeping(45)
+				to_chat(src, "<span class='warning'>Just a quick nap...</span>")
+				Sleeping(45)
 
 		if(drunkenness >= 101)
 			adjustToxLoss(4) //Let's be honest you shouldn't be alive by now

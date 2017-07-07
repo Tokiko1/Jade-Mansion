@@ -32,7 +32,7 @@
 
 		//Blood regeneration if there is some space
 		if(blood_volume < BLOOD_VOLUME_NORMAL)
-			blood_volume += 0.1 // regenerate blood VERY slowly
+			blood_volume += 0.3 // regenerate blood VERY slowly
 
 		//Effects of bloodloss
 		switch(blood_volume)
@@ -52,7 +52,7 @@
 					Paralyse(rand(1,3))
 					var/word = pick("dizzy","woozy","faint")
 					to_chat(src, "<span class='warning'>You feel extremely [word].</span>")
-
+/*
 		var/temp_bleed = 0
 		//Bleeding out
 		for(var/X in bodyparts)
@@ -84,7 +84,7 @@
 /mob/living/carbon/human/bleed(amt)
 	if(!(NOBLOOD in dna.species.species_traits))
 		..()
-
+*/
 
 
 /mob/living/proc/restore_blood()

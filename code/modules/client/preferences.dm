@@ -65,6 +65,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/datum/species/pref_species = new /datum/species/human()	//Mutant race
 	var/list/features = list("mcolor" = "FFF", "tail_lizard" = "Smooth", "tail_human" = "None", "snout" = "Round", "horns" = "None", "ears" = "None", "wings" = "None", "frills" = "None", "spines" = "None", "body_markings" = "None", "legs" = "Normal Legs")
 
+	var/list/traits = list()
+
+
 	var/list/custom_names = list("clown", "mime", "ai", "cyborg", "religion", "deity")
 	var/prefered_security_department = SEC_DEPT_RANDOM
 
@@ -176,16 +179,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Gender:</b> <a href='?_src_=prefs;preference=gender'>[gender == MALE ? "Male" : "Female"]</a><BR>"
 			dat += "<b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'>[age]</a><BR>"
 
-			dat += "<b>Special Names:</b><BR>"
-			dat += "<a href ='?_src_=prefs;preference=clown_name;task=input'><b>Clown:</b> [custom_names["clown"]]</a> "
-			dat += "<a href ='?_src_=prefs;preference=mime_name;task=input'><b>Mime:</b>[custom_names["mime"]]</a><BR>"
-			dat += "<a href ='?_src_=prefs;preference=ai_name;task=input'><b>AI:</b> [custom_names["ai"]]</a> "
-			dat += "<a href ='?_src_=prefs;preference=cyborg_name;task=input'><b>Cyborg:</b> [custom_names["cyborg"]]</a><BR>"
-			dat += "<a href ='?_src_=prefs;preference=religion_name;task=input'><b>Chaplain religion:</b> [custom_names["religion"]] </a>"
-			dat += "<a href ='?_src_=prefs;preference=deity_name;task=input'><b>Chaplain deity:</b> [custom_names["deity"]]</a><BR>"
-
-			dat += "<b>Custom job preferences:</b><BR>"
-			dat += "<a href='?_src_=prefs;preference=sec_dept;task=input'><b>Prefered security department:</b> [prefered_security_department]</a><BR></td>"
+			dat += "<b>Special Character Things</b><BR>"
+			dat += "<a href ='?_src_=prefs;preference=trait;task=open'><b>Setup Traits</b></a> "
 
 			dat += "<td valign='center'>"
 
@@ -792,6 +787,37 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				SetChoices(user)
 		return 1
 
+	if(href_list["preference"] == "trait")
+		switch(href_list["task"])
+			if("close")
+				user << browse(null, "window=traits")
+				ShowChoices(user)
+			if("reset")
+				traits = list()
+				var/setpage = href_list["tpage"]
+				SetTraits(user, page = setpage)
+			if("add")
+				var/trait_to_add = href_list["trait"]
+				if(!traits.len ||!(trait_to_add in traits))
+					traits.Add(trait_to_add)
+
+				var/setpage = href_list["tpage"]
+				SetTraits(user, page = setpage)
+			if("remove")
+				var/trait_to_remove = href_list["trait"]
+				if(trait_to_remove in traits)
+					traits.Remove(trait_to_remove)
+				var/setpage = href_list["tpage"]
+				SetTraits(user, page = setpage)
+			if("changepage")
+				var/setpage = href_list["tpage"]
+				SetTraits(user, page = setpage)
+			else
+				if(!traits) //something went very wrong
+					traits = list()
+				SetTraits(user)
+		return 1
+
 	switch(href_list["task"])
 		if("random")
 			switch(href_list["preference"])
@@ -1282,6 +1308,22 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.underwear = underwear
 	character.undershirt = undershirt
 	character.socks = socks
+
+	var/pointcheck = STARTING_TRAIT_COST
+
+	if(!GLOB.alltraits.len) //what the egg??
+		for(var/pages in GLOB.traitlistpaged)
+			GLOB.alltraits += GLOB.traitlistpaged[pages]
+	for(var/traitSS in traits)
+		if(!(traitSS in GLOB.alltraits))
+			traits.Remove(traitSS)
+		else
+			pointcheck += GLOB.alltraits[traitSS]["tcost"]
+	if(pointcheck < 1)
+		character.traits = traits
+	else
+		character.traits = list()
+
 
 	character.backbag = backbag
 	character.workuniform = workuniform

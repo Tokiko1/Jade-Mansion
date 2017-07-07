@@ -91,6 +91,7 @@
 
 	var/obj/screen/using
 	var/obj/screen/inventory/inv_box
+//	var/obj/screen/moods
 
 	using = new /obj/screen/craft
 	using.icon = ui_style
@@ -290,6 +291,12 @@
 
 	internals = new /obj/screen/internals()
 	infodisplay += internals
+
+	bad_ideas = new /obj/screen/human/bad_idea()
+	infodisplay += bad_ideas
+
+	moods = new /obj/screen/human/mood()
+	infodisplay += moods
 
 	healths = new /obj/screen/healths()
 	infodisplay += healths

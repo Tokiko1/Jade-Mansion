@@ -445,7 +445,8 @@
 		D.visible_message("<span class='warning'>[A] slams [D] into the ground!</span>", \
 						  	"<span class='userdanger'>[A] slams you into the ground!</span>")
 		playsound(get_turf(A), 'sound/weapons/slam.ogg', 50, 1, -1)
-		D.apply_damage(10, BRUTE)
+		D.apply_damage(2, BRUTE)
+		D.adjustStaminaLoss(10)
 		D.Weaken(6)
 		add_logs(A, D, "cqc slammed")
 	return 1
@@ -457,19 +458,19 @@
 		playsound(get_turf(A), 'sound/weapons/cqchit1.ogg', 50, 1, -1)
 		var/atom/throw_target = get_edge_target_turf(D, A.dir)
 		D.throw_at(throw_target, 1, 14, A)
-		D.apply_damage(10, BRUTE)
+		D.apply_damage(2, BRUTE)
+		D.adjustStaminaLoss(10)
 		add_logs(A, D, "cqc kicked")
 	if(D.weakened && !D.stat)
-		D.visible_message("<span class='warning'>[A] kicks [D]'s head, knocking them out!</span>", \
-					  		"<span class='userdanger'>[A] kicks your head, knocking you out!</span>")
+		D.visible_message("<span class='warning'>[A] kicks [D]'s weak spot, knocking them out!</span>", \
+					  		"<span class='userdanger'>[A] kicks your weak spot, knocking you out!</span>")
 		playsound(get_turf(A), 'sound/weapons/genhit1.ogg', 50, 1, -1)
 		D.SetSleeping(15)
-		D.adjustBrainLoss(25)
 	return 1
 
 /datum/martial_art/cqc/proc/Pressure(mob/living/carbon/human/A, mob/living/carbon/human/D)
 	D.visible_message("<span class='warning'>[A] forces their arm on [D]'s neck!</span>")
-	D.adjustStaminaLoss(60)
+	D.adjustStaminaLoss(30)
 	playsound(get_turf(A), 'sound/weapons/cqchit1.ogg', 50, 1, -1)
 	return 1
 
@@ -494,7 +495,7 @@
 		if(I && D.drop_item())
 			A.put_in_hands(I)
 		D.adjustStaminaLoss(50)
-		D.apply_damage(25, BRUTE)
+		D.apply_damage(2, BRUTE)
 	return 1
 
 /datum/martial_art/cqc/grab_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
@@ -518,12 +519,12 @@
 		return 1
 	add_logs(A, D, "CQC'd")
 	A.do_attack_animation(D)
-	var/picked_hit_type = pick("CQC'd", "Big Bossed")
-	var/bonus_damage = 13
+	var/picked_hit_type = "CQC'd"
+	var/bonus_damage = 5
 	if(D.weakened || D.resting || D.lying)
-		bonus_damage += 5
+		bonus_damage += 15
 		picked_hit_type = "stomps on"
-	D.apply_damage(bonus_damage, BRUTE)
+	D.adjustStaminaLoss(bonus_damage)
 	if(picked_hit_type == "kicks" || picked_hit_type == "stomps on")
 		playsound(get_turf(D), 'sound/weapons/cqchit2.ogg', 50, 1, -1)
 	else
@@ -535,7 +536,7 @@
 		D.visible_message("<span class='warning'>[A] leg sweeps [D]!", \
 							"<span class='userdanger'>[A] leg sweeps you!</span>")
 		playsound(get_turf(A), 'sound/effects/hit_kick.ogg', 50, 1, -1)
-		D.apply_damage(10, BRUTE)
+		D.apply_damage(2, BRUTE)
 		D.Weaken(3)
 		add_logs(A, D, "cqc sweeped")
 	return 1
@@ -554,7 +555,7 @@
 			if(I && D.drop_item())
 				A.put_in_hands(I)
 			D.Jitter(2)
-			D.apply_damage(5, BRUTE)
+			D.adjustStaminaLoss(10)
 	else
 		D.visible_message("<span class='danger'>[A] attempted to disarm [D]!</span>", \
 							"<span class='userdanger'>[A] attempted to disarm [D]!</span>")
@@ -574,10 +575,10 @@
 
 /mob/living/carbon/human/proc/CQC_help()
 	set name = "Remember The Basics"
-	set desc = "You try to remember some of the basics of CQC."
-	set category = "CQC"
+	set desc = "You try to remember some of the basics of Red Sparrow CQC."
+	set category = "Red Sparrow CQC"
 
-	to_chat(usr, "<b><i>You try to remember some of the basics of CQC.</i></b>")
+	to_chat(usr, "<b><i>You try to remember some of the basics of Red Sparrow CQC.</i></b>")
 
 	to_chat(usr, "<span class='notice'>Slam</span>: Grab Harm. Slam opponent into the ground, weakens and knocks down.")
 	to_chat(usr, "<span class='notice'>CQC Kick</span>: Harm Disarm Harm. Knocks opponent away. Knocks out stunned or weakened opponents.")

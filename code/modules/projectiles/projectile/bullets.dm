@@ -283,9 +283,6 @@
 	breakthings = FALSE
 
 /obj/item/projectile/bullet/sniper/haemorrhage/on_hit(atom/target, blocked = 0)
-	if((blocked != 100) && iscarbon(target))
-		var/mob/living/carbon/C = target
-		C.bleed(100)
 	return ..()
 
 
@@ -314,9 +311,6 @@
 
 /obj/item/projectile/bullet/saw/bleeding/on_hit(atom/target, blocked = 0)
 	. = ..()
-	if((blocked != 100) && iscarbon(target))
-		var/mob/living/carbon/C = target
-		C.bleed(35)
 
 /obj/item/projectile/bullet/saw/hollow
 	damage = 60

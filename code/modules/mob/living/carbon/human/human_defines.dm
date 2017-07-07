@@ -38,6 +38,17 @@
 
 	var/special_voice = "" // For changing our voice. Used by a symptom.
 
+	var/list/traits = list() //traits
+	var/list/active_traits = list() //traits that actively process
+	var/list/mood_thoughts = list() //current thoughts
+	var/list/mental_breaks = list() //tantrums
+	var/list/bad_ideas = list() //bad ideas
+
+	var/total_mood = 0
+	var/tantrum_active = 0
+	var/mischief = 0
+	var/can_see_chems = 0
+
 	var/bleed_rate = 0 //how much are we bleeding
 	var/bleedsuppress = 0 //for stopping bloodloss, eventually this will be limb-based like bleeding
 

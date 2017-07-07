@@ -2,12 +2,12 @@
 	set waitfor = 0
 	dreaming = 1
 	var/list/dreams = list(
-		"an ID card","a bottle","a familiar face","a crewmember","a toolbox","a security officer","the captain",
-		"voices from all around","deep space","a doctor","the engine","a traitor","an ally","darkness",
-		"light","a scientist","a monkey","a catastrophe","a loved one","a gun","warmth","freezing","the sun",
-		"a hat","the Luna","a ruined station","a planet","plasma","air","the medical bay","the bridge","blinking lights",
-		"a blue light","an abandoned laboratory","Nanotrasen","The Syndicate","blood","healing","power","respect",
-		"riches","space","a crash","happiness","pride","a fall","water","flames","ice","melons","flying"
+		"maids","a bottle","a familiar face","a fellow staff member","a bird","a guest","the Porcelain Empire",
+		"voices from all around","the city of Senzai","a doctor","Toritamegahara","a rude person","a friend","darkness",
+		"light","Toubatai","Zouge-toshi","a catastrophe","a loved one","a spider","warmth","freezing","the sun",
+		"a hat","molten gold springs","a feather duster","a lot of gold bars","a shrine","air","fashion","the kitchen","a theatre play",
+		"a blue light","an abandoned library","the Wood Empire","The Black Crane Syndicate","a nice warm pool","healing","power","respect",
+		"riches","Mount Meru","a sudden success","happiness","compassion","a leap of faith","water","flames","ice","eggs","flying"
 		)
 	for(var/i = rand(1,4),i > 0, i--)
 		var/dream_image = pick(dreams)

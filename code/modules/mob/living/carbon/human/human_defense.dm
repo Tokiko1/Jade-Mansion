@@ -607,14 +607,6 @@
 	for(var/obj/item/bodypart/affecting in damaged)
 		affecting.receive_damage(acidity, 2*acidity)
 
-		if(affecting.name == "head")
-			if(prob(min(acidpwr*acid_volume/10, 90))) //Applies disfigurement
-				affecting.receive_damage(acidity, 2*acidity)
-				emote("scream")
-				facial_hair_style = "Shaved"
-				hair_style = "Bald"
-				update_hair()
-				status_flags |= DISFIGURED
 
 		update_damage_overlays()
 
@@ -670,11 +662,11 @@
 				if(brutedamage > 20)
 					status = "battered"
 				if(brutedamage > 40)
-					status = "mangled"
+					status = "badly hurt"
 				if(brutedamage > 0 && burndamage > 0)
 					status += " and "
 				if(burndamage > 40)
-					status += "peeling away"
+					status += "charred black"
 
 				else if(burndamage > 10)
 					status += "blistered"

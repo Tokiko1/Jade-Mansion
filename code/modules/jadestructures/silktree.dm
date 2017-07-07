@@ -6,6 +6,7 @@
 	density = 0
 	name = "giant cobweb"
 	desc = "It's stringy and sticky, you'll probably get stuck if you try to move past."
+	messy_thing = 1
 
 /obj/structure/silktree/web/Initialize()
 	if(prob(50))
@@ -43,6 +44,7 @@
 		return
 	if((V.buckled != src))
 		to_chat(V, "<span class='danger'>You get stuck in the web!</span>")
+		V.Weaken(10)
 		buckle_mob(V, 1)
 
 /obj/structure/silktree/web/user_unbuckle_mob(mob/living/buckled_mob, mob/living/carbon/human/user)

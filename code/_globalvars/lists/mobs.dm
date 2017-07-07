@@ -9,7 +9,7 @@ GLOBAL_LIST_EMPTY(stealthminID)						//reference list with IDs that store ckeys,
 //Since it didn't really belong in any other category, I'm putting this here
 //This is for procs to replace all the goddamn 'in world's that are chilling around the code
 
-GLOBAL_LIST_EMPTY(player_list)				//all mobs **with clients attached**. Excludes /mob/dead/new_player
+GLOBAL_LIST_EMPTY(player_list)				//all mobs **with clients attached**. Excludes /mob/dead/new_player <- actually it doesn't exclude these
 GLOBAL_LIST_EMPTY(mob_list)					//all mobs, including clientless
 GLOBAL_LIST_EMPTY(living_mob_list)			//all alive mobs, including clientless. Excludes /mob/dead/new_player
 GLOBAL_LIST_EMPTY(dead_mob_list)			//all dead mobs, including clientless. Excludes /mob/dead/new_player

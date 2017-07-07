@@ -25,6 +25,8 @@
 	var/can_flashlight = 0
 	var/gang //Is this a gang outfit?
 	var/scan_reagents = 0 //Can the wearer see reagents while it's equipped?
+	var/suitable_for_swimming = 0 //gives a mood penalty if it gets wet
+	var/maid_uniform = 0 //does this count as a maid uniform?
 
 	//Var modification - PLEASE be careful with this I know who you are and where you live
 	var/list/user_vars_to_edit = list() //VARNAME = VARVALUE eg: "name" = "butts"
