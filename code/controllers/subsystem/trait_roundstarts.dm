@@ -72,6 +72,9 @@
 			if("Hardy")
 				traitholder.maxHealth += 25
 
+			if("Frail")
+				traitholder.maxHealth -= 30
+
 
 
 	if(itemstoadd.len)

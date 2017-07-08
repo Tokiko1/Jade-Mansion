@@ -42,7 +42,7 @@
 	var/injurydislikecount
 
 /datum/trait/injury_dislike/run_check(mob/living/carbon/human/player)
-	if(injurydislikecount > 4)
+	if(injurydislikecount > 3)
 		if(!("injury dislike" in player.mood_thoughts)) //well, it's a costly check
 			for(var/mob/living/carbon/human/injureds in view(5, player))
 				var/total_injury = injureds.getBruteLoss() + injureds.getFireLoss()
@@ -62,7 +62,7 @@
 	var/checkcooldown = 0
 
 /datum/trait/neat_freak/run_check(mob/living/carbon/human/player)
-	if(checkcooldown > 6)
+	if(checkcooldown > 4)
 		messcount = Clamp(messcount, 0, 10)
 		var/dirty = 0
 		for(var/obj/potentialmess in view(5, player))
@@ -131,8 +131,8 @@
 	tname = "Oni Liver"
 
 /datum/trait/oni_liver/run_check(mob/living/carbon/human/player)
-	if(player.drunkenness > 10 && prob(10))
-		player.drunkenness = max((player.drunkenness - 10), 0)
+	if(player.drunkenness > 20 && prob(80))
+		player.drunkenness = max((player.drunkenness - 5), 0)
 
 //NARCOLEPSY
 /datum/trait/narcolepsy

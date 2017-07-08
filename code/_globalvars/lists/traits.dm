@@ -42,21 +42,22 @@ GLOBAL_LIST_INIT(traitlistpaged, list(
 "Narcolepsy" = list("tname" = "Narcolepsy", "tdesc" = "You have an illness that randomly makes you fall asleep. It gets worse if you are in a bad mood.", "tcost" = -4, "tnotes" = null, "active" = /datum/trait/narcolepsy),
 "Oni Liver" = list("tname" = "Oni Liver", "tdesc" = "For some reason, you have the liver of an oni. You need to drink far more to get drunk, and when you are, you get sober much faster.", "tcost" = 2, "tnotes" = null, "active" = /datum/trait/oni_liver),
 "Master Chemist" = list("tname" = "Master Chemist", "tdesc" = "You have worked a lot with chemicals. Just looking at a liquid allows you to tell what's inside.", "tcost" = 1, "tnotes" = "This does not apply to liquids in opaque containers.", "active" = null),
-"Red Sparrow CQC" = list("tname" = "Red Sparrow CQC", "tdesc" = "For whatever reason, you know Red Sparrow CQC. This combat style is pragmatic and non-lethal. A good choice for bodyguards.", "tcost" = 4, "tnotes" = null, "active" = null),
+"Red Sparrow CQC" = list("tname" = "Red Sparrow CQC", "tdesc" = "For whatever reason, you know Red Sparrow CQC. This combat style is pragmatic and non-lethal. A good choice for bodyguards.", "tcost" = 5, "tnotes" = null, "active" = null),
 "Maid Fashion Obsession" = list("tname" = "Maid Fashion Obsession", "tdesc" = "You love maid fashion! So much that not wearing them makes you upset, even if you are not staff.", "tcost" = -2, "tnotes" = "A full uniform includes any of the uniforms, any type of shoe and one of the maid headdresses.", "active" = /datum/trait/maidfashion),
 "Combat Clothes" = list("tname" = "Combat Clothes", "tdesc" = "Your starting clothes are armored.", "tcost" = 1, "tnotes" = null, "active" = null),
-"Poison Sting" = list("tname" = "Poison Sting", "tdesc" = "Through some bizzare mutation, you have a stealthy poison stinger that can inject weakening poison into others.", "tcost" = 4, "tnotes" = null, "active" = null),
+"Poison Sting" = list("tname" = "Poison Sting", "tdesc" = "Through some bizzare mutation, you have a stealthy poison stinger that can inject weakening poison into others.", "tcost" = 3, "tnotes" = null, "active" = null),
 "Heavy Bag" = list("tname" = "Heavy Bag", "tdesc" = "You start with a bag for carrying a lot of items. It slows you down however.", "tcost" = 1, "tnotes" = null, "active" = null),
-"Criminal Ties" = list("tname" = "Criminal Ties", "tdesc" = "You have ties to the main criminal organizations in this area.", "tcost" = 1, "tnotes" = null, "active" = null),
-"Spider Web Glands" = list("tname" = "Spider Web Glands", "tdesc" = "A special mutation in your stomach allows you to spit webs. It makes you hungry however.", "tcost" = 2, "tnotes" = null, "active" = null)
+"Criminal Ties" = list("tname" = "Criminal Ties", "tdesc" = "You have ties to the main criminal organizations in this area.", "tcost" = 0, "tnotes" = null, "active" = null),
+"Spider Web Glands" = list("tname" = "Spider Web Glands", "tdesc" = "A special mutation in your stomach allows you to spit webs. It makes you very hungry however.", "tcost" = 2, "tnotes" = null, "active" = null)
 ),
 
 "page3" = list(
 "Maid Box Lunch" = list("tname" = "Maid Box Lunch", "tdesc" = "You start with a special magical lunchbox that never runs out. However, only you can eat from it.", "tcost" = 1, "tnotes" = null, "active" = null),
-"Mind Shock" = list("tname" = "Mind Shock", "tdesc" = "You have gained strange telepathic powers, but you have only learned to use them for pranks. Confuses nearby people.", "tcost" = 2, "tnotes" = null, "active" = null),
+"Mind Shock" = list("tname" = "Mind Shock", "tdesc" = "You have gained strange telepathic powers, but you have only learned to use them for pranks. Confuses nearby people.", "tcost" = 1, "tnotes" = null, "active" = null),
 "Strong Fate" = list("tname" = "Strong Fate", "tdesc" = "It seems that fate likes to play with you. Random fluff events that involve you tend to be more extreme than usual, both good and bad.", "tcost" = 1, "tnotes" = null, "active" = null),
-"Weak Fate" = list("tname" = "Weak Fate", "tdesc" = "Fate seems to ignore you. Random fluff events involving you are usually less intense, both good and bad.", "tcost" = 1, "tnotes" = null, "active" = null),
-"Hardy" = list("tname" = "Hardy", "tdesc" = "Your body is stronger than usual. +25 HP", "tcost" = 1, "tnotes" = null, "active" = null)
+"Weak Fate" = list("tname" = "Weak Fate", "tdesc" = "Fate seems to ignore you. Random fluff events involving you are usually less intense, both good and bad.", "tcost" = 0, "tnotes" = null, "active" = null),
+"Hardy" = list("tname" = "Hardy", "tdesc" = "Your body is stronger than usual. +25 HP", "tcost" = 1, "tnotes" = null, "active" = null),
+"Frail" = list("tname" = "Frail", "tdesc" = "Your body is frail. -30 HP", "tcost" = -1, "tnotes" = null, "active" = null)
 
 
 )

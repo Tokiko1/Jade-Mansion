@@ -19,8 +19,8 @@ SUBSYSTEM_DEF(thoughtmanager)
 	var/bad_idea_lower_bound_chance = 50
 	var/bad_idea_frequency_low = 0.10
 	var/bad_idea_frequency_high = 2
-	var/bad_idea_severity_low = -0.10
-	var/bad_idea_severity_high = 10
+	var/bad_idea_severity_low = 0.10
+	var/bad_idea_severity_high = 6
 
 
 	var/mischief_base = 0.4
@@ -69,7 +69,7 @@ SUBSYSTEM_DEF(thoughtmanager)
 
 //figuring out how many bad ideas to cause based on playercount and mischief var
 		for(var/mob/living/carbon/human/player in player_list_human)
-			bad_idea_counter += Clamp(((rand(0, bad_idea_bonus)*0.1) + mischief_base + (player.mischief * 0.05)),bad_idea_frequency_low ,bad_idea_frequency_high)
+			bad_idea_counter += Clamp(((rand(0, bad_idea_bonus)*0.1) + mischief_base + (player.mischief * 0.01)),bad_idea_frequency_low ,bad_idea_frequency_high)
 
 		if(bad_idea_counter < bad_idea_lower_bound && prob(bad_idea_lower_bound_chance))
 			bad_idea_counter = bad_idea_lower_bound
@@ -80,7 +80,7 @@ SUBSYSTEM_DEF(thoughtmanager)
 			var/amount_players = player_list_human.len
 			var/severity_player_bonus
 			for(var/mob/living/carbon/human/player in player_list_human)
-				severity_player_bonus += Clamp((rand(0, bad_idea_severity_bonus) + (mischief_severity_base *0.1)+ (player.mischief * 0.15)),bad_idea_severity_low ,bad_idea_severity_high)
+				severity_player_bonus += Clamp((rand(0, bad_idea_severity_bonus) + (mischief_severity_base *0.05)+ (player.mischief * 0.15)),bad_idea_severity_low ,bad_idea_severity_high)
 			if(!amount_players) //no division by zero
 				severity_player_bonus = 1
 			else
@@ -97,6 +97,9 @@ SUBSYSTEM_DEF(thoughtmanager)
 				final_severity = BAD_SEVERITY_MEDIUM
 			else
 				final_severity = BAD_SEVERITY_MINOR
+
+			if(final_severity > 2 && prob(50))
+				final_severity--
 
 
 //picking the type and the person who gets this idea and possibly the victim
@@ -132,8 +135,8 @@ SUBSYSTEM_DEF(thoughtmanager)
 
 			if(btype == "target")
 
-				if(prob(50) && GLOB.bad_idea_victims.len)
-					victim = pick(GLOB.bad_idea_victims)
+				if(prob(50) && victimsS.len)
+					victim = pick(victimsS)
 				else
 					victim = pick(peoples)
 			else
