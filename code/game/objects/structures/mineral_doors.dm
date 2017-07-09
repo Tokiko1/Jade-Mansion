@@ -135,9 +135,9 @@
 	for(var/mob/living/L in T)
 		return
 	isSwitchingStates = 1
-	playsound(loc, closeSound, 100, 1)
 	flick("[initial_state]closing",src)
 	sleep(10)
+	playsound(loc, closeSound, 100, 1)
 	density = 1
 	set_opacity(1)
 	state = 0
@@ -262,8 +262,8 @@
 /obj/structure/mineral_door/wood
 	name = "wood door"
 	icon_state = "wood"
-	openSound = 'sound/effects/doorcreaky.ogg'
-	closeSound = 'sound/effects/doorcreaky.ogg'
+	openSound = 'sound/machines/door_open.ogg'
+	closeSound = 'sound/machines/door_close.ogg'
 	sheetType = /obj/item/stack/sheet/mineral/wood
 	resistance_flags = FLAMMABLE
 	obj_integrity = 200

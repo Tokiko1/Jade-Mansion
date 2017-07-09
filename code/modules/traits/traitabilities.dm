@@ -79,7 +79,7 @@
 /datum/action/innate/poison_sting/process()
 	var/mob/living/carbon/human/player = owner
 	if(sting_cooldown <= 0)
-		to_chat(player, "<span class='notice'>Your mindshock ability is ready!</span>")
+		to_chat(player, "<span class='notice'>Your poison sting ability is ready!</span>")
 		STOP_PROCESSING(SSprocessing, src)
 	else
 		player.nutrition = max((player.nutrition - 1), 0)

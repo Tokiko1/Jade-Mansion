@@ -35,6 +35,18 @@
 	icon_state = "pinetree_double"
 	opacity = 0
 
+/turf/closed/outsidepines/attackby(obj/item/weapon/W, mob/user, params)
+	if(W.sharpness)
+		to_chat(user, "<span class='notice'>You start swinging your [W.name] at the [src.name].</span>")
+		for(var/cut_tree_count in 1 to 5)
+			if(do_after(user, 20, target = src))
+				playsound(src, 'sound/effects/woodhit.ogg', 100, 1)
+				if(cut_tree_count == 5)
+					new /obj/item/weapon/grown/log(get_turf(user))
+			else
+				return
+
+
 /turf/closed/outsidepines/bottom
 	icon_state = "pinetree_bottom"
 

@@ -32,7 +32,7 @@
 
 /obj/item/weapon/grown/log
 	seed = /obj/item/seeds/tower
-	name = "tower-cap log"
+	name = "wood log"
 	desc = "It's better than bad, it's good!"
 	icon_state = "logs"
 	force = 5
