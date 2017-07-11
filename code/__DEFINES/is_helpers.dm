@@ -13,6 +13,8 @@
 
 #define isfloorturf(A) (istype(A, /turf/open/floor))
 
+#define isopenfloorturf(A) (istype(A, /turf/open) && !istype(A, /turf/open/hole))
+
 #define isclosedturf(A) (istype(A, /turf/closed))
 
 #define iswallturf(A) (istype(A, /turf/closed/wall))

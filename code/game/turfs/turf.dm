@@ -344,7 +344,7 @@
 	return 1
 
 /turf/proc/can_lay_cable()
-	return can_have_cabling() & !intact
+	return can_have_cabling()
 
 /turf/proc/visibilityChanged()
 	if(SSticker)

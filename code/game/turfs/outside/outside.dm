@@ -14,7 +14,7 @@
 	var/sand_type = /obj/item/weapon/ore/glass
 
 /turf/open/outside/sand/attackby(obj/item/weapon/W, mob/user, params)
-	//note that this proc does not call ..()
+	..()
 	if(!W || !user)
 		return 0
 	if (istype(W, /obj/item/weapon/shovel))

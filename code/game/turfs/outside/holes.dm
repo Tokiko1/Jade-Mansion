@@ -75,6 +75,8 @@
 		if(!below.density)
 			new /obj/effect/upstairshine(below)
 
+/turf/open/hole/can_have_cabling()
+	return 0
 
 /turf/open/hole/outside
 	icon_state = "outsidedownwards"

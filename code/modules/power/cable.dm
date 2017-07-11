@@ -106,8 +106,8 @@ By design, d1 is the smallest direction and d2 is the highest
 //If underfloor, hide the cable
 /obj/structure/cable/hide(i)
 
-	if(level == 1 && isturf(loc))
-		invisibility = i ? INVISIBILITY_MAXIMUM : 0
+	//if(level == 1 && isturf(loc))
+	//	invisibility = i ? INVISIBILITY_MAXIMUM : 0
 	updateicon()
 
 /obj/structure/cable/proc/updateicon()
@@ -123,9 +123,8 @@ By design, d1 is the smallest direction and d2 is the highest
 //   - Multitool : get the power currently passing through the cable
 //
 /obj/structure/cable/attackby(obj/item/W, mob/user, params)
-	var/turf/T = src.loc
-	if(T.intact)
-		return
+
+
 	if(istype(W, /obj/item/weapon/wirecutters))
 		if (shock(user, 50))
 			return
@@ -612,9 +611,6 @@ GLOBAL_LIST_INIT(cable_coil_recipes, list (new/datum/stack_recipe("cable restrai
 
 	var/turf/T = C.loc
 
-	if(!isturf(T) || T.intact)		// sanity checks, also stop use interacting with T-scanner revealed cable
-		return
-
 	if(get_dist(C, user) > 1)		// make sure it's close enough
 		to_chat(user, "<span class='warning'>You can't lay cable at a place that far away!</span>")
 		return
@@ -630,9 +626,6 @@ GLOBAL_LIST_INIT(cable_coil_recipes, list (new/datum/stack_recipe("cable restrai
 	if(C.d1 == dirn || C.d2 == dirn)
 		if(!U.can_have_cabling())						//checking if it's a plating or catwalk
 			to_chat(user, "<span class='warning'>You can only lay cables on catwalks and plating!</span>")
-			return
-		if(U.intact)						//can't place a cable if it's a plating with a tile on it
-			to_chat(user, "<span class='warning'>You can't lay cable there unless the floor tiles are removed!</span>")
 			return
 		else
 			// cable is pointing at us, we're standing on an open tile

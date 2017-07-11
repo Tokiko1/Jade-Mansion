@@ -5,6 +5,9 @@
 	density = 1
 	blocks_air = 1
 
+/turf/closed/can_have_cabling()
+	return 0
+
 /turf/closed/indestructible
 	name = "wall"
 	icon = 'icons/turf/walls.dmi'
