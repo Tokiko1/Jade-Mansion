@@ -603,167 +603,167 @@
 /datum/sprite_accessory/underwear/male_white
 	name = "Mens White"
 	icon_state = "male_white"
-	gender = MALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/male_grey
 	name = "Mens Grey"
 	icon_state = "male_grey"
-	gender = MALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/male_green
 	name = "Mens Green"
 	icon_state = "male_green"
-	gender = MALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/male_blue
 	name = "Mens Blue"
 	icon_state = "male_blue"
-	gender = MALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/male_black
 	name = "Mens Black"
 	icon_state = "male_black"
-	gender = MALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/male_mankini
 	name = "Mankini"
 	icon_state = "male_mankini"
-	gender = MALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/male_hearts
 	name = "Mens Hearts Boxer"
 	icon_state = "male_hearts"
-	gender = MALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/male_blackalt
 	name = "Mens Black Boxer"
 	icon_state = "male_blackalt"
-	gender = MALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/male_greyalt
 	name = "Mens Grey Boxer"
 	icon_state = "male_greyalt"
-	gender = MALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/male_stripe
 	name = "Mens Striped Boxer"
 	icon_state = "male_stripe"
-	gender = MALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/male_commie
 	name = "Mens Striped Commie Boxer"
 	icon_state = "male_commie"
-	gender = MALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/male_uk
 	name = "Mens Striped UK Boxer"
 	icon_state = "male_uk"
-	gender = MALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/male_usastripe
 	name = "Mens Striped Freedom Boxer"
 	icon_state = "male_assblastusa"
-	gender = MALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/male_kinky
 	name = "Mens Kinky"
 	icon_state = "male_kinky"
-	gender = MALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/male_red
 	name = "Mens Red"
 	icon_state = "male_red"
-	gender = MALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_red
 	name = "Ladies Red"
 	icon_state = "female_red"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_white
 	name = "Ladies White"
 	icon_state = "female_white"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_yellow
 	name = "Ladies Yellow"
 	icon_state = "female_yellow"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_blue
 	name = "Ladies Blue"
 	icon_state = "female_blue"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_black
 	name = "Ladies Black"
 	icon_state = "female_black"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_thong
 	name = "Ladies Thong"
 	icon_state = "female_thong"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_babydoll
 	name = "Babydoll"
 	icon_state = "female_babydoll"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_babyblue
 	name = "Ladies Baby-Blue"
 	icon_state = "female_babyblue"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_green
 	name = "Ladies Green"
 	icon_state = "female_green"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_pink
 	name = "Ladies Pink"
 	icon_state = "female_pink"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_kinky
 	name = "Ladies Kinky"
 	icon_state = "female_kinky"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_whitealt
 	name = "Ladies White Sport"
 	icon_state = "female_whitealt"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_blackalt
 	name = "Ladies Black Sport"
 	icon_state = "female_blackalt"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_white_neko
 	name = "Ladies White Neko"
 	icon_state = "female_neko_white"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_black_neko
 	name = "Ladies Black Neko"
 	icon_state = "female_neko_black"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_usastripe
 	name = "Ladies Freedom"
 	icon_state = "female_assblastusa"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_uk
 	name = "Ladies UK"
 	icon_state = "female_uk"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/underwear/female_commie
 	name = "Ladies Commie"
 	icon_state = "female_commie"
-	gender = FEMALE
+	gender = NEUTER
 
 ////////////////////////////
 // Undershirt Definitions //
@@ -809,7 +809,7 @@
 /datum/sprite_accessory/undershirt/female_midriff
 	name = "Midriff Tank Top"
 	icon_state = "tank_midriff"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/undershirt/lover
 	name = "Lover Shirt"
@@ -924,12 +924,12 @@
 /datum/sprite_accessory/undershirt/redtop
 	name = "Red Top"
 	icon_state = "redtop"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/undershirt/whitetop
 	name = "White Top"
 	icon_state = "whitetop"
-	gender = FEMALE
+	gender = NEUTER
 
 /datum/sprite_accessory/undershirt/greenshirtsport
 	name = "Green Sports Shirt"

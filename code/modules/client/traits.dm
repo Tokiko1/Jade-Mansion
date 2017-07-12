@@ -30,8 +30,7 @@
 	if(traits && traits.len)
 		for(var/traitS in traits)
 			if(traitS in GLOB.alltraits)
-				var/traitC = GLOB.alltraits.[traitS]
-				totalcost += traitC.["tcost"]
+				totalcost += GLOB.alltraits[traitS]["tcost"]
 			else // something went very wrong, one of the saved traits does not exist, let's remove it
 				traits.Remove(traitS)
 
@@ -48,13 +47,12 @@
 		HTML += "<b>Add traits with a negative cost or remove some with a positive cost to get to 0 or below.</b>"
 
 	HTML += "<br><br>"
-	var/list/TS = GLOB.traitlistpaged.["page[page]"]
+	var/list/TS = GLOB.traitlistpaged["page[page]"]
 	for(var/traitG in TS)
-		var/list/traitC = TS.[traitG]
-		var/tname = traitC.["tname"]
-		var/tdesc = traitC.["tdesc"]
-		var/tnote = traitC.["tnotes"]
-		var/tcost = traitC.["tcost"]
+		var/tname = TS[traitG]["tname"]
+		var/tdesc = TS[traitG]["tdesc"]
+		var/tnote = TS[traitG]["tnotes"]
+		var/tcost = TS[traitG]["tcost"]
 		var/tactive
 		if(tname in traits)
 			tactive = 1
