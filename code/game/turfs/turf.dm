@@ -3,7 +3,7 @@
 	level = 1
 
 	var/intact = 1
-	var/turf/baseturf = /turf/open/outside
+	var/turf/baseturf = /turf/open/outside/sand
 
 	var/temperature = T20C
 	var/to_be_destroyed = 0 //Used for fire, if a melting temperature was reached, it will be destroyed

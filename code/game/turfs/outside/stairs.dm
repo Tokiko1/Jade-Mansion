@@ -20,6 +20,7 @@
 	var/shift_x = 0
 	var/shift_y = 0
 	var/shift_z = 0
+	var/turf/destinationT
 
 /turf/open/stairs/moving/northup
 	shift_y = 1
@@ -68,24 +69,31 @@
 	destination_x = x + shift_x
 	destination_y = y + shift_y
 	destination_z = z + shift_z
+	destinationT = locate(destination_x, destination_y, destination_z)
 
 /turf/open/stairs/moving/Entered(atom/movable/AM)
-	START_PROCESSING(SSobj, src)
 	climb(AM)
 
-/turf/open/stairs/moving/process()
-	if(!climb())
-		STOP_PROCESSING(SSobj, src)
-
 /turf/open/stairs/moving/proc/climb(AM)
-	. = 0
-	var/thing_to_check = src
-	if(AM)
-		thing_to_check = list(AM)
-	for(var/thing in thing_to_check)
-		if(canclimb(thing))
-			. = 1
-			INVOKE_ASYNC(src, .proc/climbmove, thing)
+	if(!isliving(AM) && !isobj(AM))
+		return
+	var/list/stufftomove = list()
+	stufftomove.Add(AM)
+	//handling pulled stuff
+	var/mob/AMOB
+	var/atom/movable/pulled_thing
+	if(istype(AM, /mob)) //only mobs can pull
+		AMOB = AM
+		if(AMOB.pulling && !AMOB.pulling.anchored)
+			pulled_thing = AMOB.pulling
+			stufftomove.Add(AMOB.pulling)
+
+	for(var/atom/movable/AMmove in stufftomove)
+		climbmove(AMmove)
+
+	if(AMOB && pulled_thing && AMOB.pulling != pulled_thing) //oops, we lost our pulled thing, let's reattach it
+		AMOB.pulling = pulled_thing
+
 
 /turf/open/stairs/moving/proc/canclimb(atom/movable/AM)
 	if(!isliving(AM) && !isobj(AM))
@@ -93,10 +101,5 @@
 	return 1
 
 /turf/open/stairs/moving/proc/climbmove(atom/movable/AM)
-	//Make sure the item is still there after our sleep
-	if(!AM || QDELETED(AM))
-		return
-
-	var/turf/T = locate(destination_x, destination_y, destination_z)
-	if(T)
-		AM.forceMove(T)
+	if(destinationT)
+		AM.forceMove(destinationT)
