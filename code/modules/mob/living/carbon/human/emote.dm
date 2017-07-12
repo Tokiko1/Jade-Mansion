@@ -7,6 +7,18 @@
 	message = "cries."
 	emote_type = EMOTE_AUDIBLE
 
+/datum/emote/living/carbon/human/curtsey
+	key = "curtsey"
+	message = "curtseys elegantly."
+	restraint_check = TRUE
+
+/datum/emote/living/carbon/human/curtsey/can_run_emote(mob/living/carbon/human/user)
+	if(user.w_uniform)
+		var/obj/item/clothing/uniform_U = user.w_uniform
+		if(uniform_U.maid_uniform)
+			return TRUE
+
+
 /datum/emote/living/carbon/human/dap
 	key = "dap"
 	key_third_person = "daps"
