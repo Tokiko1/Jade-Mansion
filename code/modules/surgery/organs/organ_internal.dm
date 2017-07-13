@@ -511,7 +511,9 @@
 	languages_possible = typecacheof(list(
 		/datum/language/common,
 		/datum/language/monkey,
-		/datum/language/ratvar
+		/datum/language/porcelain,
+		/datum/language/jadeharpy
+
 	))
 
 /obj/item/organ/tongue/get_spans()

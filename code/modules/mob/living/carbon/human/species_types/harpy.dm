@@ -15,6 +15,9 @@
 	var/datum/action/innate/flight_up/fly_up
 	var/datum/action/innate/flight_down/fly_down
 
+/datum/species/harpy/after_equip_job(datum/job/J, mob/living/carbon/human/H)
+	H.grant_language(/datum/language/jadeharpy)
+
 
 /datum/species/harpy/on_species_gain(mob/living/carbon/human/H, datum/species/old_species)
 	..()

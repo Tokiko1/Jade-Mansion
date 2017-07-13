@@ -75,6 +75,9 @@
 			if("Frail")
 				traitholder.maxHealth -= 30
 
+			if("Porcelain Speaker")
+				traitholder.grant_language(/datum/language/porcelain)
+
 
 
 	if(itemstoadd.len)

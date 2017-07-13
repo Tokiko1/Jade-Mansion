@@ -1,0 +1,9 @@
+{
+    "map_name": "Wood Mansion",
+    "map_path": "map_files/woodmansion",
+    "map_file": "woodmansion.dmm",
+    "adminzone": "woodadmin.dmm",
+    "amountzlevels": "7",
+    "minetype": "lavaland",
+    "transition_config": "default"
+}

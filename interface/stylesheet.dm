@@ -144,6 +144,9 @@ h1.alert, h2.alert		{color: #000000;}
 
 BIG IMG.icon 			{width: 32px; height: 32px;}
 
+.porcelain				{color: #1FBC9C;}
+
+
 .memo					{color: #638500;	text-align: center;}
 .memoedit				{text-align: center;	font-size: 2;}
 .abductor				{color: #800080; font-style: italic;}
@@ -151,4 +154,5 @@ BIG IMG.icon 			{width: 32px; height: 32px;}
 .drone					{color: #848482;}
 .monkey					{color: #975032;}
 .swarmer				{color: #2C75FF;}
+.jadeharpy				{color: #1FBC9C; font-style: italic;}
 </style>"}
