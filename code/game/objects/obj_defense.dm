@@ -22,7 +22,7 @@
 		else
 			return 0
 	var/armor_protection = 0
-	if(damage_flag)
+	if(damage_flag && armor)
 		armor_protection = armor[damage_flag]
 	return round(damage_amount * (100 - armor_protection)*0.01, 0.1)
 

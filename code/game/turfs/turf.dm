@@ -123,7 +123,7 @@
 		// Nothing but border objects stop you from leaving a tile, only one loop is needed
 		for(var/obj/obstacle in mover.loc)
 			if(!obstacle.CheckExit(mover, src) && obstacle != mover && obstacle != forget)
-				mover.Bump(obstacle, 1)
+				mover.Collide(obstacle)
 				return 0
 
 	var/list/large_dense = list()
@@ -131,14 +131,14 @@
 	for(var/atom/movable/border_obstacle in src)
 		if(border_obstacle.flags & ON_BORDER)
 			if(!border_obstacle.CanPass(mover, mover.loc, 1) && (forget != border_obstacle))
-				mover.Bump(border_obstacle, 1)
+				mover.Collide(border_obstacle)
 				return 0
 		else
 			large_dense += border_obstacle
 
 	//Then, check the turf itself
 	if (!src.CanPass(mover, src))
-		mover.Bump(src, 1)
+		mover.Collide(src)
 		return 0
 
 	//Finally, check objects/mobs to block entry that are not on the border
@@ -150,7 +150,7 @@
 				tompost_bump = obstacle
 				top_layer = obstacle.layer
 	if(tompost_bump)
-		mover.Bump(tompost_bump,1)
+		mover.Collide(tompost_bump)
 		return 0
 	return 1 //Nothing found to block so return success!
 

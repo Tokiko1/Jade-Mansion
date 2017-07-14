@@ -77,7 +77,7 @@
 			if(!blocked)
 				L.visible_message("<span class ='danger'>[src] pounces on [L]!</span>", "<span class ='userdanger'>[src] pounces on you!</span>")
 				L.Weaken(5)
-				sleep(2)//Runtime prevention (infinite bump() calls on hulks)
+				sleep(2)//Runtime prevention (infinite Collide() calls on hulks)
 				step_towards(src,L)
 			else
 				Weaken(2, 1, 1)

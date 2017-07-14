@@ -121,7 +121,7 @@
 
 	if(flags & CLEAN_ON_MOVE)
 		clean_on_move()
-	
+
 	var/datum/proximity_monitor/pc = proximity_monitor
 	if(pc)
 		pc.HandleMove()
@@ -175,7 +175,7 @@
 
 	if(stationloving && force)
 		STOP_PROCESSING(SSinbounds, src)
-	
+
 	QDEL_NULL(proximity_monitor)
 
 	. = ..()
@@ -194,8 +194,8 @@
 /atom/movable/Crossed(atom/movable/AM)
 	return
 
-/atom/movable/Bump(atom/A, yes) //the "yes" arg is to differentiate our Bump proc from byond's, without it every Bump() call would become a double Bump().
-	if((A && yes))
+/atom/movable/proc/Collide(atom/A)
+	if((A))
 		if(throwing)
 			throwing.hit_atom(A)
 			. = 1
