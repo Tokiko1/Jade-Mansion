@@ -23,8 +23,9 @@
 	afraidcount = Clamp(afraidcount, 0, 10) //let's not have these values build up extremely low or high
 
 	if(isturf(player.loc))
-		var/turf/T = player.loc
-		light_amount = T.get_lumcount()
+		var/turf/T = get_turf(player)
+		if(T)
+			light_amount = T.get_lumcount()
 	if(light_amount < 0.3)
 		afraidcount++
 		if(afraidcount > 2 && prob(20))
