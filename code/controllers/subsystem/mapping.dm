@@ -112,8 +112,15 @@ SUBSYSTEM_DEF(mapping)
 	var/start_time = REALTIMEOFDAY
 
 	INIT_ANNOUNCE("Loading [config.map_name]...")
-	TryLoadZ(config.GetFullMapPath(), FailedZs, ZLEVEL_STATION)
-	TryLoadZ(config.GetAdminPath(), FailedZs, GLOB.JADE_ADMIN_Z_LEVEL)
+
+	var/zlevels = config.getzlevelamount()
+	var/adminlevel = zlevels + 1
+
+	GLOB.JADE_MAX_MAP_Z_LEVEL = zlevels
+	GLOB.JADE_ADMIN_Z_LEVEL = adminlevel
+
+	TryLoadZ(config.GetFullMapPath(), FailedZs, JADE_DEFAULT_MANSION_Z_LEVEL)
+	TryLoadZ(config.GetAdminPath(), FailedZs, adminlevel)
 
 	INIT_ANNOUNCE("Loaded station in [(REALTIMEOFDAY - start_time)/10]s!")
 	feedback_add_details("map_name", config.map_name)

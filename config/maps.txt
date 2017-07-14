@@ -13,11 +13,14 @@ Format:
 endmap
 
 map jademansion
-	default
 	#voteweight 1.5
 endmap
 
 map stonemansion
 	default
-	#voteweight 0.1
+	#voteweight 1
+endmap
+
+map woodmansion
+	#voteweight 1
 endmap

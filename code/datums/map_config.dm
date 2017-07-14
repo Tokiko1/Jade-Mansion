@@ -41,6 +41,7 @@
         log_world("map_config not found: [filename]")
         return
 
+
     var/json = file(filename)
     if(!json)
         log_world("Could not open map_config: [filename]")
@@ -51,6 +52,7 @@
         log_world("map_config is not text: [filename]")
         return
 
+
     json = json_decode(json)
     if(!json)
         log_world("map_config is not json: [filename]")
@@ -59,7 +61,6 @@
     if(!ValidateJSON(json))
         log_world("map_config failed to validate for above reason: [filename]")
         return
-
     config_filename = filename
 
     map_name = json["map_name"]
@@ -69,9 +70,6 @@
     minetype = json["minetype"]
     amountzlevels = json["amountzlevels"]
     amountzlevels = text2num(amountzlevels)
-    GLOB.JADE_MAX_MAP_Z_LEVEL = amountzlevels
-    var/adminzlevel = amountzlevels + 1
-    GLOB.JADE_ADMIN_Z_LEVEL = adminzlevel
 
     var/list/jtcl = json["transition_config"]
 
