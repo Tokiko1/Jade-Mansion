@@ -1,6 +1,6 @@
 /datum/status_effect/freon
 	id = "frozen"
-	duration = 100
+	duration = -1
 	status_type = STATUS_EFFECT_UNIQUE
 	alert_type = /obj/screen/alert/status_effect/freon
 	var/icon/cube
@@ -19,12 +19,14 @@
 
 /datum/status_effect/freon/tick()
 	owner.update_canmove()
-	if(owner && owner.bodytemperature >= 310.055)
-		qdel(src)
+	if(get_turf(owner) && istype(get_turf(owner), /turf/open))
+		var/turf/open/ownerturf = get_turf(owner)
+		if(ownerturf)
+			if(ownerturf.air.temperature > T50C)
+				qdel(src)
 
 /datum/status_effect/freon/on_remove()
 	if(!owner.stat)
 		to_chat(owner, "The cube melts!")
 	owner.cut_overlay(cube)
-	owner.bodytemperature += 100
 	owner.update_canmove()

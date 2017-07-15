@@ -60,7 +60,7 @@ GLOBAL_LIST_INIT(hardcoded_gases, list("o2","n2","co2","plasma")) //the main fou
 
 /datum/gas/freon
 	id = "freon"
-	specific_heat = 2000
+	specific_heat = 20
 	name = "Freon"
 	gas_overlay = "freon"
 	moles_visible = MOLES_PLASMA_VISIBLE

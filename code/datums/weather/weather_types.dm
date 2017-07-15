@@ -238,8 +238,8 @@
 	area_type = /area/outside
 	target_z = ZLEVEL_ALL
 
-/datum/weather/acid_rain/impact(mob/living/L)
-	L.fire_stacks = -2
+/datum/weather/rain/impact(mob/living/L)
+	L.fire_stacks = max(L.fire_stacks-2, -20)
 
 /datum/weather/verylongrain
 	name = "long rain"
@@ -262,6 +262,6 @@
 	area_type = /area/outside
 	target_z = ZLEVEL_ALL
 
-/datum/weather/acid_rain/impact(mob/living/L)
-	L.fire_stacks = -20
+/datum/weather/verylongrain/impact(mob/living/L)
+	L.fire_stacks = max(L.fire_stacks-2, -20)
 

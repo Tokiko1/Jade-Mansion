@@ -163,9 +163,12 @@
 	new /obj/item/clothing/under/blackdress1(src)
 	new /obj/item/clothing/gloves/long_gloves1(src)
 	new /obj/item/clothing/under/bluedress1(src)
+	new /obj/item/clothing/under/dress_wa1(src)
+
 	new /obj/item/clothing/shoes/laceup(src)
 	new /obj/item/clothing/shoes/laceup(src)
-	new /obj/item/clothing/shoes/laceup(src)
+	new /obj/item/clothing/shoes/jackboots(src)
+	new /obj/item/clothing/shoes/jackboots(src)
 
 
 
@@ -178,6 +181,10 @@
 	new /obj/item/clothing/under/jadesuits/fancysuit1(src)
 	new /obj/item/clothing/under/jadesuits/casual1(src)
 	new /obj/item/clothing/under/jadesuits/casual2(src)
+
+	new /obj/item/clothing/shoes/laceup(src)
+	new /obj/item/clothing/shoes/laceup(src)
+	new /obj/item/clothing/shoes/laceup(src)
 
 
 

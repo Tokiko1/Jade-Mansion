@@ -9,6 +9,9 @@
 	var/drop_y = 1
 	var/drop_z = 1
 	var/downstairshine = 1 //does this cause a downstair shine effect?
+	var/turf/destinationT
+
+
 
 /turf/open/hole/Entered(atom/movable/AM)
 	START_PROCESSING(SSobj, src)
@@ -18,15 +21,11 @@
 	if(!drop_stuff())
 		STOP_PROCESSING(SSobj, src)
 
+
 /turf/open/hole/proc/drop_stuff(AM)
-	. = 0
-	var/thing_to_check = src
 	if(AM)
-		thing_to_check = list(AM)
-	for(var/thing in thing_to_check)
-		if(droppable(thing))
-			. = 1
-			INVOKE_ASYNC(src, .proc/drop, thing)
+		if(droppable(AM))
+			drop(AM)
 
 /turf/open/hole/proc/droppable(atom/movable/AM)
 	if(!isliving(AM) && !isobj(AM))
@@ -52,11 +51,10 @@
 	if(!AM || QDELETED(AM))
 		return
 
-	var/turf/T = locate(drop_x, drop_y, drop_z)
-	if(T)
+	if(destinationT)
 		AM.visible_message("<span class='boldwarning'>[AM] falls into [src]!</span>", "<span class='userdanger'>You fall down a floor!</span>")
-		T.visible_message("<span class='boldwarning'>[AM] falls from above!</span>")
-		AM.forceMove(T)
+		destinationT.visible_message("<span class='boldwarning'>[AM] falls from above!</span>")
+		AM.forceMove(destinationT)
 		if(isliving(AM))
 			var/mob/living/L = AM
 			L.Weaken(5)
@@ -68,12 +66,12 @@
 	drop_y = y
 	if(z > 1)
 		drop_z = z-1
-	var/turf/below = locate(drop_x, drop_y, drop_z)
-	if(istype(below, /turf/open/hole))
+	destinationT = locate(drop_x, drop_y, drop_z)
+	if(istype(destinationT, /turf/open/hole))
 		icon_state = "[initial_icon]2"
 	if(downstairshine)
-		if(!below.density)
-			new /obj/effect/upstairshine(below)
+		if(!destinationT.density)
+			new /obj/effect/upstairshine(destinationT)
 
 /turf/open/hole/can_have_cabling()
 	return 0

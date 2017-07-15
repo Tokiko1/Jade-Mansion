@@ -10,119 +10,140 @@
 "aj" = (/obj/effect/landmark/latejoin,/turf/open/carpetred,/area/outside)
 "ak" = (/obj/machinery/light,/turf/open/floor/wood,/area/outside)
 "al" = (/obj/structure/window/paperframe,/turf/open/tiles/woodentile,/area/outside)
-"am" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/outside)
-"an" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/floor/plasteel/white,/area/outside)
-"ao" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/outside)
-"ap" = (/turf/open/stairs/moving/westdown,/area/outside)
-"aq" = (/turf/open/floor/plasteel/white,/area/outside)
-"ar" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/white,/area/outside)
-"as" = (/obj/machinery/shower,/turf/open/floor/plasteel/white,/area/outside)
-"at" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/carpetred,/area/outside)
-"au" = (/obj/machinery/photocopier,/turf/open/floor/wood,/area/outside)
-"av" = (/obj/machinery/shower{dir = 4},/turf/open/floor/plasteel/white,/area/outside)
-"aw" = (/obj/structure/filingcabinet/chestdrawer,/turf/open/floor/wood,/area/outside)
-"ax" = (/obj/machinery/light,/obj/structure/closet/jademansion/officesupplies,/turf/open/floor/wood,/area/outside)
-"ay" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/toilet{dir = 1},/turf/open/floor/plasteel/white,/area/outside)
-"az" = (/obj/structure/toilet{dir = 1},/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/white,/area/outside)
-"aA" = (/obj/machinery/light,/turf/open/floor/plasteel/white,/area/outside)
+"am" = (/turf/closed/outsidepines/top,/area/outside)
+"an" = (/turf/open/cavefloor,/area/outside)
+"ao" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/cavefloor,/area/outside)
+"ap" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/floor/wood,/area/outside)
+"aq" = (/obj/structure/closet/jademansion/officesupplies,/turf/open/floor/wood,/area/outside)
+"ar" = (/obj/machinery/photocopier,/turf/open/floor/wood,/area/outside)
+"as" = (/obj/structure/closet/jademansion/casualdresses1,/turf/open/floor/wood,/area/outside)
+"at" = (/obj/structure/closet/jademansion/casualsuits1,/turf/open/floor/wood,/area/outside)
+"au" = (/obj/structure/rack,/turf/open/floor/wood,/area/outside)
+"av" = (/turf/closed/outsidepines/bottom,/area/outside)
+"aw" = (/obj/machinery/light,/turf/open/cavefloor,/area/outside)
+"ax" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/outside)
+"ay" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/floor/wood,/area/outside)
+"az" = (/obj/structure/chair/wood/normal,/turf/open/floor/wood,/area/outside)
+"aA" = (/turf/open/water,/area/outside)
 "aB" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/wood,/area/outside)
-"aC" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/wood,/area/outside)
-"aD" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/floor/wood,/area/outside)
-"aE" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/redtile,/area/outside)
-"aF" = (/obj/structure/chair/wood/normal,/turf/open/tiles/redtile,/area/outside)
-"aG" = (/obj/structure/table/glass,/turf/open/floor/plasteel/white,/area/outside)
-"aH" = (/obj/machinery/chem_dispenser,/turf/open/floor/plasteel/white,/area/outside)
-"aI" = (/obj/machinery/chem_master,/turf/open/floor/plasteel/white,/area/outside)
-"aJ" = (/obj/structure/table,/obj/structure/bedsheetbin,/turf/open/floor/plasteel/white,/area/outside)
-"aK" = (/obj/structure/table,/turf/open/floor/plasteel/white,/area/outside)
-"aL" = (/obj/machinery/washing_machine,/turf/open/floor/plasteel/white,/area/outside)
-"aM" = (/obj/structure/rack,/turf/open/floor/wood,/area/outside)
-"aN" = (/turf/open/tiles/redtile,/area/outside)
-"aO" = (/obj/machinery/light,/obj/structure/rack,/turf/open/floor/wood,/area/outside)
-"aP" = (/obj/machinery/chem_heater,/turf/open/floor/plasteel/white,/area/outside)
-"aQ" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/floor/wood,/area/outside)
-"aR" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/outside)
-"aS" = (/obj/structure/closet/jademansion/maids,/turf/open/floor/wood,/area/outside)
-"aT" = (/obj/structure/closet/jademansion/medicalclothes,/turf/open/floor/wood,/area/outside)
-"aU" = (/obj/structure/closet/jademansion/casualdresses1,/turf/open/floor/wood,/area/outside)
-"aV" = (/obj/structure/closet/jademansion/casualsuits1,/turf/open/floor/wood,/area/outside)
-"aW" = (/turf/closed/outsidepines/top,/area/outside)
-"aX" = (/turf/open/tiles/stonejadetile,/area/outside)
-"aY" = (/obj/structure/piano,/turf/open/tiles/stonejadetile,/area/outside)
-"aZ" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/stonejadetile,/area/outside)
-"ba" = (/turf/open/cavefloor,/area/outside)
-"bb" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/cavefloor,/area/outside)
-"bc" = (/turf/closed/outsidepines,/area/outside)
-"bd" = (/turf/closed/outsidepines/bottom,/area/outside)
-"be" = (/obj/machinery/light,/obj/structure/closet/jademansion/casualsuits2,/turf/open/carpetred,/area/outside)
-"bf" = (/obj/structure/closet/jademansion/casualdresses2,/turf/open/carpetred,/area/outside)
-"bg" = (/obj/structure/closet/jademansion/casualgeneric1,/turf/open/floor/wood,/area/outside)
-"bh" = (/turf/open/water,/area/outside)
-"bi" = (/obj/structure/dresser,/turf/open/carpetred,/area/outside)
-"bj" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/water,/area/outside)
-"bk" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/outside)
-"bl" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/carpetred,/area/outside)
+"aC" = (/obj/structure/rack,/turf/open/carpetred,/area/outside)
+"aD" = (/obj/structure/rack,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/wood,/area/outside)
+"aE" = (/turf/closed/outsidepines,/area/outside)
+"aF" = (/turf/open/stairs/moving/westdown,/area/outside)
+"aG" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/water,/area/outside)
+"aH" = (/obj/structure/largepotplant/yucapalm,/obj/machinery/light,/turf/open/floor/wood,/area/outside)
+"aI" = (/obj/structure/filingcabinet/chestdrawer,/turf/open/floor/wood,/area/outside)
+"aJ" = (/obj/structure/largepotplant/yucapalm,/turf/open/floor/wood,/area/outside)
+"aK" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/floor/wood,/area/outside)
+"aL" = (/turf/open/floor/plasteel/white,/area/outside)
+"aM" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/obj/structure/dresser,/turf/open/floor/plasteel/white,/area/outside)
+"aN" = (/obj/machinery/chem_dispenser,/turf/open/floor/plasteel/white,/area/outside)
+"aO" = (/obj/machinery/chem_master,/turf/open/floor/plasteel/white,/area/outside)
+"aP" = (/obj/structure/closet/crate/bin,/turf/open/floor/plasteel/white,/area/outside)
+"aQ" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/floor/plasteel/white,/area/outside)
+"aR" = (/turf/open/tiles/redtile,/area/outside)
+"aS" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/wood,/area/outside)
+"aT" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/white,/area/outside)
+"aU" = (/obj/machinery/chem_heater,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/white,/area/outside)
+"aV" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/redtile,/area/outside)
+"aW" = (/obj/structure/chair/wood/normal,/turf/open/tiles/redtile,/area/outside)
+"aX" = (/obj/structure/table,/turf/open/floor/plasteel/white,/area/outside)
+"aY" = (/obj/machinery/washing_machine,/turf/open/floor/plasteel/white,/area/outside)
+"aZ" = (/obj/structure/table,/obj/structure/bedsheetbin,/turf/open/floor/plasteel/white,/area/outside)
+"ba" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/cavefloor,/area/outside)
+"bb" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/cavefloor,/area/outside)
+"bc" = (/obj/structure/closet/jademansion/swimmingm,/turf/open/floor/plasteel/white,/area/outside)
+"bd" = (/obj/structure/closet/jademansion/swimmingw,/turf/open/floor/plasteel/white,/area/outside)
+"be" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/outside)
+"bf" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/outside)
+"bg" = (/obj/structure/table/wood,/turf/open/carpetred,/area/outside)
+"bh" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/outside)
+"bi" = (/obj/structure/closet/crate/bin,/turf/open/floor/wood,/area/outside)
+"bj" = (/obj/structure/piano,/turf/open/tiles/redtile,/area/outside)
+"bk" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/redtile,/area/outside)
+"bl" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/outside)
 "bm" = (/obj/machinery/light,/turf/open/carpetred,/area/outside)
-"bn" = (/obj/structure/rack,/turf/open/carpetred,/area/outside)
-"bo" = (/turf/open/floor/plasteel/rockvault,/area/outside)
-"bp" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/floor/wood,/area/outside)
-"bq" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/rockvault,/area/outside)
-"br" = (/obj/structure/largepotplant/yucapalm,/turf/open/floor/wood,/area/outside)
-"bs" = (/obj/machinery/vending/autodrobe/jade,/turf/open/floor/wood,/area/outside)
-"bt" = (/obj/structure/jadelibrary/bookcase,/turf/open/floor/wood,/area/outside)
-"bu" = (/obj/machinery/light,/turf/open/cavefloor,/area/outside)
-"bv" = (/obj/structure/rack,/turf/open/floor/plasteel/white,/area/outside)
-"bw" = (/obj/structure/closet/jademansion/swimmingm,/turf/open/floor/plasteel/white,/area/outside)
-"bx" = (/obj/structure/closet/jademansion/swimmingw,/turf/open/floor/plasteel/white,/area/outside)
-"by" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/outside)
-"bz" = (/obj/machinery/light,/turf/open/floor/plasteel/rockvault,/area/outside)
-"bA" = (/obj/structure/chair/wood/normal,/turf/open/floor/wood,/area/outside)
-"bB" = (/turf/open/stairs/moving/eastdown,/area/outside)
-"bC" = (/obj/structure/dresser,/turf/open/floor/wood,/area/outside)
-"bD" = (/obj/structure/table/wood,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/wood,/area/outside)
-"bE" = (/turf/open/hole/outside,/area/outside)
-"bF" = (/turf/open/outside/roofing/tile,/area/outside)
-"bG" = (/turf/open/outside/roofing/north,/area/outside)
-"bH" = (/turf/open/outside/roofing/east,/area/outside)
-"bI" = (/obj/structure/largepotplant/cherryblossom,/turf/open/floor/wood,/area/outside)
-"bJ" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/floor/plasteel/white,/area/outside)
-"bK" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/closet/jademansion/othermedsupplies,/turf/open/floor/plasteel/white,/area/outside)
-"bL" = (/obj/machinery/sleeper/survival_pod,/turf/open/floor/plasteel/white,/area/outside)
-"bM" = (/obj/structure/chair,/turf/open/floor/plasteel/white,/area/outside)
-"bN" = (/obj/structure/table/wood/fancy,/turf/open/tiles/redtile,/area/outside)
-"bO" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table,/turf/open/floor/plasteel/white,/area/outside)
-"bP" = (/obj/machinery/processor,/turf/open/floor/plasteel/white,/area/outside)
-"bQ" = (/obj/structure/table,/obj/machinery/microwave,/turf/open/floor/plasteel/white,/area/outside)
-"bR" = (/obj/structure/closet/crate/bin,/turf/open/floor/plasteel/white,/area/outside)
-"bS" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/floor/wood,/area/outside)
-"bT" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/peppermill,/turf/open/floor/plasteel/white,/area/outside)
-"bU" = (/obj/machinery/chem_master/condimaster,/turf/open/floor/plasteel/white,/area/outside)
-"bV" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/redtile,/area/outside)
-"bW" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/machinery/deepfryer,/turf/open/floor/plasteel/white,/area/outside)
-"bX" = (/obj/structure/table,/obj/item/weapon/storage/bag/tray,/obj/item/weapon/storage/bag/tray,/turf/open/floor/plasteel/white,/area/outside)
-"bY" = (/obj/structure/closet/jademansion/kitchensupplies,/turf/open/floor/plasteel/white,/area/outside)
-"bZ" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/saltshaker,/turf/open/floor/plasteel/white,/area/outside)
-"ca" = (/obj/structure/closet/jademansion/kitchen,/turf/open/floor/plasteel/white,/area/outside)
-"cb" = (/obj/effect/landmark/start/gardener,/turf/open/floor/plasteel/white,/area/outside)
-"cc" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/soysauce,/turf/open/floor/plasteel/white,/area/outside)
-"cd" = (/obj/structure/table,/obj/machinery/reagentgrinder,/turf/open/floor/plasteel/white,/area/outside)
-"ce" = (/obj/structure/sink{dir = 4},/obj/machinery/light,/turf/open/floor/plasteel/white,/area/outside)
-"cf" = (/obj/machinery/biogenerator,/turf/open/floor/plasteel/white,/area/outside)
-"cg" = (/obj/structure/table,/obj/machinery/juicer,/turf/open/floor/plasteel/white,/area/outside)
-"ch" = (/obj/structure/largepotplant,/turf/open/floor/wood,/area/outside)
-"ci" = (/obj/machinery/vending/cigarette,/turf/open/floor/wood,/area/outside)
-"cj" = (/obj/machinery/vending/boozeomat/jade,/turf/open/floor/wood,/area/outside)
-"ck" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks,/turf/open/floor/wood,/area/outside)
-"cl" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks/beer,/turf/open/floor/wood,/area/outside)
-"cm" = (/obj/structure/table/wood,/turf/open/carpetred,/area/outside)
-"cn" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/stairs/east,/area/outside)
-"co" = (/turf/open/outside/roofing/west,/area/outside)
-"cp" = (/turf/open/hole,/area/outside)
-"cq" = (/turf/open/stairs/moving/northup,/area/outside)
-"cr" = (/turf/open/stairs/north,/area/outside)
-"cs" = (/turf/open/outside/roofing,/area/outside)
-"ct" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/outside)
-"cu" = (/turf/open/stairs/moving/northdown,/area/outside)
+"bn" = (/obj/structure/closet/jademansion/maids,/turf/open/floor/wood,/area/outside)
+"bo" = (/obj/structure/closet/jademansion/medicalclothes,/turf/open/floor/wood,/area/outside)
+"bp" = (/obj/structure/curtain,/obj/machinery/shower,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/white,/area/outside)
+"bq" = (/obj/machinery/shower,/obj/structure/curtain,/turf/open/floor/plasteel/white,/area/outside)
+"br" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/white,/area/outside)
+"bs" = (/obj/machinery/light,/obj/structure/closet/jademansion/casualsuits2,/turf/open/carpetred,/area/outside)
+"bt" = (/obj/structure/closet/jademansion/casualdresses2,/turf/open/carpetred,/area/outside)
+"bu" = (/obj/structure/closet/jademansion/casualgeneric1,/turf/open/floor/wood,/area/outside)
+"bv" = (/obj/machinery/vending/autodrobe/jade,/turf/open/floor/wood,/area/outside)
+"bw" = (/obj/structure/jadelibrary/bookcase,/turf/open/floor/wood,/area/outside)
+"bx" = (/obj/structure/curtain,/obj/machinery/shower{dir = 1},/turf/open/floor/plasteel/white,/area/outside)
+"by" = (/turf/open/floor/plasteel/rockvault,/area/outside)
+"bz" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/rockvault,/area/outside)
+"bA" = (/obj/structure/dresser,/turf/open/carpetred,/area/outside)
+"bB" = (/obj/structure/toilet,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/white,/area/outside)
+"bC" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/carpetred,/area/outside)
+"bD" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/outside)
+"bE" = (/obj/structure/sink{dir = 4},/turf/open/floor/plasteel/white,/area/outside)
+"bF" = (/obj/structure/table,/turf/open/floor/plasteel/rockvault,/area/outside)
+"bG" = (/obj/structure/rack,/turf/open/floor/plasteel/rockvault,/area/outside)
+"bH" = (/obj/machinery/light,/turf/open/floor/plasteel/white,/area/outside)
+"bI" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/floor/wood,/area/outside)
+"bJ" = (/obj/structure/dresser,/turf/open/floor/wood,/area/outside)
+"bK" = (/obj/structure/table/wood,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/wood,/area/outside)
+"bL" = (/obj/machinery/light,/turf/open/floor/plasteel/rockvault,/area/outside)
+"bM" = (/obj/structure/closet/cardboard,/turf/open/floor/wood,/area/outside)
+"bN" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/floor/plasteel/rockvault,/area/outside)
+"bO" = (/turf/open/stairs/moving/eastdown,/area/outside)
+"bP" = (/obj/structure/closet/jademansion/cleaningroom,/turf/open/floor/plasteel/rockvault,/area/outside)
+"bQ" = (/obj/structure/closet/crate/bin,/turf/open/floor/plasteel/rockvault,/area/outside)
+"bR" = (/obj/structure/janitorialcart,/turf/open/floor/plasteel/rockvault,/area/outside)
+"bS" = (/obj/structure/closet/jademansion/replacementparts,/turf/open/floor/plasteel/rockvault,/area/outside)
+"bT" = (/obj/structure/table,/obj/item/weapon/storage/toolbox/mechanical,/turf/open/floor/plasteel/rockvault,/area/outside)
+"bU" = (/obj/structure/table/wood,/obj/item/weapon/lipstick,/turf/open/floor/wood,/area/outside)
+"bV" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/floor/plasteel/rockvault,/area/outside)
+"bW" = (/obj/structure/table,/obj/item/weapon/storage/toolbox/electrical,/turf/open/floor/plasteel/rockvault,/area/outside)
+"bX" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/largepotplant/yucapalm,/turf/open/floor/wood,/area/outside)
+"bY" = (/turf/open/hole/outside,/area/outside)
+"bZ" = (/turf/open/outside/roofing/tile,/area/outside)
+"ca" = (/turf/open/outside/roofing/north,/area/outside)
+"cb" = (/turf/open/outside/roofing/east,/area/outside)
+"cc" = (/obj/structure/largepotplant/cherryblossom,/turf/open/floor/wood,/area/outside)
+"cd" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/floor/plasteel/white,/area/outside)
+"ce" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/closet/jademansion/othermedsupplies,/turf/open/floor/plasteel/white,/area/outside)
+"cf" = (/obj/machinery/sleeper/survival_pod,/turf/open/floor/plasteel/white,/area/outside)
+"cg" = (/obj/structure/chair,/turf/open/floor/plasteel/white,/area/outside)
+"ch" = (/obj/structure/table/glass,/turf/open/floor/plasteel/white,/area/outside)
+"ci" = (/obj/structure/table/wood/fancy,/turf/open/tiles/redtile,/area/outside)
+"cj" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table,/turf/open/floor/plasteel/white,/area/outside)
+"ck" = (/obj/machinery/processor,/turf/open/floor/plasteel/white,/area/outside)
+"cl" = (/obj/structure/table,/obj/machinery/microwave,/turf/open/floor/plasteel/white,/area/outside)
+"cm" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/floor/wood,/area/outside)
+"cn" = (/obj/machinery/chem_heater,/turf/open/floor/plasteel/white,/area/outside)
+"co" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/peppermill,/turf/open/floor/plasteel/white,/area/outside)
+"cp" = (/obj/machinery/chem_master/condimaster,/turf/open/floor/plasteel/white,/area/outside)
+"cq" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/redtile,/area/outside)
+"cr" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/machinery/deepfryer,/turf/open/floor/plasteel/white,/area/outside)
+"cs" = (/obj/structure/table,/obj/item/weapon/storage/bag/tray,/obj/item/weapon/storage/bag/tray,/turf/open/floor/plasteel/white,/area/outside)
+"ct" = (/obj/structure/closet/jademansion/kitchensupplies,/turf/open/floor/plasteel/white,/area/outside)
+"cu" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/saltshaker,/turf/open/floor/plasteel/white,/area/outside)
+"cv" = (/obj/structure/closet/jademansion/kitchen,/turf/open/floor/plasteel/white,/area/outside)
+"cw" = (/obj/effect/landmark/start/gardener,/turf/open/floor/plasteel/white,/area/outside)
+"cx" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/soysauce,/turf/open/floor/plasteel/white,/area/outside)
+"cy" = (/obj/structure/table,/obj/machinery/reagentgrinder,/turf/open/floor/plasteel/white,/area/outside)
+"cz" = (/obj/structure/sink{dir = 4},/obj/machinery/light,/turf/open/floor/plasteel/white,/area/outside)
+"cA" = (/obj/machinery/biogenerator,/turf/open/floor/plasteel/white,/area/outside)
+"cB" = (/obj/structure/table,/obj/machinery/juicer,/turf/open/floor/plasteel/white,/area/outside)
+"cC" = (/obj/structure/largepotplant,/turf/open/floor/wood,/area/outside)
+"cD" = (/obj/machinery/vending/cigarette,/turf/open/floor/wood,/area/outside)
+"cE" = (/obj/machinery/vending/boozeomat/jade,/turf/open/floor/wood,/area/outside)
+"cF" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks,/turf/open/floor/wood,/area/outside)
+"cG" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks/beer,/turf/open/floor/wood,/area/outside)
+"cH" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/stairs/east,/area/outside)
+"cI" = (/turf/open/outside/roofing/west,/area/outside)
+"cJ" = (/turf/open/tiles/woodentile,/area/outside)
+"cK" = (/turf/open/stairs/moving/northup,/area/outside)
+"cL" = (/turf/open/stairs/north,/area/outside)
+"cM" = (/turf/open/outside/roofing,/area/outside)
+"cN" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/outside)
+"cO" = (/turf/open/stairs/moving/northdown,/area/outside)
+"cP" = (/turf/open/hole,/area/outside)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -198,369 +219,369 @@ afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
 afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
 afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
 afafafafafafafafafafafafafafafafafafafafafafafafafafagagahahahahagagafafafafafafafafafafafafafafafafafafafafafafafafafaf
-afafafafafafafafafafafafafafafafafafafafafafafafafafagahaiajajaiahagafafafafafafafafafafafafafafafafafafafafafafafafafaf
-afafafafafafafafafafafafafafafafafafafafafafafafafafagahaiajajaiahagafafafafafafafafafafafafafafafafafafafafafafafafafaf
-afafafafafafafafafafafafafafafaaaaaaafafafafafafafafagakahahahahakagafafafafafafafafafafafafafafafafafafafafafafafafafaf
-afafafafafafafafafafafafafafaaaaaaaaaaagagagagagagagagagahalalahagagagagagagagagagagagagagagagagagafafafafafafafafafafaf
-afafafafafafafafafafafafafafaaaaahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahagafafafafafafafafafafaf
-afafafafafafafafafafafafafafaaaaahahahahahahahahahakahahahahahahahahakahahahahahahahahahahahahahagafafafafafafafafafafaf
-afafafafafafafafafafafafafafaaagahahalamamamamamagagagagahalalahagagagagaganagagagagagagagagahahagafafafafafafafafafafaf
-afafafafafafafafafafafafafaaaaagahahalaoaoaoaoaoagabacahahahahahahacapagaqaqaqaraqagasasasagahahagafafafafafafafafafafaf
-afafafafafafafafafafafafafaaaaagahahalataiaiaiaiagabacakahahahahakacapagaqaqaqaqaqanaqaqaqagahahagafafafafafafafafafafaf
-afafafafafafafafafafafafafaaaaagahahalauahahahahagagagagahalalahagagagaganaganaganagavaqaqagahahagafafafafafafafafafafaf
-afafafafafafafafafafafafafaaaaagahahahahahawaxahagahahahahahahahahahahagayagazagazagavaAaqagahahagafafafafafafafafafafaf
-afafafafafafafafafafafafafaaaaagahahagagagagagahagaBahahahahahahahahaCagagagagagagagagagagagahahagafafafafafafafafafafaf
-afafafafafafafafafafafafafafaaagahahagahahahaDahagahahaEaFaFaFaFaEahahagaGaHaIaraJaKaLaLaLagahahagafafafafafafafafafafaf
-afafafafafafafafafafafafafaaaaagahahagahaMahaMahagahahaNaFaFaFaFaNahahagaGaqaqaqaKaqaqaqaqanahahagafafafafafafafafafafaf
-afafafafafafafafafafafafafaaaaagahahagahaMahaOahagaBahaNaFaFaFaFaNahaCagaPaqaqaqaqaqaqaqaAanahahagafafafafafafafafafafaf
-afafafafafafafafafafafafafaaaaagahahagagagagagagagahahaEaFaFaFaFaEahahagagagagagagagananagagahahagafafafafafafafafafafaf
-afafafafafafafafafafafafafaaaaagaiaiahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahagafafafafafafafafafafaf
-afafafafafafafafafafafafaaaaaaagaiaiahahahahahahakahahahahahahahahahahakahahahahahahahahahahahahagaaafafafafafafafafafaf
-afafafafafafafafafafafaaaaaaaaagaiaiagagaQagagagagalalaRaRaRaRaRaRalalagalalalalalalalalagagahahagaaafafafafafafafafafaf
-afafafafafafafafafafafaaaaaaaaagaiaialaSahaTaUaVagaWaWaWaXaYaZaXaWaWaWagbaaWbababababababbagahahagaaaaafafafafafafafafaf
-afafafafafafafafafafafaaaaaaaaagaiaialaiaiaiaiaiagbcbcbcaXaXaXaXbcbcbcagbabdbababababababaalahahagaaaaafafafafafafafafaf
-afafafafafafafafafafafafaaaaaaagaiaialaiaibebfbgagbcbcbcahahahahbcbcbcagbhbhbhbhbhbhbhbaaWalahahagaaaaafafafafafafafafaf
-afafafafafafafafafafafafaaaaaaagaiaialaiaiagalalagbdbdbdahahahahbdbdbdagbhbhbhbhbhbhbhbabcalahahagaaaaafafafafafafafafaf
-afafafafafafafafafafafafafaaaaagaiaialaiaialaibiagagagagakahahakagagagagbjbhbhbhbhbhbhbabdalahahagaaaaafafafafafafafafaf
-afafafafafafafafafafafafafaaaaagaiaialbkaiblbmbnagboboagagbpbpagagboboagaWbhbhbhbhbhbhbabaalahahagaaaaafafafafafafafafaf
-afafafafafafafafafafafafafaaaaagaiaiagagagagagagagbobobobqbobobqboboboagbcaWbhbhbhbhbhbabaalahahagaaaaafafafafafafafafaf
-afafafafafafafafafafafaaaaaaaaagaiaialbrbsbtbtahagboboboboboboboboboboagbdbdbubhbhbhbhbabualahahagaaaaaaaaafafafafafafaf
-afafafafafafafafafafafaaaaaaaaagaiaialahaiaiaiahboboboboboboboboboboboagagagagagagagaganagagahahagaaaaaaaaafafafafafafaf
-afafafafafafafafafafafaaaaaaaaagaiaialahaibmaiahagboboboboboboboboboboagarbvagaqbwbxaraqaqagahahagaaaaaaafafafafafafafaf
-afafafafafafafafafafafaaaaaaaaagaiaialahbyagalalagbobzbobobobobobobzboagaqaqanaqaqaqaqaqaqagahahagaaaaaaafafafafafafafaf
-afafafafafafafafafafafaaaaaaaaagaiaialahaialaiaMagagagagagagagagagagagagagagagaqaqaqaqaqaqanahahagaaaaaaafafafafafafafaf
-afafafafafafafafafafafaaaaaaaaagaiaiblahaiblaibAagbBadaDahahahahaDadaeagarbvagaqaqaqaqaqaqagahahagaaaaaaafafafafafafafaf
-afafafafafafafafafafafafaaaaaaagaiaialbrahagbCbDagbBadahahahahahahadaeagaqaqanaqaqaqaqaqaqagahahagaaaaaaafafafafafafafaf
-afafafafafafafafafafafafaaaaaaagaiaiagalalagagagagagagahahalalahahagagagagagagagagagananagagahahagaaaaaaafafafafafafafaf
-afafafafafafafafafafafafaaaaaaagaiaiaDahahahahahahaDahahahahahahahahaDahahahahahaDahahahahaDahahagaaaaaaafafafafafafafaf
-afafafafafafafafafafafafaaaaaaagaiaiahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahagaaaaaaafafafafafafafaf
-afafafafafafafafafafafafafaaaaagagagagagagagagagagagagagagagagagagagagagagagagagagagagagagagagagagaaaaaaafafafafafafafaf
-afafafafafafafafafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafafafafafafaf
-afafafafafafafafafafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafafafafafafafaf
-afafafafafafafafafafafafafafafaaaaaaaaafafafafaaaaaaaaaaafafafafafafaaaaaaaaafafafafaaaaaaaaaaaaaaaaafafafafafafafafafaf
-afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
-afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
-afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
-afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
-afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
-afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
-afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
-afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
-afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
-afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
+aaaaaaaaafafafafafafafafafafafafafafafafafafafafafafagahaiajajaiahagafafafafafafafafafafafafafafafafafafafafafafafafafaf
+aaaaaaaaaaaaaaafafafafafafafafafafafafafafafafafafafagahaiajajaiahagafafafafafafafafafafafafafafafafafafafafafafafafafaf
+aaaaaaaaaaaaaaafafaaaaafafafafaaaaaaafafafafafafafafagakahahahahakagafafafafafafafafafafafafafafafafafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagagagagagagagahalalahagagagagagagagagagagagagagagagagagafafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamanaoananananaoananagahahahahahapahaqalarahahahaqagasatauauauauagafafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavananananananananawagahahahahahaxahakayahahaxazahagahaiaiaiaiahagafafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaAaAaAaAanananamagagagagahalalahagagagagahahaxapaxagaBaiaiaCaCaDagafafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaAaAaAaAaAananaEagabacahahahahahahacaFagahahahahahayahaiaiaiaiahagafafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaGaAaAaAaAaAaAanavagabacakahahahahakacaFagahahaHaIaJagahahahauauauagafafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamaAaAaAaAaAaAananagagagagagagahahagagagagaKagagagagagagagayagagagagafafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaEamaAaAaAaAaAananaLaLaLagaMagahahagaNaOaPaLagahahahahahahahahahahagafafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavavanaAaAaAaAanawaLaLaLaQaLagahahagaLaLaLaLagaBaRaRaRaRaRaRaRaRaSagafafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaananaAaAaAananagagaLaTagagagaBahagaUaLaLaTagahaRaVaWaWaWaWaVaRahagafafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanaAaAaAanananagaLaLaLaQaLagahahaQaLaLaLaXagahaRaRaWaWaWaWaRaRahagafafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanananananananagagaLaLagaMagahahaQaLaLaYaZagaBaRaRaWaWaWaWaRaRaSagafafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaanamanananbbagbcaLaTagagagahahagaQaQagagagahaRaVaWaWaWaWaVaRahagafafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaananavananananagbdaLaLagahahahahahahahahahahahahahahahahahahahahagafafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagalbebebebebealagagaQaQagahahakahahahahahahahahahahahahahahahahahagaaafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagaJahahahahahahahahahahahahahagaJbfbgbgbgbhagalalbebebebebebealalagaaafafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagbiahahahahahahahahakahahahahagahbfbgbgbgbhaganananaRbjbkaRanananagaaaaafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagblaibfbgbgbhahahagagayagagagagahbfbgbgbgbhagamamanaRaRaRaRanamamagaaaaafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagblbmbfbgbgbhahahalbnahboasatagaJbmaiaibmaiagaEaEanahahahahanaEaEagaaaaafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagagagagagahahalaiaiaiaiahagagagagagagagagavavanahahahahanavavagaaaaafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagbpbqagbraLagaBahalaiaibsbtbualaJbvbwbwahagagagagagakahahakagagagagaaaaafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagbxbxaQaLaLaQahahalaiaiagalalalahaiaiaiahbybybzbyagagaKaKagagbybyagaaaaafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagagaLaLagahahalaiaialaibAalahaibmaiahbybybybybybzbybybzbybybyagaaaaafafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagbBaQaLaLaXagahahalblaibCbmaCalahbDagalalagbybybybybybybybybybybyagaaaaaaaaafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagaLaLbEagahahagagayagagagalahaialaiauagbybybFbFbybybybybGbybyagaaaaaaaaafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagbBaQaLbHbEagaBahahahahahbIahbCahaibCaiazagbybybybybybybybybybybyagaaaaaaafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagagagagagahahahahahahahahalaJahagbJbKagbybybLbybybybybybybLbyagaaaaaaafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagapbwbwahbMagayagagagagagahahagalalagagagagagagagagagagbNagagagagagaaaaaaafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagahahahahahahahahagbOadbIahahahahbIadaeagbPbybQbRbSagbybybzbybybSagaaaaaaafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagahahahaJbwahahbwagbOadahahahahahahadaeagbFbybybybyagbybybTbFbybTagaaaaaaafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagbUahahbMbwbMahaxagagagahahalalahahagagagagagbVagagagbybybWbFbybWagaaaaaaafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagbwahahahahahahbwagbXahahahahahahahahbIahahahahahbIagbybybybybyagagaaaaaaafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagaxaJahahaxahaJbwagaJahahahakahahahahahahahahahahahaybybybLbybyagaaaaaaaaafafafafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagagagagagagagagagagagagagagagagagagagagagagagagagagagagagagagaaaaaaaaaaaaaaafafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafafaf
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 "}
 
 (1,1,3) = {"
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbFbFbFbFbFbFbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbFbFbFbFbFbFbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbFbFbFbFbFbFbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEafafafbEbEbEbEbEbEbEbEbFbFbFbFbFbFbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEafafafafafbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbFbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEafafafafafbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbFbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEafafafafafbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbFbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEafafafafagagaRaRaRagagagagagagagagaRaRaRagagaRaRaRagagaRaRaRagagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEafafafafafagahahahahaDacapagabacaDahahahahahahahahahahahahahahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEafbcbcafafaRahahahahahacapagabacahahahahakahahahahahahakahahahahaRbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEafbcbcafafaRahahaRahahagagagagagahahalalagagaQagagagagagagagahahaRbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEafafafafafaRahahaRahahahahaDahahahahahahagbIahbAbAagbJaqbKagaBahaRbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEafafafafafagaBahaRahahahahahahahahahahahagahahahahanaqaqaqagahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEafafafafagahahalalalalalalalalalagahahagahahahahagbLaqbMagahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEafafafafafaRahahalbrahahahahahahbragaBahagbIahamamagbLaqaGagaBahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEafafafafafaRahahalahaNaNaFaFaNaNahagahahagagagagagagagagagagahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEafafafafafaRahahalahaNbNbNbNbNaNaCagahahalaqbObPbQbQaKbObRaRahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEafafafafafagaBahbSahaNbNbNbNbNaNahagahahanaqaqaqaqaqaqaqaPaRahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEafafbcbcafafagahahalahaNbNbNbNbNaNahbSahahalaKaqaqbTaKaqaqbUaRahahagafafafafbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEafafafbcafafafaRahahalahaNaNbVbVaNaNaCagahahagbWaqaqbXaKaqaqaHaRahahagafafafafbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEafafafbcafafafaRahahalbrahahahahahahbragahahalbYaqaqbZaKaqaqaqagahahagafafafafafbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEafafafafafafafaRahahalalalalalalalalalagaBahalcaaqcbaKccaqaqaqanahahagafafafafafbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEafafbcbcafafagaBahaRbrahahahahahahbragahahaRaqaqaqaqaqaqaqcdagahahagafafafafafbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEafafbcbcafafagahahaRahaNaNaNaNaNaNahagahahaRaqaqaqcecfaqaqcgagaBahagafafafafafbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEafbcbcafafaRahahaRahaNaNaNaNaNaNaCagahahagalalanagagaRaRagagahahagafafafafafbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEafafafafafaRahahaRahaNaNaNaNaNaNahagahahamchahahaDcicjckclalahahagafafafafafbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEafafafafafaRahahaRahaNaNaNaNaNaNahagahahahahahahahahahahahalahahagafafafafafbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEafafafbcafafafaRahahaRahaNaNaNaNaNaNahagaBahamamamamamamamamamalahahagafafafafafafafbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEafbcbcbcafafafagaBahaRahaNaNaNaNaNaNahagahahaNaNaNaNaNaNaNaNaNalahahagafafafafafafafbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEafbcbcbcafafafagahahaRahaNaNaNaNaNaNahaRahahahahahahahahahahahahahaCagafafafafafafbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEafbcbcbcafafafaRahahaRbrahakahakahahbraRahahahakahahahahakahahahahahagafafafafafafbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEafbcbcbcafafafaRahahaRaRaRagbSagaRaRaRaRahahagagagahahagagagaicmcmaiaRafafafafafafbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEafafafafafafafaRahahahahahahahahahahahahahahagbBcnahahcnaeagaicmcmaiaRafafafafafafbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEafafafafafafagakahahahahahakahahahahahakahagbBadahahadaeagaiaiaiaiagafafafafafafbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEafafafafafafagagaRaRaRagagagagagagagagagagagagagaRaRagagagagaRaRagagafafafafafafbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEafafafafafafafafafafafafafafafafbEbEbEafafafafafafafafafafafafafafafafafafbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEafafafafbEbEbEbEafafafafafbEbEbEbEbEbEafafafafbEbEbEbEafafafafafafafafbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbZbZbZbZbZbZbZbZbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+afafafafbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbZbZbZbZbZbZbZbZbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbZbZbZbZbZbZbZbZbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafbYbYafafbYbYbYbYafafafbYbYbYbYbYbYbYbYbZbZbZbZbZbZbZbZbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafafcacacacacacacacacacacacacacacacacacacacacacacacacacacacacabZbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafafcacacacacacacacacacacacacacacacacacacacacacacacacacacacabZcbbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafafcacacacacacacacacacacacacacacacacacacacacacacacacacacabZcbcbbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafagagbebebeagagagagagagagagbebebeagagbebebeagagbebebeagagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafagahahahahbIacaFagabacbIahahahahahahahahahahahahahahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafaEaEafafbeahahahahahacaFagabacahahahahakahahahahahahakahahahahbecbcbcbbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafaEaEafafbeahahbeahahagagagagagahahalalagagayagagagagagagagahahbecbcbcbbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafbeahahbeahahahahbIahahahahahahagccahazazagcdaLceagaBahbecbcbcbbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafagaBahbeahahahahahahahahahahahagahahahahaQaLaLaLagahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafagahahalalalalalalalalalagahahagahahahahagcfaLcgagahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafbeahahalaJahahahahahahaJagaBahagccahaxaxagcfaLchagaBahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafbeahahalahaRaRaWaWaRaRahagahahagagagagagagagagagagahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafbeahahagaBaRciciciciaRaSagahahalaLcjckclclaXcjaPbeahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafagaBahcmahaRciciciciaRahcmahahaQaLaLaLaLaLaLaLcnbeahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafaEaEafafagahahagaBaRciciciciaRaSagahahalaXaLaLcoaXaLaLcpbeahahagafafafafbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafaEafafafbeahahalahaRaRcqcqaRaRahagahahagcraLaLcsaXaLaLaNbeahahagafafafafbYbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafaEafafafbeahahalaJahahahahahahaJagahahalctaLaLcuaXaLaLaLagahahagafafafafafbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafbeahahalalalalalalalalalagaBahalcvaLcwaXcxaLaLaLaQahahagafafafafafbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafaEaEafafagaBahbeaJahahahahahahaJagahahbeaLaLaLaLaLaLaLcyagahahagafafafafafbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafaEaEafafagahahbeahaRaRaRaRaRaRahagahahbeaLaLaLczcAaLaLcBagaBahagafafafafafbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafaEaEafafbeahahbeahaRaRaRaRaRaRaSagahahagalalaQagagbebeagagahahagafafafafafbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafbeahahbeahaRaRaRaRaRaRahagahahaxcCahahbIcDcEcFcGalahahagafafafafafbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafbeahahbeahaRaRaRaRaRaRahagahahahahahahahahahahahalahahagafafafafafbYbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafaEafafafbeahahbeahaRaRaRaRaRaRahagaBahaxaxaxaxaxaxaxaxaxalahahagafafafafafafafbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafaEafafafagaBahbeahaRaRaRaRaRaRahagahahaRaRaRaRaRaRaRaRaRalahahagafafafafafafafbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafaEafafafagahahbeahaRaRaRaRaRaRahbeahahahahahahahahahahahahahaSagafafafafafafbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafaEafafafbeahahbeaJahakahakahahaJbeahahahakahahahahakahahahahahagafafafafafafbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafaEafafafbeahahbebebeagcmagbebebebeahahagagagahahagagagaibgbgaibeafafafafafafbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafbeahahahahahahahahahahahahahahagbOcHahahcHaeagaibgbgaibeafafafafafafbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafagakahahahahahakahahahahahakahagbOadahahadaeagaiaiaiaiagafafafafafafbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafagagbebebeagagagagagagagagagagagagagbebeagagagagbebeagagafafafafafafbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafbYbYbYbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafbYbYbYbYbY
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafbYbYbYbY
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
+afafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaf
 "}
 
 (1,1,4) = {"
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbFbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbFbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcobFbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbFbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcocobFbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbFbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagagaRaRaRagagagagagagagagaRaRaRagagaRaRaRagagaRaRaRagagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahahahahahahacapagabacahahahahahahahahahahahahahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoaRahahahahahahahacapagabacahahahahahahahahahahahahahahaRbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoaRahahalcpcpahahagagagagagahahalalalalahalalalalalahahaRbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoaRahahalcpcpahahahahahahahahahalahahahahahahahahalahahaRbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahalcpcpahahahahahahahahahalahahahahahahahahalahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahalalalalalalahalalalalagagahahahahahahahahalahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoaRahahalahahahahahahahahahcpcpalahahahahahahahahalahahaRbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoaRahahalahahahahahahahahahcpcpalahahahahahahahahalahahaRbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoaRahahagalalalalagahahahahcpcpalahahahahahahahahalahahaRbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahahahahahahalahahahahcpcpalahahahahahahahahalahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahahahahahahagalalahalalalalahahahahahahahahalahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoaRaRaRaRaRaRahahalahahahahahalahahahahahahahahahalahahaRbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococobFbFbFbFbFaRahahalahaiaiaiahalahahahahahahahahahalahahaRbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococobFbFbFbFbFaRahahalahaiaiaiahalahahahahahahahahahalahahaRbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococobFbFbFbFbFaRahahalahaiaiaiahalahahahahahahahahahalahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoaRaRaRaRaRaRahahahahaiaiaiahalahahahahahahalalalagahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahahahahahahalahaiaiaiahalahahahahahahalahahahahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoaRahahahahahahahalahahahahahalahahahahahahalahahahahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoaRahahagalalalalagalalalalalagahahahahahahalahahagagagagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoaRahahalahahahahahahahahahahalahahahahahahalahahagcqcqagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahalahaiaiaiaiaiaiaiaiahalahahalalahalalahahagcrcragbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahalahaiaiaiaiaiaiaiaiahalahahalahahahahahahagahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoaRahahalahahahahahahahahahahalahahalahahahahahahagahahaRbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoaRahahagalalalalalalahalalalagalalagahahagagagahagahahaRbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoaRahahahahahahahahahahahahahahahahahahahagbBadahahahahaRbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahahahahahahahahahahahahahahahahahahagbBadahahahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagagaRaRaRagagaRaRaRagagaRaRaRagagaRaRaRagagagaRaRaRagagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcocobFcscscscscscscscscscscscscscscscscscscscscscscscscscscscsbFbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcobFcscscscscscscscscscscscscscscscscscscscscscscscscscscscscscsbFbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbFcscscscscscscscscscscscscscscscscscscscscscscscscscscscscscscscsbFbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbZcacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacabZbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIbZcacacacacacacacacacacacacacacacacacacacacacacacacacacacacacabZcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIbZcacacacacacacacacacacacacacacacacacacacacacacacacacacacabZcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagagbebebeagagagagagagagagbebebeagagbebebeagagbebebeagagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahahahahahahacaFagabacahahahahahahahahahahahahahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbeahaiaiaiaiahahacaFagabacahahahahahahahahahahahahahahbecbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbeahaiaiaiaiahahagagagagagahahahagagagagagagagagagahahbecbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbeahaiaiaiaiahahahahahahahahahahcJahahahahahahahcJahahbecbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahahahahahahahahahahahahahahcJahaiaiaiaiaiahcJahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagagagagagagahahagagagagagagagagcJahaiaiaiaiaiahcJahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbeahahahahahahahahahcJahahahahahcJahahahahahahahcJahahbecbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbeahaiaiaiaiaiaiaiahcJahaiaiaiahagcJcJcJcJcJcJcJagahahbecbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbeahaiaiaiaiaiaiaiahcJahaiaiaiahcJahahahahahahahagahahbecbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahaiaiaiaiaiaiaiahcJahaiaiaiahcJahaiaiaiaiaiahagahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahahahahahaiaiahcJahaiaiaiahcJahaiaiaiaiaiahagahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbebebebebeagahaiaiahahahaiaiaiahcJahaiaiaiaiaiahagahahbecbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbZbZbZbZbZbeahaiaiahcJahaiaiaiahcJahaiaiaiaiaiahagahahbecbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbZbZbZbZbZbeahaiaiahcJahaiaiaiahcJahahahahahahahagahahbecbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbZbZbZbZbZbeahahahahcJahahaiaiahagagagagagagahahagahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbebebebebeagcJcJahcJcJcJahaiaiahagahahahahagagagagahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahahahahahahahahahcJahahahahagahahahahagahahahahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbeahaiaiaiaiaiaiaiaiahagagagagagagahahahahagahahahahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbeahaiaiaiaiaiaiaiaiahagahahahahagahahahahagahahagagagagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbeahaiaiaiaiaiaiaiaiahagahahahahagahahahahagahahagcKcKagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahaiaiaiaiaiaiaiaiahagahahahahagagagahagagahahagcLcLagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahaiaiaiaiaiaiaiaiahahahahahahahahahahahahahahahahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbeahaiaiaiaiaiaiaiaiahahahahahahahahahahahahahahahahahbecbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbeahaiaiaiaiaiaiaiaiahagahaiaiaiaiaiaiahagagagahahahahbecbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIbeahaiaiaiaiaiaiaiaiahagahaiaiaiaiaiaiahagbOadahahahahbecbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahahahahahahahahahagahaiaiaiaiaiaiahagbOadahahahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagagbebebeagagbebebeagagbebebeagagbebebeagagagbebebeagagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIbZcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMbZcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIbZcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMbZcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbZcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMbZbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
 "}
 
 (1,1,5) = {"
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbFbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbFbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcobFbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbFbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcocobFbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbFbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagagagagagagagagagagagagagagagagagagagagagagagagagagagagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahahahahahahahahacapagahahahahahahahahalahahahahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahahahahahahahahacapagahaiaiaiaiaiaiahalahaiaiaiaiagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahalalalalahalalagagagahaiaiaiaiaiaiahalahaiaiaiaiagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahalahahahahahahahahalahahahahahaiaiahalahaiaiaiaiagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahalahaiaiaiaiaiaiahalahaiaiaiahaiaiahalahaiaiaiaiagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahalahaiaiaiaiaiaiahalahaiaiaiahaiaiahalahahahahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahalahaiaiaiaiaiaiahalahaiaiaiahaiaiahalahalalalalagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahalahaiaiaiaiaiaiahalahaiaiaiahahahahahahahahahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahalahaiaiaiaiaiaiahalahaiaiaiahahahahahahaiaiaiaiagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahalahaiaiaiaiaiaiahalahaiaiaiahahahahahahaiaiaiaiagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahalahahahahahahahahalahahahahahahahahahahaiaiaiaiagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahalalalalahalalalalalalalahalalalalalalahaiaiaiaiagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahahahahahahahahahahahahahahahahahahahalahahahahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahahahahahahahahahahahahahahahahahahahalalalagagagagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahalalalalalalalalalalalalalalalagahahalahahagcqcqagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahahbtahbtbtahbtbtbtahbtbtahbtbtalahahalahahagcrcragbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahaiaictaiaiaiaiaiaiaiaiaiaiaiaiahalahahahahahahahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahaiaiaiaiaiaiaicmaiaiaictctaiaibtalahahahahahahahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahaiaiaicmaictaictctctaictctaiaibtalahahalalalagcrcragbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahaiaiaiaiaiaiaiaiaiaiaictctaiaiahahahahbtbtamagcucuagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagamaiaiaiaiaiaiaicmcmcmaiaiaiaiaiaiaiaiaiaiaiahagagagagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagamaiaicmctctaiaicmcmcmaiaiaiaiaiaiaiaiaiaiaiahbtamamagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbtaiaicmctctaiaiaiaiaiaictctaiaictctaicmcmaiaiaiaiamagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbtaiaiaictctaiaictctaiaictctaiaiaiaiaicmcmaiaiaiaiahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahaiaiaiaiaiaiaiaiaiaiaictctaiaiaiaiaiaiaiaiaiaiaiahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbtbtbtahahahahahambtamambtbtahbtbtamamahahahahahahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagagagagagagagagagagagagagagagagagagagagagagagagagagagagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcocobFcscscscscscscscscscscscscscscscscscscscscscscscscscscscsbFbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcobFcscscscscscscscscscscscscscscscscscscscscscscscscscscscscscsbFbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbFcscscscscscscscscscscscscscscscscscscscscscscscscscscscscscscscsbFbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbZcacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacabZbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIbZcacacacacacacacacacacacacacacacacacacacacacacacacacacacacacabZcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIbZcacacacacacacacacacacacacacacacacacacacacacacacacacacacabZcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagagagagagagagagagagagagagagagagagagagagagagagagagagagagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahahahahahagahahacaFagahahahahahahahahalahahahahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahaiaiaiaiahagahahacaFagahaiaiaiaiaiaiahalahaiaiaiaiagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahaiaiaiaiahagahahagagagahaiaiaiaiaiaiahalahaiaiaiaiagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahaiaiaiaiahagahahahahalahahahahahaiaiahalahaiaiaiaiagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahaiaiaiaiahagahahahahalahaiaiaiahaiaiahalahaiaiaiaiagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahaiaiaiaiahagagagahahalahaiaiaiahaiaiahalahahahahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahaiaiaiaiahbYbYagahahalahaiaiaiahaiaiahalahalalalalagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahahahahahbYbYagahahalahaiaiaiahahahahahahahahahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahalbYbYbYbYbYagahahalahaiaiaiahahahahahahaiaiaiaiagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahalbYbYbYbYbYagahahalahaiaiaiahahahahahahaiaiaiaiagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahalbYbYbYbYbYagahahalahahahahahahahahahahaiaiaiaiagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahalalalalahalalahahalalalahalalalalalalahaiaiaiaiagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahahahahahahahahahahahahahahahahahahahalahahahahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahahahahahahahahahahahahahahahahahahahalalalagagagagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahalalalalalalalalalalalalalalalagahahalahahagcKcKagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahahbwahbwbwahbwbwbwahbwbwahbwbwalahahalahahagcLcLagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahaiaicNaiaiaiaiaiaiaiaiaiaiaiaiahalahahahahahahahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahaiaiaiaiaiaiaibgaiaiaicNcNaiaibwalahahahahahahahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahaiaiaibgaicNaicNcNcNaicNcNaiaibwalahahalalalagcLcLagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahaiaiaiaiaiaiaiaiaiaiaicNcNaiaiahahahahbwbwaxagcOcOagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagaxaiaiaiaiaiaiaibgbgbgaiaiaiaiaiaiaiaiaiaiaiahagagagagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagaxaiaibgcNcNaiaibgbgbgaiaiaiaiaiaiaiaiaiaiaiahbwaxaxagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbwaiaibgcNcNaiaiaiaiaiaicNcNaiaicNcNaibgbgaiaiaiaiaxagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbwaiaiaicNcNaiaicNcNaiaicNcNaiaiaiaiaibgbgaiaiaiaiahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahaiaiaiaiaiaiaiaiaiaiaicNcNaiaiaiaiaiaiaiaiaiaiaiahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbwbwbwahahahahahaxbwaxaxbwbwahbwbwaxaxahahahahahahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagagagagagagagagagagagagagagagagagagagagagagagagagagagagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIbZcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMbZcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIbZcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMbZcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbZcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMbZbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
 "}
 
 (1,1,6) = {"
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbFbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbFbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcobFbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbFbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcocobFbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbFbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagagagagagagagagagagagagagagagagagagagagagagagagagagagagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEahahbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEahahahahbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEahahahahahahbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagagagagaRaRaRbEbEbEahahahahahahahahbEbEbEaRaRaRalalalagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagcqcqagahahaRbEbEahahahahaNaNahahahahbEbEaRahahahahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagcrcragahahahahahahahahaNaNaNaNahahahahahahahahahahahagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahahahahahahahahahahaNaNaNaNahahahahahahahahagcrcragbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagahahahahahaRbEbEahahahahaNaNahahahahbEbEaRahahagcucuagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagalalalaRaRaRbEbEbEahahahahahahahahbEbEbEaRaRaRagagagagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEahahahahahahbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEahahahahbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEahahbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagagagagagagagagagagagagagagagagagagagagagagagagagagagagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcocobFcscscscscscscscscscscscscscscscscscscscscscscscscscscscsbFbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcobFcscscscscscscscscscscscscscscscscscscscscscscscscscscscscscsbFbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbFcscscscscscscscscscscscscscscscscscscscscscscscscscscscscscscscsbFbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbZcacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacabZbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIbZcacacacacacacacacacacacacacacacacacacacacacacacacacacacacacabZcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIbZcacacacacacacacacacacacacacacacacacacacacacacacacacacacabZcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagagagagagagagagagagagagagagagagagagagagagagagagagagagagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPahahcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPahahahahcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPahahahahahahcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagagagagbebebecPcPcPahahahahahahahahcPcPcPbebebealalalagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcKcKagahahbecPcPahahahahaRaRahahahahcPcPbeahahahahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcLcLagahahahahahahahahaRaRaRaRahahahahahahahahahahahagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahahahahahahahahahahaRaRaRaRahahahahahahahahagcLcLagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagahahahahahbecPcPahahahahaRaRahahahahcPcPbeahahagcOcOagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagalalalbebebecPcPcPahahahahahahahahcPcPcPbebebeagagagagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPahahahahahahcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPahahahahcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPahahcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPcPagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagagagagagagagagagagagagagagagagagagagagagagagagagagagagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIbZcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMbZcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIbZcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMbZcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbZcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMbZbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
 "}
 
 (1,1,7) = {"
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbFbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbFbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcobFbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbFbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcocobFbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbGbFbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagagagagagagagagagagagagagagagagagagagagagagagagagagagagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagcrcragbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagcucuagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagagagagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcococoagagagagagagagagagagagagagagagagagagagagagagagagagagagagbHbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcocobFcscscscscscscscscscscscscscscscscscscscscscscscscscscscsbFbHbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEcobFcscscscscscscscscscscscscscscscscscscscscscscscscscscscscscsbFbHbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbFcscscscscscscscscscscscscscscscscscscscscscscscscscscscscscscscsbFbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
-bEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbE
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbZcacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacabZbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIbZcacacacacacacacacacacacacacacacacacacacacacacacacacacacacacabZcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIbZcacacacacacacacacacacacacacacacacacacacacacacacacacacacabZcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagagagagagagagagagagagagagagagagagagagagagagagagagagagagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcLcLagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagcOcOagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagagagagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIcIagagagagagagagagagagagagagagagagagagagagagagagagagagagagcbcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIcIbZcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMbZcbcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYcIbZcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMbZcbbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbZcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMcMbZbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
+bYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbY
 "}

@@ -173,9 +173,9 @@
 				if(M.slip(0, 4, null, (SLIDE|GALOSHES_DONT_HELP)))
 					M.confused = max(M.confused, 8)
 			if(TURF_WET_ICE)
-				M.slip(0, 6, null, (SLIDE|GALOSHES_DONT_HELP))
+				M.slip(0, 6, null, (SLIDE|GALOSHES_DONT_HELP|NO_SLIP_WHEN_WALKING))
 			if(TURF_WET_PERMAFROST)
-				M.slip(0, 6, null, (SLIDE_ICE|GALOSHES_DONT_HELP))
+				M.slip(0, 6, null, (SLIDE_ICE|GALOSHES_DONT_HELP|NO_SLIP_WHEN_WALKING))
 			if(TURF_WET_SLIDE)
 				M.slip(0, 4, null, (SLIDE|GALOSHES_DONT_HELP))
 	//melting

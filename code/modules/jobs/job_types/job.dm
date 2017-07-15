@@ -295,6 +295,12 @@
 			gloves = /obj/item/clothing/gloves/long_gloves2
 			head = null
 
+		if(OWNERDRESS4)
+			uniform = /obj/item/clothing/under/dress_wa1
+			shoes = /obj/item/clothing/shoes/jackboots
+			gloves = null
+			head = null
+
 		if(CASUALSUIT1)
 			uniform = /obj/item/clothing/under/jadesuits/fancysuit1
 			shoes = /obj/item/clothing/shoes/laceup

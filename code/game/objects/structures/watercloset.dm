@@ -398,7 +398,6 @@
 	item_state = "rubberducky"
 
 
-
 /obj/structure/sink
 	name = "sink"
 	icon = 'icons/obj/watercloset.dmi'
@@ -407,7 +406,12 @@
 	anchored = 1
 	var/busy = 0 	//Something's being washed at the moment
 	var/dispensedreagent = "water" // for whenever plumbing happens
+	var/offset_sink = TRUE
 
+/obj/structure/sink/New()
+	if(offset_sink)
+		pixel_x = (src.dir & 3)? 0 : (src.dir == 4 ? 8 : -8)
+		pixel_y = (src.dir & 3)? (src.dir ==1 ? 8 : -8) : 0
 
 /obj/structure/sink/attack_hand(mob/living/user)
 	if(!user || !istype(user))
@@ -529,6 +533,7 @@
 	name = "puddle"
 	desc = "A puddle used for washing one's hands and face."
 	icon_state = "puddle"
+	offset_sink = FALSE
 
 /obj/structure/sink/puddle/attack_hand(mob/M)
 	icon_state = "puddle-splash"

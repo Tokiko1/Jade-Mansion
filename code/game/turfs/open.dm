@@ -111,9 +111,9 @@
 	for(var/obj/I in contents)
 		if(!HAS_SECONDARY_FLAG(I, FROZEN)) //let it go
 			I.make_frozen_visual()
-	for(var/mob/living/L in contents)
-		if(L.bodytemperature <= 50)
+		for(var/mob/living/L in contents)
 			L.apply_status_effect(/datum/status_effect/freon)
+
 	MakeSlippery(TURF_WET_PERMAFROST, 5)
 	return 1
 
@@ -164,6 +164,9 @@
 			C.stop_pulling()
 		else
 			C.Stun(1)
+			if(SLIDE_ICE)
+				C.Weaken(w_amount)
+
 
 		if(buckled_obj)
 			buckled_obj.unbuckle_mob(C)
@@ -171,12 +174,14 @@
 
 		if(lube&SLIDE)
 			new /datum/forced_movement(C, get_ranged_target_turf(C, olddir, 4), 1, FALSE, CALLBACK(C, /mob/living/carbon/.proc/spin, 1, 1))
-		else if(lube&SLIDE_ICE)
-			new /datum/forced_movement(C, get_ranged_target_turf(C, olddir, 1), 1, FALSE)	//spinning would be bad for ice, fucks up the next dir
+		else if(SLIDE_ICE)
+			new /datum/forced_movement(C, get_ranged_target_turf(C, olddir, 4), 1, FALSE)	//spinning would be bad for ice, fucks up the next dir
 		return 1
 
 /turf/open/proc/MakeSlippery(wet_setting = TURF_WET_WATER, min_wet_time = 0, wet_time_to_add = 0) // 1 = Water, 2 = Lube, 3 = Ice, 4 = Permafrost, 5 = Slide
 	wet_time = max(wet_time+wet_time_to_add, min_wet_time)
+	if(z_open)
+		return
 	if(wet >= wet_setting)
 		return
 	wet = wet_setting
@@ -189,11 +194,16 @@
 			if(wet_setting == TURF_WET_PERMAFROST)
 				wet_overlay = image('icons/effects/water.dmi', src, "ice_floor")
 			else if(wet_setting == TURF_WET_ICE)
-				wet_overlay = image('icons/turf/overlays.dmi', src, "snowfloor")
+				wet_overlay = image('icons/effects/water.dmi', src, "ice_floor")
 			else
 				wet_overlay = image('icons/effects/water.dmi', src, "wet_floor_static")
 		else
-			wet_overlay = image('icons/effects/water.dmi', src, "wet_static")
+			if(wet_setting == TURF_WET_PERMAFROST)
+				wet_overlay = image('icons/effects/water.dmi', src, "ice_floor")
+			else if(wet_setting == TURF_WET_ICE)
+				wet_overlay = image('icons/effects/water.dmi', src, "ice_floor")
+			else
+				wet_overlay = image('icons/effects/water.dmi', src, "wet_static")
 		add_overlay(wet_overlay)
 	HandleWet()
 
@@ -243,8 +253,9 @@
 				wet_time = max(0, wet_time-10)
 			if(T0C + 100 to INFINITY)
 				wet_time = 0
-	else if (GetTemperature() > BODYTEMP_COLD_DAMAGE_LIMIT)	//seems like a good place
-		MakeDry(TURF_WET_PERMAFROST)
+	else if (wet == TURF_WET_PERMAFROST)	//seems like a good place
+		if(air.temperature > T50C) //need warmth to unfreeze this
+			MakeDry(TURF_WET_PERMAFROST)
 	else
 		wet_time = max(0, wet_time-5)
 	if(wet && wet < TURF_WET_ICE && !wet_time)

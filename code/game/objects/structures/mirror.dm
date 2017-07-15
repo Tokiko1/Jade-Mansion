@@ -10,6 +10,10 @@
 	max_integrity = 200
 	integrity_failure = 100
 
+/obj/structure/mirror/New()
+	pixel_x = (src.dir & 3)? 0 : (src.dir == 4 ? 24 : -24)
+	pixel_y = (src.dir & 3)? (src.dir ==1 ? 24 : -24) : 0
+
 
 /obj/structure/mirror/attack_hand(mob/user)
 	if(broken || !Adjacent(user))
