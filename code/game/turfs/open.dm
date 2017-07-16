@@ -112,7 +112,7 @@
 		if(!HAS_SECONDARY_FLAG(I, FROZEN)) //let it go
 			I.make_frozen_visual()
 		for(var/mob/living/L in contents)
-			L.apply_status_effect(/datum/status_effect/freon)
+			L.apply_status_effect(/datum/status_effect/restraining/freon)
 
 	MakeSlippery(TURF_WET_PERMAFROST, 5)
 	return 1

@@ -69,7 +69,7 @@
 
 /obj/item/projectile/proc/on_range() //if we want there to be effects when they reach the end of their range
 	if(hitscan && showbeam)
-		firer.Beam(src, icon_state = beam_icon, time= beamduration)
+		firer.RBeam(src, icon_state = beam_icon, time= beamduration)
 	qdel(src)
 
 //to get the correct limb (if any) for the projectile hit message
@@ -88,13 +88,13 @@
 
 //hitscan stuff
 /obj/item/projectile/proc/calculate_shift_x(atom/target)
-	if(target == original) //the projectile hit the target originally clicked
+	if(target == original)
 		return p_x + target.pixel_x - 16
 	else
 		return target.pixel_x
 
 /obj/item/projectile/proc/calculate_shift_y(atom/target)
-	if(target == original) //the projectile hit the target originally clicked
+	if(target == original)
 		return p_y + target.pixel_y - 16
 	else
 		return target.pixel_y
@@ -108,7 +108,7 @@
 		var/shiftx = calculate_shift_x(target)
 		var/shifty = calculate_shift_y(target)
 		var/beamhit = new beam_impact_effect(target_loca, target, shiftx, shifty, beamduration)
-		firer.Beam(beamhit, icon_state = beam_icon, time= beamduration)
+		firer.RBeam(beamhit, icon_state = beam_icon, time= beamduration)
 
 	if(!isliving(target))
 		if(impact_effect_type)

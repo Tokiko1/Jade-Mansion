@@ -1,0 +1,169 @@
+//Beam Datum and effect
+/datum/robust_beam
+	var/atom/origin = null
+	var/atom/target = null
+	var/list/elements = list()
+	var/icon/base_icon = null
+	var/icon
+	var/icon_state = "" //icon state of the main segments of the beam
+	var/max_distance = 0
+	var/sleep_time = 3
+	var/finished = 0
+	var/target_oldloc = null
+	var/origin_oldloc = null
+	var/static_beam = 0
+	var/beam_type = /obj/effect/r_ebeam //must be subtype
+	var/timing_id = null
+	var/recalculating = FALSE
+	var/shift_x_target = 0
+	var/shift_y_target = 0
+	var/shift_x_origin = 0
+	var/shift_y_origin = 0
+
+
+/datum/robust_beam/New(beam_origin,beam_target,beam_icon='icons/effects/beam.dmi',beam_icon_state="b_beam",time=50,maxdistance=10,btype = /obj/effect/r_ebeam,beam_sleep_time=3, target_x_shift = 0, target_y_shift = 0, origin_x_shift = 0, origin_y_shift = 0)
+	origin = beam_origin
+	origin_oldloc = get_turf(origin)
+	target = beam_target
+	target_oldloc = get_turf(target)
+	sleep_time = beam_sleep_time
+	shift_x_target = target_x_shift
+	shift_y_target = target_y_shift
+	shift_x_origin = origin_x_shift
+	shift_y_origin = origin_y_shift
+
+	if(origin_oldloc == origin && target_oldloc == target)
+		static_beam = 1
+	max_distance = maxdistance
+	base_icon = new(beam_icon,beam_icon_state)
+	icon = beam_icon
+	icon_state = beam_icon_state
+	beam_type = btype
+//	addtimer(CALLBACK(src,.proc/End), time)
+
+/datum/robust_beam/proc/Start()
+	Draw()
+//	recalculate_in(sleep_time)
+
+/*/datum/robust_beam/proc/recalculate()
+	if(recalculating)
+		recalculate_in(sleep_time)
+		return
+	recalculating = TRUE
+	timing_id = null
+	if(origin && target && get_dist(origin,target)<max_distance && origin.z == target.z)
+		var/origin_turf = get_turf(origin)
+		var/target_turf = get_turf(target)
+		if(!static_beam && (origin_turf != origin_oldloc || target_turf != target_oldloc))
+			origin_oldloc = origin_turf //so we don't keep checking against their initial positions, leading to endless Reset()+Draw() calls
+			target_oldloc = target_turf
+			Reset()
+			Draw()
+		after_calculate()
+		recalculating = FALSE
+	else
+		End()*/
+
+/datum/robust_beam/proc/afterDraw()
+	return
+
+/*/datum/robust_beam/proc/recalculate_in(time)
+	if(timing_id)
+		deltimer(timing_id)
+	timing_id = addtimer(CALLBACK(src, .proc/recalculate), time, TIMER_STOPPABLE)
+
+/datum/robust_beam/proc/after_calculate()
+	if((sleep_time == null) || finished)	//Does not automatically recalculate.
+		return
+	if(isnull(timing_id))
+		timing_id = addtimer(CALLBACK(src, .proc/recalculate), sleep_time, TIMER_STOPPABLE)
+*/
+/datum/robust_beam/proc/End(destroy_self = TRUE)
+	finished = TRUE
+	//if(!isnull(timing_id))
+	//	deltimer(timing_id)
+	//if(!QDELETED(src) && destroy_self)
+	qdel(src)
+
+/datum/robust_beam/proc/Reset()
+	for(var/obj/effect/r_ebeam/B in elements)
+		qdel(B)
+	elements.Cut()
+
+/datum/robust_beam/Destroy()
+	Reset()
+	target = null
+	origin = null
+	return ..()
+
+/datum/robust_beam/proc/Draw()
+	var/Angle = round(Get_Angle(origin,target))
+	var/matrix/rot_matrix = matrix()
+	rot_matrix.Turn(Angle)
+
+	//Translation vector for origin and target
+	var/DX = (32*target.x+target.pixel_x+shift_x_target)-(32*origin.x+origin.pixel_x+shift_x_origin)
+	var/DY = (32*target.y+target.pixel_y+shift_y_target)-(32*origin.y+origin.pixel_y+shift_y_origin)
+	var/N = 0
+	var/length = round(sqrt((DX)**2+(DY)**2)) //hypotenuse of the triangle formed by target and origin's displacement
+
+	for(N in 0 to length-1 step 32)//-1 as we want < not <=, but we want the speed of X in Y to Z and step X
+		var/obj/effect/r_ebeam/X = new beam_type(origin_oldloc)
+		X.owner = src
+		elements += X
+
+		//Assign icon, for main segments it's base_icon, for the end, it's icon+icon_state
+		//cropped by a transparent box of length-N pixel size
+		if(N+32>length)
+			var/icon/II = new(icon, icon_state)
+			II.DrawBox(null,1,(length-N),32,32)
+			X.icon = II
+		else
+			X.icon = base_icon
+		X.transform = rot_matrix
+
+		//Calculate pixel offsets (If necessary)
+		var/Pixel_x
+		var/Pixel_y
+		if(DX == 0)
+			Pixel_x = 0
+		else
+			Pixel_x = round(sin(Angle)+32*sin(Angle)*(N+16)/32)
+		if(DY == 0)
+			Pixel_y = 0
+		else
+			Pixel_y = round(cos(Angle)+32*cos(Angle)*(N+16)/32)
+
+		//Position the effect so the beam is one continous line
+		var/a
+		if(abs(Pixel_x)>32)
+			a = Pixel_x > 0 ? round(Pixel_x/32) : Ceiling(Pixel_x/32)
+			X.x += a
+			Pixel_x %= 32
+		if(abs(Pixel_y)>32)
+			a = Pixel_y > 0 ? round(Pixel_y/32) : Ceiling(Pixel_y/32)
+			X.y += a
+			Pixel_y %= 32
+
+		X.pixel_x = Pixel_x
+		X.pixel_y = Pixel_y
+		CHECK_TICK
+	afterDraw()
+	sleep(sleep_time)
+	Reset()
+	while(!QDELETED(src))
+		End()
+
+/obj/effect/r_ebeam
+	mouse_opacity = 0
+	anchored = 1
+	var/datum/robust_beam/owner
+
+/obj/effect/r_ebeam/Destroy()
+	owner = null
+	return ..()
+
+/atom/proc/RBeam(atom/BeamTarget,icon_state="b_beam",icon='icons/effects/beam.dmi',time=50, maxdistance=10,beam_type=/obj/effect/r_ebeam,beam_sleep_time = 3, target_x_shift = 0, target_y_shift = 0, origin_x_shift = 0, origin_y_shift = 0)
+	var/datum/robust_beam/newbeam = new(src,BeamTarget,icon,icon_state,time,maxdistance,beam_type,beam_sleep_time,target_x_shift,target_y_shift,origin_x_shift,origin_y_shift)
+	INVOKE_ASYNC(newbeam, /datum/robust_beam/.proc/Start)
+	return newbeam

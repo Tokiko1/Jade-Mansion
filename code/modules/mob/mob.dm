@@ -675,6 +675,15 @@
 		else if(ko || (!has_legs && !ignore_legs) || chokehold)
 			fall(forced = 1)
 	canmove = !(ko || resting || stunned || chokehold || buckled || (!has_legs && !ignore_legs && !has_arms))
+	if(isliving(src))
+		var/mob/living/L = src
+		if(L.status_effects)
+			if(L.status_effects.len)
+				for(var/datum/status_effect/restraining/cur_effect in L.status_effects)
+					if(!cur_effect.can_move)
+						canmove = 0
+					if(!cur_effect.can_stand || lying)
+						lying = 90
 	density = !lying
 	if(lying)
 		if(layer == initial(layer)) //to avoid special cases like hiding larvas.
@@ -684,10 +693,7 @@
 			layer = initial(layer)
 	update_transform()
 	update_action_buttons_icon(status_only=TRUE)
-	if(isliving(src))
-		var/mob/living/L = src
-		if(L.has_status_effect(/datum/status_effect/freon))
-			canmove = 0
+
 	if(!lying && lying_prev)
 		if(client)
 			client.move_delay = world.time + movement_delay()

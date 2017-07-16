@@ -2,16 +2,31 @@
 	name = "laser"
 	icon_state = "laser"
 	pass_flags = PASSTABLE | PASSGLASS | PASSGRILLE
-	damage = 20
+	damage = 0
 	light_range = 2
 	damage_type = BURN
-	hitsound = 'sound/weapons/sear.ogg'
+	hitsound = 'sound/weapons/effects/searwall.ogg'
 	hitsound_wall = 'sound/weapons/effects/searwall.ogg'
 	flag = "laser"
 	eyeblur = 2
 	impact_effect_type = /obj/effect/overlay/temp/impact_effect/blue_laser
-	light_color = LIGHT_COLOR_RED
 	hitscan = 1
 	showbeam = 1
-	beam_icon = "sat_beam"
+	beam_icon = "ice_beam"
 	beamduration = 2
+
+/obj/item/projectile/ice_beam/on_hit(atom/target, blocked = 0)
+	var/turf/open/target_turf = get_turf(target)
+	if(target_turf)
+		for(var/turf/open/turfa in circleviewturfs(target, 2))
+			for(var/obj/I in turfa.contents)
+				if(!HAS_SECONDARY_FLAG(I, FROZEN))
+					I.make_frozen_visual()
+			for(var/mob/living/L in turfa.contents)
+				if(L == target)
+					L.apply_status_effect(/datum/status_effect/restraining/freon/strongfreeze)
+				else if(prob(10))
+					L.apply_status_effect(/datum/status_effect/restraining/freon)
+
+			turfa.MakeSlippery(TURF_WET_PERMAFROST, 5)
+	..()
