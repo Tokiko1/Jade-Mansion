@@ -25,6 +25,13 @@
 	var/p_y = 16			// the pixel location of the tile that the player clicked. Default is the center
 	var/speed = 0.8			//Amount of deciseconds it takes for projectile to travel
 	var/Angle = 0
+	var/hitscan = 0			//hitscan projectiles ignore speed and instantly travel to their destination
+	var/showbeam = 0		//for use with hitscan, shows a beam
+	var/beam_icon = ""
+	var/beamduration = 5	//for use with hitscan, duration of the beam
+	var/beam_impact_effect = /obj/effect/overlay/temp/laserbeam_impact //a special impact effect that is displayed where the laser impacts, neccesary if you want a beam displayed
+
+
 	var/spread = 0			//amount (in degrees) of projectile spread
 	var/legacy = 0			//legacy projectile system
 	animate_movement = 0	//Use SLIDE_STEPS in conjunction with legacy
@@ -61,6 +68,8 @@
 		on_range()
 
 /obj/item/projectile/proc/on_range() //if we want there to be effects when they reach the end of their range
+	if(hitscan && showbeam)
+		firer.Beam(src, icon_state = beam_icon, time= beamduration)
 	qdel(src)
 
 //to get the correct limb (if any) for the projectile hit message
@@ -77,8 +86,30 @@
 /obj/item/projectile/proc/prehit(atom/target)
 	return
 
+//hitscan stuff
+/obj/item/projectile/proc/calculate_shift_x(atom/target)
+	if(target == original) //the projectile hit the target originally clicked
+		return p_x + target.pixel_x - 16
+	else
+		return target.pixel_x
+
+/obj/item/projectile/proc/calculate_shift_y(atom/target)
+	if(target == original) //the projectile hit the target originally clicked
+		return p_y + target.pixel_y - 16
+	else
+		return target.pixel_y
+
+
+//hitscanstuff end
+
 /obj/item/projectile/proc/on_hit(atom/target, blocked = 0)
 	var/turf/target_loca = get_turf(target)
+	if(target && hitscan && showbeam && beam_impact_effect)
+		var/shiftx = calculate_shift_x(target)
+		var/shifty = calculate_shift_y(target)
+		var/beamhit = new beam_impact_effect(target_loca, target, shiftx, shifty, beamduration)
+		firer.Beam(beamhit, icon_state = beam_icon, time= beamduration)
+
 	if(!isliving(target))
 		if(impact_effect_type)
 			new impact_effect_type(target_loca, target, src)
@@ -225,7 +256,7 @@
 			step_towards(src, locate(new_x, new_y, z))
 			next_run += max(world.tick_lag, speed)
 			var/delay = next_run - world.time
-			if(delay <= world.tick_lag*2)
+			if(delay <= world.tick_lag*2 || hitscan)
 				pixel_x = pixel_x_offset
 				pixel_y = pixel_y_offset
 			else
@@ -236,7 +267,7 @@
 					if(!(original in permutated))
 						Collide(original)
 			Range()
-			if (delay > 0)
+			if (delay > 0 && !hitscan)
 				sleep(delay)
 
 	else //old projectile system

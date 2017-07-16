@@ -214,7 +214,7 @@
 	icon = 'icons/effects/fire.dmi'
 	icon_state = "3"
 	duration = 20
-	
+
 /obj/effect/overlay/temp/cult
 	randomdir = 0
 	duration = 10
@@ -561,11 +561,11 @@
 
 /obj/effect/overlay/temp/impact_effect/New(loc, atom/target, obj/item/projectile/P)
 	if(target == P.original) //the projectile hit the target originally clicked
-		pixel_x = P.p_x + target.pixel_x - 16 + rand(-4,4)
-		pixel_y = P.p_y + target.pixel_y - 16 + rand(-4,4)
+		pixel_x = P.p_x + target.pixel_x - 16
+		pixel_y = P.p_y + target.pixel_y - 16
 	else
-		pixel_x = target.pixel_x + rand(-4,4)
-		pixel_y = target.pixel_y + rand(-4,4)
+		pixel_x = target.pixel_x
+		pixel_y = target.pixel_y
 	..()
 
 /obj/effect/overlay/temp/impact_effect/red_laser

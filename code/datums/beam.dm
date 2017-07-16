@@ -15,13 +15,23 @@
 	var/beam_type = /obj/effect/ebeam //must be subtype
 	var/timing_id = null
 	var/recalculating = FALSE
+	var/shift_x_target = 0
+	var/shift_y_target = 0
+	var/shift_x_origin = 0
+	var/shift_y_origin = 0
 
-/datum/beam/New(beam_origin,beam_target,beam_icon='icons/effects/beam.dmi',beam_icon_state="b_beam",time=50,maxdistance=10,btype = /obj/effect/ebeam,beam_sleep_time=3)
+
+/datum/beam/New(beam_origin,beam_target,beam_icon='icons/effects/beam.dmi',beam_icon_state="b_beam",time=50,maxdistance=10,btype = /obj/effect/ebeam,beam_sleep_time=3, target_x_shift = 0, target_y_shift = 0, origin_x_shift = 0, origin_y_shift = 0)
 	origin = beam_origin
 	origin_oldloc =	get_turf(origin)
 	target = beam_target
 	target_oldloc = get_turf(target)
 	sleep_time = beam_sleep_time
+	shift_x_target = target_x_shift
+	shift_y_target = target_y_shift
+	shift_x_origin = origin_x_shift
+	shift_y_origin = origin_y_shift
+
 	if(origin_oldloc == origin && target_oldloc == target)
 		static_beam = 1
 	max_distance = maxdistance
@@ -92,8 +102,8 @@
 	rot_matrix.Turn(Angle)
 
 	//Translation vector for origin and target
-	var/DX = (32*target.x+target.pixel_x)-(32*origin.x+origin.pixel_x)
-	var/DY = (32*target.y+target.pixel_y)-(32*origin.y+origin.pixel_y)
+	var/DX = (32*target.x+target.pixel_x+shift_x_target)-(32*origin.x+origin.pixel_x+shift_x_origin)
+	var/DY = (32*target.y+target.pixel_y+shift_y_target)-(32*origin.y+origin.pixel_y+shift_y_origin)
 	var/N = 0
 	var/length = round(sqrt((DX)**2+(DY)**2)) //hypotenuse of the triangle formed by target and origin's displacement
 
@@ -149,7 +159,7 @@
 	owner = null
 	return ..()
 
-/atom/proc/Beam(atom/BeamTarget,icon_state="b_beam",icon='icons/effects/beam.dmi',time=50, maxdistance=10,beam_type=/obj/effect/ebeam,beam_sleep_time = 3)
-	var/datum/beam/newbeam = new(src,BeamTarget,icon,icon_state,time,maxdistance,beam_type,beam_sleep_time)
+/atom/proc/Beam(atom/BeamTarget,icon_state="b_beam",icon='icons/effects/beam.dmi',time=50, maxdistance=10,beam_type=/obj/effect/ebeam,beam_sleep_time = 3, target_x_shift = 0, target_y_shift = 0, origin_x_shift = 0, origin_y_shift = 0)
+	var/datum/beam/newbeam = new(src,BeamTarget,icon,icon_state,time,maxdistance,beam_type,beam_sleep_time,target_x_shift,target_y_shift,origin_x_shift,origin_y_shift)
 	INVOKE_ASYNC(newbeam, /datum/beam/.proc/Start)
 	return newbeam

@@ -11,3 +11,7 @@
 	eyeblur = 2
 	impact_effect_type = /obj/effect/overlay/temp/impact_effect/blue_laser
 	light_color = LIGHT_COLOR_RED
+	hitscan = 1
+	showbeam = 1
+	beam_icon = "sat_beam"
+	beamduration = 2
