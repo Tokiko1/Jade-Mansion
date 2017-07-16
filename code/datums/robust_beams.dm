@@ -1,5 +1,5 @@
 //Beam Datum and effect
-/datum/beam
+/datum/robust_beam
 	var/atom/origin = null
 	var/atom/target = null
 	var/list/elements = list()
@@ -12,7 +12,7 @@
 	var/target_oldloc = null
 	var/origin_oldloc = null
 	var/static_beam = 0
-	var/beam_type = /obj/effect/ebeam //must be subtype
+	var/beam_type = /obj/effect/r_ebeam //must be subtype
 	var/timing_id = null
 	var/recalculating = FALSE
 	var/shift_x_target = 0
@@ -21,9 +21,9 @@
 	var/shift_y_origin = 0
 
 
-/datum/beam/New(beam_origin,beam_target,beam_icon='icons/effects/beam.dmi',beam_icon_state="b_beam",time=50,maxdistance=10,btype = /obj/effect/ebeam,beam_sleep_time=3, target_x_shift = 0, target_y_shift = 0, origin_x_shift = 0, origin_y_shift = 0)
+/datum/robust_beam/New(beam_origin,beam_target,beam_icon='icons/effects/beam.dmi',beam_icon_state="b_beam",time=50,maxdistance=10,btype = /obj/effect/r_ebeam,beam_sleep_time=3, target_x_shift = 0, target_y_shift = 0, origin_x_shift = 0, origin_y_shift = 0)
 	origin = beam_origin
-	origin_oldloc =	get_turf(origin)
+	origin_oldloc = get_turf(origin)
 	target = beam_target
 	target_oldloc = get_turf(target)
 	sleep_time = beam_sleep_time
@@ -39,13 +39,13 @@
 	icon = beam_icon
 	icon_state = beam_icon_state
 	beam_type = btype
-	addtimer(CALLBACK(src,.proc/End), time)
+//	addtimer(CALLBACK(src,.proc/End), time)
 
-/datum/beam/proc/Start()
+/datum/robust_beam/proc/Start()
 	Draw()
-	recalculate_in(sleep_time)
+//	recalculate_in(sleep_time)
 
-/datum/beam/proc/recalculate()
+/*/datum/robust_beam/proc/recalculate()
 	if(recalculating)
 		recalculate_in(sleep_time)
 		return
@@ -62,41 +62,41 @@
 		after_calculate()
 		recalculating = FALSE
 	else
-		End()
+		End()*/
 
-/datum/beam/proc/afterDraw()
+/datum/robust_beam/proc/afterDraw()
 	return
 
-/datum/beam/proc/recalculate_in(time)
+/*/datum/robust_beam/proc/recalculate_in(time)
 	if(timing_id)
 		deltimer(timing_id)
 	timing_id = addtimer(CALLBACK(src, .proc/recalculate), time, TIMER_STOPPABLE)
 
-/datum/beam/proc/after_calculate()
+/datum/robust_beam/proc/after_calculate()
 	if((sleep_time == null) || finished)	//Does not automatically recalculate.
 		return
 	if(isnull(timing_id))
 		timing_id = addtimer(CALLBACK(src, .proc/recalculate), sleep_time, TIMER_STOPPABLE)
-
-/datum/beam/proc/End(destroy_self = TRUE)
+*/
+/datum/robust_beam/proc/End(destroy_self = TRUE)
 	finished = TRUE
-	if(!isnull(timing_id))
-		deltimer(timing_id)
-	if(!QDELETED(src) && destroy_self)
-		qdel(src)
+	//if(!isnull(timing_id))
+	//	deltimer(timing_id)
+	//if(!QDELETED(src) && destroy_self)
+	qdel(src)
 
-/datum/beam/proc/Reset()
-	for(var/obj/effect/ebeam/B in elements)
+/datum/robust_beam/proc/Reset()
+	for(var/obj/effect/r_ebeam/B in elements)
 		qdel(B)
 	elements.Cut()
 
-/datum/beam/Destroy()
+/datum/robust_beam/Destroy()
 	Reset()
 	target = null
 	origin = null
 	return ..()
 
-/datum/beam/proc/Draw()
+/datum/robust_beam/proc/Draw()
 	var/Angle = round(Get_Angle(origin,target))
 	var/matrix/rot_matrix = matrix()
 	rot_matrix.Turn(Angle)
@@ -108,7 +108,7 @@
 	var/length = round(sqrt((DX)**2+(DY)**2)) //hypotenuse of the triangle formed by target and origin's displacement
 
 	for(N in 0 to length-1 step 32)//-1 as we want < not <=, but we want the speed of X in Y to Z and step X
-		var/obj/effect/ebeam/X = new beam_type(origin_oldloc)
+		var/obj/effect/r_ebeam/X = new beam_type(origin_oldloc)
 		X.owner = src
 		elements += X
 
@@ -149,17 +149,21 @@
 		X.pixel_y = Pixel_y
 		CHECK_TICK
 	afterDraw()
+	sleep(sleep_time)
+	Reset()
+	while(!QDELETED(src))
+		End()
 
-/obj/effect/ebeam
+/obj/effect/r_ebeam
 	mouse_opacity = 0
 	anchored = 1
-	var/datum/beam/owner
+	var/datum/robust_beam/owner
 
-/obj/effect/ebeam/Destroy()
+/obj/effect/r_ebeam/Destroy()
 	owner = null
 	return ..()
 
-/atom/proc/Beam(atom/BeamTarget,icon_state="b_beam",icon='icons/effects/beam.dmi',time=50, maxdistance=10,beam_type=/obj/effect/ebeam,beam_sleep_time = 3, target_x_shift = 0, target_y_shift = 0, origin_x_shift = 0, origin_y_shift = 0)
-	var/datum/beam/newbeam = new(src,BeamTarget,icon,icon_state,time,maxdistance,beam_type,beam_sleep_time,target_x_shift,target_y_shift,origin_x_shift,origin_y_shift)
-	INVOKE_ASYNC(newbeam, /datum/beam/.proc/Start)
+/atom/proc/RBeam(atom/BeamTarget,icon_state="b_beam",icon='icons/effects/beam.dmi',time=50, maxdistance=10,beam_type=/obj/effect/r_ebeam,beam_sleep_time = 3, target_x_shift = 0, target_y_shift = 0, origin_x_shift = 0, origin_y_shift = 0)
+	var/datum/robust_beam/newbeam = new(src,BeamTarget,icon,icon_state,time,maxdistance,beam_type,beam_sleep_time,target_x_shift,target_y_shift,origin_x_shift,origin_y_shift)
+	INVOKE_ASYNC(newbeam, /datum/robust_beam/.proc/Start)
 	return newbeam

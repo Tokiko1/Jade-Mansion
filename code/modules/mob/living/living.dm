@@ -535,6 +535,24 @@
 		return
 	changeNext_move(CLICK_CD_RESIST)
 
+	if(status_effects)
+		var/can_resist_out = TRUE
+		var/datum/status_effect/restraining/resist_target
+		var/highest_resist_priority = 0
+		for(var/datum/status_effect/restraining/cur_effect in status_effects)
+			if(!cur_effect.can_resist)
+				can_resist_out = FALSE
+			else if(highest_resist_priority < cur_effect.restrain_priority)
+				resist_target = cur_effect
+				highest_resist_priority = cur_effect.restrain_priority
+		if(can_resist_out == TRUE && resist_target)
+			to_chat(src, "You start resisting out of the [resist_target.resist_name]!")
+			if(do_mob(src, src, resist_target.resist_timer))
+				if(resist_target)
+					to_chat(src, "You successfully resist out of the [resist_target.resist_name]!")
+					remove_status_effect(resist_target)
+					update_canmove()
+
 	//resisting grabs (as if it helps anyone...)
 	if(!restrained(ignore_grab = 1) && pulledby)
 		visible_message("<span class='danger'>[src] resists against [pulledby]'s grip!</span>")
@@ -549,14 +567,6 @@
 	else if(isobj(loc))
 		var/obj/C = loc
 		C.container_resist(src)
-
-	else if(has_status_effect(/datum/status_effect/freon))
-		to_chat(src, "You start breaking out of the ice cube!")
-		if(do_mob(src, src, 40))
-			if(has_status_effect(/datum/status_effect/freon))
-				to_chat(src, "You break out of the ice cube!")
-				remove_status_effect(/datum/status_effect/freon)
-				update_canmove()
 
 	else if(canmove)
 		if(on_fire)

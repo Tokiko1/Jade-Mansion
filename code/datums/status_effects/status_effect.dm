@@ -10,6 +10,20 @@
 	var/status_type = STATUS_EFFECT_UNIQUE //How many of the effect can be on one mob, and what happens when you try to add another
 	var/alert_type = /obj/screen/alert/status_effect //the alert thrown by the status effect, contains name and description
 
+/datum/status_effect/restraining //status effects that you can resist out of, maybe
+	var/can_resist = 1
+	var/resist_timer = 50
+	var/can_move = 1
+	var/can_stand = 1
+	var/can_act = 1 //this prevents people from resisting out, keep that in mind
+	var/resist_name = "binding"
+	var/restrain_priority = 0 //if you have multiple effects, the one with the highest priority will be the first you resist out of
+
+/datum/status_effect/restraining/process()
+	..()
+	if(!can_act)
+		owner.Stun(3)
+
 /datum/status_effect/New(mob/living/new_owner)
 	if(new_owner)
 		owner = new_owner
