@@ -20,7 +20,7 @@
 /datum/status_effect/restraining/freon/on_apply()
 	if(!owner.stat)
 		to_chat(owner, "<span class='userdanger'>You become frozen in a cube!</span>")
-	cube = icon('icons/effects/freeze.dmi', "ice_cube")
+	cube = icon('icons/effects/water.dmi', "ice_cube")
 	owner.add_overlay(cube)
 	owner.update_canmove()
 
@@ -33,8 +33,6 @@
 				qdel(src)
 
 /datum/status_effect/restraining/freon/on_remove()
-	if(!owner.stat)
-		to_chat(owner, "The cube melts!")
 	owner.cut_overlay(cube)
 	owner.update_canmove()
 

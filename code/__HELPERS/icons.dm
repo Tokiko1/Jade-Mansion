@@ -981,7 +981,7 @@ GLOBAL_LIST_EMPTY(friendly_animal_types)
 		if(!P)
 			P = new /icon
 			for(var/iconstate in icon_states(icon))
-				var/icon/O = new('icons/effects/freeze.dmi', "ice_cube")
+				var/icon/O = new('icons/effects/water.dmi', "ice_cube")
 				IC = new(icon, iconstate)
 				O.Blend(IC, ICON_ADD)
 				P.Insert(O, iconstate)
