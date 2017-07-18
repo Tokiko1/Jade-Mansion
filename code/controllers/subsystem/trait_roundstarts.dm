@@ -78,6 +78,9 @@
 			if("Porcelain Speaker")
 				traitholder.grant_language(/datum/language/porcelain)
 
+			if("Ice Beam")
+				itemstoadd += /obj/item/weapon/gun/energy/ice_beam_gun
+
 
 
 	if(itemstoadd.len)

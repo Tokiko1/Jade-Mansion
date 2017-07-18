@@ -14,7 +14,7 @@
 
 // BEGIN_INCLUDE
 #include "_maps\basemap.dm"
-#include "_maps\stonemansion.dm"
+#include "_maps\woodmansion.dm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
 #include "code\__DATASTRUCTURES\globals.dm"
@@ -85,6 +85,7 @@
 #include "code\__HELPERS\matrices.dm"
 #include "code\__HELPERS\mobs.dm"
 #include "code\__HELPERS\names.dm"
+#include "code\__HELPERS\objs.dm"
 #include "code\__HELPERS\priority_announce.dm"
 #include "code\__HELPERS\pronouns.dm"
 #include "code\__HELPERS\radio.dm"

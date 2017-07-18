@@ -409,9 +409,9 @@
 	var/offset_sink = TRUE
 
 /obj/structure/sink/New()
+	..()
 	if(offset_sink)
-		pixel_x = (src.dir & 3)? 0 : (src.dir == 4 ? 8 : -8)
-		pixel_y = (src.dir & 3)? (src.dir ==1 ? 8 : -8) : 0
+		adjust_spawning_pixels(8, 8)
 
 /obj/structure/sink/attack_hand(mob/living/user)
 	if(!user || !istype(user))

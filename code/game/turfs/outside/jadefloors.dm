@@ -24,7 +24,7 @@
 
 /turf/open/tiles
 	icon = 'icons/turf/jadefloors.dmi'
-	icon_state = "wooden_tile"
+	icon_state = ""
 	name = "\proper tile"
 
 /turf/open/tiles/stonejadetile
@@ -41,3 +41,17 @@
 
 /turf/open/tiles/darkstonetile
 	icon_state = "darkstone_tile"
+
+/turf/open/tiles/woodenboards
+	icon_state = ""
+	name = "\proper wooden floor"
+
+/turf/open/tiles/woodenboards/woodentile1
+	icon_state = "wood1"
+
+/turf/open/tiles/woodenboards/woodentile2
+	icon_state = "wood2"
+
+/turf/open/tiles/woodenboards/woodentile3
+	icon_state = "wood3"
+

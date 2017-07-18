@@ -58,7 +58,8 @@ GLOBAL_LIST_INIT(traitlistpaged, list(
 "Weak Fate" = list("tname" = "Weak Fate", "tdesc" = "Fate seems to ignore you. Random fluff events involving you are usually less intense, both good and bad.", "tcost" = 0, "tnotes" = null, "active" = null),
 "Hardy" = list("tname" = "Hardy", "tdesc" = "Your body is stronger than usual. +25 HP", "tcost" = 1, "tnotes" = null, "active" = null),
 "Frail" = list("tname" = "Frail", "tdesc" = "Your body is frail. -30 HP", "tcost" = -1, "tnotes" = null, "active" = null),
-"Porcelain Speaker" = list("tname" = "Porcelain Speaker", "tdesc" = "You can speak Porcelain Common, the most common language in the Porcelain empire.", "tcost" = 1, "tnotes" = null, "active" = null)
+"Porcelain Speaker" = list("tname" = "Porcelain Speaker", "tdesc" = "You can speak Porcelain Common, the most common language in the Porcelain empire.", "tcost" = 1, "tnotes" = null, "active" = null),
+"Ice Beam" = list("tname" = "Ice Beam", "tdesc" = "You start with an ice beam gun, capable of freezing floors and people.", "tcost" = 4, "tnotes" = null, "active" = null)
 
 
 )

@@ -10,3 +10,11 @@
 
 	canSmoothWith = list(/turf/closed/jadewall/)
 	smooth = SMOOTH_TRUE
+
+/turf/closed/jadewall/wooden
+	name = "wooden wall"
+	desc = "A huge chunk of wood used to separate rooms."
+	icon = 'icons/turf/walls/brightwood.dmi'
+	icon_state = "wood"
+
+	canSmoothWith = list(/turf/closed/jadewall/wooden)
