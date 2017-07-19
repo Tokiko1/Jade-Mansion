@@ -47,7 +47,7 @@
 	treasure_value = 1500
 
 /obj/item/treasure/silverbar
-	name = "gold bar"
+	name = "silver bar"
 	icon = 'icons/obj/mining.dmi'
 	desc = "A bar of pure silver. Exceptionally valuable."
 	icon_state = "sheet-silver"
