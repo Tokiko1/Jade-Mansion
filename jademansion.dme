@@ -717,6 +717,7 @@
 #include "code\game\objects\items\eightball.dm"
 #include "code\game\objects\items\jadecleaners.dm"
 #include "code\game\objects\items\jadeitems.dm"
+#include "code\game\objects\items\jadetreasure.dm"
 #include "code\game\objects\items\latexballoon.dm"
 #include "code\game\objects\items\nuke_tools.dm"
 #include "code\game\objects\items\religion.dm"

@@ -437,14 +437,15 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 		return //General ambience check is below the ship ambience so one can play without the other
 
 	if(prob(35))
-		var/sound = pick(ambientsounds)
+		if(ambientsounds.len)
+			var/sound = pick(ambientsounds)
 
-		if(!L.client.played)
-			L << sound(sound, repeat = 0, wait = 0, volume = 25, channel = 1)
-			L.client.played = 1
-			sleep(600)			//ewww - this is very very bad
-			if(L.&& L.client)
-				L.client.played = 0
+			if(!L.client.played)
+				L << sound(sound, repeat = 0, wait = 0, volume = 25, channel = 1)
+				L.client.played = 1
+				sleep(600)			//ewww - this is very very bad
+				if(L.&& L.client)
+					L.client.played = 0
 
 /atom/proc/has_gravity(turf/T)
 	if(!T || !isturf(T))
