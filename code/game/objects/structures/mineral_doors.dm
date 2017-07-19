@@ -315,9 +315,8 @@
 	doorlockdifficulty  = 95
 
 /obj/structure/mineral_door/wood/lock/paper/maze/Initialize()
-	if(prob(30))
-		doorlocked = 1
-	if(prob(30))
+	..()
+	if(prob(45))
 		doorkeyid = "nobody"
 
 /obj/structure/mineral_door/wood/lock/paper/maze/Close()
