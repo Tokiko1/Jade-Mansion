@@ -674,6 +674,7 @@
 			fall()
 		else if(ko || (!has_legs && !ignore_legs) || chokehold)
 			fall(forced = 1)
+	anchored = 0
 	canmove = !(ko || resting || stunned || chokehold || buckled || (!has_legs && !ignore_legs && !has_arms))
 	if(isliving(src))
 		var/mob/living/L = src
@@ -684,6 +685,8 @@
 						canmove = 0
 					if(!cur_effect.can_stand || lying)
 						lying = 90
+					if(cur_effect.does_anchor)
+						anchored = 1
 	density = !lying
 	if(lying)
 		if(layer == initial(layer)) //to avoid special cases like hiding larvas.

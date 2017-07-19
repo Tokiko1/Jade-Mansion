@@ -393,6 +393,17 @@
 		canmove = 0
 	else
 		canmove = 1
+	anchored = 0
+	if(isliving(src))
+		var/mob/living/L = src
+		if(L.status_effects)
+			if(L.status_effects.len)
+				for(var/datum/status_effect/restraining/cur_effect in L.status_effects)
+					if(!cur_effect.can_move)
+						canmove = 0
+					if(cur_effect.does_anchor)
+						anchored = 1
+
 	update_transform()
 	update_action_buttons_icon()
 	return canmove

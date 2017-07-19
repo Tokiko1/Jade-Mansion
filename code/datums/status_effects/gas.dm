@@ -11,6 +11,7 @@
 	can_act = 1
 	resist_name = "ice cube"
 	restrain_priority = 100
+	does_anchor = 1
 
 /obj/screen/alert/status_effect/freon
 	name = "Frozen Solid"

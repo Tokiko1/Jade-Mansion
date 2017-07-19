@@ -18,6 +18,7 @@
 	var/can_act = 1 //this prevents people from resisting out, keep that in mind
 	var/resist_name = "binding"
 	var/restrain_priority = 0 //if you have multiple effects, the one with the highest priority will be the first you resist out of
+	var/does_anchor = 0 //does this prevent others from pulling the victim?
 
 /datum/status_effect/restraining/process()
 	..()

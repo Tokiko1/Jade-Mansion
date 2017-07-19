@@ -63,7 +63,7 @@
 "bk" = (/obj/structure/filingcabinet/chestdrawer,/turf/open/tiles/woodenboards/woodentile1,/area/inside/theatre_office)
 "bl" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/theatre_office)
 "bm" = (/turf/closed/jadewall,/area/inside/hallways)
-"bn" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/tiles/woodenboards/woodentile1,/area/outside)
+"bn" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
 "bo" = (/turf/closed/jadewall,/area/inside/theatre)
 "bp" = (/turf/closed/jadewall/wooden,/area/inside/theatre)
 "bq" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/theatre)
@@ -189,390 +189,392 @@
 "dG" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_2)
 "dH" = (/obj/structure/table,/turf/open/floor/plasteel/rockvault,/area/inside/cleaning_room)
 "dI" = (/turf/open/floor/plasteel/rockvault,/area/inside/cleaning_room)
-"dJ" = (/obj/structure/table,/obj/item/weapon/storage/toolbox/mechanical,/turf/open/floor/plasteel/rockvault,/area/inside/workshop)
-"dK" = (/obj/structure/table,/turf/open/floor/plasteel/rockvault,/area/inside/workshop)
-"dL" = (/obj/structure/table/wood,/obj/item/weapon/lipstick,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_2)
-"dM" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_2)
-"dN" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/floor/plasteel/rockvault,/area/inside/cleaning_room)
-"dO" = (/obj/structure/table,/obj/item/weapon/storage/toolbox/electrical,/turf/open/floor/plasteel/rockvault,/area/inside/workshop)
-"dP" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"dQ" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_2)
-"dR" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"dS" = (/obj/machinery/light,/turf/open/floor/plasteel/rockvault,/area/inside/workshop)
-"dT" = (/turf/open/hole/outside,/area/outside)
-"dU" = (/turf/open/outside/roofing/tile,/area/outside)
-"dV" = (/turf/open/outside/roofing/north,/area/outside)
-"dW" = (/turf/open/outside/roofing/east,/area/outside)
-"dX" = (/turf/closed/jadewall,/area/inside/medical)
-"dY" = (/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"dZ" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/floor/plasteel/white,/area/inside/medical)
-"ea" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/closet/jademansion/medicalclothes,/turf/open/floor/plasteel/white,/area/inside/medical)
-"eb" = (/obj/structure/closet/jademansion/othermedsupplies,/turf/open/floor/plasteel/white,/area/inside/medical)
-"ec" = (/obj/machinery/light,/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"ed" = (/turf/open/floor/plasteel/white,/area/inside/medical)
-"ee" = (/obj/structure/chair/wood/normal,/turf/open/carpetred,/area/inside/hallways)
-"ef" = (/turf/closed/jadewall/wooden,/area/inside/medical)
-"eg" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
-"eh" = (/obj/machinery/sleeper/survival_pod,/turf/open/floor/plasteel/white,/area/inside/medical)
-"ei" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/hallways)
-"ej" = (/obj/structure/largepotplant/cherryblossom,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
-"ek" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
-"el" = (/obj/structure/chair/wood/normal,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
-"em" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/obj/machinery/sleeper/survival_pod,/turf/open/floor/plasteel/white,/area/inside/medical)
-"en" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/obj/machinery/light{dir = 8},/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
-"eo" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/floor/plasteel/white,/area/inside/medical)
-"ep" = (/turf/closed/jadewall,/area/inside/freezer)
-"eq" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/floor/plasteel/white,/area/inside/freezer)
-"er" = (/obj/structure/window/paperframe,/turf/open/tiles/woodentile,/area/inside/diningroom)
-"es" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
-"et" = (/turf/closed/jadewall/wooden,/area/inside/diningroom)
-"eu" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
-"ev" = (/obj/effect/landmark/start/downstairsmaid,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
-"ew" = (/obj/effect/landmark/start/downstairsmaid,/turf/open/floor/plasteel/white,/area/inside/medical)
-"ex" = (/obj/structure/chair,/turf/open/floor/plasteel/white,/area/inside/medical)
-"ey" = (/turf/open/floor/plasteel/white,/area/inside/freezer)
-"ez" = (/obj/structure/closet/crate/freezer/anchored,/turf/open/floor/plasteel/white,/area/inside/freezer)
-"eA" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
-"eB" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
-"eC" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
-"eD" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
-"eE" = (/obj/machinery/light,/turf/open/floor/plasteel/white,/area/inside/medical)
-"eF" = (/obj/structure/table/glass,/turf/open/floor/plasteel/white,/area/inside/medical)
-"eG" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/white,/area/inside/freezer)
-"eH" = (/turf/open/tiles/redtile,/area/inside/diningroom)
-"eI" = (/obj/structure/chair/wood/normal,/turf/open/tiles/redtile,/area/inside/diningroom)
-"eJ" = (/turf/closed/jadewall/wooden,/area/inside/kitchen)
-"eK" = (/turf/closed/jadewall,/area/inside/kitchen)
-"eL" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/white,/area/inside/freezer)
-"eM" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
-"eN" = (/obj/structure/table/wood/fancy,/turf/open/tiles/redtile,/area/inside/diningroom)
-"eO" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
-"eP" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"eQ" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"eR" = (/obj/machinery/processor,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"eS" = (/obj/structure/table,/obj/machinery/microwave,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"eT" = (/obj/structure/table,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"eU" = (/obj/structure/closet/crate/bin,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"eV" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/kitchen)
-"eW" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/snacks/yakiimo,/turf/open/floor/plasteel/white,/area/inside/freezer)
-"eX" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/soysauce,/turf/open/floor/plasteel/white,/area/inside/freezer)
-"eY" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
-"eZ" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"fa" = (/obj/machinery/chem_heater,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"fb" = (/turf/closed/jadewall/wooden,/area/inside/garden)
-"fc" = (/obj/effect/landmark/start/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"fd" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/peppermill,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"fe" = (/obj/machinery/chem_master/condimaster,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"ff" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/outside/sand,/area/outside)
-"fg" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/reagent_dispensers/watertank/high,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
-"fh" = (/obj/structure/closet/jademansion/garden,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
-"fi" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/rockvault,/area/inside/garden)
-"fj" = (/obj/machinery/vending/hydroseeds/jade,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
-"fk" = (/obj/machinery/vending/hydronutrients/jade,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
-"fl" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/redtile,/area/inside/diningroom)
-"fm" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/machinery/deepfryer,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"fn" = (/obj/structure/table,/obj/item/weapon/storage/bag/tray,/obj/item/weapon/storage/bag/tray,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"fo" = (/obj/machinery/chem_dispenser,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"fp" = (/turf/open/floor/plasteel/rockvault,/area/inside/garden)
-"fq" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
-"fr" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
-"fs" = (/obj/structure/closet/jademansion/kitchensupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"ft" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/saltshaker,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"fu" = (/obj/effect/landmark/start/gardener,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"fv" = (/obj/structure/closet/jademansion/kitchen,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"fw" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/soysauce,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"fx" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/floor/plasteel/white,/area/inside/kitchen)
-"fy" = (/obj/effect/landmark/start/gardener,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
-"fz" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/garden)
-"fA" = (/obj/structure/table,/obj/machinery/reagentgrinder,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"fB" = (/obj/structure/sink{dir = 4},/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"fC" = (/obj/machinery/biogenerator,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"fD" = (/obj/structure/table,/obj/machinery/juicer,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"fE" = (/obj/machinery/biogenerator,/obj/item/weapon/reagent_containers/glass/bucket,/obj/item/weapon/reagent_containers/glass/bucket,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/rockvault,/area/inside/garden)
-"fF" = (/obj/machinery/plantgenes,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
-"fG" = (/obj/machinery/light,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
-"fH" = (/obj/machinery/seed_extractor,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
-"fI" = (/obj/machinery/smartfridge/drying_rack,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
-"fJ" = (/turf/closed/jadewall/wooden,/area/inside/storage/storage_1)
-"fK" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/redtile,/area/inside/bar)
-"fL" = (/turf/closed/jadewall/wooden,/area/inside/bar)
-"fM" = (/obj/structure/window/paperframe,/turf/open/tiles/woodentile,/area/inside/bar)
-"fN" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/floor/plasteel/white,/area/inside/bar)
-"fO" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/bar)
-"fP" = (/turf/closed/jadewall/wooden,/area/inside/personal_locker_room)
-"fQ" = (/obj/structure/table/wood,/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/item/weapon/reagent_containers/spray/chemsprayer/megacleaner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
-"fR" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
-"fS" = (/turf/open/tiles/redtile,/area/inside/bar)
-"fT" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"fU" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"fV" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"fW" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"fX" = (/obj/machinery/vending/cigarette,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"fY" = (/obj/machinery/vending/boozeomat/jade,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"fZ" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"ga" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks/beer,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"gb" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/personal_locker_room)
-"gc" = (/turf/open/carpetred,/area/inside/personal_locker_room)
-"gd" = (/obj/structure/dresser,/turf/open/carpetred,/area/inside/personal_locker_room)
-"ge" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
-"gf" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/personal_locker_room)
-"gg" = (/obj/structure/mirror,/turf/open/carpetred,/area/inside/personal_locker_room)
-"gh" = (/obj/structure/closet/jademansion/maids,/turf/open/carpetred,/area/inside/personal_locker_room)
-"gi" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/inside/personal_locker_room)
-"gj" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
-"gk" = (/obj/structure/closet/cardboard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
-"gl" = (/obj/structure/mineral_door/wood/lock,/turf/open/carpetred,/area/inside/personal_locker_room)
-"gm" = (/obj/structure/mineral_door/wood/lock/owner/locked,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
-"gn" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/hallways)
-"go" = (/obj/structure/closet/secure_closet/personal/cabinet,/turf/open/carpetred,/area/inside/personal_locker_room)
-"gp" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/personal_locker_room)
-"gq" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"gr" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/personal_locker_room)
-"gs" = (/obj/effect/landmark/start/headmaid,/turf/open/carpetred,/area/inside/personal_locker_room)
-"gt" = (/obj/effect/landmark/start/butler,/turf/open/carpetred,/area/inside/personal_locker_room)
-"gu" = (/obj/structure/mineral_door/wood/lock,/turf/open/tiles/woodenboards/woodentile1,/area/inside/personal_locker_room)
-"gv" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/hallways)
-"gw" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/closet/secure_closet/personal/cabinet,/turf/open/carpetred,/area/inside/personal_locker_room)
-"gx" = (/obj/effect/landmark/start/upstairsmaid,/turf/open/carpetred,/area/inside/personal_locker_room)
-"gy" = (/obj/effect/landmark/start/guard,/turf/open/carpetred,/area/inside/personal_locker_room)
-"gz" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
-"gA" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/stairs/east,/area/inside/hallways)
-"gB" = (/obj/effect/landmark/start/downstairsmaid,/turf/open/carpetred,/area/inside/personal_locker_room)
-"gC" = (/obj/effect/landmark/start/gardener,/turf/open/carpetred,/area/inside/personal_locker_room)
-"gD" = (/obj/machinery/light,/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/personal_locker_room)
-"gE" = (/obj/structure/largepotplant/glossleaf,/turf/open/carpetred,/area/inside/hallways)
-"gF" = (/turf/open/outside/roofing/west,/area/outside)
-"gG" = (/obj/structure/largepotplant/yucapalm,/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"gH" = (/obj/machinery/light,/turf/open/stairs/west,/area/inside/hallways)
-"gI" = (/turf/closed/jadewall/wooden,/area/inside/office)
-"gJ" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"gK" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"gL" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"gM" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"gN" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"gO" = (/obj/structure/closet/jademansion/officesupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"gP" = (/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"gQ" = (/obj/structure/largepotplant/yucapalm,/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"gR" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/laptop,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"gS" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/office)
-"gT" = (/turf/open/carpetred,/area/inside/office)
-"gU" = (/turf/closed/jadewall/wooden,/area/inside/side_room1)
-"gV" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"gW" = (/turf/closed/jadewall/wooden,/area/inside/gambling_area)
-"gX" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"gY" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"gZ" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/side_room1)
-"ha" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"hb" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"hc" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"hd" = (/obj/structure/window/paperframe,/turf/open/tiles/woodentile,/area/inside/gambling_area)
-"he" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
-"hf" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
-"hg" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
-"hh" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"hi" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"hj" = (/obj/structure/filingcabinet/chestdrawer,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"hk" = (/obj/machinery/photocopier,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"hl" = (/turf/open/carpetred,/area/inside/side_room1)
-"hm" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"hn" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/gambling_area)
-"ho" = (/obj/structure/table/wood/poker,/turf/open/carpetred,/area/inside/gambling_area)
-"hp" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
-"hq" = (/obj/effect/landmark/start/upstairsmaid,/turf/open/carpetred,/area/inside/side_room1)
-"hr" = (/obj/structure/table/wood/poker,/obj/effect/holodeck_effect/cards,/turf/open/carpetred,/area/inside/gambling_area)
-"hs" = (/obj/structure/table/wood/poker,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/carpetred,/area/inside/gambling_area)
-"ht" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
-"hu" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/fitness)
-"hv" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/fitness)
-"hw" = (/turf/closed/jadewall/wooden,/area/inside/fitness)
-"hx" = (/obj/structure/largepotplant/yucapalm,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"hy" = (/obj/structure/table/wood,/obj/item/weapon/phone,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"hz" = (/obj/structure/table/wood/poker,/obj/effect/holodeck_effect/cards,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/carpetred,/area/inside/gambling_area)
-"hA" = (/turf/open/carpetred/carpetblue,/area/inside/fitness)
-"hB" = (/obj/structure/weightlifter,/turf/open/carpetred/carpetblue,/area/inside/fitness)
-"hC" = (/obj/structure/stacklifter,/turf/open/carpetred/carpetblue,/area/inside/fitness)
-"hD" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"hE" = (/obj/machinery/light,/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"hF" = (/turf/open/carpetred,/area/inside/gambling_area)
-"hG" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/fitness)
-"hH" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"hI" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
-"hJ" = (/obj/structure/chair/stool/bar,/turf/open/carpetred,/area/inside/gambling_area)
-"hK" = (/obj/machinery/computer/slot_machine,/turf/open/carpetred,/area/inside/gambling_area)
-"hL" = (/obj/structure/punching_bag,/turf/open/carpetred/carpetblue,/area/inside/fitness)
-"hM" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/gambling_area)
-"hN" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/fitness)
-"hO" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
-"hP" = (/obj/structure/window/paperframe,/turf/open/tiles/woodentile,/area/inside/side_room1)
-"hQ" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"hR" = (/obj/structure/chair/wood/normal,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"hS" = (/obj/structure/table/wood,/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"hT" = (/obj/machinery/light,/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
-"hU" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
-"hV" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
-"hW" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"hX" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"hY" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/hallways)
-"hZ" = (/turf/open/stairs/moving/northup,/area/inside/hallways)
-"ia" = (/obj/structure/table/wood,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"ib" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"ic" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/stairs/north,/area/inside/hallways)
-"id" = (/turf/open/stairs/north,/area/inside/hallways)
-"ie" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"if" = (/obj/effect/landmark/start/owner,/turf/open/carpetred,/area/inside/side_room1)
-"ig" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/hallways)
-"ih" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"ii" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"ij" = (/obj/structure/table/wood,/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"ik" = (/obj/machinery/light,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"il" = (/turf/open/outside/roofing,/area/outside)
-"im" = (/turf/closed/jadewall/wooden,/area/inside/sleeping_room1)
-"in" = (/turf/closed/jadewall/wooden,/area/inside/library1)
-"io" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/sleeping_room1)
-"ip" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/sleeping_room1)
-"iq" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"ir" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"is" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"it" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"iu" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"iv" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"iw" = (/obj/structure/window/paperframe,/turf/open/tiles/woodentile,/area/inside/library1)
-"ix" = (/obj/structure/chair/wood/normal,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"iy" = (/obj/structure/largepotplant/yucapalm,/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"iz" = (/obj/structure/largepotplant/yucapalm,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"iA" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/sleeping_room1)
-"iB" = (/turf/open/carpetred,/area/inside/sleeping_room1)
-"iC" = (/obj/structure/dresser,/turf/open/carpetred,/area/inside/sleeping_room1)
-"iD" = (/obj/structure/bed,/turf/open/carpetred,/area/inside/sleeping_room1)
-"iE" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/sleeping_room1)
-"iF" = (/obj/machinery/light{dir = 8},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"iG" = (/obj/machinery/light{dir = 8},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"iH" = (/turf/open/carpetred,/area/inside/library1)
-"iI" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/laptop,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"iJ" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/library1)
-"iK" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/inside/sleeping_room1)
-"iL" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/library1)
-"iM" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/library1)
-"iN" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"iO" = (/obj/structure/chair/wood/normal,/turf/open/carpetred,/area/inside/sleeping_room1)
-"iP" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/sleeping_room1)
-"iQ" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
-"iR" = (/obj/structure/window/paperframe,/turf/open/tiles/woodentile,/area/inside/sleeping_room1)
-"iS" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"iT" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
-"iU" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/laptop,/turf/open/carpetred,/area/inside/sleeping_room1)
-"iV" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/sleeping_room1)
-"iW" = (/obj/machinery/photocopier,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
-"iX" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"iY" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"iZ" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/carpetred,/area/inside/sleeping_room1)
-"ja" = (/obj/effect/landmark/start/owner,/turf/open/carpetred,/area/inside/sleeping_room1)
-"jb" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/carpetred,/area/inside/sleeping_room1)
-"jc" = (/obj/structure/filingcabinet/chestdrawer,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
-"jd" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
-"je" = (/obj/structure/table/wood,/obj/item/weapon/phone,/turf/open/carpetred,/area/inside/sleeping_room1)
-"jf" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
-"jg" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
-"jh" = (/obj/effect/landmark/start/upstairsmaid,/turf/open/carpetred,/area/inside/hallways)
-"ji" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
-"jj" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
-"jk" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
-"jl" = (/turf/closed/outsiderock/rock2,/area/inside/hallways)
-"jm" = (/obj/effect/landmark/start/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"jn" = (/obj/structure/toilet,/obj/machinery/light{dir = 8},/turf/open/floor/plasteel/white,/area/inside/toilet)
-"jo" = (/obj/structure/sink{dir = 1},/turf/open/floor/plasteel/white,/area/inside/toilet)
-"jp" = (/obj/structure/table/wood/fancy,/turf/open/carpetred,/area/inside/hallways)
-"jq" = (/turf/closed/jadewall,/area/inside/guard_room)
-"jr" = (/obj/machinery/shower{dir = 4},/turf/open/floor/plasteel/white,/area/inside/toilet)
-"js" = (/obj/machinery/shower,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/white,/area/inside/toilet)
-"jt" = (/turf/closed/jadewall/wooden,/area/inside/library_backroom1)
-"ju" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"jv" = (/obj/structure/table,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jw" = (/obj/structure/table,/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jx" = (/obj/machinery/shower{dir = 1},/turf/open/floor/plasteel/white,/area/inside/toilet)
-"jy" = (/obj/structure/closet/jademansion/librarysupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"jz" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"jA" = (/turf/open/stairs/moving/northdown,/area/inside/hallways)
-"jB" = (/obj/structure/closet/jademansion/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jC" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jD" = (/obj/effect/turf_decal/woodline,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"jE" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jF" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jG" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jH" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/guard_room)
-"jI" = (/turf/open/hole,/area/inside/hallways)
-"jJ" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"jK" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"jL" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"jM" = (/obj/structure/table,/obj/structure/mansiondecoration/laptop,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jN" = (/obj/effect/landmark/start/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jO" = (/turf/closed/jadewall,/area/inside/vault)
-"jP" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/vault)
-"jQ" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"jR" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"jS" = (/obj/structure/table,/obj/machinery/recharger,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jT" = (/obj/structure/table,/obj/item/treasure/jadepiece,/obj/effect/landmark/jade/secure_storage_spawn1,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
-"jU" = (/obj/structure/bar_stack/gold/full,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
-"jV" = (/obj/structure/table/wood/fancy,/obj/item/treasure/jadepiece,/obj/item/treasure/jadepiece,/obj/item/treasure/jadepiece,/obj/item/treasure/jadepiece,/obj/item/treasure/jadepiece,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
-"jW" = (/obj/structure/bar_stack/silver/full,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
-"jX" = (/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
-"jY" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/library_backroom1)
-"jZ" = (/turf/open/carpetred,/area/inside/library_backroom1)
-"ka" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"kb" = (/obj/structure/table,/obj/item/treasure/jadepiece,/obj/effect/landmark/jade/secure_storage_spawn2,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
-"kc" = (/obj/structure/mineral_door/wood/lock/owner/locked,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
-"kd" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/library_backroom1)
-"ke" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/library_backroom1)
-"kf" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/library_backroom1)
-"kg" = (/obj/structure/table,/obj/item/treasure/jadepiece,/obj/effect/landmark/jade/secure_storage_spawn3,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
-"kh" = (/obj/machinery/light,/obj/effect/landmark/jade/secure_storage_spawn_bulky1,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
-"ki" = (/obj/effect/landmark/jade/secure_storage_spawn4,/obj/structure/table,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
-"kj" = (/obj/effect/landmark/jade/secure_storage_spawn5,/obj/structure/table,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
-"kk" = (/obj/machinery/light,/obj/effect/landmark/jade/secure_storage_spawn_bulky2,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
-"kl" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/library_backroom1)
-"km" = (/turf/closed/jadewall/wooden,/area/inside/maint)
-"kn" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"ko" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"kp" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"kq" = (/obj/structure/ladder,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"kr" = (/obj/structure/table/wood,/obj/item/weapon/phone,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"ks" = (/obj/structure/table/wood,/obj/item/weapon/reagent_containers/spray/chemsprayer/megacleaner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"kt" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/hole,/area/inside/hallways)
-"ku" = (/obj/effect/turf_decal/woodline{dir = 9; icon_state = "woodline"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kv" = (/obj/effect/turf_decal/woodline{dir = 1; icon_state = "woodline"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kw" = (/obj/effect/turf_decal/woodline{dir = 5},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kx" = (/obj/effect/turf_decal/woodline{dir = 8; icon_state = "woodline"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"ky" = (/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kz" = (/obj/effect/turf_decal/woodline{dir = 4; icon_state = "woodline"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kA" = (/obj/effect/turf_decal/woodline/corner{dir = 4; icon_state = "woodline_corner"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kB" = (/obj/effect/turf_decal/woodline/corner{dir = 8; icon_state = "woodline_corner"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kC" = (/obj/machinery/light{dir = 8},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kD" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kE" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kF" = (/turf/open/tiles/redtile,/area/inside/hallways)
-"kG" = (/obj/effect/turf_decal/woodline{dir = 10},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kH" = (/obj/effect/turf_decal/woodline,/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kI" = (/obj/effect/turf_decal/woodline/corner{dir = 1; icon_state = "woodline_corner"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kJ" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kK" = (/obj/effect/turf_decal/woodline/corner,/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kL" = (/obj/effect/turf_decal/woodline{dir = 6; icon_state = "woodline"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
-"kM" = (/obj/machinery/light,/turf/open/hole,/area/inside/hallways)
-"kN" = (/obj/item/weapon/reagent_containers/food/snacks/maidlunchbox,/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"kO" = (/obj/machinery/light,/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"kP" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"kQ" = (/obj/structure/mineral_door/wood/lock/paper/maze,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"kR" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"kS" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"kT" = (/obj/structure/closet/jademansion/swimmingw,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"kU" = (/obj/machinery/light{dir = 8},/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"kV" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/stairs/north,/area/inside/maint)
-"kW" = (/turf/open/stairs/north,/area/inside/maint)
-"kX" = (/turf/open/stairs/moving/northdown,/area/inside/maint)
-"kY" = (/obj/structure/table/wood,/obj/item/weapon/reagent_containers/food/snacks/bun,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"kZ" = (/obj/item/treasure/jadepiece,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"la" = (/obj/structure/easel,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"lb" = (/obj/structure/janitorialcart,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"lc" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"dJ" = (/obj/machinery/space_heater,/turf/open/floor/plasteel/rockvault,/area/inside/workshop)
+"dK" = (/obj/structure/table,/obj/item/weapon/storage/toolbox/mechanical,/turf/open/floor/plasteel/rockvault,/area/inside/workshop)
+"dL" = (/obj/structure/table,/obj/machinery/cell_charger,/turf/open/floor/plasteel/rockvault,/area/inside/workshop)
+"dM" = (/obj/structure/table/wood,/obj/item/weapon/lipstick,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_2)
+"dN" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_2)
+"dO" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/floor/plasteel/rockvault,/area/inside/cleaning_room)
+"dP" = (/obj/structure/table,/obj/item/weapon/storage/toolbox/electrical,/turf/open/floor/plasteel/rockvault,/area/inside/workshop)
+"dQ" = (/obj/structure/table,/obj/item/weapon/stock_parts/cell/hyper,/obj/item/weapon/stock_parts/cell/hyper,/turf/open/floor/plasteel/rockvault,/area/inside/workshop)
+"dR" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"dS" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_2)
+"dT" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"dU" = (/obj/machinery/light,/turf/open/floor/plasteel/rockvault,/area/inside/workshop)
+"dV" = (/turf/open/hole/outside,/area/outside)
+"dW" = (/turf/open/outside/roofing/tile,/area/outside)
+"dX" = (/turf/open/outside/roofing/north,/area/outside)
+"dY" = (/turf/open/outside/roofing/east,/area/outside)
+"dZ" = (/turf/closed/jadewall,/area/inside/medical)
+"ea" = (/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"eb" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/floor/plasteel/white,/area/inside/medical)
+"ec" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/closet/jademansion/medicalclothes,/turf/open/floor/plasteel/white,/area/inside/medical)
+"ed" = (/obj/structure/closet/jademansion/othermedsupplies,/turf/open/floor/plasteel/white,/area/inside/medical)
+"ee" = (/obj/machinery/light,/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"ef" = (/turf/open/floor/plasteel/white,/area/inside/medical)
+"eg" = (/obj/structure/chair/wood/normal,/turf/open/carpetred,/area/inside/hallways)
+"eh" = (/turf/closed/jadewall/wooden,/area/inside/medical)
+"ei" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
+"ej" = (/obj/machinery/sleeper/survival_pod,/turf/open/floor/plasteel/white,/area/inside/medical)
+"ek" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/hallways)
+"el" = (/obj/structure/largepotplant/cherryblossom,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
+"em" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
+"en" = (/obj/structure/chair/wood/normal,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
+"eo" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/obj/machinery/sleeper/survival_pod,/turf/open/floor/plasteel/white,/area/inside/medical)
+"ep" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/obj/machinery/light{dir = 8},/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
+"eq" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/floor/plasteel/white,/area/inside/medical)
+"er" = (/turf/closed/jadewall,/area/inside/freezer)
+"es" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/floor/plasteel/white,/area/inside/freezer)
+"et" = (/obj/structure/window/paperframe,/turf/open/tiles/woodentile,/area/inside/diningroom)
+"eu" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
+"ev" = (/turf/closed/jadewall/wooden,/area/inside/diningroom)
+"ew" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
+"ex" = (/obj/effect/landmark/start/downstairsmaid,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
+"ey" = (/obj/effect/landmark/start/downstairsmaid,/turf/open/floor/plasteel/white,/area/inside/medical)
+"ez" = (/obj/structure/chair,/turf/open/floor/plasteel/white,/area/inside/medical)
+"eA" = (/turf/open/floor/plasteel/white,/area/inside/freezer)
+"eB" = (/obj/structure/closet/crate/freezer/anchored,/turf/open/floor/plasteel/white,/area/inside/freezer)
+"eC" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
+"eD" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
+"eE" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
+"eF" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
+"eG" = (/obj/machinery/light,/turf/open/floor/plasteel/white,/area/inside/medical)
+"eH" = (/obj/structure/table/glass,/turf/open/floor/plasteel/white,/area/inside/medical)
+"eI" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/white,/area/inside/freezer)
+"eJ" = (/turf/open/tiles/redtile,/area/inside/diningroom)
+"eK" = (/obj/structure/chair/wood/normal,/turf/open/tiles/redtile,/area/inside/diningroom)
+"eL" = (/turf/closed/jadewall/wooden,/area/inside/kitchen)
+"eM" = (/turf/closed/jadewall,/area/inside/kitchen)
+"eN" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/white,/area/inside/freezer)
+"eO" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
+"eP" = (/obj/structure/table/wood/fancy,/turf/open/tiles/redtile,/area/inside/diningroom)
+"eQ" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
+"eR" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"eS" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"eT" = (/obj/machinery/processor,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"eU" = (/obj/structure/table,/obj/machinery/microwave,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"eV" = (/obj/structure/table,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"eW" = (/obj/structure/closet/crate/bin,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"eX" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/kitchen)
+"eY" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/snacks/yakiimo,/turf/open/floor/plasteel/white,/area/inside/freezer)
+"eZ" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/soysauce,/turf/open/floor/plasteel/white,/area/inside/freezer)
+"fa" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
+"fb" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fc" = (/obj/machinery/chem_heater,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fd" = (/turf/closed/jadewall/wooden,/area/inside/garden)
+"fe" = (/obj/effect/landmark/start/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"ff" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/peppermill,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fg" = (/obj/machinery/chem_master/condimaster,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fh" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/outside/sand,/area/outside)
+"fi" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/reagent_dispensers/watertank/high,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
+"fj" = (/obj/structure/closet/jademansion/garden,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
+"fk" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/rockvault,/area/inside/garden)
+"fl" = (/obj/machinery/vending/hydroseeds/jade,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
+"fm" = (/obj/machinery/vending/hydronutrients/jade,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
+"fn" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/redtile,/area/inside/diningroom)
+"fo" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/machinery/deepfryer,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fp" = (/obj/structure/table,/obj/item/weapon/storage/bag/tray,/obj/item/weapon/storage/bag/tray,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fq" = (/obj/machinery/chem_dispenser,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fr" = (/turf/open/floor/plasteel/rockvault,/area/inside/garden)
+"fs" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
+"ft" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
+"fu" = (/obj/structure/closet/jademansion/kitchensupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fv" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/saltshaker,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fw" = (/obj/effect/landmark/start/gardener,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fx" = (/obj/structure/closet/jademansion/kitchen,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fy" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/soysauce,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fz" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/floor/plasteel/white,/area/inside/kitchen)
+"fA" = (/obj/effect/landmark/start/gardener,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
+"fB" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/garden)
+"fC" = (/obj/structure/table,/obj/machinery/reagentgrinder,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fD" = (/obj/structure/sink{dir = 4},/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fE" = (/obj/machinery/biogenerator,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fF" = (/obj/structure/table,/obj/machinery/juicer,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"fG" = (/obj/machinery/biogenerator,/obj/item/weapon/reagent_containers/glass/bucket,/obj/item/weapon/reagent_containers/glass/bucket,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/floor/plasteel/rockvault,/area/inside/garden)
+"fH" = (/obj/machinery/plantgenes,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
+"fI" = (/obj/machinery/light,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
+"fJ" = (/obj/machinery/seed_extractor,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
+"fK" = (/obj/machinery/smartfridge/drying_rack,/turf/open/floor/plasteel/rockvault,/area/inside/garden)
+"fL" = (/turf/closed/jadewall/wooden,/area/inside/storage/storage_1)
+"fM" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/redtile,/area/inside/bar)
+"fN" = (/turf/closed/jadewall/wooden,/area/inside/bar)
+"fO" = (/obj/structure/window/paperframe,/turf/open/tiles/woodentile,/area/inside/bar)
+"fP" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/floor/plasteel/white,/area/inside/bar)
+"fQ" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/bar)
+"fR" = (/turf/closed/jadewall/wooden,/area/inside/personal_locker_room)
+"fS" = (/obj/structure/table/wood,/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/item/weapon/reagent_containers/spray/chemsprayer/megacleaner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
+"fT" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
+"fU" = (/turf/open/tiles/redtile,/area/inside/bar)
+"fV" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"fW" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"fX" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"fY" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"fZ" = (/obj/machinery/vending/cigarette,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"ga" = (/obj/machinery/vending/boozeomat/jade,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gb" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gc" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks/beer,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gd" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/personal_locker_room)
+"ge" = (/turf/open/carpetred,/area/inside/personal_locker_room)
+"gf" = (/obj/structure/dresser,/turf/open/carpetred,/area/inside/personal_locker_room)
+"gg" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
+"gh" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/personal_locker_room)
+"gi" = (/obj/structure/mirror,/turf/open/carpetred,/area/inside/personal_locker_room)
+"gj" = (/obj/structure/closet/jademansion/maids,/turf/open/carpetred,/area/inside/personal_locker_room)
+"gk" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/inside/personal_locker_room)
+"gl" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
+"gm" = (/obj/structure/closet/cardboard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
+"gn" = (/obj/structure/mineral_door/wood/lock,/turf/open/carpetred,/area/inside/personal_locker_room)
+"go" = (/obj/structure/mineral_door/wood/lock/owner/locked,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
+"gp" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/hallways)
+"gq" = (/obj/structure/closet/secure_closet/personal/cabinet,/turf/open/carpetred,/area/inside/personal_locker_room)
+"gr" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/personal_locker_room)
+"gs" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"gt" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/personal_locker_room)
+"gu" = (/obj/effect/landmark/start/headmaid,/turf/open/carpetred,/area/inside/personal_locker_room)
+"gv" = (/obj/effect/landmark/start/butler,/turf/open/carpetred,/area/inside/personal_locker_room)
+"gw" = (/obj/structure/mineral_door/wood/lock,/turf/open/tiles/woodenboards/woodentile1,/area/inside/personal_locker_room)
+"gx" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/hallways)
+"gy" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/closet/secure_closet/personal/cabinet,/turf/open/carpetred,/area/inside/personal_locker_room)
+"gz" = (/obj/effect/landmark/start/upstairsmaid,/turf/open/carpetred,/area/inside/personal_locker_room)
+"gA" = (/obj/effect/landmark/start/guard,/turf/open/carpetred,/area/inside/personal_locker_room)
+"gB" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
+"gC" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/stairs/east,/area/inside/hallways)
+"gD" = (/obj/effect/landmark/start/downstairsmaid,/turf/open/carpetred,/area/inside/personal_locker_room)
+"gE" = (/obj/effect/landmark/start/gardener,/turf/open/carpetred,/area/inside/personal_locker_room)
+"gF" = (/obj/machinery/light,/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/personal_locker_room)
+"gG" = (/obj/structure/largepotplant/glossleaf,/turf/open/carpetred,/area/inside/hallways)
+"gH" = (/turf/open/outside/roofing/west,/area/outside)
+"gI" = (/obj/structure/largepotplant/yucapalm,/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"gJ" = (/obj/machinery/light,/turf/open/stairs/west,/area/inside/hallways)
+"gK" = (/turf/closed/jadewall/wooden,/area/inside/office)
+"gL" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"gM" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"gN" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"gO" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"gP" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"gQ" = (/obj/structure/closet/jademansion/officesupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"gR" = (/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"gS" = (/obj/structure/largepotplant/yucapalm,/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"gT" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/laptop,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"gU" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/office)
+"gV" = (/turf/open/carpetred,/area/inside/office)
+"gW" = (/turf/closed/jadewall/wooden,/area/inside/side_room1)
+"gX" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"gY" = (/turf/closed/jadewall/wooden,/area/inside/gambling_area)
+"gZ" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"ha" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"hb" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/side_room1)
+"hc" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"hd" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"he" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"hf" = (/obj/structure/window/paperframe,/turf/open/tiles/woodentile,/area/inside/gambling_area)
+"hg" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
+"hh" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
+"hi" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
+"hj" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"hk" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"hl" = (/obj/structure/filingcabinet/chestdrawer,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"hm" = (/obj/machinery/photocopier,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"hn" = (/turf/open/carpetred,/area/inside/side_room1)
+"ho" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"hp" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/gambling_area)
+"hq" = (/obj/structure/table/wood/poker,/turf/open/carpetred,/area/inside/gambling_area)
+"hr" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
+"hs" = (/obj/effect/landmark/start/upstairsmaid,/turf/open/carpetred,/area/inside/side_room1)
+"ht" = (/obj/structure/table/wood/poker,/obj/effect/holodeck_effect/cards,/turf/open/carpetred,/area/inside/gambling_area)
+"hu" = (/obj/structure/table/wood/poker,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/carpetred,/area/inside/gambling_area)
+"hv" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
+"hw" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/fitness)
+"hx" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/fitness)
+"hy" = (/turf/closed/jadewall/wooden,/area/inside/fitness)
+"hz" = (/obj/structure/largepotplant/yucapalm,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"hA" = (/obj/structure/table/wood,/obj/item/weapon/phone,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"hB" = (/obj/structure/table/wood/poker,/obj/effect/holodeck_effect/cards,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/carpetred,/area/inside/gambling_area)
+"hC" = (/turf/open/carpetred/carpetblue,/area/inside/fitness)
+"hD" = (/obj/structure/weightlifter,/turf/open/carpetred/carpetblue,/area/inside/fitness)
+"hE" = (/obj/structure/stacklifter,/turf/open/carpetred/carpetblue,/area/inside/fitness)
+"hF" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"hG" = (/obj/machinery/light,/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"hH" = (/turf/open/carpetred,/area/inside/gambling_area)
+"hI" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/fitness)
+"hJ" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"hK" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
+"hL" = (/obj/structure/chair/stool/bar,/turf/open/carpetred,/area/inside/gambling_area)
+"hM" = (/obj/machinery/computer/slot_machine,/turf/open/carpetred,/area/inside/gambling_area)
+"hN" = (/obj/structure/punching_bag,/turf/open/carpetred/carpetblue,/area/inside/fitness)
+"hO" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/gambling_area)
+"hP" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/fitness)
+"hQ" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
+"hR" = (/obj/structure/window/paperframe,/turf/open/tiles/woodentile,/area/inside/side_room1)
+"hS" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"hT" = (/obj/structure/chair/wood/normal,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"hU" = (/obj/structure/table/wood,/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"hV" = (/obj/machinery/light,/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
+"hW" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/gambling_area)
+"hX" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/storage/storage_1)
+"hY" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"hZ" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"ia" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/hallways)
+"ib" = (/turf/open/stairs/moving/northup,/area/inside/hallways)
+"ic" = (/obj/structure/table/wood,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"id" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"ie" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/stairs/north,/area/inside/hallways)
+"if" = (/turf/open/stairs/north,/area/inside/hallways)
+"ig" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"ih" = (/obj/effect/landmark/start/owner,/turf/open/carpetred,/area/inside/side_room1)
+"ii" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/hallways)
+"ij" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"ik" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"il" = (/obj/structure/table/wood,/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"im" = (/obj/machinery/light,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"in" = (/turf/open/outside/roofing,/area/outside)
+"io" = (/turf/closed/jadewall/wooden,/area/inside/sleeping_room1)
+"ip" = (/turf/closed/jadewall/wooden,/area/inside/library1)
+"iq" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/sleeping_room1)
+"ir" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/sleeping_room1)
+"is" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"it" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"iu" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"iv" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"iw" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"ix" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"iy" = (/obj/structure/window/paperframe,/turf/open/tiles/woodentile,/area/inside/library1)
+"iz" = (/obj/structure/chair/wood/normal,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"iA" = (/obj/structure/largepotplant/yucapalm,/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"iB" = (/obj/structure/largepotplant/yucapalm,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"iC" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/sleeping_room1)
+"iD" = (/turf/open/carpetred,/area/inside/sleeping_room1)
+"iE" = (/obj/structure/dresser,/turf/open/carpetred,/area/inside/sleeping_room1)
+"iF" = (/obj/structure/bed,/turf/open/carpetred,/area/inside/sleeping_room1)
+"iG" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/sleeping_room1)
+"iH" = (/obj/machinery/light{dir = 8},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"iI" = (/obj/machinery/light{dir = 8},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"iJ" = (/turf/open/carpetred,/area/inside/library1)
+"iK" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/laptop,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"iL" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/library1)
+"iM" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/inside/sleeping_room1)
+"iN" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/library1)
+"iO" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/library1)
+"iP" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"iQ" = (/obj/structure/chair/wood/normal,/turf/open/carpetred,/area/inside/sleeping_room1)
+"iR" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/sleeping_room1)
+"iS" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
+"iT" = (/obj/structure/window/paperframe,/turf/open/tiles/woodentile,/area/inside/sleeping_room1)
+"iU" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"iV" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
+"iW" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/laptop,/turf/open/carpetred,/area/inside/sleeping_room1)
+"iX" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/sleeping_room1)
+"iY" = (/obj/machinery/photocopier,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
+"iZ" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"ja" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"jb" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/carpetred,/area/inside/sleeping_room1)
+"jc" = (/obj/effect/landmark/start/owner,/turf/open/carpetred,/area/inside/sleeping_room1)
+"jd" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/carpetred,/area/inside/sleeping_room1)
+"je" = (/obj/structure/filingcabinet/chestdrawer,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
+"jf" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library1)
+"jg" = (/obj/structure/table/wood,/obj/item/weapon/phone,/turf/open/carpetred,/area/inside/sleeping_room1)
+"jh" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
+"ji" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
+"jj" = (/obj/effect/landmark/start/upstairsmaid,/turf/open/carpetred,/area/inside/hallways)
+"jk" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
+"jl" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
+"jm" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
+"jn" = (/turf/closed/outsiderock/rock2,/area/inside/hallways)
+"jo" = (/obj/effect/landmark/start/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"jp" = (/obj/structure/toilet,/obj/machinery/light{dir = 8},/turf/open/floor/plasteel/white,/area/inside/toilet)
+"jq" = (/obj/structure/sink{dir = 1},/turf/open/floor/plasteel/white,/area/inside/toilet)
+"jr" = (/obj/structure/table/wood/fancy,/turf/open/carpetred,/area/inside/hallways)
+"js" = (/turf/closed/jadewall,/area/inside/guard_room)
+"jt" = (/obj/machinery/shower{dir = 4},/turf/open/floor/plasteel/white,/area/inside/toilet)
+"ju" = (/obj/machinery/shower,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/white,/area/inside/toilet)
+"jv" = (/turf/closed/jadewall/wooden,/area/inside/library_backroom1)
+"jw" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"jx" = (/obj/structure/table,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jy" = (/obj/structure/table,/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jz" = (/obj/machinery/shower{dir = 1},/turf/open/floor/plasteel/white,/area/inside/toilet)
+"jA" = (/obj/structure/closet/jademansion/librarysupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"jB" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"jC" = (/turf/open/stairs/moving/northdown,/area/inside/hallways)
+"jD" = (/obj/structure/closet/jademansion/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jE" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jF" = (/obj/effect/turf_decal/woodline,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"jG" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jH" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jI" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jJ" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/guard_room)
+"jK" = (/turf/open/hole,/area/inside/hallways)
+"jL" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"jM" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"jN" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"jO" = (/obj/structure/table,/obj/structure/mansiondecoration/laptop,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jP" = (/obj/effect/landmark/start/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jQ" = (/turf/closed/jadewall,/area/inside/vault)
+"jR" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/vault)
+"jS" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"jT" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"jU" = (/obj/structure/table,/obj/machinery/recharger,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jV" = (/obj/structure/table,/obj/item/treasure/jadepiece,/obj/effect/landmark/jade/secure_storage_spawn1,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
+"jW" = (/obj/structure/bar_stack/gold/full,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
+"jX" = (/obj/structure/table/wood/fancy,/obj/item/treasure/jadepiece,/obj/item/treasure/jadepiece,/obj/item/treasure/jadepiece,/obj/item/treasure/jadepiece,/obj/item/treasure/jadepiece,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
+"jY" = (/obj/structure/bar_stack/silver/full,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
+"jZ" = (/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
+"ka" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/library_backroom1)
+"kb" = (/turf/open/carpetred,/area/inside/library_backroom1)
+"kc" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"kd" = (/obj/structure/table,/obj/item/treasure/jadepiece,/obj/effect/landmark/jade/secure_storage_spawn2,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
+"ke" = (/obj/structure/mineral_door/wood/lock/owner/locked,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
+"kf" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/library_backroom1)
+"kg" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/library_backroom1)
+"kh" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/library_backroom1)
+"ki" = (/obj/structure/table,/obj/item/treasure/jadepiece,/obj/effect/landmark/jade/secure_storage_spawn3,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
+"kj" = (/obj/machinery/light,/obj/effect/landmark/jade/secure_storage_spawn_bulky1,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
+"kk" = (/obj/effect/landmark/jade/secure_storage_spawn4,/obj/structure/table,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
+"kl" = (/obj/effect/landmark/jade/secure_storage_spawn5,/obj/structure/table,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
+"km" = (/obj/machinery/light,/obj/effect/landmark/jade/secure_storage_spawn_bulky2,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
+"kn" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/library_backroom1)
+"ko" = (/turf/closed/jadewall/wooden,/area/inside/maint)
+"kp" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"kq" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"kr" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"ks" = (/obj/structure/ladder,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"kt" = (/obj/structure/table/wood,/obj/item/weapon/phone,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"ku" = (/obj/structure/table/wood,/obj/item/weapon/reagent_containers/spray/chemsprayer/megacleaner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"kv" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/hole,/area/inside/hallways)
+"kw" = (/obj/effect/turf_decal/woodline{dir = 9; icon_state = "woodline"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kx" = (/obj/effect/turf_decal/woodline{dir = 1; icon_state = "woodline"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"ky" = (/obj/effect/turf_decal/woodline{dir = 5},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kz" = (/obj/effect/turf_decal/woodline{dir = 8; icon_state = "woodline"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kA" = (/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kB" = (/obj/effect/turf_decal/woodline{dir = 4; icon_state = "woodline"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kC" = (/obj/effect/turf_decal/woodline/corner{dir = 4; icon_state = "woodline_corner"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kD" = (/obj/effect/turf_decal/woodline/corner{dir = 8; icon_state = "woodline_corner"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kE" = (/obj/machinery/light{dir = 8},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kF" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kG" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kH" = (/turf/open/tiles/redtile,/area/inside/hallways)
+"kI" = (/obj/effect/turf_decal/woodline{dir = 10},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kJ" = (/obj/effect/turf_decal/woodline,/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kK" = (/obj/effect/turf_decal/woodline/corner{dir = 1; icon_state = "woodline_corner"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kL" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kM" = (/obj/effect/turf_decal/woodline/corner,/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kN" = (/obj/effect/turf_decal/woodline{dir = 6; icon_state = "woodline"; tag = ""},/turf/open/tiles/woodenboards/woodentile3,/area/inside/hallways)
+"kO" = (/obj/machinery/light,/turf/open/hole,/area/inside/hallways)
+"kP" = (/obj/item/weapon/reagent_containers/food/snacks/maidlunchbox,/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"kQ" = (/obj/machinery/light,/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"kR" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"kS" = (/obj/structure/mineral_door/wood/lock/paper/maze,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"kT" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"kU" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"kV" = (/obj/structure/closet/jademansion/swimmingw,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"kW" = (/obj/machinery/light{dir = 8},/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"kX" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/stairs/north,/area/inside/maint)
+"kY" = (/turf/open/stairs/north,/area/inside/maint)
+"kZ" = (/turf/open/stairs/moving/northdown,/area/inside/maint)
+"la" = (/obj/structure/table/wood,/obj/item/weapon/reagent_containers/food/snacks/bun,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"lb" = (/obj/item/treasure/jadepiece,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"lc" = (/obj/structure/easel,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"ld" = (/obj/structure/janitorialcart,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"le" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -680,10 +682,10 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaacscVcLdgdhdccsaSafafafafafaiafdicIcMdicMdjcvcOcOcO
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaacscscscscscscsafafafafafafafafcEcFcIcvdkdlcvcOcOdmcOcOcOcOcOcOdmcOcRaaaaaaamamamamamalalal
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaadndodpdpdqdrdndsdnauauauauafafauaAaAauauaudtdtdtdtdtdtcRducRcRcRcRcRaaaaaaamamamamaoalalal
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaadndvdvdvdvdvdvdvdvaudwajaiafafafafaiajakaudxdydzdAdBdtdCdCdDdCdCdEdFaaaaaaamamamamalalalal
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaadndvdvdvdGdpdvdvdpaudwajafafafafafafajakaudHdIdIdIdIdtdCdCdJdKdCdJdFaaaaaaamamamamalalalal
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaadndLdvdvdrdpdrdvdMauauauafccaAaAafafauauaudtdtdNdtdtdtdCdCdOdKdCdOdFaaaaaaamamamamalanalal
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaadndpdvdvdvdvdvdvdpaudPafafafafafafafafaiafafafafafaiaudCdCdCdCdCdFdFaaaaaaamamamamanamalan
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaadndMdGdvdQdMdvdGdpaubWafafafaxafafafafafafafafafafafdRdCdCdSdCdCdFaaaaaaaaamamamamamamanam
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaadndvdvdvdGdpdvdvdpaudwajafafafafafafajakaudHdIdIdIdIdtdJdCdKdLdCdKdFaaaaaaamamamamalalalal
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaadndMdvdvdrdpdrdvdNauauauafccaAaAafafauauaudtdtdOdtdtdtdJdCdPdQdCdPdFaaaaaaamamamamalanalal
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaadndpdvdvdvdvdvdvdpaudRafafafafafafafafaiafafafafafaiaudJdCdCdCdCdFdFaaaaaaamamamamanamalan
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaadndNdGdvdSdNdvdGdpaubWafafafaxafafafafafafafafafafafdTdCdCdUdJdJdFaaaaaaaaamamamamamamanam
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaadndndndndndndndndnauauauauauauauauauauauauauauauauauaudFdFdFdFdFdFaaaaaaaaaaaaaaamamamamam
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamamamam
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -701,54 +703,54 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 "}
 
 (1,1,3) = {"
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdUdUdUdUdUdUdUdUdUdUdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdUdUdUdUdUdUdUdUdUdUdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-amamamamdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdUdUdUdUdUdUdUdUdUdUdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-amamamamamamamdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdUdUdUdUdUdUdUdUdUdUdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-aoaoamamamamamdTdTamamdTdTdTdTamamamdTdTdTdTdTdTdTdUdUdUdUdUdUdUdUdUdUdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-alalaoamamamamamamamamamamamamamamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdUdTdTdTdTdTdTdTdTdTdTdT
-alalalamamamamamamamamamamamamamamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdUdWdTdTdTdTdTdTdTdTdTdTdT
-alalalamamamaoaoamamamamamamamamamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdUdWdWdTdTdTdTdTdTdTdTdTdTdT
-alalalamamamalalaoaoaoamamamamamamamauaubVbVbVauauauauauauauaubVbVbVauaubVbVbVauaudXdXdXdXdXdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-anananamamaoalalalalalaoaoamaoaoamamauafafafafaiaebgauadaeaiafafafafafafafafafafdYdXdZeaebdXdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-amamamamaoalalalalalalalalaoalalamamauafafafafafaebgauadaeafafccafafafafafafafafecdXedededdXdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-amamamamalalalalalalalalalalalalamamaudRdRbVafafauauauauauafafaveeeeavcgefefegefefdXehedehdXdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-amamamamananalalalalalalalalalanamamauafafbVafafafafaiafafafafbXbYbYbZeiefejekeleldXehedemdXdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-amamamamamamanalalalalalalalalamamamauaSafbVafaxafafafafafafafbXbYbYbZcgefenekekekeoededdZdXdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-amamamamamamamalalalalalalalalamamamepeqeqepepepepafaferereserererererereteuekevekdXehewexdXdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-amamamamamamamalalalalalalalalamamamepeyeyezezezepaSafereAeBeBeBeBeBeBeAetejeCeCeDdXeheEeFdXdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-amamamamamamamananalalalalalanamamamepeGeyeyeyeyepafafereBeHeHeIeIeHeHeBeJeJeJeJeJeKeKeKeKeKdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-amamamamamamamamamalalalalalaoamamamepeyeyeyeyeLepafafeteMeHeNeNeNeNeHeOeJePeQeReSeSeTeQeUeVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-amamamamamamamamamalalalalalalaoamamepeWeXezezezepccafeYeBeHeNeNeNeNeHeBeZePePePePePePePfaeVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-amamamamamamamamamanananalalalalamfbepepepepepepepfcafeteMeHeNeNeNeNeHeOeJeTePePfdeTePePfeeVamamamamdTdTdTdTdTdTdTdTdTdT
-amamamamamamamamamamamamananalanamfffbfgfhfifjfkfbaSafereBeHeHflfleHeHeBeJfmePePfneTePePfoeVamamamamdTdTdTdTdTdTdTdTdTdT
-amamamamamamamamamamamamamamalamamamfpfpfpfpfpfpfqafafereAeBfreBeBfreBeAeJfsePePfteTfuePePeJamamamamamdTdTdTdTdTdTdTdTdT
-amaoaoamamamamamamamamamamamanamamamfpfpfpfpfpfpfbaSafeteteteteYeYeteteteJfvePfueTfwfuePePfxamamamamamdTdTdTdTdTdTdTdTdT
-aoalalaoaoamamamamamamamamamamamamamfpfpfyfyfpfpfzafafafafafafafafaiafafeVePePePePePePePfAeJamamaoamamdTdTdTdTdTdTdTdTdT
-alalalalalamamamamamamamamamamamamamfpfpfpfpfpfpfzafafafafaxafafafafafafeVePePePfBfCePePfDeJamamalamamdTdTdTdTdTdTdTdTdT
-alalalalanamamamamamamamamamamamamfffbfEfFfGfHfIfbbWbWfJfJfJfJaSafafaffKfLfMfMfNfLfLfOfOfLfLamamalaoamdTdTdTdTdTdTdTdTdT
-alalalanamamamamamamamamamamamamamfbfbfbfbfbfbfbfbfPfJfJfQfRfJeeeeafaffSfTfUfVfVfWfXfYfZgafLamamalalamdTdTdTdTdTdTdTdTdT
-alalanamamamamamamamamamamaoaoamamamfPgbgcgdfPgdgcgbfJgegegefJbYbYafaffSfTfVfVfVfVfVfVfVfVfLamamalalamdTdTdTdTdTdTdTdTdT
-ananamamamamamamamamamamaoalalamamamfPgfggghfPghgggifJgjgegkfJbYbYafaffSfTfTfTfTfTfTfTfTfVfLamamanalamamamdTdTdTdTdTdTdT
-amamamamamamamamamamamamalalalamamamfPglfPfPfPfPfPglfJfJgmfJfJgngnafaffSfSfSfSfSfSfSfSfSfSfLamamamalaoamamdTdTdTdTdTdTdT
-aaaaaaaaaaaaamamamamamamalalalamamamfPgcgbgogogogpgcfPafafafafccafafafafafafafafafafafafgqauamamaoalalamdTdTdTdTdTdTdTdT
-aaaaaaaaaaaaaaamaoamamamalalalamamamgrgfgcgcgcgcgcgifPaSafafafafafafaxafafafafaxafafafafafauamamalalalamdTdTdTdTdTdTdTdT
-aaaaaaaaaaaaaaaaanamamamananalamamamgrgogsgtgofPgcgcguafaffJfJfJfJfJauauafafauauaugvbYbYbZbVamamalalalamdTdTdTdTdTdTdTdT
-aaaaaaaaaaaaaaaaamamamamamamanamaoamgrgwgxgygofPgpgcfPafafgmgegzfRfJdwgAafafgAakaubXbYbYbZbVamamalalalamdTdTdTdTdTdTdTdT
-aaaaaaaaaaaaaaaaamamamamamamamamanamfPgogBgCgofPgpgDfPdYdYfJgjgegkfJdwajafafajakaugEavavgEauamamalalanamdTdTdTdTdTdTdTdT
-aaaaaaaaaaaaaaaaamamamamamamamamamamfPfPgrgrgrfPfPfPfPbVbVfJfJfJfJfJauaubVbVauauauaubVbVauauamamalanamamdTdTdTdTdTdTdTdT
-aaaaaaaaaaaaaaaaamamamamamamamamamamamamaoaoaoaoaoaoaoamamamamamamamamamamamamamamamamamamamamamanamamamdTdTdTdTdTdTdTdT
-aaaaaaaaaaaaaaaaamaoamamamamaoaoamamamamalananalalalanamamamamamamamamamamamamamamamamamamamamamamamamamdTdTdTdTdTdTdTdT
-aaaaaaaaaaaaaaaaaaanamamamamalalaoamamamanamamanalalamamamamamamamaoaoamamamamaoaoamamamaoaoaoamamamamamaoamamdTdTdTdTdT
-aaaaaaaaaaaaaaaaaaaaamamamamanananamamamamamamamananamamaoaoamamaoalalamamamamalalamamamalalalaoamamamamanamamamdTdTdTdT
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdWdWdWdWdWdWdWdWdWdWdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdWdWdWdWdWdWdWdWdWdWdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+amamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdWdWdWdWdWdWdWdWdWdWdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+amamamamamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdWdWdWdWdWdWdWdWdWdWdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+aoaoamamamamamdVdVamamdVdVdVdVamamamdVdVdVdVdVdVdVdWdWdWdWdWdWdWdWdWdWdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+alalaoamamamamamamamamamamamamamamamamdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdWdVdVdVdVdVdVdVdVdVdVdV
+alalalamamamamamamamamamamamamamamamamdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdWdYdVdVdVdVdVdVdVdVdVdVdV
+alalalamamamaoaoamamamamamamamamamamamdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdWdYdYdVdVdVdVdVdVdVdVdVdVdV
+alalalamamamalalaoaoaoamamamamamamamauaubVbVbVauauauauauauauaubVbVbVauaubVbVbVauaudZdZdZdZdZdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+anananamamaoalalalalalaoaoamaoaoamamauafafafafaiaebgauadaeaiafafafafafafafafafafeadZebeceddZdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+amamamamaoalalalalalalalalaoalalamamauafafafafafaebgauadaeafafccafafafafafafafafeedZefefefdZdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+amamamamalalalalalalalalalalalalamamaudTdTbVafafauauauauauafafavegegavcgeheheiehehdZejefejdZdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+amamamamananalalalalalalalalalanamamauafafbVafafafafaiafafafafbXbYbYbZekehelemenendZejefeodZdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+amamamamamamanalalalalalalalalamamamauaSafbVafaxafafafafafafafbXbYbYbZcgehepemememeqefefebdZdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+amamamamamamamalalalalalalalalamamameresesererererafafeteteuetetetetetetevewemexemdZejeyezdZdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+amamamamamamamalalalalalalalalamamamereAeAeBeBeBeraSafeteCeDeDeDeDeDeDeCeveleEeEeFdZejeGeHdZdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+amamamamamamamananalalalalalanamamamereIeAeAeAeAerafafeteDeJeJeKeKeJeJeDeLeLeLeLeLeMeMeMeMeMdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+amamamamamamamamamalalalalalaoamamamereAeAeAeAeNerafafeveOeJePePePePeJeQeLeReSeTeUeUeVeSeWeXdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+amamamamamamamamamalalalalalalaoamamereYeZeBeBeBerccaffaeDeJePePePePeJeDfbeReReReReReReRfceXdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+amamamamamamamamamanananalalalalamfderererererererfeafeveOeJePePePePeJeQeLeVeReRffeVeReRfgeXamamamamdVdVdVdVdVdVdVdVdVdV
+amamamamamamamamamamamamananalanamfhfdfifjfkflfmfdaSafeteDeJeJfnfneJeJeDeLfoeReRfpeVeReRfqeXamamamamdVdVdVdVdVdVdVdVdVdV
+amamamamamamamamamamamamamamalamamamfrfrfrfrfrfrfsafafeteCeDfteDeDfteDeCeLfueReRfveVfweReReLamamamamamdVdVdVdVdVdVdVdVdV
+amaoaoamamamamamamamamamamamanamamamfrfrfrfrfrfrfdaSafevevevevfafaeveveveLfxeRfweVfyfweReRfzamamamamamdVdVdVdVdVdVdVdVdV
+aoalalaoaoamamamamamamamamamamamamamfrfrfAfAfrfrfBafafafafafafafafaiafafeXeReReReReReReRfCeLamamaoamamdVdVdVdVdVdVdVdVdV
+alalalalalamamamamamamamamamamamamamfrfrfrfrfrfrfBafafafafaxafafafafafafeXeReReRfDfEeReRfFeLamamalamamdVdVdVdVdVdVdVdVdV
+alalalalanamamamamamamamamamamamamfhfdfGfHfIfJfKfdbWbWfLfLfLfLaSafafaffMfNfOfOfPfNfNfQfQfNfNamamalaoamdVdVdVdVdVdVdVdVdV
+alalalanamamamamamamamamamamamamamfdfdfdfdfdfdfdfdfRfLfLfSfTfLegegafaffUfVfWfXfXfYfZgagbgcfNamamalalamdVdVdVdVdVdVdVdVdV
+alalanamamamamamamamamamamaoaoamamamfRgdgegffRgfgegdfLggggggfLbYbYafaffUfVfXfXfXfXfXfXfXfXfNamamalalamdVdVdVdVdVdVdVdVdV
+ananamamamamamamamamamamaoalalamamamfRghgigjfRgjgigkfLglgggmfLbYbYafaffUfVfVfVfVfVfVfVfVfXfNamamanalamamamdVdVdVdVdVdVdV
+amamamamamamamamamamamamalalalamamamfRgnfRfRfRfRfRgnfLfLgofLfLgpgpafaffUfUfUfUfUfUfUfUfUfUfNamamamalaoamamdVdVdVdVdVdVdV
+aaaaaaaaaaaaamamamamamamalalalamamamfRgegdgqgqgqgrgefRafafafafccafafafafafafafafafafafafgsauamamaoalalamdVdVdVdVdVdVdVdV
+aaaaaaaaaaaaaaamaoamamamalalalamamamgtghgegegegegegkfRaSafafafafafafaxafafafafaxafafafafafauamamalalalamdVdVdVdVdVdVdVdV
+aaaaaaaaaaaaaaaaanamamamananalamamamgtgqgugvgqfRgegegwafaffLfLfLfLfLauauafafauauaugxbYbYbZbVamamalalalamdVdVdVdVdVdVdVdV
+aaaaaaaaaaaaaaaaamamamamamamanamaoamgtgygzgAgqfRgrgefRafafgogggBfTfLdwgCafafgCakaubXbYbYbZbVamamalalalamdVdVdVdVdVdVdVdV
+aaaaaaaaaaaaaaaaamamamamamamamamanamfRgqgDgEgqfRgrgFfReaeafLglgggmfLdwajafafajakaugGavavgGauamamalalanamdVdVdVdVdVdVdVdV
+aaaaaaaaaaaaaaaaamamamamamamamamamamfRfRgtgtgtfRfRfRfRbVbVfLfLfLfLfLauaubVbVauauauaubVbVauauamamalanamamdVdVdVdVdVdVdVdV
+aaaaaaaaaaaaaaaaamamamamamamamamamamamamaoaoaoaoaoaoaoamamamamamamamamamamamamamamamamamamamamamanamamamdVdVdVdVdVdVdVdV
+aaaaaaaaaaaaaaaaamaoamamamamaoaoamamamamalananalalalanamamamamamamamamamamamamamamamamamamamamamamamamamdVdVdVdVdVdVdVdV
+aaaaaaaaaaaaaaaaaaanamamamamalalaoamamamanamamanalalamamamamamamamaoaoamamamamaoaoamamamaoaoaoamamamamamaoamamdVdVdVdVdV
+aaaaaaaaaaaaaaaaaaaaamamamamanananamamamamamamamananamamaoaoamamaoalalamamamamalalamamamalalalaoamamamamanamamamdVdVdVdV
 aaaaaaaaaaaaaaaaaaaaamamamamamamamamamamamamamamamamamaoalalamamalalalamamamamalanamamamalalalalaoamamamamamamamamamamam
 aaaaaaaaaaaaaaaaaaaaamamaoaoamamamamamamamamamamamamamalananamamanananamamamamanamamamamalalanalalaoamamamamamamamaoaoao
 aaaaaaaaaaaaaaaaaaaaaaamananamamamamamamamamamamamamamanamamamamamamamamamamamamamamamamananamalalalamamamamamaoaoalalal
@@ -764,253 +766,253 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 "}
 
 (1,1,4) = {"
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdUdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdUdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFdUdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdUdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFdUdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdUdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFauaubVbVbVauauauauauauauaubVbVbVauaubVbVbVauaubVbVbVauaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaugGafafafafafafaebgauadaeafafafafafafafafafafafafafafaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFbVafbXbYbYbZafafgHbgauadgHafafafafaxafafafafafaxafafafbVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFbVafbXbYbYbZafafauauauauauafafaAgIgIgIgIgJgIgIgIgIafafbVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFbVafbXbYbYbZafafccafafafafafafdYgIgKgLgMgMgNgOgPgIafafbVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaugQafafaxafafafafaxafafafafaxdYgIgRgSgTgTgTgTgMgIafafaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFgUgUgUgUgUgUgVgVgUgUgWgWgWgWgWgWgIgXgTgTgTgTgTgYgIafgqaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFgZhahbhbhbhchbhbhchahdhehfhghfhegIgNgNhhhigMhjhkgIccafbVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFgZhbhlhlhlhlhlhlhlhmhdhfhnhohohpgIgIgIgIgIgIgIgIgIafafbVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFgZhbhlhlhqhlhlhlhlhmhdhfhnhrhshthdhuhuhuhvhuhuhuhwafafbVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFgUhxhlhlhlhlhlhlhlhyhdhfhnhohzhthdhuhAhBhAhChAhuhwafafaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFgUhahbhbhDhEhbhlhlhbhdhfhFhFhFhfhdhuhAhAhAhAhAhuhGafafaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFgZgZgZgZgZgUhHhlhlhbhIhfhJhJhJhfhdhuhAhAhAhAhAhuhwafafbVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFdUdUdUdUdUgZhbhlhlhbhdhfhKhKhKhfhdhuhAhAhLhAhAhuhwafafbVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFdUdUdUdUdUgZhbhlhlhDhdhfhMhKhKhfhdhuhuhNhuhuhuhuhwafafbVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFdUdUdUdUdUgZhahbhbhahdhfhfhJhJhOfJfJfJfJfJfJhuhuhwafafaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFgZgZgZgZgZgUhPhPhQhPhPhdhfhFhFhffJgjgegzgkfJhwhwhwafgqaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFgUhahRhRhRhShDhbhbhbhahdhfhThUhefJhVgegegefJafafafafafaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFgZhWhlhlhlhlhlhlhlhlhXgWgWgWgWgWfJgegegefRfJafafafafafaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFgZhWhlhlhlhlhlhlhlhlhXaubXbYbYbZfJgegegefRfJafafauauauaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFgZhWhlhlhlhlhlhlhlhlhXauhYbYbYbZfJfRgegegefJafgqauhZhZaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFgUiahlhlhlhlhlhlhlhlibauafbWbWaffJfJfJgmfJfJafafauicidaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-amaoamamamamdTdTdTdTdTdTdTdTdTgFgFgFgUiahlhlhqhlhlhqhlhlhbieafafafccafaiafafafafafafafafafaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-aoalaoaoamamamdTdTdTdTdTdTdTdTgFgFgFgZhWhlhlhlhlhlhlhlhlhbieafafafafafafafafafafafafafafafbVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-alalalalaoamamamdTdTdTdTdTdTdTgFgFgFgZhWhlhlifhlhlhlhlhlibauafbXbYbYavigavihauauauafccafafbVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-alalalalalamamamdTdTdTdTdTdTdTgFgFgFgZhWhlhlhlhlhlhlhlhlhbauaSbXbYigavigavihaudwgAafafafafbVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-alalalalalamamamdTdTdTdTdTdTdTgFgFgFgUhaiiiiiihDijiiiiiihaauafavavckckavavafaudwajafafafikaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-alalalalanamamamdTdTdTdTdTdTdTgFgFgFgUgUgZgZgZgUgUgZgZgZgUaubVbVbVauaubVbVbVauauaubVbVbVauaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-alalanalamamamamdTdTdTdTdTdTdTgFgFdUilililililililililililililililililililililililililililildUdWdWdTdTdTdTdTdTdTdTdTdTdT
-ananamanamamamamdTdTdTdTdTdTdTgFdUilililililililililililililililililililililililililililililildUdWdTdTdTdTdTdTdTdTdTdTdT
-amamamamamamamamamdTdTdTdTdTdTdUilililililililililililililililililililililililililililililililildUdTdTdTdTdTdTdTdTdTdTdT
-amamamamamamamamamamdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-amaoaoamaoamamamamamdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-aoalalaoalaoamamamamdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-alalalalalalamamamamamdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-alalalalalalamamamaoaoamamdTdTdTdTdTdTdTdTdTdTdTdTdTamamamamamamamamamamdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-alalalalalalamamaoalalamamamamamamamamamamamamamamamamamamamamamamamamamamamamdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-alalalalalalamamalalalamamamamamamamamamamamamamamamamamamamamaoaoamaoaoamamamamdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-alalalalalanamamalalanamamamamamamamamaoamamamamamamamamamaoaoalalaoalalamamamamamdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-alalalalanamamamananamamamamaoaoamamaoalaoamamamamamamamaoalalalalalalalamamamamamdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-alalalanamamamamamamamamaoaoalalaoaoalalalaoamamamamaoaoalalalalalalalalaoamamamamamdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-alalalamamamamamamamamaoalalalalalalalalalalamamamamalalalalalalalalalalanamamaoamamamdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-alalalamamamamamamamamalalalalalalalalalalalamamamamalalalalalalalalalalaoamamalaoamamdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-alalalamamamamamamamamalalalalalalalalalalalamamamamalalalalalalalalalalalamamalalamamdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdWdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdWdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHdWdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdWdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHdWdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdWdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHauaubVbVbVauauauauauauauaubVbVbVauaubVbVbVauaubVbVbVauaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaugIafafafafafafaebgauadaeafafafafafafafafafafafafafafaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHbVafbXbYbYbZafafgJbgauadgJafafafafaxafafafafafaxafafafbVdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHbVafbXbYbYbZafafauauauauauafafaAgKgKgKgKgLgKgKgKgKafafbVdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHbVafbXbYbYbZafafccafafafafafafeagKgMgNgOgOgPgQgRgKafafbVdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaugSafafaxafafafafaxafafafafaxeagKgTgUgVgVgVgVgOgKafafaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHgWgWgWgWgWgWgXgXgWgWgYgYgYgYgYgYgKgZgVgVgVgVgVhagKafgsaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHhbhchdhdhdhehdhdhehchfhghhhihhhggKgPgPhjhkgOhlhmgKccafbVdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHhbhdhnhnhnhnhnhnhnhohfhhhphqhqhrgKgKgKgKgKgKgKgKgKafafbVdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHhbhdhnhnhshnhnhnhnhohfhhhphthuhvhfhwhwhwhxhwhwhwhyafafbVdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHgWhzhnhnhnhnhnhnhnhAhfhhhphqhBhvhfhwhChDhChEhChwhyafafaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHgWhchdhdhFhGhdhnhnhdhfhhhHhHhHhhhfhwhChChChChChwhIafafaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHhbhbhbhbhbgWhJhnhnhdhKhhhLhLhLhhhfhwhChChChChChwhyafafbVdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHdWdWdWdWdWhbhdhnhnhdhfhhhMhMhMhhhfhwhChChNhChChwhyafafbVdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHdWdWdWdWdWhbhdhnhnhFhfhhhOhMhMhhhfhwhwhPhwhwhwhwhyafafbVdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHdWdWdWdWdWhbhchdhdhchfhhhhhLhLhQfLfLfLfLfLfLhwhwhyafafaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHhbhbhbhbhbgWhRhRhShRhRhfhhhHhHhhfLglgggBgmfLhyhyhyafgsaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHgWhchThThThUhFhdhdhdhchfhhhVhWhgfLhXggggggfLafafafafafaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHhbhYhnhnhnhnhnhnhnhnhZgYgYgYgYgYfLggggggfTfLafafafafafaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHhbhYhnhnhnhnhnhnhnhnhZaubXbYbYbZfLggggggfTfLafafauauauaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHhbhYhnhnhnhnhnhnhnhnhZauiabYbYbZfLfTggggggfLafgsauibibaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHgWichnhnhnhnhnhnhnhnidauafbWbWaffLfLfLgofLfLafafauieifaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+amaoamamamamdVdVdVdVdVdVdVdVdVgHgHgHgWichnhnhshnhnhshnhnhdigafafafccafaiafafafafafafafafafaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+aoalaoaoamamamdVdVdVdVdVdVdVdVgHgHgHhbhYhnhnhnhnhnhnhnhnhdigafafafafafafafafafafafafafafafbVdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+alalalalaoamamamdVdVdVdVdVdVdVgHgHgHhbhYhnhnihhnhnhnhnhnidauafbXbYbYaviiavijauauauafccafafbVdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+alalalalalamamamdVdVdVdVdVdVdVgHgHgHhbhYhnhnhnhnhnhnhnhnhdauaSbXbYiiaviiavijaudwgCafafafafbVdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+alalalalalamamamdVdVdVdVdVdVdVgHgHgHgWhcikikikhFilikikikhcauafavavckckavavafaudwajafafafimaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+alalalalanamamamdVdVdVdVdVdVdVgHgHgHgWgWhbhbhbgWgWhbhbhbgWaubVbVbVauaubVbVbVauauaubVbVbVauaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+alalanalamamamamdVdVdVdVdVdVdVgHgHdWinininininininininininininininininininininininininininindWdYdYdVdVdVdVdVdVdVdVdVdVdV
+ananamanamamamamdVdVdVdVdVdVdVgHdWinininininininininininininininininininininininininininininindWdYdVdVdVdVdVdVdVdVdVdVdV
+amamamamamamamamamdVdVdVdVdVdVdWinininininininininininininininininininininininininininininininindWdVdVdVdVdVdVdVdVdVdVdV
+amamamamamamamamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+amaoaoamaoamamamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+aoalalaoalaoamamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+alalalalalalamamamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+alalalalalalamamamaoaoamamdVdVdVdVdVdVdVdVdVdVdVdVdVamamamamamamamamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+alalalalalalamamaoalalamamamamamamamamamamamamamamamamamamamamamamamamamamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+alalalalalalamamalalalamamamamamamamamamamamamamamamamamamamamaoaoamaoaoamamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+alalalalalanamamalalanamamamamamamamamaoamamamamamamamamamaoaoalalaoalalamamamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+alalalalanamamamananamamamamaoaoamamaoalaoamamamamamamamaoalalalalalalalamamamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+alalalanamamamamamamamamaoaoalalaoaoalalalaoamamamamaoaoalalalalalalalalaoamamamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+alalalamamamamamamamamaoalalalalalalalalalalamamamamalalalalalalalalalalanamamaoamamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+alalalamamamamamamamamalalalalalalalalalalalamamamamalalalalalalalalalalaoamamalaoamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+alalalamamamamamamamamalalalalalalalalalalalamamamamalalalalalalalalalalalamamalalamamdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
 "}
 
 (1,1,5) = {"
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdUdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdUdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFdUdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdUdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFdUdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdUdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFimimimimimimimimauauauauauininininininininininininininindWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFimioipipipipioimafafaebgauiqirisititiuiviqiwixivitiyizindWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFiAiBiCiBiDiEiBimiFafaebgauiGiHiHiHiHiHiHiqiwiIiHiHiHiHiJdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFiAiBiBiBiBiBiKimafafauauauiuiLiLiHiMiHiHiNiwitiHiMiMiHiJdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFiAiBiBiOiBiBiBimiFafafafiwiuititiuitiHiMitiwitiHiMiMiHiJdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFimiPioiEiEioiBimafafafafiwiuiHiHiHiuiHiHiuiwiuiHiHiHiHiJdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFimiQiRiRiRiRiQimimimafafiwiuiHiHiHitiHiHiuiuiuiuiNitiSindWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFimiTiBiUiViBiTiTiWimafafiwiqiuiuiuiXiuiuiSiniYiwiwiwiwindWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFiAiTiBiZiVjajbiBjcimafgqiniwiwjdiwiniGitiuiviuiuititiSindWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFiAiTiBjeiEiEiEiBjfimafafaiafgEavgEiwiqitiuiXiuiHiHiHiHiJdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFimjgiTiTiTiBiBiBiTimafafafafavjhaviwiwiwiwiniGiLiMiMiHiJdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFimiQiQiRjijjjkjkjiimjljlafafafafafafafafafiwiuiHiMiMiHiJdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFauaSafiRiRiRiRiRiRiRjljlafafafafafafafafafiwiuiHiHiHiHiJdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFbVafafafafafafafafafjljljljljljljljlaSafafiwiqiNititizindWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFbVafafafaxafafafafafjlbWaiafafaibWaAafafafaAaAaAauauauaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFcscscscscscscscsafafjlafafjmafafafaAafafafaAafafauhZhZaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFcsjncLczjojocWcsiFafaAavaveeeeavavaAafccafaAafgqauicidaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFcscscscAdgcAcAcLafafaAavavjpjpavavaAafafafafafafafafafbVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFcsjncLcAcscLcscsafafaAavavjpjpavavaAafafafafafafafafafbVdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFjqjqjqjqjqjrjscsafafafafafafafafafafafafjtjtjujujticidaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFjqjvjwjvjqjxjxcsiFafafafafafafafafafafgqjtjyjzjzjtjAjAaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFjqjBjCjCjqjqjqjqafafbWaAjDjDjDjDaAbWafafjtjzjzjzjtauauaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFjqjEjCjCjFjCjGjHccafbWaAjIjIjIjIaAbWafafjtjJjzjzjKjLjJjtdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFjHjMjCjNjqjCjCjHafafjOjOjPjPjPjPjOjOafafjtjQjzjzjRjRjQjtdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFjHjSjCjCjqjqjqjqafgqjOjTjUjVjVjWjXjOafgqjtjYjZjZjZjZkajtdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFjHjCjCjCjCjGjCjFafafjOkbjUjXjXjWjXkcafafjtkdkekekfjZjzjtdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFjqjCjCjCjCjCjCjqbWbWjOkgkhkikjkkjXjOafafjtkdkekekfjZjQjtdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFjqjqjHjHjHjqjqjqbVbVjOjOjOjOjOjOjOjOauaujtjtklkljtjtjtjtdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFdUilililililililililililililililililililililililililililildUdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFdUilililililililililililililililililililililililililililililildUdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdUilililililililililililililililililililililililililililililililildUdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdWdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdWdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHdWdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdWdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHdWdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdWdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHioioioioioioioioauauauauauipipipipipipipipipipipipipipipdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHioiqiririririqioafafaebgauisitiuiviviwixisiyizixiviAiBipdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHiCiDiEiDiFiGiDioiHafaebgauiIiJiJiJiJiJiJisiyiKiJiJiJiJiLdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHiCiDiDiDiDiDiMioafafauauauiwiNiNiJiOiJiJiPiyiviJiOiOiJiLdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHiCiDiDiQiDiDiDioiHafafafiyiwiviviwiviJiOiviyiviJiOiOiJiLdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHioiRiqiGiGiqiDioafafafafiyiwiJiJiJiwiJiJiwiyiwiJiJiJiJiLdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHioiSiTiTiTiTiSioioioafafiyiwiJiJiJiviJiJiwiwiwiwiPiviUipdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHioiViDiWiXiDiViViYioafafiyisiwiwiwiZiwiwiUipjaiyiyiyiyipdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHiCiViDjbiXjcjdiDjeioafgsipiyiyjfiyipiIiviwixiwiwiviviUipdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHiCiViDjgiGiGiGiDjhioafafaiafgGavgGiyisiviwiZiwiJiJiJiJiLdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHiojiiViViViDiDiDiVioafafafafavjjaviyiyiyiyipiIiNiOiOiJiLdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHioiSiSiTjkjljmjmjkiojnjnafafafafafafafafafiyiwiJiOiOiJiLdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHauaSafiTiTiTiTiTiTiTjnjnafafafafafafafafafiyiwiJiJiJiJiLdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHbVafafafafafafafafafjnjnjnjnjnjnjnjnaSafafiyisiPiviviBipdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHbVafafafaxafafafafafjnbWaiafafaibWaAafafafaAaAaAauauauaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHcscscscscscscscsafafjnafafjoafafafaAafafafaAafafauibibaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHcsjpcLczjqjqcWcsiHafaAavavegegavavaAafccafaAafgsauieifaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHcscscscAdgcAcAcLafafaAavavjrjravavaAafafafafafafafafafbVdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHcsjpcLcAcscLcscsafafaAavavjrjravavaAafafafafafafafafafbVdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHjsjsjsjsjsjtjucsafafafafafafafafafafafafjvjvjwjwjvieifaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHjsjxjyjxjsjzjzcsiHafafafafafafafafafafgsjvjAjBjBjvjCjCaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHjsjDjEjEjsjsjsjsafafbWaAjFjFjFjFaAbWafafjvjBjBjBjvauauaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHjsjGjEjEjHjEjIjJccafbWaAjKjKjKjKaAbWafafjvjLjBjBjMjNjLjvdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHjJjOjEjPjsjEjEjJafafjQjQjRjRjRjRjQjQafafjvjSjBjBjTjTjSjvdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHjJjUjEjEjsjsjsjsafgsjQjVjWjXjXjYjZjQafgsjvkakbkbkbkbkcjvdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHjJjEjEjEjEjIjEjHafafjQkdjWjZjZjYjZkeafafjvkfkgkgkhkbjBjvdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHjsjEjEjEjEjEjEjsbWbWjQkikjkkklkmjZjQafafjvkfkgkgkhkbjSjvdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHjsjsjJjJjJjsjsjsbVbVjQjQjQjQjQjQjQjQauaujvjvknknjvjvjvjvdYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHdWinininininininininininininininininininininininininininindWdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHdWinininininininininininininininininininininininininininininindWdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdWinininininininininininininininininininininininininininininininindWdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
 "}
 
 (1,1,6) = {"
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdUdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdUdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFdUdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdUdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFdUdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdUdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFauauauauauauauauauaukmkmkmkmkmkmkmkmauauauauauauauauauaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIkmknkokpkqkoknkmjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIkmkpkpkpkpkpkpkmjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIkmknkpkrkskpknkmjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIkmkmkmkmkmkmkmkmjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIjIktjIjIjIjIktjIjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIjIjIkukvkvkwjIjIjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIjIjIkxkykykzjIjIjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIkukvkAkykykBkvkwjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFauauauaubVbVbVjIjIjIkxaukCkykykDaukzjIjIjIbVbVbVaAaAaAaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFauhZhZauafafbVjIkukvkAkEkykFkFkykEkBkvkwjIbVafafafafafaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFauididauiFafafafkxkykykykFkFkFkFkykykykzafafafafafafgqaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFauiFafafafafafafkxkykykykFkFkFkFkykykykzafafafgqauididaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFauafafafafafbVjIkGkHkIkJkykFkFkykJkKkHkLjIbVafafaujAjAaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFauaAaAaAbVbVbVjIjIjIkxaukCkykykDaukzjIjIjIbVbVbVauauauaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIkGkHkIkykykKkHkLjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIjIjIkxkykykzjIjIjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIjIjIkGkHkHkLjIjIjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIjIkMjIjIjIjIkMjIjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIkmkmkmkmkmkmkmkmjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIkmknkpkNkpkpknkmjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIkmkpkpkpkqkpkpkmjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFaujIjIjIjIjIjIjIjIjIkmknkOkpkpkPknkmjIjIjIjIjIjIjIjIjIaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFauauauauauauauauauaukmkmkmkmkmkmkmkmauauauauauauauauauaudWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFdUilililililililililililililililililililililililililililildUdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFdUilililililililililililililililililililililililililililililildUdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdUilililililililililililililililililililililililililililililililildUdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdWdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdWdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHdWdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdWdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHdWdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdWdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHauauauauauauauauauaukokokokokokokokoauauauauauauauauauaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKkokpkqkrkskqkpkojKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKkokrkrkrkrkrkrkojKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKkokpkrktkukrkpkojKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKkokokokokokokokojKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKjKkvjKjKjKjKkvjKjKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKjKjKkwkxkxkyjKjKjKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKjKjKkzkAkAkBjKjKjKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKkwkxkCkAkAkDkxkyjKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHauauauaubVbVbVjKjKjKkzaukEkAkAkFaukBjKjKjKbVbVbVaAaAaAaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHauibibauafafbVjKkwkxkCkGkAkHkHkAkGkDkxkyjKbVafafafafafaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHauififauiHafafafkzkAkAkAkHkHkHkHkAkAkAkBafafafafafafgsaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHauiHafafafafafafkzkAkAkAkHkHkHkHkAkAkAkBafafafgsauififaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHauafafafafafbVjKkIkJkKkLkAkHkHkAkLkMkJkNjKbVafafaujCjCaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHauaAaAaAbVbVbVjKjKjKkzaukEkAkAkFaukBjKjKjKbVbVbVauauauaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKkIkJkKkAkAkMkJkNjKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKjKjKkzkAkAkBjKjKjKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKjKjKkIkJkJkNjKjKjKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKjKkOjKjKjKjKkOjKjKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKkokokokokokokokojKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKkokpkrkPkrkrkpkojKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKkokrkrkrkskrkrkojKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHaujKjKjKjKjKjKjKjKjKkokpkQkrkrkRkpkojKjKjKjKjKjKjKjKjKaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHauauauauauauauauauaukokokokokokokokoauauauauauauauauauaudYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHdWinininininininininininininininininininininininininininindWdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHdWinininininininininininininininininininininininininininininindWdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdWinininininininininininininininininininininininininininininininindWdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
 "}
 
 (1,1,7) = {"
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdUdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdUdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFdUdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdUdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFdUdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdUdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmknknknkQkpkpknkQkpkpkpkQkpkqkpkQkpkpkpkQkpkpkpkQkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmknkpkpkmknkpknkmkpkpkpkmkpkpkpkmkpkpkpkmkpkpkpkmkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmknkpknkmknkpknkmkRkpkpkmkpkpkpkmkpkpknkmkpkpkpkmkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmknkpkpkQkpkpkpkQkpkpkpkQkpkpkpkQkpkpkpkQkpkpkpkQkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmknkpknkmknkpknkmkpkpknkmkpkSkpkmkpkpkpkmkTkpkpkmkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkmkQkmkmkmkQkmkmkmkQkmkmkmkmkmkmkmkQkmkmkmkQkmkmkmkQkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmknkpknkmkRkpknkmkSkpkpkmkpkSkpkmkpkpkpkmkpkpknkmkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkUkpkpkQkpkpkpkQkpkpkpkQkpkpkpkQkpkpkpkQkpkpkpkQkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkpkpknkmknknknkmkpkpkpkmkpkpknkmknkpkpkmkpkpkpkmkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkVkWkmkmkmkmkmkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkXkXkmkmkpkpkYkmkpkpkpkmkpkpkpkmkpkpkSkmkSkpkpkmkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkmkmkmkmkpkpkpkQkpkSkSkmkSkSkpkQkpkpkSkmkSkpkpkQkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkpkpkZkmkpkpkpkmkpkpknkmkpkpkpkmknkpkSkmkSkpkpkmkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkpkpkpkmknkpkpkmkpkpkpkmkpkpkpkmkpkpkpkmkpkpkpkmkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkpkpkpkQkpkpkpkQkpkpkpkQkpkpkpkQkpkpkpkQkpkpkpkQkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkpkpknkmkpkpkpkmkpkpknkmknkpknkmkpkpkpkmkpkpkpkmkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmknkpknkmkpkpknkmkpkpknkmkpkpknkmknkpknkmkpkpkpkmkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmknkpkpkQkpkpkpkQkpkpkpkQkpkpkpkQkpkpkpkQkpkpkpkQkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmknkpknkmknkplakmkpkpkpkmknkpkpkmknkpknkmkpkpkpkmkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmkmkmkQkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmknkplbkmknkpknkmlckpkpkmkpkpkpkmknkpknkmkpkpkpkmkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmknkpkpkQkpkpkpkQkpkpkpkQkpkqkpkQkpkpkpkQkpkpkpkQkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmknknknkmknknknkmknkpkpkmkpkpkpkmknknknkmknkpkpkmkpkpkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFgFkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmkmdWdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFgFdUilililililililililililililililililililililililililililildUdWdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTgFdUilililililililililililililililililililililililililililililildUdWdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdUilililililililililililililililililililililililililililililililildUdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
-dTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdTdT
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdWdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdWdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHdWdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdWdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHdWdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdXdWdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokokokokokokokokokokokokokokokokokokokokokokokokokokokodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokpkpkpkSkrkrkpkSkrkrkrkSkrkskrkSkrkrkrkSkrkrkrkSkrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokpkrkrkokpkrkpkokrkrkrkokrkrkrkokrkrkrkokrkrkrkokrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokokSkokokokSkokokokSkokokokSkokokokSkokokokSkokokokSkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokpkrkpkokpkrkpkokTkrkrkokrkrkrkokrkrkpkokrkrkrkokrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokpkrkrkSkrkrkrkSkrkrkrkSkrkrkrkSkrkrkrkSkrkrkrkSkrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokpkrkpkokpkrkpkokrkrkpkokrkUkrkokrkrkrkokVkrkrkokrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokokSkokokokSkokokokSkokokokokokokokSkokokokSkokokokSkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokpkrkpkokTkrkpkokUkrkrkokrkUkrkokrkrkrkokrkrkpkokrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokWkrkrkSkrkrkrkSkrkrkrkSkrkrkrkSkrkrkrkSkrkrkrkSkrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokrkrkpkokpkpkpkokrkrkrkokrkrkpkokpkrkrkokrkrkrkokrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokXkYkokokokokokokokSkokokokSkokokokSkokokokSkokokokSkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokZkZkokokrkrlakokrkrkrkokrkrkrkokrkrkUkokUkrkrkokrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokokokokokrkrkrkSkrkUkUkokUkUkrkSkrkrkUkokUkrkrkSkrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokrkrlbkokrkrkrkokrkrkpkokrkrkrkokpkrkUkokUkrkrkokrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokokSkokokokSkokokokSkokokokSkokokokSkokokokSkokokokSkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokrkrkrkokpkrkrkokrkrkrkokrkrkrkokrkrkrkokrkrkrkokrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokrkrkrkSkrkrkrkSkrkrkrkSkrkrkrkSkrkrkrkSkrkrkrkSkrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokrkrkpkokrkrkrkokrkrkpkokpkrkpkokrkrkrkokrkrkrkokrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokokSkokokokSkokokokSkokokokSkokokokSkokokokSkokokokSkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokpkrkpkokrkrkpkokrkrkpkokrkrkpkokpkrkpkokrkrkrkokrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokpkrkrkSkrkrkrkSkrkrkrkSkrkrkrkSkrkrkrkSkrkrkrkSkrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokpkrkpkokpkrlckokrkrkrkokpkrkrkokpkrkpkokrkrkrkokrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokokSkokokokSkokokokSkokokokSkokokokSkokokokSkokokokSkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokpkrldkokpkrkpkolekrkrkokrkrkrkokpkrkpkokrkrkrkokrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokpkrkrkSkrkrkrkSkrkrkrkSkrkskrkSkrkrkrkSkrkrkrkSkrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokpkpkpkokpkpkpkokpkrkrkokrkrkrkokpkpkpkokpkrkrkokrkrkodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHgHkokokokokokokokokokokokokokokokokokokokokokokokokokokokodYdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHgHdWinininininininininininininininininininininininininininindWdYdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVgHdWinininininininininininininininininininininininininininininindWdYdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdWinininininininininininininininininininininininininininininininindWdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
+dVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdVdV
 "}
