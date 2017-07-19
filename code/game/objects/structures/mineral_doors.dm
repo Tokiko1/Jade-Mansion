@@ -306,3 +306,21 @@
 	doorkeyid = "owner"
 	doorlockdifficulty  = 90
 	doorlocked = 1
+
+/obj/structure/mineral_door/wood/lock/paper/maze
+	name = "maze door"
+	obj_integrity = 1000
+	max_integrity = 1000
+	doorkeyid = "owner"
+	doorlockdifficulty  = 95
+
+/obj/structure/mineral_door/wood/lock/paper/maze/Initialize()
+	if(prob(30))
+		doorlocked = 1
+	if(prob(30))
+		doorkeyid = "nobody"
+
+/obj/structure/mineral_door/wood/lock/paper/maze/Close()
+	..()
+	if(prob(30))
+		doorlocked = 1
