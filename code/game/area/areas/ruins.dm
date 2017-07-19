@@ -62,7 +62,6 @@
 
 /area/ruin/powered/aesthetic
 	name = "Aesthetic"
-	ambientsounds = list('sound/ambience/ambivapor1.ogg')
 
 
 //Ruin of Hotel
@@ -120,7 +119,6 @@
 	power_environ = 0
 	valid_territory = 0
 	outdoors = 1
-	ambientsounds = list('sound/ambience/ambispace.ogg','sound/ambience/title2.ogg')
 	blob_allowed = 0
 
 

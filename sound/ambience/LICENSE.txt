@@ -1,6 +1,14 @@
 ambidet1.ogg is Fast Talking by Kevin Macleod. It has been licensed under the CC-BY 3.0 license.
 	It has been cropped for use ingame.
+
 ambidet2.ogg is Night on the Docks, Piano by Kevin Macleod. It has been licensed under CC-BY 3.0 license.
 	It has been cropped for use ingame, and also fades in.
-title4.ogg is Absconditus by ZhayTee.  It has been licensed under the CC BY-NC-SA 3.0 license.
-	It has been cropped and faded for use ingame.
+
+title1.ogg is Koromogo-e by Kunai-sho Gakubu. It is licensed under CC BY 4.0.
+	It has been converted to .ogg to allow ingame use.
+
+title2.ogg is Teals Descending Upon The Level Sand by Lo Ka Ping. It is licensed under CC BY-NC-SA 3.0 US.
+	It has been converted to .ogg to allow ingame use.
+
+title3.ogg is Taishikichô Chôshi by Kokusai Bunka Shinkokai. It is licensed under CC BY-NC-SA 3.0 US.
+	It has been converted to .ogg to allow ingame use.

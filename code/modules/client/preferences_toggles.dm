@@ -143,20 +143,6 @@
 		to_chat(src, "You will no longer hear musical instruments.")
 	feedback_add_details("preferences_verb","Toggle Instruments|[prefs.toggles & SOUND_INSTRUMENTS]") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
-//Lots of people get headaches from the normal ship ambience, this is to prevent that
-/client/verb/toggle_ship_ambience()
-	set name = "Hear/Silence Ship Ambience"
-	set category = "Preferences"
-	set desc = "Toggles hearing generalized ship ambience, no matter your area."
-	prefs.toggles ^= SOUND_SHIP_AMBIENCE
-	prefs.save_preferences()
-	if(prefs.toggles & SOUND_SHIP_AMBIENCE)
-		to_chat(src, "You will now hear ship ambience.")
-	else
-		to_chat(src, "You will no longer hear ship ambience.")
-		src << sound(null, repeat = 0, wait = 0, volume = 0, channel = 2)
-		src.ambience_playing = 0
-	feedback_add_details("preferences_verb", "Toggle Ship Ambience|[prefs.toggles & SOUND_SHIP_AMBIENCE]") //If you are copy-pasting this, I bet you read this comment expecting to see the same thing :^)
 
 GLOBAL_LIST_INIT(ghost_forms, list("ghost","ghostking","ghostian2","skeleghost","ghost_red","ghost_black", \
 							"ghost_blue","ghost_yellow","ghost_green","ghost_pink", \

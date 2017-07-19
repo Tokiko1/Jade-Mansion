@@ -121,4 +121,3 @@
 	name = "Abandoned Teleporter"
 	icon_state = "teleporter"
 	music = "signal"
-	ambientsounds = list('sound/ambience/ambimalf.ogg')

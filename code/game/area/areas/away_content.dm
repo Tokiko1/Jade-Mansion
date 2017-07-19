@@ -24,7 +24,6 @@
 	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 	requires_power = 0
 	has_gravity = 1
-	ambientsounds = list('sound/ambience/shore.ogg', 'sound/ambience/seag1.ogg','sound/ambience/seag2.ogg','sound/ambience/seag2.ogg')
 
 /area/awaymission/errorroom
 	name = "Super Secret Room"

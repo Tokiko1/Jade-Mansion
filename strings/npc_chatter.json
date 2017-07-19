@@ -1,17 +1,9 @@
 {
     "nouns_insult": [
-        "gaylord",
-        "shitcurity",
-        "noob",
-        "comdom",
-        "greyshirt",
-        "tator",
-        "lingbin",
-        "bitch",
-        "whorelord",
-        "cluwne",
+        "foul egg",
+        "bad bird",
         "monkey",
-        "cheesemonger",
+        "improper maid",
         "milkdrinker"
     ],
     "adjective_objects": [
@@ -29,19 +21,13 @@
         "awful"
     ],
     "verbs_use": [
-        "touch",
+        "peck",
         "hold",
         "poke",
         "punch",
-        "smash",
-        "assault",
-        "wrench",
-        "tickle",
-        "modify",
-        "whack",
-        "beat",
-        "tackle",
-        "destroy"
+        "hit",
+        "push",
+        "lecture"
     ],
     "nouns_objects": [
         "thing",
@@ -56,20 +42,15 @@
     "nouns_generic": [
         "you",
         "you there",
-        "guy",
+        "staff",
         "person",
-        "dude",
-        "jerk",
-        "officer"
+        "owner",
+        "bird",
+        "maid"
     ],
     "curse_words": [
         "damn",
-        "shit",
-        "arse",
-        "ass",
-        "wank",
-        "jerk",
-        "bitch"
+        "blast"
     ],
     "adjective_generic": [
         "nice",
@@ -82,56 +63,35 @@
     "verbs_move": [
         "run",
         "jog",
-        "leg it",
-        "slide",
-        "cheese it",
         "walk",
         "stroll",
         "fly",
-        "scoot",
-        "yakkety",
+        "float",
+        "duckwalk",
         "speed",
-        "fuck off",
         "escape"
     ],
     "verbs_touch": [
         "pat",
-        "mess with",
-        "absorb",
-        "sneeze on",
-        "inject",
-        "rip",
-        "slap",
-        "grab",
-        "choke"
+        "hug",
+        "hit"
     ],
     "adjective_insult": [
         "ugly",
         "repulsive",
         "dumb",
-        "asian",
-        "mongoloid",
-        "childish",
-        "captain-like",
         "monkey-like",
         "whoreish",
-        "dimwit",
-        "jerk-face",
-        "vomit-inducer"
+        "dimwit"
     ],
     "nouns_body": [
-        "ass",
         "head",
         "face",
         "arms",
         "fingers",
-        "toes",
         "chest",
-        "eyes",
         "nails",
-        "groin",
         "stomach",
-        "intestines",
         "head"
     ]
 }

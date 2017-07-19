@@ -89,7 +89,6 @@
 /area/prison/morgue
 	name = "Prison Morgue"
 	icon_state = "morgue"
-	ambientsounds = list('sound/ambience/ambimo1.ogg','sound/ambience/ambimo2.ogg')
 
 /area/prison/medical_research
 	name = "Prison Genetic Research"
