@@ -113,11 +113,16 @@ SUBSYSTEM_DEF(throwing)
 			if (A == target)
 				hit = 1
 				thrownthing.throw_impact(A, src)
+				if(thrownthing && isturf(thrownthing.loc)) //we still exist and we aren't embedded in anything, so we drop to the floor now
+					thrownthing.throw_impact(get_turf(thrownthing), src)
+					thrownthing.newtonian_move(init_dir)
 				break
 		if (!hit)
 			thrownthing.throw_impact(get_turf(thrownthing), src)  // we haven't hit something yet and we still must, let's hit the ground.
 			thrownthing.newtonian_move(init_dir)
 	else
+		if(thrownthing && isturf(thrownthing.loc)) //we still exist and we aren't embedded in anything, so we drop to the floor now
+			thrownthing.throw_impact(get_turf(thrownthing), src)
 		thrownthing.newtonian_move(init_dir)
 	if (callback)
 		callback.Invoke()

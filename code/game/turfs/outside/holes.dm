@@ -17,6 +17,10 @@
 	START_PROCESSING(SSobj, src)
 	drop_stuff(AM)
 
+/turf/open/hole/hitby(atom/movable/AM)
+	START_PROCESSING(SSobj, src)
+	drop_stuff(AM)
+
 /turf/open/hole/process()
 	if(!drop_stuff())
 		STOP_PROCESSING(SSobj, src)
@@ -32,6 +36,7 @@
 		return 0
 	if(istype(AM, /obj/item/projectile) || AM.throwing)
 		return 0
+
 	if(AM.anchored)
 		//anchored objects shouldn't fall down
 		return 0
