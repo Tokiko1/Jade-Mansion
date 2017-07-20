@@ -80,6 +80,7 @@
 				else
 					. = TryMove(TRUE)
 
+	. = . && (vic.z == tar.z) //we're on the wrong z level, maybe we fell down somewhere or we got teleported,
 	. = . && (vic.loc != tar.loc)
 
 /mob/Collide(atom/A)

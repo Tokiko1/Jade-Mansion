@@ -93,6 +93,7 @@
 
 	if(AMOB && pulled_thing && AMOB.pulling != pulled_thing) //oops, we lost our pulled thing, let's reattach it
 		AMOB.pulling = pulled_thing
+		AMOB.update_pull_hud_icon()
 
 
 /turf/open/stairs/moving/proc/canclimb(atom/movable/AM)
