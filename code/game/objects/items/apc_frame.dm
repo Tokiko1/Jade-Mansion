@@ -16,7 +16,7 @@
 		return
 	var/turf/T = get_turf(user)
 	var/area/A = get_area(T)
-	if(!isfloorturf(T))
+	if(!isopenfloorturf(T))
 		to_chat(user, "<span class='warning'>You cannot place [src] on this spot!</span>")
 		return
 	if(A.always_unpowered)
