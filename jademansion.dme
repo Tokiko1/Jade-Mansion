@@ -1992,6 +1992,7 @@
 #include "code\modules\ruins\objects_and_mobs\sin_ruins.dm"
 #include "code\modules\scenarios\bad_weather.dm"
 #include "code\modules\scenarios\example.dm"
+#include "code\modules\scenarios\hiring.dm"
 #include "code\modules\scenarios\important_guest.dm"
 #include "code\modules\scenarios\scenario.dm"
 #include "code\modules\scenarios\sub_scenario.dm"

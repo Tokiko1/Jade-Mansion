@@ -754,10 +754,12 @@ GLOBAL_LIST_INIT(admin_verbs_hideable, AVerbsHideable())
 	if(!selection)
 		GLOB.scenario_override = 0
 		GLOB.scenario_override_name = null
+		message_admins("[key_name_admin(usr)] has disabled the scenario override.")
 		return
 	else
 		GLOB.scenario_override = 1
 		GLOB.scenario_override_name = selection
+		message_admins("[key_name_admin(usr)] has set [selection] to override the scenario selection.")
 
 /client/proc/picksubscenario()
 	set name = "Override Subscenario Selection"
