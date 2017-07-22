@@ -1279,6 +1279,10 @@
 	icon_state = "harpy1"
 	color_src = FACEHAIR
 
+/datum/sprite_accessory/ears/bunny
+	name = "Bunny"
+	icon_state = "usamimi"
+	color_src = "C9C9C9"
 
 /datum/sprite_accessory/wings/none
 	name = "None"
