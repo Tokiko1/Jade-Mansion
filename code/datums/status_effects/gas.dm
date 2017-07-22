@@ -1,9 +1,15 @@
 /datum/status_effect/restraining/freon
 	id = "frozen"
 	duration = -1
-	status_type = STATUS_EFFECT_UNIQUE
+	status_type = STATUS_EFFECT_UPGRADE_RERESH
 	alert_type = /obj/screen/alert/status_effect/freon
 	var/icon/cube
+	var/iconpath = 'icons/effects/water.dmi'
+	var/icon_name = "ice_cube1"
+	effect_level = 1
+	upgrade_path = /datum/status_effect/restraining/freon/strongfreeze
+
+
 	can_resist = 1
 	resist_timer = 50
 	can_move = 0
@@ -21,7 +27,7 @@
 /datum/status_effect/restraining/freon/on_apply()
 	if(!owner.stat)
 		to_chat(owner, "<span class='userdanger'>You become frozen in a cube!</span>")
-	cube = icon('icons/effects/water.dmi', "ice_cube")
+	cube = icon(iconpath, icon_name)
 	owner.add_overlay(cube)
 	owner.update_canmove()
 
@@ -33,12 +39,27 @@
 			if(ownerturf.air.temperature > T50C)
 				qdel(src)
 
+/datum/status_effect/restraining/freon/be_replaced()
+	owner.cut_overlay(cube)
+	owner.update_canmove()
+	..()
+
 /datum/status_effect/restraining/freon/on_remove()
 	owner.cut_overlay(cube)
 	owner.update_canmove()
+	..()
 
 
 /datum/status_effect/restraining/freon/strongfreeze
-	id = "frozen_strong"
 	resist_timer = 200 //20 seconds
 	restrain_priority = 101
+	effect_level = 2
+	upgrade_path = /datum/status_effect/restraining/freon/superfreeze
+	icon_name = "ice_cube2"
+
+/datum/status_effect/restraining/freon/superfreeze
+	can_resist = 0
+	can_move = 0
+	can_act = 0
+	effect_level = 3
+	icon_name = "ice_cube"

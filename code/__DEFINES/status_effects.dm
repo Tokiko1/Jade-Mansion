@@ -7,6 +7,10 @@
 
 #define STATUS_EFFECT_REPLACE 2 //if it allows only one, but new instances replace
 
+#define STATUS_EFFECT_UPGRADE 3 //it allows only one, but if the new effect has a higher priority than the current one, it gets "upgraded" to its assigned upgrade
+
+#define STATUS_EFFECT_UPGRADE_RERESH 4// same as above, but it will refresh the effect, even if lower priority
+
 #define BASIC_STATUS_EFFECT /datum/status_effect //Has no effect.
 
 ///////////

@@ -9,6 +9,8 @@
 	var/mob/living/owner //The mob affected by the status effect.
 	var/status_type = STATUS_EFFECT_UNIQUE //How many of the effect can be on one mob, and what happens when you try to add another
 	var/alert_type = /obj/screen/alert/status_effect //the alert thrown by the status effect, contains name and description
+	var/effect_level = 1 //the strenght of an effect. if multiple effects with the same IDs exist and status type is set correctly, an effect can be upgraded
+	var/upgrade_path //the path of the next, "better" effect level from above var
 
 /datum/status_effect/restraining //status effects that you can resist out of, maybe
 	var/can_resist = 1
@@ -87,18 +89,38 @@
 // HELPER PROCS //
 //////////////////
 
-/mob/living/proc/apply_status_effect(effect) //applies a given status effect to this mob, returning the effect if it was successful
+/mob/living/proc/apply_status_effect(effect, custom_effect_level) //applies a given status effect to this mob, returning the effect if it was successful
 	. = FALSE
-	var/datum/status_effect/S1 = effect
+	var/datum/status_effect/S1 = new effect //very very ugly, but we need to create this to even check...
+	var/datum/status_effect/S2
 	LAZYINITLIST(status_effects)
 	for(var/datum/status_effect/S in status_effects)
 		if(S.id == initial(S1.id) && S.status_type)
+			var/effectlevelnew = max(custom_effect_level, S1.effect_level)
 			if(S.status_type == STATUS_EFFECT_REPLACE)
 				S.be_replaced()
-			else
-				return
-	S1 = new effect(src)
-	. = S1
+				S2 = new effect(src)
+			else if(S.status_type == STATUS_EFFECT_UPGRADE && effectlevelnew >= S.effect_level)
+				if(S.effect_level == effectlevelnew)
+					S.be_replaced()
+					S2 = new effect(src)
+				else
+					S2 = new S.upgrade_path(src)
+					S.be_replaced()
+			else if (S.status_type == STATUS_EFFECT_UPGRADE_RERESH)
+				if(S.effect_level == effectlevelnew) //the new effect is the same, replace
+					S.be_replaced()
+					S2 = new S.type(src)
+				else if(S.effect_level < effectlevelnew) // the new effect is better, upgrade
+					S2 = new S.upgrade_path(src)
+					S.be_replaced()
+				else if(S.effect_level > effectlevelnew) // the new effect is worse, refresh but keep our type
+					S2 = new S.type(src)
+					S.be_replaced()
+	if(!S2)
+		S2 = new effect(src)
+	qdel(S1) //ugly!!! but likely not a resource concern
+	. = S2
 
 /mob/living/proc/remove_status_effect(effect) //removes all of a given status effect from this mob, returning TRUE if at least one was removed
 	. = FALSE

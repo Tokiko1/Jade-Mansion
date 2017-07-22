@@ -24,9 +24,9 @@
 					I.make_frozen_visual()
 			for(var/mob/living/L in turfa.contents)
 				if(L == target)
-					L.apply_status_effect(/datum/status_effect/restraining/freon/strongfreeze)
+					L.apply_status_effect(/datum/status_effect/restraining/freon, 3)
 				else if(prob(10))
-					L.apply_status_effect(/datum/status_effect/restraining/freon)
+					L.apply_status_effect(/datum/status_effect/restraining/freon, 1)
 
 			turfa.MakeSlippery(TURF_WET_PERMAFROST, 5)
 	..()
