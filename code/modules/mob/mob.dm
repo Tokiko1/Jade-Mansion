@@ -683,7 +683,7 @@
 				for(var/datum/status_effect/restraining/cur_effect in L.status_effects)
 					if(!cur_effect.can_move)
 						canmove = 0
-					if(!cur_effect.can_stand || lying)
+					if(!cur_effect.can_stand || !lying)
 						lying = 90
 					if(cur_effect.does_anchor)
 						anchored = 1
