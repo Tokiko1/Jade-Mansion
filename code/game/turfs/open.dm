@@ -214,7 +214,13 @@
 		return
 	spawn(rand(0,20))
 		if(wet == TURF_WET_PERMAFROST)
-			wet = TURF_WET_WATER
+			if(wet_overlay)
+				cut_overlay(wet_overlay)
+			MakeSlippery(wet_setting = TURF_WET_WATER, wet_time_to_add = rand(5,10))
+			for(var/obj/O in src.contents) //so sorry for anyone who actually combs through this code, but that's how it was handled before
+				if(HAS_SECONDARY_FLAG(O, FROZEN))
+					O.make_unfrozen()
+
 		else
 			wet = TURF_DRY
 			if(wet_overlay)
@@ -250,6 +256,10 @@
 		switch(air.temperature)
 			if(-INFINITY to T0C)
 				ice_time = min(MAXIMUM_ICE_TIME, ice_time+2)
+				if(prob(5)) //imagine the ice from the floor creeps up the object and freezes it
+					for(var/obj/I in src.contents)
+						if(!HAS_SECONDARY_FLAG(I, FROZEN))
+							I.make_frozen_visual()
 
 			if(T0C to T30C)
 				ice_time = max(0, ice_time)
@@ -266,7 +276,7 @@
 	else
 		wet_time = max(0, wet_time-5)
 	if(wet == TURF_WET_PERMAFROST && !ice_time) //ice unfreezing
-		MakeDry(TURF_WET_PERMAFROST)
+		MakeDry()
 		for(var/obj/O in contents) //so sorry for anyone who actually combs through this code, but that's how it was handled before
 			if(HAS_SECONDARY_FLAG(O, FROZEN))
 				O.make_unfrozen()
