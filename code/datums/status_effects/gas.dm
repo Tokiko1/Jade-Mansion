@@ -42,7 +42,10 @@
 			if(ownerturf.air.temperature > T30C)
 				freezetimer++
 				if(freezetimer >= unfreezetime)
+					owner.cut_overlay(cube)
+					owner.update_canmove()
 					qdel(src)
+
 				else if(prob(10))
 					to_chat(owner, "<span class='userdanger'>The ice cube appears to be melting!</span>")
 			else
@@ -58,6 +61,7 @@
 /datum/status_effect/restraining/freon/on_remove()
 	owner.cut_overlay(cube)
 	owner.update_canmove()
+	qdel(src)
 	..()
 
 

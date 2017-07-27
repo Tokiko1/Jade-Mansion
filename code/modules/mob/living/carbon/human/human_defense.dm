@@ -392,8 +392,9 @@
 				throw_at(throw_target, 200, 4)
 				damage_clothes(400 - bomb_armor, BRUTE, "bomb")
 			else
-				gib()
-				return
+				b_loss = 100
+				f_loss = 100
+				Paralyse(10)
 
 		if (2)
 			b_loss = 60
