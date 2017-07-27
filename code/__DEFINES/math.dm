@@ -8,6 +8,7 @@
 #define ONE_ATMOSPHERE			101.325	//kPa
 #define T0C						273.15	// 0degC
 #define T20C					293.15	// 20degC
+#define T30C					303.15	// 30degC
 #define T50C					323.15	// 50degC
 #define TCMB					2.7		// -270.3degC
 

@@ -4,6 +4,7 @@
 	var/wet = 0
 	var/wet_time = 0 // Time in seconds that this floor will be wet for.
 	var/image/wet_overlay = null
+	var/ice_time = 0 //similar to the wet timer but separate
 
 /turf/open/indestructible
 	name = "floor"
@@ -178,8 +179,9 @@
 			new /datum/forced_movement(C, get_ranged_target_turf(C, olddir, 4), 1, FALSE)	//spinning would be bad for ice, fucks up the next dir
 		return 1
 
-/turf/open/proc/MakeSlippery(wet_setting = TURF_WET_WATER, min_wet_time = 0, wet_time_to_add = 0) // 1 = Water, 2 = Lube, 3 = Ice, 4 = Permafrost, 5 = Slide
+/turf/open/proc/MakeSlippery(wet_setting = TURF_WET_WATER, min_wet_time = 0, wet_time_to_add = 0, min_ice_time = 0, ice_time_to_add = 0) // 1 = Water, 2 = Lube, 3 = Ice, 4 = Permafrost, 5 = Slide
 	wet_time = max(wet_time+wet_time_to_add, min_wet_time)
+	ice_time = max(ice_time+ice_time_to_add, min_ice_time)
 	if(z_open)
 		return
 	if(wet >= wet_setting)
@@ -212,35 +214,26 @@
 		return
 	spawn(rand(0,20))
 		if(wet == TURF_WET_PERMAFROST)
-			wet = TURF_WET_ICE
-		else if(wet == TURF_WET_ICE)
 			wet = TURF_WET_WATER
 		else
 			wet = TURF_DRY
 			if(wet_overlay)
 				cut_overlay(wet_overlay)
 
-/turf/open/proc/HandleWet()
+/turf/open/proc/HandleWet() //this entire proc is one huge giant mess TODO: clean this up
 	if(!wet)
 		//It's possible for this handler to get called after all the wetness is
 		//cleared, so bail out if that is the case
 		return
-	if(!wet_time && wet < TURF_WET_ICE)
-		MakeDry(TURF_WET_ICE)
 	if(wet_time > MAXIMUM_WET_TIME)
 		wet_time = MAXIMUM_WET_TIME
-	if(wet == TURF_WET_ICE && air.temperature > T0C)
-		for(var/obj/O in contents)
-			if(HAS_SECONDARY_FLAG(O, FROZEN))
-				O.make_unfrozen()
-		MakeDry(TURF_WET_ICE)
-		MakeSlippery(TURF_WET_WATER)
 	if(wet != TURF_WET_PERMAFROST)
 		switch(air.temperature)
 			if(-INFINITY to T0C)
-				if(wet != TURF_WET_ICE && wet)
-					MakeDry(TURF_WET_ICE)
-					MakeSlippery(TURF_WET_ICE)
+				wet_time = min(MAXIMUM_WET_TIME, wet_time+1) //this seems somewhat odd, but remember that water condensation on cold surfaces is a thing
+				if(wet_time >= MIN_WET_FOR_FREEZE) //ice&lube can freeze into ice
+					MakeDry(TURF_WET_WATER)
+					MakeSlippery(wet_setting = TURF_WET_PERMAFROST, ice_time_to_add = wet_time)
 			if(T0C to T20C)
 				wet_time = max(0, wet_time-1)
 			if(T20C to T0C + 40)
@@ -253,14 +246,37 @@
 				wet_time = max(0, wet_time-10)
 			if(T0C + 100 to INFINITY)
 				wet_time = 0
-	else if (wet == TURF_WET_PERMAFROST)	//seems like a good place
-		if(air.temperature > T50C) //need warmth to unfreeze this
-			MakeDry(TURF_WET_PERMAFROST)
+	else if (wet == TURF_WET_PERMAFROST)	//ice thawing, remaining frozen or even reinforcing its icy shell
+		switch(air.temperature)
+			if(-INFINITY to T0C)
+				ice_time = min(MAXIMUM_ICE_TIME, ice_time+2)
+
+			if(T0C to T30C)
+				ice_time = max(0, ice_time)
+			if(T30C to T0C + 40)
+				ice_time = max(0, ice_time-2)
+			if(T0C + 40 to T0C + 60)
+				ice_time = max(0, ice_time-3)
+			if(T0C + 60 to T0C + 80)
+				ice_time = max(0, ice_time-5)
+			if(T0C + 80 to T0C + 100)
+				ice_time = max(0, ice_time-10)
+			if(T0C + 100 to INFINITY)
+				ice_time = 0
 	else
 		wet_time = max(0, wet_time-5)
-	if(wet && wet < TURF_WET_ICE && !wet_time)
-		MakeDry(TURF_WET_ICE)
+	if(wet == TURF_WET_PERMAFROST && !ice_time) //ice unfreezing
+		MakeDry(TURF_WET_PERMAFROST)
+		for(var/obj/O in contents) //so sorry for anyone who actually combs through this code, but that's how it was handled before
+			if(HAS_SECONDARY_FLAG(O, FROZEN))
+				O.make_unfrozen()
+
+	if((wet == TURF_WET_WATER || wet == TURF_WET_LUBE) && !wet_time) //water and lube drying off
+		MakeDry(TURF_WET_WATER)
+
 	if(!wet && wet_time)
 		wet_time = 0
+	if(wet != TURF_WET_PERMAFROST && ice_time)
+		ice_time = 0
 	if(wet)
 		addtimer(CALLBACK(src, .proc/HandleWet), 15, TIMER_UNIQUE)

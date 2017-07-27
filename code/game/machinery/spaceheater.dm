@@ -18,11 +18,11 @@
 	var/mode = HEATER_MODE_STANDBY
 	var/setMode = "auto" // Anything other than "heat" or "cool" is considered auto.
 	var/targetTemperature = T20C
-	var/heatingPower = 40000
-	var/efficiency = 20000
+	var/heatingPower = 800000
+	var/efficiency = 100000
 	var/temperatureTolerance = 1
-	var/settableTemperatureMedian = 30 + T0C
-	var/settableTemperatureRange = 30
+	var/settableTemperatureMedian = T0C
+	var/settableTemperatureRange = 70
 
 /obj/machinery/space_heater/New()
 	..()
@@ -115,23 +115,6 @@
 	else
 		on = FALSE
 		update_icon()
-
-/obj/machinery/space_heater/RefreshParts()
-	var/laser = 0
-	var/cap = 0
-	for(var/obj/item/weapon/stock_parts/micro_laser/M in component_parts)
-		laser += M.rating
-	for(var/obj/item/weapon/stock_parts/capacitor/M in component_parts)
-		cap += M.rating
-
-	heatingPower = laser * 40000
-
-	settableTemperatureRange = cap * 30
-	efficiency = (cap + 1) * 10000
-
-	targetTemperature = Clamp(targetTemperature,
-		max(settableTemperatureMedian - settableTemperatureRange, TCMB),
-		settableTemperatureMedian + settableTemperatureRange)
 
 /obj/machinery/space_heater/emp_act(severity)
 	if(stat & (BROKEN|NOPOWER))

@@ -6,6 +6,9 @@
 	var/icon/cube
 	var/iconpath = 'icons/effects/water.dmi'
 	var/icon_name = "ice_cube1"
+	var/freezetimer = 0
+	var/unfreezetime = 10
+
 	effect_level = 1
 	upgrade_path = /datum/status_effect/restraining/freon/strongfreeze
 
@@ -36,8 +39,16 @@
 	if(get_turf(owner) && istype(get_turf(owner), /turf/open))
 		var/turf/open/ownerturf = get_turf(owner)
 		if(ownerturf)
-			if(ownerturf.air.temperature > T50C)
-				qdel(src)
+			if(ownerturf.air.temperature > T30C)
+				freezetimer++
+				if(freezetimer >= unfreezetime)
+					qdel(src)
+				else if(prob(10))
+					to_chat(owner, "<span class='userdanger'>The ice cube appears to be melting!</span>")
+			else
+				freezetimer = max(freezetimer - 1, 0)
+		else
+			freezetimer = max(freezetimer - 1, 0)
 
 /datum/status_effect/restraining/freon/be_replaced()
 	owner.cut_overlay(cube)

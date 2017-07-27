@@ -28,5 +28,6 @@
 				else if(prob(10))
 					L.apply_status_effect(/datum/status_effect/restraining/freon, 1)
 
-			turfa.MakeSlippery(TURF_WET_PERMAFROST, 5)
+			turfa.MakeSlippery(wet_setting = TURF_WET_PERMAFROST, ice_time_to_add = 5)
+			addtimer(CALLBACK(turfa, /turf/open/.proc/MakeDry, TURF_WET_PERMAFROST), rand(3000, 3100))
 	..()

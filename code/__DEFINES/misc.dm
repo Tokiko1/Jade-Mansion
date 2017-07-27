@@ -206,6 +206,11 @@ GLOBAL_LIST_EMPTY(bloody_footprints_cache)
 
 //Maximum amount of time, (in approx. seconds.) a tile can be wet for.
 #define MAXIMUM_WET_TIME 300
+//maximum amount of time ice can survive in a warm environment
+#define MAXIMUM_ICE_TIME 50
+
+//how "wet" a floor needs to be to fully freeze over
+#define MIN_WET_FOR_FREEZE 20
 
 //unmagic-strings for types of polls
 #define POLLTYPE_OPTION		"OPTION"
