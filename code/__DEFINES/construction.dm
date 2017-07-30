@@ -9,6 +9,18 @@
 #define GIRDER_DISPLACED 3
 #define GIRDER_DISASSEMBLED 4
 
+//jade girder states
+
+#define JADE_GIRDER_NORMAL 0
+#define JADE_GIRDER_BROKEN_STACK 1
+#define JADE_GIRDER_BROKEN 2
+#define JADE_GIRDER_HOLE_STACK 3
+#define JADE_GIRDER_HOLE 4
+
+#define JADE_GIRDER_BROKEN_DEBRIS 5
+#define JADE_GIRDER_HOLE_DEBRIS 6
+
+
 //rwall construction states
 #define INTACT 0
 #define SUPPORT_LINES 1
