@@ -6,8 +6,9 @@
 
 /obj/structure/jadegirder
 	name = "girder"
+	icon = 'icons/obj/jade_girders.dmi'
 	icon_state = "jgirder"
-	var/list/debris_icons = list("jgirder_debris1","jgirder_debris2","jgirder_debris3")
+	var/list/debris_icons = list("stone_debris1","stone_debris2","stone_debris3")
 	anchored = 1
 	density = 1
 	layer = BELOW_OBJ_LAYER
@@ -73,7 +74,12 @@
 	//TODO: Add some sort of damage handling here, ie hit a girder enough to break a hole in it, circumventing the need for a tool
 	return
 
-
+/obj/structure/jadegirder/proc/adjust_state(input_state) //completely optional helper proc
+	if(!input_state)
+		return 0
+	state = input_state
+	state_update()
+	return 1
 
 /obj/structure/jadegirder/proc/remove_debris(removal_method, mob/user, obj/item/W)
 	if(!removal_method)

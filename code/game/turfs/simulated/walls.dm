@@ -17,7 +17,7 @@
 	var/list/debris = list()
 	var/debris_amount_min = 2
 	var/debris_amount_max = 5
-	var/broken_turf = /turf/open/tiles/darkstonetile
+	var/broken_turf = /turf/open/tiles/metaltile
 
 	canSmoothWith = list(
 	/turf/closed/wall,
@@ -35,8 +35,15 @@
 
 /turf/closed/wall/proc/dismantle_wall(devastated=0, explode=0)
 	playsound(src, 'sound/items/Welder.ogg', 100, 1)
-	var/newgirder = break_wall()
+	var/obj/structure/jadegirder/newgirder = break_wall()
 	if(newgirder) //maybe we don't /want/ a girder!
+		if(explode)
+			if(devastated || prob(10))
+				newgirder.adjust_state(JADE_GIRDER_HOLE_DEBRIS)
+			else if (prob(70))
+				newgirder.adjust_state(JADE_GIRDER_BROKEN_DEBRIS)
+			else if(prob(60))
+				newgirder.adjust_state(JADE_GIRDER_BROKEN)
 		transfer_fingerprints_to(newgirder)
 
 	for(var/obj/O in src.contents) //Eject contents!
@@ -60,10 +67,10 @@
 		return
 	switch(severity)
 		if(1)
-			//SN src = null
-			var/turf/NT = ChangeTurf(baseturf)
-			NT.contents_explosion(severity, target)
-			return
+			if (prob(80))
+				dismantle_wall(0,1)
+			else
+				dismantle_wall(1,1)
 		if(2)
 			if (prob(50))
 				dismantle_wall(0,1)
@@ -221,8 +228,8 @@
 
 	playsound(src, 'sound/items/Welder.ogg', 100, 1)
 
-	if(thermite >= 50)
-		var/burning_time = max(100,300 - thermite)
+	if(thermite >= 10)
+		var/burning_time = max(100,150 - thermite)
 		addtimer(CALLBACK(src,.proc/dismantle_wall), burning_time)
 		QDEL_IN(O, burning_time)
 	else
