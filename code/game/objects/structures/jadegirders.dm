@@ -7,16 +7,16 @@
 /obj/structure/jadegirder
 	name = "girder"
 	icon_state = "jgirder"
+	var/list/debris_icons = list("jgirder_debris1","jgirder_debris2","jgirder_debris3")
 	anchored = 1
 	density = 1
 	layer = BELOW_OBJ_LAYER
 	var/state = JADE_GIRDER_NORMAL
 	var/girderpasschance = 20 // percentage chance that a projectile passes through the girder.
-	var/can_displace = FALSE //If the girder can be moved around by wrenching it
 
 	var/disassembly_tool = /obj/item/weapon/wrench
 	var/repair_tool = /obj/item/weapon/wrench
-	var/rubble_clearing_tool = /obj/item/weapon/shovel
+	var/debris_clearing_tool = /obj/item/weapon/shovel
 	var/girder_stack_amount = 2
 	var/girder_stack_type = /obj/item/stack/sheet/metal //what kind of stack is used to repair the girder, if null, girders can be repaired for free, but also don't drop any stacks on deconstruction
 	var/girder_turf_path //type of turf that the fully constructed girder turns into
@@ -25,8 +25,16 @@
 	var/density_hole = 0
 	var/opacity_broken = 0
 	var/opacity_hole = 0
+	var/density_broken_debris = 1 //okay okay, these should be a list but it's not like there will be thousands of these, ok?
+	var/opacity_broken_debris = 0
+	var/density_hole_debris = 1
+	var/opacity_hole_debris = 0
 
+	var/list/debris = list()
+	var/debris_amount_min = 2//how many debris items are created
+	var/debris_amount_max = 5
 
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 
 	obj_integrity = 200
 	max_integrity = 200
@@ -38,18 +46,75 @@
 	else
 		icon_state = "[initial(icon_state)]-[state]"
 
-	if(state == JADE_GIRDER_NORMAL || state == JADE_GIRDER_BROKEN_STACK) //structurally intact, includes broken girder that had its stack applied to it
-		density = initial(denisty)
+	if(state == JADE_GIRDER_NORMAL || state == JADE_GIRDER_BROKEN_STACK) //structurally intact, i
+		density = initial(density)
 		opacity = initial(opacity)
 
-	if(state == JADE_GIRDER_BROKEN || state == JADE_GIRDER_HOLE_STACK || state == JADE_GIRDER_BROKEN_DEBRIS) //structurally broken, includes girders with a hole that had a stack applied to fix the hole
-			density = density_broken
-			opacity = opacity_broken
-		else if (state == JADE_GIRDER_HOLE || state == JADE_GIRDER_HOLE_DEBRIS) //girder with a hole
-			density = density_hole
-			opacity = opacity_hole
+	cut_overlays()
+
+	if(state == JADE_GIRDER_BROKEN_DEBRIS|| state == JADE_GIRDER_HOLE_DEBRIS)
+		var/picked_debris_icon = pick(debris_icons)
+		add_overlay(picked_debris_icon)
+
+	if(state == JADE_GIRDER_BROKEN || state == JADE_GIRDER_HOLE_STACK) //structurally broken,
+		density = density_broken
+		opacity = opacity_broken
+	else if (state == JADE_GIRDER_HOLE) //girder with a hole
+		density = density_hole
+		opacity = opacity_hole
+	else if(state == JADE_GIRDER_BROKEN_DEBRIS)
+		density = density_broken_debris
+		opacity = opacity_broken_debris
+	else if(state == JADE_GIRDER_HOLE_DEBRIS)
+		density = density_hole_debris
+		opacity = opacity_hole_debris
+
+/obj/structure/jadegirder/proc/handle_damage()
+	//TODO: Add some sort of damage handling here, ie hit a girder enough to break a hole in it, circumventing the need for a tool
+	return
 
 
+
+/obj/structure/jadegirder/proc/remove_debris(removal_method, mob/user, obj/item/W)
+	if(!removal_method)
+		return
+
+	if(state == JADE_GIRDER_BROKEN_DEBRIS)
+		state = JADE_GIRDER_BROKEN
+	else if(state == JADE_GIRDER_HOLE_DEBRIS)
+		state = JADE_GIRDER_HOLE
+	else
+		return
+
+	state_update()
+
+	if(DEBRIS_TOOL_REMOVAL)
+		var/turf/debris_target = get_turf(user)
+		var/amount_of_debris = rand(debris_amount_min, debris_amount_max)
+		if(debris_target && amount_of_debris)
+			for(var/i in 1 to amount_of_debris)
+				var/debristospawn = pick(debris)
+				new debristospawn(debris_target)
+
+
+
+
+/obj/structure/jadegirder/take_damage(damage_amount, damage_type = BRUTE, damage_flag = 0, sound_effect = 1, attack_dir)
+	if(state == JADE_GIRDER_BROKEN_DEBRIS || state == JADE_GIRDER_HOLE_DEBRIS) //don't damage the girder, try to knock the debris loose instead
+		if(prob(damage_amount)) //you can probably make this nicer later on
+			remove_debris(DEBRIS_KNOCKED_LOOSE)
+		return
+	..(damage_amount, damage_type = BRUTE, damage_flag = 0, sound_effect = 1, attack_dir)
+	obj_integrity = max(obj_integrity, 1)
+	handle_damage()
+	state_update()
+
+
+/obj/structure/jadegirder/deconstruct(disassembled = TRUE)
+	return
+
+/obj/structure/jadegirder/obj_break(damage_flag)
+	return
 
 /obj/structure/jadegirder/attackby(obj/item/W, mob/user, params)
 	add_fingerprint(user)
@@ -116,7 +181,7 @@
 	//////////////////////////////////////////////////////////
 	///// REPAIRS ///////////////////////////////////////////
 
-	if(istype(W, repair_tool)
+	if(istype(W, repair_tool))
 		if(state == JADE_GIRDER_NORMAL && !girder_stack_type) //only gets called if stacks repairs are disabled, repairs the wall fully!
 			playsound(src.loc, W.usesound, 100, 1)
 			to_chat(user, "<span class='notice'>You start securing the added material...</span>")
@@ -175,7 +240,7 @@
 /////////////STACK REPAIRS //////////////////
 
 	if(girder_stack_type && girder_stack_amount)
-		if(istype(W, girder_stack_type)
+		if(istype(W, girder_stack_type))
 			var/obj/item/stack/sheet/S = W
 			if(S.amount < girder_stack_amount)
 				to_chat(user, "<span class='notice'>You need atleast [girder_stack_amount] of [S.name] to carry out repairs on this girder.</span>")
@@ -214,10 +279,39 @@
 					state_update()
 
 			else if(state == JADE_GIRDER_BROKEN_DEBRIS || state == JADE_GIRDER_HOLE_DEBRIS)
-			to_chat(user, "<span class='notice'>You cannot repair the girder, there is debris everywhere.</span>")
-			return
+				to_chat(user, "<span class='notice'>You cannot repair the girder, there is debris everywhere.</span>")
+				return
 
-//////////////////////////////////////////
+/////////REMOVING DEBRIS/////////////////////////////////
+
+	if(istype(W, debris_clearing_tool))
+		if(state == JADE_GIRDER_BROKEN_DEBRIS)
+			playsound(src.loc, W.usesound, 100, 1)
+			user.visible_message("<span class='warning'>[user] starts removing the debris.</span>", \
+								"<span class='notice'>You start to remove the debris...</span>", "You hear clanking and banging noises.")
+			if(do_after(user, 40*W.toolspeed, target = src))
+				if(state != JADE_GIRDER_BROKEN_DEBRIS)
+					return
+				state = JADE_GIRDER_BROKEN
+				to_chat(user, "<span class='notice'>You remove the debris.</span>")
+				state_update()
+		else if(state == JADE_GIRDER_HOLE_DEBRIS)
+			playsound(src.loc, W.usesound, 100, 1)
+			user.visible_message("<span class='warning'>[user] starts removing the debris.</span>", \
+								"<span class='notice'>You start to remove the debris...</span>", "You hear clanking and banging noises.")
+			if(do_after(user, 40*W.toolspeed, target = src))
+				if(state != JADE_GIRDER_HOLE_DEBRIS)
+					return
+				state = JADE_GIRDER_HOLE
+				to_chat(user, "<span class='notice'>You remove the debris.</span>")
+				state_update()
+
+
+
+
+
+
+////////////////////////////////////////////////////////
 
 	else if(istype(W, /obj/item/pipe))
 		var/obj/item/pipe/P = W
@@ -228,6 +322,8 @@
 			to_chat(user, "<span class='notice'>You fit the pipe into \the [src].</span>")
 	else
 		return ..()
+
+///////////////////////////////////////////////////////
 
 /obj/structure/jadegirder/CanPass(atom/movable/mover, turf/target, height=0)
 	if(height==0)
@@ -247,7 +343,17 @@
 		. = . || mover.checkpass(PASSGRILLE)
 
 /obj/structure/jadegirder/deconstruct(disassembled = TRUE)
-	if(!(flags & NODECONSTRUCT))
-		var/remains = pick(/obj/item/stack/rods,/obj/item/stack/sheet/metal)
-		new remains(loc)
-	qdel(src)
+	return
+
+/obj/structure/jadegirder/ex_act(severity, target)
+	..() //contents explosion
+	if(target == src)
+		take_damage(rand(100, 250), BRUTE, "bomb", 0)
+		return
+	switch(severity)
+		if(1)
+			take_damage(rand(100, 250), BRUTE, "bomb", 0)
+		if(2)
+			take_damage(rand(100, 250), BRUTE, "bomb", 0)
+		if(3)
+			take_damage(rand(10, 90), BRUTE, "bomb", 0)

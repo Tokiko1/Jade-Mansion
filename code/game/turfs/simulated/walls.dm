@@ -12,7 +12,12 @@
 	var/slicing_duration = 100  //default time taken to slice the wall
 	var/sheet_type = /obj/item/stack/sheet/metal
 	var/sheet_amount = 2
-	var/girder_type = /obj/structure/girder
+	var/girder_type = /obj/structure/jadegirder
+	var/disassembly_tool
+	var/list/debris = list()
+	var/debris_amount_min = 2
+	var/debris_amount_max = 5
+	var/broken_turf = /turf/open/tiles/darkstonetile
 
 	canSmoothWith = list(
 	/turf/closed/wall,
@@ -29,20 +34,17 @@
 	return
 
 /turf/closed/wall/proc/dismantle_wall(devastated=0, explode=0)
-	if(devastated)
-		devastate_wall()
-	else
-		playsound(src, 'sound/items/Welder.ogg', 100, 1)
-		var/newgirder = break_wall()
-		if(newgirder) //maybe we don't /want/ a girder!
-			transfer_fingerprints_to(newgirder)
+	playsound(src, 'sound/items/Welder.ogg', 100, 1)
+	var/newgirder = break_wall()
+	if(newgirder) //maybe we don't /want/ a girder!
+		transfer_fingerprints_to(newgirder)
 
 	for(var/obj/O in src.contents) //Eject contents!
 		if(istype(O,/obj/structure/sign/poster))
 			var/obj/structure/sign/poster/P = O
 			P.roll_and_drop(src)
 
-	ChangeTurf(/turf/open/floor/plating)
+	ChangeTurf(broken_turf)
 
 /turf/closed/wall/proc/break_wall()
 	new sheet_type(src, sheet_amount)
@@ -221,9 +223,7 @@
 
 	if(thermite >= 50)
 		var/burning_time = max(100,300 - thermite)
-		var/turf/open/floor/F = ChangeTurf(/turf/open/floor/plating)
-		F.burn_tile()
-		F.add_hiddenprint(user)
+		addtimer(CALLBACK(src,.proc/dismantle_wall), burning_time)
 		QDEL_IN(O, burning_time)
 	else
 		thermite = 0
@@ -268,6 +268,6 @@
 	switch(passed_mode)
 		if(RCD_DECONSTRUCT)
 			to_chat(user, "<span class='notice'>You deconstruct the wall.</span>")
-			ChangeTurf(/turf/open/floor/plating)
+			ChangeTurf(broken_turf)
 			return TRUE
 	return FALSE

@@ -11,15 +11,18 @@
 
 //jade girder states
 
-#define JADE_GIRDER_NORMAL 0
-#define JADE_GIRDER_BROKEN_STACK 1
-#define JADE_GIRDER_BROKEN 2
-#define JADE_GIRDER_HOLE_STACK 3
-#define JADE_GIRDER_HOLE 4
+#define JADE_GIRDER_NORMAL 0 //100-81% health
+#define JADE_GIRDER_BROKEN_STACK 1 //80-51% health
+#define JADE_GIRDER_BROKEN 2 //50-31% health
+#define JADE_GIRDER_HOLE_STACK 3 //30-16% health
+#define JADE_GIRDER_HOLE 4 //15-0% health
 
-#define JADE_GIRDER_BROKEN_DEBRIS 5
-#define JADE_GIRDER_HOLE_DEBRIS 6
+#define JADE_GIRDER_BROKEN_DEBRIS 5 //50-31%
+#define JADE_GIRDER_HOLE_DEBRIS 6 // 15-0%
 
+#define DEBRIS_TOOL_REMOVAL 1
+#define DEBRIS_KNOCKED_LOOSE 2
+#define DEBRIS_BLASTED 3
 
 //rwall construction states
 #define INTACT 0
