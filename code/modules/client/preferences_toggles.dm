@@ -126,8 +126,8 @@
 		to_chat(src, "You will now hear ambient sounds.")
 	else
 		to_chat(src, "You will no longer hear ambient sounds.")
-		src << sound(null, repeat = 0, wait = 0, volume = 0, channel = 1)
-		src << sound(null, repeat = 0, wait = 0, volume = 0, channel = 2)
+		usr.stop_sound_channel(CHANNEL_AMBIENCE)
+		usr.stop_sound_channel(CHANNEL_BUZZ)
 	feedback_add_details("preferences_verb","Toggle Ambience|[prefs.toggles & SOUND_AMBIENCE]") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 // This needs a toggle because you people are awful and spammed terrible music
