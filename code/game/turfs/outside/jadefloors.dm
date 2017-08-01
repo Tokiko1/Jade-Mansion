@@ -58,3 +58,6 @@
 /turf/open/tiles/metaltile
 	icon_state = "metal_tile"
 
+/turf/open/tiles/steriletile
+	icon_state = "sterile_tile"
+

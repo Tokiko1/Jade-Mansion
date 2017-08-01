@@ -1,7 +1,7 @@
 /turf/closed/wall
 	name = "wall"
 	desc = "A huge chunk of metal used to separate rooms."
-	icon = 'icons/turf/walls/wall.dmi'
+	icon = 'icons/turf/walls/drywall1.dmi'
 	icon_state = "wall"
 	explosion_block = 1
 
@@ -9,12 +9,12 @@
 	heat_capacity = 312500 //a little over 5 cm thick , 312500 for 1 m by 2.5 m by 0.25 m plasteel wall
 
 	var/hardness = 40 //lower numbers are harder. Used to determine the probability of a hulk smashing through.
-	var/slicing_duration = 100  //default time taken to slice the wall
+	var/slicing_duration = 300  //default time taken to slice the wall
 	var/sheet_type = /obj/item/stack/sheet/metal
 	var/sheet_amount = 2
 	var/girder_type = /obj/structure/jadegirder
-	var/disassembly_tool
-	var/list/debris = list()
+	var/disassembly_tool = /obj/item/weapon/weldingtool
+	var/list/debris = list(/obj/item/debris/stonemetal, /obj/item/debris/stone)
 	var/debris_amount_min = 2
 	var/debris_amount_max = 5
 	var/broken_turf = /turf/open/tiles/metaltile
@@ -35,7 +35,9 @@
 
 /turf/closed/wall/proc/dismantle_wall(devastated=0, explode=0)
 	playsound(src, 'sound/items/Welder.ogg', 100, 1)
-	var/obj/structure/jadegirder/newgirder = break_wall()
+	var/obj/structure/jadegirder/newgirder = new girder_type(src)
+	break_wall(explode)
+
 	if(newgirder) //maybe we don't /want/ a girder!
 		if(explode)
 			if(devastated || prob(10))
@@ -53,9 +55,17 @@
 
 	ChangeTurf(broken_turf)
 
-/turf/closed/wall/proc/break_wall()
-	new sheet_type(src, sheet_amount)
-	return new girder_type(src)
+/turf/closed/wall/proc/break_wall(explode = 0)
+	if(explode && debris.len) //the wall wasn't cleanly deconstructed so let's spawn and throw some debris around
+		var/list/turfs_to_target = circlerangeturfs(center=src,radius=4)
+		var/amount_of_debris = rand(debris_amount_min,debris_amount_max)
+		for(var/i in 1 to amount_of_debris)
+			var/debris_path = pick(debris)
+			var/obj/item/debris/DS = new debris_path(src)
+			DS.throw_at(pick(turfs_to_target), 10, 10)
+	else
+		new sheet_type(src, sheet_amount)
+	return
 
 /turf/closed/wall/proc/devastate_wall()
 	new sheet_type(src, sheet_amount)
@@ -175,18 +185,16 @@
 
 
 /turf/closed/wall/proc/try_decon(obj/item/weapon/W, mob/user, turf/T)
-	if( istype(W, /obj/item/weapon/weldingtool) )
-		var/obj/item/weapon/weldingtool/WT = W
-		if( WT.remove_fuel(0,user) )
-			to_chat(user, "<span class='notice'>You begin slicing through the outer plating...</span>")
-			playsound(src, W.usesound, 100, 1)
-			if(do_after(user, slicing_duration*W.toolspeed, target = src))
-				if(!iswallturf(src) || !user || !WT || !WT.isOn() || !T)
-					return 1
-				if( user.loc == T && user.get_active_held_item() == WT )
-					to_chat(user, "<span class='notice'>You remove the outer plating.</span>")
-					dismantle_wall()
-					return 1
+	if( istype(W, disassembly_tool) )
+		to_chat(user, "<span class='notice'>You begin dismantling the wall...</span>")
+		playsound(src, W.usesound, 100, 1)
+		if(do_after(user, slicing_duration*W.toolspeed, target = src))
+			if(!iswallturf(src) || !user || !W || !T)
+				return 1
+			if( user.loc == T && user.get_active_held_item() == W )
+				to_chat(user, "<span class='notice'>You dismantle the wall.</span>")
+				dismantle_wall()
+				return 1
 	else if( istype(W, /obj/item/weapon/gun/energy/plasmacutter) )
 		to_chat(user, "<span class='notice'>You begin slicing through the outer plating...</span>")
 		playsound(src, 'sound/items/Welder.ogg', 100, 1)
