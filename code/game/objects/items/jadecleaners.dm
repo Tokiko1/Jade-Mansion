@@ -20,3 +20,9 @@
 	icon = 'icons/obj/jadeequipments.dmi'
 	desc = "A feather duster, ideal for removing dust or cobwebs.."
 	icon_state = "feather_duster"
+
+/obj/item/weapon/parasol
+	name = "parasol"
+	icon = 'icons/obj/jadeequipments.dmi'
+	dec = "A parasol, just add water!"
+	icon_state = "parasol"
