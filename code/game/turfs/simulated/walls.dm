@@ -1,7 +1,7 @@
 /turf/closed/wall
 	name = "wall"
 	desc = "A huge chunk of metal used to separate rooms."
-	icon = 'icons/turf/walls/wall.dmi'
+	icon = 'icons/turf/walls/drywall1.dmi'
 	icon_state = "wall"
 	explosion_block = 1
 
@@ -9,44 +9,55 @@
 	heat_capacity = 312500 //a little over 5 cm thick , 312500 for 1 m by 2.5 m by 0.25 m plasteel wall
 
 	var/hardness = 40 //lower numbers are harder. Used to determine the probability of a hulk smashing through.
-	var/slicing_duration = 100  //default time taken to slice the wall
+	var/slicing_duration = 300  //default time taken to slice the wall
 	var/sheet_type = /obj/item/stack/sheet/metal
 	var/sheet_amount = 2
-	var/girder_type = /obj/structure/girder
+	var/girder_type = /obj/structure/jadegirder
+	var/disassembly_tool = /obj/item/weapon/crowbar
+	var/list/debris = list(/obj/item/debris/stonemetal, /obj/item/debris/stone)
+	var/debris_amount_min = 2
+	var/debris_amount_max = 5
+	var/broken_turf = /turf/open/tiles/metaltile
 
-	canSmoothWith = list(
-	/turf/closed/wall,
-	/turf/closed/wall/r_wall,
-	/obj/structure/falsewall,
-	/obj/structure/falsewall/brass,
-	/obj/structure/falsewall/reinforced,
-	/turf/closed/wall/rust,
-	/turf/closed/wall/r_wall/rust,
-	/turf/closed/wall/clockwork)
+	canSmoothWith = list(/turf/closed/wall/,/turf/closed/wall/strong)
 	smooth = SMOOTH_TRUE
 
 /turf/closed/wall/attack_tk()
 	return
 
 /turf/closed/wall/proc/dismantle_wall(devastated=0, explode=0)
-	if(devastated)
-		devastate_wall()
-	else
-		playsound(src, 'sound/items/Welder.ogg', 100, 1)
-		var/newgirder = break_wall()
-		if(newgirder) //maybe we don't /want/ a girder!
-			transfer_fingerprints_to(newgirder)
+	playsound(src, 'sound/items/Welder.ogg', 100, 1)
+	var/obj/structure/jadegirder/newgirder = new girder_type(src)
+	break_wall(explode)
+
+	if(newgirder) //maybe we don't /want/ a girder!
+		if(explode)
+			if(devastated || prob(10))
+				newgirder.adjust_state(JADE_GIRDER_HOLE_DEBRIS)
+			else if (prob(70))
+				newgirder.adjust_state(JADE_GIRDER_BROKEN_DEBRIS)
+			else if(prob(60))
+				newgirder.adjust_state(JADE_GIRDER_BROKEN)
+		transfer_fingerprints_to(newgirder)
 
 	for(var/obj/O in src.contents) //Eject contents!
 		if(istype(O,/obj/structure/sign/poster))
 			var/obj/structure/sign/poster/P = O
 			P.roll_and_drop(src)
 
-	ChangeTurf(/turf/open/floor/plating)
+	ChangeTurf(broken_turf)
 
-/turf/closed/wall/proc/break_wall()
-	new sheet_type(src, sheet_amount)
-	return new girder_type(src)
+/turf/closed/wall/proc/break_wall(explode = 0)
+	if(explode && debris.len) //the wall wasn't cleanly deconstructed so let's spawn and throw some debris around
+		var/list/turfs_to_target = circlerangeturfs(center=src,radius=4)
+		var/amount_of_debris = rand(debris_amount_min,debris_amount_max)
+		for(var/i in 1 to amount_of_debris)
+			var/debris_path = pick(debris)
+			var/obj/item/debris/DS = new debris_path(src)
+			DS.throw_at(pick(turfs_to_target), 10, 10)
+	else
+		new sheet_type(src, sheet_amount)
+	return
 
 /turf/closed/wall/proc/devastate_wall()
 	new sheet_type(src, sheet_amount)
@@ -58,10 +69,10 @@
 		return
 	switch(severity)
 		if(1)
-			//SN src = null
-			var/turf/NT = ChangeTurf(baseturf)
-			NT.contents_explosion(severity, target)
-			return
+			if (prob(80))
+				dismantle_wall(0,1)
+			else
+				dismantle_wall(1,1)
 		if(2)
 			if (prob(50))
 				dismantle_wall(0,1)
@@ -135,6 +146,9 @@
 	if(!isturf(user.loc))
 		return	//can't do this stuff whilst inside objects and such
 
+	if(!istype(src, /turf/closed/wall))
+		return //this turf got transformed or something, abort
+
 	add_fingerprint(user)
 
 	//THERMITE related stuff. Calls src.thermitemelt() which handles melting simulated walls and the relevant effects
@@ -166,18 +180,16 @@
 
 
 /turf/closed/wall/proc/try_decon(obj/item/weapon/W, mob/user, turf/T)
-	if( istype(W, /obj/item/weapon/weldingtool) )
-		var/obj/item/weapon/weldingtool/WT = W
-		if( WT.remove_fuel(0,user) )
-			to_chat(user, "<span class='notice'>You begin slicing through the outer plating...</span>")
-			playsound(src, W.usesound, 100, 1)
-			if(do_after(user, slicing_duration*W.toolspeed, target = src))
-				if(!iswallturf(src) || !user || !WT || !WT.isOn() || !T)
-					return 1
-				if( user.loc == T && user.get_active_held_item() == WT )
-					to_chat(user, "<span class='notice'>You remove the outer plating.</span>")
-					dismantle_wall()
-					return 1
+	if( istype(W, disassembly_tool) )
+		to_chat(user, "<span class='notice'>You begin dismantling the wall...</span>")
+		playsound(src, W.usesound, 100, 1)
+		if(do_after(user, slicing_duration*W.toolspeed, target = src))
+			if(!iswallturf(src) || !user || !W || !T)
+				return 1
+			if( user.loc == T && user.get_active_held_item() == W )
+				to_chat(user, "<span class='notice'>You dismantle the wall.</span>")
+				dismantle_wall()
+				return 1
 	else if( istype(W, /obj/item/weapon/gun/energy/plasmacutter) )
 		to_chat(user, "<span class='notice'>You begin slicing through the outer plating...</span>")
 		playsound(src, 'sound/items/Welder.ogg', 100, 1)
@@ -219,11 +231,9 @@
 
 	playsound(src, 'sound/items/Welder.ogg', 100, 1)
 
-	if(thermite >= 50)
-		var/burning_time = max(100,300 - thermite)
-		var/turf/open/floor/F = ChangeTurf(/turf/open/floor/plating)
-		F.burn_tile()
-		F.add_hiddenprint(user)
+	if(thermite >= 10)
+		var/burning_time = max(100,150 - thermite)
+		addtimer(CALLBACK(src,.proc/dismantle_wall), burning_time)
 		QDEL_IN(O, burning_time)
 	else
 		thermite = 0
@@ -268,6 +278,6 @@
 	switch(passed_mode)
 		if(RCD_DECONSTRUCT)
 			to_chat(user, "<span class='notice'>You deconstruct the wall.</span>")
-			ChangeTurf(/turf/open/floor/plating)
+			ChangeTurf(broken_turf)
 			return TRUE
 	return FALSE

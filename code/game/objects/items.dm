@@ -63,6 +63,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	var/put_on_delay = 20
 	var/breakouttime = 0
 	var/list/materials
+	var/smeltable = 0		//determines if the object can be recycled into its materials
 	var/origin_tech = null	//Used by R&D to determine what research bonuses it grants.
 	var/needs_permit = 0			//Used by security bots to determine if this item is safe for public use.
 

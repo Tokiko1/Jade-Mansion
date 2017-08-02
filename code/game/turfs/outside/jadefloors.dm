@@ -55,3 +55,9 @@
 /turf/open/tiles/woodenboards/woodentile3
 	icon_state = "wood3"
 
+/turf/open/tiles/metaltile
+	icon_state = "metal_tile"
+
+/turf/open/tiles/steriletile
+	icon_state = "sterile_tile"
+

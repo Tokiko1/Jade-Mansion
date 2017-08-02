@@ -9,6 +9,21 @@
 #define GIRDER_DISPLACED 3
 #define GIRDER_DISASSEMBLED 4
 
+//jade girder states
+
+#define JADE_GIRDER_NORMAL 0 //100-81% health
+#define JADE_GIRDER_BROKEN_STACK 1 //80-51% health
+#define JADE_GIRDER_BROKEN 2 //50-31% health
+#define JADE_GIRDER_HOLE_STACK 3 //30-16% health
+#define JADE_GIRDER_HOLE 4 //15-0% health
+
+#define JADE_GIRDER_BROKEN_DEBRIS 5 //50-31%
+#define JADE_GIRDER_HOLE_DEBRIS 6 // 15-0%
+
+#define DEBRIS_TOOL_REMOVAL 1
+#define DEBRIS_KNOCKED_LOOSE 2
+#define DEBRIS_BLASTED 3
+
 //rwall construction states
 #define INTACT 0
 #define SUPPORT_LINES 1
@@ -76,6 +91,9 @@
 
 //Material defines, for determining how much of a given material an item contains
 #define MAT_METAL		"$metal"
+#define MAT_SLAG		"$slag"
+#define MAT_WOOD		"$wood"
+#define MAT_STONE		"$stone"
 #define MAT_GLASS		"$glass"
 #define MAT_SILVER		"$silver"
 #define MAT_GOLD		"$gold"
