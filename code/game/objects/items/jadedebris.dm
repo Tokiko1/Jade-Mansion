@@ -32,3 +32,13 @@
 	messy_thing = 1
 	materials = list(MAT_STONE=400)
 	smeltable = 1
+
+/obj/item/debris/wood
+	name = "wooden debris"
+	icon = 'icons/obj/debris.dmi'
+	desc = "A useless chunk of broken wood."
+	icon_state = "stone1"
+	possible_icons = list("wood1", "wood2", "wood3")
+	messy_thing = 1
+	materials = list(MAT_WOOD=400)
+	smeltable = 1

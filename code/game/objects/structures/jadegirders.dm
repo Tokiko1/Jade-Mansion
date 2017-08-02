@@ -8,18 +8,19 @@
 	name = "girder"
 	icon = 'icons/obj/jade_girders.dmi'
 	icon_state = "jgirder"
-	var/list/debris_icons = list("stone_debris1","stone_debris2","stone_debris3")
+	var/list/debris_icons = list("stone_debris1","stone_debris2","stone_debris3", "stone_debris4", "stone_debris5")
 	anchored = 1
 	density = 1
 	layer = BELOW_OBJ_LAYER
 	var/state = JADE_GIRDER_NORMAL
 	var/girderpasschance = 20 // percentage chance that a projectile passes through the girder.
 
-	var/disassembly_tool = /obj/item/weapon/weldingtool
+	var/disassembly_tool = /obj/item/weapon/crowbar
 	var/repair_tool = /obj/item/weapon/wrench
 	var/debris_clearing_tool = /obj/item/weapon/shovel
 	var/girder_stack_amount = 2
 	var/girder_stack_type = /obj/item/stack/sheet/metal //what kind of stack is used to repair the girder, if null, girders can be repaired for free, but also don't drop any stacks on deconstruction
+	var/girder_finish_type = /obj/item/stack/sheet/metal //the type of stack used to finish the wall, ie so you can have metal girders inside a wooden wall
 	var/girder_turf_path = /turf/closed/wall //type of turf that the fully constructed girder turns into
 
 	var/density_broken = 1 //density and opacity of the states
@@ -82,17 +83,12 @@
 	return 1
 
 /obj/structure/jadegirder/proc/remove_debris(removal_method, mob/user, obj/item/W)
-	if(!removal_method)
-		return
-
 	if(state == JADE_GIRDER_BROKEN_DEBRIS)
 		state = JADE_GIRDER_BROKEN
+		state_update()
 	else if(state == JADE_GIRDER_HOLE_DEBRIS)
 		state = JADE_GIRDER_HOLE
-	else
-		return
-
-	state_update()
+		state_update()
 
 	if(removal_method == DEBRIS_TOOL_REMOVAL)
 		var/turf/debris_target = get_turf(user)
@@ -124,11 +120,9 @@
 	if(state == JADE_GIRDER_BROKEN_DEBRIS || state == JADE_GIRDER_HOLE_DEBRIS) //don't damage the girder, try to knock the debris loose instead
 		if(prob(damage_amount)) //you can probably make this nicer later on
 			remove_debris(DEBRIS_KNOCKED_LOOSE)
-		return
 	..()
 	obj_integrity = max(obj_integrity, 1)
 	handle_damage()
-	state_update()
 
 
 /obj/structure/jadegirder/deconstruct(disassembled = TRUE)
@@ -152,6 +146,7 @@
 				state = JADE_GIRDER_BROKEN_STACK
 				to_chat(user, "<span class='notice'>You disassemble the girder.</span>")
 				state_update()
+				return
 
 		else if(state == JADE_GIRDER_BROKEN_STACK)
 			playsound(src.loc, W.usesound, 100, 1)
@@ -166,6 +161,7 @@
 					var/obj/item/stack/M = new girder_stack_type(loc, girder_stack_amount)
 					M.add_fingerprint(user)
 				state_update()
+				return
 
 		else if(state == JADE_GIRDER_BROKEN)
 			playsound(src.loc, W.usesound, 100, 1)
@@ -177,6 +173,7 @@
 				state = JADE_GIRDER_HOLE_STACK
 				to_chat(user, "<span class='notice'>You break the girder apart.</span>")
 				state_update()
+				return
 
 		else if(state == JADE_GIRDER_HOLE_STACK)
 			playsound(src.loc, W.usesound, 100, 1)
@@ -191,6 +188,7 @@
 					var/obj/item/stack/M = new girder_stack_type(loc, girder_stack_amount)
 					M.add_fingerprint(user)
 				state_update()
+				return
 
 		else if(state == JADE_GIRDER_HOLE)
 			to_chat(user, "<span class='notice'>The girder cannot be disassembled any further.</span>")
@@ -228,6 +226,7 @@
 				to_chat(user, "<span class='notice'>You successfully repair the girder.</span>")
 				state = JADE_GIRDER_NORMAL
 				state_update()
+				return
 
 		else if (state == JADE_GIRDER_BROKEN)
 			if(girder_stack_type)
@@ -242,6 +241,7 @@
 				to_chat(user, "<span class='notice'>You successfully reconnect the materials to the girder.</span>")
 				state = JADE_GIRDER_BROKEN_STACK
 				state_update()
+				return
 
 		else if(state == JADE_GIRDER_HOLE_STACK)
 			playsound(src.loc, W.usesound, 100, 1)
@@ -252,6 +252,7 @@
 				to_chat(user, "<span class='notice'>You successfully repair the girder.</span>")
 				state = JADE_GIRDER_BROKEN
 				state_update()
+				return
 		else if(state == JADE_GIRDER_HOLE && !girder_stack_type) //only gets called if stacks repairs are disabled
 			playsound(src.loc, W.usesound, 100, 1)
 			to_chat(user, "<span class='notice'>You start securing the added material...</span>")
@@ -261,6 +262,7 @@
 				to_chat(user, "<span class='notice'>You successfully repair the girder.</span>")
 				state = JADE_GIRDER_HOLE_STACK
 				state_update()
+				return
 
 		else if(state == JADE_GIRDER_BROKEN_DEBRIS || state == JADE_GIRDER_HOLE_DEBRIS)
 			to_chat(user, "<span class='notice'>You cannot repair the girder, there is debris everywhere.</span>")
@@ -268,14 +270,14 @@
 
 /////////////STACK REPAIRS //////////////////
 
-	if(girder_stack_type && girder_stack_amount)
-		if(istype(W, girder_stack_type))
+	if((girder_stack_type || girder_finish_type) && girder_stack_amount)
+		if(istype(W, girder_stack_type) || istype(W, girder_finish_type))
 			var/obj/item/stack/sheet/S = W
 			if(S.amount < girder_stack_amount)
 				to_chat(user, "<span class='notice'>You need atleast [girder_stack_amount] of [S.name] to carry out repairs on this girder.</span>")
 				return
 
-			if(state == JADE_GIRDER_NORMAL) // wall gets fully restored here
+			if(state == JADE_GIRDER_NORMAL && istype(W, girder_finish_type)) // wall gets fully restored here
 				to_chat(user, "<span class='notice'>You start finishing the wall...</span>")
 				if(do_after(user, 40, target = src))
 					if(state != JADE_GIRDER_NORMAL && S.amount < girder_stack_amount)
@@ -287,7 +289,7 @@
 					qdel(src)
 					return
 
-			else if(state == JADE_GIRDER_BROKEN )
+			else if(state == JADE_GIRDER_BROKEN && istype(W, girder_stack_type))
 				to_chat(user, "<span class='notice'>You start finishing the wall...</span>")
 				if(do_after(user, 40, target = src))
 					if(state != JADE_GIRDER_BROKEN && S.amount < girder_stack_amount)
@@ -296,8 +298,9 @@
 					to_chat(user, "<span class='notice'>You successfully repair the girder.</span>")
 					state = JADE_GIRDER_BROKEN_STACK
 					state_update()
+					return
 
-			else if(state == JADE_GIRDER_HOLE)
+			else if(state == JADE_GIRDER_HOLE && istype(W, girder_stack_type))
 				to_chat(user, "<span class='notice'>You start finishing the wall...</span>")
 				if(do_after(user, 40, target = src))
 					if(state != JADE_GIRDER_HOLE && S.amount < girder_stack_amount)
@@ -306,6 +309,7 @@
 					to_chat(user, "<span class='notice'>You successfully repair the girder.</span>")
 					state = JADE_GIRDER_HOLE_STACK
 					state_update()
+					return
 
 			else if(state == JADE_GIRDER_BROKEN_DEBRIS || state == JADE_GIRDER_HOLE_DEBRIS)
 				to_chat(user, "<span class='notice'>You cannot repair the girder, there is debris everywhere.</span>")
@@ -325,6 +329,7 @@
 				to_chat(user, "<span class='notice'>You remove the debris.</span>")
 				remove_debris(DEBRIS_TOOL_REMOVAL , user, W)
 				state_update()
+				return
 		else if(state == JADE_GIRDER_HOLE_DEBRIS)
 			playsound(src.loc, W.usesound, 100, 1)
 			user.visible_message("<span class='warning'>[user] starts removing the debris.</span>", \
@@ -336,6 +341,7 @@
 				to_chat(user, "<span class='notice'>You remove the debris.</span>")
 				remove_debris(DEBRIS_TOOL_REMOVAL , user, W)
 				state_update()
+				return
 
 
 
@@ -344,15 +350,17 @@
 
 ////////////////////////////////////////////////////////
 
-	else if(istype(W, /obj/item/pipe))
+	if(istype(W, /obj/item/pipe))
 		var/obj/item/pipe/P = W
 		if (P.pipe_type in list(0, 1, 5))	//simple pipes, simple bends, and simple manifolds.
 			if(!user.drop_item())
 				return
 			P.loc = src.loc
 			to_chat(user, "<span class='notice'>You fit the pipe into \the [src].</span>")
-	else
-		return ..()
+			return
+
+
+	return ..()
 
 ///////////////////////////////////////////////////////
 

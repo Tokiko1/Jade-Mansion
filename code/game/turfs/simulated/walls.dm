@@ -13,21 +13,13 @@
 	var/sheet_type = /obj/item/stack/sheet/metal
 	var/sheet_amount = 2
 	var/girder_type = /obj/structure/jadegirder
-	var/disassembly_tool = /obj/item/weapon/weldingtool
+	var/disassembly_tool = /obj/item/weapon/crowbar
 	var/list/debris = list(/obj/item/debris/stonemetal, /obj/item/debris/stone)
 	var/debris_amount_min = 2
 	var/debris_amount_max = 5
 	var/broken_turf = /turf/open/tiles/metaltile
 
-	canSmoothWith = list(
-	/turf/closed/wall,
-	/turf/closed/wall/r_wall,
-	/obj/structure/falsewall,
-	/obj/structure/falsewall/brass,
-	/obj/structure/falsewall/reinforced,
-	/turf/closed/wall/rust,
-	/turf/closed/wall/r_wall/rust,
-	/turf/closed/wall/clockwork)
+	canSmoothWith = list(/turf/closed/wall/,/turf/closed/wall/strong)
 	smooth = SMOOTH_TRUE
 
 /turf/closed/wall/attack_tk()
@@ -153,6 +145,9 @@
 	//get the user's location
 	if(!isturf(user.loc))
 		return	//can't do this stuff whilst inside objects and such
+
+	if(!istype(src, /turf/closed/wall))
+		return //this turf got transformed or something, abort
 
 	add_fingerprint(user)
 

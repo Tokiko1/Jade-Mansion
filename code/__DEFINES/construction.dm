@@ -92,6 +92,7 @@
 //Material defines, for determining how much of a given material an item contains
 #define MAT_METAL		"$metal"
 #define MAT_SLAG		"$slag"
+#define MAT_WOOD		"$wood"
 #define MAT_STONE		"$stone"
 #define MAT_GLASS		"$glass"
 #define MAT_SILVER		"$silver"
