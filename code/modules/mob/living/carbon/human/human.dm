@@ -761,10 +761,18 @@
 	return 1
 
 /mob/living/carbon/human/resist_restraints()
-	if(wear_suit && wear_suit.breakouttime)
-		changeNext_move(CLICK_CD_BREAKOUT)
-		last_special = world.time + CLICK_CD_BREAKOUT
-		cuff_resist(wear_suit)
+	if(GetClothingCanresist())
+		var/list/resist_list = list()
+		resist_list += GetClothesResistList()
+		if(handcuffed)
+			resist_list += handcuffed
+		var/client/selection = input("What do you want to resist out of?", "Resist Pick", null, null) as null|anything in resist_list
+		if(!selection)
+			return
+		else
+			changeNext_move(CLICK_CD_BREAKOUT)
+			last_special = world.time + CLICK_CD_BREAKOUT
+			cuff_resist(selection)
 	else
 		..()
 

@@ -64,6 +64,14 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	var/breakouttime = 0
 	var/list/materials
 	var/smeltable = 0		//determines if the object can be recycled into its materials
+
+	var/restrain = 0 //does this restrain us?
+	var/can_move_restrain = 0 //does it stop us from moving?
+	var/stand_up_restrain = 0 //does it stop us from standing up?
+	var/can_resist = 0 //can we resist out of these clothes? use this with restrain/stop_remove clothing only
+	var/stop_remove = 0 //0 no change, 1 = only others can remove this
+	var/not_removeable = 0
+
 	var/origin_tech = null	//Used by R&D to determine what research bonuses it grants.
 	var/needs_permit = 0			//Used by security bots to determine if this item is safe for public use.
 

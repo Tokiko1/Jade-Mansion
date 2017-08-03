@@ -76,11 +76,11 @@
 
 /obj/item/weapon/folder/documents
 	name = "folder- 'TOP SECRET'"
-	desc = "A folder stamped \"Top Secret - Property of Nanotrasen Corporation. Unauthorized distribution is punishable by death.\""
+	desc = "A folder stamped \"Top Secret - Property of Jade Empire.\""
 
 /obj/item/weapon/folder/documents/New()
 	..()
-	new /obj/item/documents/nanotrasen(src)
+	new /obj/item/documents/jade(src)
 	update_icon()
 
 /obj/item/weapon/folder/syndicate

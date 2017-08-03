@@ -12,25 +12,32 @@
 	pressure_resistance = 2
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 
-/obj/item/documents/nanotrasen
-	desc = "\"Top Secret\" Nanotrasen documents, filled with complex diagrams and lists of names, dates and coordinates."
+/obj/item/documents/jade
+	name = "secret Jade Empire documents"
+	desc = "\"Top Secret\" Jade Empire documents, filled with complex diagrams and lists of names, dates and coordinates."
 	icon_state = "docs_verified"
 
-/obj/item/documents/syndicate
-	desc = "\"Top Secret\" documents detailing sensitive Syndicate operational intelligence."
+/obj/item/documents/wood
+	name = "secret Wood Empire documents"
+	desc = "\"Top Secret\" documents detailing sensitive Wood Empire exploration intelligence."
+
+/obj/item/documents/porcelain
+	name = "secret Porcelain Empire documents"
+	desc = "\"Top Secret\" documents filled with complex research data."
+
 
 /obj/item/documents/syndicate/red
 	name = "red secret documents"
-	desc = "\"Top Secret\" documents detailing sensitive Syndicate operational intelligence. These documents are verified with a red wax seal."
+	desc = "\"Top Secret\" documents detailing sensitive Spy Cell operational intelligence. These documents are verified with a red wax seal."
 	icon_state = "docs_red"
 
 /obj/item/documents/syndicate/blue
 	name = "blue secret documents"
-	desc = "\"Top Secret\" documents detailing sensitive Syndicate operational intelligence. These documents are verified with a blue wax seal."
+	desc = "\"Top Secret\" documents detailing sensitive Spy Cell operational intelligence. These documents are verified with a blue wax seal."
 	icon_state = "docs_blue"
 
 /obj/item/documents/syndicate/mining
-	desc = "\"Top Secret\" documents detailing Syndicate plasma mining operations."
+	desc = "\"Top Secret\" documents detailing Gold Shogunate mining operations."
 
 /obj/item/documents/photocopy
 	desc = "A copy of some top-secret documents. Nobody will notice they aren't the originals... right?"

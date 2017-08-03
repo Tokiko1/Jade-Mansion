@@ -56,14 +56,14 @@
 // Selling NT docs to Syndicate
 /datum/export/intel/syndie
 	message = "of Nanotrasen intelligence"
-	export_types = list(/obj/item/documents/nanotrasen)
+	export_types = list(/obj/item/documents/jade)
 	emagged = TRUE
 
 /datum/export/intel/syndie/photocopy
 	cost = 15000
 	unit_name = "photocopied article"
 	export_types = list(/obj/item/documents/photocopy)
-	copy_path = /obj/item/documents/nanotrasen
+	copy_path = /obj/item/documents/jade
 
 // Selling Syndicate docs to Syndicate, why not?
 /datum/export/intel/syndie/recovered

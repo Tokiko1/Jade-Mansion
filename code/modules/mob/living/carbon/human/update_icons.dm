@@ -338,8 +338,6 @@ There are several things that need to be remembered:
 		var/image/standing = wear_suit.build_worn_icon(state = wear_suit.icon_state, default_layer = SUIT_LAYER, default_icon_file = 'icons/mob/suit.dmi')
 		overlays_standing[SUIT_LAYER]	= standing
 
-		if(wear_suit.breakouttime) //suit is restraining
-			drop_all_held_items()
 
 	update_hair()
 	update_mutant_bodyparts()
