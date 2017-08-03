@@ -4,6 +4,12 @@
 	anchored = 1
 	icon_state = "cabinet"
 
+/obj/structure/closet/jademansion/entrance/PopulateContents()
+	new /obj/item/weapon/parasol(src)
+	new /obj/item/weapon/parasol(src)
+	new /obj/item/weapon/parasol(src)
+	new /obj/item/weapon/parasol(src)
+
 /obj/structure/closet/jademansion/chemstorage
 /obj/structure/closet/jademansion/medicalroom/PopulateContents()
 	new /obj/item/weapon/storage/box/gloves(src)

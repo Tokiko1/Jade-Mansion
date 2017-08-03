@@ -254,6 +254,7 @@
 	weather_duration_lower = 30000000
 	weather_duration_upper = 60000000
 	weather_sound = 'sound/ambience/acidrain_mid.ogg'
+	var/parasol_type = /obj/item/weapon/parasol
 
 	end_duration = 100
 	end_message = "<span class='notice'>The clouds begin to part. Looks like the rain is letting up.</span>"
@@ -263,5 +264,8 @@
 	target_z = ZLEVEL_ALL
 
 /datum/weather/verylongrain/impact(mob/living/L)
+	if(L.is_holding_item_of_type(parasol_type))
+		return
+
 	L.fire_stacks = max(L.fire_stacks-2, -20)
 
