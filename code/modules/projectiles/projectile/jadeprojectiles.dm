@@ -23,7 +23,7 @@
 				if(!HAS_SECONDARY_FLAG(I, FROZEN))
 					I.make_frozen_visual()
 			for(var/mob/living/L in turfa.contents)
-				if(L == target)
+				if(L == target && prob(33))
 					L.apply_status_effect(/datum/status_effect/restraining/freon, 3)
 				else if(prob(10))
 					L.apply_status_effect(/datum/status_effect/restraining/freon, 1)
