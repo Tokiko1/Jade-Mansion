@@ -61,7 +61,6 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	var/obj/item/device/uplink/hidden_uplink = null
 	var/strip_delay = 40
 	var/put_on_delay = 20
-	var/breakouttime = 0
 	var/list/materials
 	var/smeltable = 0		//determines if the object can be recycled into its materials
 
@@ -70,7 +69,8 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	var/stand_up_restrain = 0 //does it stop us from standing up?
 	var/can_resist = 0 //can we resist out of these clothes? use this with restrain/stop_remove clothing only
 	var/stop_remove = 0 //0 no change, 1 = only others can remove this
-	var/not_removeable = 0
+	var/not_removeable = 0 //set this to 1 to stop others from stripping it, does not affect the person wearing it
+	var/breakouttime = 0
 
 	var/origin_tech = null	//Used by R&D to determine what research bonuses it grants.
 	var/needs_permit = 0			//Used by security bots to determine if this item is safe for public use.

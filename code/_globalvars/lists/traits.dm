@@ -59,7 +59,8 @@ GLOBAL_LIST_INIT(traitlistpaged, list(
 "Hardy" = list("tname" = "Hardy", "tdesc" = "Your body is stronger than usual. +25 HP", "tcost" = 1, "tnotes" = null, "active" = null),
 "Frail" = list("tname" = "Frail", "tdesc" = "Your body is frail. -30 HP", "tcost" = -1, "tnotes" = null, "active" = null),
 "Porcelain Speaker" = list("tname" = "Porcelain Speaker", "tdesc" = "You can speak Porcelain Common, the most common language in the Porcelain empire.", "tcost" = 1, "tnotes" = null, "active" = null),
-"Ice Beam" = list("tname" = "Ice Beam", "tdesc" = "You start with an ice beam gun, capable of freezing floors and people.", "tcost" = 4, "tnotes" = null, "active" = null)
+"Ice Beam" = list("tname" = "Ice Beam", "tdesc" = "You start with an ice beam gun, capable of freezing floors and people.", "tcost" = 4, "tnotes" = null, "active" = null),
+"Remote Collar" = list("tname" = "Remote Collar", "tdesc" = "You start with an unremoveable remote control collar. Maybe you are a reformed criminal or very loyal or some other reason you can come up with. Anyone with a remote can enter your ID and trigger a restraining energy field on you.", "tcost" = -5, "tnotes" = "Unlike the regular remote collars, this one can't be unlocked. Your only way out would be getting very creative and destroying it somehow. You will still have this if you get an antagonistic role so beware!", "active" = null)
 
 
 )

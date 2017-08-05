@@ -81,6 +81,10 @@
 			if("Ice Beam")
 				itemstoadd += /obj/item/weapon/gun/energy/ice_beam_gun
 
+			if("Remote Collar")
+				traitholder.equip_to_slot_or_del(new /obj/item/clothing/neck/remote_collar/prelocked(traitholder),slot_neck)
+				traitholder.restrain_role = 1
+
 
 
 	if(itemstoadd.len)

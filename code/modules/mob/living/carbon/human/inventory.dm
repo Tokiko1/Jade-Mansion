@@ -63,6 +63,7 @@
 	return list(
 		head,
 		wear_mask,
+		wear_neck,
 		glasses,
 		ears,
 		)

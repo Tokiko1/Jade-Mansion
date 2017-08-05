@@ -16,6 +16,8 @@
 	. = .|(ears && ears.restrain)
 	. = .|(back && back.restrain)
 	. = .|(belt && belt.restrain)
+//	. = .|(handcuffed && handcuffed.restrain)
+//	. = .|(leg_cuffed && leg_cuffed.restrain)
 	return
 
 

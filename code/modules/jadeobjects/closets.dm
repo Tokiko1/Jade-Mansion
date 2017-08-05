@@ -299,6 +299,20 @@
 
 /obj/structure/closet/jademansion/guard/PopulateContents()
 	new /obj/item/weapon/storage/box/zipties(src)
+	new /obj/item/weapon/storage/box/zipties(src)
+	new /obj/item/clothing/shoes/bootcuffs(src)
+	new /obj/item/clothing/shoes/bootcuffs(src)
+	new /obj/item/clothing/neck/remote_collar(src)
+	new /obj/item/clothing/neck/remote_collar(src)
+	new /obj/item/clothing/neck/remote_collar(src)
+	new /obj/item/clothing/neck/remote_collar(src)
+	new /obj/item/clothing/neck/remote_collar(src)
+	for(var/i in 1 to 5) //5 lines too
+		if(prob(20))
+			new /obj/item/collar_remote(src)
+		else
+			new /obj/item/collar_remote/unsafe(src)
+
 
 
 

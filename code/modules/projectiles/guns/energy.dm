@@ -108,8 +108,8 @@
 	var/obj/item/ammo_casing/energy/shot = ammo_type[select]
 	fire_sound = shot.fire_sound
 	fire_delay = shot.delay
-	if (shot.select_name)
-		to_chat(user, "<span class='notice'>[src] is now set to [shot.select_name].</span>")
+	if (shot.notice_name)
+		to_chat(user, "<span class='notice'>[src] is now set to [shot.notice_name].</span>")
 	chambered = null
 	recharge_newshot(1)
 	update_icon()

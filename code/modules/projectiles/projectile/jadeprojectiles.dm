@@ -8,7 +8,7 @@
 	hitsound = 'sound/weapons/effects/searwall.ogg'
 	hitsound_wall = 'sound/weapons/effects/searwall.ogg'
 	flag = "laser"
-	eyeblur = 2
+	eyeblur = 0
 	impact_effect_type = /obj/effect/overlay/temp/impact_effect/blue_laser
 	hitscan = 1
 	showbeam = 1
@@ -31,3 +31,27 @@
 			turfa.MakeSlippery(wet_setting = TURF_WET_PERMAFROST, ice_time_to_add = 5)
 			addtimer(CALLBACK(turfa, /turf/open/.proc/MakeDry, TURF_WET_PERMAFROST), rand(3000, 3100))
 	..()
+
+/////////////////////////////////////////////////////
+
+/obj/item/projectile/beam/weak_disabler
+	name = "disabler beam"
+	icon_state = "omnilaser"
+	damage = 6
+	damage_type = STAMINA
+	flag = "energy"
+	hitsound = 'sound/weapons/tap.ogg'
+	eyeblur = 0
+	impact_effect_type = /obj/effect/overlay/temp/impact_effect/blue_laser
+	light_color = LIGHT_COLOR_BLUE
+
+/obj/item/projectile/beam/medium_disabler
+	name = "disabler beam"
+	icon_state = "omnilaser"
+	damage = 15
+	damage_type = STAMINA
+	flag = "energy"
+	hitsound = 'sound/weapons/tap.ogg'
+	eyeblur = 0
+	impact_effect_type = /obj/effect/overlay/temp/impact_effect/blue_laser
+	light_color = LIGHT_COLOR_BLUE

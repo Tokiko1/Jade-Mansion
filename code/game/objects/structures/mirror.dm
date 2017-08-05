@@ -11,6 +11,7 @@
 	integrity_failure = 100
 
 /obj/structure/mirror/New()
+	..()
 	adjust_spawning_pixels(32, 32)
 
 

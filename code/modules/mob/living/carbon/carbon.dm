@@ -278,7 +278,7 @@
 	else if(legcuffed)
 		I = legcuffed
 		type = 2
-	if(I)
+	if(I && I.can_resist)
 		if(type == 1)
 			changeNext_move(CLICK_CD_BREAKOUT)
 			last_special = world.time + CLICK_CD_BREAKOUT
@@ -295,7 +295,8 @@
 		visible_message("<span class='warning'>[src] attempts to remove [I]!</span>")
 		to_chat(src, "<span class='notice'>You attempt to remove [I]... (This will take around [displaytime] minutes and you need to stand still.)</span>")
 		if(do_after(src, breakouttime, 0, target = src))
-			clear_cuffs(I, cuff_break)
+			if(I.can_resist)
+				clear_cuffs(I, cuff_break)
 		else
 			to_chat(src, "<span class='warning'>You fail to remove [I]!</span>")
 
@@ -304,12 +305,14 @@
 		visible_message("<span class='warning'>[src] is trying to break [I]!</span>")
 		to_chat(src, "<span class='notice'>You attempt to break [I]... (This will take around 5 seconds and you need to stand still.)</span>")
 		if(do_after(src, breakouttime, 0, target = src))
-			clear_cuffs(I, cuff_break)
+			if(I.can_resist)
+				clear_cuffs(I, cuff_break)
 		else
 			to_chat(src, "<span class='warning'>You fail to break [I]!</span>")
 
 	else if(cuff_break == INSTANT_CUFFBREAK)
-		clear_cuffs(I, cuff_break)
+		if(I.can_resist)
+			clear_cuffs(I, cuff_break)
 
 /mob/living/carbon/proc/uncuff()
 	if (handcuffed)
