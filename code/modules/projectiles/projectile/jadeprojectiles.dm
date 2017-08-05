@@ -1,13 +1,13 @@
 /obj/item/projectile/ice_beam
-	name = "laser"
+	name = "ice beam"
 	icon_state = "laser"
 	pass_flags = PASSTABLE | PASSGLASS | PASSGRILLE
-	damage = 0
+	damage = 5
 	light_range = 2
-	damage_type = BURN
+	damage_type = STAMINA
 	hitsound = 'sound/weapons/effects/searwall.ogg'
 	hitsound_wall = 'sound/weapons/effects/searwall.ogg'
-	flag = "laser"
+	flag = "energy"
 	eyeblur = 0
 	impact_effect_type = /obj/effect/overlay/temp/impact_effect/blue_laser
 	hitscan = 1
@@ -24,7 +24,9 @@
 					I.make_frozen_visual()
 			for(var/mob/living/L in turfa.contents)
 				if(L == target && prob(33))
-					L.apply_status_effect(/datum/status_effect/restraining/freon, 3)
+					var/freezechance = max(L.getStaminaLoss(), 10)
+					if(prob(freezechance))
+						L.apply_status_effect(/datum/status_effect/restraining/freon, 3)
 				else if(prob(10))
 					L.apply_status_effect(/datum/status_effect/restraining/freon, 1)
 
