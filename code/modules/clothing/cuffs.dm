@@ -195,7 +195,7 @@
 	name = initial(name)
 
 	if(!hidden_ID)
-		desc += "The tag has an engraved ID number: [collarID]"
+		desc += "The tag has an engraved ID: [collarID]"
 		name += " [collarID]"
 	.=..()
 
@@ -290,7 +290,7 @@
 		return selection
 
 /obj/item/collar_remote/proc/CheckValidUser(mob/user)
-	//uncomment the below if people start with collars and link it to their own collar
+	//uncomment the code below if people start with collars and link it to their own collar
 
 	//if(ishuman(user)) //check if the user attempting to operate the collar started with a collar
 		//var/mob/living/carbon/human/S = user
