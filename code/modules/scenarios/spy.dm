@@ -25,12 +25,13 @@
 	"Custom 1" = list(),
 	"Custom 2" = list(),
 	"Custom 3" = list(),
-	"Butler" = list("mansion", "spy1", "spy2"),
-	"Downstairs Maid" = list("mansion", "spy1", "spy2"),
-	"Upstairs Maid" = list("mansion", "spy1", "spy2"),
+	"Butler" = list("mansion", "spy1", "spy2", "spy1", "spy2"),
+	"Downstairs Maid" = list("mansion", "spy1", "spy2", "spy1", "spy2"),
+	"Upstairs Maid" = list("mansion", "spy1", "spy2", "spy1", "spy2"),
 	"Gardener" = list("mansion", "spy1", "spy2"),
+	"Guest" = list("mansion", "spy1", "spy2", "spy1", "spy2"),
 	"Guard" = list("mansion", "spy1", "spy2"),
-	"Assistant" = list("mansion", "spy1", "spy2")
+	"Assistant" = list("mansion", "spy1", "spy2", "spy1", "spy2")
 	)
 //role fluff
 	role_fluff = list(

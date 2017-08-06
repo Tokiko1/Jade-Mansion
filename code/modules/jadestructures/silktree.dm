@@ -7,6 +7,12 @@
 	name = "giant cobweb"
 	desc = "It's stringy and sticky, you'll probably get stuck if you try to move past."
 	messy_thing = 1
+	var/web_removal_time = 50
+	var/web_stuntime = 2
+
+/obj/structure/silktree/web/weak
+	web_removal_time = 10
+	web_stuntime = 0
 
 /obj/structure/silktree/web/Initialize()
 	if(prob(50))
@@ -18,7 +24,7 @@
 
 /obj/structure/silktree/web/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/weapon/feather_duster))
-		if(do_after(user, 10, target = src))
+		if(do_after(user, web_removal_time * 0.2, target = src))
 			to_chat(user, "<span class='danger'>You easily remove the [src] with your [I].</span>")
 			Destroy()
 	..()
@@ -44,7 +50,8 @@
 		return
 	if((V.buckled != src))
 		to_chat(V, "<span class='danger'>You get stuck in the web!</span>")
-		V.Weaken(2)
+		if(web_stuntime)
+			V.Weaken(web_stuntime)
 		buckle_mob(V, 1)
 
 /obj/structure/silktree/web/user_unbuckle_mob(mob/living/buckled_mob, mob/living/carbon/human/user)
@@ -55,7 +62,7 @@
 			"<span class='warning'>[M.name] struggles to break free from the [src]!</span>",\
 			"<span class='notice'>You struggle to break free from the [src](Stay still for 12 seconds.)</span>",\
 			"<span class='italics'>You hear some sticky noise.</span>")
-			if(!do_after(M, 120, target = src))
+			if(!do_after(M, web_removal_time, target = src))
 				if(M && M.buckled)
 					to_chat(M, "<span class='warning'>You fail to free yourself!</span>")
 				return

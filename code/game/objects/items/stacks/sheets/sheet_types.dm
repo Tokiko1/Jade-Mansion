@@ -26,6 +26,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	null, \
 	new/datum/stack_recipe("canister", /obj/machinery/portable_atmospherics/canister, 10, time = 15, one_per_turf = 1, on_floor = 1), \
 	null, \
+	new/datum/stack_recipe("metal wire", /obj/item/stack/metal_wire, 1, 10, 150), \
 	new/datum/stack_recipe("metal rod", /obj/item/stack/rods, 1, 2, 60), \
 	null, \
 	null, \

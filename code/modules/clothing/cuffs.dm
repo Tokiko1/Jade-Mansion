@@ -204,6 +204,25 @@
 /obj/item/clothing/neck/remote_collar/spy
 	unsecure_frequency = 0
 	hidden_ID = 1
+	desc = "A special collar with advanced barrier technology to restrain its wearer. This is a special one that automatically locks upon being applied and has no visible ID, thought it appears it can still be scanned by the remote."
+
+
+/obj/item/clothing/neck/remote_collar/spy/equipped(mob/user, slot)
+	user.visible_message("<span class='warning'>The collar shuts closed immediatly!</span>")
+	restrain = 0
+	can_move_restrain = 0
+	stand_up_restrain = 0
+	can_resist = 0
+	stop_remove = 1
+	can_move_restrain = 0
+	not_removeable = 1
+	bind_active = 0
+	user.update_inv_neck()
+	user.update_canmove()
+	user.update_action_buttons_icon()
+	current_mode = "lock"
+	. = ..()
+
 
 //////////////Cuff Remotes///////
 

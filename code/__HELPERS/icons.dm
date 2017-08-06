@@ -968,7 +968,7 @@ GLOBAL_LIST_EMPTY(friendly_animal_types)
 /image/proc/setDir(newdir)
 	dir = newdir
 
-/atom/proc/freeze_icon_index()
+/atom/proc/freeze_icon_index() //remove this proc if you uncomment the fast procs below
 	return "\ref[initial(icon)]-[initial(icon_state)]"
 
 /obj/proc/make_frozen_visual()
@@ -995,3 +995,24 @@ obj/proc/make_unfrozen()
 	icon = initial(icon)
 	name = replacetext(name, "frozen ", "")
 	CLEAR_SECONDARY_FLAG(src, FROZEN)
+
+//uncomment the thing below if you want processing cheap but rather dull looking frozen objects
+/*
+/obj/proc/make_frozen_visual()
+	// Used to make the frozen item visuals for Freon.
+	if(resistance_flags & FREEZE_PROOF)
+		return
+	if(!HAS_SECONDARY_FLAG(src, FROZEN))
+		name = "frozen [name]"
+		add_atom_colour(list("#2E5E69", "#60A2A8", "#A1AFB1", rgb(0,0,0)), TEMPORARY_COLOUR_PRIORITY)
+		alpha -= 25
+		SET_SECONDARY_FLAG(src, FROZEN)
+
+//Assumes already frozed
+/obj/proc/make_unfrozen()
+	if(HAS_SECONDARY_FLAG(src, FROZEN))
+		name = replacetext(name, "frozen ", "")
+		remove_atom_colour(TEMPORARY_COLOUR_PRIORITY, list("#2E5E69", "#60A2A8", "#A1AFB1", rgb(0,0,0)))
+		alpha += 25
+		CLEAR_SECONDARY_FLAG(src, FROZEN)
+*/
