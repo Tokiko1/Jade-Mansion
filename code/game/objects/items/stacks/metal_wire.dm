@@ -1,5 +1,11 @@
 GLOBAL_LIST_INIT(metal_wire_recipes, list ( \
-	new/datum/stack_recipe("spikewire wall", /obj/structure/jadetrap/spikewire, 20, time = 50, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("spikewire wall", /obj/structure/jadetrap/spikewire, 50, time = 50, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("trip wire trap", /obj/structure/jadetrap/tripwire, 20, time = 30, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("bouncy trip wire trap", /obj/structure/jadetrap/tripwire/bouncy, 60, time = 100, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("tall trip wire trap", /obj/structure/jadetrap/tripwire/high, 40, time = 60, one_per_turf = 1, on_floor = 1), \
+
+
+
 	))
 
 /obj/item/stack/metal_wire

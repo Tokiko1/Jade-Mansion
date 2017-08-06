@@ -76,7 +76,7 @@
 	can_disarm = 1
 	disarmtime = 100
 	disarm_item = /obj/item/stack/metal_wire
-	disarm_item_amount = 20
+	disarm_item_amount = 50
 
 	does_disarm_trigger = 1
 	disarm_trigger_chance = 30
@@ -108,3 +108,84 @@
 		to_chat(T, "<span class='warning'>You are hurt by [src]!</span>")
 
 /////////////////////////
+
+/obj/structure/jadetrap/tripwire
+	name = "trip wire"
+	icon = 'icons/obj/traps.dmi'
+	desc = "A strong, camouflaged wire intended to trip and knock unsuspecting people down."
+	icon_state = "tripwire1"
+	density = 0
+	anchored = 1
+	alpha = 150
+	disarmtool = /obj/item/weapon/wirecutters
+	can_disarm = 1
+	disarmtime = 30
+	disarm_item = /obj/item/stack/metal_wire
+	disarm_item_amount = 20
+	var/walk_stun = 0 //does this stun people who carefully walk?
+	var/hit_flying = 0 //does this stun flying people?
+	var/send_flying = 0
+	var/send_flying_distance = 3
+	var/weaken_amount = 2
+	var/trip_damage_type = BRUTE
+	var/trip_damage_min = 1
+	var/trip_damage_max = 4
+
+	does_disarm_trigger = 0
+
+
+
+/obj/structure/jadetrap/tripwire/Crossed(atom/movable/AM)
+	TriggerTrap(AM)
+	. = ..()
+
+/obj/structure/jadetrap/tripwire/TriggerTrap(atom/movable/target)
+	if(!target)
+		return 0
+
+	if(iscarbon(target))
+		var/mob/living/carbon/T = target
+		if(T.movement_type & FLYING && !hit_flying) //harpies have it so good...
+			return 0
+		if(T.m_intent == MOVE_INTENT_WALK && !walk_stun)
+			return 0
+
+		if(T.lying || !(T.status_flags & CANWEAKEN))
+			return 0
+
+		T.Weaken(weaken_amount)
+		T.visible_message("<span class='warning'>[T] trips over [src]!</span>")
+
+		for(var/obj/item/I in T.held_items)
+			T.accident(I)
+
+		if(trip_damage_type)
+			T.apply_damage(rand(trip_damage_min, trip_damage_max), trip_damage_type)
+
+		if(send_flying)
+			new /datum/forced_movement(T, get_ranged_target_turf(T, T.dir, send_flying_distance), 1, FALSE, CALLBACK(T, /mob/living/carbon/.proc/spin, 1, 1))
+		return 1
+
+/obj/structure/jadetrap/tripwire/bouncy
+	name = "bouncy trip wire"
+	icon = 'icons/obj/traps.dmi'
+	desc = "A tripwire under pressure. Anyone stepping on it will be flung forward quite a bit."
+	icon_state = "tripwire2"
+	disarm_item_amount = 60
+	alpha = 75
+	send_flying = 1
+	send_flying_distance = 7 //OW!
+	weaken_amount = 5
+	walk_stun = 1
+	trip_damage_type = BRUTE
+	trip_damage_min = 5
+	trip_damage_max = 15 //yes, this will hurt
+
+/obj/structure/jadetrap/tripwire/high
+	name = "tall trip wire"
+	icon = 'icons/obj/traps.dmi'
+	desc = "A whole bunch of trip wires. Sure to knock over and entangle even flying things."
+	icon_state = "tripwire3"
+	disarm_item_amount = 40
+	alpha = 75
+	hit_flying = 1
