@@ -189,3 +189,50 @@
 	disarm_item_amount = 40
 	alpha = 75
 	hit_flying = 1
+
+/////CALTROP ITEM///////
+
+/obj/structure/jadetrap/tripwire/caltrop
+	name = "caltrops"
+	icon = 'icons/obj/traps.dmi'
+	desc = "A whole bunch of dangerous caltrops!"
+	icon_state = "caltrops1"
+	density = 0
+	anchored = 1
+	alpha = 255
+	disarmtool = null
+	can_disarm = 1
+	disarmtime = 100
+	disarm_item = /obj/item/caltrop/
+	disarm_item_amount = 1
+	walk_stun = 1 //does this stun people who carefully walk?
+	hit_flying = 0
+	send_flying = 0
+	weaken_amount = 5
+	trip_damage_type = BRUTE
+	trip_damage_min = 10
+	trip_damage_max = 20
+	does_disarm_trigger = 0
+
+/obj/structure/jadetrap/tripwire/caltrop/Initialize()
+	icon_state = pick("caltrops1","caltrops2","caltrops3")
+	. = ..()
+
+
+/obj/item/caltrop/
+	name = "bunched up caltrops"
+	icon = 'icons/obj/traps.dmi'
+	icon_state = "caltrop_5"
+	desc = "A bunch of tiny balls with very long spikes, used since hundred-thousands of years as a way to deter pursuers. Simply USE them to scatter them across the floor."
+	w_class = WEIGHT_CLASS_TINY
+
+/obj/item/caltrop/attack_self(mob/user)
+	if(isopenfloorturf(user.loc))
+		var/turf/target_turf = get_turf(user)
+		to_chat(user, "<span class='warning'>You scatter [src] all over [target_turf]!</span>")
+		new /obj/structure/jadetrap/tripwire/caltrop(target_turf)
+		qdel(src)
+		return
+	else
+		to_chat(user, "<span class='warning'>[src] can't be deployed here!</span>")
+		return
