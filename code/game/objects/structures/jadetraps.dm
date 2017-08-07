@@ -107,7 +107,9 @@
 		T.apply_damage(rand(spike_damage_min, spike_damage_max), spike_damage_type)
 		to_chat(T, "<span class='warning'>You are hurt by [src]!</span>")
 
+
 /////////////////////////
+
 
 /obj/structure/jadetrap/tripwire
 	name = "trip wire"
@@ -124,6 +126,7 @@
 	disarm_item_amount = 20
 	var/walk_stun = 0 //does this stun people who carefully walk?
 	var/hit_flying = 0 //does this stun flying people?
+	var/hit_prone = 0 //does this hit people who fell down? this will enable chain reactions if combined with send_flying and might cause infinite loops of forced movement, be SMART when you use this
 	var/send_flying = 0
 	var/send_flying_distance = 3
 	var/weaken_amount = 2
@@ -136,7 +139,18 @@
 
 
 /obj/structure/jadetrap/tripwire/Crossed(atom/movable/AM)
-	TriggerTrap(AM)
+	if(iscarbon(AM))
+		var/mob/living/carbon/T = AM
+		if((T.movement_type & FLYING) && !hit_flying) //harpies have it so good...
+			return 0
+		if(T.m_intent == MOVE_INTENT_WALK && !walk_stun)
+			return 0
+
+		if((T.lying || !(T.status_flags & CANWEAKEN)) && !hit_prone)
+			return 0
+
+		TriggerTrap(AM)
+
 	. = ..()
 
 /obj/structure/jadetrap/tripwire/TriggerTrap(atom/movable/target)
@@ -145,13 +159,6 @@
 
 	if(iscarbon(target))
 		var/mob/living/carbon/T = target
-		if(T.movement_type & FLYING && !hit_flying) //harpies have it so good...
-			return 0
-		if(T.m_intent == MOVE_INTENT_WALK && !walk_stun)
-			return 0
-
-		if(T.lying || !(T.status_flags & CANWEAKEN))
-			return 0
 
 		T.Weaken(weaken_amount)
 		T.visible_message("<span class='warning'>[T] trips over [src]!</span>")
@@ -206,6 +213,7 @@
 	disarm_item = /obj/item/caltrop/
 	disarm_item_amount = 1
 	walk_stun = 1 //does this stun people who carefully walk?
+	hit_prone = 1
 	hit_flying = 0
 	send_flying = 0
 	weaken_amount = 5
@@ -236,3 +244,90 @@
 	else
 		to_chat(user, "<span class='warning'>[src] can't be deployed here!</span>")
 		return
+
+//////////////////////////
+
+/obj/structure/jadetrap/tripwire/grenademine
+	name = "metal makeshift mine"
+	icon = 'icons/obj/traps.dmi'
+	desc = "A mine that is activated when someone steps onto it"
+	icon_state = "mine"
+	hit_prone = 1
+	walk_stun = 1
+	alpha = 255
+	disarmtool = /obj/item/weapon/wrench
+	can_disarm = 1
+	disarmtime = 100
+	disarm_item = /obj/item/stack/sheet/metal
+	disarm_item_amount = 2
+	var/mine_switch_sound = 'sound/effects/pressureplate.ogg'
+	var/mine_trigger_sound = 'sound/effects/snap.ogg'
+
+	var/icon/grenade_overlay //overlay for the mine
+	var/obj/item/weapon/grenade/internal_grenade //link to the grenade stored inside
+
+	var/grenade_insert_time = 50
+	var/trigger_state = 0 //1 = trap triggers if someone steps on it
+
+/obj/structure/jadetrap/tripwire/grenademine/Initialize()
+	icon_state = "[initial(icon_state)]_[trigger_state]"
+	.=..()
+
+/obj/structure/jadetrap/tripwire/grenademine/attackby(obj/item/W, mob/user, params)
+	if(istype(W, /obj/item/weapon/grenade) && !internal_grenade)
+		to_chat(user, "<span class='notice'>You begin connecting the [W] to the trigger of [src].</span>")
+		if(do_after(user, grenade_insert_time, target = src))
+			if(!user.drop_item() || W.loc == src || !W || internal_grenade)
+				return
+			W.loc = src
+			to_chat(user, "<span class='notice'>You successfully connect [W] to the trigger of [src].</span>")
+			internal_grenade = W
+
+			grenade_overlay = icon(internal_grenade.icon, internal_grenade.icon_state)
+			add_overlay(grenade_overlay)
+
+		else
+			to_chat(user, "<span class='warning'>You fail to connect [W] to [src]!</span>")
+			return
+		return
+	.=..()
+
+/obj/structure/jadetrap/tripwire/grenademine/proc/SwitchMineTriggerState(f_trigger_state)
+	if(f_trigger_state != null)
+		trigger_state = f_trigger_state
+	else if(!trigger_state)
+		trigger_state = 1
+	else if(trigger_state)
+		trigger_state = 0
+	playsound(loc, mine_switch_sound, 25, 1)
+	icon_state = "[initial(icon_state)]_[trigger_state]"
+
+/obj/structure/jadetrap/tripwire/grenademine/attack_hand(mob/user)
+	SwitchMineTriggerState()
+	. = ..()
+
+
+
+/obj/structure/jadetrap/tripwire/grenademine/TriggerTrap(atom/movable/target)
+	if(!trigger_state)
+		return
+	playsound(loc, mine_trigger_sound, 25, 1)
+	if(internal_grenade)
+		src.visible_message("<span class='warning'>[src] is triggered and sends [internal_grenade] hopping into the air!</span>")
+		src.cut_overlay(grenade_overlay)
+		internal_grenade.loc = src.loc
+		internal_grenade.prime() //boom!
+		internal_grenade = null //remove it
+	SwitchMineTriggerState(0) //set the trap to off again
+
+/obj/structure/jadetrap/tripwire/grenademine/Destroy()
+	if(internal_grenade)
+		src.cut_overlay(grenade_overlay)
+		internal_grenade.loc = src.loc
+		qdel(src)
+		. = ..()
+
+/obj/structure/jadetrap/tripwire/grenademine/take_damage(damage_amount, damage_type = BRUTE, damage_flag = 0, sound_effect = 1, attack_dir)
+	if(damage_type == BRUTE && damage_amount > 1)
+		TriggerTrap()
+	.=..()

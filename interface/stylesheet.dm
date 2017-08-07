@@ -83,6 +83,8 @@ h1.alert, h2.alert		{color: #000000;}
 .holoparasite			{color: #35333a;}
 .holoparasitebold		{color: #35333a;	font-weight: bold;}
 
+.spynotice				{color: #182723;	font-weight: bold; font-style: italic;}
+
 .revennotice			{color: #1d2953;}
 .revenboldnotice		{color: #1d2953;	font-weight: bold;}
 .revenbignotice			{color: #1d2953;	font-weight: bold; font-size: 3;}
