@@ -69,11 +69,11 @@
 	if(ishuman(loc))
 		C = loc
 		if(!(src in C.get_all_slots() ) ) //we are being carried but not actually worn
-			received_signal = "unlock"
+			return
 		else
 			collar_worn = TRUE
 	else
-		received_signal = "unlock"
+		return
 
 	switch(received_signal)
 		if("unlock")
@@ -167,7 +167,6 @@
 	if(ishuman(loc))
 		var/mob/living/carbon/human/C = loc
 		if(src in C.get_all_slots() ) //we are being worn, update their state
-			qdel(src)
 			C.update_inv_neck()
 			C.update_canmove()
 			C.update_action_buttons_icon()
@@ -208,6 +207,11 @@
 
 
 /obj/item/clothing/neck/remote_collar/spy/equipped(mob/user, slot)
+	if(ishuman(loc))
+		var/mob/living/carbon/human/C = loc
+		if(!(src in C.get_all_slots() ) )
+			return //someone just put us into their hands, no need to lock shut
+
 	user.visible_message("<span class='warning'>The collar shuts closed immediatly!</span>")
 	restrain = 0
 	can_move_restrain = 0

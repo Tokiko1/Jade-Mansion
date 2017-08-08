@@ -61,7 +61,6 @@
 /datum/status_effect/restraining/freon/on_remove()
 	owner.cut_overlay(cube)
 	owner.update_canmove()
-	qdel(src)
 	..()
 
 

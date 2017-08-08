@@ -38,33 +38,33 @@
 
 //hailgun
 
-/obj/item/ammo_casing/energy/laser/jade/cheap_low_power_disabler
+/obj/item/ammo_casing/energy/laser/jade/hail1
 	projectile_type = /obj/item/projectile/beam/weak_disabler
 	e_cost = 5
 	variance = 15
 	select_name = "disable"
-	notice_name = "disabler: ultra efficient"
+	notice_name = "disabler: ultra efficient low power"
 	delay = 3
 
-/obj/item/ammo_casing/energy/laser/jade/low_power_disabler
+/obj/item/ammo_casing/energy/laser/jade/hail2
 	projectile_type = /obj/item/projectile/beam/weak_disabler
 	e_cost = 20
 	select_name = "disable"
-	notice_name = "disabler: accurate low power"
+	notice_name = "disabler: fast low power"
 	delay = 1
 
 //focus disabler
 
-/obj/item/ammo_casing/energy/laser/jade/medium_disabler_pistol
+/obj/item/ammo_casing/energy/laser/jade/focus1
 	projectile_type = /obj/item/projectile/beam/medium_disabler
 	e_cost = 100
 	select_name = "disable"
 	notice_name = "disabler: medium power"
-	delay = 4
+	delay = 8
 
-/obj/item/ammo_casing/energy/laser/jade/cheap_low_disabler_pistol
+/obj/item/ammo_casing/energy/laser/jade/focus2
 	projectile_type = /obj/item/projectile/beam/weak_disabler
 	e_cost = 10
 	select_name = "disable"
 	notice_name = "disabler: efficient low power"
-	delay = 4
+	delay = 8

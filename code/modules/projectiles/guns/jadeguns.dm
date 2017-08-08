@@ -34,7 +34,7 @@
 	name = "automatic disabler rifle"
 	desc = "A very efficient, low power disabler rifle meant for suppressive fire. The downside is its enourmous recoil and spread. It has a secondary, less energy efficient but much faster mode."
 	icon = 'icons/obj/guns/energy.dmi'
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/jade/low_power_disabler, /obj/item/ammo_casing/energy/laser/jade/cheap_low_power_disabler)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/jade/hail1, /obj/item/ammo_casing/energy/laser/jade/hail2)
 	item_state = "arg"
 	can_flashlight = 0
 	modifystate = 1
@@ -50,7 +50,7 @@
 	name = "focus disabler pistol"
 	desc = "A small disabler pistol capable of firing accurate, medium power disabler beams. It has an internal energy recharge mechanism. It's secondary firing mode drains less power than the gun regenerates, a good way to lay down suppression fire while charging up the stronger shots."
 	icon = 'icons/obj/guns/energy.dmi'
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/jade/medium_disabler_pistol, /obj/item/ammo_casing/energy/laser/jade/cheap_low_disabler_pistol)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/jade/focus1, /obj/item/ammo_casing/energy/laser/jade/focus2)
 	item_state = "gun"
 	can_flashlight = 0
 	modifystate = 1

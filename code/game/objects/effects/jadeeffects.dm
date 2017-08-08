@@ -41,10 +41,23 @@
 				var/spawned
 				for(spawned=0, spawn_amount > spawned, spawned++)
 					thing_to_spawn = pick(list_of_stuff_to_spawn)
-					new thing_to_spawn(get_turf(src))
+					new thing_to_spawn(src.loc)
 				if(repeat)
 					spawn_delay = REALTIMEOFDAY + repeat_frequency
 				else
 					qdel(src)
 		dcounter = 0
 	dcounter++
+
+/obj/effect/jade_spawner
+	var/list/objects_to_spawn = list()
+	var/amount_to_spawn = 1
+
+/obj/effect/jade_spawner/Initialize()
+	if(objects_to_spawn.len)
+		for(var/i in 1 to amount_to_spawn)
+			var/stuff_to_spawn = pick(objects_to_spawn)
+			new stuff_to_spawn(src.loc)
+	.=..()
+	qdel(src)
+

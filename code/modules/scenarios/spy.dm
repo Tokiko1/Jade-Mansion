@@ -20,7 +20,7 @@
 
 //faction restriction for roles
 	faction_restrictions = list(
-	"Head Maid" = list("mansion", "spy1", "spy2"),
+	"Head Maid" = list("mansion","mansion","mansion","mansion","mansion","mansion", "spy1", "spy2"),
 	"Mansion Owner" = list("mansion"),
 	"Custom 1" = list(),
 	"Custom 2" = list(),
@@ -34,18 +34,7 @@
 	"Assistant" = list("mansion", "spy1", "spy2", "spy1", "spy2")
 	)
 //role fluff
-	role_fluff = list(
-	"Head Maid" = "This is an example text that only shows up if you picked Head Maid as your role!",
-	"Mansion Owner" = "",
-	"Custom 1" = "",
-	"Custom 2" = "",
-	"Custom 3" = "",
-	"Downstairs Maid" = "",
-	"Upstairs Maid" = "",
-	"Gardener" = "",
-	"Guard" = "",
-	"Assistant" = ""
-	)
+
 //other stuff
 	special1 = 0
 	special2 = 0
@@ -55,8 +44,8 @@
 
 
 //things that need to be spawned, usually items
-	landmark_spawns = list(secure_storage_spawn1 = /obj/item/documents/jade)
-	faction_spawns = list("spy1" = list(/obj/item/documents/wood), "spy2" = list(/obj/item/documents/porcelain) )
+	landmark_spawns = list(secure_storage_spawn1 = /obj/effect/jade_spawner/fake_document)
+	faction_spawns = list("spy1" = list(/obj/effect/jade_spawner/spyboxes), "spy2" = list(/obj/effect/jade_spawner/spyboxes) )
 
 //goals
 	faction_goal_text = list()
