@@ -75,7 +75,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/long_gloves1
 //	head = a
-	backpack_contents = list(/obj/item/doorkey/master)
+	backpack_contents = list(/obj/item/collar_remote/universal)
 //	r_hand = a
 //	l_hand = a
 //	l_pocket = /obj/item/device/laser_pointer
