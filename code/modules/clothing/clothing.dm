@@ -24,7 +24,9 @@
 	var/obj/item/device/flashlight/F = null
 	var/can_flashlight = 0
 	var/gang //Is this a gang outfit?
+
 	var/scan_reagents = 0 //Can the wearer see reagents while it's equipped?
+
 	var/suitable_for_swimming = 0 //gives a mood penalty if it gets wet
 	var/maid_uniform = 0 //does this count as a maid uniform?
 
@@ -66,6 +68,13 @@
 	return ..()
 
 /obj/item/clothing/attack_hand(mob/user)
+	if(stop_remove)
+		if(ishuman(user))
+			var/mob/living/carbon/human/C = user
+			if(src in C.get_all_slots())
+				to_chat(user, "<span class='warning'>You can't remove the [name] by yourself.</span>")
+				return
+
 	if(pockets && pockets.priority && ismob(loc))
 		//If we already have the pockets open, close them.
 		if (user.s_active == pockets)
@@ -139,6 +148,13 @@
 			if(variable in user.vars)
 				user_vars_remembered[variable] = user.vars[variable]
 				user.vars[variable] = user_vars_to_edit[variable]
+
+	if(restrain)
+		user.drop_all_held_items()
+		user.update_action_buttons_icon()
+
+	if(can_move_restrain || stand_up_restrain)
+		user.update_canmove()
 
 
 /obj/item/clothing/examine(mob/user)

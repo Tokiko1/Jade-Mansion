@@ -1,6 +1,93 @@
 
 /mob/living/carbon/human/restrained(ignore_grab)
-	. = ((wear_suit && wear_suit.breakouttime) || ..())
+	. = (GetClothingRestrain() || ..())
+
+//checking all equipped clothing if it restrains
+//returns 1 if we are being restrained, 0 if we can move
+/mob/living/carbon/human/proc/GetClothingRestrain()
+	. = 0
+	. = w_uniform && w_uniform.restrain
+	. = .|(shoes && shoes.restrain)
+	. = .|(gloves && gloves.restrain)
+	. = .|(wear_suit && wear_suit.restrain)
+	. = .|(wear_neck && wear_neck.restrain)
+	. = .|(wear_mask && wear_mask.restrain)
+	. = .|(head && head.restrain)
+	. = .|(ears && ears.restrain)
+	. = .|(back && back.restrain)
+	. = .|(belt && belt.restrain)
+//	. = .|(handcuffed && handcuffed.restrain)
+//	. = .|(leg_cuffed && leg_cuffed.restrain)
+	return
+
+
+//checking all equipped clothing if it inhibits can_move
+//returns 1 if can_move is disallowed, 0 if we can move
+/mob/living/carbon/human/proc/GetClothingCanmoveRestrain()
+	. = 0
+	. = w_uniform && w_uniform.can_move_restrain
+	. = .|(shoes && shoes.can_move_restrain)
+	. = .|(gloves && gloves.can_move_restrain)
+	. = .|(wear_suit && wear_suit.can_move_restrain)
+	. = .|(wear_neck && wear_neck.can_move_restrain)
+	. = .|(wear_mask && wear_mask.can_move_restrain)
+	. = .|(head && head.can_move_restrain)
+	. = .|(ears && ears.can_move_restrain)
+	. = .|(back && back.can_move_restrain)
+	. = .|(belt && belt.can_move_restrain)
+	return
+
+/mob/living/carbon/human/proc/GetClothingCanresist()
+	. = 0
+	. = w_uniform && w_uniform.can_resist
+	. = .|(shoes && shoes.can_resist)
+	. = .|(gloves && gloves.can_resist)
+	. = .|(wear_suit && wear_suit.can_resist)
+	. = .|(wear_neck && wear_neck.can_resist)
+	. = .|(wear_mask && wear_mask.can_resist)
+	. = .|(head && head.can_resist)
+	. = .|(ears && ears.can_resist)
+	. = .|(back && back.can_resist)
+	. = .|(belt && belt.can_resist)
+	return
+
+/mob/living/carbon/human/proc/GetClothingCanstandRestrain()
+	. = 0
+	. = w_uniform && w_uniform.stand_up_restrain
+	. = .|(shoes && shoes.stand_up_restrain)
+	. = .|(gloves && gloves.stand_up_restrain)
+	. = .|(wear_suit && wear_suit.stand_up_restrain)
+	. = .|(wear_neck && wear_neck.stand_up_restrain)
+	. = .|(wear_mask && wear_mask.stand_up_restrain)
+	. = .|(head && head.stand_up_restrain)
+	. = .|(ears && ears.stand_up_restrain)
+	. = .|(back && back.stand_up_restrain)
+	. = .|(belt && belt.stand_up_restrain)
+	return
+
+/mob/living/carbon/human/proc/GetClothesResistList()
+	. = list()
+	if(w_uniform && w_uniform.can_resist)
+		. += w_uniform
+	if(shoes && shoes.can_resist)
+		. += shoes
+	if(gloves && gloves.can_resist)
+		. += gloves
+	if(wear_suit && wear_suit.can_resist)
+		. += wear_suit
+	if(wear_neck && wear_neck.can_resist)
+		. += wear_neck
+	if(wear_mask && wear_mask.can_resist)
+		. += wear_mask
+	if(head && head.can_resist)
+		. += head
+	if(ears && ears.can_resist)
+		. += ears
+	if(back && back.can_resist)
+		. += back
+	if(belt && belt.can_resist)
+		. += belt
+	return
 
 
 /mob/living/carbon/human/canBeHandcuffed()

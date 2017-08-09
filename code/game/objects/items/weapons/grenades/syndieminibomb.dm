@@ -1,5 +1,5 @@
 /obj/item/weapon/grenade/syndieminibomb
-	desc = "A syndicate manufactured explosive used to sow destruction and chaos"
+	desc = "A clandestine manufactured explosive used to sow destruction and chaos"
 	name = "syndicate minibomb"
 	icon = 'icons/obj/grenade.dmi'
 	icon_state = "syndicate"
@@ -49,5 +49,6 @@
 			addtimer(CALLBACK(F, /turf/open/floor.proc/MakeDry, TURF_WET_PERMAFROST), rand(3000, 3100))
 			for(var/mob/living/carbon/L in T)
 				L.adjustStaminaLoss(stamina_damage)
+				L.apply_status_effect(/datum/status_effect/restraining/freon, 3)
 				L.bodytemperature -= 230
 	qdel(src)

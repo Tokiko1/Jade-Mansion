@@ -63,6 +63,7 @@
 	return list(
 		head,
 		wear_mask,
+		wear_neck,
 		glasses,
 		ears,
 		)
@@ -80,6 +81,14 @@
 /mob/living/carbon/human/equip_to_slot(obj/item/I, slot)
 	if(!..()) //a check failed or the item has already found its slot
 		return
+
+	if(I.restrain)
+		update_canmove()
+		drop_all_held_items()
+		update_action_buttons_icon()
+
+	if(I.can_move_restrain || I.stand_up_restrain)
+		update_canmove()
 
 	var/not_handled = FALSE //Added in case we make this type path deeper one day
 	switch(slot)
@@ -145,6 +154,13 @@
 	. = ..() //See mob.dm for an explanation on this and some rage about people copypasting instead of calling ..() like they should.
 	if(!. || !I)
 		return
+
+	if(I.restrain)
+		update_canmove()
+		update_action_buttons_icon()
+
+	if(I.can_move_restrain || I.stand_up_restrain)
+		update_canmove()
 
 	if(I == wear_suit)
 		if(s_store && invdrop)

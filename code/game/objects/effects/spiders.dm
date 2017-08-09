@@ -189,9 +189,15 @@
 	desc = "Something wrapped in silky spider web"
 	icon_state = "cocoon1"
 	obj_integrity = 60
+	var/list/possible_cocoons = list("cocoon1","cocoon2","cocoon3")
+
+/obj/structure/spider/cocoon/body
+	icon_state = "cocoon_large1"
+	obj_integrity = 200
+	possible_cocoons = list("cocoon_large1","cocoon_large3")
 
 /obj/structure/spider/cocoon/Initialize()
-	icon_state = pick("cocoon1","cocoon2","cocoon3")
+	icon_state = pick(possible_cocoons)
 	. = ..()
 
 /obj/structure/spider/cocoon/container_resist(mob/living/user)

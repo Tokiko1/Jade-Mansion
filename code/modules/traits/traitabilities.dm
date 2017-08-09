@@ -31,10 +31,11 @@
 /obj/item/webball
 	name = "web ball"
 	icon = 'icons/obj/jadeobjects.dmi'
-	desc = "Smooth and surprisingly non-sticky, for now atleast. Throw to unravel and spread sticky webs."
+	desc = "Smooth and surprisingly non-sticky, for now atleast. Throw to unravel and spread sticky webs or use it on someone to encase them in a cocoon."
 	icon_state = "webby_ball"
 	w_class = WEIGHT_CLASS_TINY
 	messy_thing = 1
+	var/spinning_time = 70
 
 /obj/item/webball/throw_impact(atom/hit_atom)
 	var/turf/T = get_turf(hit_atom)
@@ -43,8 +44,20 @@
 		playsound(T, 'sound/effects/attackblob.ogg' , 100, 1)
 		for(var/turf/open/turfA in circlerangeturfs(center=T,radius=1))
 			if(!turfA.z_open)
-				new /obj/structure/silktree/web(turfA)
+				new /obj/structure/silktree/web/weak(turfA)
 	qdel(src)
+
+/obj/item/webball/attack(mob/M, mob/user, def_zone)
+	if(M && user && src)
+		user.visible_message("<span class='danger'>[user] is beginning to wrap [M] in silk webs!</span>")
+		if(do_after(user, spinning_time, target = M))
+			user.visible_message("<span class='danger'>[M] is fully encased in a cocoon!</span>")
+			var/obj/structure/spider/cocoon/body/C = new(M.loc)
+			M.forceMove(C)
+			qdel(src)
+		else
+			to_chat(user, "<span class='notice'>You fail to wrap up [M]!</span>")
+
 
 //poison stinger
 

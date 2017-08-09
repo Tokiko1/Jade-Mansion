@@ -1,5 +1,6 @@
 /obj/item/weapon/restraints
 	breakouttime = 600
+	can_resist = 1
 
 //Handcuffs
 

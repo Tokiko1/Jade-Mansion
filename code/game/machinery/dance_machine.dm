@@ -18,12 +18,7 @@
 	var/list/select_name = list()
 	var/list/spotlights = list()
 	var/list/sparkles = list()
-	var/static/list/songs = list(
-		new /datum/track("Engineering's Basic Beat", 					'sound/misc/disco.ogg', 	600, 	5),
-		new /datum/track("Engineering's Domination Dance", 				'sound/misc/e1m1.ogg', 		950, 	6),
-		new /datum/track("Engineering's Superiority Shimmy", 			'sound/misc/Paradox.ogg', 	2400, 	4),
-		new /datum/track("Engineering's Ultimate High-Energy Hustle",	'sound/misc/boogie2.ogg',	1770, 	5),
-		)
+	var/static/list/songs = list()
 	var/datum/track/selection = null
 
 /datum/track
@@ -66,7 +61,7 @@
 	else
 		icon_state = "disco0"
 	..()
-	
+
 
 /obj/machinery/disco/interact(mob/user)
 	if (!anchored)

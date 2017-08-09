@@ -21,11 +21,14 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	new/datum/stack_recipe("comfy chair", /obj/structure/chair/comfy/beige, 2, one_per_turf = 1, on_floor = 1), \
 	new/datum/stack_recipe("bed", /obj/structure/bed, 2, one_per_turf = 1, on_floor = 1), \
 	null, \
+	new/datum/stack_recipe("makeshift mine", /obj/structure/jadetrap/tripwire/grenademine, 2, time = 100, one_per_turf = 1, on_floor = 1), \
+	null, \
 	new/datum/stack_recipe("rack parts", /obj/item/weapon/rack_parts), \
 	new/datum/stack_recipe("closet", /obj/structure/closet, 2, time = 15, one_per_turf = 1, on_floor = 1), \
 	null, \
 	new/datum/stack_recipe("canister", /obj/machinery/portable_atmospherics/canister, 10, time = 15, one_per_turf = 1, on_floor = 1), \
 	null, \
+	new/datum/stack_recipe("metal wire", /obj/item/stack/metal_wire, 1, 10, 150), \
 	new/datum/stack_recipe("metal rod", /obj/item/stack/rods, 1, 2, 60), \
 	null, \
 	null, \
@@ -70,6 +73,9 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 
 /obj/item/stack/sheet/metal/fifty
 	amount = 50
+
+/obj/item/stack/sheet/metal/twenty
+	amount = 20
 
 /obj/item/stack/sheet/metal/five
 	amount = 5

@@ -84,7 +84,7 @@
 /proc/random_facial_hair_style(gender)
 	switch(gender)
 		if(MALE)
-			return pick(GLOB.facial_hair_styles_male_list)
+			return pick(GLOB.facial_hair_styles_female_list)
 		if(FEMALE)
 			return pick(GLOB.facial_hair_styles_female_list)
 		else
@@ -177,7 +177,7 @@ Proc for attack log creation, because really why not
 
 	if(target && isliving(target))
 		living_target = target
-	
+
 	var/hp =" "
 	if(living_target)
 		hp = "(NEWHP: [living_target.health])"

@@ -494,30 +494,30 @@
 "jz" = (/turf/closed/wall/wood,/area/inside/library_backroom1)
 "jA" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
 "jB" = (/turf/closed/wall/strong,/area/inside/library_backroom1)
-"jC" = (/obj/structure/table,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jC" = (/obj/structure/table,/obj/item/clothing/neck/remote_collar,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
 "jD" = (/obj/structure/table,/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jE" = (/obj/machinery/shower{dir = 1},/turf/open/tiles/steriletile,/area/inside/toilet)
-"jF" = (/obj/structure/closet/jademansion/librarysupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"jG" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"jH" = (/turf/open/stairs/moving/northdown,/area/inside/hallways)
-"jI" = (/obj/structure/closet/jademansion/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jJ" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jK" = (/obj/effect/turf_decal/woodline,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"jL" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jM" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jN" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jO" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/guard_room)
-"jP" = (/turf/open/hole,/area/inside/hallways)
-"jQ" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"jR" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"jS" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"jT" = (/obj/structure/table,/obj/structure/mansiondecoration/laptop,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jU" = (/obj/effect/landmark/start/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jV" = (/turf/closed/wall,/area/inside/vault)
-"jW" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/vault)
-"jX" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"jY" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"jZ" = (/obj/structure/table,/obj/machinery/recharger,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jE" = (/obj/structure/table,/obj/machinery/recharger,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jF" = (/obj/machinery/shower{dir = 1},/turf/open/tiles/steriletile,/area/inside/toilet)
+"jG" = (/obj/structure/closet/jademansion/librarysupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"jH" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"jI" = (/turf/open/stairs/moving/northdown,/area/inside/hallways)
+"jJ" = (/obj/structure/closet/jademansion/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jK" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jL" = (/obj/effect/turf_decal/woodline,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"jM" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jN" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jO" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jP" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/guard_room)
+"jQ" = (/turf/open/hole,/area/inside/hallways)
+"jR" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"jS" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"jT" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"jU" = (/obj/structure/table,/obj/structure/mansiondecoration/laptop,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jV" = (/obj/effect/landmark/start/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jW" = (/turf/closed/wall,/area/inside/vault)
+"jX" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/vault)
+"jY" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"jZ" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
 "ka" = (/obj/structure/table,/obj/item/treasure/jadepiece,/obj/effect/landmark/jade/secure_storage_spawn1,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
 "kb" = (/obj/structure/bar_stack/gold/full,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
 "kc" = (/obj/structure/table/wood/fancy,/obj/item/treasure/jadepiece,/obj/item/treasure/jadepiece,/obj/item/treasure/jadepiece,/obj/item/treasure/jadepiece,/obj/item/treasure/jadepiece,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
@@ -533,7 +533,7 @@
 "km" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/library_backroom1)
 "kn" = (/obj/structure/table,/obj/item/treasure/jadepiece,/obj/effect/landmark/jade/secure_storage_spawn3,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
 "ko" = (/obj/machinery/light,/obj/effect/landmark/jade/secure_storage_spawn_bulky1,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
-"kp" = (/obj/effect/landmark/jade/secure_storage_spawn4,/obj/structure/table,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
+"kp" = (/obj/effect/landmark/jade/secure_storage_spawn4,/obj/structure/table,/obj/item/collar_remote/universal,/obj/item/collar_remote/universal,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
 "kq" = (/obj/effect/landmark/jade/secure_storage_spawn5,/obj/structure/table,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
 "kr" = (/obj/machinery/light,/obj/effect/landmark/jade/secure_storage_spawn_bulky2,/turf/open/tiles/woodenboards/woodentile2,/area/inside/vault)
 "ks" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/library_backroom1)
@@ -871,14 +871,14 @@ dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLcvjtcOcCjujucZcviLafaAavavejejavavaAafcfafaA
 dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLcvcvcvcDdjcDcDcOafafaAavavjvjvavavaAafafafafafafafafafbYebebebdYdYdYdYdYdYdYdYdYdYdY
 dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLcvjtcOcDcvcOcvcvafafaAavavjvjvavavaAafafafafafafafafafbYebebebdYdYdYdYdYdYdYdYdYdYdY
 dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjwjwjwjwjwjxjycvafafafafafafafafafafafafjzjzjAjAjBiiijbcebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjwjCjDjCjwjEjEcviLafafafafafafafafafafgvjzjFjGjGjBjHjHbcebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjwjIjJjJjwjwjwjwafafbZaAjKjKjKjKaAbZafafjzjGjGjGjBbcbcbcebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjwjLjJjJjMjJjNjOcfafbZaAjPjPjPjPaAbZafafjzjQjGjGjRjSjQjzebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjOjTjJjUjwjJjJjOafafjVjVjWjWjWjWjVjVafafjzjXjGjGjYjYjXjzebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjOjZjJjJjwjwjwjwafgvjVkakbkckckdkejVafgvjzkfkgkgkgkgkhjzebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjOjJjJjJjJjNjJjMafafjVkikbkekekdkekjafafjzkkklklkmkgjGjzebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjwjJjJjJjJjJjJjwbZbZjVknkokpkqkrkejVafafjzkkklklkmkgjXjzebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjwjwjOjOjOjwjwjwbYbYjVjVjVjVjVjVjVjVauaujzjzksksjzjzjzjzebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjwjCjDjEjwjFjFcviLafafafafafafafafafafgvjzjGjHjHjBjIjIbcebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjwjJjKjKjwjwjwjwafafbZaAjLjLjLjLaAbZafafjzjHjHjHjBbcbcbcebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjwjMjKjKjNjKjOjPcfafbZaAjQjQjQjQaAbZafafjzjRjHjHjSjTjRjzebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjPjUjKjVjwjKjKjPafafjWjWjXjXjXjXjWjWafafjzjYjHjHjZjZjYjzebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjPjEjKjKjwjwjwjwafgvjWkakbkckckdkejWafgvjzkfkgkgkgkgkhjzebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjPjKjKjKjKjOjKjNafafjWkikbkekekdkekjafafjzkkklklkmkgjHjzebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjwjKjKjKjKjKjKjwbZbZjWknkokpkqkrkejWafafjzkkklklkmkgjYjzebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLjwjwjPjPjPjwjwjwbYbYjWjWjWjWjWjWjWjWauaujzjzksksjzjzjzjzebebebdYdYdYdYdYdYdYdYdYdYdY
 dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLdZiriririririririririririririririririririririririririririrdZebebdYdYdYdYdYdYdYdYdYdYdY
 dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLdZiriririririririririririririririririririririririririririririrdZebdYdYdYdYdYdYdYdYdYdYdY
 dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYdZiriririririririririririririririririririririririririririririririrdZdYdYdYdYdYdYdYdYdYdYdY
@@ -915,32 +915,32 @@ dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYdZeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaea
 dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLdZeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeadZebdYdYdYdYdYdYdYdYdYdYdY
 dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLdZeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeadZebebdYdYdYdYdYdYdYdYdYdYdY
 dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLauauauauauauauauauauktktktktktktktktauauauauauauauauauauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPktkukvkwkxkvkuktjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPktkwkwkwkwkwkwktjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPktkukwkykzkwkuktjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPktktktktktktktktjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPjPkAjPjPjPjPkAjPjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPjPjPkBkCkCkDjPjPjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPjPjPkEkFkFkGjPjPjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPkBkCkHkFkFkIkCkDjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLbcbcbcbcbYbYbYjPjPjPkEaukJkFkFkKaukGjPjPjPbYbYbYaAaAaAauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLbcififbcafafbYjPkBkCkHkLkFkMkMkFkLkIkCkDjPbYafafafafafauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQktkukvkwkxkvkuktjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQktkwkwkwkwkwkwktjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQktkukwkykzkwkuktjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQktktktktktktktktjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQjQkAjQjQjQjQkAjQjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQjQjQkBkCkCkDjQjQjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQjQjQkEkFkFkGjQjQjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQkBkCkHkFkFkIkCkDjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLbcbcbcbcbYbYbYjQjQjQkEaukJkFkFkKaukGjQjQjQbYbYbYaAaAaAauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLbcififbcafafbYjQkBkCkHkLkFkMkMkFkLkIkCkDjQbYafafafafafauebebebdYdYdYdYdYdYdYdYdYdYdY
 dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLbcijijbciLafafafkEkFkFkFkMkMkMkMkFkFkFkGafafafafafafgvauebebebdYdYdYdYdYdYdYdYdYdYdY
 dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLauiLafafafafafafkEkFkFkFkMkMkMkMkFkFkFkGafafafgvbcijijbcebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLauafafafafafbYjPkNkOkPkQkFkMkMkFkQkRkOkSjPbYafafbcjHjHbcebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLauaAaAaAbYbYbYjPjPjPkEaukJkFkFkKaukGjPjPjPbYbYbYbcbcbcbcebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPkNkOkPkFkFkRkOkSjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPjPjPkEkFkFkGjPjPjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPjPjPkNkOkOkSjPjPjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPjPkTjPjPjPjPkTjPjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPktktktktktktktktjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPktkukwkUkwkwkuktjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPktkwkwkwkxkwkwktjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
-dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujPjPjPjPjPjPjPjPjPktkukVkwkwkWkuktjPjPjPjPjPjPjPjPjPauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLauafafafafafbYjQkNkOkPkQkFkMkMkFkQkRkOkSjQbYafafbcjIjIbcebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLauaAaAaAbYbYbYjQjQjQkEaukJkFkFkKaukGjQjQjQbYbYbYbcbcbcbcebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQkNkOkPkFkFkRkOkSjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQjQjQkEkFkFkGjQjQjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQjQjQkNkOkOkSjQjQjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQjQkTjQjQjQjQkTjQjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQktktktktktktktktjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQktkukwkUkwkwkuktjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQktkwkwkwkxkwkwktjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
+dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLaujQjQjQjQjQjQjQjQjQktkukVkwkwkWkuktjQjQjQjQjQjQjQjQjQauebebebdYdYdYdYdYdYdYdYdYdYdY
 dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLgLauauauauauauauauauauktktktktktktktktauauauauauauauauauauebebebdYdYdYdYdYdYdYdYdYdYdY
 dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLgLdZiriririririririririririririririririririririririririririrdZebebdYdYdYdYdYdYdYdYdYdYdY
 dYdYdYdYdYdYdYdYdYdYdYdYdYdYdYgLdZiriririririririririririririririririririririririririririririrdZebdYdYdYdYdYdYdYdYdYdYdY

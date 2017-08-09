@@ -11,26 +11,45 @@
 	layer = MOB_LAYER
 	pressure_resistance = 2
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
+	var/authentic_documents = 1
+	var/can_verify_by_hand = 1
+	var/verification_tool
+	var/verification_time = 100
 
-/obj/item/documents/nanotrasen
-	desc = "\"Top Secret\" Nanotrasen documents, filled with complex diagrams and lists of names, dates and coordinates."
-	icon_state = "docs_verified"
+/obj/item/documents/attack_self(mob/user)
+	if(can_verify_by_hand)
+		verify_documents(user)
+		return
+	.=..()
 
-/obj/item/documents/syndicate
-	desc = "\"Top Secret\" documents detailing sensitive Syndicate operational intelligence."
+/obj/item/documents/attackby(obj/item/W, mob/user, params)
+	if(verification_tool && istype(W, verification_tool))
+		verify_documents(user)
+		return
+	.=..()
+
+/obj/item/documents/proc/verify_documents(mob/user) //override this if you need more checks and then ..()
+	if(!verification_time)
+		return
+	to_chat(user, "<span class='notice'>You begin trying to verify the authenticity of [src].</span>")
+	if(do_after(user, verification_time, target = src, progress = 0))
+		to_chat(user, "<span class='notice'>You verify that these documents are [authentic_documents == 1 ? "real" : "fake"].</span>")
+	else
+		to_chat(user, "<span class='warning'>You abort verification.</span>")
+	return
 
 /obj/item/documents/syndicate/red
 	name = "red secret documents"
-	desc = "\"Top Secret\" documents detailing sensitive Syndicate operational intelligence. These documents are verified with a red wax seal."
+	desc = "\"Top Secret\" documents detailing sensitive Spy Cell operational intelligence. These documents are verified with a red wax seal."
 	icon_state = "docs_red"
 
 /obj/item/documents/syndicate/blue
 	name = "blue secret documents"
-	desc = "\"Top Secret\" documents detailing sensitive Syndicate operational intelligence. These documents are verified with a blue wax seal."
+	desc = "\"Top Secret\" documents detailing sensitive Spy Cell operational intelligence. These documents are verified with a blue wax seal."
 	icon_state = "docs_blue"
 
 /obj/item/documents/syndicate/mining
-	desc = "\"Top Secret\" documents detailing Syndicate plasma mining operations."
+	desc = "\"Top Secret\" documents detailing Gold Shogunate mining operations."
 
 /obj/item/documents/photocopy
 	desc = "A copy of some top-secret documents. Nobody will notice they aren't the originals... right?"

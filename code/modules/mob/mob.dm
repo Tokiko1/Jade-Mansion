@@ -676,17 +676,26 @@
 			fall(forced = 1)
 	anchored = 0
 	canmove = !(ko || resting || stunned || chokehold || buckled || (!has_legs && !ignore_legs && !has_arms))
-	if(isliving(src))
+	if(isliving(src)) //this should be moved to mob/living
 		var/mob/living/L = src
 		if(L.status_effects)
 			if(L.status_effects.len)
 				for(var/datum/status_effect/restraining/cur_effect in L.status_effects)
 					if(!cur_effect.can_move)
 						canmove = 0
-					if(!cur_effect.can_stand || !lying)
+					if(!cur_effect.can_stand && !lying)
 						lying = 90
 					if(cur_effect.does_anchor)
 						anchored = 1
+
+	if(ishuman(src)) //this should be moved to human checks
+		var/mob/living/carbon/human/H = src
+		if(H.GetClothingCanmoveRestrain())
+			canmove = 0
+		if(H.GetClothingCanstandRestrain() && !lying)
+			lying = 90
+
+
 	density = !lying
 	if(lying)
 		if(layer == initial(layer)) //to avoid special cases like hiding larvas.

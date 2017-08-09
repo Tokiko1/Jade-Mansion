@@ -45,8 +45,8 @@
 			if("Heavy Bag")
 				if(traitholder.back)
 					var/obj/item/weapon/storage/backpack/backpack_A = traitholder.back
-					backpack_A.max_combined_w_class = 30
-					backpack_A.storage_slots = 30
+					backpack_A.max_combined_w_class += 30
+					backpack_A.storage_slots += 30
 					backpack_A.slowdown += 1
 					backpack_A.name = "heavy [backpack_A.name]"
 
@@ -80,6 +80,12 @@
 
 			if("Ice Beam")
 				itemstoadd += /obj/item/weapon/gun/energy/ice_beam_gun
+
+			if("Remote Collar")
+				var/obj/item/clothing/neck/remote_collar/prelocked/collarS = new /obj/item/clothing/neck/remote_collar/prelocked(traitholder)
+				traitholder.equip_to_slot_or_del(collarS,slot_neck)
+				collarS.PutNameInID(traitholder)
+				traitholder.restrain_role = 1
 
 
 

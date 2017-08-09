@@ -80,5 +80,6 @@
 #define UNACIDABLE 16 //acid can't even appear on it, let alone melt it.
 #define ACID_PROOF 32 //acid stuck on it doesn't melt it.
 #define INDESTRUCTIBLE 64 //doesn't take damage
+#define FREEZE_PROOF 128
 
 // language secondary flags for atoms
