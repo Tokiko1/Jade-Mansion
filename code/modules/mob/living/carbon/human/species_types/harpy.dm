@@ -187,8 +187,8 @@
 
 /datum/species/harpy/proc/ToggleFlight(mob/living/carbon/human/H,flight)
 	if(flight && CanFly(H))
-		stunmod = 2
-		speedmod = -1
+		stunmod = 3
+		speedmod = 1
 		H.movement_type |= FLYING
 		override_float = 1
 		H.pass_flags |= PASSTABLE
