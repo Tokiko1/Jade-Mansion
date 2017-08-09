@@ -45,8 +45,8 @@
 			if("Heavy Bag")
 				if(traitholder.back)
 					var/obj/item/weapon/storage/backpack/backpack_A = traitholder.back
-					backpack_A.max_combined_w_class = 30
-					backpack_A.storage_slots = 30
+					backpack_A.max_combined_w_class += 30
+					backpack_A.storage_slots += 30
 					backpack_A.slowdown += 1
 					backpack_A.name = "heavy [backpack_A.name]"
 

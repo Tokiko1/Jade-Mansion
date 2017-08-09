@@ -171,474 +171,484 @@
 "do" = (/turf/closed/wall,/area/inside/power)
 "dp" = (/obj/structure/mineral_door/wood/lock/downstairs,/turf/open/tiles/metaltile,/area/inside/power)
 "dq" = (/turf/open/tiles/metaltile,/area/inside/power)
-"dr" = (/obj/machinery/space_heater,/turf/open/tiles/metaltile,/area/inside/power)
-"ds" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/metaltile,/area/inside/power)
-"dt" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/metaltile,/area/inside/power)
-"du" = (/obj/structure/ladder,/turf/open/tiles/metaltile,/area/inside/stairs)
-"dv" = (/obj/machinery/power/rtg,/obj/structure/cable{icon_state = "0-4"; d2 = 4},/turf/open/tiles/metaltile,/area/inside/power)
-"dw" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/tiles/metaltile,/area/inside/power)
-"dx" = (/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"; tag = ""},/turf/open/tiles/metaltile,/area/inside/power)
-"dy" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/open/tiles/metaltile,/area/inside/power)
-"dz" = (/obj/structure/cable{icon_state = "0-4"; d2 = 4},/obj/machinery/power/multiarea_apc,/turf/open/tiles/metaltile,/area/inside/power)
-"dA" = (/obj/structure/cable{icon_state = "1-8"},/turf/open/tiles/metaltile,/area/inside/power)
-"dB" = (/turf/closed/outsidepines,/area/outside)
-"dC" = (/turf/open/outside/sand,/area/outside)
-"dD" = (/turf/closed/outsidepines/bottom,/area/outside)
-"dE" = (/turf/closed/outsidepines/top,/area/outside)
-"dF" = (/turf/closed/wall,/area/inside/hallways)
-"dG" = (/obj/structure/mineral_door/wood/lock/owner/locked,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"dH" = (/obj/structure/table/wood,/obj/item/weapon/lipstick,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"dI" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"dJ" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/closet/cardboard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"dK" = (/obj/structure/closet/jademansion/bar,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"dL" = (/obj/structure/closet/jademansion/officesupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"dM" = (/obj/item/chair/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"dN" = (/obj/structure/closet/jademansion/replacementparts,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"dO" = (/obj/structure/closet/jademansion/garden,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"dP" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/hallways)
-"dQ" = (/turf/closed/wall,/area/inside/sleeping_room2)
-"dR" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"dS" = (/obj/structure/closet/jademansion/swimmingw,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"dT" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room2)
-"dU" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room2)
-"dV" = (/turf/open/carpetred,/area/inside/sleeping_room2)
-"dW" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/sleeping_room2)
-"dX" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/oldcomputer,/turf/open/carpetred,/area/inside/sleeping_room2)
-"dY" = (/obj/structure/window/paperframe,/turf/open/windowplating,/area/inside/hallways)
-"dZ" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/inside/hallways)
-"ea" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room2)
-"eb" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/sleeping_room2)
-"ec" = (/turf/closed/wall,/area/inside/backroom1)
-"ed" = (/obj/structure/mineral_door/wood/lock,/turf/open/tiles/woodenboards/woodentile1,/area/inside/backroom1)
-"ee" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room2)
-"ef" = (/turf/closed/wall,/area/inside/music)
-"eg" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/music)
-"eh" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/hallways)
-"ei" = (/obj/effect/landmark/start/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/backroom1)
-"ej" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/backroom1)
-"ek" = (/obj/effect/landmark/start,/turf/open/carpetred,/area/inside/hallways)
-"el" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room2)
-"em" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/sleeping_room2)
-"en" = (/obj/structure/bed,/turf/open/carpetred,/area/inside/sleeping_room2)
-"eo" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/music)
-"ep" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/music)
-"eq" = (/obj/effect/landmark/start/butler,/turf/open/carpetred,/area/inside/hallways)
-"er" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/backroom1)
-"es" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/backroom1)
-"et" = (/turf/closed/wall,/area/inside/sleeping_room1)
-"eu" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/music)
-"ev" = (/turf/open/tiles/redtile,/area/inside/music)
-"ew" = (/obj/structure/piano,/turf/open/tiles/redtile,/area/inside/music)
-"ex" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/music)
-"ey" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/hallways)
-"ez" = (/obj/structure/window/paperframe,/turf/open/windowplating,/area/inside/library1)
-"eA" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/library1)
-"eB" = (/turf/closed/wall/strong,/area/inside/library1)
-"eC" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
-"eD" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
-"eE" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/sleeping_room1)
-"eF" = (/obj/structure/bed,/turf/open/carpetred,/area/inside/sleeping_room1)
-"eG" = (/turf/closed/outsiderock/rock2,/area/outside)
-"eH" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/library1)
-"eI" = (/turf/open/carpetred,/area/inside/library1)
-"eJ" = (/turf/open/stairs/east,/area/inside/stairs)
-"eK" = (/turf/open/stairs/moving/eastup,/area/inside/stairs)
-"eL" = (/turf/open/carpetred,/area/inside/sleeping_room1)
-"eM" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/sleeping_room1)
-"eN" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/library1)
-"eO" = (/turf/closed/wall/strong,/area/inside/sleeping_room1)
-"eP" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
-"eQ" = (/obj/effect/landmark/start/upstairsmaid,/turf/open/tiles/redtile,/area/inside/music)
-"eR" = (/obj/effect/landmark/start/upstairsmaid,/turf/open/carpetred,/area/inside/hallways)
-"eS" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/library1)
-"eT" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/inside/library1)
-"eU" = (/turf/closed/wall/wood,/area/inside/library_backroom1)
-"eV" = (/obj/structure/window/paperframe,/turf/open/windowplating,/area/inside/library_backroom1)
-"eW" = (/obj/structure/closet/jademansion/guestroomgeneric,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
-"eX" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
-"eY" = (/obj/structure/closet/jademansion/casualsuits1,/turf/open/carpetred,/area/inside/sleeping_room1)
-"eZ" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/laptop,/turf/open/carpetred,/area/inside/sleeping_room1)
-"fa" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/carpetred,/area/inside/sleeping_room1)
-"fb" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/carpetred,/area/inside/library1)
-"fc" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/carpetred,/area/inside/library1)
-"fd" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/library1)
-"fe" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"ff" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"fg" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"fh" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"fi" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/music)
-"fj" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"fk" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"fl" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"fm" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/carpetred,/area/inside/hallways)
-"fn" = (/turf/open/carpetred,/area/inside/diningroom)
-"fo" = (/obj/effect/landmark/start/guard,/turf/open/carpetred,/area/inside/diningroom)
-"fp" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/diningroom)
-"fq" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/music)
-"fr" = (/obj/effect/landmark/start/butler,/turf/open/carpetred,/area/inside/library1)
-"fs" = (/obj/structure/closet/jademansion/librarysupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"ft" = (/turf/closed/wall/wood,/area/inside/library1)
-"fu" = (/obj/machinery/light,/turf/open/carpetred,/area/inside/library1)
-"fv" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
-"fw" = (/obj/structure/largepotplant/hedgepine,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"fx" = (/turf/closed/wall/wood,/area/inside/hallways)
-"fy" = (/obj/structure/window/paperframe,/turf/open/windowplating,/area/inside/diningroom)
-"fz" = (/turf/closed/wall/wood,/area/inside/diningroom)
-"fA" = (/turf/closed/wall/wood,/area/inside/maint)
-"fB" = (/obj/structure/mineral_door/wood/lock/upstairs,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"fC" = (/turf/closed/wall/wood,/area/inside/cleaning_room)
-"fD" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
-"fE" = (/turf/open/tiles/redtile,/area/inside/diningroom)
-"fF" = (/turf/closed/wall,/area/inside/kitchen)
-"fG" = (/obj/structure/mineral_door/wood/lock,/turf/open/tiles/metaltile,/area/inside/maint)
-"fH" = (/turf/open/tiles/metaltile,/area/inside/maint)
-"fI" = (/obj/structure/janitorialcart,/turf/open/tiles/metaltile,/area/inside/cleaning_room)
-"fJ" = (/obj/structure/closet/jademansion/replacementparts,/turf/open/tiles/metaltile,/area/inside/cleaning_room)
-"fK" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
-"fL" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/redtile,/area/inside/diningroom)
-"fM" = (/obj/structure/table/wood/fancy,/turf/open/tiles/redtile,/area/inside/diningroom)
-"fN" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/kitchen)
-"fO" = (/obj/structure/table,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"fP" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"fQ" = (/obj/machinery/chem_master/condimaster,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"fR" = (/obj/machinery/chem_dispenser,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"fS" = (/obj/machinery/biogenerator,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"fT" = (/obj/structure/mineral_door/wood/lock/downstairs,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
-"fU" = (/turf/open/tiles/metaltile,/area/inside/cleaning_room)
-"fV" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/metaltile,/area/inside/cleaning_room)
-"fW" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
-"fX" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/inside/diningroom)
-"fY" = (/obj/machinery/processor,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"fZ" = (/turf/open/tiles/steriletile,/area/inside/kitchen)
-"ga" = (/turf/open/tiles/redtile,/area/inside/hallways)
-"gb" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"gc" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"gd" = (/obj/machinery/vending/boozeomat/jade,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"ge" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"gf" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks/beer,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"gg" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"gh" = (/obj/structure/closet/crate/bin,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"gi" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"gj" = (/obj/structure/closet/jademansion/cleaningroom,/turf/open/tiles/metaltile,/area/inside/cleaning_room)
-"gk" = (/obj/structure/table,/obj/machinery/microwave,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gl" = (/obj/machinery/chem_heater,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gm" = (/obj/structure/closet/crate/bin,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gn" = (/obj/structure/chair/stool/bar,/turf/open/tiles/redtile,/area/inside/hallways)
-"go" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"gp" = (/turf/open/tiles/redtile,/area/inside/bar)
-"gq" = (/obj/structure/mineral_door/wood/lock,/turf/open/tiles/metaltile,/area/inside/cleaning_room)
-"gr" = (/obj/structure/table,/turf/open/tiles/metaltile,/area/inside/cleaning_room)
-"gs" = (/turf/closed/wall/strong,/area/inside/kitchen)
-"gt" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/peppermill,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gu" = (/obj/structure/table,/obj/machinery/reagentgrinder,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gv" = (/obj/structure/table/wood,/obj/item/weapon/phone,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"gw" = (/obj/structure/closet/crate/bin,/turf/open/tiles/metaltile,/area/inside/cleaning_room)
-"gx" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
-"gy" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/redtile,/area/inside/diningroom)
-"gz" = (/turf/open/stairs/moving/southdown,/area/inside/stairs)
-"gA" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/machinery/deepfryer,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gB" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/saltshaker,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gC" = (/obj/structure/table,/obj/item/weapon/storage/bag/tray,/obj/item/weapon/storage/bag/tray,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gD" = (/obj/structure/table,/obj/machinery/juicer,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gE" = (/obj/structure/table/wood,/obj/item/weapon/reagent_containers/food/drinks/drinkingglass/shotglass,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"gF" = (/obj/effect/landmark/start/owner,/turf/open/tiles/redtile,/area/inside/bar)
-"gG" = (/obj/structure/closet/jademansion/kitchensupplies,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gH" = (/obj/effect/landmark/start/gardener,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gI" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/soysauce,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gJ" = (/obj/structure/table/wood,/obj/item/weapon/reagent_containers/glass/rag,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"gK" = (/obj/machinery/vending/cigarette,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"gL" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
-"gM" = (/obj/structure/table,/obj/machinery/light,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gN" = (/turf/closed/wall,/area/inside/bar)
-"gO" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"gP" = (/obj/structure/window/paperframe,/turf/open/windowplating,/area/inside/bar)
-"gQ" = (/obj/effect/landmark/start/guard,/turf/open/carpetred,/area/inside/hallways)
-"gR" = (/obj/machinery/light,/turf/open/carpetred,/area/inside/hallways)
-"gS" = (/obj/machinery/light,/turf/open/carpetred,/area/inside/diningroom)
-"gT" = (/obj/structure/closet/jademansion/kitchen,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gU" = (/obj/structure/sink{dir = 4},/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gV" = (/obj/structure/reagent_dispensers/beerkeg,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"gW" = (/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"gX" = (/obj/machinery/smartfridge/food,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gY" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/tiles/steriletile,/area/inside/kitchen)
-"gZ" = (/obj/structure/table,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/steriletile,/area/inside/kitchen)
-"ha" = (/obj/effect/landmark/start/assistant,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"hb" = (/obj/structure/reagent_dispensers/water_cooler,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"hc" = (/obj/structure/closet/jademansion/bar,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"hd" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
-"he" = (/obj/effect/landmark/start/assistant,/turf/open/carpetred,/area/inside/hallways)
-"hf" = (/turf/open/stairs/moving/northdown,/area/inside/stairs)
-"hg" = (/obj/effect/landmark/start/gardener,/turf/open/carpetred,/area/inside/hallways)
-"hh" = (/obj/structure/table/wood,/obj/item/weapon/storage/box/cups,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"hi" = (/turf/closed/wall,/area/inside/garden)
-"hj" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/garden)
-"hk" = (/obj/structure/mineral_door/wood/lock/gardener,/turf/open/tiles/metaltile,/area/inside/garden)
-"hl" = (/obj/machinery/biogenerator,/obj/item/weapon/reagent_containers/glass/bucket,/obj/item/weapon/reagent_containers/glass/bucket,/turf/open/tiles/metaltile,/area/inside/garden)
-"hm" = (/obj/machinery/plantgenes,/turf/open/tiles/metaltile,/area/inside/garden)
-"hn" = (/turf/open/tiles/metaltile,/area/inside/garden)
-"ho" = (/obj/machinery/vending/hydroseeds/jade,/turf/open/tiles/metaltile,/area/inside/garden)
-"hp" = (/obj/machinery/vending/hydronutrients/jade,/turf/open/tiles/metaltile,/area/inside/garden)
-"hq" = (/turf/closed/wall,/area/inside/delivery)
-"hr" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/metaltile,/area/inside/delivery)
-"hs" = (/turf/closed/wall,/area/inside/elec_maint)
-"ht" = (/obj/structure/mineral_door/wood/lock/downstairs,/turf/open/tiles/metaltile,/area/inside/elec_maint)
-"hu" = (/obj/effect/landmark/start/gardener,/turf/open/tiles/metaltile,/area/inside/garden)
-"hv" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/metaltile,/area/inside/delivery)
-"hw" = (/turf/open/tiles/metaltile,/area/inside/delivery)
-"hx" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/metaltile,/area/inside/delivery)
-"hy" = (/obj/effect/landmark/latejoin,/turf/open/carpetred,/area/inside/hallways)
-"hz" = (/turf/open/tiles/metaltile,/area/inside/elec_maint)
-"hA" = (/obj/machinery/seed_extractor,/turf/open/tiles/metaltile,/area/inside/garden)
-"hB" = (/obj/machinery/smartfridge/drying_rack,/turf/open/tiles/metaltile,/area/inside/garden)
-"hC" = (/obj/effect/landmark/start/assistant,/turf/open/tiles/metaltile,/area/inside/garden)
-"hD" = (/obj/structure/closet/jademansion/garden,/turf/open/tiles/metaltile,/area/inside/garden)
-"hE" = (/obj/structure/table,/turf/open/tiles/metaltile,/area/inside/delivery)
-"hF" = (/obj/effect/landmark/jade/delivery_spot,/turf/open/tiles/metaltile,/area/inside/delivery)
-"hG" = (/obj/structure/closet/jademansion/entrance,/turf/open/carpetred,/area/inside/hallways)
-"hH" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/metaltile,/area/inside/elec_maint)
-"hI" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/reagent_dispensers/watertank/high,/turf/open/tiles/metaltile,/area/inside/garden)
-"hJ" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/metaltile,/area/inside/garden)
-"hK" = (/obj/structure/mineral_door/wood/lock,/turf/open/tiles/metaltile,/area/inside/delivery)
-"hL" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/outside/sand,/area/outside)
-"hM" = (/obj/machinery/hydroponics/soil,/turf/open/outside/sand,/area/outside)
-"hN" = (/obj/effect/landmark/start/guest,/turf/open/outside/sand,/area/outside)
-"hO" = (/obj/structure/closet/crate/bin,/turf/open/outside/sand,/area/outside)
-"hP" = (/obj/structure/sink/puddle,/turf/open/outside/sand,/area/outside)
-"hQ" = (/turf/open/hole/outside,/area/outside)
-"hR" = (/obj/structure/largepotplant/minileaf,/turf/open/carpetred,/area/inside/hallways)
-"hS" = (/turf/open/outside/roofing/west,/area/outside)
-"hT" = (/turf/open/outside/roofing/tile,/area/outside)
-"hU" = (/turf/open/outside/roofing/east,/area/outside)
-"hV" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/stairs/north,/area/inside/stairs)
-"hW" = (/turf/closed/wall,/area/inside/library2)
-"hX" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/library2)
-"hY" = (/turf/closed/wall,/area/inside/office)
-"hZ" = (/obj/structure/largepotplant/scarletberry,/turf/open/carpetred,/area/inside/hallways)
-"ia" = (/obj/structure/largepotplant/bamboo,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"ib" = (/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library2)
-"ic" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/library2)
-"id" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/office)
-"ie" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/office)
-"if" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/office)
-"ig" = (/obj/structure/closet/jademansion/officesupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"ih" = (/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"ii" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/library2)
-"ij" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/library2)
-"ik" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/library2)
-"il" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/carpetred,/area/inside/office)
-"im" = (/obj/effect/landmark/start/headmaid,/turf/open/carpetred,/area/inside/office)
-"in" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"io" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"ip" = (/obj/structure/window/paperframe,/turf/open/windowplating,/area/inside/library2)
-"iq" = (/turf/closed/wall/strong,/area/inside/library2)
-"ir" = (/turf/open/carpetred,/area/inside/library2)
-"is" = (/obj/structure/largepotplant/glossleaf,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"it" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/laptop,/turf/open/carpetred,/area/inside/office)
-"iu" = (/turf/open/carpetred,/area/inside/office)
-"iv" = (/obj/structure/largepotplant/glossleaf,/turf/open/carpetred,/area/inside/library2)
-"iw" = (/turf/open/stairs/moving/eastdown,/area/inside/stairs)
-"ix" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"iy" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"iz" = (/obj/machinery/light,/turf/open/carpetred,/area/inside/library2)
-"iA" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library2)
-"iB" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"iC" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"iD" = (/obj/structure/chair/wood/normal,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"iE" = (/obj/structure/filingcabinet/chestdrawer,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"iF" = (/obj/machinery/photocopier,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
-"iG" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/carpetred,/area/inside/library2)
-"iH" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/library2)
-"iI" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"iJ" = (/obj/effect/landmark/start/assistant,/turf/open/carpetred,/area/inside/library2)
-"iK" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/library2)
-"iL" = (/obj/effect/landmark/start/downstairsmaid,/turf/open/carpetred,/area/inside/hallways)
-"iM" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/carpetred,/area/inside/library2)
-"iN" = (/turf/closed/wall,/area/inside/guard_room)
-"iO" = (/turf/closed/wall,/area/inside/chem_storage)
-"iP" = (/turf/closed/wall,/area/inside/medical)
-"iQ" = (/obj/structure/closet/jademansion/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"iR" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"iS" = (/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"iT" = (/obj/structure/table,/turf/open/tiles/steriletile,/area/inside/chem_storage)
-"iU" = (/obj/structure/table,/obj/structure/bedsheetbin,/turf/open/tiles/steriletile,/area/inside/chem_storage)
-"iV" = (/obj/structure/table/glass,/turf/open/tiles/steriletile,/area/inside/chem_storage)
-"iW" = (/obj/machinery/chem_dispenser,/turf/open/tiles/steriletile,/area/inside/chem_storage)
-"iX" = (/obj/machinery/sleeper/survival_pod,/turf/open/tiles/steriletile,/area/inside/medical)
-"iY" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/closet/jademansion/othermedsupplies,/turf/open/tiles/steriletile,/area/inside/medical)
-"iZ" = (/obj/structure/chair/wood/normal,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
-"ja" = (/obj/structure/largepotplant/cherryblossom,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
-"jb" = (/obj/structure/chair,/obj/effect/landmark/start/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jc" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jd" = (/obj/structure/mineral_door/wood/lock/upstairs,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"je" = (/turf/open/hole,/area/inside/hallways)
-"jf" = (/obj/structure/largepotplant/hedgepine,/obj/effect/turf_decal/woodline{dir = 8},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"jg" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/closet/jademansion/chemstorage,/turf/open/tiles/steriletile,/area/inside/chem_storage)
-"jh" = (/turf/open/tiles/steriletile,/area/inside/chem_storage)
-"ji" = (/obj/effect/landmark/start/downstairsmaid,/turf/open/tiles/steriletile,/area/inside/chem_storage)
-"jj" = (/obj/structure/chair,/turf/open/tiles/steriletile,/area/inside/medical)
-"jk" = (/turf/open/tiles/steriletile,/area/inside/medical)
-"jl" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/tiles/steriletile,/area/inside/medical)
-"jm" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
-"jn" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
-"jo" = (/obj/structure/table,/obj/structure/mansiondecoration/laptop,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jp" = (/obj/structure/table,/obj/machinery/light,/obj/machinery/recharger,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
-"jq" = (/obj/machinery/washing_machine,/turf/open/tiles/steriletile,/area/inside/chem_storage)
-"jr" = (/obj/machinery/chem_heater,/turf/open/tiles/steriletile,/area/inside/chem_storage)
-"js" = (/obj/machinery/chem_master,/turf/open/tiles/steriletile,/area/inside/chem_storage)
-"jt" = (/obj/structure/table/glass,/turf/open/tiles/steriletile,/area/inside/medical)
-"ju" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/tiles/steriletile,/area/inside/medical)
-"jv" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
-"jw" = (/turf/closed/wall,/area/inside/art_room)
-"jx" = (/obj/machinery/light,/turf/open/hole,/area/inside/hallways)
-"jy" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/tiles/steriletile,/area/inside/chem_storage)
-"jz" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
-"jA" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/art_room)
-"jB" = (/obj/structure/easel,/turf/open/tiles/woodenboards/woodentile1,/area/inside/art_room)
-"jC" = (/obj/structure/closet/jademansion/artsupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/art_room)
-"jD" = (/turf/closed/wall,/area/inside/dressing_room)
-"jE" = (/obj/effect/landmark/start/owner,/turf/open/carpetred,/area/inside/hallways)
-"jF" = (/obj/structure/mineral_door/wood/lock/upstairs,/turf/open/tiles/woodenboards/woodentile1,/area/inside/art_room)
-"jG" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/art_room)
-"jH" = (/obj/structure/dresser,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"jI" = (/obj/structure/mirror{dir = 1},/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"jJ" = (/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"jK" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"jL" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"jM" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/art_room)
-"jN" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"jO" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"jP" = (/obj/structure/rack,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"jQ" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"jR" = (/turf/closed/wall/strong,/area/inside/side_room1)
-"jS" = (/obj/structure/mineral_door/wood/lock,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"jT" = (/turf/closed/wall,/area/inside/side_room1)
-"jU" = (/turf/open/outside/roofing/tile,/area/inside/hallways)
-"jV" = (/obj/structure/mineral_door/wood/lock,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"jW" = (/obj/effect/landmark/start/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"jX" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"jY" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"jZ" = (/turf/open/outside/roofing,/area/outside)
-"ka" = (/obj/structure/closet/jademansion/medicalclothes,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"kb" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"kc" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
-"kd" = (/obj/structure/closet/jademansion/maids,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"ke" = (/obj/structure/closet/jademansion/casualgeneric1,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"kf" = (/obj/machinery/light,/obj/structure/closet/jademansion/casualsuits2,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"kg" = (/obj/structure/closet/jademansion/casualsuits1,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"kh" = (/obj/structure/closet/jademansion/casualdresses2,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"ki" = (/obj/structure/closet/jademansion/casualdresses1,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
-"kj" = (/turf/closed/wall/strong,/area/inside/workshop)
-"kk" = (/obj/structure/mineral_door/wood/lock/downstairs,/turf/open/tiles/woodenboards/woodentile1,/area/inside/workshop)
-"kl" = (/turf/closed/wall,/area/inside/workshop)
-"km" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/dressing_room)
-"kn" = (/obj/structure/table,/obj/item/weapon/storage/toolbox/mechanical,/turf/open/tiles/metaltile,/area/inside/workshop)
-"ko" = (/turf/open/tiles/metaltile,/area/inside/workshop)
-"kp" = (/obj/structure/table,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/machinery/cell_charger,/turf/open/tiles/metaltile,/area/inside/workshop)
-"kq" = (/obj/structure/table,/obj/item/weapon/storage/toolbox/electrical,/turf/open/tiles/metaltile,/area/inside/workshop)
-"kr" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/workshop)
-"ks" = (/obj/machinery/space_heater,/turf/open/tiles/metaltile,/area/inside/workshop)
-"kt" = (/obj/machinery/portable_atmospherics/canister/water_vapor,/turf/open/tiles/metaltile,/area/inside/workshop)
-"ku" = (/obj/structure/table,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/metaltile,/area/inside/workshop)
-"kv" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/diningroom)
-"kw" = (/turf/closed/wall,/area/inside/diningroom)
-"kx" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/diningroom)
-"ky" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/diningroom)
-"kz" = (/obj/structure/table/wood/fancy,/turf/open/carpetred,/area/inside/diningroom)
-"kA" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/diningroom)
-"kB" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/diningroom)
-"kC" = (/turf/closed/wall,/area/inside/library_backroom2)
-"kD" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/hallways)
-"kE" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/library_backroom2)
-"kF" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/library_backroom2)
-"kG" = (/turf/closed/wall,/area/inside/gambling_area)
-"kH" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/library_backroom2)
-"kI" = (/turf/open/carpetred,/area/inside/library_backroom2)
-"kJ" = (/turf/closed/wall,/area/inside/side_room2)
-"kK" = (/turf/closed/wall/strong,/area/inside/side_room2)
-"kL" = (/turf/closed/wall/strong,/area/inside/library3)
-"kM" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/carpetred,/area/inside/library3)
-"kN" = (/turf/closed/wall,/area/inside/library3)
-"kO" = (/obj/machinery/computer/slot_machine,/turf/open/carpetred,/area/inside/gambling_area)
-"kP" = (/turf/open/carpetred,/area/inside/gambling_area)
-"kQ" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/chair/wood/normal,/turf/open/carpetred,/area/inside/gambling_area)
-"kR" = (/obj/structure/chair/wood/normal,/turf/open/carpetred,/area/inside/gambling_area)
-"kS" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/gambling_area)
-"kT" = (/obj/structure/chair/wood/normal,/turf/open/carpetred,/area/inside/library_backroom2)
-"kU" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/library_backroom2)
-"kV" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room2)
-"kW" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room2)
-"kX" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/side_room2)
-"kY" = (/obj/structure/chair/wood/normal,/obj/effect/landmark/start/upstairsmaid,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room2)
-"kZ" = (/turf/open/carpetred,/area/inside/library3)
-"la" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/library3)
-"lb" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/library3)
-"lc" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/library3)
-"ld" = (/obj/structure/chair/stool/bar,/turf/open/carpetred,/area/inside/gambling_area)
-"le" = (/obj/structure/table/wood/poker,/turf/open/carpetred,/area/inside/gambling_area)
-"lf" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/gambling_area)
-"lg" = (/obj/structure/table/wood,/obj/effect/holodeck_effect/cards,/turf/open/carpetred,/area/inside/library_backroom2)
-"lh" = (/obj/machinery/light,/obj/structure/table/wood,/turf/open/carpetred,/area/inside/library_backroom2)
-"li" = (/obj/structure/closet/jademansion/librarysupplies,/turf/open/carpetred,/area/inside/library_backroom2)
-"lj" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room2)
-"lk" = (/obj/structure/chair/wood/normal,/turf/open/carpetred,/area/inside/library3)
-"ll" = (/obj/structure/table/wood/poker,/obj/effect/holodeck_effect/cards,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/carpetred,/area/inside/gambling_area)
-"lm" = (/obj/structure/closet/jademansion/maids,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room2)
-"ln" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/library3)
-"lo" = (/obj/structure/largepotplant,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"lp" = (/obj/structure/fireplace,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"lq" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/carpetred,/area/inside/library3)
-"lr" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/gambling_area)
-"ls" = (/obj/structure/chair/comfy/beige{dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"lt" = (/obj/structure/chair/comfy/beige{dir = 8},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"lu" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/oldcomputer,/turf/open/carpetred,/area/inside/library3)
-"lv" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/library3)
-"lw" = (/obj/machinery/light,/turf/open/carpetred,/area/inside/library3)
-"lx" = (/obj/structure/largepotplant/yucapalm,/obj/machinery/light,/turf/open/carpetred,/area/inside/library3)
-"ly" = (/obj/machinery/light,/obj/structure/chair/comfy/beige{dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
-"lz" = (/turf/closed/wall,/area/inside/sleeping_room3)
-"lA" = (/turf/closed/wall,/area/inside/sleeping_room4)
-"lB" = (/turf/closed/wall,/area/inside/sleeping_room5)
-"lC" = (/obj/structure/closet/jademansion/casualdresses1,/turf/open/carpetred,/area/inside/sleeping_room3)
-"lD" = (/obj/structure/bed,/turf/open/carpetred,/area/inside/sleeping_room3)
-"lE" = (/obj/structure/dresser,/turf/open/carpetred,/area/inside/sleeping_room3)
-"lF" = (/obj/structure/closet/jademansion/officesupplies,/turf/open/carpetred,/area/inside/sleeping_room3)
-"lG" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/sleeping_room4)
-"lH" = (/obj/structure/table/wood,/obj/item/device/flashlight/lamp,/turf/open/carpetred,/area/inside/sleeping_room4)
-"lI" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/sleeping_room4)
-"lJ" = (/obj/structure/closet/jademansion/casualdresses2,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room4)
-"lK" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room4)
-"lL" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room5)
-"lM" = (/obj/structure/closet/jademansion/casualdresses1,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room5)
-"lN" = (/obj/structure/dresser,/turf/open/carpetred,/area/inside/sleeping_room5)
-"lO" = (/obj/structure/bed,/turf/open/carpetred,/area/inside/sleeping_room5)
-"lP" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/sleeping_room5)
-"lQ" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/sleeping_room5)
-"lR" = (/turf/open/carpetred,/area/inside/sleeping_room3)
-"lS" = (/obj/effect/landmark/start/owner,/turf/open/carpetred,/area/inside/sleeping_room3)
-"lT" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/inside/sleeping_room3)
-"lU" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/turf/open/carpetred,/area/inside/sleeping_room4)
-"lV" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room4)
-"lW" = (/obj/structure/closet/jademansion/officesupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room4)
-"lX" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room5)
-"lY" = (/turf/open/carpetred,/area/inside/sleeping_room5)
-"lZ" = (/obj/effect/landmark/start/owner,/turf/open/carpetred,/area/inside/sleeping_room5)
-"ma" = (/obj/structure/mansiondecoration/oldtv,/turf/open/carpetred,/area/inside/sleeping_room5)
-"mb" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room3)
-"mc" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room3)
-"md" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room3)
-"me" = (/turf/open/carpetred,/area/inside/sleeping_room4)
-"mf" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room3)
-"mg" = (/obj/structure/bed,/turf/open/carpetred,/area/inside/sleeping_room4)
-"mh" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/sleeping_room4)
-"mi" = (/obj/structure/dresser,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room4)
-"mj" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/sleeping_room5)
-"mk" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/sleeping_room5)
-"ml" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/sleeping_room3)
-"mm" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/sleeping_room4)
-"mn" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/sleeping_room5)
-"mo" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/elec_maint)
-"mp" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/metaltile,/area/inside/elec_maint)
-"mq" = (/obj/item/device/flashlight/lamp,/obj/structure/table,/turf/open/tiles/metaltile,/area/inside/elec_maint)
+"dr" = (/obj/structure/table,/obj/item/stack/cable_coil/random,/turf/open/tiles/metaltile,/area/inside/power)
+"ds" = (/obj/structure/table,/obj/item/stack/sheet/metal/twenty,/turf/open/tiles/metaltile,/area/inside/power)
+"dt" = (/obj/machinery/space_heater,/turf/open/tiles/metaltile,/area/inside/power)
+"du" = (/obj/structure/table,/obj/item/stack/metal_wire,/turf/open/tiles/metaltile,/area/inside/power)
+"dv" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/metaltile,/area/inside/power)
+"dw" = (/obj/structure/table,/obj/item/stack/sheet/cardboard/fifty,/turf/open/tiles/metaltile,/area/inside/power)
+"dx" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/obj/structure/table,/obj/item/stack/metal_wire,/turf/open/tiles/metaltile,/area/inside/power)
+"dy" = (/obj/structure/closet/crate/bin,/turf/open/tiles/metaltile,/area/inside/power)
+"dz" = (/obj/structure/ladder,/turf/open/tiles/metaltile,/area/inside/stairs)
+"dA" = (/obj/machinery/power/rtg,/obj/structure/cable{icon_state = "0-4"; d2 = 4},/turf/open/tiles/metaltile,/area/inside/power)
+"dB" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/tiles/metaltile,/area/inside/power)
+"dC" = (/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"; tag = ""},/turf/open/tiles/metaltile,/area/inside/power)
+"dD" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/open/tiles/metaltile,/area/inside/power)
+"dE" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/metaltile,/area/inside/power)
+"dF" = (/obj/structure/table,/obj/item/weapon/storage/toolbox/electrical,/turf/open/tiles/metaltile,/area/inside/power)
+"dG" = (/obj/structure/cable{icon_state = "0-4"; d2 = 4},/obj/machinery/power/multiarea_apc,/turf/open/tiles/metaltile,/area/inside/power)
+"dH" = (/obj/structure/cable{icon_state = "1-8"},/turf/open/tiles/metaltile,/area/inside/power)
+"dI" = (/obj/structure/table,/obj/item/stack/sheet/glass/fifty,/obj/item/stack/sheet/glass/fifty,/turf/open/tiles/metaltile,/area/inside/power)
+"dJ" = (/obj/structure/table,/obj/item/stack/sheet/cloth/ten,/obj/item/stack/sheet/cloth/ten,/turf/open/tiles/metaltile,/area/inside/power)
+"dK" = (/obj/structure/closet/cardboard,/turf/open/tiles/metaltile,/area/inside/power)
+"dL" = (/turf/closed/outsidepines,/area/outside)
+"dM" = (/turf/open/outside/sand,/area/outside)
+"dN" = (/turf/closed/outsidepines/bottom,/area/outside)
+"dO" = (/turf/closed/outsidepines/top,/area/outside)
+"dP" = (/turf/closed/wall,/area/inside/hallways)
+"dQ" = (/obj/structure/mineral_door/wood/lock/owner/locked,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"dR" = (/obj/structure/table/wood,/obj/item/weapon/lipstick,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"dS" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"dT" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/closet/cardboard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"dU" = (/obj/structure/closet/jademansion/bar,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"dV" = (/obj/structure/closet/jademansion/officesupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"dW" = (/obj/item/chair/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"dX" = (/obj/structure/closet/jademansion/replacementparts,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"dY" = (/obj/structure/closet/jademansion/garden,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"dZ" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/hallways)
+"ea" = (/turf/closed/wall,/area/inside/sleeping_room2)
+"eb" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"ec" = (/obj/structure/closet/jademansion/swimmingw,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"ed" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room2)
+"ee" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room2)
+"ef" = (/turf/open/carpetred,/area/inside/sleeping_room2)
+"eg" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/sleeping_room2)
+"eh" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/oldcomputer,/turf/open/carpetred,/area/inside/sleeping_room2)
+"ei" = (/obj/structure/window/paperframe,/turf/open/windowplating,/area/inside/hallways)
+"ej" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/inside/hallways)
+"ek" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room2)
+"el" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/sleeping_room2)
+"em" = (/turf/closed/wall,/area/inside/backroom1)
+"en" = (/obj/structure/mineral_door/wood/lock,/turf/open/tiles/woodenboards/woodentile1,/area/inside/backroom1)
+"eo" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room2)
+"ep" = (/turf/closed/wall,/area/inside/music)
+"eq" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/music)
+"er" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/hallways)
+"es" = (/obj/effect/landmark/start/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/backroom1)
+"et" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/backroom1)
+"eu" = (/obj/effect/landmark/start,/turf/open/carpetred,/area/inside/hallways)
+"ev" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room2)
+"ew" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/sleeping_room2)
+"ex" = (/obj/structure/bed,/turf/open/carpetred,/area/inside/sleeping_room2)
+"ey" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/music)
+"ez" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/music)
+"eA" = (/obj/effect/landmark/start/butler,/turf/open/carpetred,/area/inside/hallways)
+"eB" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/backroom1)
+"eC" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/backroom1)
+"eD" = (/turf/closed/wall,/area/inside/sleeping_room1)
+"eE" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/music)
+"eF" = (/turf/open/tiles/redtile,/area/inside/music)
+"eG" = (/obj/structure/piano,/turf/open/tiles/redtile,/area/inside/music)
+"eH" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/music)
+"eI" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/hallways)
+"eJ" = (/obj/structure/window/paperframe,/turf/open/windowplating,/area/inside/library1)
+"eK" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/library1)
+"eL" = (/turf/closed/wall/strong,/area/inside/library1)
+"eM" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
+"eN" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
+"eO" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/sleeping_room1)
+"eP" = (/obj/structure/bed,/turf/open/carpetred,/area/inside/sleeping_room1)
+"eQ" = (/turf/closed/outsiderock/rock2,/area/outside)
+"eR" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/library1)
+"eS" = (/turf/open/carpetred,/area/inside/library1)
+"eT" = (/turf/open/stairs/east,/area/inside/stairs)
+"eU" = (/turf/open/stairs/moving/eastup,/area/inside/stairs)
+"eV" = (/turf/open/carpetred,/area/inside/sleeping_room1)
+"eW" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/sleeping_room1)
+"eX" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/library1)
+"eY" = (/turf/closed/wall/strong,/area/inside/sleeping_room1)
+"eZ" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
+"fa" = (/obj/effect/landmark/start/upstairsmaid,/turf/open/tiles/redtile,/area/inside/music)
+"fb" = (/obj/effect/landmark/start/upstairsmaid,/turf/open/carpetred,/area/inside/hallways)
+"fc" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/library1)
+"fd" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/inside/library1)
+"fe" = (/turf/closed/wall/wood,/area/inside/library_backroom1)
+"ff" = (/obj/structure/window/paperframe,/turf/open/windowplating,/area/inside/library_backroom1)
+"fg" = (/obj/structure/closet/jademansion/guestroomgeneric,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
+"fh" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room1)
+"fi" = (/obj/structure/closet/jademansion/casualsuits1,/turf/open/carpetred,/area/inside/sleeping_room1)
+"fj" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/laptop,/turf/open/carpetred,/area/inside/sleeping_room1)
+"fk" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/carpetred,/area/inside/sleeping_room1)
+"fl" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/carpetred,/area/inside/library1)
+"fm" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/carpetred,/area/inside/library1)
+"fn" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/library1)
+"fo" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"fp" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"fq" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"fr" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"fs" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/music)
+"ft" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"fu" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"fv" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"fw" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/carpetred,/area/inside/hallways)
+"fx" = (/turf/open/carpetred,/area/inside/diningroom)
+"fy" = (/obj/effect/landmark/start/guard,/turf/open/carpetred,/area/inside/diningroom)
+"fz" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/diningroom)
+"fA" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/music)
+"fB" = (/obj/effect/landmark/start/butler,/turf/open/carpetred,/area/inside/library1)
+"fC" = (/obj/structure/closet/jademansion/librarysupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"fD" = (/turf/closed/wall/wood,/area/inside/library1)
+"fE" = (/obj/machinery/light,/turf/open/carpetred,/area/inside/library1)
+"fF" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library_backroom1)
+"fG" = (/obj/structure/largepotplant/hedgepine,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"fH" = (/turf/closed/wall/wood,/area/inside/hallways)
+"fI" = (/obj/structure/window/paperframe,/turf/open/windowplating,/area/inside/diningroom)
+"fJ" = (/turf/closed/wall/wood,/area/inside/diningroom)
+"fK" = (/turf/closed/wall/wood,/area/inside/maint)
+"fL" = (/obj/structure/mineral_door/wood/lock/upstairs,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"fM" = (/turf/closed/wall/wood,/area/inside/cleaning_room)
+"fN" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
+"fO" = (/turf/open/tiles/redtile,/area/inside/diningroom)
+"fP" = (/turf/closed/wall,/area/inside/kitchen)
+"fQ" = (/obj/structure/mineral_door/wood/lock,/turf/open/tiles/metaltile,/area/inside/maint)
+"fR" = (/turf/open/tiles/metaltile,/area/inside/maint)
+"fS" = (/obj/structure/janitorialcart,/turf/open/tiles/metaltile,/area/inside/cleaning_room)
+"fT" = (/obj/structure/closet/jademansion/replacementparts,/turf/open/tiles/metaltile,/area/inside/cleaning_room)
+"fU" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
+"fV" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/redtile,/area/inside/diningroom)
+"fW" = (/obj/structure/table/wood/fancy,/turf/open/tiles/redtile,/area/inside/diningroom)
+"fX" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/kitchen)
+"fY" = (/obj/structure/table,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"fZ" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"ga" = (/obj/machinery/chem_master/condimaster,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gb" = (/obj/machinery/chem_dispenser,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gc" = (/obj/machinery/biogenerator,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gd" = (/obj/structure/mineral_door/wood/lock/downstairs,/turf/open/tiles/woodenboards/woodentile1,/area/inside/maint)
+"ge" = (/turf/open/tiles/metaltile,/area/inside/cleaning_room)
+"gf" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/metaltile,/area/inside/cleaning_room)
+"gg" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
+"gh" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/inside/diningroom)
+"gi" = (/obj/machinery/processor,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gj" = (/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gk" = (/turf/open/tiles/redtile,/area/inside/hallways)
+"gl" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gm" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gn" = (/obj/machinery/vending/boozeomat/jade,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"go" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gp" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks/beer,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gq" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gr" = (/obj/structure/closet/crate/bin,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gs" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gt" = (/obj/structure/closet/jademansion/cleaningroom,/turf/open/tiles/metaltile,/area/inside/cleaning_room)
+"gu" = (/obj/structure/table,/obj/machinery/microwave,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gv" = (/obj/machinery/chem_heater,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gw" = (/obj/structure/closet/crate/bin,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gx" = (/obj/structure/chair/stool/bar,/turf/open/tiles/redtile,/area/inside/hallways)
+"gy" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gz" = (/turf/open/tiles/redtile,/area/inside/bar)
+"gA" = (/obj/structure/mineral_door/wood/lock,/turf/open/tiles/metaltile,/area/inside/cleaning_room)
+"gB" = (/obj/structure/table,/turf/open/tiles/metaltile,/area/inside/cleaning_room)
+"gC" = (/turf/closed/wall/strong,/area/inside/kitchen)
+"gD" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/peppermill,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gE" = (/obj/structure/table,/obj/machinery/reagentgrinder,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gF" = (/obj/structure/table/wood,/obj/item/weapon/phone,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gG" = (/obj/structure/closet/crate/bin,/turf/open/tiles/metaltile,/area/inside/cleaning_room)
+"gH" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/diningroom)
+"gI" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/redtile,/area/inside/diningroom)
+"gJ" = (/turf/open/stairs/moving/southdown,/area/inside/stairs)
+"gK" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/machinery/deepfryer,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gL" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/saltshaker,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gM" = (/obj/structure/table,/obj/item/weapon/storage/bag/tray,/obj/item/weapon/storage/bag/tray,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gN" = (/obj/structure/table,/obj/machinery/juicer,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gO" = (/obj/structure/table/wood,/obj/item/weapon/reagent_containers/food/drinks/drinkingglass/shotglass,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gP" = (/obj/effect/landmark/start/owner,/turf/open/tiles/redtile,/area/inside/bar)
+"gQ" = (/obj/structure/closet/jademansion/kitchensupplies,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gR" = (/obj/effect/landmark/start/gardener,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gS" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/soysauce,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gT" = (/obj/structure/table/wood,/obj/item/weapon/reagent_containers/glass/rag,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gU" = (/obj/machinery/vending/cigarette,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gV" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/kitchen)
+"gW" = (/obj/structure/table,/obj/machinery/light,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"gX" = (/turf/closed/wall,/area/inside/bar)
+"gY" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"gZ" = (/obj/structure/window/paperframe,/turf/open/windowplating,/area/inside/bar)
+"ha" = (/obj/effect/landmark/start/guard,/turf/open/carpetred,/area/inside/hallways)
+"hb" = (/obj/machinery/light,/turf/open/carpetred,/area/inside/hallways)
+"hc" = (/obj/machinery/light,/turf/open/carpetred,/area/inside/diningroom)
+"hd" = (/obj/structure/closet/jademansion/kitchen,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"he" = (/obj/structure/sink{dir = 4},/turf/open/tiles/steriletile,/area/inside/kitchen)
+"hf" = (/obj/structure/reagent_dispensers/beerkeg,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"hg" = (/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"hh" = (/obj/machinery/smartfridge/food,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"hi" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/tiles/steriletile,/area/inside/kitchen)
+"hj" = (/obj/structure/table,/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/steriletile,/area/inside/kitchen)
+"hk" = (/obj/effect/landmark/start/assistant,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"hl" = (/obj/structure/reagent_dispensers/water_cooler,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"hm" = (/obj/structure/closet/jademansion/bar,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"hn" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/bar)
+"ho" = (/obj/effect/landmark/start/assistant,/turf/open/carpetred,/area/inside/hallways)
+"hp" = (/turf/open/stairs/moving/northdown,/area/inside/stairs)
+"hq" = (/obj/effect/landmark/start/gardener,/turf/open/carpetred,/area/inside/hallways)
+"hr" = (/obj/structure/table/wood,/obj/item/weapon/storage/box/cups,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"hs" = (/turf/closed/wall,/area/inside/garden)
+"ht" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/garden)
+"hu" = (/obj/structure/mineral_door/wood/lock/gardener,/turf/open/tiles/metaltile,/area/inside/garden)
+"hv" = (/obj/machinery/biogenerator,/obj/item/weapon/reagent_containers/glass/bucket,/obj/item/weapon/reagent_containers/glass/bucket,/turf/open/tiles/metaltile,/area/inside/garden)
+"hw" = (/obj/machinery/plantgenes,/turf/open/tiles/metaltile,/area/inside/garden)
+"hx" = (/turf/open/tiles/metaltile,/area/inside/garden)
+"hy" = (/obj/machinery/vending/hydroseeds/jade,/turf/open/tiles/metaltile,/area/inside/garden)
+"hz" = (/obj/machinery/vending/hydronutrients/jade,/turf/open/tiles/metaltile,/area/inside/garden)
+"hA" = (/turf/closed/wall,/area/inside/delivery)
+"hB" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/metaltile,/area/inside/delivery)
+"hC" = (/turf/closed/wall,/area/inside/elec_maint)
+"hD" = (/obj/structure/mineral_door/wood/lock/downstairs,/turf/open/tiles/metaltile,/area/inside/elec_maint)
+"hE" = (/obj/effect/landmark/start/gardener,/turf/open/tiles/metaltile,/area/inside/garden)
+"hF" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/metaltile,/area/inside/delivery)
+"hG" = (/turf/open/tiles/metaltile,/area/inside/delivery)
+"hH" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/metaltile,/area/inside/delivery)
+"hI" = (/obj/effect/landmark/latejoin,/turf/open/carpetred,/area/inside/hallways)
+"hJ" = (/turf/open/tiles/metaltile,/area/inside/elec_maint)
+"hK" = (/obj/machinery/seed_extractor,/turf/open/tiles/metaltile,/area/inside/garden)
+"hL" = (/obj/machinery/smartfridge/drying_rack,/turf/open/tiles/metaltile,/area/inside/garden)
+"hM" = (/obj/effect/landmark/start/assistant,/turf/open/tiles/metaltile,/area/inside/garden)
+"hN" = (/obj/structure/closet/jademansion/garden,/turf/open/tiles/metaltile,/area/inside/garden)
+"hO" = (/obj/structure/table,/turf/open/tiles/metaltile,/area/inside/delivery)
+"hP" = (/obj/effect/landmark/jade/delivery_spot,/turf/open/tiles/metaltile,/area/inside/delivery)
+"hQ" = (/obj/structure/closet/jademansion/entrance,/turf/open/carpetred,/area/inside/hallways)
+"hR" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/metaltile,/area/inside/elec_maint)
+"hS" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/reagent_dispensers/watertank/high,/turf/open/tiles/metaltile,/area/inside/garden)
+"hT" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/metaltile,/area/inside/garden)
+"hU" = (/obj/structure/mineral_door/wood/lock,/turf/open/tiles/metaltile,/area/inside/delivery)
+"hV" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/outside/sand,/area/outside)
+"hW" = (/obj/machinery/hydroponics/soil,/turf/open/outside/sand,/area/outside)
+"hX" = (/obj/effect/landmark/start/guest,/turf/open/outside/sand,/area/outside)
+"hY" = (/obj/structure/closet/crate/bin,/turf/open/outside/sand,/area/outside)
+"hZ" = (/obj/structure/sink/puddle,/turf/open/outside/sand,/area/outside)
+"ia" = (/turf/open/hole/outside,/area/outside)
+"ib" = (/obj/structure/largepotplant/minileaf,/turf/open/carpetred,/area/inside/hallways)
+"ic" = (/turf/open/outside/roofing/west,/area/outside)
+"id" = (/turf/open/outside/roofing/tile,/area/outside)
+"ie" = (/turf/open/outside/roofing/east,/area/outside)
+"if" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/stairs/north,/area/inside/stairs)
+"ig" = (/turf/closed/wall,/area/inside/library2)
+"ih" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/library2)
+"ii" = (/turf/closed/wall,/area/inside/office)
+"ij" = (/obj/structure/largepotplant/scarletberry,/turf/open/carpetred,/area/inside/hallways)
+"ik" = (/obj/structure/largepotplant/bamboo,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"il" = (/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/library2)
+"im" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/library2)
+"in" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/office)
+"io" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/office)
+"ip" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/office)
+"iq" = (/obj/structure/closet/jademansion/officesupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"ir" = (/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"is" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/library2)
+"it" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/library2)
+"iu" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/library2)
+"iv" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/carpetred,/area/inside/office)
+"iw" = (/obj/effect/landmark/start/headmaid,/turf/open/carpetred,/area/inside/office)
+"ix" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"iy" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"iz" = (/obj/structure/window/paperframe,/turf/open/windowplating,/area/inside/library2)
+"iA" = (/turf/closed/wall/strong,/area/inside/library2)
+"iB" = (/turf/open/carpetred,/area/inside/library2)
+"iC" = (/obj/structure/largepotplant/glossleaf,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"iD" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/laptop,/turf/open/carpetred,/area/inside/office)
+"iE" = (/turf/open/carpetred,/area/inside/office)
+"iF" = (/obj/structure/largepotplant/glossleaf,/turf/open/carpetred,/area/inside/library2)
+"iG" = (/turf/open/stairs/moving/eastdown,/area/inside/stairs)
+"iH" = (/obj/structure/chair/wood/normal{dir = 1; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"iI" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"iJ" = (/obj/machinery/light,/turf/open/carpetred,/area/inside/library2)
+"iK" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/library2)
+"iL" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"iM" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"iN" = (/obj/structure/chair/wood/normal,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"iO" = (/obj/structure/filingcabinet/chestdrawer,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"iP" = (/obj/machinery/photocopier,/turf/open/tiles/woodenboards/woodentile1,/area/inside/office)
+"iQ" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/carpetred,/area/inside/library2)
+"iR" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/library2)
+"iS" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"iT" = (/obj/effect/landmark/start/assistant,/turf/open/carpetred,/area/inside/library2)
+"iU" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/library2)
+"iV" = (/obj/effect/landmark/start/downstairsmaid,/turf/open/carpetred,/area/inside/hallways)
+"iW" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/carpetred,/area/inside/library2)
+"iX" = (/turf/closed/wall,/area/inside/guard_room)
+"iY" = (/turf/closed/wall,/area/inside/chem_storage)
+"iZ" = (/turf/closed/wall,/area/inside/medical)
+"ja" = (/obj/structure/closet/jademansion/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jb" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jc" = (/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jd" = (/obj/structure/table,/turf/open/tiles/steriletile,/area/inside/chem_storage)
+"je" = (/obj/structure/table,/obj/structure/bedsheetbin,/turf/open/tiles/steriletile,/area/inside/chem_storage)
+"jf" = (/obj/structure/table/glass,/turf/open/tiles/steriletile,/area/inside/chem_storage)
+"jg" = (/obj/machinery/chem_dispenser,/turf/open/tiles/steriletile,/area/inside/chem_storage)
+"jh" = (/obj/machinery/sleeper/survival_pod,/turf/open/tiles/steriletile,/area/inside/medical)
+"ji" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/closet/jademansion/othermedsupplies,/turf/open/tiles/steriletile,/area/inside/medical)
+"jj" = (/obj/structure/chair/wood/normal,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
+"jk" = (/obj/structure/largepotplant/cherryblossom,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
+"jl" = (/obj/structure/chair,/obj/effect/landmark/start/guard,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jm" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jn" = (/obj/structure/mineral_door/wood/lock/upstairs,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jo" = (/turf/open/hole,/area/inside/hallways)
+"jp" = (/obj/structure/largepotplant/hedgepine,/obj/effect/turf_decal/woodline{dir = 8},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"jq" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/closet/jademansion/chemstorage,/turf/open/tiles/steriletile,/area/inside/chem_storage)
+"jr" = (/turf/open/tiles/steriletile,/area/inside/chem_storage)
+"js" = (/obj/effect/landmark/start/downstairsmaid,/turf/open/tiles/steriletile,/area/inside/chem_storage)
+"jt" = (/obj/structure/chair,/turf/open/tiles/steriletile,/area/inside/medical)
+"ju" = (/turf/open/tiles/steriletile,/area/inside/medical)
+"jv" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/tiles/steriletile,/area/inside/medical)
+"jw" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
+"jx" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
+"jy" = (/obj/structure/table,/obj/structure/mansiondecoration/laptop,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jz" = (/obj/structure/table,/obj/machinery/light,/obj/machinery/recharger,/turf/open/tiles/woodenboards/woodentile1,/area/inside/guard_room)
+"jA" = (/obj/machinery/washing_machine,/turf/open/tiles/steriletile,/area/inside/chem_storage)
+"jB" = (/obj/machinery/chem_heater,/turf/open/tiles/steriletile,/area/inside/chem_storage)
+"jC" = (/obj/machinery/chem_master,/turf/open/tiles/steriletile,/area/inside/chem_storage)
+"jD" = (/obj/structure/table/glass,/turf/open/tiles/steriletile,/area/inside/medical)
+"jE" = (/obj/structure/closet/jademansion/medicalroom,/turf/open/tiles/steriletile,/area/inside/medical)
+"jF" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
+"jG" = (/turf/closed/wall,/area/inside/art_room)
+"jH" = (/obj/machinery/light,/turf/open/hole,/area/inside/hallways)
+"jI" = (/obj/structure/mineral_door/wood/lock/whitewood,/turf/open/tiles/steriletile,/area/inside/chem_storage)
+"jJ" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/medical)
+"jK" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/art_room)
+"jL" = (/obj/structure/easel,/turf/open/tiles/woodenboards/woodentile1,/area/inside/art_room)
+"jM" = (/obj/structure/closet/jademansion/artsupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/art_room)
+"jN" = (/turf/closed/wall,/area/inside/dressing_room)
+"jO" = (/obj/effect/landmark/start/owner,/turf/open/carpetred,/area/inside/hallways)
+"jP" = (/obj/structure/mineral_door/wood/lock/upstairs,/turf/open/tiles/woodenboards/woodentile1,/area/inside/art_room)
+"jQ" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/art_room)
+"jR" = (/obj/structure/dresser,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"jS" = (/obj/structure/mirror{dir = 1},/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"jT" = (/obj/structure/largepotplant/glossleaf,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"jU" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick/random,/obj/item/weapon/lipstick,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"jV" = (/obj/structure/jadelibrary/bookcase,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"jW" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/art_room)
+"jX" = (/obj/machinery/light,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"jY" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"jZ" = (/obj/structure/rack,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"ka" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"kb" = (/turf/closed/wall/strong,/area/inside/side_room1)
+"kc" = (/obj/structure/mineral_door/wood/lock,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"kd" = (/turf/closed/wall,/area/inside/side_room1)
+"ke" = (/turf/open/outside/roofing/tile,/area/inside/hallways)
+"kf" = (/obj/structure/mineral_door/wood/lock,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"kg" = (/obj/effect/landmark/start/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"kh" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"ki" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"kj" = (/turf/open/outside/roofing,/area/outside)
+"kk" = (/obj/structure/closet/jademansion/medicalclothes,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"kl" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"km" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room1)
+"kn" = (/obj/structure/closet/jademansion/maids,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"ko" = (/obj/structure/closet/jademansion/casualgeneric1,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"kp" = (/obj/machinery/light,/obj/structure/closet/jademansion/casualsuits2,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"kq" = (/obj/structure/closet/jademansion/casualsuits1,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"kr" = (/obj/structure/closet/jademansion/casualdresses2,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"ks" = (/obj/structure/closet/jademansion/casualdresses1,/turf/open/tiles/woodenboards/woodentile1,/area/inside/dressing_room)
+"kt" = (/turf/closed/wall/strong,/area/inside/workshop)
+"ku" = (/obj/structure/mineral_door/wood/lock/downstairs,/turf/open/tiles/woodenboards/woodentile1,/area/inside/workshop)
+"kv" = (/turf/closed/wall,/area/inside/workshop)
+"kw" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/dressing_room)
+"kx" = (/obj/structure/table,/obj/item/weapon/storage/toolbox/mechanical,/turf/open/tiles/metaltile,/area/inside/workshop)
+"ky" = (/turf/open/tiles/metaltile,/area/inside/workshop)
+"kz" = (/obj/structure/table,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/machinery/cell_charger,/turf/open/tiles/metaltile,/area/inside/workshop)
+"kA" = (/obj/structure/table,/obj/item/weapon/storage/toolbox/electrical,/turf/open/tiles/metaltile,/area/inside/workshop)
+"kB" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/workshop)
+"kC" = (/obj/machinery/space_heater,/turf/open/tiles/metaltile,/area/inside/workshop)
+"kD" = (/obj/machinery/portable_atmospherics/canister/water_vapor,/turf/open/tiles/metaltile,/area/inside/workshop)
+"kE" = (/obj/structure/table,/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/metaltile,/area/inside/workshop)
+"kF" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/diningroom)
+"kG" = (/turf/closed/wall,/area/inside/diningroom)
+"kH" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/diningroom)
+"kI" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/diningroom)
+"kJ" = (/obj/structure/table/wood/fancy,/turf/open/carpetred,/area/inside/diningroom)
+"kK" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/diningroom)
+"kL" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/diningroom)
+"kM" = (/turf/closed/wall,/area/inside/library_backroom2)
+"kN" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/hallways)
+"kO" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/library_backroom2)
+"kP" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/library_backroom2)
+"kQ" = (/turf/closed/wall,/area/inside/gambling_area)
+"kR" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/library_backroom2)
+"kS" = (/turf/open/carpetred,/area/inside/library_backroom2)
+"kT" = (/turf/closed/wall,/area/inside/side_room2)
+"kU" = (/turf/closed/wall/strong,/area/inside/side_room2)
+"kV" = (/turf/closed/wall/strong,/area/inside/library3)
+"kW" = (/obj/structure/mineral_door/wood/lock/paper,/turf/open/carpetred,/area/inside/library3)
+"kX" = (/turf/closed/wall,/area/inside/library3)
+"kY" = (/obj/machinery/computer/slot_machine,/turf/open/carpetred,/area/inside/gambling_area)
+"kZ" = (/turf/open/carpetred,/area/inside/gambling_area)
+"la" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/obj/structure/chair/wood/normal,/turf/open/carpetred,/area/inside/gambling_area)
+"lb" = (/obj/structure/chair/wood/normal,/turf/open/carpetred,/area/inside/gambling_area)
+"lc" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/gambling_area)
+"ld" = (/obj/structure/chair/wood/normal,/turf/open/carpetred,/area/inside/library_backroom2)
+"le" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/library_backroom2)
+"lf" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room2)
+"lg" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room2)
+"lh" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/side_room2)
+"li" = (/obj/structure/chair/wood/normal,/obj/effect/landmark/start/upstairsmaid,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room2)
+"lj" = (/turf/open/carpetred,/area/inside/library3)
+"lk" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/library3)
+"ll" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/library3)
+"lm" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/library3)
+"ln" = (/obj/structure/chair/stool/bar,/turf/open/carpetred,/area/inside/gambling_area)
+"lo" = (/obj/structure/table/wood/poker,/turf/open/carpetred,/area/inside/gambling_area)
+"lp" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/gambling_area)
+"lq" = (/obj/structure/table/wood,/obj/effect/holodeck_effect/cards,/turf/open/carpetred,/area/inside/library_backroom2)
+"lr" = (/obj/machinery/light,/obj/structure/table/wood,/turf/open/carpetred,/area/inside/library_backroom2)
+"ls" = (/obj/structure/closet/jademansion/librarysupplies,/turf/open/carpetred,/area/inside/library_backroom2)
+"lt" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room2)
+"lu" = (/obj/structure/chair/wood/normal,/turf/open/carpetred,/area/inside/library3)
+"lv" = (/obj/structure/table/wood/poker,/obj/effect/holodeck_effect/cards,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/carpetred,/area/inside/gambling_area)
+"lw" = (/obj/structure/closet/jademansion/maids,/turf/open/tiles/woodenboards/woodentile1,/area/inside/side_room2)
+"lx" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/library3)
+"ly" = (/obj/structure/largepotplant,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"lz" = (/obj/structure/fireplace,/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"lA" = (/obj/structure/table/wood,/obj/item/weapon/storage/pill_bottle/dice,/turf/open/carpetred,/area/inside/library3)
+"lB" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/gambling_area)
+"lC" = (/obj/structure/chair/comfy/beige{dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"lD" = (/obj/structure/chair/comfy/beige{dir = 8},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"lE" = (/obj/structure/table/wood,/obj/structure/mansiondecoration/oldcomputer,/turf/open/carpetred,/area/inside/library3)
+"lF" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/library3)
+"lG" = (/obj/machinery/light,/turf/open/carpetred,/area/inside/library3)
+"lH" = (/obj/structure/largepotplant/yucapalm,/obj/machinery/light,/turf/open/carpetred,/area/inside/library3)
+"lI" = (/obj/machinery/light,/obj/structure/chair/comfy/beige{dir = 4},/turf/open/tiles/woodenboards/woodentile1,/area/inside/hallways)
+"lJ" = (/turf/closed/wall,/area/inside/sleeping_room3)
+"lK" = (/turf/closed/wall,/area/inside/sleeping_room4)
+"lL" = (/turf/closed/wall,/area/inside/sleeping_room5)
+"lM" = (/obj/structure/closet/jademansion/casualdresses1,/turf/open/carpetred,/area/inside/sleeping_room3)
+"lN" = (/obj/structure/bed,/turf/open/carpetred,/area/inside/sleeping_room3)
+"lO" = (/obj/structure/dresser,/turf/open/carpetred,/area/inside/sleeping_room3)
+"lP" = (/obj/structure/closet/jademansion/officesupplies,/turf/open/carpetred,/area/inside/sleeping_room3)
+"lQ" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/sleeping_room4)
+"lR" = (/obj/structure/table/wood,/obj/item/device/flashlight/lamp,/turf/open/carpetred,/area/inside/sleeping_room4)
+"lS" = (/obj/structure/chair/wood/normal{dir = 8; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/sleeping_room4)
+"lT" = (/obj/structure/closet/jademansion/casualdresses2,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room4)
+"lU" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room4)
+"lV" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room5)
+"lW" = (/obj/structure/closet/jademansion/casualdresses1,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room5)
+"lX" = (/obj/structure/dresser,/turf/open/carpetred,/area/inside/sleeping_room5)
+"lY" = (/obj/structure/bed,/turf/open/carpetred,/area/inside/sleeping_room5)
+"lZ" = (/obj/machinery/light{dir = 1; icon_state = "tube1"; tag = ""},/turf/open/carpetred,/area/inside/sleeping_room5)
+"ma" = (/obj/structure/largepotplant/yucapalm,/turf/open/carpetred,/area/inside/sleeping_room5)
+"mb" = (/turf/open/carpetred,/area/inside/sleeping_room3)
+"mc" = (/obj/effect/landmark/start/owner,/turf/open/carpetred,/area/inside/sleeping_room3)
+"md" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/carpetred,/area/inside/sleeping_room3)
+"me" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/obj/structure/table/wood,/turf/open/carpetred,/area/inside/sleeping_room4)
+"mf" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room4)
+"mg" = (/obj/structure/closet/jademansion/officesupplies,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room4)
+"mh" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room5)
+"mi" = (/turf/open/carpetred,/area/inside/sleeping_room5)
+"mj" = (/obj/effect/landmark/start/owner,/turf/open/carpetred,/area/inside/sleeping_room5)
+"mk" = (/obj/structure/mansiondecoration/oldtv,/turf/open/carpetred,/area/inside/sleeping_room5)
+"ml" = (/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room3)
+"mm" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room3)
+"mn" = (/obj/structure/table/wood,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room3)
+"mo" = (/turf/open/carpetred,/area/inside/sleeping_room4)
+"mp" = (/obj/structure/largepotplant/yucapalm,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room3)
+"mq" = (/obj/structure/bed,/turf/open/carpetred,/area/inside/sleeping_room4)
+"mr" = (/obj/structure/jadelibrary/bookcase,/turf/open/carpetred,/area/inside/sleeping_room4)
+"ms" = (/obj/structure/dresser,/turf/open/tiles/woodenboards/woodentile1,/area/inside/sleeping_room4)
+"mt" = (/obj/structure/chair/wood/normal{dir = 4; icon_state = "wooden_chair"; tag = ""},/turf/open/carpetred,/area/inside/sleeping_room5)
+"mu" = (/obj/structure/table/wood,/turf/open/carpetred,/area/inside/sleeping_room5)
+"mv" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/sleeping_room3)
+"mw" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/sleeping_room4)
+"mx" = (/obj/structure/mineral_door/wood/lock/owner,/turf/open/carpetred,/area/inside/sleeping_room5)
+"my" = (/obj/structure/window/reinforced/fulltile,/turf/open/windowplating,/area/inside/elec_maint)
+"mz" = (/obj/machinery/light{dir = 8; icon_state = "tube1"; tag = ""},/turf/open/tiles/metaltile,/area/inside/elec_maint)
+"mA" = (/obj/item/device/flashlight/lamp,/obj/structure/table,/turf/open/tiles/metaltile,/area/inside/elec_maint)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -682,18 +692,18 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaacsczdfcsdgdhdidededjaSaScwaaaaaaaaaaaaaaaaaaaacwaS
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaacsdldmcscEcEcEcEcEcEaSaScwaaaaaaaaaaaaaaaaaaaacwaScOcOaScwcwdndncwcwaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaacscscscsaaaaaaaaaadodpdpdoaaaaaaaaaaaaaaaaaaaacwaScOcOaSaScxcOcOcxcwaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdqdododododododoaaaaaaaacwaScOcOcOcOcOcOcOaScwaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdqdqdqdqdrdrdqdoaaaaaaaacwbhcOcOcOcOcOcOcObJcwaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodsdqdqdqdqdqdqdtdoaaaaaaaacwaSaSaSaSaSaSaSaSaScwaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdqdrdqdsdtdtdudoaaaaaaaacwbhcOcOcOcOcOcOcObJcwaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodvdqdwdqdsdqdqdxdoaaaaaaaacwaSaSaSaSaSaSaSaSaScwaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodododododqdqdqdqdqdqdqdqdoaaaaaaaacwcwcwcwcwcwcwcwcwcwcwaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdqdqdqdqdqdqdqdqdqdudqdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodsdvdwdwdwdwdxdqdododododoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdqdqdqdqdqdydtdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdqdqdqdqdqdydqdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdqdqdqdqdzdAdqdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdqdqdqdqdqdqdqdydqdzdqdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodvdAdBdBdBdBdCdqdododododoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdqdqdqdqdqdDdEdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdFdqdqdqdqdDdqdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdFdqdqdqdGdHdqdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdqdqdqdqdqdqdqdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdqdqdqdqdqdqdqdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodsdqdqdqdqdqdqdtdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdqdqdqdqdqdqdqdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdsdqdIdqdqdqdqdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodvdsdqdJdqdqdqdEdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodqdqdqdqdqdKdKdqdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadodododododododododoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -704,190 +714,190 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 "}
 
 (1,1,2) = {"
-dBdBdBdBdBdBdBdBdBdBdBdBdCdCdCdCdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdB
-dBdBdBdBdBdBdBdBdBdBdBdBdCdCdCdCdDdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdB
-dBdBdBdBdBdBdBdBdBdBdBdDdCdCdCdCdCdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdB
-dBdBdBdBdBdBdBdBdBdBdBdCdCdCdCdCdCdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdB
-dBdBdBdBdBdBdBdBdBdBdBdCdCdCdCdCdCdBdDdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdDdDdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdB
-dBdBdBdBdBdBdBdBdBdBdBdEdCdCdCdCdCdDdCdDdBdDdBdDdDdBdBdBdDdBdBdBdBdBdBdBdBdBdBdBdBdCdCdDdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdB
-dBdBdBdBdBdBdBdBdBdBdBdBdCdCdCdCdCdCdCdCdDdCdDdCdCdDdDdDdCdDdBdBdBdBdBdBdBdBdBdDdDdCdCdCdDdBdBdBdBdBdBdBdBdBdBdBdBdBdBdB
-dBdBdBdBdBdBdBdBdBdBdBdBdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdBdDdDdBdBdBdDdDdDdCdCdCdCdCdCdDdDdBdDdDdBdBdBdDdDdDdBdBdBdB
-dBdBdBdBdBdBdBdBdBdBdBdBdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdDdCdCdDdDdDdCdCdCdCdCdCdCdCdCdCdCdDdCdCdDdDdDdCdCdCdBdBdBdB
-dBdBdBdBdBdBdBdBdBdBdDdBdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdEdBdBdBdB
-dBdBdBdBdBdBdBdBdBdDdCdBdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdBdBdBdBdB
-dBdBdBdBdBdBdBdBdBdCdCdDdCdCdCdCdCdCdCdCdCdCdFdFdFdGdFdFdFdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdBdBdBdBdB
-dBdBdBdBdBdBdBdBdBdCdCdCdCdCdCdCdCdCdCdCdCdCdFdHdIaSdJdKdFdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdDdBdBdBdB
-dBdBdBdBdBdBdBdBdDdCdCdCdCdCdCdCdCdCdCdCdCdCdFdLdMdNaSdOdFdCdCdCdCdCdCdCdCdCdCdFdPdPdQdQdQdQdQdQdQdCdCdCdCdCdCdCdBdBdBdB
-dBdBdBdBdBdBdDdDdCdCdCdCdCdCdCdCdCdCdCdCdCdCcTcTcTcTdRdSdFdCdCdCdCdCdCdCdCdCdCdPcOcOdQdTdUdVdWdXdQdCdCdCdCdCdCdCdBdBdBdB
-dBdBdBdBdDdDdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCcTdkdkcTdYdYdFdCdCdCdCdCdCdCdCdCdCdPcOdZdQeadUdVdVdVebdCdCdCdCdCdCdCdBdBdBdB
-dBdBdBdDdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdFdPdPcTdndncTcxcxdFdFdPdPdFecedececdCdCdPcOcOeedUdUdVdVdVebdCdCdCdCdCdCdCdBdBdBdB
-dBdDdDdCdCdCdCdCdCdCefefefegegegegefefefcOcOcOcOcOcOcOcOcOehcOcOcOeceiejecdCdCdFekcOdQdUeldVemendQdCdCdCdCdCdCdCdBdBdBdB
-dDdCdCdCdCdCdCdCdCdCefeoepepepepepepeoefcOcOcOcOcOcOcOeqcOcOcOcOcOederesecdFdFdFcOcOetetetetetetetdCdCdCdCdCdCdCdDdBdBdB
-dCdCdCdCdCdCdCdCdCdCefeuevevewevevevexefeycOezezeAeAeAeAeBeBeBcOcOececececcOcOcOcOcOeCeDeDeEeFeEetdCdCdCdCdCdCdCdCdBdBdB
-eGdCdCdCdCdCdCdCdCdCegepevevevevevevepefcOcOezeHeIeIeIeIeJeKeBcOcOeheqcOcOcOcOcOcOdZeteDeDeLeLeLeMdCdCdCdCdCdCdCdCdDdDdD
-eGeGeGeGdCdCdCdCdCdCegepevevevevevevepefcOcOezeNeIeNeIeIeJeKeBcOcOcOcOcOcOcOcOcTcIcIeOePeDeLeLeLeMdCdCdCdCdCdCdCdCdCdCdC
-eGeGeGeGdCdCdCdCdCdCefepeveveveQevevepefcOeRezeSeIeNeIeTeBeBeBeUeVeVeVeVeUcOdZcTcRcReOeWeXeYeZfaetdCdCdCdCdCdCdCdCdCdCdC
-eGeGeGeGdCdCdCdCdCdCefepepepepepepepexefcOcOfbeIeIeIeIeIfcfdeHeUfefffgfheVcOcOcTcTcTeOetetetetetetdFdFdFdCdCdCdCdCdCdCdC
-eGeGeGeGeGdCdCdCdCdCegepfifififififiepefcOcOfbeIeIeNeNeIeNeIeIfjfefkfkfleVcOcOcOehcOfmfnfnfofnfnfnfpfndFdCdCdCdCdCdCdCdC
-eGeGeGeGeGdCdCdCdCdCegepfifififififiepfqcOcOezeIeIeIeIfreIeIeIfjfefefefseVcOcOcOcOcOfmfnfnfnfnfnfnfnfndPdCdCdCdCdCdCdCdE
-eGeGeGeGeGeGeGdCdCdCefeufifififififiepfqcOcOfteHfueHeNeIeNeNeIeUflfvfefheVcOcOfwfwfwfxfyfyfyfyfzfzfnfndPdCdCdCdCdEdEdEdB
-eGeGeGeGeGeGeGdCdCdCefepepepepepepepepefcOcOfAfAfAfAfAfAfAfAfAfAfAfAfBfAfAcOcOfCfCfCfCfDfEfEfEfEfEfnfndPdCdCdCdCdBdBdBdB
-eGeGeGeGeGeGeGdCdCdCeffFfFfFfFfFfFfFfFfFeycOfGfHfHfHfHfHfHfHfHfHfHfHfHfHfAcOcOfCfIfJfCfKfLfMfMfMfEfnfndFdCdCdCdCdBdBdBdB
-eGeGeGeGeGdCdCdCdCdCdCfNfOfPfQfRfSfPfOfFcOcOfAfAfAfAfAfAfAfAfTfAfAfAfHfHfAcOdZfCfUfVfCfWfLfMfMfMfEfnfXdFdCdCdCdCdBdBdBdB
-eGeGeGeGeGdCdCdCdCdCdCfNfYfZfZfZfZfZfOfFcOcOgagbgcgdgegfggghgcgiggfAfHfHfAcOcOfCfUgjfCfWfLfMfMfMfEfnfXdFdCdCdCdCdBdBdBdB
-eGeGeGeGeGdCdCdCdCdCdCfFgkfZglfOfOfZgmfFcOcOgngogcgpgpgpgpgpgpgpgcfAfHfAfAcOcOgqfUgrfCfWfLfMfMfMfEfnfndFdCdCdCdCdBdBdBdB
-eGeGeGeGeGdCdCdCcTcTcTgsgkfZfZgtfOfZgufNcOcOgngogcgpgpgpgpgpgpgpgvfAfHfAcxcOcOfCfUgwfCgxfEgygygyfEfnfndPdCdCdCdCdDdBdBdB
-eGeGeGeGdCdCdCdCcTgzgzgsgAfZfZgBgCfZgDfNcOcOgngEgcgpgFgpgpgpgpgpgofAfHfGcxcOcOfCfCfCfCfyfyfyfyfzfzfnfndPdCdCdCdCdCdBdBdB
-eGeGeGeGdCdCdCdCcTcIcIgsgGfZgHgIfOfZfZfOcOcOgngEgcgcgJgogcgcgcgKggcTcTcTcTcOcOcOcOcOfmfnfnfnfofnfnfnfndPdCdCdCdCdCdBdBdB
-eGeGeGeGdCdCdCdCdPaSaSgLfZfZfZfZfZfZfZgMcOcOgngogogogNgNgOgNgPgPgPcTdkdkcTgQcOcOcOgRfmfnfnfnfnfnfngSfndFdCdCdCdCdEdBdBdB
-eGeGeGeGdCdCdCdCdPaSaSfFgTfZfZfZfZfZgUfFcOcOgagagagagNgVgcgNgWgWaScTdndncTcOcOdFdFdFdFdFcTdndncTdFdFdFdFdCdCdCdCdBdBdBdB
-dCeGeGdCdCdCdCdCdFbhaSfFfFfNgXgYfOgZfFfFeycOaShaaShbgNhchdgNcOcOhecOcOcOcOcOcOdFdCdCdCdCcThfhfcTdCdCdCdCdCdCdCdCdBdBdBdB
-dCdCdCdCdCdCdCdCdFaSaSaSehcOhgcOcOcOcOehcOcOcxaSaShhgNgNgNgNcOcOcOgRcOcOcOcOcOdFdCdCdCdCcTcTcTcTdCdCdCdCdCdCdCdEdBdBdBdB
-dCdCdCdCdCdCdCdCbVaSaSaScOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOehcOcOcOdFdFdPdPdPdFdFdFdCdCdCdCdCdCdCdCdCdCdCdCdCdCdEdBdBdBdBdB
-dCdCdCdCdCdCdCdCdFdFdFhihjhjhjhkhjhjhjhicOcOcOcOcOcOcOcOcOcOcOcOdFdCdCdCdCdCdCdCdCdCeGeGdCdCdCdCdCdCdCdCdCdCdBdBdBdBdBdB
-dCdCdCdCdCdCdCdCdCdCdChjhlhmhnhnhnhohphqhqhrhrhqhqdFfmfmdFhshthshsdCdCdCdCeGeGdCdCeGeGeGeGdCdCdCdCdCdCdCdCdEdBdBdBdBdBdB
-dCdCdCdCdCdCdCdCdCdCdChjhnhnhuhuhuhnhnhqhvhwhwhxhqehhyhyehhshzhzhsdCdCdCeGeGeGeGeGeGeGeGeGdCdCdCdCdCdCdCdCdBdBdBdBdBdBdB
-dCdCdCdCdCdCdCdCdCdCdChjhAhBhnhChChnhDhqhEhFhFhEhqhGhyhycOhshzhHhsdCdCdCeGeGeGeGeGeGeGeGeGdCdCdCdCdCdCdCdCdBdBdBdBdBdBdB
-dEdCdEdEdCdCdCdCdCdCdChihIhnhnhnhnhnhJhqhEhFhFhEhqhGcOcOcOhsduduhsdCdCdCeGeGeGeGeGeGeGeGeGeGdCdCdCdCdCdCdCdBdBdBdBdBdBdB
-dBdEdBdBdEdEdCdCdCdCdChihjhjhnhnhnhjhjhqhwhwhwhwhqdFfmfmdFhshshshsdCdCdCeGeGeGeGeGeGeGeGeGeGdCdCdCdCdCdCdCdDdBdBdBdBdBdB
-dBdBdBdBdBdBdEdEdEdCdCdCdCdCdCdCdCdCdChqhqhKhKhqhqdCdCdCdChLdCdCdCdCdCeGeGeGeGeGeGeGeGeGeGeGeGdCdCdCdCdCdCdCdDdBdBdBdBdB
-dBdBdBdBdBdBdBdBdBdChMdChMdCdCdCdCdChMdChLdCdChLdCdChNhNdCdCeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGdCdCdCdCdCdCdCdDdBdBdBdB
-dBdBdBdBdBdBdBdBdBdEdEdChMdCdChMdCdChMdCdCdCdCdCdCdChNhNdChOeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGdCdCdCdCdCdCdCdCdBdBdBdB
-dBdBdBdBdBdBdBdBdBdBdBdCdCdCdCdCdCdChMdCdCdEdCdEdCdCdCdCdCdCdCeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGdCdCdCdCdCdCdCdCdDdBdDdD
-dBdBdBdBdBdBdBdBdBdBdBdCdChPdChMdCdCdCdCdEdBdEdBdEdCdCdCdCdCdCeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGdCdCdCdCdCdCdCdCdCdDdCdC
-dBdBdBdBdBdBdBdBdBdBdBdCdCdCdCdCdCdCdCdCdBdBdBdBdBdCdCdCdCdCdCdCeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGeGdCdCdCdCdCdCdCdCdCdCdCdC
-dBdBdBdBdBdBdBdBdBdBdDdCdCdChMdCdChMdCdCdBdBdBdBdBdCdCdCdCdCdCdCdCeGeGeGeGeGeGeGeGeGeGeGeGeGdCdCdCdCdCdCdCdCdCdCdCdCdCdC
-dBdBdBdBdBdBdBdBdBdBdCdCdCdCdCdCdCdCdCdCdBdBdBdBdBdCdCdCdCdCdCdCdCdCeGeGeGeGeGeGeGeGeGdCdCdCdCdCdCdCdCdCdCdCdCdCdEdCdCdE
-dBdBdBdBdBdBdBdBdBdDdCdCdCdCdCdCdCdCdCdCdBdBdBdBdBdCdCdCdCdCdCdCdCdCdCdCeGdCdCeGdCdCdCdCdCdCdCdCdCdCdCdCdCdEdEdEdBdEdEdB
-dBdBdBdBdBdBdBdBdDdCdCdCdCdCdCdCdCdCdCdCdBdBdBdBdBdEdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdEdEdEdBdBdBdBdBdBdB
-dBdBdBdBdBdBdBdBdCdCdCdCdCdCdCdCdCdCdCdCdBdBdBdBdBdBdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdEdEdEdEdEdBdBdBdBdBdBdBdBdBdB
-dBdBdBdBdBdBdBdBdCdCdCdCdCdCdCdCdCdCdCdCdBdBdBdBdBdBdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdCdEdBdBdBdBdBdBdBdBdBdBdBdBdBdBdB
-dBdBdBdBdBdBdBdDdCdCdCdCdCdCdCdCdCdCdCdEdBdBdBdBdBdBdEdCdCdCdCdCdCdCdCdCdCdCdCdEdEdCdEdEdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdB
-dBdBdBdBdBdBdBdCdCdCdCdCdCdCdCdCdCdCdCdBdBdBdBdBdBdBdBdCdCdCdCdCdCdCdCdCdCdCdCdBdBdEdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdBdB
+dLdLdLdLdLdLdLdLdLdLdLdLdMdMdMdMdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdL
+dLdLdLdLdLdLdLdLdLdLdLdLdMdMdMdMdNdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdL
+dLdLdLdLdLdLdLdLdLdLdLdNdMdMdMdMdMdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdL
+dLdLdLdLdLdLdLdLdLdLdLdMdMdMdMdMdMdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdL
+dLdLdLdLdLdLdLdLdLdLdLdMdMdMdMdMdMdLdNdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdNdNdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdL
+dLdLdLdLdLdLdLdLdLdLdLdOdMdMdMdMdMdNdMdNdLdNdLdNdNdLdLdLdNdLdLdLdLdLdLdLdLdLdLdLdLdMdMdNdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdL
+dLdLdLdLdLdLdLdLdLdLdLdLdMdMdMdMdMdMdMdMdNdMdNdMdMdNdNdNdMdNdLdLdLdLdLdLdLdLdLdNdNdMdMdMdNdLdLdLdLdLdLdLdLdLdLdLdLdLdLdL
+dLdLdLdLdLdLdLdLdLdLdLdLdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdLdNdNdLdLdLdNdNdNdMdMdMdMdMdMdNdNdLdNdNdLdLdLdNdNdNdLdLdLdL
+dLdLdLdLdLdLdLdLdLdLdLdLdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdNdMdMdNdNdNdMdMdMdMdMdMdMdMdMdMdMdNdMdMdNdNdNdMdMdMdLdLdLdL
+dLdLdLdLdLdLdLdLdLdLdNdLdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdOdLdLdLdL
+dLdLdLdLdLdLdLdLdLdNdMdLdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdLdLdLdLdL
+dLdLdLdLdLdLdLdLdLdMdMdNdMdMdMdMdMdMdMdMdMdMdPdPdPdQdPdPdPdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdLdLdLdLdL
+dLdLdLdLdLdLdLdLdLdMdMdMdMdMdMdMdMdMdMdMdMdMdPdRdSaSdTdUdPdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdNdLdLdLdL
+dLdLdLdLdLdLdLdLdNdMdMdMdMdMdMdMdMdMdMdMdMdMdPdVdWdXaSdYdPdMdMdMdMdMdMdMdMdMdMdPdZdZeaeaeaeaeaeaeadMdMdMdMdMdMdMdLdLdLdL
+dLdLdLdLdLdLdNdNdMdMdMdMdMdMdMdMdMdMdMdMdMdMcTcTcTcTebecdPdMdMdMdMdMdMdMdMdMdMdZcOcOeaedeeefegeheadMdMdMdMdMdMdMdLdLdLdL
+dLdLdLdLdNdNdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMcTdkdkcTeieidPdMdMdMdMdMdMdMdMdMdMdZcOejeaekeeefefefeldMdMdMdMdMdMdMdLdLdLdL
+dLdLdLdNdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdPdZdZcTdndncTcxcxdPdPdZdZdPemenememdMdMdZcOcOeoeeeeefefefeldMdMdMdMdMdMdMdLdLdLdL
+dLdNdNdMdMdMdMdMdMdMepepepeqeqeqeqepepepcOcOcOcOcOcOcOcOcOercOcOcOemesetemdMdMdPeucOeaeeevefewexeadMdMdMdMdMdMdMdLdLdLdL
+dNdMdMdMdMdMdMdMdMdMepeyezezezezezezeyepcOcOcOcOcOcOcOeAcOcOcOcOcOeneBeCemdPdPdPcOcOeDeDeDeDeDeDeDdMdMdMdMdMdMdMdNdLdLdL
+dMdMdMdMdMdMdMdMdMdMepeEeFeFeGeFeFeFeHepeIcOeJeJeKeKeKeKeLeLeLcOcOememememcOcOcOcOcOeMeNeNeOePeOeDdMdMdMdMdMdMdMdMdLdLdL
+eQdMdMdMdMdMdMdMdMdMeqezeFeFeFeFeFeFezepcOcOeJeReSeSeSeSeTeUeLcOcOereAcOcOcOcOcOcOejeDeNeNeVeVeVeWdMdMdMdMdMdMdMdMdNdNdN
+eQeQeQeQdMdMdMdMdMdMeqezeFeFeFeFeFeFezepcOcOeJeXeSeXeSeSeTeUeLcOcOcOcOcOcOcOcOcTcIcIeYeZeNeVeVeVeWdMdMdMdMdMdMdMdMdMdMdM
+eQeQeQeQdMdMdMdMdMdMepezeFeFeFfaeFeFezepcOfbeJfceSeXeSfdeLeLeLfefffffffffecOejcTcRcReYfgfhfifjfkeDdMdMdMdMdMdMdMdMdMdMdM
+eQeQeQeQdMdMdMdMdMdMepezezezezezezezeHepcOcOfleSeSeSeSeSfmfneRfefofpfqfrffcOcOcTcTcTeYeDeDeDeDeDeDdPdPdPdMdMdMdMdMdMdMdM
+eQeQeQeQeQdMdMdMdMdMeqezfsfsfsfsfsfsezepcOcOfleSeSeXeXeSeXeSeSftfofufufvffcOcOcOercOfwfxfxfyfxfxfxfzfxdPdMdMdMdMdMdMdMdM
+eQeQeQeQeQdMdMdMdMdMeqezfsfsfsfsfsfsezfAcOcOeJeSeSeSeSfBeSeSeSftfofofofCffcOcOcOcOcOfwfxfxfxfxfxfxfxfxdZdMdMdMdMdMdMdMdO
+eQeQeQeQeQeQeQdMdMdMepeEfsfsfsfsfsfsezfAcOcOfDeRfEeReXeSeXeXeSfefvfFfofrffcOcOfGfGfGfHfIfIfIfIfJfJfxfxdZdMdMdMdMdOdOdOdL
+eQeQeQeQeQeQeQdMdMdMepezezezezezezezezepcOcOfKfKfKfKfKfKfKfKfKfKfKfKfLfKfKcOcOfMfMfMfMfNfOfOfOfOfOfxfxdZdMdMdMdMdLdLdLdL
+eQeQeQeQeQeQeQdMdMdMepfPfPfPfPfPfPfPfPfPeIcOfQfRfRfRfRfRfRfRfRfRfRfRfRfRfKcOcOfMfSfTfMfUfVfWfWfWfOfxfxdPdMdMdMdMdLdLdLdL
+eQeQeQeQeQdMdMdMdMdMdMfXfYfZgagbgcfZfYfPcOcOfKfKfKfKfKfKfKfKgdfKfKfKfRfRfKcOejfMgegffMggfVfWfWfWfOfxghdPdMdMdMdMdLdLdLdL
+eQeQeQeQeQdMdMdMdMdMdMfXgigjgjgjgjgjfYfPcOcOgkglgmgngogpgqgrgmgsgqfKfRfRfKcOcOfMgegtfMggfVfWfWfWfOfxghdPdMdMdMdMdLdLdLdL
+eQeQeQeQeQdMdMdMdMdMdMfPgugjgvfYfYgjgwfPcOcOgxgygmgzgzgzgzgzgzgzgmfKfRfKfKcOcOgAgegBfMggfVfWfWfWfOfxfxdPdMdMdMdMdLdLdLdL
+eQeQeQeQeQdMdMdMcTcTcTgCgugjgjgDfYgjgEfXcOcOgxgygmgzgzgzgzgzgzgzgFfKfRfKcxcOcOfMgegGfMgHfOgIgIgIfOfxfxdZdMdMdMdMdNdLdLdL
+eQeQeQeQdMdMdMdMcTgJgJgCgKgjgjgLgMgjgNfXcOcOgxgOgmgzgPgzgzgzgzgzgyfKfRfQcxcOcOfMfMfMfMfIfIfIfIfJfJfxfxdZdMdMdMdMdMdLdLdL
+eQeQeQeQdMdMdMdMcTcIcIgCgQgjgRgSfYgjgjfYcOcOgxgOgmgmgTgygmgmgmgUgqcTcTcTcTcOcOcOcOcOfwfxfxfxfyfxfxfxfxdZdMdMdMdMdMdLdLdL
+eQeQeQeQdMdMdMdMdZaSaSgVgjgjgjgjgjgjgjgWcOcOgxgygygygXgXgYgXgZgZgZcTdkdkcThacOcOcOhbfwfxfxfxfxfxfxhcfxdPdMdMdMdMdOdLdLdL
+eQeQeQeQdMdMdMdMdZaSaSfPhdgjgjgjgjgjhefPcOcOgkgkgkgkgXhfgmgXhghgaScTdndncTcOcOdPdPdPdPdPcTdndncTdPdPdPdPdMdMdMdMdLdLdLdL
+dMeQeQdMdMdMdMdMdPbhaSfPfPfXhhhifYhjfPfPeIcOaShkaShlgXhmhngXcOcOhocOcOcOcOcOcOdPdMdMdMdMcThphpcTdMdMdMdMdMdMdMdMdLdLdLdL
+dMdMdMdMdMdMdMdMdPaSaSaSercOhqcOcOcOcOercOcOcxaSaShrgXgXgXgXcOcOcOhbcOcOcOcOcOdPdMdMdMdMcTcTcTcTdMdMdMdMdMdMdMdOdLdLdLdL
+dMdMdMdMdMdMdMdMbVaSaSaScOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOercOcOcOdPdPdZdZdZdPdPdPdMdMdMdMdMdMdMdMdMdMdMdMdMdMdOdLdLdLdLdL
+dMdMdMdMdMdMdMdMdPdPdPhshthththuhthththscOcOcOcOcOcOcOcOcOcOcOcOdPdMdMdMdMdMdMdMdMdMeQeQdMdMdMdMdMdMdMdMdMdMdLdLdLdLdLdL
+dMdMdMdMdMdMdMdMdMdMdMhthvhwhxhxhxhyhzhAhAhBhBhAhAdPfwfwdPhChDhChCdMdMdMdMeQeQdMdMeQeQeQeQdMdMdMdMdMdMdMdMdOdLdLdLdLdLdL
+dMdMdMdMdMdMdMdMdMdMdMhthxhxhEhEhEhxhxhAhFhGhGhHhAerhIhIerhChJhJhCdMdMdMeQeQeQeQeQeQeQeQeQdMdMdMdMdMdMdMdMdLdLdLdLdLdLdL
+dMdMdMdMdMdMdMdMdMdMdMhthKhLhxhMhMhxhNhAhOhPhPhOhAhQhIhIcOhChJhRhCdMdMdMeQeQeQeQeQeQeQeQeQdMdMdMdMdMdMdMdMdLdLdLdLdLdLdL
+dOdMdOdOdMdMdMdMdMdMdMhshShxhxhxhxhxhThAhOhPhPhOhAhQcOcOcOhCdzdzhCdMdMdMeQeQeQeQeQeQeQeQeQeQdMdMdMdMdMdMdMdLdLdLdLdLdLdL
+dLdOdLdLdOdOdMdMdMdMdMhshththxhxhxhththAhGhGhGhGhAdPfwfwdPhChChChCdMdMdMeQeQeQeQeQeQeQeQeQeQdMdMdMdMdMdMdMdNdLdLdLdLdLdL
+dLdLdLdLdLdLdOdOdOdMdMdMdMdMdMdMdMdMdMhAhAhUhUhAhAdMdMdMdMhVdMdMdMdMdMeQeQeQeQeQeQeQeQeQeQeQeQdMdMdMdMdMdMdMdNdLdLdLdLdL
+dLdLdLdLdLdLdLdLdLdMhWdMhWdMdMdMdMdMhWdMhVdMdMhVdMdMhXhXdMdMeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQdMdMdMdMdMdMdMdNdLdLdLdL
+dLdLdLdLdLdLdLdLdLdOdOdMhWdMdMhWdMdMhWdMdMdMdMdMdMdMhXhXdMhYeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQdMdMdMdMdMdMdMdMdLdLdLdL
+dLdLdLdLdLdLdLdLdLdLdLdMdMdMdMdMdMdMhWdMdMdOdMdOdMdMdMdMdMdMdMeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQdMdMdMdMdMdMdMdMdNdLdNdN
+dLdLdLdLdLdLdLdLdLdLdLdMdMhZdMhWdMdMdMdMdOdLdOdLdOdMdMdMdMdMdMeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQdMdMdMdMdMdMdMdMdMdNdMdM
+dLdLdLdLdLdLdLdLdLdLdLdMdMdMdMdMdMdMdMdMdLdLdLdLdLdMdMdMdMdMdMdMeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQeQdMdMdMdMdMdMdMdMdMdMdMdM
+dLdLdLdLdLdLdLdLdLdLdNdMdMdMhWdMdMhWdMdMdLdLdLdLdLdMdMdMdMdMdMdMdMeQeQeQeQeQeQeQeQeQeQeQeQeQdMdMdMdMdMdMdMdMdMdMdMdMdMdM
+dLdLdLdLdLdLdLdLdLdLdMdMdMdMdMdMdMdMdMdMdLdLdLdLdLdMdMdMdMdMdMdMdMdMeQeQeQeQeQeQeQeQeQdMdMdMdMdMdMdMdMdMdMdMdMdMdOdMdMdO
+dLdLdLdLdLdLdLdLdLdNdMdMdMdMdMdMdMdMdMdMdLdLdLdLdLdMdMdMdMdMdMdMdMdMdMdMeQdMdMeQdMdMdMdMdMdMdMdMdMdMdMdMdMdOdOdOdLdOdOdL
+dLdLdLdLdLdLdLdLdNdMdMdMdMdMdMdMdMdMdMdMdLdLdLdLdLdOdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdOdOdOdLdLdLdLdLdLdL
+dLdLdLdLdLdLdLdLdMdMdMdMdMdMdMdMdMdMdMdMdLdLdLdLdLdLdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdOdOdOdOdOdLdLdLdLdLdLdLdLdLdL
+dLdLdLdLdLdLdLdLdMdMdMdMdMdMdMdMdMdMdMdMdLdLdLdLdLdLdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdMdOdLdLdLdLdLdLdLdLdLdLdLdLdLdLdL
+dLdLdLdLdLdLdLdNdMdMdMdMdMdMdMdMdMdMdMdOdLdLdLdLdLdLdOdMdMdMdMdMdMdMdMdMdMdMdMdOdOdMdOdOdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdL
+dLdLdLdLdLdLdLdMdMdMdMdMdMdMdMdMdMdMdMdLdLdLdLdLdLdLdLdMdMdMdMdMdMdMdMdMdMdMdMdLdLdOdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdLdL
 "}
 
 (1,1,3) = {"
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdFdFdPdPdPdFdFhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdPhRcOcOcOhRdPhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdPcOcOcOcOcOdPhQhQhQhQhQhQhQhQhQhQhShShShThThThThThUhUhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQcTdnhVcTeycOdPhQhQhQhQhQhQhQhQhQhQhShShShThThThThThUhUhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQcThfhfcTcOcOdFhQhQhQhQhQhQhQhQhQhQhShShShThThThThThUhUhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdFdPdPcTcTcTcTcOcOdFdFhWhWhXhXhXhWhWhQhQhShShShThThThThThUhUhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhShShShThYhYhYhYhYhYhZcOcOcOcOcOcOcOcOiahWibicicicibhWhQhQhShShShThThThThThUhUhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhShShShTidieifigihhYcOcOcOcOeqcOgRcOcOiahWiciiijikichWdPdPdPdPdPhThThThThThUhUhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhShShShTidilimininiocOcOipipipipiqiqiqiqiqiciriririchWisaSaSgWdPhThThThThThUhUhQhQhQhQhQhQhQhQhQhQhQ
-dChQhQhQhQhQhQhQhQhQhShShShTiditiuininhYcOcOipivirireJeKiqiweJicicicicichWaSbgixixdPhThThThThThUhUhQhQhQhQhQhQhQhQhQhQhQ
-dCdCdCdChQhQhQhQhQhQhShShShThYinininiyhYeycOipiririzeJeKiqiweJiciiiciciAhWiBiBcTcTcTcTdFdFdFdFhUhUhQhQhQhQhQhQhQhQhQhQhQ
-dCdCdCdChQhQhQhQhQhQhShShShTidinininiChYcOcOipirirhWiqiqiqiqiqiriiiriiirhWaSbJcTgzgzcTgWiDgWdFhUhUhQhQhQhQhQhQhQhQhQhQhQ
-dCdEdCdChQhQhQhQhQhQhShShShTidiyiniEiFhYcOcOiGiririHiririririHiriiiririrhWaSaScTcIcIcTiIdcdIdFhUhUhUhUhUhQhQhQhQhQhQhQhQ
-dEdBdEdCdChQhQhQhQhQhShShShThYididididhYcOcOiGiririiiiiriiiriiiiiiiJiiiripcOcOcOcOcOcOcOcOcOdPhUhUhUhUhUhQhQhQhQhQhQhQhQ
-dBdBdBdCdChQhQhQhQhQhShShShThThThThThTdPcOcOipiririririririririKijiriiiriGcOcOcOcOgRcOcOcOcOdPhUhUhUhUhUhQhQhQhQhQhQhQhQ
-dBdBdBdCdCdCdChQhQhQhShShShThThThThThTdPcOiLipiiiriviiiKiMiiiririziririripeRcOiNiNiNiNiNcOcOdFhUhUhUhUhUhQhQhQhQhQhQhQhQ
-dBdBdBdCdCdCdChQhQhQhShShShThThThThThTdFeycOiOiOiOiOiOiOiPiPiPiPiPiPiPiPiPcOcOiNiQiRiSiNcOcOdFhUhUhUhUhUhQhQhQhQhQhQhQhQ
-dBdBdBdCdCdCdChQhQhQhShShShThTdPdPdPdPdPcOcOiOiTiTiUiViWiPiXiYiPiZiZiZjaiPcOcOiNjbjcjcjdcOdZdFhUhUhUhUhUhQhQhQhQhQhQhQhQ
-dBdBdBdCdChQhQhQhQhQhQhShShThTdPjejejejfcOcOiOjgjhjijhjhiPjjjkjljmjmjmjniPcOdZiNjojpjciNeRcOdFhUhUhUhUhUhQhQhQhQhQhQhQhQ
-dBdBdDdCdChQhQhQhQhQhQhShShThTdPjejejejfcOcOiOjqjhjhjrjsiPjtjuiPjmjmjvjaiPcOcOiNiNiNiNiNcOcOjwjwjwjwjwhThQhQhQhQhQhQhQhQ
-dBdBdCdCdChQhQhQhQhQhQhShShThTdPjejxjejfcOcOiOiOjyjyiOiOiPiPiPiPjzjziPiPiPcOcOcOcOehcOcOcOcOjwjAjBjCjwhThQhQhQhQhQhQhQhQ
-dBdBdCdCdChQhQhQhShShShTjDjDjDjDjDjDjDjDcOcOehcOcOcOjEcOehcOcOcOcOcOehcOcOcOcOcOcOcOcOcOcOcOjFjAjAjGjwhThQhQhQhQhQhQhQhQ
-dBdBdCdChQhQhQhQhShShShTjDjHjIjDjJjKjLjDcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOdFdFdFdFdFaSaSjwjAjMjAjwhThQhQhQhQhQhQhQhQ
-dBdDdCdChQhQhQhQhShShShTjDjNjOjDjPjOjOjDjQjQjDcOcOcTcTjRjSjTjTdPdPcTdndncTaSaSdFjUjUjUdFcxcxjwjwjwjwjwhThQhQhQhQhQhQhQhQ
-dDdCdCdChQhQhQhQhShShShTjDjDjVjDjPjOjOjWjOjOjDeycOeJeKjRjXjYjTjZjZcThfhfcTcxcxdPjZjZjZdPdPdPdPhThThThThThQhQhQhQhQhQhQhQ
-dCdCdCdChQhQhQhQhShShShTjDkajOjOjOjOjOjOjOjOjDhZcOeJeKjRkbkcjTjZjZcTcTcTcTdPdPdPjZjZjZjZjZjZjZjZjZjZjZjZhQhQhQhQhQhQhQhQ
-hQdCdChQhQhQhQhQhShShShTjDkdjOjOkekfkgkhkijJjDdPdPkjkjkjkkklklhThThThThThThThThThQhQhQhQjZjZjZjZhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhShShShTjDjDkmkmkmjDkmkmkmjDjDjZjZklknkokoknklhThTjZjZjZjZjZjZjZhQhQhQhQjZjZjZjZhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhShShShThThThThThThThThThThThThThTklkpkokokqklhThTjZjZjZjZjZjZjZhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhShShShThThThThThThThThThThThThThTkrkskokoktklhThThQhQhQhQhQhQhQhQhQdCdChQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhThThThThThThThThThThThThThTkrkskokthshshshshQhQhQhQdCdChQhQdCdCdCdChQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQjZjZjZjZjZjZjZjZjZjZjZjZjZjZkrkskokthshzduhshQhQhQdCdCdCdCdCdCdCdCdChQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQjZjZjZjZjZjZjZjZjZjZjZjZjZjZklkukokohthzhHhshQhQhQdCdCdCdCdEdCdCdCdChQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQjZjZjZjZjZjZjZjZjZjZjZjZjZjZklknkokohsduhzhshQhQhQdCdCdCdEdBdCdCdCdCdChQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQjZjZjZjZjZjZjZjZjZjZjZjZjZjZklkrkrkrhshshshshQhQhQdCdCdCdBdBdCdCdCdCdChQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQjZjZjZjZjZjZhQhQhQhQhQhQhQhQhQhQdCdCdCdCdDdDdCdCdEdCdCdChQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdEdCdCdCdCdCdCdCdCdCdCdCdCdBdCdCdCdChQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdDdCdCdCdCdCdCdCdCdEdEdCdCdDdCdCdCdChQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdCdCdCdCdEdCdCdEdBdBdCdCdCdCdCdCdChQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdCdCdCdCdBdCdCdBdBdDdCdCdCdCdCdEdChQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdCdCdCdDdCdCdDdDdCdCdCdCdCdCdDdChQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdCdCdCdCdCdCdCdCdCdCdCdCdChQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdCdCdCdCdCdCdCdCdChQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdChQhQdChQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadPdPdZdZdZdPdPiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadZibcOcOcOibdZiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadZcOcOcOcOcOdZiaiaiaiaiaiaiaiaiaiaicicicidididididieieiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiacTdnifcTeIcOdZiaiaiaiaiaiaiaiaiaiaicicicidididididieieiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiacThphpcTcOcOdPiaiaiaiaiaiaiaiaiaiaicicicidididididieieiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadPdZdZcTcTcTcTcOcOdPdPigigihihihigigiaiaicicicidididididieieiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaicicicidiiiiiiiiiiiiijcOcOcOcOcOcOcOcOikigilimimimiligiaiaicicicidididididieieiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaicicicidinioipiqiriicOcOcOcOeAcOhbcOcOikigimisitiuimigdZdZdZdZdZidididididieieiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaicicicidiniviwixixiycOcOiziziziziAiAiAiAiAimiBiBiBimigiCaSaShgdZidididididieieiaiaiaiaiaiaiaiaiaiaia
+dMiaiaiaiaiaiaiaiaiaicicicidiniDiEixixiicOcOiziFiBiBeTeUiAiGeTimimimimimigaSbgiHiHdZidididididieieiaiaiaiaiaiaiaiaiaiaia
+dMdMdMdMiaiaiaiaiaiaicicicidiiixixixiIiieIcOiziBiBiJeTeUiAiGeTimisimimiKigiLiLcTcTcTcTdPdPdPdPieieiaiaiaiaiaiaiaiaiaiaia
+dMdMdMdMiaiaiaiaiaiaicicicidinixixixiMiicOcOiziBiBigiAiAiAiAiAiBisiBisiBigaSbJcTgJgJcThgiNhgdPieieiaiaiaiaiaiaiaiaiaiaia
+dMdOdMdMiaiaiaiaiaiaicicicidiniIixiOiPiicOcOiQiBiBiRiBiBiBiBiRiBisiBiBiBigaSaScTcIcIcTiSdcdSdPieieieieieiaiaiaiaiaiaiaia
+dOdLdOdMdMiaiaiaiaiaicicicidiiininininiicOcOiQiBiBisisiBisiBisisisiTisiBizcOcOcOcOcOcOcOcOcOdZieieieieieiaiaiaiaiaiaiaia
+dLdLdLdMdMiaiaiaiaiaicicicididididididdZcOcOiziBiBiBiBiBiBiBiBiUitiBisiBiQcOcOcOcOhbcOcOcOcOdZieieieieieiaiaiaiaiaiaiaia
+dLdLdLdMdMdMdMiaiaiaicicicididididididdZcOiVizisiBiFisiUiWisiBiBiJiBiBiBizfbcOiXiXiXiXiXcOcOdPieieieieieiaiaiaiaiaiaiaia
+dLdLdLdMdMdMdMiaiaiaicicicididididididdPeIcOiYiYiYiYiYiYiZiZiZiZiZiZiZiZiZcOcOiXjajbjciXcOcOdPieieieieieiaiaiaiaiaiaiaia
+dLdLdLdMdMdMdMiaiaiaicicicididdZdZdZdZdZcOcOiYjdjdjejfjgiZjhjiiZjjjjjjjkiZcOcOiXjljmjmjncOejdPieieieieieiaiaiaiaiaiaiaia
+dLdLdLdMdMiaiaiaiaiaiaicicididdZjojojojpcOcOiYjqjrjsjrjriZjtjujvjwjwjwjxiZcOejiXjyjzjmiXfbcOdPieieieieieiaiaiaiaiaiaiaia
+dLdLdNdMdMiaiaiaiaiaiaicicididdZjojojojpcOcOiYjAjrjrjBjCiZjDjEiZjwjwjFjkiZcOcOiXiXiXiXiXcOcOjGjGjGjGjGidiaiaiaiaiaiaiaia
+dLdLdMdMdMiaiaiaiaiaiaicicididdZjojHjojpcOcOiYiYjIjIiYiYiZiZiZiZjJjJiZiZiZcOcOcOcOercOcOcOcOjGjKjLjMjGidiaiaiaiaiaiaiaia
+dLdLdMdMdMiaiaiaicicicidjNjNjNjNjNjNjNjNcOcOercOcOcOjOcOercOcOcOcOcOercOcOcOcOcOcOcOcOcOcOcOjPjKjKjQjGidiaiaiaiaiaiaiaia
+dLdLdMdMiaiaiaiaicicicidjNjRjSjNjTjUjVjNcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOdPdPdPdPdPaSaSjGjKjWjKjGidiaiaiaiaiaiaiaia
+dLdNdMdMiaiaiaiaicicicidjNjXjYjNjZjYjYjNkakajNcOcOcTcTkbkckdkddZdZcTdndncTaSaSdPkekekedPcxcxjGjGjGjGjGidiaiaiaiaiaiaiaia
+dNdMdMdMiaiaiaiaicicicidjNjNkfjNjZjYjYkgjYjYjNeIcOeTeUkbkhkikdkjkjcThphpcTcxcxdZkjkjkjdZdZdZdZidididididiaiaiaiaiaiaiaia
+dMdMdMdMiaiaiaiaicicicidjNkkjYjYjYjYjYjYjYjYjNijcOeTeUkbklkmkdkjkjcTcTcTcTdZdZdZkjkjkjkjkjkjkjkjkjkjkjkjiaiaiaiaiaiaiaia
+iadMdMiaiaiaiaiaicicicidjNknjYjYkokpkqkrksjTjNdZdZktktktkukvkvidididididididididiaiaiaiakjkjkjkjiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaicicicidjNjNkwkwkwjNkwkwkwjNjNkjkjkvkxkykykxkvididkjkjkjkjkjkjkjiaiaiaiakjkjkjkjiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaicicicididididididididididididididkvkzkykykAkvididkjkjkjkjkjkjkjiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaicicicididididididididididididididkBkCkykykDkvididiaiaiaiaiaiaiaiaiadMdMiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaididididididididididididididkBkCkykDhChChChCiaiaiaiadMdMiaiadMdMdMdMiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiakjkjkjkjkjkjkjkjkjkjkjkjkjkjkBkCkykDhChJdzhCiaiaiadMdMdMdMdMdMdMdMdMiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiakjkjkjkjkjkjkjkjkjkjkjkjkjkjkvkEkykyhDhJhRhCiaiaiadMdMdMdMdOdMdMdMdMiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiakjkjkjkjkjkjkjkjkjkjkjkjkjkjkvkxkykyhCdzhJhCiaiaiadMdMdMdOdLdMdMdMdMdMiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiakjkjkjkjkjkjkjkjkjkjkjkjkjkjkvkBkBkBhChChChCiaiaiadMdMdMdLdLdMdMdMdMdMiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiakjkjkjkjkjkjiaiaiaiaiaiaiaiaiaiadMdMdMdMdNdNdMdMdOdMdMdMiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadOdMdMdMdMdMdMdMdMdMdMdMdMdLdMdMdMdMiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadNdMdMdMdMdMdMdMdMdOdOdMdMdNdMdMdMdMiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadMdMdMdMdOdMdMdOdLdLdMdMdMdMdMdMdMiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadMdMdMdMdLdMdMdLdLdNdMdMdMdMdMdOdMiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadMdMdMdNdMdMdNdNdMdMdMdMdMdMdNdMiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadMdMdMdMdMdMdMdMdMdMdMdMdMiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadMdMdMdMdMdMdMdMdMiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadMiaiadMiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
 "}
 
 (1,1,4) = {"
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQkvkwkwkwkwkwkvhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQkvkxfnfpfnkxkvhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQkvkykzkzkzkAkvhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQkvkykzkzkzkAkvhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQkwfnfnfnfnfnkwhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdFdFdFkwkwkwkBkwkwkwdPdPdPhThUhUhUhUhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhTkCkCkCkCkCkDcOcOcOcOcOcOehcOcOkDdPhThUhUhUhUhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhTkCkEkFkFkCeycOcOcOcOcOcOcOjEcOcOdPhThUhUkGkGkGkGkGkGkGhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhTkHkIkIkIkCcOcOkJkJkJkJkKkLkLkMkMkNkNkNkNkGkOkPkQkRkSkGhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhTkHkTkTkIkUcOcOkVkWkXkYkKiweJkZkZlalblclbkGldkPlelelfkGhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhTkClglhlikCcOcOkJljkVljkKiweJkZkZkZlbkZlkkGldkPlllelfkGdFdFdFdFhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhTkCkCkCkCkCcOcOkJlmkJkJkKkLkLkZlbkZlbkZlnkGkOkPkPkPkSkGlolplodFhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQjZjZjZjZjZdPcOcOkJkJkJlclqlblbkZlbkZkZkZkZkGkGkGlrkGkGkGlsaSltdPhUhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQjZjZjZjZjZdPcOjEcOcOkMkZkZkZkZkZlulvkZkZkZkMcOcOcOcOcOfmaSaSltdPhUhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdFeycOaSaSkNlblwkZkZkZlblxlbkZlwkNcxcOcOcOgRfmaSlydcdPhUhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdPcOcOlzlzlzlzlzlzkZkZlAlAlAlAlAlAlAcOcOlBlBlBlBlBlBlBlBhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQdPcOcOlzlClDlElFlzkMkMlAlGlHlIlJlKlAcOjElBlLlMlNlOlPlQlBhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhShShShTdFcOcOlzlRlSlRlTlzcOcOlAlUlGlIlVlWlAcOcOlBlXlXlYlZlYmalBhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhShShShTdFcOcOlzmbmbmcmdlzeycOlAmememelVlVlAeycOlBlXlXlYlYlYlYlBhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhShShShTdFcOcOlzmfmbmcmdlzcOcOlAmgmhmelVmilAcOcOlBlXlXmjmkmklQlBdPdPdPdFhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhShShShTdPcOcOlzlzmllzlzlzjEcOlAlAlAlAmmlAlAcOcOlBlBmnlBlBlBlBlBcxaScxdPhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhThThThShShShTdPkDcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOehcOcOcOcOcOehcOaSaSiIdPhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhThThThShShShTdPkDcOcOcOcOgRcOcOcOcOcOcOgRcOcOcOcOcOcOcOcOcOcOcOcOcOcOaSaScxdPhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhThThThShShShTdPdPdPdPdFdFcTcTcTcOcOdFdFdFdPdPdPdPdFdFdFdFdFdFdPdPdPdFdPdPdPdFhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhThThThShShShThThThThThThTcTiweJcOdZdFhQhQjZjZjZjZjZjZjZhQhQhQjZjZjZjZhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhThThThShShShThThThThThThTcTiweJcOcOdFhQhQjZjZjZjZjZjZjZhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhThThThShShShThThThThThThTcTcTcTdPdPdFhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhThThThShShShThThThThThQhQhShThThThThUhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhShThThThThUhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhShThThThThUhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhShThThThsmomohshQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhShThThThsmpduhshQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhShThThThshzhzhshQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhShThThThsmqhzhshQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhShThThThshshshshQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
-hQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQhQ
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiakFkGkGkGkGkGkFiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiakFkHfxfzfxkHkFiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiakFkIkJkJkJkKkFiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiakFkIkJkJkJkKkFiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiakGfxfxfxfxfxkGiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadPdPdPkGkGkGkLkGkGkGdZdZdZidieieieieiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaidkMkMkMkMkMkNcOcOcOcOcOcOercOcOkNdZidieieieieiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaidkMkOkPkPkMeIcOcOcOcOcOcOcOjOcOcOdZidieiekQkQkQkQkQkQkQiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaidkRkSkSkSkMcOcOkTkTkTkTkUkVkVkWkWkXkXkXkXkQkYkZlalblckQiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaidkRldldkSlecOcOlflglhlikUiGeTljljlklllmllkQlnkZlololpkQiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaidkMlqlrlskMcOcOkTltlfltkUiGeTljljljllljlukQlnkZlvlolpkQdPdPdPdPiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaidkMkMkMkMkMcOcOkTlwkTkTkUkVkVljllljllljlxkQkYkZkZkZlckQlylzlydPiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiakjkjkjkjkjdZcOcOkTkTkTlmlAllllljllljljljljkQkQkQlBkQkQkQlCaSlDdZieiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiakjkjkjkjkjdZcOjOcOcOkWljljljljljlElFljljljkWcOcOcOcOcOfwaSaSlDdZieiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadPeIcOaSaSkXlllGljljljlllHllljlGkXcxcOcOcOhbfwaSlIdcdZieiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadZcOcOlJlJlJlJlJlJljljlKlKlKlKlKlKlKcOcOlLlLlLlLlLlLlLlLiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadZcOcOlJlMlNlOlPlJkWkWlKlQlRlSlTlUlKcOjOlLlVlWlXlYlZmalLiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiciciciddPcOcOlJmbmcmbmdlJcOcOlKmelQlSmfmglKcOcOlLmhmhmimjmimklLiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiciciciddPcOcOlJmlmlmmmnlJeIcOlKmomomomfmflKeIcOlLmhmhmimimimilLiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiciciciddPcOcOlJmpmlmmmnlJcOcOlKmqmrmomfmslKcOcOlLmhmhmtmumumalLdZdZdZdPiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiciciciddZcOcOlJlJmvlJlJlJjOcOlKlKlKlKmwlKlKcOcOlLlLmxlLlLlLlLlLcxaScxdZiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaidididiciciciddZkNcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOcOercOcOcOcOcOercOaSaSiSdZiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaidididiciciciddZkNcOcOcOcOhbcOcOcOcOcOcOhbcOcOcOcOcOcOcOcOcOcOcOcOcOcOaSaScxdZiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaidididiciciciddZdZdZdZdPdPcTcTcTcOcOdPdPdPdZdZdZdZdPdPdPdPdPdPdZdZdZdPdZdZdZdPiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaidididicicicidididididididcTiGeTcOejdPiaiakjkjkjkjkjkjkjiaiaiakjkjkjkjiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaidididicicicidididididididcTiGeTcOcOdPiaiakjkjkjkjkjkjkjiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaidididicicicidididididididcTcTcTdZdZdPiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaidididicicicidididididiaiaicididididieiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaicididididieiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaicididididieiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaicidididhCmymyhCiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaicidididhCmzdzhCiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaicidididhChJhJhCiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaicidididhCmAhJhCiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaicidididhChChChCiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
+iaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaia
 "}

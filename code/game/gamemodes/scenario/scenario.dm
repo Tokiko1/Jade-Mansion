@@ -225,29 +225,10 @@
 
 
 /datum/game_mode/scenario/proc/scenario_give_item(var/itempath,var/mob/living/carbon/human/player)
-	var/obj/item/item_to_give = itempath
-	var/list/slots = list(
-		"backpack" = slot_in_backpack,
-		"left pocket" = slot_l_store,
-		"right pocket" = slot_r_store
-	)
-
-	var/T = new item_to_give(player)
-	var/item_name = initial(item_to_give.name)
-	var/where = player.equip_in_one_of_slots(T, slots)
-	if(!where)
-		to_chat(player, "<span class='userdanger'>Unfortunately, you didn't have enough space in your inventory for all items, so [item_name] has dropped to your feet, pick it up!</span>")
-		var/atom/movable/droppeditem = T
-		var/turf/below_player = locate(player.x, player.y, player.z)
-		droppeditem.forceMove(below_player)
-		return
-	else
-		to_chat(player, "<span class='danger'>You have been given [item_name] in your [where] as part of the scenario.")
-		if(where == "backpack")
-			var/obj/item/weapon/storage/B = player.back
-			B.orient2hud(player)
-			B.show_to(player)
-		return
+	if(!player.back)
+		return 0
+	var/obj/item/weapon/storage/backpack/backpack_A = player.back
+	new itempath(backpack_A)
 
 /*/datum/game_mode/scenario/proc/handlegoals()
 	for(var/faction_to_check in choosen_scenario.faction_list)

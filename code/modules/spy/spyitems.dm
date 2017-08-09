@@ -81,13 +81,24 @@
 
 
 	var/number_of_found_objects = 0
-	for(var/obj/item/device/spy_device/scanned_object in orange(15, tool_holder))
+	var/list/objectsfound = list()
+	for(var/obj/item/device/spy_device/scanned_object in range(15, tool_holder))
 		if(scanned_object.device_active)
-			number_of_found_objects++
-	for(var/obj/structure/ST in orange(15, tool_holder))
-		for(var/obj/item/device/spy_device/scanned_object in ST.contents)
-			if(scanned_object.device_active)
+			if(!(scanned_object in objectsfound))
 				number_of_found_objects++
+				objectsfound.Add(scanned_object)
+	for(var/obj/ST in range(15, tool_holder))
+		for(var/obj/item/device/spy_device/scanned_object in ST.GetAllContents())
+			if(scanned_object.device_active)
+				if(!(scanned_object in objectsfound))
+					number_of_found_objects++
+					objectsfound.Add(scanned_object)
+	for(var/mob/H in range(15, tool_holder))
+		for(var/obj/item/device/spy_device/scanned_object in H.GetAllContents())
+			if(scanned_object.device_active)
+				if(!(scanned_object in objectsfound))
+					number_of_found_objects++
+					objectsfound.Add(scanned_object)
 
 
 	if(!number_of_found_objects)
