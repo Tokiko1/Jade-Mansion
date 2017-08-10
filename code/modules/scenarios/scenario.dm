@@ -99,11 +99,11 @@
 	var/game_ending = 0
 	var/ended = 0
 
-	var/list/roundend_inputs_factions = list("input1" = list())
-	var/list/roundend_polls_factions = list("poll1" = list())
+	var/list/roundend_inputs_factions = list()
+	var/list/roundend_polls_factions = list()
 
 	var/list/roundend_inputs = list()
-	var/list/roundend_polls = list("poll1" = list("question" = "", "answers" = list()))
+	var/list/roundend_polls = list()
 	var/faction_goal_text = list()
 
 
