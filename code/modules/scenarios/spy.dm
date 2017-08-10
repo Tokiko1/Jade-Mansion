@@ -14,7 +14,7 @@
 	faction_fluff = list("mansion" = "You are a mansion loyalist. You have been notified that two groups of spies have infiltrated the mansion. The mansion will lose a large amount of influence if they are allowed to operate: Capture them all! Don't forget: There are some important documents in your vault aswell.", "spy1" = "You are a spy of the Wood Empire, but you cannot say who or even if anyone else is also on your side.", "spy2" = "You are a spy of the Porcelain Empire, but you cannot say who or even if anyone else is also on your side.")
 	no_faction_restrictions = 0 //if 1, players are randomly assigned a faction in faction_list and restrictions is completely ignored
 	exclusive_factions = 1 //if 0, players with a certain job will get all factions in the restriction list, if 1 they are randomly assigned a single faction from that list instead
-	max_factionmember_amount =list("spy1" = 2, "spy2" = 2)
+	max_factionmember_amount = list()
 	factionnames = list("mansion" = "Mansion", "spy1" = "Wood Empire Spy Cell", "spy2" = "Porcelain Empire Spy Cell")
 	epilogue = "And so the conflict between spies comes to an end here, for now..."
 
@@ -187,8 +187,8 @@
 	return
 
 /datum/scenario/spy/handlescenario()
-	number_recorders = pick(5, 7, 9, 12)
-	number_caches = pick(3, 5)
+	number_recorders = pick(7, 9, 12, 17)
+	number_caches = pick(3, 5, 7)
 	..()
 /datum/scenario/spy/handlescenario_postsetup()
 	var/list/turfS = list()
