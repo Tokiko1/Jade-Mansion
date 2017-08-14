@@ -4,6 +4,7 @@
 	desc = "Some kind of container. It appears to have a complex opening mechanism."
 	icon_state = "spy_cache"
 	density = 1
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	var/open = 0
 	var/opening_time = 250 //25 seconds, roughly...
 	var/list/objects_inside = list() //objects in its contents that actually leave the spy_cache
