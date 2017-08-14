@@ -67,6 +67,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	var/list/traits = list()
 
+	var/staff_story
+	var/owner_story
+	var/guest_story
+
 
 	var/list/custom_names = list("clown", "mime", "ai", "cyborg", "religion", "deity")
 	var/prefered_security_department = SEC_DEPT_RANDOM
@@ -181,6 +185,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			dat += "<b>Special Character Things</b><BR>"
 			dat += "<a href ='?_src_=prefs;preference=trait;task=open'><b>Setup Traits</b></a> "
+			dat += "<a href ='?_src_=prefs;preference=backstory;task=open'><b>Setup Backstory</b></a> "
 
 			dat += "<td valign='center'>"
 
@@ -817,6 +822,45 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					traits = list()
 				SetTraits(user)
 		return 1
+
+	if(href_list["preference"] == "backstory")
+		switch(href_list["task"])
+			if("close")
+				user << browse(null, "window=backstory")
+				ShowChoices(user)
+			if("write")
+				var/previous_story
+				switch(href_list["story"])
+					if("staff")
+						previous_story = staff_story
+					if("owner")
+						previous_story = owner_story
+					if("guest")
+						previous_story = guest_story
+				var/new_story = input(user, "Please enter a story.", "Story" , previous_story)  as message|null
+				if(new_story)
+					new_story = sanitize(copytext(new_story,1,MAX_MESSAGE_LEN))
+					switch(href_list["story"])
+						if("staff")
+							staff_story = new_story
+						if("owner")
+							owner_story = new_story
+						if("guest")
+							guest_story = new_story
+			if("reset")
+				switch(href_list["story"])
+					if("staff")
+						staff_story = null
+					if("owner")
+						owner_story = null
+					if("guest")
+						guest_story = null
+
+
+			else
+				SetBackstory(user)
+		return 1
+
 
 	switch(href_list["task"])
 		if("random")
