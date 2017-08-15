@@ -9,7 +9,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	//doohickeys for savefiles
 	var/path
 	var/default_slot = 1				//Holder so it doesn't default to slot 1, rather the last one used
-	var/max_save_slots = 3
+	var/max_save_slots = 8
 
 	//non-preference stuff
 	var/muted = 0
@@ -55,7 +55,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/undershirt = "Nude"				//undershirt type
 	var/socks = "Nude"					//socks type
 	var/backbag = DBACKPACK				//backpack type
-	var/workuniform = BLACKMAID1		//Maid uniform type
+	var/workuniform = DEFAULTJOBSUIT	//Maid uniform type
 	var/hair_style = "Bald"				//Hair type
 	var/hair_color = "000"				//Hair color
 	var/facial_hair_style = "Shaved"	//Face hair type
@@ -847,6 +847,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							owner_story = new_story
 						if("guest")
 							guest_story = new_story
+				SetBackstory(user)
 			if("reset")
 				switch(href_list["story"])
 					if("staff")
@@ -855,6 +856,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						owner_story = null
 					if("guest")
 						guest_story = null
+				SetBackstory(user)
 
 
 			else
@@ -1371,6 +1373,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	character.backbag = backbag
 	character.workuniform = workuniform
+
+	character.backstory_staff = staff_story
+	character.backstory_owner = owner_story
+	character.backstory_guest = guest_story
 
 	character.dna.features = features.Copy()
 	character.dna.real_name = character.real_name

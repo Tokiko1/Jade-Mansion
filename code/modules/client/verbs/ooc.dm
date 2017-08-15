@@ -176,3 +176,45 @@ GLOBAL_VAR_INIT(normal_ooc_colour, OOC_COLOR)
 		to_chat(src, "You can't ignore yourself.")
 		return
 	ignore_key(selection)
+
+/client/verb/show_story()
+	set name = "Display Story"
+	set category = "OOC"
+	set desc ="Display story information about a player or thing."
+
+	var/selection = input("What kind of story information?","Story information") in list("Player Character Backstory", "Backstory of Map")
+	if(!selection)
+		return
+	var/HTML = ""
+	switch(selection)
+		if("Backstory of Map")
+			HTML += "<h1>Backstory of [GLOB.JADE_MAP_NAME]</h2><br>"
+			HTML += "[GLOB.JADE_MAP_STORY]"
+		if("Player Character Backstory")
+			if(!GLOB.joined_player_list.len)
+				to_chat(src, "Nobody is ingame!")
+				return
+			var/list/playerstopick = list()
+			for(var/mob/living/carbon/human/humansS in GLOB.mob_list)
+				playerstopick.Add(list(humansS))
+
+			var/mob/living/carbon/human/playerselection = input("Please, select a character!", "Select character.") as null|anything in playerstopick
+			if(!playerselection)
+				return
+			HTML += "<h1>Backstory of [playerselection.real_name] the [playerselection.job]</h2><br>"
+
+			var/cstory
+			if(playerselection.job == "Mansion Owner")
+				cstory = playerselection.backstory_owner
+			else if(playerselection.job == "Guest")
+				cstory = playerselection.backstory_guest
+			else
+				cstory = playerselection.backstory_staff
+			if(!cstory)
+				HTML += "Nothing is known about [playerselection.real_name]."
+			else
+				HTML += "[cstory]"
+	var/datum/browser/popup = new(src, "backstory_read", "<div align='center'>Backstory</div>", 300, 500)
+	popup.set_window_options("can_close=1")
+	popup.set_content(HTML)
+	popup.open(0)
