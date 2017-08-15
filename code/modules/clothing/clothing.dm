@@ -54,6 +54,13 @@
 	if(pockets && over_object == M)
 		return pockets.MouseDrop(over_object)
 
+	if(stop_remove)
+		if(ishuman(M))
+			var/mob/living/carbon/human/C = M
+			if(src in C.get_all_slots())
+				to_chat(C, "<span class='warning'>You can't remove the [name] by yourself.</span>")
+				return
+
 	if(istype(usr.loc,/obj/mecha)) // stops inventory actions in a mech
 		return
 
