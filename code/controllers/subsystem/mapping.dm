@@ -121,6 +121,9 @@ SUBSYSTEM_DEF(mapping)
 
 	GLOB.JADE_MAX_MAP_Z_LEVEL = zlevels
 	GLOB.JADE_ADMIN_Z_LEVEL = adminlevel
+	GLOB.JADE_MAP_STORY = config.map_story
+	GLOB.JADE_MAP_NAME = config.map_name
+
 
 	TryLoadZ(mappath, FailedZs, JADE_DEFAULT_MANSION_Z_LEVEL)
 	TryLoadZ(adminpath, FailedZs, adminlevel)

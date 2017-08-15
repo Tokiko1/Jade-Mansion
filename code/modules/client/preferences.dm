@@ -9,7 +9,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	//doohickeys for savefiles
 	var/path
 	var/default_slot = 1				//Holder so it doesn't default to slot 1, rather the last one used
-	var/max_save_slots = 3
+	var/max_save_slots = 8
 
 	//non-preference stuff
 	var/muted = 0
@@ -55,7 +55,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/undershirt = "Nude"				//undershirt type
 	var/socks = "Nude"					//socks type
 	var/backbag = DBACKPACK				//backpack type
-	var/workuniform = BLACKMAID1		//Maid uniform type
+	var/workuniform = DEFAULTJOBSUIT	//Maid uniform type
 	var/hair_style = "Bald"				//Hair type
 	var/hair_color = "000"				//Hair color
 	var/facial_hair_style = "Shaved"	//Face hair type
@@ -66,6 +66,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/list/features = list("mcolor" = "FFF", "tail_lizard" = "Smooth", "tail_human" = "None", "snout" = "Round", "horns" = "None", "ears" = "None", "wings" = "None", "frills" = "None", "spines" = "None", "body_markings" = "None", "legs" = "Normal Legs")
 
 	var/list/traits = list()
+
+	var/staff_story
+	var/owner_story
+	var/guest_story
 
 
 	var/list/custom_names = list("clown", "mime", "ai", "cyborg", "religion", "deity")
@@ -181,6 +185,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			dat += "<b>Special Character Things</b><BR>"
 			dat += "<a href ='?_src_=prefs;preference=trait;task=open'><b>Setup Traits</b></a> "
+			dat += "<a href ='?_src_=prefs;preference=backstory;task=open'><b>Setup Backstory</b></a> "
 
 			dat += "<td valign='center'>"
 
@@ -818,6 +823,47 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				SetTraits(user)
 		return 1
 
+	if(href_list["preference"] == "backstory")
+		switch(href_list["task"])
+			if("close")
+				user << browse(null, "window=backstory")
+				ShowChoices(user)
+			if("write")
+				var/previous_story
+				switch(href_list["story"])
+					if("staff")
+						previous_story = staff_story
+					if("owner")
+						previous_story = owner_story
+					if("guest")
+						previous_story = guest_story
+				var/new_story = input(user, "Please enter a story.", "Story" , previous_story)  as message|null
+				if(new_story)
+					new_story = sanitize(copytext(new_story,1,MAX_MESSAGE_LEN))
+					switch(href_list["story"])
+						if("staff")
+							staff_story = new_story
+						if("owner")
+							owner_story = new_story
+						if("guest")
+							guest_story = new_story
+				SetBackstory(user)
+			if("reset")
+				switch(href_list["story"])
+					if("staff")
+						staff_story = null
+					if("owner")
+						owner_story = null
+					if("guest")
+						guest_story = null
+				SetBackstory(user)
+
+
+			else
+				SetBackstory(user)
+		return 1
+
+
 	switch(href_list["task"])
 		if("random")
 			switch(href_list["preference"])
@@ -1327,6 +1373,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	character.backbag = backbag
 	character.workuniform = workuniform
+
+	character.backstory_staff = staff_story
+	character.backstory_owner = owner_story
+	character.backstory_guest = guest_story
 
 	character.dna.features = features.Copy()
 	character.dna.real_name = character.real_name

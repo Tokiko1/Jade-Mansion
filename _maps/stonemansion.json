@@ -5,5 +5,6 @@
     "adminzone": "stoneadmin.dmm",
     "amountzlevels": "4",
     "minetype": "lavaland",
-    "transition_config": "default"
+    "transition_config": "default",
+    "map_story": "A mansion located in the dry, cold, infertile lands of the north of the Jade Empire. There is not much here other than wilderness and uncountable coniferous trees. Even animals are rare here as natural plantlife has trouble growing in this kind of soil and climate. There are only a couple of small settlements in this area and the mansion is located atleast 10km from the nearest one. There is a popular legend related to this mansion that claims that the first owner of the mansion found a strange green gem that turned him insane and made him run out into the woods, never to be seen again."
 }

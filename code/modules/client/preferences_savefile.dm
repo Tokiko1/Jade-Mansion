@@ -328,6 +328,10 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	S["traits"]				>> traits
 
+	S["staff_story"]		>> staff_story
+	S["owner_story"]		>> owner_story
+	S["guest_story"]		>> guest_story
+
 	//try to fix any outdated data if necessary
 	if(needs_update >= 0)
 		update_character(needs_update, S)		//needs_update == savefile_version if we need an update (positive integer)
@@ -448,6 +452,10 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["job_engsec_low"]		<< job_engsec_low
 
 	S["traits"]				<< traits
+
+	S["staff_story"]		<< staff_story
+	S["owner_story"]		<< owner_story
+	S["guest_story"]		<< guest_story
 
 	return 1
 

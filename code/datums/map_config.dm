@@ -11,6 +11,7 @@
     var/adminzone = "jadeadmin.dmm"
     var/amountzlevels = 2
     var/minetype = "lavaland"
+    var/map_story
 
     var/list/transition_config = list(MAIN_STATION = CROSSLINKED,
                                     CENTCOMM = SELFLOOPING,
@@ -70,6 +71,7 @@
     minetype = json["minetype"]
     amountzlevels = json["amountzlevels"]
     amountzlevels = text2num(amountzlevels)
+    map_story = json["map_story"]
 
     var/list/jtcl = json["transition_config"]
 
