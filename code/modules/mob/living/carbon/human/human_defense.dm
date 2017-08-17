@@ -123,7 +123,7 @@
 
 /mob/living/carbon/human/proc/check_block()
 	if(martial_art && martial_art.block_chance \
-	&& prob(martial_art.block_chance) && in_throw_mode \
+	&& prob(martial_art.block_chance) && (in_throw_mode || martial_art.easy_block) \
 	&& !stat && !weakened && !stunned)
 		return TRUE
 	return FALSE

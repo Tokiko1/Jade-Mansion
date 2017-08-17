@@ -7,6 +7,7 @@
 	var/datum/martial_art/base = null // The permanent style
 	var/deflection_chance = 0 //Chance to deflect projectiles
 	var/block_chance = 0 //Chance to block melee attacks using items while on throw mode.
+	var/easy_block = 0 //If 1, melee attacks can be blocked without needing to be on throw mode
 	var/restraining = 0 //used in cqc's disarm_act to check if the disarmed is being restrained and so whether they should be put in a chokehold or not
 	var/help_verb = null
 	var/no_guns = FALSE
@@ -49,7 +50,7 @@
 		else
 			A.do_attack_animation(D, ATTACK_EFFECT_PUNCH)
 
-	if(!damage)
+	if(damage <= 0)
 		playsound(D.loc, A.dna.species.miss_sound, 25, 1, -1)
 		D.visible_message("<span class='warning'>[A] has attempted to [atk_verb] [D]!</span>", \
 			"<span class='userdanger'>[A] has attempted to [atk_verb] [D]!</span>", null, COMBAT_MESSAGE_RANGE)

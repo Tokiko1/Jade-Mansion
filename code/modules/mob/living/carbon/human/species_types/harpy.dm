@@ -7,7 +7,6 @@
 	default_features = list("mcolor" = "FFF", "tail_human" = "None", "ears" = "None", "wings" = "Large Dove")
 	use_skintones = 1
 	no_equip = list(slot_back)
-	blacklisted = 1
 	limbs_id = "human"
 	skinned_type = /obj/item/stack/sheet/animalhide/human
 
