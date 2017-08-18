@@ -96,13 +96,23 @@
 	maid_uniform = 1
 
 /obj/item/clothing/under/nurse1
-	name = "nurse suit"
-	desc = "A white nursesuit, suitable for chemists and doctors alike."
+	name = "jade style nurse dress"
+	desc = "The official nurse dress of the Jade Empire. Ideal for doctors, chemists and nurses."
 	icon_state = "nurse1"
 	item_color = "nurse1"
 	body_parts_covered = CHEST|GROIN|ARMS
 	fitted = FEMALE_UNIFORM_TOP
-	can_adjust = 0
+	can_adjust = 1
+	maid_uniform = 0 //not a maid
+
+/obj/item/clothing/under/nurse2
+	name = "porcelain style nurse dress"
+	desc = "The official nurse dress in Porcelain Empire. Ideal for doctors, chemists and nurses."
+	icon_state = "nurse2"
+	item_color = "nurse2"
+	body_parts_covered = CHEST|GROIN|ARMS
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = 1
 	maid_uniform = 0 //not a maid
 
 /obj/item/clothing/under/maidbase
@@ -184,7 +194,7 @@
 	name = "maid headdress"
 	item_state = "maid_headdress1"
 	icon_state = "maid_headdress1"
-	desc = "What maids wear on the head. Why? Nobody knows."
+	desc = "What maids wear on the head. Why? Probably because it looks good!"
 	strip_delay = 10
 	put_on_delay = 10
 	maid_uniform = 1
@@ -193,7 +203,16 @@
 	name = "maid headdress"
 	item_state = "maid_headdress2"
 	icon_state = "maid_headdress2"
-	desc = "What maids wear on the head. Why? Nobody knows."
+	desc = "What maids wear on the head. Why? Probably because it looks good!"
 	strip_delay = 10
 	put_on_delay = 10
 	maid_uniform = 1
+
+/obj/item/clothing/head/nurse_cap1
+	name = "nurse cap"
+	item_state = "nurse_cap1"
+	icon_state = "nurse_cap1"
+	desc = "Nurses wear this on their head."
+	strip_delay = 10
+	put_on_delay = 10
+	maid_uniform = 0
