@@ -127,7 +127,7 @@
 	if(moving_diagonally)//no mob swap during diagonal moves.
 		return 1
 
-	if(!M.buckled && !M.has_buckled_mobs())
+	if(!M.anchored && !M.buckled && !M.has_buckled_mobs())
 		var/mob_swap
 		//the puller can always swap with its victim if on grab intent
 		if(M.pulledby == src && a_intent == INTENT_GRAB)
@@ -164,6 +164,15 @@
 	//not if he's not CANPUSH of course
 	if(!(M.status_flags & CANPUSH))
 		return 1
+
+	//anchored mobs can't be pushed either
+	if(!M.anchored)
+		return 1
+
+	//people on harm or disarm intent cannot be pushed either
+	if(M.a_intent == INTENT_HARM || M.a_intent == INTENT_DISARM)
+		return 1
+
 	//anti-riot equipment is also anti-push
 	for(var/obj/item/I in M.held_items)
 		if(!istype(M, /obj/item/clothing))
@@ -807,7 +816,7 @@
 		var/total_health = (health - staminaloss)
 		if(total_health <= HEALTH_THRESHOLD_CRIT && !stat)
 			to_chat(src, "<span class='notice'>You're too exhausted to keep going...</span>")
-			Weaken(5)
+			Weaken(10)
 			setStaminaLoss(health - 2)
 	update_health_hud()
 

@@ -42,7 +42,7 @@ GLOBAL_LIST_INIT(traitlistpaged, list(
 "Narcolepsy" = list("tname" = "Narcolepsy", "tdesc" = "You have an illness that randomly makes you fall asleep. It gets worse if you are in a bad mood.", "tcost" = -4, "tnotes" = null, "active" = /datum/trait/narcolepsy),
 "Oni Liver" = list("tname" = "Oni Liver", "tdesc" = "For some reason, you have the liver of an oni. You need to drink far more to get drunk, and when you are, you get sober much faster.", "tcost" = 2, "tnotes" = null, "active" = /datum/trait/oni_liver),
 "Master Chemist" = list("tname" = "Master Chemist", "tdesc" = "You have worked a lot with chemicals. Just looking at a liquid allows you to tell what's inside.", "tcost" = 1, "tnotes" = "This does not apply to liquids in opaque containers.", "active" = null),
-"Red Sparrow CQC" = list("tname" = "Red Sparrow CQC", "tdesc" = "For whatever reason, you know Red Sparrow CQC. This combat style is pragmatic and non-lethal. A good choice for bodyguards.", "tcost" = 5, "tnotes" = null, "active" = null),
+
 "Maid Fashion Obsession" = list("tname" = "Maid Fashion Obsession", "tdesc" = "You love maid fashion! So much that not wearing them makes you upset, even if you are not staff.", "tcost" = -2, "tnotes" = "A full uniform includes any of the uniforms, any type of shoe and one of the maid headdresses.", "active" = /datum/trait/maidfashion),
 "Combat Clothes" = list("tname" = "Combat Clothes", "tdesc" = "Your starting clothes are armored.", "tcost" = 1, "tnotes" = null, "active" = null),
 "Poison Sting" = list("tname" = "Poison Sting", "tdesc" = "Through some bizzare mutation, you have a stealthy poison stinger that can inject weakening poison into others.", "tcost" = 3, "tnotes" = null, "active" = null),
@@ -60,12 +60,16 @@ GLOBAL_LIST_INIT(traitlistpaged, list(
 "Frail" = list("tname" = "Frail", "tdesc" = "Your body is frail. -30 HP", "tcost" = -1, "tnotes" = null, "active" = null),
 "Porcelain Speaker" = list("tname" = "Porcelain Speaker", "tdesc" = "You can speak Porcelain Common, the most common language in the Porcelain empire.", "tcost" = 1, "tnotes" = null, "active" = null),
 "Ice Beam" = list("tname" = "Ice Beam", "tdesc" = "You start with an ice beam gun, capable of freezing floors and people.", "tcost" = 4, "tnotes" = null, "active" = null),
-"Remote Collar" = list("tname" = "Remote Collar", "tdesc" = "You start with an unremoveable remote control collar. Maybe you are a reformed criminal or very loyal or some other reason you can come up with. Anyone with a remote can enter your ID and trigger a restraining energy field on you.", "tcost" = -5, "tnotes" = "Unlike the regular remote collars, this one can't be unlocked. Your only way out would be getting very creative and destroying it somehow. You will still have this if you get an antagonistic role so beware!", "active" = null)
+"Remote Collar" = list("tname" = "Remote Collar", "tdesc" = "You start with an unremoveable remote control collar. Maybe you are a reformed criminal or very loyal or some other reason you can come up with. Anyone with a remote can enter your ID and trigger a restraining energy field on you.", "tcost" = -5, "tnotes" = "Unlike the regular remote collars, this one can't be unlocked. Your only way out would be getting very creative and destroying it somehow. You will still have this if you get an antagonistic role so beware!", "active" = null,)
 
+),
+
+
+"page4" = list(
+"Oni Martial" = list("tname" = "Oni Martial", "tdesc" = "Your punches are very heavy and slow. Anyone you hit or disarm will be sent flying onto the floor or walls. You also have a 50% chance to automatically block melee attacks.", "tcost" = 5, "tnotes" = "This is a martial art. You may only have 1 martial art at a time.", "active" = null),
+"Red Sparrow CQC" = list("tname" = "Red Sparrow CQC", "tdesc" = "For whatever reason, you know Red Sparrow CQC. This combat style is pragmatic and non-lethal. A good choice for bodyguards.", "tcost" = 5, "tnotes" = "This is a martial art. You may only have 1 martial art at a time.", "active" = null)
 
 )
-
-
 
 
 

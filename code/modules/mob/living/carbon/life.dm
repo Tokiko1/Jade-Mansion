@@ -305,7 +305,7 @@
 		if(sleeping)
 			adjustStaminaLoss(-10)
 		else
-			adjustStaminaLoss(-3)
+			adjustStaminaLoss(-1)
 
 	if(sleeping)
 		handle_dreams()

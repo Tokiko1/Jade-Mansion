@@ -5,6 +5,7 @@
 
 /datum/controller/subsystem/ticker/proc/handle_join_traits(mob/living/carbon/human/traitholder)
 	var/list/itemstoadd = list()
+	var/list/martialtoadd = list()
 	for(var/traitS in traitholder.traits)
 		if(GLOB.alltraits[traitS]["active"]) //active traits being added here
 			var/traittype = GLOB.alltraits[traitS]["active"]
@@ -28,10 +29,13 @@
 			if("Master Chemist")
 				traitholder.can_see_chems = 1
 
+			if("Oni Martial")
+				var/datum/martial_art/oni/D = new(null)
+				martialtoadd.Add(D)
+
 			if("Red Sparrow CQC")
 				var/datum/martial_art/cqc/D = new(null)
-				D.teach(traitholder)
-				traitholder.mischief -= 10 //combat is not funny, especially not a pragmatic style like this
+				martialtoadd.Add(D)
 
 			if("Combat Clothes")
 				if(traitholder.w_uniform)
@@ -95,3 +99,8 @@
 			for(var/thing_to_add in itemstoadd)
 				var/addstuff = new thing_to_add
 				backpack_A.contents += addstuff
+	if(martialtoadd.len)
+		if(martialtoadd.len > 1)
+			to_chat(traitholder, "<span class='warning'>Warning, you have selected multiple martial arts! You have randomly been given only 1 of them.</span>")
+		var/datum/martial_art/martial_picked = pick(martialtoadd)
+		martial_picked.teach(traitholder)

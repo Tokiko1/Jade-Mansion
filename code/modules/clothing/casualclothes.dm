@@ -73,15 +73,6 @@
 	can_adjust = 0
 	suitable_for_swimming = 1
 
-/obj/item/clothing/under/dress_wa1
-	name = "white and blue dress"
-	desc = "A white dress decorated with pretty blue patterns."
-	icon_state = "wa1"
-	item_color = "wa1"
-	body_parts_covered = CHEST|GROIN
-	fitted = FEMALE_UNIFORM_TOP
-	can_adjust = 0
-
 
 
 /obj/item/clothing/gloves/long_gloves1

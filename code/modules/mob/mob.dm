@@ -659,7 +659,7 @@
 	var/has_legs = get_num_legs()
 	var/has_arms = get_num_arms()
 	var/ignore_legs = get_leg_ignore()
-	if(ko || resting || stunned || chokehold)
+	if(ko || resting || chokehold)
 		drop_all_held_items()
 		unset_machine()
 		if(pulling)

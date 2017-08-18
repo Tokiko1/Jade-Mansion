@@ -250,7 +250,13 @@
 
 		if(CHEMISTMAID1)
 			uniform = /obj/item/clothing/under/nurse1
-			head = /obj/item/clothing/head/maidhead2
+			head = /obj/item/clothing/head/nurse_cap1
+			gloves = /obj/item/clothing/gloves/color/latex/nitrile
+			shoes = /obj/item/clothing/shoes/jackboots
+
+		if(CHEMISTMAID2)
+			uniform = /obj/item/clothing/under/nurse2
+			head = /obj/item/clothing/head/nurse_cap1
 			gloves = /obj/item/clothing/gloves/color/latex/nitrile
 			shoes = /obj/item/clothing/shoes/jackboots
 
@@ -293,12 +299,6 @@
 			uniform = /obj/item/clothing/under/whitedress2
 			shoes = /obj/item/clothing/shoes/jackboots
 			gloves = /obj/item/clothing/gloves/long_gloves2
-			head = null
-
-		if(OWNERDRESS4)
-			uniform = /obj/item/clothing/under/dress_wa1
-			shoes = /obj/item/clothing/shoes/jackboots
-			gloves = null
 			head = null
 
 		if(CASUALSUIT1)

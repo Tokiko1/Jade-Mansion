@@ -31,9 +31,11 @@
 
 /obj/structure/closet/jademansion/medicalclothes/PopulateContents()
 	new /obj/item/clothing/under/nurse1(src)
-	new /obj/item/clothing/under/nurse1(src)
+	new /obj/item/clothing/under/nurse2(src)
 	new /obj/item/clothing/head/maidhead2(src)
 	new /obj/item/clothing/head/maidhead2(src)
+	new /obj/item/clothing/head/nurse_cap1(src)
+	new /obj/item/clothing/head/nurse_cap1(src)
 	new /obj/item/clothing/gloves/color/latex/nitrile(src)
 	new /obj/item/clothing/gloves/color/latex/nitrile(src)
 	new /obj/item/clothing/shoes/sneakers/white(src)
@@ -169,7 +171,6 @@
 	new /obj/item/clothing/under/blackdress1(src)
 	new /obj/item/clothing/gloves/long_gloves1(src)
 	new /obj/item/clothing/under/bluedress1(src)
-	new /obj/item/clothing/under/dress_wa1(src)
 
 	new /obj/item/clothing/shoes/laceup(src)
 	new /obj/item/clothing/shoes/laceup(src)
