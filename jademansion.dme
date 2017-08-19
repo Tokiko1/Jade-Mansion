@@ -1402,6 +1402,7 @@
 #include "code\modules\hydroponics\grown\towercap.dm"
 #include "code\modules\jadeobjects\closets.dm"
 #include "code\modules\jadeobjects\decoration.dm"
+#include "code\modules\jadeobjects\jademelee.dm"
 #include "code\modules\jadeobjects\outsidelights.dm"
 #include "code\modules\jadeobjects\randomobjects.dm"
 #include "code\modules\jadeobjects\zgenerators.dm"

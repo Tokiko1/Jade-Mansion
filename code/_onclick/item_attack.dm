@@ -37,6 +37,14 @@
 /obj/item/proc/attack(mob/living/M, mob/living/user)
 	if(flags & NOBLUDGEON)
 		return
+
+	if(istype(M, /mob/living/carbon/human) ) //maybe there is a better way to put this, but humans can block attacks
+		var/mob/living/carbon/human/defender = M
+		if(defender.check_block())
+			defender.visible_message("<span class='warning'>[defender] blocks [user]'s attack!</span>")
+			defender.handle_counter(defender, user)
+			return
+
 	if(!force)
 		playsound(loc, 'sound/weapons/tap.ogg', get_clamped_volume(), 1, -1)
 	else if(hitsound)

@@ -123,7 +123,7 @@
 	D.forceMove(A.loc)
 	D.setDir(get_dir(D, A))
 
-	D.Stun(4)
+	D.Stun(5)
 	A.visible_message("<span class = 'danger'><B>[A] starts spinning around with [D]!</B></span>")
 
 	for (var/i = 0, i < 20, i++)

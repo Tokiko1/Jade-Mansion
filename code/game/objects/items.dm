@@ -641,5 +641,5 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	if(M && M.dirty < 100)
 		M.dirty++
 
-/obj/item/proc/counter_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
+/obj/item/proc/counter_act(mob/living/carbon/human/A, mob/living/D)
 	return 0
