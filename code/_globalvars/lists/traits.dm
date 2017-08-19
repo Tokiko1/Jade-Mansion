@@ -66,8 +66,9 @@ GLOBAL_LIST_INIT(traitlistpaged, list(
 
 
 "page4" = list(
-"Oni Martial" = list("tname" = "Oni Martial", "tdesc" = "Your punches are very heavy and slow. Anyone you hit or disarm will be sent flying onto the floor or walls. You also have a 50% chance to automatically block melee attacks.", "tcost" = 5, "tnotes" = "This is a martial art. You may only have 1 martial art at a time.", "active" = null),
-"Red Sparrow CQC" = list("tname" = "Red Sparrow CQC", "tdesc" = "For whatever reason, you know Red Sparrow CQC. This combat style is pragmatic and non-lethal. A good choice for bodyguards.", "tcost" = 5, "tnotes" = "This is a martial art. You may only have 1 martial art at a time.", "active" = null)
+"Oni Martial" = list("tname" = "Oni Martial", "tdesc" = "Your punches are very heavy and slow. Anyone you hit or disarm will be sent flying onto the floor or walls. You also have a 50% chance to automatically block melee attacks.", "tcost" = 4, "tnotes" = "This is a martial art. You may only have 1 martial art at a time.", "active" = null),
+"Red Sparrow CQC" = list("tname" = "Red Sparrow CQC", "tdesc" = "For whatever reason, you know Red Sparrow CQC. This combat style is pragmatic and non-lethal. A good choice for bodyguards.", "tcost" = 5, "tnotes" = "This is a martial art. You may only have 1 martial art at a time.", "active" = null),
+"Heron Wrestling" = list("tname" = "Heron Wrestling", "tdesc" = "You are skilled in Heron Wrestling. It's a rather impractical, but very entertaining style of fighting.", "tcost" = 5, "tnotes" = "This is a martial art. You may only have 1 martial art at a time.", "active" = null)
 
 )
 

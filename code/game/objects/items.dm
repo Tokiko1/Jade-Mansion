@@ -64,6 +64,10 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	var/list/materials
 	var/smeltable = 0		//determines if the object can be recycled into its materials
 
+	//combat vars
+	var/melee_block = 0 //holding this item in your active hand grants you a chance to deflect melee attacks
+	var/counter_chance = 0 //chance to do a counter action on a successfull block
+
 	var/restrain = 0 //does this restrain us?
 	var/can_move_restrain = 0 //does it stop us from moving?
 	var/stand_up_restrain = 0 //does it stop us from standing up?
@@ -636,3 +640,6 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 /obj/item/proc/microwave_act(obj/machinery/microwave/M)
 	if(M && M.dirty < 100)
 		M.dirty++
+
+/obj/item/proc/counter_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
+	return 0

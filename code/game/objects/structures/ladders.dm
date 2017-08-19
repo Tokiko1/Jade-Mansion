@@ -3,6 +3,8 @@
 	desc = "A sturdy metal ladder."
 	icon = 'icons/obj/structures.dmi'
 	icon_state = "ladder11"
+	anchored = 1
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	var/id = null
 	var/height = 0 //the 'height' of the ladder. higher numbers are considered physically higher
 	var/special = 0 //special ladders can have their height manually set

@@ -76,9 +76,14 @@
 		heal_bodypart_damage(5,5, 0)
 		adjustBruteLoss(-5, 0)
 		adjustFireLoss(-5, 0)
-		adjustOxyLoss(-5, 0)
+		adjustOxyLoss(-20, 0)
 		adjustToxLoss(-5, 0)
-
+	else if(health < HEALTH_THRESHOLD_SLOWHEAL)
+		heal_bodypart_damage(1,1, 0)
+		adjustBruteLoss(-1, 0)
+		adjustFireLoss(-1, 0)
+		adjustOxyLoss(-20, 0)
+		adjustToxLoss(-1, 0)
 
 
 

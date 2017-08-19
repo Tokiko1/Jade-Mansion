@@ -276,8 +276,6 @@ BLIND     // can't see anything
 	if(!isinhands)
 		if(damaged_clothes)
 			. += image("icon"='icons/effects/item_damage.dmi', "icon_state"="damagedgloves")
-		if(blood_DNA)
-			. += image("icon"='icons/effects/blood.dmi', "icon_state"="bloodyhands")
 
 /obj/item/clothing/gloves/update_clothes_damaged_state(damaging = TRUE)
 	..()
@@ -304,8 +302,6 @@ BLIND     // can't see anything
 	if(!isinhands)
 		if(damaged_clothes)
 			. += image("icon"='icons/effects/item_damage.dmi', "icon_state"="damagedhelmet")
-		if(blood_DNA)
-			. += image("icon"='icons/effects/blood.dmi', "icon_state"="helmetblood")
 
 /obj/item/clothing/head/update_clothes_damaged_state(damaging = TRUE)
 	..()
@@ -329,8 +325,6 @@ BLIND     // can't see anything
 		if(body_parts_covered & HEAD)
 			if(damaged_clothes)
 				. += image("icon"='icons/effects/item_damage.dmi', "icon_state"="damagedmask")
-			if(blood_DNA)
-				. += image("icon"='icons/effects/blood.dmi', "icon_state"="maskblood")
 
 
 //Mask
@@ -351,8 +345,6 @@ BLIND     // can't see anything
 		if(body_parts_covered & HEAD)
 			if(damaged_clothes)
 				. += image("icon"='icons/effects/item_damage.dmi', "icon_state"="damagedmask")
-			if(blood_DNA)
-				. += image("icon"='icons/effects/blood.dmi', "icon_state"="maskblood")
 
 /obj/item/clothing/mask/update_clothes_damaged_state(damaging = TRUE)
 	..()
@@ -417,16 +409,8 @@ BLIND     // can't see anything
 /obj/item/clothing/shoes/worn_overlays(isinhands = FALSE)
 	. = list()
 	if(!isinhands)
-		var/bloody = 0
-		if(blood_DNA)
-			bloody = 1
-		else
-			bloody = bloody_shoes[BLOOD_STATE_HUMAN]
-
 		if(damaged_clothes)
 			. += image("icon"='icons/effects/item_damage.dmi', "icon_state"="damagedshoe")
-		if(bloody)
-			. += image("icon"='icons/effects/blood.dmi', "icon_state"="shoeblood")
 
 /obj/item/clothing/shoes/equipped(mob/user, slot)
 	. = ..()
@@ -480,8 +464,6 @@ BLIND     // can't see anything
 	if(!isinhands)
 		if(damaged_clothes)
 			. += image("icon"='icons/effects/item_damage.dmi', "icon_state"="damaged[blood_overlay_type]")
-		if(blood_DNA)
-			. += image("icon"='icons/effects/blood.dmi', "icon_state"="[blood_overlay_type]blood")
 
 /obj/item/clothing/suit/update_clothes_damaged_state(damaging = TRUE)
 	..()
@@ -559,8 +541,6 @@ BLIND     // can't see anything
 
 		if(damaged_clothes)
 			. += image("icon"='icons/effects/item_damage.dmi', "icon_state"="damageduniform")
-		if(blood_DNA)
-			. += image("icon"='icons/effects/blood.dmi', "icon_state"="uniformblood")
 		if(hastie)
 			var/tie_color = hastie.item_color
 			if(!tie_color)

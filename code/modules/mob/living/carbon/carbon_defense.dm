@@ -40,31 +40,6 @@
 	if(I.force)
 		apply_damage(I.force, I.damtype, affecting)
 		damage_clothes(I.force, I.damtype, "melee", affecting.body_zone)
-		if(I.damtype == BRUTE && affecting.status == BODYPART_ORGANIC)
-			if(prob(33))
-				I.add_mob_blood(src)
-				var/turf/location = get_turf(src)
-				add_splatter_floor(location)
-				if(get_dist(user, src) <= 1)	//people with TK won't get smeared with blood
-					user.add_mob_blood(src)
-
-				if(affecting.body_zone == "head")
-					if(wear_mask)
-						wear_mask.add_mob_blood(src)
-						update_inv_wear_mask()
-					if(wear_neck)
-						wear_neck.add_mob_blood(src)
-						update_inv_neck()
-					if(head)
-						head.add_mob_blood(src)
-						update_inv_head()
-
-		//dismemberment
-		var/probability = I.get_dismemberment_chance(affecting)
-		if(prob(probability))
-			if(affecting.dismember(I.damtype))
-				I.add_mob_blood(src)
-				playsound(get_turf(src), I.get_dismember_sound(), 80, 1)
 		return TRUE //successful attack
 
 /mob/living/carbon/attack_drone(mob/living/simple_animal/drone/user)

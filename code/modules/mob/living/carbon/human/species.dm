@@ -17,10 +17,10 @@
 	var/default_color = "#FFF"	// if alien colors are disabled, this is the color that will be used by that race
 
 	var/sexes = 1		// whether or not the race has sexual characteristics. at the moment this is only 0 for skeletons and shadows
-	
+
 	var/face_y_offset = 0
 	var/hair_y_offset = 0
-	
+
 	var/hair_color = null	// this allows races to have specific hair colors... if null, it uses the H's hair/facial hair colors. if "mutcolor", it uses the H's mutant_color
 	var/hair_alpha = 255	// the alpha used by the hair. 255 is completely solid, 0 is transparent.
 
@@ -111,7 +111,7 @@
 		var/obj/item/thing = C.get_item_by_slot(slot_id)
 		if(thing && (!thing.species_exception || !is_type_in_list(src,thing.species_exception)))
 			C.dropItemToGround(thing)
-	
+
 	// this needs to be FIRST because qdel calls update_body which checks if we have DIGITIGRADE legs or not and if not then removes DIGITIGRADE from species_traits
 	if(("legs" in C.dna.species.mutant_bodyparts) && C.dna.features["legs"] == "Digitigrade Legs")
 		species_traits += DIGITIGRADE
@@ -855,35 +855,15 @@
 					H.emote("collapse")
 				H.Weaken(10)
 				to_chat(H, "<span class='danger'>You feel weak.</span>")
-			switch(H.radiation)
-				if(50 to 75)
-					if(prob(5))
-						if(!H.weakened)
-							H.emote("collapse")
-						H.Weaken(3)
-						to_chat(H, "<span class='danger'>You feel weak.</span>")
-
-					if(prob(15))
-						if(!( H.hair_style == "Shaved") || !(H.hair_style == "Bald") || (HAIR in species_traits))
-							to_chat(H, "<span class='danger'>Your hair starts to fall out in clumps...<span>")
-							addtimer(CALLBACK(src, .proc/go_bald, H), 50)
-
-				if(75 to 100)
-					if(prob(1))
-						to_chat(H, "<span class='danger'>You mutate!</span>")
-						H.randmutb()
-						H.emote("gasp")
-						H.domutcheck()
+			if(H.radiation > 50)
+				if(prob(5))
+					if(!H.weakened)
+						H.emote("collapse")
+					H.Weaken(3)
+					to_chat(H, "<span class='danger'>You feel weak.</span>")
 		return 0
 	H.radiation = 0
 	return 1
-
-/datum/species/proc/go_bald(mob/living/carbon/human/H)
-	if(QDELETED(H))	//may be called from a timer
-		return
-	H.facial_hair_style = "Shaved"
-	H.hair_style = "Bald"
-	H.update_hair()
 
 ////////////////
 // MOVE SPEED //
@@ -985,6 +965,7 @@
 /datum/species/proc/grab(mob/living/carbon/human/user, mob/living/carbon/human/target, datum/martial_art/attacker_style)
 	if(target.check_block())
 		target.visible_message("<span class='warning'>[target] blocks [user]'s grab attempt!</span>")
+		target.handle_counter(target, user)
 		return 0
 	if(attacker_style && attacker_style.grab_act(user,target))
 		return 1
@@ -999,6 +980,7 @@
 /datum/species/proc/harm(mob/living/carbon/human/user, mob/living/carbon/human/target, datum/martial_art/attacker_style)
 	if(target.check_block())
 		target.visible_message("<span class='warning'>[target] blocks [user]'s attack!</span>")
+		target.handle_counter(target, user)
 		return 0
 	if(attacker_style && attacker_style.harm_act(user,target))
 		return 1
@@ -1064,6 +1046,7 @@
 		return FALSE
 	else if(target.check_block())
 		target.visible_message("<span class='warning'>[target] blocks [user]'s disarm attempt!</span>")
+		target.handle_counter(target, user)
 		return 0
 	if(attacker_style && attacker_style.disarm_act(user,target))
 		return 1

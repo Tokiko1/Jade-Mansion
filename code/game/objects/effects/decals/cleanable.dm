@@ -8,6 +8,8 @@
 	messy_thing = 1
 
 /obj/effect/decal/cleanable/Initialize(mapload)
+	if(!isopenfloorturf(loc))
+		qdel(src)
 	if (random_icon_states && length(src.random_icon_states) > 0)
 		src.icon_state = pick(src.random_icon_states)
 	create_reagents(300)

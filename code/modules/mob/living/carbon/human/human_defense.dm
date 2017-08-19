@@ -121,10 +121,34 @@
 			return 1
 	return 0
 
+/mob/living/carbon/human/proc/handle_counter(mob/living/carbon/human/A, mob/living/carbon/human/D)
+	if(stat && weakened && stunned)
+		return 0
+	if(martial_art && martial_art.counter && (!get_active_held_item() || martial_art.armed_counter_override))
+		if(prob(martial_art.counter_chance))
+			martial_art.counter_act(A,D)
+			return 1
+		else
+			return 0
+	if(get_active_held_item())
+		var/obj/item/helditem = get_active_held_item()
+		if(prob(helditem.counter_chance))
+			helditem.counter_act(A,D)
+			return 1
+		else
+			return 0
+	return 0
+
 /mob/living/carbon/human/proc/check_block()
-	if(martial_art && martial_art.block_chance \
-	&& prob(martial_art.block_chance) && (in_throw_mode || martial_art.easy_block) \
-	&& !stat && !weakened && !stunned)
+	var/chance_to_block = 0
+	if(get_active_held_item() && !stat && !weakened && !stunned)
+		var/obj/item/helditem = get_active_held_item()
+		chance_to_block = helditem.melee_block
+
+	if(martial_art && martial_art.block_chance && (!get_active_held_item() || martial_art.armed_melee_block) && (in_throw_mode || martial_art.easy_block) && !stat && !weakened && !stunned)
+		chance_to_block = max(martial_art.block_chance, chance_to_block)
+
+	if(prob(chance_to_block))
 		return TRUE
 	return FALSE
 

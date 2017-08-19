@@ -37,6 +37,10 @@
 				var/datum/martial_art/cqc/D = new(null)
 				martialtoadd.Add(D)
 
+			if("Heron Wrestling")
+				var/datum/martial_art/wrestling/D = new(null)
+				martialtoadd.Add(D)
+
 			if("Combat Clothes")
 				if(traitholder.w_uniform)
 					var/obj/item/clothing/uniform_A = traitholder.w_uniform

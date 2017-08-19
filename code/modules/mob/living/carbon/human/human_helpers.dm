@@ -89,7 +89,6 @@
 		. += belt
 	return
 
-
 /mob/living/carbon/human/canBeHandcuffed()
 	if(get_num_arms() >= 2)
 		return TRUE

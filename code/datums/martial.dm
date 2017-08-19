@@ -6,12 +6,19 @@
 	var/temporary = 0
 	var/datum/martial_art/base = null // The permanent style
 	var/deflection_chance = 0 //Chance to deflect projectiles
-	var/block_chance = 0 //Chance to block melee attacks using items while on throw mode.
+	var/block_chance = 0 //Chance to block melee attacks
+	var/armed_melee_block = 0 //if 0, holding an item in your active hand will override the melee block chance, if 1, both item and martial block checks will occur separately
 	var/easy_block = 0 //If 1, melee attacks can be blocked without needing to be on throw mode
 	var/restraining = 0 //used in cqc's disarm_act to check if the disarmed is being restrained and so whether they should be put in a chokehold or not
 	var/help_verb = null
 	var/no_guns = FALSE
+	var/counter = 0 //if 1, calls the counter proc on a successfull block
+	var/armed_counter_override = 0 //if 1, overrides the items counter attack
+	var/counter_chance = 0
 	var/allow_temp_override = TRUE //if this martial art can be overridden by temporary martial arts
+
+/datum/martial_art/proc/counter_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
+	return 0
 
 /datum/martial_art/proc/disarm_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
 	return 0
@@ -144,15 +151,6 @@
 			D.forcesay(GLOB.hit_appends)
 	return 1
 
-/mob/living/carbon/human/proc/wrestling_help()
-	set name = "Recall Teachings"
-	set desc = "Remember how to wrestle."
-	set category = "Wrestling"
-
-	to_chat(usr, "<b><i>You flex your muscles and have a revelation...</i></b>")
-	to_chat(usr, "<span class='notice'>Clinch</span>: Grab. Passively gives you a chance to immediately aggressively grab someone. Not always successful.")
-	to_chat(usr, "<span class='notice'>Suplex</span>: Disarm someone you are grabbing. Suplexes your target to the floor. Greatly injures them and leaves both you and your target on the floor.")
-	to_chat(usr, "<span class='notice'>Advanced grab</span>: Grab. Passively causes stamina damage when grabbing someone.")
 
 #define TORNADO_COMBO "HHD"
 #define THROWBACK_COMBO "DHD"
