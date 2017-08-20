@@ -1057,6 +1057,10 @@
 			target.w_uniform.add_fingerprint(user)
 		var/obj/item/bodypart/affecting = target.get_bodypart(ran_zone(user.zone_selected))
 		var/randn = rand(1, 100)
+		var/obj/item/I = target.get_active_held_item()
+		if(I)
+			randn += I.disarm_chance_mod
+
 		if(randn <= 25)
 			playsound(target, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
 			target.visible_message("<span class='danger'>[user] has pushed [target]!</span>",
@@ -1067,7 +1071,7 @@
 			return
 
 		if(randn <= 60)
-			var/obj/item/I = null
+
 			if(target.pulling)
 				to_chat(target, "<span class='warning'>[user] has broken [target]'s grip on [target.pulling]!</span>")
 				target.stop_pulling()

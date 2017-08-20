@@ -318,7 +318,7 @@ Guard
 //	backpack_contents = list(a, a)
 //	r_hand = a
 //	l_hand = a
-//	l_pocket = /obj/item/device/laser_pointer
+	l_pocket = /obj/item/weapon/disabler_knife
 	r_pocket = /obj/item/doorkey/
 
 //	implants = list(/obj/item/weapon/implant/mindshield)

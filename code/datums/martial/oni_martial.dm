@@ -46,11 +46,14 @@
 	H.martial_art.streak = "oni_flying"
 
 /datum/martial_art/oni/proc/oni_flying(mob/living/carbon/human/A, mob/living/carbon/human/D)
+	if(A == D)
+		return
+
 	D.visible_message("<span class='warning'>[A] hits [D] with an open palm!</span>", \
 					  	"<span class='userdanger'>[A] hits you with an open palm!</span>")
 	playsound(get_turf(A), 'sound/effects/hit_kick.ogg', 50, 1, -1)
 	D.apply_damage(rand(10, 15), STAMINA)
-	D.Weaken(3)
+	D.Weaken(5)
 	A.next_click = world.time + CLICK_CD_ONIPUNCH
 	var/atom/throw_target = get_edge_target_turf(D, get_dir(D, get_step_away(D, A)))
 	D.throw_at(throw_target, rand(3, 7), 4,A)

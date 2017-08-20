@@ -56,6 +56,33 @@
 /mob/living/proc/handle_breathing(times_fired)
 	return
 
+/mob/living/proc/handle_internal_lifeform(mob/lifeform_inside_me, breath_request) //don't let the name confuse you, this also handles mobs inside your hands and items(ie backpack on your back, boxes you carry in your hand etc
+	if(breath_request>0)
+		var/datum/gas_mixture/environment = return_air()
+		var/breath_percentage = BREATH_VOLUME / environment.return_volume()
+		return remove_air(environment.total_moles() * breath_percentage)
+	else
+		return null
+
+/mob/living/assume_air(datum/gas_mixture/giver)
+	if(loc)
+		return loc.assume_air(giver)
+	else
+		return null
+
+/mob/living/remove_air(amount)
+	if(loc)
+		return loc.remove_air(amount)
+	else
+		return null
+
+/mob/living/return_air()
+	if(loc)
+		return loc.return_air()
+	else
+		return null
+
+
 /mob/living/proc/handle_mutations_and_radiation()
 	radiation = 0 //so radiation don't accumulate in simple animals
 	return

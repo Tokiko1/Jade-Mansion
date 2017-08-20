@@ -17,7 +17,7 @@
 	var/counter_chance = 0
 	var/allow_temp_override = TRUE //if this martial art can be overridden by temporary martial arts
 
-/datum/martial_art/proc/counter_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
+/datum/martial_art/proc/counter_act(mob/living/carbon/human/A, mob/living/D)
 	return 0
 
 /datum/martial_art/proc/disarm_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
