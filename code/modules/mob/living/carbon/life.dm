@@ -36,6 +36,10 @@
 			var/obj/location_as_object = loc
 			location_as_object.handle_internal_lifeform(src,0)
 
+		else if(istype(loc, /mob/living/))
+			var/mob/living/location_as_mob = loc
+			location_as_mob.handle_internal_lifeform(src,0)
+
 //Second link in a breath chain, calls check_breath()
 /mob/living/carbon/proc/breathe()
 	if(reagents.has_reagent("lexorin"))
@@ -70,6 +74,10 @@
 				var/obj/loc_as_obj = loc
 				breath = loc_as_obj.handle_internal_lifeform(src, BREATH_VOLUME)
 
+			else if(istype(loc, /mob/living/))
+				var/mob/living/location_as_mob = loc
+				breath = location_as_mob.handle_internal_lifeform(src,BREATH_VOLUME)
+
 			else if(isturf(loc)) //Breathe from loc as turf
 				var/breath_moles = 0
 				if(environment)
@@ -80,6 +88,10 @@
 			if(istype(loc, /obj/))
 				var/obj/loc_as_obj = loc
 				loc_as_obj.handle_internal_lifeform(src,0)
+
+			else if(istype(loc, /mob/living/))
+				var/mob/living/location_as_mob = loc
+				location_as_mob.handle_internal_lifeform(src,0)
 
 	check_breath(breath)
 

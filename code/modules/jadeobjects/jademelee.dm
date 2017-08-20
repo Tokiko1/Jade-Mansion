@@ -1,8 +1,8 @@
 /obj/item/weapon/disabler_blade
 	name = "disabler blade"
-	desc = "A sword made using a strange material called Diyurite which is able to phase through objects and people. Standard equipment for law enforcement. Although this material causes no injuries or pain, the victim still feels the unpleasant sensation of the cut. According to ancient legends, oni use tools made out of this material to cut people over and over without injuring them in the lower naraka."
+	desc = "A Diyurite self-defense sword made for subdueing targets non-harmfully. It comes with an intergrated guard assist system that allows even untrained users to block, counter and even disarm incoming melee attacks effectively. Blades like these are standard equipment for Jade Empire police."
 	icon = 'icons/obj/jadeweapons.dmi'
-	icon_state = "disabler_blade2"
+	icon_state = "disabler_blade1"
 	item_state = "disabler_blade"
 	force = 9
 	throwforce = 25
@@ -14,8 +14,9 @@
 	attack_verb = list("sliced", "cut", "punished", "stabbed")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 
-	melee_block = 60
+	melee_block = 70
 	counter_chance = 80
+	disarm_chance_mod = 50
 	var/counter_disarm_chance = 20
 	var/attack_chance = 50
 
@@ -39,17 +40,15 @@
 		A.visible_message("<span class='warning'>[A] counters the attack by [D], but [D] dodges out of the way!</span>")
 		return 0
 
-
-
 	return 1
 
 
 /obj/item/weapon/disabler_knife
 	name = "disabler knife"
-	desc = "A knife made using a strange material called Diyurite which is able to phase through objects and people. Unlike its blade variant, this one is not quite capable of counter attacks, but has the same disabler strenght."
+	desc = "A self defense Diyurite disabler knife. It comes with an intergrated guard assist system that allows even untrained users to block incoming melee attacks. Although it can block, it lacks the counter and disarm functionality of its blade versions."
 	icon = 'icons/obj/jadeweapons.dmi'
 	icon_state = "disabler_knife1"
-	item_state = "disabler_blade"
+	item_state = "disabler_knife"
 	force = 9
 	throwforce = 25
 	flags = CONDUCT
@@ -61,3 +60,15 @@
 
 	melee_block = 40
 	counter_chance = 0
+	disarm_chance_mod = 10
+
+/obj/item/weapon/disabler_knife/highpower
+	name = "high power disabler knife"
+	desc = "A self defense Diyurite disabler knife. This one is for advanced users, it replaced the integrated guard assist with a much more effective disabler core."
+	icon = 'icons/obj/jadeweapons.dmi'
+	icon_state = "disabler_knife1"
+	item_state = "disabler_knife"
+	force = 18
+
+	melee_block = 20
+	disarm_chance_mod = 5
