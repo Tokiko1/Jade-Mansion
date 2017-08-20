@@ -12,11 +12,11 @@
 	slot_flags = SLOT_BELT | SLOT_BACK
 	materials = list(MAT_METAL=50)
 	attack_verb = list("sliced", "cut", "punished", "stabbed")
-	hitsound = 'sound/weapons/bladeslice.ogg'
+	hitsound = 'sound/weapons/emitter2.ogg'
 
 	melee_block = 70
 	counter_chance = 80
-	disarm_chance_mod = 50
+	disarm_chance_mod = 60
 	var/counter_disarm_chance = 20
 	var/attack_chance = 50
 
@@ -49,26 +49,26 @@
 	icon = 'icons/obj/jadeweapons.dmi'
 	icon_state = "disabler_knife1"
 	item_state = "disabler_knife"
-	force = 9
+	force = 8
 	throwforce = 25
 	flags = CONDUCT
 	damtype = STAMINA
 	w_class = WEIGHT_CLASS_TINY
 	materials = list(MAT_METAL=50)
 	attack_verb = list("sliced", "cut", "punished", "stabbed")
-	hitsound = 'sound/weapons/bladeslice.ogg'
+	hitsound = 'sound/weapons/emitter2.ogg'
 
-	melee_block = 40
+	melee_block = 30
 	counter_chance = 0
-	disarm_chance_mod = 10
+	disarm_chance_mod = 30
 
 /obj/item/weapon/disabler_knife/highpower
 	name = "high power disabler knife"
 	desc = "A self defense Diyurite disabler knife. This one is for advanced users, it replaced the integrated guard assist with a much more effective disabler core."
 	icon = 'icons/obj/jadeweapons.dmi'
-	icon_state = "disabler_knife1"
+	icon_state = "disabler_knife2"
 	item_state = "disabler_knife"
 	force = 18
 
-	melee_block = 20
-	disarm_chance_mod = 5
+	melee_block = 10
+	disarm_chance_mod = 10

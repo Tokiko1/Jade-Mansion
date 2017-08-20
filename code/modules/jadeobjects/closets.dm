@@ -303,6 +303,8 @@
 	new /obj/item/weapon/storage/box/zipties(src)
 	new /obj/item/clothing/shoes/bootcuffs(src)
 	new /obj/item/clothing/shoes/bootcuffs(src)
+	new /obj/item/device/detective_scanner(src)
+	new /obj/item/device/detective_scanner(src)
 	new /obj/item/clothing/neck/remote_collar(src)
 	new /obj/item/clothing/neck/remote_collar(src)
 	new /obj/item/clothing/neck/remote_collar(src)
@@ -314,7 +316,14 @@
 		else
 			new /obj/item/collar_remote/unsafe(src)
 
-
+/obj/structure/closet/jademansion/guard_weapons/PopulateContents()
+	new /obj/item/device/detective_scanner(src)
+	new /obj/item/weapon/disabler_knife(src)
+	new /obj/item/weapon/disabler_knife(src)
+	new /obj/item/weapon/disabler_knife(src)
+	new /obj/item/weapon/disabler_knife/highpower(src)
+	new /obj/item/weapon/disabler_knife/highpower(src)
+	new /obj/item/weapon/disabler_knife/highpower(src)
 
 
 
@@ -324,5 +333,3 @@
 /obj/structure/closet/crate/jademansion/randomchance1
 /obj/structure/closet/crate/jademansion/randomchance2
 /obj/structure/closet/crate/jademansion/randomchance3
-
-
