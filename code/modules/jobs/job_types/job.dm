@@ -260,6 +260,12 @@
 			gloves = /obj/item/clothing/gloves/color/latex/nitrile
 			shoes = /obj/item/clothing/shoes/jackboots
 
+		if(CHEMISTMAID3)
+			uniform = /obj/item/clothing/under/nurse3
+			head = /obj/item/clothing/head/nurse_cap1
+			gloves = /obj/item/clothing/gloves/color/latex/nitrile
+			shoes = /obj/item/clothing/shoes/jackboots
+
 
 		if(BUTLER1)
 			uniform = /obj/item/clothing/under/suit1
