@@ -368,3 +368,63 @@
 	desc = "Creates and dispenses mutagen."
 	dispensable_reagents = list("mutagen")
 	emagged_reagents = list("plasma")
+
+/obj/machinery/chem_dispenser/easy_chem
+	name = "medicine dispenser"
+	desc = "Dispenses medicine and chemicals."
+	dispensable_reagents = list(
+		"leporazine",
+		"synaptizine",
+		"synaphydramine",
+		"inacusiate",
+		"cryoxadone",
+		"silver_sulfadiazine",
+		"styptic_powder",
+		"salglu_solution",
+		"charcoal",
+		"omnizine",
+		"calomel",
+		"sal_acid",
+		"perfluorodecalin",
+		"ephedrine",
+		"diphenhydramine",
+		"morphine",
+		"oculine",
+		"atropine",
+		"antihol",
+		"stimulants",
+		"insulin",
+		"haloperidol",
+		"water",
+		"lube",
+		"stabilizing_agent",
+		"thermite",
+		"blackpowder",
+		"fluorosurfactant"
+
+	)
+	emagged_reagents = list()
+
+/obj/machinery/chem_dispenser/easy_food
+	name = "condiment dispenser"
+	desc = "Dispenses food related substances."
+	dispensable_reagents = list(
+		"sugar",
+		"soysauce",
+		"ketchup",
+		"capsaicin",
+		"frostoil",
+		"condensedcapsaicin",
+		"sodiumchloride",
+		"blackpepper",
+		"cocoa",
+		"sprinkles",
+		"cornoil",
+		"enzyme",
+		"eggyolk",
+		"corn_syrup",
+		"corn_starch",
+		"honey",
+		"water"
+	)
+	emagged_reagents = list()

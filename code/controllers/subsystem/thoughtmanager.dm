@@ -45,8 +45,8 @@ SUBSYSTEM_DEF(thoughtmanager)
 
 
 /datum/controller/subsystem/thoughtmanager/fire()
-	update_tantrums_candidates()
-	handle_tantrums()
+//	update_tantrums_candidates()
+//	handle_tantrums()
 	handle_events()
 
 /datum/controller/subsystem/thoughtmanager/proc/handle_events()
@@ -198,8 +198,8 @@ SUBSYSTEM_DEF(thoughtmanager)
 	return
 
 
-/datum/controller/subsystem/thoughtmanager/proc/handle_tantrums()
-	for(var/mob/living/carbon/human/player in GLOB.mental_break_candicates)
+///datum/controller/subsystem/thoughtmanager/proc/handle_tantrums()
+/*	for(var/mob/living/carbon/human/player in GLOB.mental_break_candicates)
 		var/breakchance = tantrum_chance
 
 		if(prob(breakchance))
@@ -235,4 +235,4 @@ SUBSYSTEM_DEF(thoughtmanager)
 				GLOB.mental_break_candicates.Remove(player)
 		else
 			if(player.total_mood < THRESHOLD_MENTAL_LIGHT && !player.tantrum_active && player.sleeping == 0)
-				GLOB.mental_break_candicates.Add(player)
+				GLOB.mental_break_candicates.Add(player) */

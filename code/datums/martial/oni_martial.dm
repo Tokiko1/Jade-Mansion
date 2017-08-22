@@ -89,9 +89,10 @@
 		if(distfromowner == 0)
 			if(isliving(AM))
 				var/mob/living/M = AM
-				M.Weaken(5)
+				M.Stun(5)
 				M.adjustBruteLoss(5)
 				to_chat(M, "<span class='userdanger'>You're slammed into the floor by [owner]!</span>")
+				M.Flatten(owner)
 		else
 			if(isliving(AM))
 				var/mob/living/M = AM

@@ -70,10 +70,13 @@
 		UnFlat()
 
 /obj/item/flat/attack_self(mob/user)
+	to_chat(user, "<span class='notice'>You start to stretch out [src].</span>")
 	if(do_after(user,(time_to_normalize), target = src, progress = 0))
 		if(!user || !src || user.stat != CONSCIOUS || user.restrained())
 			return
 		UnFlat()
+	else
+		to_chat(user, "<span class='warning'>You let go of [src].</span>")
 
 /obj/item/flat/Destroy()
 	if(contents && contents.len)
