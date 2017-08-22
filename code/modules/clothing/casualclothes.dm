@@ -34,6 +34,16 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = 0
 
+/obj/item/clothing/under/whitedress3
+	name = "white dress"
+	desc = "A casual white dress."
+	icon_state = "whitedress3"
+	item_color = "whitedress3"
+	body_parts_covered = CHEST|GROIN|ARMS
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = 0
+
+
 /obj/item/clothing/under/bluedress1
 	name = "blue dress"
 	desc = "A casual navy dress."
@@ -52,6 +62,14 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = 0
 
+/obj/item/clothing/under/blackdress2
+	name = "black dress"
+	desc = "A short shoulderless dress. Ideal for formal occasions. Or you can wear it casually too."
+	icon_state = "blackdress2"
+	item_color = "blackdress2"
+	body_parts_covered = CHEST|GROIN|ARMS
+	fitted = FEMALE_UNIFORM_TOP
+	can_adjust = 0
 
 /obj/item/clothing/under/swimsuitblack1
 	name = "black swimsuit"
