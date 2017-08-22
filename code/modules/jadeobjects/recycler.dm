@@ -24,6 +24,9 @@
 	var/linked_conveyor_state = 0 //working var
 	var/r_autowait = 0 //working variable
 
+	var/mob_auto_unflat
+	var/mob_flat_override
+
 	var/recycler_ID
 	var/conveyor_id //set this to the conveyor(s) below it, if it exists
 
@@ -110,7 +113,7 @@
 
 /obj/machinery/waste_recycler/proc/RecyclerCrushStuff()
 	for(var/mob/living/mobS in get_turf(src))
-		mobS.Flatten(src)
+		mobS.Flatten(flat_source = src, f_override = mob_flat_override, autounflating = mob_auto_unflat)
 	for(var/obj/item/itemS in get_turf(src))
 		if(!istype(itemS, /obj/item/flat) && !istype(itemS, /obj/item/material_pile) && !istype(itemS, /obj/item/stack/)) //turn this into a disallowed typecache or something
 			var/list/stuffinitem = itemS.GetAllContents()

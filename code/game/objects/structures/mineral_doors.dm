@@ -99,6 +99,8 @@
 
 	flick("[initial_state]opening",src)
 	sleep(10)
+	if(!src)
+		return
 	density = 0
 	state = 1
 	air_update_turf(1)
@@ -116,6 +118,8 @@
 	while(state)
 		var/people_near_door = 0
 		sleep(10)
+		if(!src)
+			return
 		for(var/mob/living/L in orange(1,src))
 			if(L.stat == CONSCIOUS)
 				people_near_door++
@@ -129,14 +133,16 @@
 /obj/structure/mineral_door/proc/Close()
 	if(isSwitchingStates || state != 1)
 		return
+	density = 1
 	var/turf/T = get_turf(src)
 	for(var/mob/living/L in T)
 		return
 	isSwitchingStates = 1
 	flick("[initial_state]closing",src)
 	sleep(10)
+	if(!src)
+		return
 	playsound(loc, closeSound, 100, 1)
-	density = 1
 	set_opacity(initial(opacity))
 	state = 0
 	air_update_turf(1)
