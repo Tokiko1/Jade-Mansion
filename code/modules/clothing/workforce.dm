@@ -106,8 +106,8 @@
 	maid_uniform = 1
 
 /obj/item/clothing/under/nurse2
-	name = "porcelain style nurse dress"
-	desc = "The official nurse dress of the Porcelain Empire. Ideal for doctors, chemists and nurses."
+	name = "wood style nurse dress"
+	desc = "The official nurse dress of the Wood Empire. Ideal for doctors, chemists and nurses."
 	icon_state = "nurse2"
 	item_color = "nurse2"
 	body_parts_covered = CHEST|GROIN|ARMS
@@ -116,8 +116,8 @@
 	maid_uniform = 1
 
 /obj/item/clothing/under/nurse3
-	name = "wood style nurse dress"
-	desc = "The official nurse dress of the Wood Empire. Ideal for doctors, chemists and nurses."
+	name = "porcelain style nurse dress"
+	desc = "The official nurse dress of the Porcelain Empire. Ideal for doctors, chemists and nurses."
 	icon_state = "nurse3"
 	item_color = "nurse3"
 	body_parts_covered = CHEST|GROIN|ARMS
