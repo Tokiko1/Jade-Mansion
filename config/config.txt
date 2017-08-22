@@ -33,43 +33,43 @@ BAN_LEGACY_SYSTEM
 #USE_ACCOUNT_AGE_FOR_JOBS
 
 ## log OOC channel
-LOG_OOC
+#LOG_OOC
 
 ## log client Say
-LOG_SAY
+#LOG_SAY
 
 ## log admin actions
-LOG_ADMIN
+#LOG_ADMIN
 
 ## log admin chat
-LOG_ADMINCHAT
+#LOG_ADMINCHAT
 
 ## log client access (logon/logoff)
-LOG_ACCESS
+#LOG_ACCESS
 
 ## log game actions (start of round, results, etc.)
-LOG_GAME
+#LOG_GAME
 
 ## log player votes
-LOG_VOTE
+#LOG_VOTE
 
 ## log client Whisper
-LOG_WHISPER
+#LOG_WHISPER
 
 ## log emotes
-LOG_EMOTE
+#LOG_EMOTE
 
 ## log attack messages
-LOG_ATTACK
+#LOG_ATTACK
 
 ## log pda messages
-LOG_PDA
+#LOG_PDA
 
 ## log prayers
-LOG_PRAYER
+#LOG_PRAYER
 
 ## log lawchanges
-LOG_LAW
+#LOG_LAW
 
 ## log all Topic() calls (for use by coders in tracking down Topic issues)
 # LOG_HREFS
