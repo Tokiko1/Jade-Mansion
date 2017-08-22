@@ -37,7 +37,7 @@
 	girder_finish_type = /obj/item/stack/sheet/mineral/wood
 
 	density_broken = 1 //density and opacity of the states
-	density_hole = 1
+	density_hole = 0
 	opacity_broken = 0
 	opacity_hole = 0
 	density_broken_debris = 1 //okay okay, these should be a list but it's not like there will be thousands of these, ok?

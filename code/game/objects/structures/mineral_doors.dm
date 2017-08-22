@@ -137,7 +137,7 @@
 	sleep(10)
 	playsound(loc, closeSound, 100, 1)
 	density = 1
-	set_opacity(1)
+	set_opacity(initial(opacity))
 	state = 0
 	air_update_turf(1)
 	update_icon()
@@ -271,6 +271,13 @@
 	haslock = 1
 	autoclose = 1
 	name = "general access door"
+
+/obj/structure/mineral_door/wood/lock/transparent
+	name = "reinforced glass door"
+	icon_state = "diamond"
+	obj_integrity = 1000
+	max_integrity = 1000
+	opacity = 0
 
 /obj/structure/mineral_door/wood/lock/paper
 	icon_state = "paperframe"

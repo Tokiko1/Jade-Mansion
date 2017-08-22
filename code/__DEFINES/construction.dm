@@ -99,10 +99,13 @@
 #define MAT_GOLD		"$gold"
 #define MAT_DIAMOND		"$diamond"
 #define MAT_URANIUM		"$uranium"
+#define MAT_TITANIUM	"$titanium"
+#define MAT_PLASTIC		"$plastic"
+
 #define MAT_PLASMA		"$plasma"
 #define MAT_BLUESPACE	"$bluespace"
 #define MAT_BANANIUM	"$bananium"
-#define MAT_TITANIUM	"$titanium"
+
 #define MAT_BIOMASS		"$biomass"
 //The amount of materials you get from a sheet of mineral like iron/diamond/glass etc
 #define MINERAL_MATERIAL_AMOUNT 2000

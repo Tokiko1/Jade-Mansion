@@ -80,7 +80,6 @@
 	var/material_amount = get_item_material_amount(I)
 	if(!material_amount || !has_space(material_amount))
 		return 0
-
 	insert_materials(I, multiplier)
 	return material_amount
 
@@ -227,6 +226,21 @@
 	name = "Glass"
 	id = MAT_GLASS
 	sheet_type = /obj/item/stack/sheet/glass
+
+/datum/material/wood
+	name = "Wood"
+	id = MAT_WOOD
+	sheet_type = /obj/item/stack/sheet/mineral/wood
+
+/datum/material/stone
+	name = "Stone"
+	id = MAT_STONE
+ //TODO: Add sheet
+
+/datum/material/plastic
+	name = "Plastic"
+	id = MAT_PLASTIC
+	sheet_type = /obj/item/stack/sheet/plastic
 
 /datum/material/silver
 	name = "Silver"
