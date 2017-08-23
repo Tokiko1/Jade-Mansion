@@ -12,7 +12,7 @@
 	var/item_recycle_sound = 'sound/items/Welder.ogg'
 
 /obj/machinery/waste_combiner/Initialize()
-	materials = new /datum/material_container(src, list(MAT_METAL, MAT_GLASS, MAT_PLASTIC, MAT_WOOD, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_URANIUM, MAT_STONE, MAT_TITANIUM))
+	materials = new /datum/material_container(src, list(MAT_METAL, MAT_GLASS, MAT_CLOTH, MAT_PLASTIC, MAT_WOOD, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_URANIUM, MAT_STONE, MAT_TITANIUM))
 	materials.max_amount = 100000
 
 /obj/machinery/waste_combiner/Bumped(atom/movable/AM)
@@ -26,7 +26,7 @@
 
 /obj/machinery/waste_combiner/proc/eat(atom/AM0, sound=TRUE)
 	var/list/to_eat
-	if(istype(AM0, /obj/item) && !istype(AM0, /obj/item/flat))
+	if(istype(AM0, /obj/item/material_pile))
 		to_eat = AM0.GetAllContents()
 	else
 		to_eat = list(AM0)

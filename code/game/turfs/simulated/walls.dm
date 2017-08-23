@@ -15,8 +15,8 @@
 	var/girder_type = /obj/structure/jadegirder
 	var/disassembly_tool = /obj/item/weapon/crowbar
 	var/list/debris = list(/obj/item/debris/stonemetal, /obj/item/debris/stone)
-	var/debris_amount_min = 2
-	var/debris_amount_max = 5
+	var/debris_amount_min = 7
+	var/debris_amount_max = 10
 	var/broken_turf = /turf/open/tiles/metaltile
 
 	canSmoothWith = list(/turf/closed/wall/,/turf/closed/wall/strong)

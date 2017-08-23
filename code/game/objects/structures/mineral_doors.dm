@@ -280,7 +280,7 @@
 
 /obj/structure/mineral_door/wood/lock/transparent
 	name = "reinforced glass door"
-	icon_state = "diamond"
+	icon_state = "glass"
 	obj_integrity = 1000
 	max_integrity = 1000
 	opacity = 0

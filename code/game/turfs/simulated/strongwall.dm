@@ -15,8 +15,8 @@
 	girder_type = /obj/structure/jadegirder/strong
 	disassembly_tool = /obj/item/weapon/weldingtool
 	debris = list(/obj/item/debris/stonemetal, /obj/item/debris/stone)
-	debris_amount_min = 5
-	debris_amount_max = 10
+	debris_amount_min = 10
+	debris_amount_max = 20
 	broken_turf = /turf/open/tiles/metaltile
 
 /obj/structure/jadegirder/strong

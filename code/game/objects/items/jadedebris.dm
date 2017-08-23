@@ -5,6 +5,9 @@
 	icon_state = ""
 	w_class = WEIGHT_CLASS_BULKY
 	messy_thing = 1
+	throwforce = 9
+	throw_speed = 6
+	throw_range = 10
 	var/list/possible_icons = list() //if anything is added here, the debris picks a random icon_state from this list. if left empty, the debris will use its original icon_state
 	var/max_shift = 8
 
@@ -24,7 +27,7 @@
 	icon_state = "stone_metal1"
 	possible_icons = list("stone_metal1", "stone_metal2", "stone_metal3")
 	messy_thing = 1
-	materials = list(MAT_METAL=200, MAT_STONE=200)
+	materials = list(MAT_METAL=100, MAT_STONE=100)
 	smeltable = 1
 
 /obj/item/debris/stone
@@ -34,7 +37,7 @@
 	icon_state = "stone1"
 	possible_icons = list("stone1", "stone2", "stone3")
 	messy_thing = 1
-	materials = list(MAT_STONE=400)
+	materials = list(MAT_STONE=200)
 	smeltable = 1
 
 /obj/item/debris/wood
@@ -44,5 +47,5 @@
 	icon_state = "stone1"
 	possible_icons = list("wood1", "wood2", "wood3")
 	messy_thing = 1
-	materials = list(MAT_WOOD=400)
+	materials = list(MAT_WOOD=100)
 	smeltable = 1

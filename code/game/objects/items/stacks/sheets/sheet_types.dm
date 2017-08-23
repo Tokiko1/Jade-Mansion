@@ -127,6 +127,8 @@ GLOBAL_LIST_INIT(plasteel_recipes, list ( \
 GLOBAL_LIST_INIT(wood_recipes, list ( \
 	new/datum/stack_recipe("paper frame wall", /obj/structure/window/paperframe, 3, time = 20, one_per_turf = 1, on_floor = 1), \
 	null, \
+	new/datum/stack_recipe("cardboard sheet", /obj/item/stack/sheet/cardboard, 1, 5, 50), \
+	null, \
 	new/datum/stack_recipe("wooden door", /obj/structure/mineral_door/wood, 10, time = 20, one_per_turf = 1, on_floor = 1), \
 	new/datum/stack_recipe("wooden door with lock", /obj/structure/mineral_door/wood/lock, 10, time = 20, one_per_turf = 1, on_floor = 1), \
 	new/datum/stack_recipe("paper door with lock", /obj/structure/mineral_door/wood/lock/paper, 10, time = 20, one_per_turf = 1, on_floor = 1), \
@@ -164,6 +166,7 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 50, acid = 0)
 	resistance_flags = FLAMMABLE
 	merge_type = /obj/item/stack/sheet/mineral/wood
+	materials = list(MAT_WOOD=2000)
 
 /obj/item/stack/sheet/mineral/wood/Initialize(mapload, new_amount, merge = TRUE)
 	recipes = GLOB.wood_recipes
@@ -209,6 +212,7 @@ GLOBAL_LIST_INIT(cloth_recipes, list ( \
 	force = 0
 	throwforce = 0
 	merge_type = /obj/item/stack/sheet/cloth
+	materials = list(MAT_CLOTH=2000)
 
 /obj/item/stack/sheet/cloth/Initialize(mapload, new_amount, merge = TRUE)
 	recipes = GLOB.cloth_recipes
@@ -241,6 +245,7 @@ GLOBAL_LIST_INIT(cardboard_recipes, list ( \
 	origin_tech = "materials=1"
 	resistance_flags = FLAMMABLE
 	merge_type = /obj/item/stack/sheet/cardboard
+	materials = list(MAT_WOOD=200)
 
 /obj/item/stack/sheet/cardboard/Initialize(mapload, new_amount, merge = TRUE)
 	recipes = GLOB.cardboard_recipes
@@ -365,7 +370,11 @@ GLOBAL_LIST_INIT(brass_recipes, list ( \
 	origin_tech = "materials=2;biotech=2"
 
 GLOBAL_LIST_INIT(plastic_recipes, list(
-	new /datum/stack_recipe("plastic flaps", /obj/structure/plasticflaps, 5, one_per_turf = 1, on_floor = 1, time = 40)))
+	new /datum/stack_recipe("trash bag", /obj/item/weapon/storage/bag/trash, 1), \
+	null, \
+	new /datum/stack_recipe("plastic flaps", /obj/structure/plasticflaps, 5, one_per_turf = 1, on_floor = 1, time = 40), \
+
+	))
 
 /obj/item/stack/sheet/plastic
 	name = "plastic"
@@ -376,6 +385,7 @@ GLOBAL_LIST_INIT(plastic_recipes, list(
 	origin_tech = "materials=1"
 	origin_tech = "materials=1;biotech=1"
 	merge_type = /obj/item/stack/sheet/plastic
+	materials = list(MAT_PLASTIC=2000)
 
 /obj/item/stack/sheet/plastic/fifty
 	amount = 50

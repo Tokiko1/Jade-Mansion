@@ -15,8 +15,8 @@
 	girder_type = /obj/structure/jadegirder/wooden
 	disassembly_tool = /obj/item/weapon/crowbar
 	debris = list(/obj/item/debris/wood, /obj/item/debris/wood, /obj/item/debris/stone)
-	debris_amount_min = 2
-	debris_amount_max = 5
+	debris_amount_min = 15
+	debris_amount_max = 20
 	broken_turf = /turf/open/windowplating
 	canSmoothWith = list(/turf/closed/wall/wood)
 

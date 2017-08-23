@@ -102,6 +102,8 @@
 #define MAT_TITANIUM	"$titanium"
 #define MAT_PLASTIC		"$plastic"
 
+#define MAT_CLOTH		"$cloth"
+
 #define MAT_PLASMA		"$plasma"
 #define MAT_BLUESPACE	"$bluespace"
 #define MAT_BANANIUM	"$bananium"
