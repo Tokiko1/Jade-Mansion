@@ -20,7 +20,7 @@
 
 /obj/machinery/mineral/stacking_unit_console/attack_hand(mob/user)
 
-	var/obj/item/stack/sheet/s
+	var/obj/item/stack/s
 	var/dat
 
 	dat += text("<b>Stacking unit console</b><br><br>")
@@ -43,8 +43,8 @@
 	src.add_fingerprint(usr)
 	if(href_list["release"])
 		if(!(text2path(href_list["release"]) in machine.stack_list)) return //someone tried to spawn materials by spoofing hrefs
-		var/obj/item/stack/sheet/inp = machine.stack_list[text2path(href_list["release"])]
-		var/obj/item/stack/sheet/out = new inp.type()
+		var/obj/item/stack/inp = machine.stack_list[text2path(href_list["release"])]
+		var/obj/item/stack/out = new inp.type()
 		out.amount = inp.amount
 		inp.amount = 0
 		machine.unload_mineral(out)
@@ -75,19 +75,19 @@
 	proximity_monitor = new(src, 1)
 
 /obj/machinery/mineral/stacking_machine/HasProximity(atom/movable/AM)
-	if(istype(AM, /obj/item/stack/sheet) && AM.loc == get_step(src, input_dir))
+	if(istype(AM, /obj/item/stack) && AM.loc == get_step(src, input_dir))
 		process_sheet(AM)
 
-/obj/machinery/mineral/stacking_machine/proc/process_sheet(obj/item/stack/sheet/inp)
+/obj/machinery/mineral/stacking_machine/proc/process_sheet(obj/item/stack/inp)
 	if(!(inp.type in stack_list)) //It's the first of this sheet added
-		var/obj/item/stack/sheet/s = new inp.type(src,0)
+		var/obj/item/stack/s = new inp.type(src,0)
 		s.amount = 0
 		stack_list[inp.type] = s
-	var/obj/item/stack/sheet/storage = stack_list[inp.type]
+	var/obj/item/stack/storage = stack_list[inp.type]
 	storage.amount += inp.amount //Stack the sheets
 	inp.loc = null //Let the old sheet garbage collect
 	while(storage.amount > stack_amt) //Get rid of excessive stackage
-		var/obj/item/stack/sheet/out = new inp.type()
+		var/obj/item/stack/out = new inp.type()
 		out.amount = stack_amt
 		unload_mineral(out)
 		storage.amount -= stack_amt

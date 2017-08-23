@@ -201,3 +201,4 @@ banlist.bdb
 /jademansion.rsc
 *.dmb
 /*.rsc
+/data/mode.txt

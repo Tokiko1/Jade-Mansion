@@ -113,7 +113,7 @@
 
 /obj/machinery/waste_recycler/proc/RecyclerCrushStuff()
 	for(var/mob/living/mobS in get_turf(src))
-		mobS.Flatten(flat_source = src, f_override = mob_flat_override, autounflating = mob_auto_unflat)
+		INVOKE_ASYNC(mobS, /atom/movable.proc/Flatten, src, 1.5, 0.5, mob_flat_override, mob_auto_unflat)
 	for(var/obj/item/itemS in get_turf(src))
 		if(!istype(itemS, /obj/item/flat) && !istype(itemS, /obj/item/material_pile) && !istype(itemS, /obj/item/stack/)) //turn this into a disallowed typecache or something
 			var/list/stuffinitem = itemS.GetAllContents()
@@ -292,9 +292,23 @@
 				RecyclerS.ConveyorMove(1)
 	src.visible_message("<span class='warning'>[user] toggled the conveyor controls!</span>")
 
+///////////////////
 
+/obj/structure/plasticflaps/recycler //special plastic flaps that stop uncrushed OR uncrushable stuff from moving through
+	name = "recycler plastic flaps"
+	desc = "Very low plastic flaps that stop anything uncrushed from moving through."
 
+/obj/structure/plasticflaps/recycler/CanPass(atom/movable/A, turf/T)
+	if(istype(A, /obj/item/flat) || istype(A, /obj/item/material_pile) || istype(A, /obj/item/stack) || ( !istype(A, /obj/item)  && !istype(A, /mob/living) ) ) //turn this into a typecache
+		return 1
+	else
+		return 0
 
+/obj/item/weapon/paper/jade/recycler
+	name = "paper - 'recycling instruction'"
+	info = "<h2>Recycling Instruction Manual</h2> Recycling is very easy: First crush the thing you want recycled \
+	with the waste compactor, then move the resulting material pile into the combiner. The combiner will automatically eject \
+	useable material sheets once it as accumulated enough for one."
 
 
 

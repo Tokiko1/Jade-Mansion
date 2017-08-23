@@ -6,11 +6,15 @@
 	w_class = WEIGHT_CLASS_BULKY
 	messy_thing = 1
 	var/list/possible_icons = list() //if anything is added here, the debris picks a random icon_state from this list. if left empty, the debris will use its original icon_state
+	var/max_shift = 8
 
 /obj/item/debris/Initialize()
-	..()
+	.=..()
 	if(possible_icons.len)
 		icon_state = pick(possible_icons)
+	if(max_shift)
+		pixel_x += rand(max_shift, -max_shift)
+		pixel_y += rand(max_shift, -max_shift)
 
 
 /obj/item/debris/stonemetal

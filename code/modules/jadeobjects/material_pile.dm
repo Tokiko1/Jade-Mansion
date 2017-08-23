@@ -10,6 +10,13 @@
 	throw_speed = 3
 	throw_range = 5
 	materials = list()
+	var/max_shift = 8
+
+/obj/item/material_pile/Initialize()
+	.=..()
+	if(max_shift)
+		pixel_x += rand(max_shift, -max_shift)
+		pixel_y += rand(max_shift, -max_shift)
 
 /obj/item/material_pile/proc/AddMaterials(obj/item/materialholder)
 	if(!materialholder)
