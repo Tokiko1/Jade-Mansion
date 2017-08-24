@@ -13,7 +13,7 @@
 			traitholder.active_traits |= a
 
 
-		switch(traitS) //inactive traits being added here
+		switch(traitS) //inactive traits or inactive things of active traits being added here
 			if("Trouble Maker")
 				traitholder.mischief += 30
 				GLOB.bad_idea_causers |= traitholder

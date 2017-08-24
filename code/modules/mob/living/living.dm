@@ -815,9 +815,9 @@
 	if(staminaloss)
 		var/total_health = (health - staminaloss)
 		if(total_health <= HEALTH_THRESHOLD_CRIT && !stat)
-			to_chat(src, "<span class='notice'>You're too exhausted to keep going...</span>")
-			Weaken(10)
-			setStaminaLoss(health - 2)
+			Weaken(5)
+		if(staminaloss > STAMINA_CAP)
+			staminaloss = STAMINA_CAP
 	update_health_hud()
 
 /mob/living/proc/owns_soul()

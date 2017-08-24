@@ -316,6 +316,10 @@
 	if(staminaloss)
 		if(sleeping)
 			adjustStaminaLoss(-10)
+		else if(staminaloss > STAMINA_VERYFAST_REGEN_THRESHOLD)
+			adjustStaminaLoss(-5)
+		else if(staminaloss > STAMINA_FAST_REGEN_THRESHOLD)
+			adjustStaminaLoss(-2)
 		else
 			adjustStaminaLoss(-1)
 

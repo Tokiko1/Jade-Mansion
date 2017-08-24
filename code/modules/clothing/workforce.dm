@@ -225,4 +225,13 @@
 	desc = "Nurses wear this on their head."
 	strip_delay = 10
 	put_on_delay = 10
-	maid_uniform = 0
+	maid_uniform = 1
+
+/obj/item/clothing/head/nurse_cap2
+	name = "nurse cap"
+	item_state = "nurse_cap2"
+	icon_state = "nurse_cap2"
+	desc = "Nurses wear this on their head."
+	strip_delay = 10
+	put_on_delay = 10
+	maid_uniform = 1

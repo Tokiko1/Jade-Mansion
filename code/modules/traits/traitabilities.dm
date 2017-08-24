@@ -35,6 +35,7 @@
 	icon_state = "webby_ball"
 	w_class = WEIGHT_CLASS_TINY
 	messy_thing = 1
+	materials = list(MAT_CLOTH=2000)
 	var/spinning_time = 70
 
 /obj/item/webball/throw_impact(atom/hit_atom)
@@ -105,7 +106,7 @@
 	check_flags = AB_CHECK_CONSCIOUS|AB_CHECK_STUNNED
 	button_icon_state = "emp"
 	var/mindshock_cooldown = 0
-	var/maxcooldowntime = 60
+	var/maxcooldowntime = 50
 
 
 /datum/action/innate/mind_shock/Activate()
@@ -116,10 +117,10 @@
 		for(var/mob/living/carbon/human/victim in view(8, player))
 			if(victim != player)
 				to_chat(victim, "<span class='warning'>You feel a bright, unpleasant wave enter your mind!</span>")
-				victim.Jitter(25)
-				victim.Dizzy(25)
-				victim.confused = max(victim.confused, 25)
-				victim.blur_eyes(25)
+				victim.Jitter(5)
+				victim.Dizzy(5)
+				victim.confused = max(victim.confused, 5)
+				victim.blur_eyes(5)
 		mindshock_cooldown = maxcooldowntime
 		START_PROCESSING(SSprocessing, src)
 	else

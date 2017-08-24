@@ -308,7 +308,7 @@
 	name = "paper - 'recycling instruction'"
 	info = "<h2>Recycling Instruction Manual</h2> Recycling is very easy: First crush the thing you want recycled \
 	with the waste compactor, then move the resulting material pile into the combiner. The combiner will automatically eject \
-	useable material sheets once it as accumulated enough for one."
+	useable material sheets once it has accumulated enough for one."
 
 
 

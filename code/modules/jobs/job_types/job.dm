@@ -70,10 +70,6 @@
 	if(!visualsOnly && announce)
 		announce(H)
 
-	if(config.enforce_human_authority && (title in GLOB.command_positions))
-		H.dna.features["tail_human"] = "None"
-		H.dna.features["ears"] = "None"
-		H.regenerate_icons()
 
 /datum/job/proc/get_access()
 	if(!config)	//Needed for robots.
@@ -128,8 +124,8 @@
 	uniform = null
 	id = /obj/item/weapon/card/id
 	ears = null
-	belt = null
-	back = /obj/item/weapon/storage/backpack
+	belt = /obj/item/device/flashlight
+	back = /obj/item/weapon/storage/backpack/satchel
 	shoes = null
 
 	var/list/implants = null

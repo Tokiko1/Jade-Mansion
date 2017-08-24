@@ -4,7 +4,7 @@
 	title = "Head Maid"
 	flag = HEADMAID
 	department_flag = ENGSEC
-	faction = "Station"
+	faction = "Mansion"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the owners of the mansion"
@@ -52,7 +52,7 @@
 	title = "Mansion Owner"
 	flag = MANSIONOWNER
 	department_flag = ENGSEC
-	faction = "Station"
+	faction = "Mansion"
 	total_positions = -1
 	spawn_positions = -1
 	supervisors = "nobody but yourself"
@@ -87,7 +87,7 @@
 	title = "Guest"
 	flag = GUEST
 	department_flag = ENGSEC
-	faction = "Station"
+	faction = "Mansion"
 	total_positions = 5
 	spawn_positions = 5
 	supervisors = "nobody but yourself"
@@ -124,7 +124,7 @@
 	title = "Butler"
 	flag = BUTLER
 	department_flag = CIVILIAN
-	faction = "Station"
+	faction = "Mansion"
 	total_positions = 5
 	spawn_positions = 5
 	supervisors = "the headmaid and the mansion owners"
@@ -164,7 +164,7 @@ Gardener
 	title = "Gardener"
 	flag = GARDENER
 	department_flag = CIVILIAN
-	faction = "Station"
+	faction = "Mansion"
 	total_positions = 5
 	spawn_positions = 5
 	supervisors = "the headmaid"
@@ -203,7 +203,7 @@ Gardener
 	title = "Downstairs Maid"
 	flag = DOWNSTAIRSMAID
 	department_flag = CIVILIAN
-	faction = "Station"
+	faction = "Mansion"
 	total_positions = 5
 	spawn_positions = 5
 	supervisors = "the headmaid"
@@ -253,7 +253,7 @@ Upstairs Maid
 	title = "Upstairs Maid"
 	flag = UPSTAIRSMAID
 	department_flag = CIVILIAN
-	faction = "Station"
+	faction = "Mansion"
 	total_positions = 5
 	spawn_positions = 5
 	supervisors = "the head of personnel"
@@ -292,7 +292,7 @@ Guard
 	title = "Guard"
 	flag = GUARD
 	department_flag = CIVILIAN
-	faction = "Station"
+	faction = "Mansion"
 	total_positions = 5
 	spawn_positions = 5
 	supervisors = "the owners of the mansion"

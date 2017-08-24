@@ -5,7 +5,7 @@ Assistant
 	title = "Between Maid"
 	flag = ASSISTANT
 	department_flag = CIVILIAN
-	faction = "Station"
+	faction = "Mansion"
 	total_positions = -1
 	spawn_positions = -1
 	supervisors = "all other upstairs and downstairs maids"

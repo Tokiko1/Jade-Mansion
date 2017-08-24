@@ -922,17 +922,17 @@
 		for(var/obj/item/I in H.held_items)
 			if(HAS_SECONDARY_FLAG(I, SLOWS_WHILE_IN_HAND))
 				. += I.slowdown
-		var/health_deficiency = (100 - H.health + H.staminaloss)
+		var/health_deficiency = max((100 - H.health), H.staminaloss)
 		var/hungry = (500 - H.nutrition) / 5 // So overeat would be 100 and default level would be 80
 		if(health_deficiency >= 40)
 			if(flight)
 				. += (health_deficiency / 75)
 			else
-				. += (health_deficiency / 25)
+				. += (health_deficiency / 40)
 		if((hungry >= 70) && !flight)		//Being hungry won't stop you from using flightpack controls/flapping your wings although it probably will in the wing case but who cares.
 			. += hungry / 50
-		if(H.disabilities & FAT)
-			. += (1.5 - flight)
+//		if(H.disabilities & FAT)
+//			. += (1.5 - flight)
 		if(H.bodytemperature < BODYTEMP_COLD_DAMAGE_LIMIT)
 			. += (BODYTEMP_COLD_DAMAGE_LIMIT - H.bodytemperature) / COLD_SLOWDOWN_FACTOR
 	return .
