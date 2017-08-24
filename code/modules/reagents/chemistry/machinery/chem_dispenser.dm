@@ -400,7 +400,13 @@
 		"stabilizing_agent",
 		"thermite",
 		"blackpowder",
-		"fluorosurfactant"
+		"fluorosurfactant",
+		"cleaner",
+		"facid",
+		"dizzysolution",
+		"tiresolution"
+
+
 
 	)
 	emagged_reagents = list()
