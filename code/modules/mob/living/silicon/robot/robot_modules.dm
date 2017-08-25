@@ -427,7 +427,6 @@
 		/obj/item/weapon/pen,
 		/obj/item/toy/crayon/spraycan/borg,
 		/obj/item/weapon/hand_labeler/borg,
-		/obj/item/weapon/razor,
 		/obj/item/device/instrument/violin,
 		/obj/item/device/instrument/guitar,
 		/obj/item/weapon/rsf/cyborg,

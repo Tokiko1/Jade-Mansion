@@ -121,6 +121,7 @@
 	icon_state = "beaker"
 	item_state = "beaker"
 	materials = list(MAT_GLASS=500)
+	volume = 100
 
 /obj/item/weapon/reagent_containers/glass/beaker/New()
 	..()
@@ -160,7 +161,7 @@
 	desc = "A large beaker. Can hold up to 100 units."
 	icon_state = "beakerlarge"
 	materials = list(MAT_GLASS=2500)
-	volume = 100
+	volume = 200
 	amount_per_transfer_from_this = 10
 	possible_transfer_amounts = list(5,10,15,20,25,30,50,100)
 	flags = OPENCONTAINER

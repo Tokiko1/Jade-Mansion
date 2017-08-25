@@ -915,7 +915,7 @@
 	..()
 
 /datum/reagent/space_cleaner
-	name = "Space cleaner"
+	name = "Cleaner"
 	id = "cleaner"
 	description = "A compound used to clean things. Now with 50% more sodium hypochlorite!"
 	color = "#A5F0EE" // rgb: 165, 240, 238

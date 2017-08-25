@@ -85,6 +85,7 @@ h1.alert, h2.alert		{color: #000000;}
 
 .jadegreen				{color: #1FBC9C;}
 
+
 .spynotice				{color: #182723;	font-weight: bold; font-style: italic;}
 
 .revennotice			{color: #1d2953;}
