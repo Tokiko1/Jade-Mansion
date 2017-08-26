@@ -5,7 +5,7 @@
 	current_target = null
 	temporary = 0
 	deflection_chance = 0 //Chance to deflect projectiles
-	block_chance = 50 //Chance to block melee attacks using items while on throw mode.
+	block_chance = 25 //Chance to block melee attacks using items while on throw mode.
 	easy_block = 1
 	help_verb = null
 	no_guns = FALSE
@@ -92,7 +92,7 @@
 				M.Stun(5)
 				M.adjustBruteLoss(5)
 				to_chat(M, "<span class='userdanger'>You're slammed into the floor by [owner]!</span>")
-				M.Flatten(owner)
+				//M.Flatten(owner)
 		else
 			if(isliving(AM))
 				var/mob/living/M = AM
