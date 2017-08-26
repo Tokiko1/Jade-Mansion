@@ -22,6 +22,12 @@
 	return armor
 
 
+/mob/living/proc/check_block_ignore(bonus_ignore_value)
+	if(prob(block_ignore + bonus_ignore_value))
+		return 1
+	else
+		return 0
+
 /mob/living/proc/getarmor(def_zone, type)
 	return 0
 

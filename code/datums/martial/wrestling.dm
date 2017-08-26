@@ -322,7 +322,6 @@
 /datum/martial_art/wrestling/proc/kick(mob/living/carbon/human/A, mob/living/carbon/human/D)
 	if(!D || A == D)
 		return
-	A.emote("scream")
 	A.emote("flip")
 	A.setDir(turn(A.dir, 90))
 
@@ -363,14 +362,14 @@
 
 	if (A && D) //sorry this whole chain of checks is horrifying
 		// These are necessary because of the sleep call.
-		A.lying += 90
-		A.update_transform()
+		if(!A.resting)
+			A.lay_down()
 		A.Stun(1)
 		sleep(10)
 	if (A && D)
 		if ((falling == 0 && get_dist(A, D) > 1) || (falling == 1 && get_dist(A, D) > 2)) // We climbed onto stuff.
-			A.lying -= 90
-			A.update_transform()
+			if(A.resting)
+				A.lay_down()
 			A.pixel_y = 0
 			A.visible_message("<span class = 'danger'><B>...and dives head-first into the ground, ouch!</b></span>")
 			A.apply_damage((rand(2,5)), STAMINA)
@@ -379,8 +378,8 @@
 
 
 		if (!isturf(A.loc) || !isturf(D.loc))
-			A.lying -= 90
-			A.update_transform()
+			if(A.resting)
+				A.lay_down()
 			A.pixel_y = 0
 			return 0
 
@@ -389,8 +388,8 @@
 		D.Weaken(1)
 		sleep(5)
 	if (A)
-		A.lying -= 90
-		A.update_transform()
+		if(A.resting)
+			A.lay_down()
 		A.pixel_y = 0
 	if (A && D)
 		A.visible_message("<span class = 'danger'><B>[A] leg-drops [D]!</B></span>")
@@ -424,7 +423,7 @@
 	if(check_streak(A,D))
 		return 1
 	if(A.pulling == D)
-		return 1
+		return 0
 	A.start_pulling(D)
 	D.visible_message("<span class='danger'>[A] gets [D] in a cinch!</span>", \
 								"<span class='userdanger'>[A] gets [D] in a cinch!</span>")

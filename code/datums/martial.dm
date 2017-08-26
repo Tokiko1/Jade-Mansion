@@ -16,6 +16,8 @@
 	var/armed_counter_override = 0 //if 1, overrides the items counter attack
 	var/counter_chance = 0
 	var/allow_temp_override = TRUE //if this martial art can be overridden by temporary martial arts
+	var/block_ignore_chance = 0 //chance to bypass the blockchance of a mob completely
+	var/armed_block_pierce = 0 //if true, will add the bonus above even when attacking with an item
 
 /datum/martial_art/proc/counter_act(mob/living/carbon/human/A, mob/living/D)
 	return 0

@@ -298,6 +298,7 @@
 #include "code\datums\helper_datums\teleport.dm"
 #include "code\datums\helper_datums\topic_input.dm"
 #include "code\datums\martial\krav_maga.dm"
+#include "code\datums\martial\medical_martial.dm"
 #include "code\datums\martial\oni_martial.dm"
 #include "code\datums\martial\RQCQ.dm"
 #include "code\datums\martial\wrestling.dm"

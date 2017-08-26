@@ -57,6 +57,8 @@
 	var/last_bumped = 0
 	var/unique_name = 0 //if a mob's name should be appended with an id when created e.g. Mob (666)
 
+	var/block_ignore = 0 // intrinstic chance to ignore the block chance of a defending mob
+
 	var/list/butcher_results = null
 	var/hellbound = 0 //People who've signed infernal contracts are unrevivable.
 

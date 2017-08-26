@@ -17,6 +17,24 @@
 	return (armorval/max(organnum, 1))
 
 
+/mob/living/carbon/human/check_block_ignore(bonus_ignore_value)
+	var/b_ignore_chance = block_ignore + bonus_ignore_value //intrinsic chance + bonus pierce chance
+
+	if(martial_art && martial_art.block_ignore_chance) //martial arts bonus
+		if(!get_active_held_item() || martial_art.armed_block_pierce) //check if the attacker has empty hands or the martial art allows weapons to be used
+			b_ignore_chance += martial_art.block_ignore_chance
+
+	if(get_active_held_item())
+		var/obj/item/helditem = get_active_held_item()
+		if(helditem.block_ignore_item_bonus)
+			b_ignore_chance += helditem.block_ignore_item_bonus
+	if(b_ignore_chance > 100)
+		return 1
+	else if(prob(b_ignore_chance))
+		return 1
+	else
+		return 0
+
 /mob/living/carbon/human/proc/checkarmor(obj/item/bodypart/def_zone, d_type)
 	if(!d_type)
 		return 0

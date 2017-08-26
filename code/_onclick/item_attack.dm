@@ -40,7 +40,7 @@
 
 	if(istype(M, /mob/living/carbon/human) ) //maybe there is a better way to put this, but humans can block attacks
 		var/mob/living/carbon/human/defender = M
-		if(defender.check_block())
+		if(defender.check_block() && !user.check_block_ignore())
 			defender.visible_message("<span class='warning'>[defender] blocks [user]'s attack!</span>")
 			defender.handle_counter(defender, user)
 			return

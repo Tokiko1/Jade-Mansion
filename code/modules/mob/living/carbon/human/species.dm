@@ -963,7 +963,7 @@
 			to_chat(user, "<span class='notice'>You do not breathe, so you cannot perform CPR.</span>")
 
 /datum/species/proc/grab(mob/living/carbon/human/user, mob/living/carbon/human/target, datum/martial_art/attacker_style)
-	if(target.check_block())
+	if(target.check_block() && !user.check_block_ignore())
 		target.visible_message("<span class='warning'>[target] blocks [user]'s grab attempt!</span>")
 		target.handle_counter(target, user)
 		return 0
@@ -978,7 +978,7 @@
 
 
 /datum/species/proc/harm(mob/living/carbon/human/user, mob/living/carbon/human/target, datum/martial_art/attacker_style)
-	if(target.check_block())
+	if(target.check_block() && !user.check_block_ignore())
 		target.visible_message("<span class='warning'>[target] blocks [user]'s attack!</span>")
 		target.handle_counter(target, user)
 		return 0
@@ -1044,7 +1044,7 @@
 		"You hear a slap.")
 		target.endTailWag()
 		return FALSE
-	else if(target.check_block())
+	else if(target.check_block() && !user.check_block_ignore())
 		target.visible_message("<span class='warning'>[target] blocks [user]'s disarm attempt!</span>")
 		target.handle_counter(target, user)
 		return 0

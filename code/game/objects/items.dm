@@ -68,6 +68,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	var/melee_block = 0 //holding this item in your active hand grants you a chance to deflect melee attacks
 	var/counter_chance = 0 //chance to do a counter action on a successfull block
 	var/disarm_chance_mod = 0 //positive values make an item provide disarm protection, while negative values make it easier to disarm you
+	var/block_ignore_item_bonus = 0 //does attacking with this item grant you extra chances to ignore enemy melee blocks?
 
 	var/restrain = 0 //does this restrain us?
 	var/can_move_restrain = 0 //does it stop us from moving?

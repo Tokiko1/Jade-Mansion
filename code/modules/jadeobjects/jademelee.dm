@@ -17,6 +17,8 @@
 	melee_block = 70
 	counter_chance = 80
 	disarm_chance_mod = 60
+	block_ignore_item_bonus = 30
+
 	var/counter_disarm_chance = 20
 	var/attack_chance = 50
 
@@ -61,6 +63,7 @@
 	melee_block = 30
 	counter_chance = 0
 	disarm_chance_mod = 30
+	block_ignore_item_bonus = 30
 
 /obj/item/weapon/disabler_knife/highpower
 	name = "high power disabler knife"
@@ -72,3 +75,4 @@
 
 	melee_block = 10
 	disarm_chance_mod = 10
+	block_ignore_item_bonus = 40

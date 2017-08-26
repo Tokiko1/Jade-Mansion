@@ -54,7 +54,7 @@
 	playsound(get_turf(A), 'sound/effects/hit_kick.ogg', 50, 1, -1)
 	D.apply_damage(rand(10, 15), STAMINA)
 	D.Weaken(5)
-	A.next_click = world.time + CLICK_CD_ONIPUNCH
+	A.next_click = world.time + CLICK_CD_ONIPALM
 	var/atom/throw_target = get_edge_target_turf(D, get_dir(D, get_step_away(D, A)))
 	D.throw_at(throw_target, rand(3, 7), 4,A)
 
