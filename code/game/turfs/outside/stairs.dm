@@ -65,7 +65,7 @@
 
 
 /turf/open/stairs/moving/Initialize()
-	..()
+	.=..()
 	destination_x = x + shift_x
 	destination_y = y + shift_y
 	destination_z = z + shift_z
@@ -74,8 +74,8 @@
 /turf/open/stairs/moving/Entered(atom/movable/AM)
 	climb(AM)
 
-/turf/open/stairs/moving/proc/climb(AM)
-	if(!isliving(AM) && !isobj(AM))
+/turf/open/stairs/moving/proc/climb(atom/movable/AM)
+	if(!canclimb(AM))
 		return
 	var/list/stufftomove = list()
 	stufftomove.Add(AM)
