@@ -233,6 +233,8 @@
 	icon_state = "caltrop_5"
 	desc = "A bunch of tiny balls with very long spikes, used since hundred-thousands of years as a way to deter pursuers. Simply USE them to scatter them across the floor."
 	w_class = WEIGHT_CLASS_TINY
+	materials = list(MAT_METAL = 200)
+
 
 /obj/item/caltrop/attack_self(mob/user)
 	if(isopenfloorturf(user.loc))

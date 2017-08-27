@@ -312,6 +312,19 @@
 	doorkeyid = "owner"
 	doorlockdifficulty  = 90
 
+/obj/structure/mineral_door/wood/lock/guard
+	name = "owner access wood door"
+	icon_state = "silver"
+	doorkeyid = "guard"
+	doorlockdifficulty  = 90
+
+/obj/structure/mineral_door/wood/lock/guard/locked
+	name = "owner access wood door"
+	icon_state = "silver"
+	doorkeyid = "guard"
+	doorlockdifficulty  = 90
+	doorlocked = 1
+
 /obj/structure/mineral_door/wood/lock/owner/locked
 	name = "owner access wood door"
 	doorkeyid = "owner"

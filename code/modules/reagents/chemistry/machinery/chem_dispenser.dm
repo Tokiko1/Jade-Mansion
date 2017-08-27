@@ -404,9 +404,10 @@
 		"cleaner",
 		"facid",
 		"dizzysolution",
-		"tiresolution"
-
-
+		"tiresolution",
+		"mannitol",
+		"condensedcapsaicin",
+		"carbon"
 
 	)
 	emagged_reagents = list()

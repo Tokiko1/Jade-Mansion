@@ -2,6 +2,50 @@
 //////////Autolathe Designs ///////
 ///////////////////////////////////
 
+////////////Jadestuff/////////////
+/datum/design/lockpick
+	name = "Lockpick"
+	id = "lockpick"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 100)
+	build_path = /obj/item/doorkey/lockpick
+	category = list("initial","Tools")
+
+/datum/design/caltrops
+	name = "Caltrop Cluster"
+	id = "caltrops"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 200) //Comes with 40 darts
+	build_path = /obj/item/caltrop/
+	category = list("hacked", "Security")
+
+
+//////////////////
+/datum/design/sprayer
+	name = "Spray Bottle"
+	id = "spray bottle"
+	build_type = AUTOLATHE
+	materials = list(MAT_GLASS = 200)
+	build_path = /obj/item/weapon/reagent_containers/spray
+	category = list("initial","Tools")
+
+/datum/design/wet_floor_sign
+	name = "Wet Floor Sign"
+	id = "wet floor sign"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 100)
+	build_path = /obj/item/weapon/caution
+	category = list("initial","Misc")
+
+/datum/design/mouse_trap
+	name = "Mouse Trap"
+	id = "mouse trap"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 100)
+	build_path = /obj/item/device/assembly/mousetrap
+	category = list("initial","Misc")
+
+//////////////////
 /datum/design/bucket
 	name = "Bucket"
 	id = "bucket"
@@ -50,13 +94,13 @@
 	build_path = /obj/item/device/analyzer
 	category = list("initial","Tools")
 
-/datum/design/tscanner
+/*/datum/design/tscanner
 	name = "T-ray scanner"
 	id = "tscanner"
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 150)
 	build_path = /obj/item/device/t_scanner
-	category = list("initial","Tools")
+	category = list("initial","Tools")*/
 
 /datum/design/weldingtool
 	name = "Welding tool"

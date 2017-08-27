@@ -8,6 +8,7 @@
 	throw_speed = 2
 	throw_range = 5
 	w_class = WEIGHT_CLASS_SMALL
+	materials = list(MAT_METAL=100)
 	attack_verb = list("warned", "cautioned", "smashed")
 
 /obj/item/weapon/skub

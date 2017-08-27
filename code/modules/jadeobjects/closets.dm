@@ -330,6 +330,13 @@
 	new /obj/item/weapon/disabler_knife/highpower(src)
 	new /obj/item/weapon/disabler_knife/highpower(src)
 	new /obj/item/weapon/disabler_knife/highpower(src)
+	new /obj/item/weapon/disabler_sasumata/low_power(src)
+	new /obj/item/weapon/disabler_sasumata/low_power(src)
+	new /obj/item/weapon/disabler_sasumata/low_power(src)
+	new /obj/item/weapon/disabler_guandao/low_power(src)
+	new /obj/item/weapon/disabler_guandao/low_power(src)
+	new /obj/item/weapon/disabler_guandao/low_power(src)
+
 
 
 

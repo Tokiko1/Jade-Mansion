@@ -256,7 +256,7 @@ Upstairs Maid
 	faction = "Mansion"
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the head of personnel"
+	supervisors = "the owners of the mansion"
 	selection_color = "#bbe291"
 	var/global/janitors = 0
 
@@ -315,10 +315,10 @@ Guard
 	uniform = /obj/item/clothing/under/maidblue2
 	head = /obj/item/clothing/head/maidhead1
 	shoes = /obj/item/clothing/shoes/jackboots
-//	backpack_contents = list(a, a)
+//	backpack_contents = list(/obj/item/weapon/disabler_sasumata/low_power)
 //	r_hand = a
 //	l_hand = a
 	l_pocket = /obj/item/weapon/disabler_knife
-	r_pocket = /obj/item/doorkey/
+	r_pocket = /obj/item/doorkey/guard
 
 //	implants = list(/obj/item/weapon/implant/mindshield)

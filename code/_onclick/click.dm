@@ -159,12 +159,13 @@
 				if(dummy.loc == there.loc)
 					qdel(dummy)
 					return 1
-				if(there.density && dummy in range(1, there)) //For windows and suchlike
+				if(dummy in range(1, there)) //For windows and suchlike
 					qdel(dummy)
 					return 1
 				if(!dummy.Move(T)) //we're blocked!
 					qdel(dummy)
 					return
+			qdel(dummy)
 
 // Default behavior: ignore double clicks (the second click that makes the doubleclick call already calls for a normal click)
 /mob/proc/DblClickOn(atom/A, params)

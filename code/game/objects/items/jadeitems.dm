@@ -3,6 +3,7 @@
 	icon = 'icons/obj/jadeequipments.dmi'
 	desc = "A keyring with a small steel key. Only useable for general doors."
 	icon_state = "key"
+	materials = list(MAT_METAL=100)
 	var/keyid = "general"
 	w_class = WEIGHT_CLASS_TINY
 
@@ -30,6 +31,12 @@
 	icon_state = "key_green"
 	keyid = "gardener"
 
+/obj/item/doorkey/guard
+	name = "guard key"
+	desc = "A keyring with a small steel key. Works on all general and guard doors."
+	icon_state = "key_white"
+	keyid = "guard"
+
 /obj/item/doorkey/owner
 	name = "mansion owner keychain"
 	desc = "A keyring with a several keys. Works on all general and mansion owner doors."
@@ -40,7 +47,7 @@
 	name = "master key"
 	desc = "A golden key. It opens all doors in the mansion."
 	icon_state = "key_golden"
-	keyid = "owner"
+	keyid = "master"
 
 /obj/item/doorkey/lockpick
 	name = "lockpick"

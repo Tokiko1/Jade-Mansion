@@ -99,8 +99,14 @@
 				collarS.PutNameInID(traitholder)
 				traitholder.restrain_role = 1
 
-			if("Disabler Blade")
+			if("Disabler Habidao")
 				itemstoadd += /obj/item/weapon/disabler_blade
+
+			if("Disabler Guandao")
+				itemstoadd += /obj/item/weapon/disabler_guandao
+
+			if("Disabler Sasumata")
+				itemstoadd += /obj/item/weapon/disabler_sasumata
 
 	if(itemstoadd.len)
 		if(traitholder.back)

@@ -10,7 +10,7 @@
 	counter_chance = 95
 
 	block_ignore_chance = 60 //chance to bypass the blockchance of a mob completely
-	armed_block_pierce = 1
+	armed_block_pierce = 0
 
 	var/datum/action/nurse_stab/nurse_stab = new/datum/action/nurse_stab()
 
@@ -111,4 +111,4 @@
 
 	to_chat(usr, "<span class='notice'>Nurse Stab</span>: A stab with your fingers into the stomach of the enemy. Weak, but knocks them to the ground for a moment.")
 	to_chat(usr, "<span class='notice'>Advanced Block</span>: Activate throw mode to enter your defense mode. If you successfully block a melee attack, you automatically counterattack with a devastating attack depending on your current intent. Pick help intent if you don't want to counter but still block. The counter cannot be used while holding an item, though you will still get the block bonus.")
-	to_chat(usr, "<span class='notice'>Body Movement Lessons</span>: As part of your training, you know well how the body of a person moves when attacking. This knowledge allows your melee attacks to completely nullify block attempts 60 percent of the time.")
+	to_chat(usr, "<span class='notice'>Body Movement Lessons</span>: As part of your training, you know well how the body of a person moves when attacking. This knowledge allows your melee attacks to completely nullify block attempts 60 percent of the time. It does not work when carrying a weapon however.")
