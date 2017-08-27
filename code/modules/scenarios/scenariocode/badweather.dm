@@ -65,10 +65,12 @@
 	name = "broken gear"
 	icon_state = "brokengear1"
 	resistance_flags = 0
+	materials = list(MAT_METAL=5000)
 
 
 /obj/item/trash/gear2
 	name = "broken metal parts"
 	icon_state = "brokengear2"
 	resistance_flags = 0
+	materials = list(MAT_METAL=5000)
 
