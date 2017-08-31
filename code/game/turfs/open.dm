@@ -173,9 +173,9 @@
 			buckled_obj.unbuckle_mob(C)
 			lube |= SLIDE_ICE
 
-		if(lube&SLIDE)
+		if(!(lube&SLIDE))
 			new /datum/forced_movement(C, get_ranged_target_turf(C, olddir, 4), 1, FALSE, CALLBACK(C, /mob/living/carbon/.proc/spin, 1, 1))
-		else if(SLIDE_ICE)
+		else if((lube&SLIDE_ICE))
 			new /datum/forced_movement(C, get_ranged_target_turf(C, olddir, 4), 1, FALSE)	//spinning would be bad for ice, fucks up the next dir
 		return 1
 
@@ -278,7 +278,7 @@
 				O.make_unfrozen()
 
 	if((wet == TURF_WET_WATER || wet == TURF_WET_LUBE) && !wet_time) //water and lube drying off
-		MakeDry(TURF_WET_WATER)
+		MakeDry(TURF_WET_LUBE)
 
 	if(!wet && wet_time)
 		wet_time = 0

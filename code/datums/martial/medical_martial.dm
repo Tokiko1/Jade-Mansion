@@ -47,13 +47,15 @@
 /datum/martial_art/medic/counter_act(mob/living/carbon/human/A, mob/living/D)
 	if(A.a_intent == INTENT_HELP)
 		return 1
+	if(A.incapacitated()|| get_dist(A, D) > 1)
+		return 0
 
 	D.visible_message("<span class='warning'>[A] skillfully grabs [D]!</span>", \
 					  	"<span class='userdanger'>[A] skillfully grabs you!</span>")
 	A.Stun(2)
 	D.Stun(2)
 	sleep(20)
-	if(!A || !D || get_dist(A, D) > 1)
+	if(!A || !D || get_dist(A, D) > 1 || A.lying)
 		return 0
 	if(!iscarbon(D))
 		D.Stun(5)
@@ -94,7 +96,7 @@
 	D.visible_message("<span class='warning'>[A] stabs [D] in the stomach with their fingers!</span>", \
 					  	"<span class='userdanger'>[A] stabs you in the stomach with their fingers</span>")
 	playsound(get_turf(A), 'sound/effects/hit_kick.ogg', 50, 1, -1)
-	D.Weaken(2)
+	D.Weaken(1)
 
 /datum/martial_art/medic/disarm_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
 	if(check_streak(A,D))
