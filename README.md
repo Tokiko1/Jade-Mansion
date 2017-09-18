@@ -2,8 +2,6 @@
 
 A low violence, lighthearted non-space alternative to ss13. Includes maids, harpies, mansions and monsters.
 
-Currently not quite finished.
-
 If you want to play on the official server, contact Tokiko1.
 
 ## DOWNLOADING
